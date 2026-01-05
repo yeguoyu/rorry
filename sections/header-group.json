@@ -91,7 +91,7 @@
             "show_menu_image": false,
             "button_label": "",
             "button_link": "",
-            "promo_image_1": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_30W_purple_81db79f5-ce69-4c17-ac37-f83cab3ea88d.jpg",
+            "promo_image_1": "shopify://shop_images/61SRZw84bAL._SL1600.jpg",
             "promo_image_ratio_1": "adapt",
             "promo_heading_1": "",
             "promo_subtext_1": "",
@@ -349,6 +349,9 @@
         "mega_menu_tab_xpRh8r",
         "mega_menu_j8GKUQ",
         "mega_menu_DcUUc4"
+      ],
+      "custom_css": [
+        ".mega-menu__nav.grid {grid-template-rows: 1fr !important;}"
       ],
       "settings": {
         "logo_h1": true,
