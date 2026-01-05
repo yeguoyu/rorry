@@ -87,7 +87,7 @@
           "type": "mega_menu",
           "settings": {
             "menu_title": "Shop By",
-            "menu_width": "medium",
+            "menu_width": "small",
             "show_menu_image": false,
             "button_label": "Button label",
             "button_link": "",
@@ -351,7 +351,7 @@
       ],
       "settings": {
         "logo_h1": true,
-        "menu": "main-menu",
+        "menu": "main-new",
         "menu_mobile": "",
         "menu_active": "block",
         "hover_menu": false,
