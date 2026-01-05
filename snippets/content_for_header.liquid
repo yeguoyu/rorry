@@ -1,0 +1,18 @@
+{% assign domcontentloadeda = "document.addEventListener('DOMContentLoaded'" %}
+{% assign startasyncLoadinga = "document.addEventListener(window.in_service ? 'StartAsyncLoading' : 'DOMContentLoaded'" %}
+{% assign domcontentloaded = 'e.addEventListener("DOMContentLoaded"' %}
+{% assign startasyncLoading = "e.addEventListener(window.in_service ? 'StartAsyncLoading' : 'DOMContentLoaded'" %}
+{% assign rapp = ', asyncLoad' -%}
+{%- assign napp = ', function(){}' %}
+
+{% assign rappload = 'if(window.attachEvent)' %}
+{% assign nappload = "window.addEventListener(window.in_service ? 'StartAsyncLoading' : 'load',function(event){asyncLoad();});if(window.attachEvent)" %}
+
+{{
+  content_for_header
+  | replace: '<script', '<script data-plugin-src'
+  | replace: domcontentloadeda, startasyncLoadinga
+  | replace: domcontentloaded, startasyncLoading
+  | replace: rapp, napp
+  | replace: rappload, nappload
+}}
