@@ -39,9 +39,10 @@
         "title"
       ],
       "settings": {
-        "transparent_header": true,
+        "transparent_header": false,
         "show_image": true,
-        "image_height": "750px",
+        "image": "{{ collection.metafields.custom.collection_banner.value }}",
+        "image_height": "500px",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
         "image_height_mobile": "auto",
