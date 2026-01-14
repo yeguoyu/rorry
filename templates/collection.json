@@ -53,12 +53,12 @@
         "gradient_background": "",
         "color_overlay": "#000000",
         "overlay_opacity": 40,
-        "padding_top": 0,
+        "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
-        "rounded": true,
-        "enable_parallax": true,
+        "rounded": false,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     },
