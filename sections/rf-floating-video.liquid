@@ -5,7 +5,7 @@
     left: 20px;
     width: 180px;
     aspect-ratio: 9 / 16;
-    z-index: 9999;
+    z-index: 2147483647;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -85,8 +85,13 @@
         class: 'rf-video-element' 
       }}
     {%- elsif section.settings.tiktok_id != blank -%}
+      {%- assign tk_final_id = section.settings.tiktok_id -%}
+      {%- if tk_final_id contains 'tiktok.com' -%}
+        {%- assign tk_final_id = tk_final_id | split: '/video/' | last | split: '?' | first | split: '/' | first -%}
+      {%- endif -%}
+      
       <iframe 
-        src="https://www.tiktok.com/embed/v2/{{ section.settings.tiktok_id }}?lang=en-US&amp;autoplay=1"
+        src="https://www.tiktok.com/embed/v2/{{ tk_final_id }}?lang=en-US&autoplay=1"
         allow="encrypted-media;"
         style="width: 100%; height: 100%; border: none;">
       </iframe>
@@ -152,8 +157,8 @@
     {
       "type": "text",
       "id": "tiktok_id",
-      "label": "TikTok Video ID",
-      "info": "Example: 7412345678901234567 (Found in the URL)"
+      "label": "TikTok Video Link or ID",
+      "info": "Paste the full TikTok link here."
     },
     {
       "type": "video_url",
