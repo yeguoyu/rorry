@@ -1,48 +1,34 @@
-{% comment %}
-  Section: RF Floating Video
-  Description: 左下角悬浮视频，支持本地上传(MP4)和YouTube链接
-  Engineer: Shopify Expert
-{% endcomment %}
-
 {%- style -%}
-  /* 基础容器定位 */
   .rf-floating-container {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 180px; /* 默认宽度，可根据需要调整 */
-    aspect-ratio: 9 / 16; /* 保持竖屏比例，如果是横屏视频改成 16/9 */
+    width: 180px;
+    aspect-ratio: 9 / 16;
     z-index: 9999;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
-    opacity: 0; /* 初始隐藏，JS加载后显示 */
+    opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
+    background: #000;
   }
-
-  /* 出现动画状态 */
   .rf-floating-container.rf-visible {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
   }
-
-  /* 关闭状态 */
   .rf-floating-container.rf-closed {
     display: none !important;
   }
-
-  /* 视频外层包裹 */
   .rf-video-wrapper {
     width: 100%;
     height: 100%;
     position: relative;
     background: #000;
   }
-
-  /* 视频元素通用样式 */
   .rf-video-element,
   .rf-video-wrapper iframe {
     width: 100%;
@@ -51,8 +37,6 @@
     border: none;
     display: block;
   }
-
-  /* 关闭按钮 */
   .rf-close-btn {
     position: absolute;
     top: 8px;
@@ -64,7 +48,7 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,23 +56,19 @@
     line-height: 1;
     backdrop-filter: blur(4px);
   }
-
   .rf-close-btn:hover {
     background: rgba(0, 0, 0, 0.8);
   }
-
-  /* 移动端适配 */
   @media screen and (max-width: 768px) {
     .rf-floating-container {
-      width: 140px; /* 移动端稍微小一点 */
-      bottom: 80px; /* 避开底部导航栏或加购按钮 */
+      width: 140px;
+      bottom: 80px;
       left: 15px;
     }
   }
 {%- endstyle -%}
 
 <div id="rf-floating-video-{{ section.id }}" class="rf-floating-container">
-  
   <button class="rf-close-btn" aria-label="Close video" onclick="closeRfVideo(this)">
     &times;
   </button>
@@ -104,7 +84,12 @@
         playsinline: true,
         class: 'rf-video-element' 
       }}
-    
+    {%- elsif section.settings.tiktok_id != blank -%}
+      <iframe 
+        src="https://www.tiktok.com/embed/v2/{{ section.settings.tiktok_id }}?lang=en-US&amp;autoplay=1"
+        allow="encrypted-media;"
+        style="width: 100%; height: 100%; border: none;">
+      </iframe>
     {%- elsif section.settings.video_url != blank -%}
       {%- if section.settings.video_url.type == 'youtube' -%}
         <iframe 
@@ -121,10 +106,9 @@
           title="Floating Video">
         </iframe>
       {%- endif -%}
-    
     {%- else -%}
       <div style="display:flex;align-items:center;justify-content:center;height:100%;color:#fff;font-size:12px;text-align:center;padding:10px;">
-        请在后台上传视频
+        No Video Source
       </div>
     {%- endif -%}
   </div>
@@ -133,10 +117,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var container = document.getElementById('rf-floating-video-{{ section.id }}');
-    
-    // 检查 sessionStorage，如果用户在这个会话中关闭过，就不再显示
     if (!sessionStorage.getItem('rf_video_closed')) {
-      // 延迟 1 秒显示，增加交互感
       setTimeout(function() {
         container.classList.add('rf-visible');
       }, 1000);
@@ -146,13 +127,9 @@
   function closeRfVideo(btn) {
     var container = btn.closest('.rf-floating-container');
     container.classList.remove('rf-visible');
-    
-    // 动画结束后完全移除 display
     setTimeout(function() {
       container.classList.add('rf-closed');
     }, 300);
-
-    // 记录关闭状态 (SessionStorage: 关闭浏览器后重置; LocalStorage: 永久记住)
     sessionStorage.setItem('rf_video_closed', 'true');
   }
 </script>
@@ -165,26 +142,29 @@
   "settings": [
     {
       "type": "header",
-      "content": "视频源设置",
-      "info": "优先显示上传的文件。如果未上传文件，则使用 URL。"
+      "content": "Video Source (Priority: Upload > TikTok > URL)"
     },
     {
       "type": "video",
       "id": "video_upload",
-      "label": "上传视频文件 (MP4)",
-      "info": "推荐使用 9:16 竖屏视频"
+      "label": "Upload Video (MP4)"
+    },
+    {
+      "type": "text",
+      "id": "tiktok_id",
+      "label": "TikTok Video ID",
+      "info": "Example: 7412345678901234567 (Found in the URL)"
     },
     {
       "type": "video_url",
       "id": "video_url",
-      "label": "或使用视频链接",
+      "label": "YouTube/Vimeo URL",
       "accept": ["youtube", "vimeo"],
-      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-      "info": "支持 YouTube 或 Vimeo"
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
       "type": "header",
-      "content": "外观设置"
+      "content": "Appearance"
     },
     {
       "type": "range",
@@ -193,7 +173,7 @@
       "max": 400,
       "step": 10,
       "unit": "px",
-      "label": "桌面端宽度",
+      "label": "Desktop Width",
       "default": 180
     }
   ],
