@@ -91,35 +91,53 @@
         "parallax_direction": "vertical"
       }
     },
-    "image_with_text_overlay_r3BP63": {
-      "type": "image-with-text-overlay",
-      "name": "t:sections.image-with-text-overlay.name",
+    "slideshow_UBfjb7": {
+      "type": "slideshow",
+      "blocks": {
+        "image_PcyEYq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Trust_endorsement_diagram-1.jpg",
+            "image_mobile": "shopify://shop_images/750x800-1.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://collections/power-banks",
+            "button_style": "primary",
+            "button_external": true,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "image_PcyEYq"
+      ],
+      "custom_css": [
+        ".banner {max-width: 100%; border-radius: 0px;}"
+      ],
       "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/Trust_endorsement_diagram-1.jpg",
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
         "image_height": "adapt",
-        "content_width": "large",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_background": "",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ab9ce9",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
         "color_button_text": "#171717",
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 70,
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 0,
-        "divider": false,
+        "divider": true,
         "full_width": true,
         "rounded": false,
-        "enable_parallax": true,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     },
@@ -1196,9 +1214,9 @@
   },
   "order": [
     "slideshow",
-    "image_with_text_overlay_r3BP63",
-    "collection_list_fLHcjP",
+    "slideshow_UBfjb7",
     "featured_collection_cGwE4X",
+    "collection_list_fLHcjP",
     "image_with_text_overlay_GMVMbi",
     "collage_grid_CyD43h",
     "highlight_text_63rT9k",
