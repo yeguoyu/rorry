@@ -15,7 +15,7 @@
 -%}
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
-  <article class="article page-width{% if section.settings.narrow %} page-width--narrow{% endif %} relative" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="article page-width{% if section.settings.narrow %} page-width--narrow{% endif %} relative zl-blog-all" itemscope itemtype="http://schema.org/BlogPosting">
      <div class="zl-blog-cotainer">{%- render 'blog-toc' -%} </div>
     <div class="rte text-base md:text-lg" itemprop="articleBody">
       {{- article.content -}}
