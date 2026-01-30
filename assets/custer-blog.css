@@ -46,10 +46,7 @@
   .only-mobile { display: block; padding:8px 15px;}
 }
 
-  .hidden {
-    display: none;
-  }
-   
+
     .sidebar-widget-wrapper {
       background: #fff;
       border: 1px solid #ddd; 
