@@ -37,24 +37,7 @@
 #toc-toggle-text svg{width:24px;}
 
 
-@media screen and (min-width: 1000px) {
-  .article__inner { align-items: start; gap: 0vw !important; }
-}
-@media screen and (min-width: 1200px) {
-  .article__info { max-width: 345px !important; }
-}
-@media screen and (max-width: 768px) {
-  .article__info {
-    width: 100%;
-    max-width: 100%;
-    padding-top: 30px !important;
-  }
-  .article__inner {
-  margin-left: 0;
-  margin-right: 0;
 
-}
-}
   .only-desktop { display: block; }
 .only-mobile { display: none; }
 
