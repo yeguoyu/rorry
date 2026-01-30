@@ -309,13 +309,4 @@
     }
 
 
-p{margin-bottom:16px;}
-.t4s-article-content img{margin-bottom:20px;}
-.t4s-article-content a{color:#03a9f4 !important;}
-
- @media (max-width: 1250px) {
-  .zl-blog-cotainer{min-width:250px;margin-right:0px;margin-left: 20px;}
-  .toc-list a{font-size:14px;}
-  .t4s-main-article-page{width:65%;}
- }
 
