@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const tocLists = document.querySelectorAll("#toc-list");
   const tocToggles = document.querySelectorAll(".toc-toggle");
   const toggleIcons = document.querySelectorAll("#toc-toggle-text"); 
-  const headings = document.querySelectorAll(".t4s-main-article-page h2");
+  const headings = document.querySelectorAll(".text-base h2");
 
   if (!tocLists.length || !headings.length) return;
 
