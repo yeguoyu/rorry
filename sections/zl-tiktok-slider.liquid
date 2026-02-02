@@ -1,6 +1,6 @@
 {% comment %}
-  Section: ZL TikTok/IG Embed Slider
-  Description: Directly embeds social URLs via IFrame.
+  Section: ZL TikTok Embed Slider (Right Aligned Bottom Bar + Resizable Products)
+  Description: Embeds social URLs via IFrame. Product bar is inside the slider column.
   Class Naming: zl-ti-*
 {% endcomment %}
 
@@ -66,14 +66,14 @@
                 <div class="zl-ti-product-item">
                   <a href="{{ product.url }}" class="zl-ti-product-link">
                     <div class="zl-ti-prod-img-box">
-                      {{ product.featured_image | image_url: width: 120 | image_tag: loading: 'lazy' }}
+                      {{ product.featured_image | image_url: width: 100 | image_tag: loading: 'lazy' }}
                     </div>
                     <div class="zl-ti-prod-info">
                       <div class="zl-ti-prod-title">{{ product.title }}</div>
                       <div class="zl-ti-prod-price">{{ product.price | money }}</div>
                     </div>
                     <div class="zl-ti-prod-arrow">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </div>
                   </a>
                 </div>
@@ -97,8 +97,8 @@
   }
   .zl-ti-container { max-width: {{ section.settings.container_width }}px; margin: 0 auto; padding: 0 20px; }
 
-  /* Upper Layout: Changed align-items to flex-start to align text with top of videos */
-  .zl-ti-upper-wrapper { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 0; gap: 40px; }
+  /* Upper Layout */
+  .zl-ti-upper-wrapper { display: flex; flex-wrap: wrap; align-items: flex-start; margin-bottom: 0; gap: 40px; }
   .zl-ti-text-col { flex: 0 0 30%; padding-right: 20px; }
   .zl-ti-slider-col { flex: 1; min-width: 0; position: relative; }
 
@@ -108,80 +108,74 @@
   .zl-ti-desc { font-size: 16px; line-height: 1.5; color: {{ section.settings.text_color }}; }
 
   /* Slider */
-  .zl-ti-swiper { overflow: hidden; padding: 10px 5px; /* Slight padding for shadows */ }
+  .zl-ti-swiper { overflow: hidden; padding: 10px 5px; }
   .zl-ti-slide { width: auto; flex-shrink: 0; }
 
   /* Embed Card */
   .zl-ti-embed-card {
-    position: relative;
-    width: 280px; 
-    height: 500px;
-    border-radius: 16px;
-    overflow: hidden;
-    background: #000;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
+    position: relative; width: 280px; height: 500px;
+    border-radius: 16px; overflow: hidden; background: #000;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); transition: transform 0.3s ease;
   }
   .zl-ti-embed-card:hover { transform: translateY(-5px); }
-
-  .zl-ti-iframe {
-    width: 100%; height: 100%; border: none; display: block; background: #000;
-  }
-
-  .zl-ti-loading-placeholder {
-    position: absolute; inset: 0;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .zl-ti-spinner {
-    width: 40px; height: 40px; animation: zl-spin 1s linear infinite; stroke: #999;
-  }
+  .zl-ti-iframe { width: 100%; height: 100%; border: none; display: block; background: #000; }
+  .zl-ti-loading-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+  .zl-ti-spinner { width: 40px; height: 40px; animation: zl-spin 1s linear infinite; stroke: #999; }
   @keyframes zl-spin { 100% { transform: rotate(360deg); } }
-
-  .zl-ti-handle {
-    position: absolute; top: 15px; left: 15px;
-    background: rgba(255,255,255,0.9);
-    padding: 4px 10px; border-radius: 20px;
-    font-size: 11px; font-weight: 700; color: #000;
-    z-index: 5; pointer-events: none;
-  }
+  .zl-ti-handle { position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.9); padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; color: #000; z-index: 5; pointer-events: none; }
 
   /* Nav Buttons */
   .zl-ti-nav-btn {
-    position: absolute; top: 50%; transform: translateY(-50%);
-    width: 40px; height: 40px; background: #fff; border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer; z-index: 10; transition: all 0.2s; color: #333;
+    position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; background: #fff; border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; transition: all 0.2s; color: #333;
   }
   .zl-ti-nav-btn:hover { background: #f8f8f8; }
   .zl-ti-prev { left: -20px; }
   .zl-ti-next { right: -20px; }
 
-  /* Bottom Bar - Now inside the right col */
+  /* Bottom Bar */
   .zl-ti-bottom-bar {
-    margin-top: 20px; 
-    background: #fff; 
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
-    padding: 15px 0; 
-    overflow: hidden; 
-    border: 1px solid #eee;
-    width: 100%; /* Fill the slider column width */
+    margin-top: 20px; background: #fff; border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 10px 0; overflow: hidden; border: 1px solid #eee; width: 100%;
   }
   .zl-ti-products-scroll {
-    display: flex; overflow-x: auto; gap: 15px; padding: 0 20px;
+    display: flex; overflow-x: auto; gap: 12px; padding: 0 15px;
     scrollbar-width: none; -ms-overflow-style: none;
   }
   .zl-ti-products-scroll::-webkit-scrollbar { display: none; }
   
-  .zl-ti-product-item { flex: 0 0 280px; background: #f9f9f9; border-radius: 8px; padding: 8px; }
-  .zl-ti-product-link { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
-  .zl-ti-prod-img-box { width: 48px; height: 48px; flex-shrink: 0; border-radius: 4px; overflow: hidden; background: #fff; }
+  /* PRODUCT CARD STYLE - CONTROLLED BY SCHEMA */
+  .zl-ti-product-item { 
+    /* This variable is set by the schema setting below */
+    flex: 0 0 {{ section.settings.product_card_width }}px; 
+    
+    background: #f9f9f9; border-radius: 8px; padding: 8px; 
+    transition: background 0.2s;
+  }
+  .zl-ti-product-item:hover { background: #f2f2f2; }
+
+  .zl-ti-product-link { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+  
+  .zl-ti-prod-img-box { 
+    width: 44px; height: 44px; flex-shrink: 0; 
+    border-radius: 4px; overflow: hidden; background: #fff; border: 1px solid #eee; 
+  }
   .zl-ti-prod-img-box img { width: 100%; height: 100%; object-fit: contain; }
-  .zl-ti-prod-info { flex: 1; overflow: hidden; }
-  .zl-ti-prod-title { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
-  .zl-ti-prod-price { font-size: 12px; color: #666; }
-  .zl-ti-prod-arrow { width: 24px; height: 24px; background: #000; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  
+  .zl-ti-prod-info { flex: 1; overflow: hidden; display: flex; flex-direction: column; justify-content: center; }
+  
+  .zl-ti-prod-title { 
+    font-size: 12px; font-weight: 600; 
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; 
+    margin-bottom: 2px; 
+    line-height: 1.2;
+  }
+  .zl-ti-prod-price { font-size: 11px; color: #666; }
+  
+  .zl-ti-prod-arrow { 
+    width: 20px; height: 20px; background: #000; color: #fff; 
+    border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; 
+  }
 
   @media (max-width: 900px) {
     .zl-ti-upper-wrapper { flex-direction: column; align-items: flex-start; gap: 20px; }
@@ -189,7 +183,6 @@
     .zl-ti-slider-col { width: 100%; margin-right: -20px; }
     .zl-ti-embed-card { width: 240px; height: 420px; } 
     .zl-ti-nav-btn { display: none; }
-    /* Ensure scroll works nicely on mobile edge */
     .zl-ti-bottom-bar { margin-left: -20px; margin-right: -20px; width: auto; border-radius: 0; border-left: none; border-right: none; }
   }
 </style>
@@ -219,7 +212,6 @@
       cards.forEach(function(card) {
         var url = card.getAttribute('data-url');
         var src = getEmbedSrc(url);
-        
         if (src) {
           var iframe = document.createElement('iframe');
           iframe.src = src;
@@ -278,6 +270,21 @@
 {
   "name": "ZL - TikTok Embed Slider",
   "settings": [
+    {
+      "type": "header",
+      "content": "Product Card Settings"
+    },
+    {
+      "type": "range",
+      "id": "product_card_width",
+      "label": "Product Card Width",
+      "min": 150,
+      "max": 400,
+      "step": 5,
+      "default": 220,
+      "unit": "px",
+      "info": "Adjust this to make product cards smaller or larger."
+    },
     {
       "type": "header",
       "content": "Text Content"
