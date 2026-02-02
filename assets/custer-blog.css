@@ -43,7 +43,7 @@
 
 @media (max-width: 768px) {
   .only-desktop { display: none; }
-  .only-mobile { display: block; padding:20px 15px;z-index: 222;
+  .only-mobile { display: block; padding:12px 15px;z-index: 222;
         position: relative;}
 }
 
