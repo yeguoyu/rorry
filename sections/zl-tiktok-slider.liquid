@@ -26,6 +26,7 @@
       </div>
 
       <div class="zl-ti-slider-col">
+        
         <div class="zl-ti-swiper swiper js-zl-ti-slider">
           <div class="swiper-wrapper">
             
@@ -33,12 +34,10 @@
               <div class="swiper-slide zl-ti-slide" {{ block.shopify_attributes }}>
                 
                 <div class="zl-ti-embed-card js-ti-embed-card" data-url="{{ block.settings.social_url }}">
-                  
                   <div class="zl-ti-loading-placeholder">
                     <svg class="zl-ti-spinner" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
                   </div>
-
-                  </div>
+                </div>
 
                 {% if block.settings.social_handle != blank %}
                   <div class="zl-ti-handle">
@@ -51,39 +50,39 @@
 
           </div>
           
-          {% comment %} <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev">
+          <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
           </div>
           <div class="zl-ti-nav-btn zl-ti-next js-ti-next">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-          </div> {% endcomment %}
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="zl-ti-bottom-bar">
-      <div class="zl-ti-products-scroll">
-        {% for block in section.blocks %}
-          {% assign product = block.settings.product %}
-          {% if product != blank %}
-            <div class="zl-ti-product-item">
-              <a href="{{ product.url }}" class="zl-ti-product-link">
-                <div class="zl-ti-prod-img-box">
-                  {{ product.featured_image | image_url: width: 120 | image_tag: loading: 'lazy' }}
+        <div class="zl-ti-bottom-bar">
+          <div class="zl-ti-products-scroll">
+            {% for block in section.blocks %}
+              {% assign product = block.settings.product %}
+              {% if product != blank %}
+                <div class="zl-ti-product-item">
+                  <a href="{{ product.url }}" class="zl-ti-product-link">
+                    <div class="zl-ti-prod-img-box">
+                      {{ product.featured_image | image_url: width: 120 | image_tag: loading: 'lazy' }}
+                    </div>
+                    <div class="zl-ti-prod-info">
+                      <div class="zl-ti-prod-title">{{ product.title }}</div>
+                      <div class="zl-ti-prod-price">{{ product.price | money }}</div>
+                    </div>
+                    <div class="zl-ti-prod-arrow">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                  </a>
                 </div>
-                <div class="zl-ti-prod-info">
-                  <div class="zl-ti-prod-title">{{ product.title }}</div>
-                  <div class="zl-ti-prod-price">{{ product.price | money }}</div>
-                </div>
-                <div class="zl-ti-prod-arrow">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </div>
-              </a>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+      </div> </div>
 
   </div>
 </section>
@@ -98,20 +97,21 @@
   }
   .zl-ti-container { max-width: {{ section.settings.container_width }}px; margin: 0 auto; padding: 0 20px; }
 
-
-  .zl-ti-upper-wrapper { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 40px; gap: 40px; }
+  /* Upper Layout: Changed align-items to flex-start to align text with top of videos */
+  .zl-ti-upper-wrapper { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 0; gap: 40px; }
   .zl-ti-text-col { flex: 0 0 30%; padding-right: 20px; }
   .zl-ti-slider-col { flex: 1; min-width: 0; position: relative; }
 
-
+  /* Typography */
   .zl-ti-subtitle { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; color: {{ section.settings.text_color }}; opacity: 0.7; }
   .zl-ti-heading { font-size: 46px; line-height: 1.1; font-weight: 700; margin: 0 0 20px 0; color: {{ section.settings.text_color }}; }
   .zl-ti-desc { font-size: 16px; line-height: 1.5; color: {{ section.settings.text_color }}; }
 
-  .zl-ti-swiper { overflow: hidden; }
+  /* Slider */
+  .zl-ti-swiper { overflow: hidden; padding: 10px 5px; /* Slight padding for shadows */ }
   .zl-ti-slide { width: auto; flex-shrink: 0; }
 
- 
+  /* Embed Card */
   .zl-ti-embed-card {
     position: relative;
     width: 280px; 
@@ -124,26 +124,18 @@
   }
   .zl-ti-embed-card:hover { transform: translateY(-5px); }
 
-
   .zl-ti-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-    background: #000;
+    width: 100%; height: 100%; border: none; display: block; background: #000;
   }
 
- 
   .zl-ti-loading-placeholder {
     position: absolute; inset: 0;
     display: flex; align-items: center; justify-content: center;
-    {% comment %} background: #f0f0f0; z-index: 0; {% endcomment %}
   }
   .zl-ti-spinner {
     width: 40px; height: 40px; animation: zl-spin 1s linear infinite; stroke: #999;
   }
   @keyframes zl-spin { 100% { transform: rotate(360deg); } }
-
 
   .zl-ti-handle {
     position: absolute; top: 15px; left: 15px;
@@ -153,6 +145,7 @@
     z-index: 5; pointer-events: none;
   }
 
+  /* Nav Buttons */
   .zl-ti-nav-btn {
     position: absolute; top: 50%; transform: translateY(-50%);
     width: 40px; height: 40px; background: #fff; border-radius: 50%;
@@ -163,15 +156,24 @@
   .zl-ti-nav-btn:hover { background: #f8f8f8; }
   .zl-ti-prev { left: -20px; }
   .zl-ti-next { right: -20px; }
+
+  /* Bottom Bar - Now inside the right col */
   .zl-ti-bottom-bar {
-    margin-top: 20px; background: #fff; border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 15px 0; overflow: hidden; border: 1px solid #eee;
+    margin-top: 20px; 
+    background: #fff; 
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05); 
+    padding: 15px 0; 
+    overflow: hidden; 
+    border: 1px solid #eee;
+    width: 100%; /* Fill the slider column width */
   }
   .zl-ti-products-scroll {
     display: flex; overflow-x: auto; gap: 15px; padding: 0 20px;
     scrollbar-width: none; -ms-overflow-style: none;
   }
   .zl-ti-products-scroll::-webkit-scrollbar { display: none; }
+  
   .zl-ti-product-item { flex: 0 0 280px; background: #f9f9f9; border-radius: 8px; padding: 8px; }
   .zl-ti-product-link { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
   .zl-ti-prod-img-box { width: 48px; height: 48px; flex-shrink: 0; border-radius: 4px; overflow: hidden; background: #fff; }
@@ -185,8 +187,10 @@
     .zl-ti-upper-wrapper { flex-direction: column; align-items: flex-start; gap: 20px; }
     .zl-ti-text-col { flex: 0 0 100%; width: 100%; padding-right: 0; }
     .zl-ti-slider-col { width: 100%; margin-right: -20px; }
-    .zl-ti-embed-card { width: 240px; height: 420px; } /* Smaller on mobile */
+    .zl-ti-embed-card { width: 240px; height: 420px; } 
     .zl-ti-nav-btn { display: none; }
+    /* Ensure scroll works nicely on mobile edge */
+    .zl-ti-bottom-bar { margin-left: -20px; margin-right: -20px; width: auto; border-radius: 0; border-left: none; border-right: none; }
   }
 </style>
 
@@ -195,30 +199,21 @@
     var root = document.getElementById('{{ section_id }}');
     if(!root) return;
 
-    // 1. Helper: Extract Video ID from URL
     function getEmbedSrc(url) {
       if (!url) return null;
-
-      // Instagram Logic
       if (url.includes('instagram.com')) {
-        // Appends /embed to the URL
         var cleanUrl = url.split('?')[0].replace(/\/$/, "");
         return cleanUrl + "/embed";
       }
-      
-      // TikTok Logic
       if (url.includes('tiktok.com')) {
-        // Extracts video ID: .../video/7574618250592488718...
         var match = url.match(/video\/(\d+)/);
         if (match && match[1]) {
           return "https://www.tiktok.com/embed/v2/" + match[1] + "?lang=en-US";
         }
       }
-      
       return null;
     }
 
-    // 2. Build IFrames
     function buildEmbeds() {
       var cards = root.querySelectorAll('.js-ti-embed-card');
       cards.forEach(function(card) {
@@ -232,18 +227,14 @@
           iframe.setAttribute('allowfullscreen', 'true');
           iframe.setAttribute('scrolling', 'no');
           iframe.setAttribute('frameborder', '0');
-          
-          // Clear spinner and append iframe
           card.innerHTML = ''; 
           card.appendChild(iframe);
         } else {
-          // If URL is invalid, keep spinner or show error
           console.warn('ZL Slider: Invalid Social URL', url);
         }
       });
     }
 
-    // 3. Swiper Logic
     function loadSwiperAssets() {
       if(window.Swiper) return Promise.resolve();
       var link = document.createElement('link'); link.rel = 'stylesheet'; link.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'; document.head.appendChild(link);
@@ -268,8 +259,8 @@
     }
 
     loadSwiperAssets().then(function(){
-      buildEmbeds(); // Inject IFrames
-      initSlider();  // Start Slider
+      buildEmbeds();
+      initSlider();
     });
 
     if (Shopify && Shopify.designMode) {
