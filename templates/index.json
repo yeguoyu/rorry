@@ -1262,6 +1262,60 @@
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "width_desktop": 180
       }
+    },
+    "zl_tiktok_slider_LaYkUz": {
+      "type": "zl-tiktok-slider",
+      "blocks": {
+        "video_slide_PX9Fpa": {
+          "type": "video_slide",
+          "settings": {
+            "social_handle": "@username",
+            "link": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
+            "product": "rorry-wcmb05-10000mah-3-in-1-wireless-charging-station"
+          }
+        },
+        "video_slide_AWQaDn": {
+          "type": "video_slide",
+          "settings": {
+            "social_handle": "@username",
+            "link": "https://www.instagram.com/reel/C_BETCCPFoJ/",
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block"
+          }
+        },
+        "video_slide_M8wJJi": {
+          "type": "video_slide",
+          "settings": {
+            "social_handle": "@username",
+            "link": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block"
+          }
+        },
+        "video_slide_cciKRi": {
+          "type": "video_slide",
+          "settings": {
+            "social_handle": "@username",
+            "link": "",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_slide_PX9Fpa",
+        "video_slide_AWQaDn",
+        "video_slide_M8wJJi",
+        "video_slide_cciKRi"
+      ],
+      "name": "ZL - TikTok Slider",
+      "settings": {
+        "subheading": "DON'T TAKE OUR WORD FOR IT",
+        "heading": "Meet the tools everyone's talking about",
+        "description": "",
+        "bg_color": "#FFFFFF",
+        "text_color": "#000000",
+        "container_width": 1300,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -1282,6 +1336,7 @@
     "multicolumn_with_icons_7aDRtB",
     "reveal_video_with_text_overlay_ggdaRP",
     "testimonials_knfAYg",
-    "rf_floating_video_7ghL8f"
+    "rf_floating_video_7ghL8f",
+    "zl_tiktok_slider_LaYkUz"
   ]
 }
