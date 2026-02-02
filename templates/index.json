@@ -1315,6 +1315,7 @@
         "review_Wy7KhW": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/a1.jpg",
             "review_title": "My favorite charger!",
             "stars": 5,
             "text": "Compact! Fits in purse easily. I like that it is compatible with both charger types so I can use on my phone and iPad. I use it when traveling for my Apple watch. Durable and great quality! Great value for the money!",
@@ -1324,6 +1325,7 @@
         "review_zMiABD": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/a2.jpg",
             "review_title": "Perfect for travel",
             "stars": 5,
             "text": "Amazing love it I used it to my trip to London and it was compact and no need to have wires it was all in one … great product",
@@ -1333,6 +1335,7 @@
         "review_jGji9i": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/a3.jpg",
             "review_title": "Compact, light weight, and charges quickly!",
             "stars": 5,
             "text": "Charges quickly and recharges my phone even more rapidly! It holds a charge for a reasonable amount of time. It is a good size but not heavy. It fits in a small bag without taking up too much space. It has two different types of adapters, which should fit most phone sizes.",
@@ -1342,6 +1345,7 @@
         "review_FHFM8r": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/a4.png",
             "review_title": "Durable, discreet design, well built",
             "stars": 5,
             "text": "I like their product line. I have total of 4 of them now and they work very well. With this bigger capacity, I can charge all my apple devices at the same time. This is perfect go-to powerbank for travel. Powder blue is fire!",
@@ -1351,6 +1355,7 @@
         "review_f43MnJ": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/a5.png",
             "review_title": "Portable Charger for All Apple Devices",
             "stars": 5,
             "text": "I am excited to have a portable charger that will charge me phone, my headphones AND my watch! As soon as I saw that it would charge my watch, I had to have it. I wouldn’t wear my watch to bed always because of the battery dying during the day. Now I can and I do! My portable charger works great!",
