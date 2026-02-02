@@ -1266,51 +1266,42 @@
     "zl_tiktok_slider_LaYkUz": {
       "type": "zl-tiktok-slider",
       "blocks": {
-        "video_slide_PX9Fpa": {
-          "type": "video_slide",
+        "embed_slide_TULGDm": {
+          "type": "embed_slide",
           "settings": {
+            "social_url": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
             "social_handle": "@username",
-            "link": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
-            "product": "rorry-wcmb05-10000mah-3-in-1-wireless-charging-station"
+            "product": ""
           }
         },
-        "video_slide_AWQaDn": {
-          "type": "video_slide",
+        "embed_slide_t6VaTf": {
+          "type": "embed_slide",
           "settings": {
+            "social_url": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
             "social_handle": "@username",
-            "link": "https://www.instagram.com/reel/C_BETCCPFoJ/",
-            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block"
+            "product": ""
           }
         },
-        "video_slide_M8wJJi": {
-          "type": "video_slide",
+        "embed_slide_CQqEM9": {
+          "type": "embed_slide",
           "settings": {
+            "social_url": "https://www.instagram.com/reel/C_BETCCPFoJ/",
             "social_handle": "@username",
-            "link": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
-            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block"
-          }
-        },
-        "video_slide_cciKRi": {
-          "type": "video_slide",
-          "settings": {
-            "social_handle": "@username",
-            "link": "",
             "product": ""
           }
         }
       },
       "block_order": [
-        "video_slide_PX9Fpa",
-        "video_slide_AWQaDn",
-        "video_slide_M8wJJi",
-        "video_slide_cciKRi"
+        "embed_slide_TULGDm",
+        "embed_slide_t6VaTf",
+        "embed_slide_CQqEM9"
       ],
       "name": "ZL - TikTok Slider",
       "settings": {
         "subheading": "DON'T TAKE OUR WORD FOR IT",
         "heading": "Meet the tools everyone's talking about",
         "description": "",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "text_color": "#000000",
         "container_width": 1300,
         "padding_top": 40,
