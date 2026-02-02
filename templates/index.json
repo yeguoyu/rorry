@@ -1308,6 +1308,75 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "zl_wall_reviews_Uc8Az4": {
+      "type": "zl-wall-reviews",
+      "blocks": {
+        "review_zMiABD": {
+          "type": "review",
+          "settings": {
+            "author": "Emily Taylor",
+            "stars": 5,
+            "review_title": "Love this product.",
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+          }
+        },
+        "review_Wy7KhW": {
+          "type": "review",
+          "settings": {
+            "author": "Emily Taylor",
+            "stars": 5,
+            "review_title": "Love this product.",
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+          }
+        },
+        "review_jGji9i": {
+          "type": "review",
+          "settings": {
+            "author": "Emily Taylor",
+            "stars": 5,
+            "review_title": "Love this product.",
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+          }
+        },
+        "review_FHFM8r": {
+          "type": "review",
+          "settings": {
+            "author": "Emily Taylor",
+            "stars": 5,
+            "review_title": "Love this product.",
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+          }
+        },
+        "review_f43MnJ": {
+          "type": "review",
+          "settings": {
+            "author": "Emily Taylor",
+            "stars": 5,
+            "review_title": "Love this product.",
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+          }
+        }
+      },
+      "block_order": [
+        "review_zMiABD",
+        "review_Wy7KhW",
+        "review_jGji9i",
+        "review_FHFM8r",
+        "review_f43MnJ"
+      ],
+      "name": "ZL - Wall of Love",
+      "settings": {
+        "heading": "Chosen by over 4.5 Million* Moms Worldwide",
+        "subtext": "*Data as of July 2025 from official platform",
+        "bg_color": "#FFFFFF",
+        "card_bg": "#FFF5F5",
+        "heading_color": "#000000",
+        "text_color": "#4A4A4A",
+        "star_color": "#A05E5E",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -1329,6 +1398,7 @@
     "reveal_video_with_text_overlay_ggdaRP",
     "testimonials_knfAYg",
     "rf_floating_video_7ghL8f",
-    "zl_tiktok_slider_LaYkUz"
+    "zl_tiktok_slider_LaYkUz",
+    "zl_wall_reviews_Uc8Az4"
   ]
 }
