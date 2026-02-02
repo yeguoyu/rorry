@@ -358,7 +358,7 @@
         "menu": "main-new",
         "menu_mobile": "",
         "menu_active": "block",
-        "hover_menu": false,
+        "hover_menu": true,
         "header_layout": "left-center",
         "sticky_header_type": "always",
         "icons_size": "lg",
