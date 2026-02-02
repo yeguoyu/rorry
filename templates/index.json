@@ -1266,12 +1266,20 @@
     "zl_tiktok_slider_LaYkUz": {
       "type": "zl-tiktok-slider",
       "blocks": {
+        "embed_slide_CQqEM9": {
+          "type": "embed_slide",
+          "settings": {
+            "social_url": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
+            "social_handle": "@username",
+            "product": "rorry-d2-5000mah-portable-charger-keychain-power-bank"
+          }
+        },
         "embed_slide_TULGDm": {
           "type": "embed_slide",
           "settings": {
             "social_url": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
             "social_handle": "@username",
-            "product": ""
+            "product": "rorry-d2-10000mah-pd-20w-portable-charger-keychain-power-bank"
           }
         },
         "embed_slide_t6VaTf": {
@@ -1279,22 +1287,14 @@
           "settings": {
             "social_url": "https://www.tiktok.com/@mandy_mae40/video/7574618250592488718",
             "social_handle": "@username",
-            "product": ""
-          }
-        },
-        "embed_slide_CQqEM9": {
-          "type": "embed_slide",
-          "settings": {
-            "social_url": "https://www.instagram.com/reel/C_BETCCPFoJ/",
-            "social_handle": "@username",
-            "product": ""
+            "product": "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank"
           }
         }
       },
       "block_order": [
+        "embed_slide_CQqEM9",
         "embed_slide_TULGDm",
-        "embed_slide_t6VaTf",
-        "embed_slide_CQqEM9"
+        "embed_slide_t6VaTf"
       ],
       "name": "ZL - TikTok Slider",
       "settings": {
