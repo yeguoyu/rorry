@@ -1,6 +1,6 @@
 {% comment %}
   Section: ZL TikTok Slider with Shoppable Bar
-  Description: A slider for social videos with a bottom product bar.
+  Description: Visual slider linking to social media, with a bottom product bar.
   Class Naming: zl-ti-*
 {% endcomment %}
 
@@ -33,19 +33,32 @@
             
             {% for block in section.blocks %}
               <div class="swiper-slide zl-ti-slide" {{ block.shopify_attributes }}>
-                <a href="{{ block.settings.link | default: '#' }}" class="zl-ti-video-card" target="_blank">
+                
+                {% comment %} 
+                  Logic: 
+                  1. If 'Video (MP4)' is uploaded, show it.
+                  2. Else if 'Cover Image' is uploaded, show it.
+                  3. The whole card links to 'Link to Social Post'.
+                {% endcomment %}
+                
+                <a href="{{ block.settings.link | default: '#' }}" class="zl-ti-video-card" target="_blank" aria-label="View on Social Media">
                   
                   <div class="zl-ti-media-wrapper">
                     {% if block.settings.video != blank %}
-                      {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'zl-ti-video' }}
+                      {% comment %} Shopify Hosted Video (MP4) {% endcomment %}
+                      {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, controls: false, class: 'zl-ti-video' }}
+                    
                     {% elsif block.settings.image != blank %}
+                      {% comment %} Cover Image (Static or GIF) {% endcomment %}
                       {{ block.settings.image | image_url: width: 600 | image_tag: class: 'zl-ti-image', loading: 'lazy' }}
+                    
                     {% else %}
+                      {% comment %} Fallback Placeholder {% endcomment %}
                       {{ 'collection-1' | placeholder_svg_tag: 'zl-ti-placeholder' }}
                     {% endif %}
                     
                     <div class="zl-ti-play-overlay">
-                      <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
                     </div>
                   </div>
 
@@ -59,8 +72,12 @@
             {% endfor %}
 
           </div>
-          <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev">←</div>
-          <div class="zl-ti-nav-btn zl-ti-next js-ti-next">→</div>
+          <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </div>
+          <div class="zl-ti-nav-btn zl-ti-next js-ti-next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </div>
         </div>
       </div>
     </div>
@@ -109,18 +126,18 @@
     padding: 0 20px;
   }
 
-  /* Upper Wrapper: Flexbox layout */
+  /* Upper Wrapper */
   .zl-ti-upper-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: center; /* Center vertically */
+    align-items: center;
     margin-bottom: 40px;
     gap: 40px;
   }
 
-  /* Left Text Column */
+  /* Left Text */
   .zl-ti-text-col {
-    flex: 0 0 30%; /* Occupy 30% width */
+    flex: 0 0 30%;
     padding-right: 20px;
   }
   .zl-ti-subtitle {
@@ -145,37 +162,38 @@
     color: {{ section.settings.text_color }};
   }
 
-  /* Right Slider Column */
+  /* Right Slider */
   .zl-ti-slider-col {
     flex: 1;
-    min-width: 0; /* Important for flex child overflow */
+    min-width: 0;
     position: relative;
   }
 
   .zl-ti-swiper {
-    padding: 10px; /* Space for shadows */
+    padding: 20px 10px; /* Space for shadow/hover */
     overflow: hidden;
   }
 
   .zl-ti-slide {
-    width: auto; /* Allow auto width based on aspect ratio */
+    width: auto;
     flex-shrink: 0;
   }
 
-  /* Video Card Styles */
+  /* Card */
   .zl-ti-video-card {
     display: block;
     position: relative;
-    width: 240px; /* Fixed width for portrait video look */
+    width: 240px; /* Fixed Portrait Width */
     aspect-ratio: 9 / 16;
     border-radius: 16px;
     overflow: hidden;
     background: #000;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     transition: transform 0.3s ease;
+    text-decoration: none;
   }
   .zl-ti-video-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
 
   .zl-ti-media-wrapper {
@@ -195,47 +213,49 @@
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px; height: 50px;
-    background: rgba(255,255,255,0.3);
+    width: 44px; height: 44px;
+    background: rgba(255,255,255,0.25);
     backdrop-filter: blur(4px);
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    pointer-events: none;
+    pointer-events: none; /* Let click pass through to link */
+    border: 1px solid rgba(255,255,255,0.4);
   }
 
-  /* Social Handle */
+  /* Handle */
   .zl-ti-handle {
     position: absolute;
     top: 15px; left: 15px;
     background: rgba(255,255,255,0.9);
-    padding: 4px 10px;
+    padding: 4px 12px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
     z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
 
-  /* Navigation Buttons */
+  /* Nav Buttons */
   .zl-ti-nav-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px; height: 40px;
+    width: 44px; height: 44px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     display: flex; align-items: center; justify-content: center;
     cursor: pointer;
     z-index: 10;
-    font-weight: bold;
-    transition: background 0.2s;
+    transition: all 0.2s;
+    color: #333;
   }
-  .zl-ti-nav-btn:hover { background: #f0f0f0; }
-  .zl-ti-prev { left: -20px; }
-  .zl-ti-next { right: -20px; }
+  .zl-ti-nav-btn:hover { background: #f8f8f8; transform: translateY(-50%) scale(1.05); }
+  .zl-ti-prev { left: -22px; }
+  .zl-ti-next { right: -22px; }
 
-  /* Bottom Bar: Shoppable Area */
+  /* Bottom Bar */
   .zl-ti-bottom-bar {
     margin-top: 20px;
     background: #fff;
@@ -249,21 +269,21 @@
   .zl-ti-products-scroll {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
+    gap: 15px;
     padding: 0 20px;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
-  .zl-ti-products-scroll::-webkit-scrollbar { 
-    display: none; /* Chrome/Safari */
-  }
+  .zl-ti-products-scroll::-webkit-scrollbar { display: none; }
 
   .zl-ti-product-item {
-    flex: 0 0 280px; /* Fixed width for product card */
+    flex: 0 0 280px;
     background: #f9f9f9;
     border-radius: 8px;
-    padding: 10px;
+    padding: 8px;
+    transition: background 0.2s;
   }
+  .zl-ti-product-item:hover { background: #f0f0f0; }
   
   .zl-ti-product-link {
     display: flex;
@@ -274,66 +294,40 @@
   }
 
   .zl-ti-prod-img-box {
-    width: 50px;
-    height: 50px;
+    width: 48px; height: 48px;
     flex-shrink: 0;
     border-radius: 4px;
     overflow: hidden;
     background: #fff;
+    border: 1px solid #eee;
   }
-  .zl-ti-prod-img-box img {
-    width: 100%; height: 100%; object-fit: contain;
-  }
+  .zl-ti-prod-img-box img { width: 100%; height: 100%; object-fit: contain; }
 
-  .zl-ti-prod-info {
-    flex: 1;
-    overflow: hidden;
-  }
+  .zl-ti-prod-info { flex: 1; overflow: hidden; }
   .zl-ti-prod-title {
-    font-size: 13px;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 13px; font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     margin-bottom: 2px;
   }
-  .zl-ti-prod-price {
-    font-size: 12px;
-    color: #666;
-  }
+  .zl-ti-prod-price { font-size: 12px; color: #666; }
   
   .zl-ti-prod-arrow {
     width: 24px; height: 24px;
-    background: {{ section.settings.text_color }}; /* Use heading color for accent */
+    background: #333;
     color: #fff;
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
   }
 
-  /* Responsive Mobile */
+  /* Mobile */
   @media (max-width: 900px) {
-    .zl-ti-upper-wrapper {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
-    }
-    .zl-ti-text-col {
-      flex: 0 0 100%;
-      width: 100%;
-      padding-right: 0;
-      text-align: left;
-    }
-    .zl-ti-slider-col {
-      width: 100%;
-    }
-    .zl-ti-video-card {
-      width: 180px; /* Smaller cards on mobile */
-    }
-    .zl-ti-heading {
-      font-size: 28px;
-    }
-    .zl-ti-nav-btn { display: none; } /* Hide arrows on mobile, swipe only */
+    .zl-ti-upper-wrapper { flex-direction: column; align-items: flex-start; gap: 24px; }
+    .zl-ti-text-col { flex: 0 0 100%; width: 100%; padding-right: 0; }
+    .zl-ti-slider-col { width: 100%; margin-right: -20px; /* Bleed right */ }
+    .zl-ti-video-card { width: 160px; /* Smaller on mobile */ }
+    .zl-ti-nav-btn { display: none; }
+    .zl-ti-bottom-bar { margin-left: -20px; margin-right: -20px; border-radius: 0; border-left: none; border-right: none; }
   }
 </style>
 
@@ -342,7 +336,6 @@
     var root = document.getElementById('{{ section_id }}');
     if(!root) return;
 
-    // Load Swiper if not already loaded
     function loadSwiperAssets() {
       if(window.Swiper) return Promise.resolve();
       var link = document.createElement('link');
@@ -365,8 +358,8 @@
       if(!sliderEl) return;
 
       new window.Swiper(sliderEl, {
-        slidesPerView: 'auto', // Adjusts based on slide width
-        spaceBetween: 16,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
         grabCursor: true,
         navigation: {
           nextEl: nextBtn,
@@ -374,7 +367,7 @@
         },
         breakpoints: {
           320: { spaceBetween: 12 },
-          900: { spaceBetween: 20 }
+          900: { spaceBetween: 24 }
         }
       });
     }
@@ -449,7 +442,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "default": 40,
+      "default": 60,
       "label": "Padding Top"
     },
     {
@@ -459,37 +452,38 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "default": 40,
+      "default": 60,
       "label": "Padding Bottom"
     }
   ],
   "blocks": [
     {
       "type": "video_slide",
-      "name": "TikTok/Video Slide",
+      "name": "Social Slide",
       "settings": [
-        {
-          "type": "video",
-          "id": "video",
-          "label": "Shopify Hosted Video (MP4)"
-        },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Cover Image (If no video)"
+          "label": "Cover Image (Recommended)",
+          "info": "Upload a screenshot or GIF of the video here."
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Shopify Hosted MP4 (Optional)",
+          "info": "Only use this if you uploaded an MP4 file to Shopify Files. External links won't work here."
         },
         {
           "type": "text",
           "id": "social_handle",
           "label": "Social Handle",
-          "default": "@username",
-          "info": "e.g. @alexa_de"
+          "default": "@username"
         },
         {
           "type": "url",
           "id": "link",
           "label": "Link to Social Post",
-          "info": "Clicking the card opens this link"
+          "info": "TikTok or Instagram URL. The card will link to this page."
         },
         {
           "type": "product",
