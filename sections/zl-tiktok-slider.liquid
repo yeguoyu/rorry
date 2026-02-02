@@ -1,0 +1,515 @@
+{% comment %}
+  Section: ZL TikTok Slider with Shoppable Bar
+  Description: A slider for social videos with a bottom product bar.
+  Class Naming: zl-ti-*
+{% endcomment %}
+
+{%- liquid
+  assign section_id = 'zl-ti-' | append: section.id
+-%}
+
+<section id="{{ section_id }}" class="zl-ti-section">
+  <div class="zl-ti-container">
+    
+    <div class="zl-ti-upper-wrapper">
+      
+      <div class="zl-ti-text-col">
+        {% if section.settings.subheading != blank %}
+          <div class="zl-ti-subtitle">{{ section.settings.subheading }}</div>
+        {% endif %}
+        
+        {% if section.settings.heading != blank %}
+          <h2 class="zl-ti-heading">{{ section.settings.heading }}</h2>
+        {% endif %}
+        
+        {% if section.settings.description != blank %}
+          <div class="zl-ti-desc">{{ section.settings.description }}</div>
+        {% endif %}
+      </div>
+
+      <div class="zl-ti-slider-col">
+        <div class="zl-ti-swiper swiper js-zl-ti-slider">
+          <div class="swiper-wrapper">
+            
+            {% for block in section.blocks %}
+              <div class="swiper-slide zl-ti-slide" {{ block.shopify_attributes }}>
+                <a href="{{ block.settings.link | default: '#' }}" class="zl-ti-video-card" target="_blank">
+                  
+                  <div class="zl-ti-media-wrapper">
+                    {% if block.settings.video != blank %}
+                      {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'zl-ti-video' }}
+                    {% elsif block.settings.image != blank %}
+                      {{ block.settings.image | image_url: width: 600 | image_tag: class: 'zl-ti-image', loading: 'lazy' }}
+                    {% else %}
+                      {{ 'collection-1' | placeholder_svg_tag: 'zl-ti-placeholder' }}
+                    {% endif %}
+                    
+                    <div class="zl-ti-play-overlay">
+                      <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                  </div>
+
+                  {% if block.settings.social_handle != blank %}
+                    <div class="zl-ti-handle">
+                      <span>@{{ block.settings.social_handle | remove: '@' }}</span>
+                    </div>
+                  {% endif %}
+                </a>
+              </div>
+            {% endfor %}
+
+          </div>
+          <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev">←</div>
+          <div class="zl-ti-nav-btn zl-ti-next js-ti-next">→</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="zl-ti-bottom-bar">
+      <div class="zl-ti-products-scroll">
+        {% for block in section.blocks %}
+          {% assign product = block.settings.product %}
+          {% if product != blank %}
+            <div class="zl-ti-product-item">
+              <a href="{{ product.url }}" class="zl-ti-product-link">
+                <div class="zl-ti-prod-img-box">
+                  {{ product.featured_image | image_url: width: 120 | image_tag: loading: 'lazy' }}
+                </div>
+                <div class="zl-ti-prod-info">
+                  <div class="zl-ti-prod-title">{{ product.title }}</div>
+                  <div class="zl-ti-prod-price">{{ product.price | money }}</div>
+                </div>
+                <div class="zl-ti-prod-arrow">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  /* --- Scoped CSS with zl-ti- prefix --- */
+  #{{ section_id }} * { box-sizing: border-box; }
+
+  #{{ section_id }}.zl-ti-section {
+    background-color: {{ section.settings.bg_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  .zl-ti-container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Upper Wrapper: Flexbox layout */
+  .zl-ti-upper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Center vertically */
+    margin-bottom: 40px;
+    gap: 40px;
+  }
+
+  /* Left Text Column */
+  .zl-ti-text-col {
+    flex: 0 0 30%; /* Occupy 30% width */
+    padding-right: 20px;
+  }
+  .zl-ti-subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.7;
+  }
+  .zl-ti-heading {
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: {{ section.settings.text_color }};
+  }
+  .zl-ti-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: {{ section.settings.text_color }};
+  }
+
+  /* Right Slider Column */
+  .zl-ti-slider-col {
+    flex: 1;
+    min-width: 0; /* Important for flex child overflow */
+    position: relative;
+  }
+
+  .zl-ti-swiper {
+    padding: 10px; /* Space for shadows */
+    overflow: hidden;
+  }
+
+  .zl-ti-slide {
+    width: auto; /* Allow auto width based on aspect ratio */
+    flex-shrink: 0;
+  }
+
+  /* Video Card Styles */
+  .zl-ti-video-card {
+    display: block;
+    position: relative;
+    width: 240px; /* Fixed width for portrait video look */
+    aspect-ratio: 9 / 16;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .zl-ti-video-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .zl-ti-media-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .zl-ti-video, .zl-ti-image, .zl-ti-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Play Overlay */
+  .zl-ti-play-overlay {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; height: 50px;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    pointer-events: none;
+  }
+
+  /* Social Handle */
+  .zl-ti-handle {
+    position: absolute;
+    top: 15px; left: 15px;
+    background: rgba(255,255,255,0.9);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    z-index: 2;
+  }
+
+  /* Navigation Buttons */
+  .zl-ti-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  .zl-ti-nav-btn:hover { background: #f0f0f0; }
+  .zl-ti-prev { left: -20px; }
+  .zl-ti-next { right: -20px; }
+
+  /* Bottom Bar: Shoppable Area */
+  .zl-ti-bottom-bar {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 15px 0;
+    overflow: hidden;
+    border: 1px solid #eee;
+  }
+
+  .zl-ti-products-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 0 20px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+  .zl-ti-products-scroll::-webkit-scrollbar { 
+    display: none; /* Chrome/Safari */
+  }
+
+  .zl-ti-product-item {
+    flex: 0 0 280px; /* Fixed width for product card */
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .zl-ti-product-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .zl-ti-prod-img-box {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .zl-ti-prod-img-box img {
+    width: 100%; height: 100%; object-fit: contain;
+  }
+
+  .zl-ti-prod-info {
+    flex: 1;
+    overflow: hidden;
+  }
+  .zl-ti-prod-title {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+  }
+  .zl-ti-prod-price {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .zl-ti-prod-arrow {
+    width: 24px; height: 24px;
+    background: {{ section.settings.text_color }}; /* Use heading color for accent */
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  /* Responsive Mobile */
+  @media (max-width: 900px) {
+    .zl-ti-upper-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .zl-ti-text-col {
+      flex: 0 0 100%;
+      width: 100%;
+      padding-right: 0;
+      text-align: left;
+    }
+    .zl-ti-slider-col {
+      width: 100%;
+    }
+    .zl-ti-video-card {
+      width: 180px; /* Smaller cards on mobile */
+    }
+    .zl-ti-heading {
+      font-size: 28px;
+    }
+    .zl-ti-nav-btn { display: none; } /* Hide arrows on mobile, swipe only */
+  }
+</style>
+
+<script>
+  (function(){
+    var root = document.getElementById('{{ section_id }}');
+    if(!root) return;
+
+    // Load Swiper if not already loaded
+    function loadSwiperAssets() {
+      if(window.Swiper) return Promise.resolve();
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
+      document.head.appendChild(link);
+      return new Promise(function(resolve) {
+        var script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+        script.onload = resolve;
+        document.head.appendChild(script);
+      });
+    }
+
+    function initSlider() {
+      var sliderEl = root.querySelector('.js-zl-ti-slider');
+      var prevBtn = root.querySelector('.js-ti-prev');
+      var nextBtn = root.querySelector('.js-ti-next');
+
+      if(!sliderEl) return;
+
+      new window.Swiper(sliderEl, {
+        slidesPerView: 'auto', // Adjusts based on slide width
+        spaceBetween: 16,
+        grabCursor: true,
+        navigation: {
+          nextEl: nextBtn,
+          prevEl: prevBtn,
+        },
+        breakpoints: {
+          320: { spaceBetween: 12 },
+          900: { spaceBetween: 20 }
+        }
+      });
+    }
+
+    loadSwiperAssets().then(function(){
+      initSlider();
+    });
+
+    if (Shopify && Shopify.designMode) {
+      document.addEventListener('shopify:section:load', function(e) {
+        if(e.target.id === '{{ section_id }}') initSlider();
+      });
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "ZL - TikTok Slider",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Text Content"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "DON'T TAKE OUR WORD FOR IT"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Meet the tools everyone's talking about"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1600,
+      "step": 20,
+      "default": 1300,
+      "unit": "px",
+      "label": "Container Width"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40,
+      "label": "Padding Top"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40,
+      "label": "Padding Bottom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_slide",
+      "name": "TikTok/Video Slide",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Shopify Hosted Video (MP4)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Cover Image (If no video)"
+        },
+        {
+          "type": "text",
+          "id": "social_handle",
+          "label": "Social Handle",
+          "default": "@username",
+          "info": "e.g. @alexa_de"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link to Social Post",
+          "info": "Clicking the card opens this link"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Linked Product",
+          "info": "This product will appear in the bottom bar"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZL - TikTok Slider",
+      "blocks": [
+        { "type": "video_slide" },
+        { "type": "video_slide" },
+        { "type": "video_slide" },
+        { "type": "video_slide" }
+      ]
+    }
+  ]
+}
+{% endschema %}
