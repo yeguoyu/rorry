@@ -51,12 +51,12 @@
 
           </div>
           
-          <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev">
+          {% comment %} <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
           </div>
           <div class="zl-ti-nav-btn zl-ti-next js-ti-next">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-          </div>
+          </div> {% endcomment %}
         </div>
       </div>
     </div>
@@ -98,25 +98,24 @@
   }
   .zl-ti-container { max-width: {{ section.settings.container_width }}px; margin: 0 auto; padding: 0 20px; }
 
-  /* Upper Layout */
+
   .zl-ti-upper-wrapper { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 40px; gap: 40px; }
   .zl-ti-text-col { flex: 0 0 30%; padding-right: 20px; }
   .zl-ti-slider-col { flex: 1; min-width: 0; position: relative; }
 
-  /* Typography */
+
   .zl-ti-subtitle { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; color: {{ section.settings.text_color }}; opacity: 0.7; }
   .zl-ti-heading { font-size: 46px; line-height: 1.1; font-weight: 700; margin: 0 0 20px 0; color: {{ section.settings.text_color }}; }
   .zl-ti-desc { font-size: 16px; line-height: 1.5; color: {{ section.settings.text_color }}; }
 
-  /* Slider */
   .zl-ti-swiper { padding: 20px 10px; overflow: hidden; }
   .zl-ti-slide { width: auto; flex-shrink: 0; }
 
-  /* --- Embed Card --- */
+ 
   .zl-ti-embed-card {
     position: relative;
-    width: 280px; /* Wider to accommodate IFrame UI */
-    height: 500px; /* Fixed height for uniformity */
+    width: 280px; 
+    height: 500px;
     border-radius: 16px;
     overflow: hidden;
     background: #000;
@@ -125,7 +124,7 @@
   }
   .zl-ti-embed-card:hover { transform: translateY(-5px); }
 
-  /* The IFrame injected by JS */
+
   .zl-ti-iframe {
     width: 100%;
     height: 100%;
@@ -134,7 +133,7 @@
     background: #000;
   }
 
-  /* Loading Spinner */
+ 
   .zl-ti-loading-placeholder {
     position: absolute; inset: 0;
     display: flex; align-items: center; justify-content: center;
@@ -145,7 +144,7 @@
   }
   @keyframes zl-spin { 100% { transform: rotate(360deg); } }
 
-  /* Handle Overlay */
+
   .zl-ti-handle {
     position: absolute; top: 15px; left: 15px;
     background: rgba(255,255,255,0.9);
@@ -154,7 +153,6 @@
     z-index: 5; pointer-events: none;
   }
 
-  /* Nav Buttons */
   .zl-ti-nav-btn {
     position: absolute; top: 50%; transform: translateY(-50%);
     width: 40px; height: 40px; background: #fff; border-radius: 50%;
@@ -165,8 +163,6 @@
   .zl-ti-nav-btn:hover { background: #f8f8f8; }
   .zl-ti-prev { left: -20px; }
   .zl-ti-next { right: -20px; }
-
-  /* Bottom Bar */
   .zl-ti-bottom-bar {
     margin-top: 20px; background: #fff; border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 15px 0; overflow: hidden; border: 1px solid #eee;
