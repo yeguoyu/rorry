@@ -950,56 +950,6 @@
         "rounded": false
       }
     },
-    "slideshow_PhWzBQ": {
-      "type": "slideshow",
-      "blocks": {
-        "image_9H8Ngb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Trust_endorsement_diagram-2.jpg",
-            "image_mobile": "shopify://shop_images/750x800-2.jpg",
-            "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "shopify://collections/power-banks",
-            "button_style": "primary",
-            "button_external": true,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "image_9H8Ngb"
-      ],
-      "custom_css": [
-        ".banner {max-width: 100%; border-radius: 0px;}"
-      ],
-      "settings": {
-        "autoplay": true,
-        "autoplay_speed": 3,
-        "show_navigation": true,
-        "image_height": "adapt",
-        "content_width": "small",
-        "image_height_mobile": "adapt",
-        "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ab9ce9",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#ffffff",
-        "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 32,
-        "divider": true,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
     "multicolumn_with_icons_7aDRtB": {
       "type": "multicolumn-with-icons",
       "blocks": {
@@ -1405,6 +1355,56 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "slideshow_PhWzBQ": {
+      "type": "slideshow",
+      "blocks": {
+        "image_9H8Ngb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Trust_endorsement_diagram-2.jpg",
+            "image_mobile": "shopify://shop_images/750x800-2.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://collections/power-banks",
+            "button_style": "primary",
+            "button_external": true,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "image_9H8Ngb"
+      ],
+      "custom_css": [
+        ".banner {max-width: 100%; border-radius: 0px;}"
+      ],
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ab9ce9",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": true,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
     }
   },
   "order": [
@@ -1421,12 +1421,12 @@
     "17335405975bc5cc52",
     "blog-posts-collage",
     "logo_list_APpgqX",
-    "slideshow_PhWzBQ",
     "multicolumn_with_icons_7aDRtB",
     "reveal_video_with_text_overlay_ggdaRP",
     "testimonials_knfAYg",
     "rf_floating_video_7ghL8f",
     "zl_tiktok_slider_LaYkUz",
-    "zl_wall_reviews_Uc8Az4"
+    "zl_wall_reviews_Uc8Az4",
+    "slideshow_PhWzBQ"
   ]
 }
