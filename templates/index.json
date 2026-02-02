@@ -1298,6 +1298,7 @@
       ],
       "name": "ZL - TikTok Slider",
       "settings": {
+        "product_card_width": 150,
         "subheading": "DON'T TAKE OUR WORD FOR IT",
         "heading": "Meet the tools everyone's talking about",
         "description": "",
