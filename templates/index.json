@@ -1315,46 +1315,46 @@
         "review_zMiABD": {
           "type": "review",
           "settings": {
-            "author": "Emily Taylor",
-            "stars": 5,
             "review_title": "Love this product.",
-            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+            "stars": 5,
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it.",
+            "author": "Emily Taylor"
           }
         },
         "review_Wy7KhW": {
           "type": "review",
           "settings": {
-            "author": "Emily Taylor",
+            "review_title": "",
             "stars": 5,
-            "review_title": "Love this product.",
-            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+            "text": "Compact! Fits in purse easily. I like that it is compatible with both charger types so I can use on my phone and iPad. I use it when traveling for my Apple watch. Durable and great quality! Great value for the money!",
+            "author": "My favorite charger!"
           }
         },
         "review_jGji9i": {
           "type": "review",
           "settings": {
-            "author": "Emily Taylor",
-            "stars": 5,
             "review_title": "Love this product.",
-            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+            "stars": 5,
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it.",
+            "author": "Emily Taylor"
           }
         },
         "review_FHFM8r": {
           "type": "review",
           "settings": {
-            "author": "Emily Taylor",
-            "stars": 5,
             "review_title": "Love this product.",
-            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+            "stars": 5,
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it.",
+            "author": "Emily Taylor"
           }
         },
         "review_f43MnJ": {
           "type": "review",
           "settings": {
-            "author": "Emily Taylor",
-            "stars": 5,
             "review_title": "Love this product.",
-            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it."
+            "stars": 5,
+            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it.",
+            "author": "Emily Taylor"
           }
         }
       },
@@ -1369,11 +1369,12 @@
       "settings": {
         "heading": "Chosen by over 4.5 Million* Moms Worldwide",
         "subtext": "*Data as of July 2025 from official platform",
-        "bg_color": "#FFFFFF",
-        "card_bg": "#FFF5F5",
+        "speed": 60,
+        "bg_color": "#ffffff",
+        "card_bg": "#fff5f5",
         "heading_color": "#000000",
-        "text_color": "#4A4A4A",
-        "star_color": "#A05E5E",
+        "text_color": "#4a4a4a",
+        "star_color": "#a05e5e",
         "padding_top": 60,
         "padding_bottom": 60
       }
