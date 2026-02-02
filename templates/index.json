@@ -1333,28 +1333,48 @@
         "review_jGji9i": {
           "type": "review",
           "settings": {
-            "review_title": "Love this product.",
+            "review_title": "Compact, light weight, and charges quickly!",
             "stars": 5,
-            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it.",
-            "author": "Emily Taylor"
+            "text": "Charges quickly and recharges my phone even more rapidly! It holds a charge for a reasonable amount of time. It is a good size but not heavy. It fits in a small bag without taking up too much space. It has two different types of adapters, which should fit most phone sizes.",
+            "author": "Emma"
           }
         },
         "review_FHFM8r": {
           "type": "review",
           "settings": {
-            "review_title": "Love this product.",
+            "review_title": "Durable, discreet design, well built",
             "stars": 5,
-            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it.",
-            "author": "Emily Taylor"
+            "text": "I like their product line. I have total of 4 of them now and they work very well. With this bigger capacity, I can charge all my apple devices at the same time. This is perfect go-to powerbank for travel. Powder blue is fire!",
+            "author": "KGI"
           }
         },
         "review_f43MnJ": {
           "type": "review",
           "settings": {
-            "review_title": "Love this product.",
+            "review_title": "Portable Charger for All Apple Devices",
             "stars": 5,
-            "text": "It works amazing sometimes you forget it's there so you pump longer without realizing it.",
-            "author": "Emily Taylor"
+            "text": "I am excited to have a portable charger that will charge me phone, my headphones AND my watch! As soon as I saw that it would charge my watch, I had to have it. I wouldn’t wear my watch to bed always because of the battery dying during the day. Now I can and I do! My portable charger works great!",
+            "author": "Violet"
+          }
+        },
+        "review_NzxpRH": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/a6.png",
+            "review_title": "Excellent",
+            "stars": 5,
+            "text": "I recently purchased this charger and I am thrilled with its performance! The charging function is perfect – it powers up my devices quickly and efficiently. The color is amazing, a vibrant shade that stands out and adds a stylish touch to my tech accessories. I highly recommend this product to everyone looking for a reliable and visually appealing charger.",
+            "author": "Luna"
+          }
+        },
+        "review_zr76A3": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/a7.png",
+            "review_title": "Love it!",
+            "stars": 5,
+            "text": "This product is great! I am a commuter college student and love taking trips so this is very practical since I can attach it to my bags. I love that it can charge both my phone and iPad for school and get a few charges before it needs to be recharged. Love it! I will probably end up buying mor",
+            "author": "Madison"
           }
         }
       },
@@ -1363,7 +1383,9 @@
         "review_zMiABD",
         "review_jGji9i",
         "review_FHFM8r",
-        "review_f43MnJ"
+        "review_f43MnJ",
+        "review_NzxpRH",
+        "review_zr76A3"
       ],
       "name": "ZL - Wall of Love",
       "settings": {
