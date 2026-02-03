@@ -210,9 +210,12 @@
         "divider_color": "#ffffff4d",
         "padding_top": 40,
         "padding_bottom": 40,
-        "title_size": 24,
+        "title_size": 20,
         "title_weight": "700",
-        "text_size": 16
+        "text_size": 16,
+        "mobile_title_size": 16,
+        "mobile_text_size": 12,
+        "mobile_cols": "2"
       }
     },
     "featured_collection_cGwE4X": {
