@@ -21,7 +21,7 @@
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "",
-            "button_link": "shopify://collections/power-banks",
+            "button_link": "shopify://collections",
             "button_style": "primary",
             "button_external": true,
             "button_icon": true
@@ -36,7 +36,7 @@
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "",
-            "button_link": "shopify://collections/power-banks",
+            "button_link": "shopify://collections/mini-keychain",
             "button_style": "primary",
             "button_external": true,
             "button_icon": true
@@ -51,7 +51,7 @@
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "",
-            "button_link": "shopify://collections/power-banks",
+            "button_link": "shopify://collections/wireless-chargers",
             "button_style": "primary",
             "button_external": true,
             "button_icon": true
