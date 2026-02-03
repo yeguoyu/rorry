@@ -1,0 +1,275 @@
+{% style %}
+  /* 动态生成 CSS 变量，关联后台设置 */
+  .zl-ico-section-{{ section.id }} {
+    --zl-ico-bg-color: {{ section.settings.bg_color }};
+    --zl-ico-text-color: {{ section.settings.text_color }};
+    --zl-ico-divider-color: {{ section.settings.divider_color }};
+    --zl-ico-title-size: {{ section.settings.title_size }}px;
+    --zl-ico-text-size: {{ section.settings.text_size }}px;
+    --zl-ico-title-weight: {{ section.settings.title_weight }};
+    
+    background-color: var(--zl-ico-bg-color);
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  .zl-ico-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* 顶部大图 */
+  .zl-ico-header-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .zl-ico-header-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* 下方 Grid 布局 */
+  .zl-ico-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .zl-ico-item {
+    flex: 1; /* 平均分配宽度 */
+    min-width: 160px; /* 防止过窄 */
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--zl-ico-text-color);
+  }
+
+  /* 垂直分割线：除了最后一个元素，其他都有 */
+  .zl-ico-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background-color: var(--zl-ico-divider-color);
+  }
+
+  /* 图标区域 */
+  .zl-ico-icon-wrap {
+    margin-bottom: 15px;
+    height: 40px; /* 固定高度，保证对齐 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .zl-ico-icon-img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* 标题 */
+  .zl-ico-title {
+    margin: 0 0 8px 0;
+    font-size: var(--zl-ico-title-size);
+    font-weight: var(--zl-ico-title-weight);
+    line-height: 1.2;
+  }
+
+  /* 文本描述 */
+  .zl-ico-text {
+    margin: 0;
+    font-size: var(--zl-ico-text-size);
+    opacity: 0.9;
+    line-height: 1.4;
+  }
+
+  /* 响应式：手机端 */
+  @media screen and (max-width: 768px) {
+    .zl-ico-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 手机端一行显示2个 */
+      gap: 30px 0;
+    }
+    
+    .zl-ico-item::after {
+      display: none; /* 手机端隐藏分割线 */
+    }
+    
+    .zl-ico-item {
+      padding: 0 10px;
+    }
+  }
+{% endstyle %}
+
+<div class="zl-ico-section-{{ section.id }}">
+  <div class="zl-ico-container">
+    
+    {% if section.settings.top_image != blank %}
+      <div class="zl-ico-header-wrapper">
+        {{ section.settings.top_image | image_url: width: 800 | image_tag: class: 'zl-ico-header-img', loading: 'lazy', alt: section.settings.top_image.alt }}
+      </div>
+    {% endif %}
+
+    <div class="zl-ico-grid">
+      {% for block in section.blocks %}
+        <div class="zl-ico-item" {{ block.shopify_attributes }}>
+          
+          <div class="zl-ico-icon-wrap">
+            {% if block.settings.icon_image != blank %}
+              {{ block.settings.icon_image | image_url: width: 100 | image_tag: class: 'zl-ico-icon-img', loading: 'lazy' }}
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'zl-ico-icon-img' }}
+            {% endif %}
+          </div>
+
+          <h3 class="zl-ico-title">{{ block.settings.title }}</h3>
+
+          <p class="zl-ico-text">{{ block.settings.text }}</p>
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZL Brand Features",
+  "settings": [
+    {
+      "type": "header",
+      "content": "顶部大图设置"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_image",
+      "label": "上传顶部图片 (NO.1 Image)"
+    },
+    {
+      "type": "header",
+      "content": "颜色与排版"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "背景颜色",
+      "default": "#9e87c3"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "文字颜色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "分割线颜色",
+      "default": "rgba(255,255,255,0.3)"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "上边距",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "下边距",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "文字设置"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 12,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "标题字号",
+      "default": 18
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "标题字重",
+      "options": [
+        { "value": "400", "label": "常规 (Regular)" },
+        { "value": "600", "label": "半粗 (Semi Bold)" },
+        { "value": "700", "label": "粗体 (Bold)" },
+        { "value": "900", "label": "特粗 (Black)" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "描述文字字号",
+      "default": 13
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature_item",
+      "name": "图标项 (Feature)",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "上传图标 (建议 PNG/SVG)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "标题",
+          "default": "No.1 Brand"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "描述文本",
+          "default": "On Tiktok Power Bank Category"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZL Brand Features",
+      "blocks": [
+        { "type": "feature_item" },
+        { "type": "feature_item" },
+        { "type": "feature_item" },
+        { "type": "feature_item" }
+      ]
+    }
+  ]
+}
+{% endschema %}
