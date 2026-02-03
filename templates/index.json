@@ -1483,6 +1483,92 @@
         "enable_parallax": false,
         "parallax_direction": "vertical"
       }
+    },
+    "zl_pick_features_Na6Xba": {
+      "type": "zl-pick-features",
+      "blocks": {
+        "item_eig3UW": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/60x60_-_1.png",
+            "title": "Free Shipping",
+            "text": "Multi-local warehouse shipping",
+            "is_wide": false
+          }
+        },
+        "item_ENVAMG": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/60x60_-_2.png",
+            "title": "Free Shipping",
+            "text": "Multi-local warehouse shipping",
+            "is_wide": false
+          }
+        },
+        "item_yibHWP": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/60x60_-_3.png",
+            "title": "Free Shipping",
+            "text": "Multi-local warehouse shipping",
+            "is_wide": false
+          }
+        },
+        "item_ffzW7V": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/60x60_-_4.png",
+            "title": "Free Shipping",
+            "text": "Multi-local warehouse shipping",
+            "is_wide": false
+          }
+        },
+        "item_EjWeNc": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/60x60_-_5.png",
+            "title": "RORRY 12-Month Protection",
+            "text": "Multi-local warehouse shipping",
+            "is_wide": true
+          }
+        },
+        "item_wiFAgU": {
+          "type": "item",
+          "settings": {
+            "icon": "shopify://shop_images/60x60_-_6.png",
+            "title": "30 DAYS Returns",
+            "text": "Multi-local warehouse shipping",
+            "is_wide": true
+          }
+        }
+      },
+      "block_order": [
+        "item_eig3UW",
+        "item_ENVAMG",
+        "item_yibHWP",
+        "item_ffzW7V",
+        "item_EjWeNc",
+        "item_wiFAgU"
+      ],
+      "name": "ZL Pick Features",
+      "settings": {
+        "title": "What Makes RORRY Power Banks Worth Your Pick",
+        "page_bg_color": "#ffffff",
+        "title_color": "#9e87c3",
+        "card_bg_color": "#9e87c3",
+        "text_color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "icon_size": 40,
+        "border_radius": 8,
+        "main_title_size": 32,
+        "card_title_size": 18,
+        "card_desc_size": 14,
+        "mobile_cols": "2",
+        "mob_main_title_size": 24,
+        "mob_card_title_size": 16,
+        "mob_card_desc_size": 12
+      }
     }
   },
   "order": [
@@ -1506,6 +1592,7 @@
     "rf_floating_video_7ghL8f",
     "zl_tiktok_slider_LaYkUz",
     "zl_wall_reviews_Uc8Az4",
-    "slideshow_PhWzBQ"
+    "slideshow_PhWzBQ",
+    "zl_pick_features_Na6Xba"
   ]
 }
