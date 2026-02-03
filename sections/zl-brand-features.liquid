@@ -1,5 +1,4 @@
 {% style %}
-
   .zl-ico-section-{{ section.id }} {
     --zl-ico-bg-color: {{ section.settings.bg_color }};
     --zl-ico-text-color: {{ section.settings.text_color }};
@@ -7,6 +6,8 @@
     --zl-ico-title-size: {{ section.settings.title_size }}px;
     --zl-ico-text-size: {{ section.settings.text_size }}px;
     --zl-ico-title-weight: {{ section.settings.title_weight }};
+    --zl-ico-mobile-title-size: {{ section.settings.mobile_title_size }}px;
+    --zl-ico-mobile-text-size: {{ section.settings.mobile_text_size }}px;
     
     background-color: var(--zl-ico-bg-color);
     padding-top: {{ section.settings.padding_top }}px;
@@ -20,15 +21,15 @@
     padding: 0 20px;
   }
 
- 
   .zl-ico-header-wrapper {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
   }
+  
   .zl-ico-header-img {
     max-width: 100%;
-    width:360px;
+    width: 360px;
     height: auto;
     display: block;
   }
@@ -37,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .zl-ico-item {
@@ -52,17 +53,17 @@
     color: var(--zl-ico-text-color);
   }
 
- 
   .zl-ico-item:not(:last-child)::after {
     content: '';
     position: absolute;
     right: 0;
-    top: 10%;
-    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
     width: 1px;
     background-color: var(--zl-ico-divider-color);
+    opacity: 0.6;
   }
-
 
   .zl-ico-icon-wrap {
     margin-bottom: 15px;
@@ -71,34 +72,35 @@
     align-items: center;
     justify-content: center;
   }
+
   .zl-ico-icon-img {
     height: 100%;
     width: auto;
     object-fit: contain;
   }
 
-
   .zl-ico-title {
     margin: 0 0 8px 0;
     font-size: var(--zl-ico-title-size);
     font-weight: var(--zl-ico-title-weight);
     line-height: 1.2;
-    color:#fff;
+    color: #fff;
+    flex-grow: 0;
   }
-
 
   .zl-ico-text {
     margin: 0;
     font-size: var(--zl-ico-text-size);
     opacity: 0.9;
     line-height: 1.4;
+    flex-grow: 0;
   }
-
 
   @media screen and (max-width: 768px) {
     .zl-ico-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); 
+      grid-template-columns: repeat({{ section.settings.mobile_cols }}, 1fr);
+      gap: 30px 0;
     }
     
     .zl-ico-item::after {
@@ -107,6 +109,14 @@
     
     .zl-ico-item {
       padding: 0 10px;
+    }
+
+    .zl-ico-title {
+      font-size: var(--zl-ico-mobile-title-size);
+    }
+
+    .zl-ico-text {
+      font-size: var(--zl-ico-mobile-text-size);
     }
   }
 {% endstyle %}
@@ -133,7 +143,6 @@
           </div>
 
           <h3 class="zl-ico-title">{{ block.settings.title }}</h3>
-
           <p class="zl-ico-text">{{ block.settings.text }}</p>
 
         </div>
@@ -154,7 +163,7 @@
     {
       "type": "image_picker",
       "id": "top_image",
-      "label": "上传顶部图片 (NO.1 Image)"
+      "label": "上传顶部图片"
     },
     {
       "type": "header",
@@ -200,7 +209,7 @@
     },
     {
       "type": "header",
-      "content": "文字设置"
+      "content": "PC端文字设置"
     },
     {
       "type": "range",
@@ -217,10 +226,10 @@
       "id": "title_weight",
       "label": "标题字重",
       "options": [
-        { "value": "400", "label": "常规 (Regular)" },
-        { "value": "600", "label": "半粗 (Semi Bold)" },
-        { "value": "700", "label": "粗体 (Bold)" },
-        { "value": "900", "label": "特粗 (Black)" }
+        { "value": "400", "label": "常规" },
+        { "value": "600", "label": "半粗" },
+        { "value": "700", "label": "粗体" },
+        { "value": "900", "label": "特粗" }
       ],
       "default": "700"
     },
@@ -233,17 +242,51 @@
       "unit": "px",
       "label": "描述文字字号",
       "default": 13
+    },
+    {
+      "type": "header",
+      "content": "移动端设置"
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "移动端标题字号",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "移动端描述字号",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "mobile_cols",
+      "label": "移动端列数",
+      "options": [
+        { "value": "1", "label": "1 列" },
+        { "value": "2", "label": "2 列" }
+      ],
+      "default": "2"
     }
   ],
   "blocks": [
     {
       "type": "feature_item",
-      "name": "图标项 (Feature)",
+      "name": "图标项",
       "settings": [
         {
           "type": "image_picker",
           "id": "icon_image",
-          "label": "上传图标 (建议 PNG/SVG)"
+          "label": "上传图标"
         },
         {
           "type": "text",
