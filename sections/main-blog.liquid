@@ -10,6 +10,7 @@
 <script src="{{ 'blog.js' | asset_url }}" defer></script>
 
 {%- paginate blog.articles by section.settings.per_page -%}
+  {%- render 'blog-nav' -%}
   <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
     <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
       <div class="title-wrapper{% if section.settings.heading_size == 'title-xl' %} title-wrapper-lg{% endif %} {{ section.settings.heading_alignment }} grid gap-4">
