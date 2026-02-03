@@ -213,8 +213,8 @@
         "title_size": 20,
         "title_weight": "700",
         "text_size": 16,
-        "mobile_title_size": 16,
-        "mobile_text_size": 12,
+        "mobile_title_size": 18,
+        "mobile_text_size": 14,
         "mobile_cols": "2"
       }
     },
