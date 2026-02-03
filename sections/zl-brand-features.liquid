@@ -1,5 +1,5 @@
 {% style %}
-  /* 动态生成 CSS 变量，关联后台设置 */
+
   .zl-ico-section-{{ section.id }} {
     --zl-ico-bg-color: {{ section.settings.bg_color }};
     --zl-ico-text-color: {{ section.settings.text_color }};
@@ -20,7 +20,7 @@
     padding: 0 20px;
   }
 
-  /* 顶部大图 */
+ 
   .zl-ico-header-wrapper {
     display: flex;
     justify-content: center;
@@ -33,7 +33,6 @@
     display: block;
   }
 
-  /* 下方 Grid 布局 */
   .zl-ico-grid {
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +41,8 @@
   }
 
   .zl-ico-item {
-    flex: 1; /* 平均分配宽度 */
-    min-width: 160px; /* 防止过窄 */
+    flex: 1; 
+    min-width: 160px; 
     padding: 0 20px;
     position: relative;
     display: flex;
@@ -53,7 +52,7 @@
     color: var(--zl-ico-text-color);
   }
 
-  /* 垂直分割线：除了最后一个元素，其他都有 */
+ 
   .zl-ico-item:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -64,10 +63,10 @@
     background-color: var(--zl-ico-divider-color);
   }
 
-  /* 图标区域 */
+
   .zl-ico-icon-wrap {
     margin-bottom: 15px;
-    height: 40px; /* 固定高度，保证对齐 */
+    height: 40px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,15 +77,16 @@
     object-fit: contain;
   }
 
-  /* 标题 */
+
   .zl-ico-title {
     margin: 0 0 8px 0;
     font-size: var(--zl-ico-title-size);
     font-weight: var(--zl-ico-title-weight);
     line-height: 1.2;
+    font-color:#fff;
   }
 
-  /* 文本描述 */
+
   .zl-ico-text {
     margin: 0;
     font-size: var(--zl-ico-text-size);
@@ -94,16 +94,15 @@
     line-height: 1.4;
   }
 
-  /* 响应式：手机端 */
+
   @media screen and (max-width: 768px) {
     .zl-ico-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 手机端一行显示2个 */
-      gap: 30px 0;
+      grid-template-columns: repeat(2, 1fr); 
     }
     
     .zl-ico-item::after {
-      display: none; /* 手机端隐藏分割线 */
+      display: none; 
     }
     
     .zl-ico-item {

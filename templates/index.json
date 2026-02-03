@@ -148,48 +148,48 @@
           "type": "feature_item",
           "settings": {
             "icon_image": "shopify://shop_images/40x40_-_1.png",
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
+            "title": "NO.1 Brand",
+            "text": "On Tiktok's Power Bank Category"
           }
         },
         "feature_item_nydBGy": {
           "type": "feature_item",
           "settings": {
             "icon_image": "shopify://shop_images/40x40_-_2.png",
-            "title": "ㄒ飄奨舭漂庥囹驶4+ Countries",
-            "text": "On Tiktok Power Bank Category"
+            "title": "174+ Countries",
+            "text": "Worldwide Sales"
           }
         },
         "feature_item_PjxPRH": {
           "type": "feature_item",
           "settings": {
             "icon_image": "shopify://shop_images/40x40_-_3.png",
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
+            "title": "15 Million+ Users",
+            "text": "Loved for On-the-Go Charging"
           }
         },
         "feature_item_i8mCJy": {
           "type": "feature_item",
           "settings": {
             "icon_image": "shopify://shop_images/40x40_-_4.png",
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
+            "title": "5 Years",
+            "text": "Designed for Women,More Safer More Stylish"
           }
         },
         "feature_item_6UBBzN": {
           "type": "feature_item",
           "settings": {
             "icon_image": "shopify://shop_images/40x40_-_5.png",
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
+            "title": "4.9 Trustpilot",
+            "text": "Highly Rated on Trustpilot for Quality"
           }
         },
         "feature_item_PrLjFk": {
           "type": "feature_item",
           "settings": {
             "icon_image": "shopify://shop_images/40x40_-_6.png",
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
+            "title": "12-Months RORRY Care",
+            "text": "Market's Reliable Warranty"
           }
         }
       },
@@ -207,7 +207,7 @@
         "top_image": "shopify://shop_images/360x120.png",
         "bg_color": "#9887b8",
         "text_color": "#ffffff",
-        "divider_color": "rgba(255,255,255,0.3)",
+        "divider_color": "#ffffff4d",
         "padding_top": 40,
         "padding_bottom": 40,
         "title_size": 18,
