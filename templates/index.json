@@ -1456,6 +1456,7 @@
       "block_order": [
         "image_9H8Ngb"
       ],
+      "disabled": true,
       "custom_css": [
         ".banner {max-width: 100%; border-radius: 0px;}"
       ],
@@ -1554,8 +1555,8 @@
       "settings": {
         "title": "What Makes RORRY Power Banks Worth Your Pick",
         "page_bg_color": "#ffffff",
-        "title_color": "#9e87c3",
-        "card_bg_color": "#9e87c3",
+        "title_color": "#9887b8",
+        "card_bg_color": "#9887b8",
         "text_color": "#ffffff",
         "padding_top": 40,
         "padding_bottom": 40,
