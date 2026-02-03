@@ -1,0 +1,417 @@
+{% style %}
+  .zl-pick-section-{{ section.id }} {
+    --zl-pick-page-bg: {{ section.settings.page_bg_color }};
+    --zl-pick-card-bg: {{ section.settings.card_bg_color }};
+    --zl-pick-text-color: {{ section.settings.text_color }};
+    --zl-pick-title-color: {{ section.settings.title_color }};
+    
+    --zl-pick-icon-size: {{ section.settings.icon_size }}px;
+    --zl-pick-border-radius: {{ section.settings.border_radius }}px;
+    
+    --zl-pick-main-title-size: {{ section.settings.main_title_size }}px;
+    --zl-pick-card-title-size: {{ section.settings.card_title_size }}px;
+    --zl-pick-card-desc-size: {{ section.settings.card_desc_size }}px;
+    
+    --zl-pick-mob-main-title-size: {{ section.settings.mob_main_title_size }}px;
+    --zl-pick-mob-card-title-size: {{ section.settings.mob_card_title_size }}px;
+    --zl-pick-mob-card-desc-size: {{ section.settings.mob_card_desc_size }}px;
+
+    background-color: var(--zl-pick-page-bg);
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  .zl-pick-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .zl-pick-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .zl-pick-main-title {
+    color: var(--zl-pick-title-color);
+    font-size: var(--zl-pick-main-title-size);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .zl-pick-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .zl-pick-item {
+    background-color: var(--zl-pick-card-bg);
+    border-radius: var(--zl-pick-border-radius);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--zl-pick-text-color);
+    width: calc(25% - 15px);
+    box-sizing: border-box;
+  }
+
+  .zl-pick-item.zl-pick-wide {
+    width: calc(50% - 10px);
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+    padding: 30px 40px;
+  }
+
+  .zl-pick-item.zl-pick-wide .zl-pick-content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .zl-pick-icon-wrap {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--zl-pick-icon-size);
+    height: var(--zl-pick-icon-size);
+    flex-shrink: 0;
+  }
+
+  .zl-pick-item.zl-pick-wide .zl-pick-icon-wrap {
+    margin-bottom: 0;
+  }
+
+  .zl-pick-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .zl-pick-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .zl-pick-card-title {
+    font-size: var(--zl-pick-card-title-size);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color:#fff;
+  }
+
+  .zl-pick-card-desc {
+    font-size: var(--zl-pick-card-desc-size);
+    line-height: 1.4;
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 900px) {
+    .zl-pick-item {
+      width: calc(50% - 10px);
+    }
+    .zl-pick-item.zl-pick-wide {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .zl-pick-main-title {
+      font-size: var(--zl-pick-mob-main-title-size);
+    }
+    
+    .zl-pick-card-title {
+      font-size: var(--zl-pick-mob-card-title-size);
+    }
+    
+    .zl-pick-card-desc {
+      font-size: var(--zl-pick-mob-card-desc-size);
+    }
+
+    .zl-pick-grid {
+      gap: 10px;
+    }
+
+    .zl-pick-item {
+      padding: 20px 15px;
+      {% if section.settings.mobile_cols == '1' %}
+        width: 100%;
+      {% else %}
+        width: calc(50% - 5px);
+      {% endif %}
+    }
+
+    .zl-pick-item.zl-pick-wide {
+      width: 100%;
+      flex-direction: column; 
+      text-align: center;
+      gap: 10px;
+    }
+    
+    .zl-pick-item.zl-pick-wide .zl-pick-content {
+      align-items: center;
+      text-align: center;
+    }
+
+    .zl-pick-item.zl-pick-wide .zl-pick-icon-wrap {
+      margin-bottom: 5px;
+    }
+  }
+{% endstyle %}
+
+<div class="zl-pick-section-{{ section.id }}">
+  <div class="zl-pick-container">
+    
+    {% if section.settings.title != blank %}
+      <div class="zl-pick-header">
+        <h2 class="zl-pick-main-title">{{ section.settings.title }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="zl-pick-grid">
+      {% for block in section.blocks %}
+        <div class="zl-pick-item {% if block.settings.is_wide %}zl-pick-wide{% endif %}" {{ block.shopify_attributes }}>
+          
+          <div class="zl-pick-icon-wrap">
+            {% if block.settings.icon != blank %}
+              {{ block.settings.icon | image_url: width: 200 | image_tag: class: 'zl-pick-icon-img', loading: 'lazy' }}
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'zl-pick-icon-img' }}
+            {% endif %}
+          </div>
+
+          <div class="zl-pick-content">
+            {% if block.settings.title != blank %}
+              <h3 class="zl-pick-card-title">{{ block.settings.title }}</h3>
+            {% endif %}
+            
+            {% if block.settings.text != blank %}
+              <p class="zl-pick-card-desc">{{ block.settings.text }}</p>
+            {% endif %}
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZL Pick Features",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "主标题",
+      "default": "What Makes RORRY Power Banks Worth Your Pick"
+    },
+    {
+      "type": "header",
+      "content": "颜色设置"
+    },
+    {
+      "type": "color",
+      "id": "page_bg_color",
+      "label": "页面背景色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "主标题颜色",
+      "default": "#9e87c3"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "卡片背景色",
+      "default": "#9e87c3"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "卡片文字/图标颜色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "尺寸与间距"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "上边距",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "下边距",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "图标大小",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "卡片圆角",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "PC端文字大小"
+    },
+    {
+      "type": "range",
+      "id": "main_title_size",
+      "min": 20,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "主标题字号",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "card_title_size",
+      "min": 14,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "卡片标题字号",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "card_desc_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "卡片描述字号",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "移动端设置"
+    },
+    {
+      "type": "select",
+      "id": "mobile_cols",
+      "label": "移动端排列列数",
+      "options": [
+        { "value": "1", "label": "1 列 (单排)" },
+        { "value": "2", "label": "2 列 (双排)" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "mob_main_title_size",
+      "min": 16,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "移动端主标题字号",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mob_card_title_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "移动端卡片标题字号",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mob_card_desc_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "移动端卡片描述字号",
+      "default": 12
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "功能项 (Feature)",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "图标"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "标题",
+          "default": "Free Shipping"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "描述",
+          "default": "Multi-local warehouse shipping"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_wide",
+          "label": "设为宽卡片 (占两列)",
+          "default": false,
+          "info": "勾选后该卡片在PC端将占据50%宽度，适合底部展示。"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZL Pick Features",
+      "blocks": [
+        { "type": "item" },
+        { "type": "item" },
+        { "type": "item" },
+        { "type": "item" },
+        { "type": "item", "settings": { "is_wide": true, "title": "RORRY 12-Month Protection" } },
+        { "type": "item", "settings": { "is_wide": true, "title": "30 DAYS Returns" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
