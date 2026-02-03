@@ -141,6 +141,79 @@
         "parallax_direction": "vertical"
       }
     },
+    "zl_brand_features_BdQm6U": {
+      "type": "zl-brand-features",
+      "blocks": {
+        "feature_item_DAXjUW": {
+          "type": "feature_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/40x40_-_1.png",
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        },
+        "feature_item_nydBGy": {
+          "type": "feature_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/40x40_-_2.png",
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        },
+        "feature_item_PjxPRH": {
+          "type": "feature_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/40x40_-_3.png",
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        },
+        "feature_item_i8mCJy": {
+          "type": "feature_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/40x40_-_4.png",
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        },
+        "feature_item_6UBBzN": {
+          "type": "feature_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/40x40_-_5.png",
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        },
+        "feature_item_PrLjFk": {
+          "type": "feature_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/40x40_-_6.png",
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_DAXjUW",
+        "feature_item_nydBGy",
+        "feature_item_PjxPRH",
+        "feature_item_i8mCJy",
+        "feature_item_6UBBzN",
+        "feature_item_PrLjFk"
+      ],
+      "name": "ZL Brand Features",
+      "settings": {
+        "top_image": "shopify://shop_images/360x120.png",
+        "bg_color": "#9e87c3",
+        "text_color": "#ffffff",
+        "divider_color": "rgba(255,255,255,0.3)",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "title_size": 18,
+        "title_weight": "700",
+        "text_size": 13
+      }
+    },
     "featured_collection_cGwE4X": {
       "type": "featured-collection",
       "settings": {
@@ -1410,6 +1483,7 @@
   "order": [
     "slideshow",
     "slideshow_UBfjb7",
+    "zl_brand_features_BdQm6U",
     "featured_collection_cGwE4X",
     "blog_posts_GgU9iL",
     "collection_list_fLHcjP",
