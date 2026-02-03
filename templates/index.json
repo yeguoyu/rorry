@@ -156,7 +156,7 @@
           "type": "feature_item",
           "settings": {
             "icon_image": "shopify://shop_images/40x40_-_2.png",
-            "title": "No.1 Brand",
+            "title": "ㄒ飄奨舭漂庥囹驶4+ Countries",
             "text": "On Tiktok Power Bank Category"
           }
         },
@@ -201,10 +201,11 @@
         "feature_item_6UBBzN",
         "feature_item_PrLjFk"
       ],
+      "custom_css": [],
       "name": "ZL Brand Features",
       "settings": {
         "top_image": "shopify://shop_images/360x120.png",
-        "bg_color": "#9e87c3",
+        "bg_color": "#9887b8",
         "text_color": "#ffffff",
         "divider_color": "rgba(255,255,255,0.3)",
         "padding_top": 40,
