@@ -1456,7 +1456,6 @@
       "block_order": [
         "image_9H8Ngb"
       ],
-      "disabled": true,
       "custom_css": [
         ".banner {max-width: 100%; border-radius: 0px;}"
       ],
@@ -1501,8 +1500,8 @@
           "type": "item",
           "settings": {
             "icon": "shopify://shop_images/60x60_-_2.png",
-            "title": "Free Shipping",
-            "text": "Multi-local warehouse shipping",
+            "title": "Secure Payment",
+            "text": "Secure checkout & flexible Klarna payment plans",
             "is_wide": false
           }
         },
@@ -1510,8 +1509,8 @@
           "type": "item",
           "settings": {
             "icon": "shopify://shop_images/60x60_-_3.png",
-            "title": "Free Shipping",
-            "text": "Multi-local warehouse shipping",
+            "title": "Always-on",
+            "text": "24/7 Hours Instant Support,Always Here for You",
             "is_wide": false
           }
         },
@@ -1519,8 +1518,8 @@
           "type": "item",
           "settings": {
             "icon": "shopify://shop_images/60x60_-_4.png",
-            "title": "Free Shipping",
-            "text": "Multi-local warehouse shipping",
+            "title": "RORRY Bundle Savings",
+            "text": "Buy more,save bigger on RORRY power banks",
             "is_wide": false
           }
         },
@@ -1528,8 +1527,8 @@
           "type": "item",
           "settings": {
             "icon": "shopify://shop_images/60x60_-_5.png",
-            "title": "RORRY 12-Month Protection",
-            "text": "Multi-local warehouse shipping",
+            "title": "RORRY 12-Month Protection",
+            "text": "Comprehensive coverage for your portable charger,<br>hassle-free support included",
             "is_wide": true
           }
         },
@@ -1537,8 +1536,8 @@
           "type": "item",
           "settings": {
             "icon": "shopify://shop_images/60x60_-_6.png",
-            "title": "30 DAYS Returns",
-            "text": "Multi-local warehouse shipping",
+            "title": "30 DAYS Returns",
+            "text": "Not the right fit for your commute?<br>\nEasy returns within 30 days",
             "is_wide": true
           }
         }
