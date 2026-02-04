@@ -1325,7 +1325,7 @@
         "embed_slide_t6VaTf"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.zl-ti-heading{font-size: 24px; } }"
+        "@media (max-width: 768px) {.zl-ti-heading {font-size: 24px; margin: 0px; }}"
       ],
       "name": "ZL - TikTok Slider",
       "settings": {
