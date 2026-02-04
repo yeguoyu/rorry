@@ -1337,6 +1337,102 @@
         "padding_bottom": 40
       }
     },
+    "zl_insta_gallery_XTQNFA": {
+      "type": "zl-insta-gallery",
+      "blocks": {
+        "image_hW9QdF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_95ccf7fe-911c-448e-8e0b-15d2fb24e2fd.jpg",
+            "link": ""
+          }
+        },
+        "image_N4pidD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_2228acf5-3b2d-4c4c-9f54-177143bfcab1.jpg",
+            "link": ""
+          }
+        },
+        "image_ifa38p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_932b5808-3147-42f1-aa92-6c98796b7b3f.jpg",
+            "link": ""
+          }
+        },
+        "image_yMfDpY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_a0cba655-ad36-4620-91b9-33a0685df9c0.jpg",
+            "link": ""
+          }
+        },
+        "image_ATPFyj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5_fc019b99-f703-42f2-946e-567edabe231c.jpg",
+            "link": ""
+          }
+        },
+        "image_anGBc8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6_85b9e998-334b-4d78-9abd-e8bfcebd7d91.jpg",
+            "link": ""
+          }
+        },
+        "image_jBfP3Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7.jpg",
+            "link": ""
+          }
+        },
+        "image_nkDzVx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/8_cc9ad69f-b7f3-4e79-accc-4e650c1b0b2a.jpg",
+            "link": ""
+          }
+        },
+        "image_3zVwhx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/9_15c9c20a-7995-4a37-866a-e769dd21f205.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hW9QdF",
+        "image_N4pidD",
+        "image_ifa38p",
+        "image_yMfDpY",
+        "image_ATPFyj",
+        "image_anGBc8",
+        "image_jBfP3Q",
+        "image_nkDzVx",
+        "image_3zVwhx"
+      ],
+      "name": "ZL - Insta Gallery",
+      "settings": {
+        "heading": "Real Moments with RORRY Power Bank",
+        "subtext": "",
+        "layout_mode": "carousel",
+        "desktop_cols": 5,
+        "mobile_cols": 2,
+        "gap": 16,
+        "autoplay": true,
+        "autoplay_speed": 3000,
+        "bg_color": "#FFFFFF",
+        "heading_color": "#000000",
+        "text_color": "#666666",
+        "container_width": 1360,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
     "zl_wall_reviews_Uc8Az4": {
       "type": "zl-wall-reviews",
       "blocks": {
@@ -1592,6 +1688,7 @@
     "testimonials_knfAYg",
     "rf_floating_video_7ghL8f",
     "zl_tiktok_slider_LaYkUz",
+    "zl_insta_gallery_XTQNFA",
     "zl_wall_reviews_Uc8Az4",
     "slideshow_PhWzBQ",
     "zl_pick_features_Na6Xba"
