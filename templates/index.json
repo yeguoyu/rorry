@@ -860,125 +860,6 @@
         "rounded": false
       }
     },
-    "logo_list_APpgqX": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_bkMbbB": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/People__1.svg",
-            "height": 120,
-            "link": ""
-          }
-        },
-        "logo_dPcTLX": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/buyersguide-02.svg",
-            "height": 120,
-            "link": ""
-          }
-        },
-        "logo_6DRWkM": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/medium_logo.png",
-            "height": 80,
-            "link": "https://web3pr.medium.com/rorry-unveils-d2-series-of-portable-chargers-sleek-pocket-sized-chargers-redefining-on-the-go-a0dd364a1361"
-          }
-        },
-        "logo_tECdhj": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/apnews-03.svg",
-            "height": 120,
-            "link": "https://apnews.com/press-release/globenewswire-mobile/apple-inc-8bca1f532867562bec6a3ec844a800c9"
-          }
-        },
-        "logo_96CNen": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/benzinga-05.svg",
-            "height": 180,
-            "link": "https://www.benzinga.com/pressreleases/24/12/g42599485/rorry-unveils-d2-series-of-portable-chargers-sleek-pocket-sized-chargers-redefining-on-the-go-powe"
-          }
-        },
-        "logo_qJiEjp": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/yahoo-04.svg",
-            "height": 140,
-            "link": "https://finance.yahoo.com/news/rorry-unveils-d2-series-portable-180000822.html"
-          }
-        },
-        "logo_pzCpgH": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/MENAFNlogo.jpg",
-            "height": 48,
-            "link": "https://menafn.com/1109013072/RORRY-Unveils-D2-Series-Of-Portable-Chargers-Sleek-Pocket-Sized-Chargers-Redefining-On-The-Go-Power"
-          }
-        },
-        "logo_CqAqnP": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/ceoca-06.svg",
-            "height": 120,
-            "link": ""
-          }
-        },
-        "logo_PLe6fr": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/marketwatch.png",
-            "height": 80,
-            "link": "https://www.marketwatch.com/press-release/rorry-unveils-d2-series-of-portable-chargers-sleek-pocket-sized-chargers-redefining-on-the-go-power-5efbdac6?mod=search_headline"
-          }
-        }
-      },
-      "block_order": [
-        "logo_bkMbbB",
-        "logo_dPcTLX",
-        "logo_6DRWkM",
-        "logo_tECdhj",
-        "logo_96CNen",
-        "logo_qJiEjp",
-        "logo_pzCpgH",
-        "logo_CqAqnP",
-        "logo_PLe6fr"
-      ],
-      "settings": {
-        "layout": "marquee",
-        "grid_horizontal": 50,
-        "direction": "left",
-        "speed": 7,
-        "heading": "Featured on",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 20,
-        "padding_bottom": 36,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "multicolumn_with_icons_7aDRtB": {
       "type": "multicolumn-with-icons",
       "blocks": {
@@ -1535,29 +1416,108 @@
         "parallax_direction": "vertical"
       }
     },
-    "blog_posts_GgU9iL": {
-      "type": "blog-posts",
-      "name": "Blog posts",
+    "logo_list_APpgqX": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_bkMbbB": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/People__1.svg",
+            "height": 120,
+            "link": ""
+          }
+        },
+        "logo_dPcTLX": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/buyersguide-02.svg",
+            "height": 120,
+            "link": ""
+          }
+        },
+        "logo_6DRWkM": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/medium_logo.png",
+            "height": 80,
+            "link": "https://web3pr.medium.com/rorry-unveils-d2-series-of-portable-chargers-sleek-pocket-sized-chargers-redefining-on-the-go-a0dd364a1361"
+          }
+        },
+        "logo_tECdhj": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/apnews-03.svg",
+            "height": 120,
+            "link": "https://apnews.com/press-release/globenewswire-mobile/apple-inc-8bca1f532867562bec6a3ec844a800c9"
+          }
+        },
+        "logo_96CNen": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/benzinga-05.svg",
+            "height": 180,
+            "link": "https://www.benzinga.com/pressreleases/24/12/g42599485/rorry-unveils-d2-series-of-portable-chargers-sleek-pocket-sized-chargers-redefining-on-the-go-powe"
+          }
+        },
+        "logo_qJiEjp": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/yahoo-04.svg",
+            "height": 140,
+            "link": "https://finance.yahoo.com/news/rorry-unveils-d2-series-portable-180000822.html"
+          }
+        },
+        "logo_pzCpgH": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/MENAFNlogo.jpg",
+            "height": 48,
+            "link": "https://menafn.com/1109013072/RORRY-Unveils-D2-Series-Of-Portable-Chargers-Sleek-Pocket-Sized-Chargers-Redefining-On-The-Go-Power"
+          }
+        },
+        "logo_CqAqnP": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/ceoca-06.svg",
+            "height": 120,
+            "link": ""
+          }
+        },
+        "logo_PLe6fr": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/marketwatch.png",
+            "height": 80,
+            "link": "https://www.marketwatch.com/press-release/rorry-unveils-d2-series-of-portable-chargers-sleek-pocket-sized-chargers-redefining-on-the-go-power-5efbdac6?mod=search_headline"
+          }
+        }
+      },
+      "block_order": [
+        "logo_bkMbbB",
+        "logo_dPcTLX",
+        "logo_6DRWkM",
+        "logo_tECdhj",
+        "logo_96CNen",
+        "logo_qJiEjp",
+        "logo_pzCpgH",
+        "logo_CqAqnP",
+        "logo_PLe6fr"
+      ],
       "settings": {
-        "blog": "editors-picks",
-        "post_limit": 4,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "image_ratio": "landscape",
-        "show_tags": false,
-        "show_date": false,
-        "show_comments": false,
-        "show_author": false,
-        "show_excerpt": false,
-        "heading": "<strong>Discover With RORRY</strong>",
+        "layout": "marquee",
+        "grid_horizontal": 50,
+        "direction": "left",
+        "speed": 7,
+        "heading": "Featured on",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
@@ -1568,8 +1528,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 52,
+        "padding_top": 20,
+        "padding_bottom": 36,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1660,6 +1620,46 @@
         "mob_card_title_size": 16,
         "mob_card_desc_size": 12
       }
+    },
+    "blog_posts_GgU9iL": {
+      "type": "blog-posts",
+      "name": "Blog posts",
+      "settings": {
+        "blog": "editors-picks",
+        "post_limit": 4,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "landscape",
+        "show_tags": false,
+        "show_date": false,
+        "show_comments": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "heading": "<strong>Discover With RORRY</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -1683,8 +1683,8 @@
     "zl_insta_gallery_XTQNFA",
     "zl_wall_reviews_Uc8Az4",
     "slideshow_PhWzBQ",
-    "blog_posts_GgU9iL",
     "logo_list_APpgqX",
-    "zl_pick_features_Na6Xba"
+    "zl_pick_features_Na6Xba",
+    "blog_posts_GgU9iL"
   ]
 }
