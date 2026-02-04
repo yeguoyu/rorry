@@ -1,0 +1,425 @@
+{% comment %}
+  Section: ZL - Instagram Style Gallery
+  Description: A responsive gallery/slider for lifestyle images.
+  Class Naming: zl-ins-*
+{% endcomment %}
+
+{%- liquid
+  assign section_id = 'zl-ins-' | append: section.id
+  assign layout_mode = section.settings.layout_mode
+  assign desktop_cols = section.settings.desktop_cols
+  assign mobile_cols = section.settings.mobile_cols
+  assign gap = section.settings.gap
+-%}
+
+<section id="{{ section_id }}" class="zl-ins-section">
+  <div class="zl-ins-container">
+    
+    <div class="zl-ins-header">
+      {% if section.settings.heading != blank %}
+        <h2 class="zl-ins-heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% if section.settings.subtext != blank %}
+        <div class="zl-ins-subtext">{{ section.settings.subtext }}</div>
+      {% endif %}
+    </div>
+
+    <div class="zl-ins-wrapper">
+      
+      <div class="zl-ins-swiper swiper js-zl-ins-slider" 
+           data-mode="{{ layout_mode }}"
+           data-autoplay="{{ section.settings.autoplay }}"
+           data-speed="{{ section.settings.autoplay_speed }}">
+        
+        <div class="swiper-wrapper zl-ins-track">
+          {% for block in section.blocks %}
+            <div class="swiper-slide zl-ins-slide" {{ block.shopify_attributes }}>
+              
+              <a href="{{ block.settings.link | default: '#' }}" class="zl-ins-card" {% if block.settings.link == blank %}onclick="return false;"{% endif %}>
+                <div class="zl-ins-img-box">
+                  {% if block.settings.image != blank %}
+                    {{ block.settings.image | image_url: width: 600 | image_tag: class: 'zl-ins-img', loading: 'lazy' }}
+                  {% else %}
+                    {{ 'image' | placeholder_svg_tag: 'zl-ins-placeholder' }}
+                  {% endif %}
+                  
+                  <div class="zl-ins-overlay">
+                    <svg class="zl-ins-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          {% endfor %}
+        </div>
+        
+        {% if layout_mode == 'carousel' %}
+          <div class="swiper-pagination zl-ins-pagination"></div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  #{{ section_id }} * { box-sizing: border-box; }
+
+  #{{ section_id }}.zl-ins-section {
+    background-color: {{ section.settings.bg_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  .zl-ins-container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px; /* Outer gutter */
+  }
+
+  /* Header */
+  .zl-ins-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  .zl-ins-heading {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    color: {{ section.settings.heading_color }};
+    line-height: 1.2;
+  }
+  .zl-ins-subtext {
+    font-size: 14px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.8;
+  }
+
+  /* Slider / Grid Wrapper */
+  .zl-ins-wrapper {
+    position: relative;
+  }
+  
+  .zl-ins-swiper {
+    padding-bottom: 40px; /* Space for pagination */
+  }
+
+  /* --- GRID MODE STYLES --- */
+  /* If mode is grid, we kill Swiper styling via CSS */
+  .zl-ins-swiper[data-mode="grid"] {
+    padding-bottom: 0;
+    overflow: visible;
+  }
+  .zl-ins-swiper[data-mode="grid"] .zl-ins-track {
+    display: grid;
+    grid-template-columns: repeat({{ desktop_cols }}, 1fr);
+    gap: {{ gap }}px;
+    transform: none !important; /* Reset Swiper translate */
+  }
+  .zl-ins-swiper[data-mode="grid"] .zl-ins-slide {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  /* --- CAROUSEL MODE STYLES --- */
+  /* Handled mostly by JS Swiper init, but we need base styles */
+  .zl-ins-swiper[data-mode="carousel"] {
+    overflow: hidden;
+  }
+  .zl-ins-swiper[data-mode="carousel"] .zl-ins-slide {
+    height: auto;
+  }
+
+  /* Card Item */
+  .zl-ins-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Square Aspect Ratio (Instagram Style) */
+    overflow: hidden;
+    border-radius: 8px; /* Optional rounded corners */
+    cursor: pointer;
+  }
+  
+  .zl-ins-img-box {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  }
+  .zl-ins-img {
+    width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;
+  }
+  .zl-ins-placeholder {
+    width: 100%; height: 100%; object-fit: cover; fill: #eee; background: #f0f0f0;
+  }
+
+  /* Hover Effects */
+  .zl-ins-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transition: opacity 0.3s ease;
+  }
+  .zl-ins-icon {
+    width: 32px; height: 32px; color: #fff;
+    transform: scale(0.8); transition: transform 0.3s ease;
+  }
+
+  .zl-ins-card:hover .zl-ins-overlay { opacity: 1; }
+  .zl-ins-card:hover .zl-ins-icon { transform: scale(1); }
+  .zl-ins-card:hover .zl-ins-img { transform: scale(1.05); }
+
+ 
+  .zl-ins-pagination .swiper-pagination-bullet {
+    background: #9887B8; opacity: 0.3;
+  }
+  .zl-ins-pagination .swiper-pagination-bullet-active { opacity: 1; }
+
+
+  @media (max-width: 900px) {
+    .zl-ins-heading { font-size: 26px; }
+    
+    /* Mobile Grid Override */
+    .zl-ins-swiper[data-mode="grid"] .zl-ins-track {
+      grid-template-columns: repeat({{ mobile_cols }}, 1fr);
+      gap: 10px; 
+    }
+  }
+</style>
+
+<script>
+  (function(){
+    var root = document.getElementById('{{ section_id }}');
+    if(!root) return;
+
+    function loadSwiperAssets() {
+      if(window.Swiper) return Promise.resolve();
+      var link = document.createElement('link'); link.rel = 'stylesheet'; link.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'; document.head.appendChild(link);
+      return new Promise(function(resolve) {
+        var script = document.createElement('script'); script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'; script.onload = resolve; document.head.appendChild(script);
+      });
+    }
+
+    function init() {
+      var sliderEl = root.querySelector('.js-zl-ins-slider');
+      if(!sliderEl) return;
+
+      var mode = sliderEl.getAttribute('data-mode');
+      
+      // If Grid mode, we destroy swiper if it exists (to let CSS Grid handle it)
+      if (mode === 'grid') {
+        if (sliderEl.swiper) sliderEl.swiper.destroy(true, true);
+        return; 
+      }
+
+      // If Carousel mode, init Swiper
+      var autoplaySetting = sliderEl.getAttribute('data-autoplay') === 'true';
+      var speed = parseInt(sliderEl.getAttribute('data-speed')) || 3000;
+      
+      // Calculate slidesPerView based on liquid settings passed to CSS variables or hardcoded
+      // Since liquid vars are rendered in CSS, we use breakpoints in JS
+      var desktopCols = {{ desktop_cols }};
+      var mobileCols = {{ mobile_cols }};
+      var gap = {{ gap }};
+
+      new window.Swiper(sliderEl, {
+        slidesPerView: mobileCols,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: autoplaySetting ? { delay: speed, disableOnInteraction: false } : false,
+        pagination: {
+          el: '.zl-ins-pagination',
+          clickable: true
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: gap
+          },
+          1024: {
+            slidesPerView: desktopCols,
+            spaceBetween: gap
+          }
+        }
+      });
+    }
+
+    loadSwiperAssets().then(init);
+
+    if (Shopify && Shopify.designMode) {
+      document.addEventListener('shopify:section:load', function(e) {
+        if(e.target.id === '{{ section_id }}') init();
+      });
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "ZL - Insta Gallery",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Real Moments with Momcozy"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Share your photos with #Momcozy for a chance to be featured."
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "select",
+      "id": "layout_mode",
+      "label": "Display Mode",
+      "default": "grid",
+      "options": [
+        { "value": "grid", "label": "Grid (Rows & Cols)" },
+        { "value": "carousel", "label": "Carousel (Slider)" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "desktop_cols",
+      "min": 3,
+      "max": 6,
+      "step": 1,
+      "default": 5,
+      "label": "Desktop Columns / Slides"
+    },
+    {
+      "type": "range",
+      "id": "mobile_cols",
+      "min": 1,
+      "max": 3,
+      "step": 0.5,
+      "default": 2,
+      "label": "Mobile Columns / Slides"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 16,
+      "unit": "px",
+      "label": "Spacing (Gap)"
+    },
+    {
+      "type": "header",
+      "content": "Carousel Options"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable Autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "min": 1000,
+      "max": 8000,
+      "step": 500,
+      "default": 3000,
+      "unit": "ms",
+      "label": "Autoplay Speed"
+    },
+    {
+      "type": "header",
+      "content": "Colors & Spacing"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1800,
+      "step": 20,
+      "default": 1400,
+      "unit": "px",
+      "label": "Container Width"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 60,
+      "unit": "px",
+      "label": "Padding Top"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 60,
+      "unit": "px",
+      "label": "Padding Bottom"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Insta Post",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (Optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZL - Insta Gallery",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}
