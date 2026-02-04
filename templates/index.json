@@ -1324,6 +1324,9 @@
         "embed_slide_TULGDm",
         "embed_slide_t6VaTf"
       ],
+      "custom_css": [
+        "@media (max-width: 768px) {.zl-ti-heading{font-size: 24px; } }"
+      ],
       "name": "ZL - TikTok Slider",
       "settings": {
         "product_card_width": 280,
@@ -1332,7 +1335,7 @@
         "description": "",
         "bg_color": "#ffffff",
         "text_color": "#000000",
-        "container_width": 1400,
+        "container_width": 1360,
         "padding_top": 40,
         "padding_bottom": 40
       }
