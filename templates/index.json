@@ -253,46 +253,6 @@
         "rounded": false
       }
     },
-    "blog_posts_GgU9iL": {
-      "type": "blog-posts",
-      "name": "Blog posts",
-      "settings": {
-        "blog": "editors-picks",
-        "post_limit": 4,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "image_ratio": "landscape",
-        "show_tags": false,
-        "show_date": false,
-        "show_comments": false,
-        "show_author": false,
-        "show_excerpt": false,
-        "heading": "<strong>Discover With RORRY</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 52,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "collection_list_fLHcjP": {
       "type": "collection-list",
       "blocks": {
@@ -1584,6 +1544,46 @@
         "parallax_direction": "vertical"
       }
     },
+    "blog_posts_GgU9iL": {
+      "type": "blog-posts",
+      "name": "Blog posts",
+      "settings": {
+        "blog": "editors-picks",
+        "post_limit": 4,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "landscape",
+        "show_tags": false,
+        "show_date": false,
+        "show_comments": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "heading": "<strong>Discover With RORRY</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "zl_pick_features_Na6Xba": {
       "type": "zl-pick-features",
       "blocks": {
@@ -1676,7 +1676,6 @@
     "slideshow_UBfjb7",
     "zl_brand_features_BdQm6U",
     "featured_collection_cGwE4X",
-    "blog_posts_GgU9iL",
     "collection_list_fLHcjP",
     "image_with_text_overlay_GMVMbi",
     "collage_grid_CyD43h",
@@ -1694,6 +1693,7 @@
     "zl_insta_gallery_XTQNFA",
     "zl_wall_reviews_Uc8Az4",
     "slideshow_PhWzBQ",
+    "blog_posts_GgU9iL",
     "zl_pick_features_Na6Xba"
   ]
 }
