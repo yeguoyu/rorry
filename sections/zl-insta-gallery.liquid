@@ -77,39 +77,37 @@
   .zl-ins-container {
     max-width: {{ section.settings.container_width }}px;
     margin: 0 auto;
-    padding: 0 20px; /* Outer gutter */
+    padding: 0 20px; 
   }
 
-  /* Header */
+ 
   .zl-ins-header {
     text-align: center;
     margin-bottom: 40px;
     padding: 0 10px;
   }
   .zl-ins-heading {
-    font-size: 32px;
-    font-weight: 800;
+    font-size: 48px;
+    font-weight: 700;
     margin: 0 0 10px 0;
     color: {{ section.settings.heading_color }};
     line-height: 1.2;
   }
   .zl-ins-subtext {
-    font-size: 14px;
+    font-size: 16px;
     color: {{ section.settings.text_color }};
     opacity: 0.8;
   }
 
-  /* Slider / Grid Wrapper */
   .zl-ins-wrapper {
     position: relative;
   }
   
   .zl-ins-swiper {
-    padding-bottom: 40px; /* Space for pagination */
+    padding-bottom: 40px; 
   }
 
-  /* --- GRID MODE STYLES --- */
-  /* If mode is grid, we kill Swiper styling via CSS */
+
   .zl-ins-swiper[data-mode="grid"] {
     padding-bottom: 0;
     overflow: visible;
@@ -118,15 +116,14 @@
     display: grid;
     grid-template-columns: repeat({{ desktop_cols }}, 1fr);
     gap: {{ gap }}px;
-    transform: none !important; /* Reset Swiper translate */
+    transform: none !important; 
   }
   .zl-ins-swiper[data-mode="grid"] .zl-ins-slide {
     width: auto !important;
     height: auto !important;
   }
 
-  /* --- CAROUSEL MODE STYLES --- */
-  /* Handled mostly by JS Swiper init, but we need base styles */
+
   .zl-ins-swiper[data-mode="carousel"] {
     overflow: hidden;
   }
@@ -134,14 +131,14 @@
     height: auto;
   }
 
-  /* Card Item */
+
   .zl-ins-card {
     display: block;
     position: relative;
     width: 100%;
-    padding-top: 100%; /* Square Aspect Ratio (Instagram Style) */
+    padding-top: 100%; 
     overflow: hidden;
-    border-radius: 8px; /* Optional rounded corners */
+    border-radius: 8px; 
     cursor: pointer;
   }
   
@@ -155,7 +152,6 @@
     width: 100%; height: 100%; object-fit: cover; fill: #eee; background: #f0f0f0;
   }
 
-  /* Hover Effects */
   .zl-ins-overlay {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(0,0,0,0.3);
