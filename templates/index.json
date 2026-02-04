@@ -1286,6 +1286,8 @@
       "name": "RF Floating Video",
       "settings": {
         "video_upload": "shopify://files/videos/RORRY M3-10000mAh Foldable Charger Megsafe Power Bank Video.mp4",
+        "tiktok_id": "",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "width_desktop": 180
       }
     },
@@ -1425,8 +1427,8 @@
         "speed": 60,
         "bg_color": "#ffffff",
         "card_bg": "#9887b8",
-        "heading_color": "#171717",
-        "text_color": "#444444",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
         "star_color": "#ffffff",
         "padding_top": 60,
         "padding_bottom": 60
