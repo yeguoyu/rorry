@@ -1425,12 +1425,12 @@
         "gap": 16,
         "autoplay": true,
         "autoplay_speed": 3000,
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "heading_color": "#000000",
         "text_color": "#666666",
         "container_width": 1360,
         "padding_top": 60,
-        "padding_bottom": 0
+        "padding_bottom": 60
       }
     },
     "zl_wall_reviews_Uc8Az4": {
