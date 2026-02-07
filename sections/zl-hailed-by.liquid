@@ -44,7 +44,6 @@
     }
   }
 
-  /* Card Item */
   #{{ section_id }} .zl-hail-card {
     display: flex;
     flex-direction: column;
@@ -52,12 +51,11 @@
     text-align: left;
   }
 
-  /* Image Box */
   #{{ section_id }} .zl-hail-img-box {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 1 / 1; /* Square images */
+    aspect-ratio: 1 / 1;
     background-color: #f5f5f5;
   }
 
@@ -73,7 +71,6 @@
     transform: scale(1.05);
   }
 
-  /* Overlay Info */
   #{{ section_id }} .zl-hail-overlay {
     position: absolute;
     bottom: 0;
@@ -85,37 +82,50 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center; /* Center aligned per screenshot */
-    text-align: center;
   }
 
-  #{{ section_id }} .zl-hail-handle-row {
+  #{{ section_id }} .zl-hail-info-row {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
     justify-content: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  #{{ section_id }} .zl-hail-icon-col {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
   }
 
   #{{ section_id }} .zl-hail-icon {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
     fill: currentColor;
+    display: block;
+  }
+
+  #{{ section_id }} .zl-hail-text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2px;
   }
 
   #{{ section_id }} .zl-hail-handle {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
+    line-height: 1.2;
   }
 
   #{{ section_id }} .zl-hail-followers {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.9);
+    line-height: 1.2;
   }
 
-  /* Review Text below image */
   #{{ section_id }} .zl-hail-review {
     font-size: 14px;
     line-height: 1.5;
@@ -143,23 +153,28 @@
               {% endif %}
 
               <div class="zl-hail-overlay">
-                <div class="zl-hail-handle-row">
-                  {% if block.settings.platform == 'instagram' %}
-                    <svg class="zl-hail-icon" viewBox="0 0 24 24">
-                      <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
-                    </svg>
-                  {% elsif block.settings.platform == 'tiktok' %}
-                    <svg class="zl-hail-icon" viewBox="0 0 24 24">
-                      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.58-1.08v8.72c-.22 4.67-4.49 7.84-9.15 6.81-4.75-1.07-7.46-6.13-5.38-10.33 1.83-3.69 6.72-4.97 10.08-2.61v4.32c-1.89-1.2-4.46-.6-5.63 1.34-.84 1.39-.62 3.25.56 4.38 1.16 1.12 3.06 1.25 4.37.29 1.05-.76 1.4-2.12 1.35-3.37V.02h-.32z"/>
-                    </svg>
-                  {% endif %}
+                <div class="zl-hail-info-row">
+                  
+                  <div class="zl-hail-icon-col">
+                    {% if block.settings.platform == 'instagram' %}
+                      <svg class="zl-hail-icon" viewBox="0 0 24 24">
+                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                      </svg>
+                    {% elsif block.settings.platform == 'tiktok' %}
+                      <svg class="zl-hail-icon" viewBox="0 0 24 24">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.58-1.08v8.72c-.22 4.67-4.49 7.84-9.15 6.81-4.75-1.07-7.46-6.13-5.38-10.33 1.83-3.69 6.72-4.97 10.08-2.61v4.32c-1.89-1.2-4.46-.6-5.63 1.34-.84 1.39-.62 3.25.56 4.38 1.16 1.12 3.06 1.25 4.37.29 1.05-.76 1.4-2.12 1.35-3.37V.02h-.32z"/>
+                      </svg>
+                    {% endif %}
+                  </div>
 
-                  <span class="zl-hail-handle">{{ block.settings.handle }}</span>
+                  <div class="zl-hail-text-col">
+                    <span class="zl-hail-handle">{{ block.settings.handle }}</span>
+                    {% if block.settings.subtitle != blank %}
+                      <span class="zl-hail-followers">{{ block.settings.subtitle }}</span>
+                    {% endif %}
+                  </div>
+
                 </div>
-                
-                {% if block.settings.subtitle != blank %}
-                  <div class="zl-hail-followers">{{ block.settings.subtitle }}</div>
-                {% endif %}
               </div>
             </div>
 
