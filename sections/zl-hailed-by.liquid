@@ -1,0 +1,319 @@
+{%- liquid
+  assign section_id = 'zl-hail-' | append: section.id
+-%}
+
+<style>
+  #{{ section_id }} .zl-hail-section {
+    background-color: {{ section.settings.bg_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  #{{ section_id }} .zl-hail-container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  #{{ section_id }} .zl-hail-heading {
+    font-size: 32px;
+    font-weight: 800;
+    color: {{ section.settings.heading_color }};
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 768px) {
+    #{{ section_id }} .zl-hail-heading {
+      font-size: 40px;
+    }
+  }
+
+  #{{ section_id }} .zl-hail-grid {
+    display: grid;
+    grid-template-columns: repeat({{ section.settings.cols_mb }}, 1fr);
+    gap: 30px 20px;
+  }
+
+  @media (min-width: 768px) {
+    #{{ section_id }} .zl-hail-grid {
+      grid-template-columns: repeat({{ section.settings.cols_pc }}, 1fr);
+      gap: 40px 30px;
+    }
+  }
+
+  /* Card Item */
+  #{{ section_id }} .zl-hail-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+
+  /* Image Box */
+  #{{ section_id }} .zl-hail-img-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1; /* Square images */
+    background-color: #f5f5f5;
+  }
+
+  #{{ section_id }} .zl-hail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  #{{ section_id }} .zl-hail-card:hover .zl-hail-img {
+    transform: scale(1.05);
+  }
+
+  /* Overlay Info */
+  #{{ section_id }} .zl-hail-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px 20px 20px 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; /* Center aligned per screenshot */
+    text-align: center;
+  }
+
+  #{{ section_id }} .zl-hail-handle-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    justify-content: center;
+  }
+
+  #{{ section_id }} .zl-hail-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: currentColor;
+  }
+
+  #{{ section_id }} .zl-hail-handle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  #{{ section_id }} .zl-hail-followers {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Review Text below image */
+  #{{ section_id }} .zl-hail-review {
+    font-size: 14px;
+    line-height: 1.5;
+    color: {{ section.settings.text_color }};
+  }
+</style>
+
+<div id="{{ section_id }}">
+  <section class="zl-hail-section">
+    <div class="zl-hail-container">
+      
+      {% if section.settings.heading != blank %}
+        <h2 class="zl-hail-heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+
+      <div class="zl-hail-grid">
+        {% for block in section.blocks %}
+          <div class="zl-hail-card" {{ block.shopify_attributes }}>
+            
+            <div class="zl-hail-img-box">
+              {% if block.settings.image != blank %}
+                {{ block.settings.image | image_url: width: 600 | image_tag: class: 'zl-hail-img', loading: 'lazy' }}
+              {% else %}
+                {{ 'image' | placeholder_svg_tag: 'zl-hail-img' }}
+              {% endif %}
+
+              <div class="zl-hail-overlay">
+                <div class="zl-hail-handle-row">
+                  {% if block.settings.platform == 'instagram' %}
+                    <svg class="zl-hail-icon" viewBox="0 0 24 24">
+                      <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                    </svg>
+                  {% elsif block.settings.platform == 'tiktok' %}
+                    <svg class="zl-hail-icon" viewBox="0 0 24 24">
+                      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.58-1.08v8.72c-.22 4.67-4.49 7.84-9.15 6.81-4.75-1.07-7.46-6.13-5.38-10.33 1.83-3.69 6.72-4.97 10.08-2.61v4.32c-1.89-1.2-4.46-.6-5.63 1.34-.84 1.39-.62 3.25.56 4.38 1.16 1.12 3.06 1.25 4.37.29 1.05-.76 1.4-2.12 1.35-3.37V.02h-.32z"/>
+                    </svg>
+                  {% endif %}
+
+                  <span class="zl-hail-handle">{{ block.settings.handle }}</span>
+                </div>
+                
+                {% if block.settings.subtitle != blank %}
+                  <div class="zl-hail-followers">{{ block.settings.subtitle }}</div>
+                {% endif %}
+              </div>
+            </div>
+
+            {% if block.settings.text != blank %}
+              <div class="zl-hail-review">{{ block.settings.text }}</div>
+            {% endif %}
+
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "ZL - Hailed By",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Hailed by"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "cols_pc",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "label": "Desktop Columns",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "cols_mb",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Mobile Columns",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 800,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "label": "Container Width",
+      "default": 1200
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Review Text Color",
+      "default": "#555555"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "influencer",
+      "name": "Influencer",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "platform",
+          "label": "Platform Icon",
+          "options": [
+            { "value": "instagram", "label": "Instagram" },
+            { "value": "tiktok", "label": "TikTok" }
+          ],
+          "default": "instagram"
+        },
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Handle (@username)",
+          "default": "@username"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle (e.g. Followers)",
+          "default": "776K Instagram Followers"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Review Text",
+          "default": "I've been relying on this every day, and it has completely changed how I stay powered up on the go."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZL - Hailed By",
+      "blocks": [
+        { "type": "influencer", "settings": { "platform": "instagram", "handle": "@copycatsstyle" } },
+        { "type": "influencer", "settings": { "platform": "instagram", "handle": "@thesistershoppers" } },
+        { "type": "influencer", "settings": { "platform": "tiktok", "handle": "@britney_henderson_" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
