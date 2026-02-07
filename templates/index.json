@@ -205,7 +205,7 @@
       "custom_css": [],
       "name": "ZL Brand Features",
       "settings": {
-        "top_image": "shopify://shop_images/360x120.png",
+        "top_image": "shopify://shop_images/20260206-100443.png",
         "bg_color": "#9887b8",
         "text_color": "#ffffff",
         "divider_color": "#ffffff4d",
@@ -1706,8 +1706,8 @@
         "cols_pc": 3,
         "cols_mb": 1,
         "container_width": 1360,
-        "bg_color": "#FFFFFF",
-        "heading_color": "#1A1A1A",
+        "bg_color": "#ffffff",
+        "heading_color": "#1a1a1a",
         "text_color": "#555555",
         "padding_top": 60,
         "padding_bottom": 60
