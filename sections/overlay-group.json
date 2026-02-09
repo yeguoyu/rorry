@@ -33,7 +33,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Sign up and get <em>10% off</em> your first order",
+            "heading": "Sign up and get 25<em>% off</em> your first order",
             "heading_size": "text-2xl lg:text-3xl",
             "heading_tag": "h2",
             "highlighted_text": "scribble",
