@@ -98,7 +98,7 @@
         "only_homepage": true,
         "only_visitor": true,
         "delay": 3,
-        "expiry": 30,
+        "expiry": 1,
         "text_alignment": "center",
         "content_position": "center-0",
         "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_9.jpg",
