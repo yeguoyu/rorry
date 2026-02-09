@@ -1365,6 +1365,58 @@
         "padding_bottom": 60
       }
     },
+    "zl_hailed_by_DGiwd8": {
+      "type": "zl-hailed-by",
+      "blocks": {
+        "influencer_x6gpEA": {
+          "type": "influencer",
+          "settings": {
+            "image": "shopify://shop_images/britney_henderson.jpg",
+            "platform": "tiktok",
+            "handle": "@britney_henderson_",
+            "subtitle": "58.7K TikTok Followers",
+            "text": "The RORRY Portable 3-in-1 Charger is the perfect gift for everyone on your list. It charges three devices simultaneously, making it a practical, thoughtful pick for any occasion."
+          }
+        },
+        "influencer_fATmYQ": {
+          "type": "influencer",
+          "settings": {
+            "image": "shopify://shop_images/thesistershoppers.jpg",
+            "platform": "instagram",
+            "handle": "@thesistershoppers",
+            "subtitle": "776K Instagram Followers",
+            "text": "Charge your AirPods, iPhone and Apple Watch all at once with these RORRY pastel chargers. Compact, keychain-ready, and long-lasting."
+          }
+        },
+        "influencer_areLFK": {
+          "type": "influencer",
+          "settings": {
+            "image": "shopify://shop_images/copycatsstyle.jpg",
+            "platform": "instagram",
+            "handle": "@copycatsstyle",
+            "subtitle": "778K Instagram Followers",
+            "text": "I’ve been relying on the RORRY 3-in-1 Portable Charger every day, and it has completely changed how I stay powered up on the go."
+          }
+        }
+      },
+      "block_order": [
+        "influencer_x6gpEA",
+        "influencer_fATmYQ",
+        "influencer_areLFK"
+      ],
+      "name": "ZL - Hailed By",
+      "settings": {
+        "heading": "Hailed by",
+        "cols_pc": 3,
+        "cols_mb": 1,
+        "container_width": 1360,
+        "bg_color": "#ffffff",
+        "heading_color": "#9887b8",
+        "text_color": "#555555",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
     "slideshow_PhWzBQ": {
       "type": "slideshow",
       "blocks": {
@@ -1533,58 +1585,6 @@
         "divider": false,
         "full_width": false,
         "rounded": false
-      }
-    },
-    "zl_hailed_by_DGiwd8": {
-      "type": "zl-hailed-by",
-      "blocks": {
-        "influencer_x6gpEA": {
-          "type": "influencer",
-          "settings": {
-            "image": "shopify://shop_images/britney_henderson.jpg",
-            "platform": "tiktok",
-            "handle": "@britney_henderson_",
-            "subtitle": "58.7K TikTok Followers",
-            "text": "The RORRY Portable 3-in-1 Charger is the perfect gift for everyone on your list. It charges three devices simultaneously, making it a practical, thoughtful pick for any occasion."
-          }
-        },
-        "influencer_fATmYQ": {
-          "type": "influencer",
-          "settings": {
-            "image": "shopify://shop_images/thesistershoppers.jpg",
-            "platform": "instagram",
-            "handle": "@thesistershoppers",
-            "subtitle": "776K Instagram Followers",
-            "text": "Charge your AirPods, iPhone and Apple Watch all at once with these RORRY pastel chargers. Compact, keychain-ready, and long-lasting."
-          }
-        },
-        "influencer_areLFK": {
-          "type": "influencer",
-          "settings": {
-            "image": "shopify://shop_images/copycatsstyle.jpg",
-            "platform": "instagram",
-            "handle": "@copycatsstyle",
-            "subtitle": "778K Instagram Followers",
-            "text": "I’ve been relying on the RORRY 3-in-1 Portable Charger every day, and it has completely changed how I stay powered up on the go."
-          }
-        }
-      },
-      "block_order": [
-        "influencer_x6gpEA",
-        "influencer_fATmYQ",
-        "influencer_areLFK"
-      ],
-      "name": "ZL - Hailed By",
-      "settings": {
-        "heading": "Hailed by",
-        "cols_pc": 3,
-        "cols_mb": 1,
-        "container_width": 1360,
-        "bg_color": "#ffffff",
-        "heading_color": "#9887b8",
-        "text_color": "#555555",
-        "padding_top": 60,
-        "padding_bottom": 60
       }
     },
     "zl_pick_features_Na6Xba": {
