@@ -88,6 +88,7 @@
         },
         "promotion": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "position": 8,
             "column_size": "1",
