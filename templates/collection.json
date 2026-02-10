@@ -148,7 +148,7 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
-        "full_width": false,
+        "full_width": true,
         "rounded": false
       }
     },
@@ -210,7 +210,7 @@
         "gradient_background": "",
         "color_overlay": "#000000",
         "overlay_opacity": 40,
-        "padding_top": 12,
+        "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
         "full_width": true,
