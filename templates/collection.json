@@ -118,6 +118,7 @@
         "product_iyzqmY",
         "product_GWe9tV"
       ],
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/Plug_in_Power_Bank.jpg",
