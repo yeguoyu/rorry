@@ -156,14 +156,6 @@
     "main-collection-banner": {
       "type": "main-collection-banner",
       "blocks": {
-        "spacing": {
-          "type": "spacing",
-          "disabled": true,
-          "settings": {
-            "height": 48,
-            "height_mobile": 0
-          }
-        },
         "breadcrumb": {
           "type": "breadcrumb",
           "settings": {
@@ -190,7 +182,6 @@
         }
       },
       "block_order": [
-        "spacing",
         "breadcrumb",
         "title",
         "description_qqgM8H"
