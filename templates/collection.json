@@ -54,6 +54,7 @@
         "heading_EpEwfi",
         "text_APUMX6"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
         "transparent_header": false,
@@ -83,6 +84,72 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "vertical"
+      }
+    },
+    "lookbook_BMpNyx": {
+      "type": "lookbook",
+      "blocks": {
+        "product_iyzqmY": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "color_text": "#ffffff",
+            "vertical": 25,
+            "horizontal": 25,
+            "vertical_mobile": 25,
+            "horizontal_mobile": 25
+          }
+        },
+        "product_GWe9tV": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "color_text": "#ffffff",
+            "vertical": 75,
+            "horizontal": 65,
+            "vertical_mobile": 75,
+            "horizontal_mobile": 65
+          }
+        }
+      },
+      "block_order": [
+        "product_iyzqmY",
+        "product_GWe9tV"
+      ],
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/Plug_in_Power_Bank.jpg",
+        "image_mobile": "shopify://shop_images/Plug_in_Power_Bank_dddc9a76-517e-4a94-86b9-0b8b4c84037b.jpg",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 30,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
       }
     },
     "main-collection-banner": {
@@ -369,6 +436,7 @@
   },
   "order": [
     "image_with_text_overlay_MMcCGf",
+    "lookbook_BMpNyx",
     "main-collection-banner",
     "main-collection",
     "images-with-text-overlay",
