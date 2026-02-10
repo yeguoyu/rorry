@@ -178,6 +178,7 @@
         },
         "description_qqgM8H": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "text_font": "body",
             "text_size": "subtext-md",
