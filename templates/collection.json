@@ -186,6 +186,9 @@
         "title",
         "description_qqgM8H"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 768px) {.banner__box {max-width: 30rem; }}"
+      ],
       "settings": {
         "transparent_header": false,
         "show_image": true,
