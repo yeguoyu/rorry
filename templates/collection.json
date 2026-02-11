@@ -189,7 +189,7 @@
       "settings": {
         "transparent_header": false,
         "show_image": true,
-        "image": "shopify://shop_images/5000mAh_Power_Bank_cbc17044-6902-4c77-8921-a50086f73d87.jpg",
+        "image": "{{ collection.metafields.custom.collection_banner.value }}",
         "image_height": "500px",
         "content_position": "md:items-center md:justify-start",
         "text_alignment": "left",
