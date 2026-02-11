@@ -159,7 +159,7 @@
         "breadcrumb": {
           "type": "breadcrumb",
           "settings": {
-            "show_collections_link": true
+            "show_collections_link": false
           }
         },
         "title": {
