@@ -173,9 +173,9 @@
           "settings": {
             "text_font": "body",
             "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
+            "text_max_size": 12,
+            "text_line_height": 1,
+            "text_letter_spacing": -75,
             "text_capitalize": false,
             "secondary_color": false
           }
@@ -197,11 +197,11 @@
         "image_height_mobile": "auto",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
+        "color_text": "#171717",
         "color_background": "",
         "gradient_background": "",
         "color_overlay": "rgba(0,0,0,0)",
-        "overlay_opacity": 40,
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
