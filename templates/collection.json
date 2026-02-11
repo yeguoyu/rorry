@@ -170,6 +170,7 @@
         },
         "description_qqgM8H": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "text_font": "body",
             "text_size": "subtext-md",
@@ -214,6 +215,10 @@
     "main-collection": {
       "type": "main-collection",
       "blocks": {
+        "description_wEzb4F": {
+          "type": "description",
+          "settings": {}
+        },
         "subcollections": {
           "type": "subcollections",
           "settings": {
@@ -262,6 +267,7 @@
         }
       },
       "block_order": [
+        "description_wEzb4F",
         "subcollections",
         "promotion"
       ],
