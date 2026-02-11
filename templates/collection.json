@@ -170,7 +170,6 @@
         },
         "description_qqgM8H": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "text_font": "body",
             "text_size": "subtext-md",
@@ -192,7 +191,7 @@
         "show_image": true,
         "image": "{{ collection.metafields.custom.collection_banner.value }}",
         "image_height": "500px",
-        "content_position": "md:items-end md:justify-start",
+        "content_position": "md:items-center md:justify-center",
         "text_alignment": "left",
         "image_mobile": "{{ collection.metafields.custom.collection_mobile_banner.value }}",
         "image_height_mobile": "auto",
@@ -217,6 +216,7 @@
       "blocks": {
         "description_wEzb4F": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "subcollections": {
