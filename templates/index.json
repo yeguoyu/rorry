@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Plug_in_Power_Bank_CB4_CB06_f4b794f4-812c-4ea7-9945-fb549165e1f8.jpg",
-            "image_mobile": "shopify://shop_images/Plug_in_Power_Bank_CB4_CB06_0ccfc5f9-163e-4e35-b910-ce5ee852f79c.jpg",
+            "image": "shopify://shop_images/Plug_in_Power_Bank_e5ed8e51-3f5b-4edf-867d-7a456b409379.jpg",
+            "image_mobile": "shopify://shop_images/Plug_in_Power_Bank_f53dc58f-fec5-4a3f-bb19-b83991ffe1d0.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -30,8 +30,8 @@
         "image_wBb9zr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Mini_RingGo.jpg",
-            "image_mobile": "shopify://shop_images/Mini_RingGo_c17d57eb-a0b2-4c2b-9631-07c68dd4feb8.jpg",
+            "image": "shopify://shop_images/Mini_RingGo_f9a8b388-74a5-46cc-b0a9-2feb86495162.jpg",
+            "image_mobile": "shopify://shop_images/Mini_RingGo_1.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -1255,6 +1255,7 @@
         "heading": "Real Moments with RORRY Power Bank",
         "subtext": "",
         "layout_mode": "carousel",
+        "image_ratio": "portrait_3_4",
         "desktop_cols": 5,
         "mobile_cols": 2,
         "gap": 16,
