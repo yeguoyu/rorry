@@ -671,7 +671,7 @@
             "iwidth": "custom",
             "icon_width": 24,
             "heading": "About this item",
-            "content": "<ul><li><strong>Portable Charger Built-in Cables: </strong>Rorry 10000mAh portable charger not only built in 2 types cables, USB C and for Iightning cables. but also equipped with a USB port,and USB C port. It supports 4 devices charging max simultaneously.</li><li><strong>Portable Charger AC Wall Plug: </strong>The Rorry portable charger AC wall plug built in allows you to recharge itself directly from the wall outlet, do not need to carry adapter and cables everywhere any more.</li><li><strong>Fast Charging 22.5W: </strong>Takes just 30 minutes to charge for iPhone 16 Pro up to 56%, and 5 hours to fully recharge the power bank via the AC wall plug. Fully charge for iPhone, for Airpods at the same time. Wake up to fully powered devices, ready to go!</li><li><strong>10000mAh Powerful Capacity:</strong> The small portable charger just like a mouce to put comfortably in your palm or packet, which is portable and convenient to carrying out for travel, business trip or vocations. It can fully charge for iPhone 16 Pro up to 1.8 times or for iPad Air up to 1 times, for AirPods Pro up to 10-12 times, ensuring you stay powered wherever you go!</li><li><strong>Wide Compatibility: </strong>Using the built-in charging cables to charge, the portable battery charger is compatible with iPhone, iPad, Samsung, Google Pixel, tablets and USB-C most mobile phones and smart devices etc. This battery pack can meet most of the charging needs of daily life.</li></ul>",
+            "content": "<ul><li><strong>All-in-Mini: </strong>Say goodbye to cable clutter and bulky adapters. RORRY Flow 3 in 1 portable charger powers for iPhone 17/16/15, Apple Watch, iPad, MacBook and more—compact charger that moves in your flow!</li><li><strong>Free to Go: </strong>Built-in USB-C cable and foldable wall plug—no need to carry extra charger or cable, recharge the power bank and charge your iPhone on the go. Its slim shape fits easily in any pocket or purse, the LoopLink attaches securely to straps or your finger. Perfect for travel, work commutes, camping, hiking, and everyday adventures.</li><li><strong>40W + 5W Dual Fast Charging:</strong> Get a 50% charge for your iPhone 17 in just 20 minutes with 40W fast charging, and fully power up your Apple Watch Series 11 in 1.2 hours with dedicated 5W charging, supports charging 4 devices simultaneously, keep your day moving without interruption.</li><li><strong>10,000mAh All-Day Power:</strong> The perfect travel companion—get up to 2 full charges for iPhone 16 Pro, 16 charges for Apple Watch series 10, or 0.8 charges for your iPad Air, stay powered all day without the bulk.</li><li><strong>Power in Style: </strong>Designed to be both functional and beautiful, RORRY Flow portable charger features a smooth, skin-friendly finish and comes in a range of stunning colors, the skin-friendly face ensures a 30% more comfortable hold. It’s not just a power bank—it’s a stylish accessory and a perfect gift, giving you the freedom to power your life, your way.</li></ul>",
             "metafields": "",
             "text_size": "text-base"
           }
@@ -727,6 +727,7 @@
     },
     "video_mBkphM": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "video": "shopify://files/videos/RORRY CB06-10000mAh Portable Charger 22.5W Fast Charging Power Bank Video.mp4",
@@ -747,6 +748,7 @@
     },
     "lookbook_4cft7Q": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_1.jpg",
@@ -880,6 +882,7 @@
     },
     "lookbook_WVAPEa": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_2.jpg",
@@ -916,6 +919,7 @@
     },
     "lookbook_kkfwyP": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_3.jpg",
@@ -952,6 +956,7 @@
     },
     "lookbook_987JhN": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_4.jpg",
@@ -988,6 +993,7 @@
     },
     "lookbook_LTMJaV": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_5.jpg",
@@ -1024,6 +1030,7 @@
     },
     "lookbook_UwfQTF": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_6.jpg",
@@ -1060,6 +1067,7 @@
     },
     "lookbook_D8VikP": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_7.jpg",
@@ -1096,6 +1104,7 @@
     },
     "lookbook_4eHXtf": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_8.jpg",
@@ -1132,6 +1141,7 @@
     },
     "lookbook_Wn73Tc": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_9.jpg",
@@ -1168,6 +1178,7 @@
     },
     "lookbook_mcMftE": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_10.jpg",
@@ -1204,6 +1215,7 @@
     },
     "lookbook_3h9LJE": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_11.jpg",
@@ -1240,6 +1252,7 @@
     },
     "lookbook_9ak4qF": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_After-Sales_Service_PC.jpg",
@@ -1280,8 +1293,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>How many devices can it charge at once?</strong>",
-            "text": "<p>The RORRY Portable Charger can charge up to 4 devices simultaneously! This allows it to charge your phone, iPad, AirPods, and other devices simultaneously, which is very convenient.</p>",
+            "title": "<strong>How many devices can this power bank charge at the same time?</strong>",
+            "text": "<p>RORRY Flow supports charging up to 4 devices simultaneously. It features a built-in USB-C cable, a foldable wall plug for recharging, and dedicated outputs including 40W fast charging and 5W Apple Watch charging—perfect for powering your iPhone, Apple Watch, iPad, and more at the same time.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1289,8 +1302,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does it have overcharge protection?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger includes built-in safety protection features. The product description mentions precautions for proper charging methods and safe usage, indicating it has protective circuitry. The power bank uses lithium ion battery technology with regulated output voltages, which typically includes overcharge protection to prevent battery damage and ensure safe charging for your devices.</p>",
+            "title": "<strong>How fast does it charge an iPhone and Apple Watch?</strong>",
+            "text": "<p>With 40W fast charging, you can charge your iPhone 17 up to 50% in just 20 minutes. The dedicated 5W magnetic charging module powers up your Apple Watch Series 11 in approximately 1.2 hours. It’s designed to keep your day moving without long wait times.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1298,8 +1311,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is this charger airline approved?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger is airline approved! At 10,000mAh (38.5Wh), it falls well within the TSA and international airline limits for carry-on luggage.</p>",
+            "title": "<strong>Do I need to carry extra cables or a wall charger?</strong>",
+            "text": "<p>No. RORRY Flow is designed as an all-in-one mini charger. It includes a built-in USB-C cable and a foldable wall plug, so you can recharge the power bank directly from a wall outlet—no extra adapters needed. It’s perfect for travel, commuting, or everyday carry.<br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1348,11 +1361,11 @@
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
+        "description": "",
         "button_label": "",
         "button_link": "",
         "button_external": false,
@@ -1369,8 +1382,8 @@
         "color_button_gradient": "",
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
-        "padding_top": 84,
-        "padding_bottom": 84,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": false,
         "rounded": false
