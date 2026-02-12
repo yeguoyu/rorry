@@ -4,6 +4,19 @@
   assign desktop_cols = section.settings.desktop_cols
   assign mobile_cols = section.settings.mobile_cols
   assign gap = section.settings.gap
+  
+  case section.settings.image_ratio
+    when 'landscape'
+      assign padding_bottom = '56.25%'
+    when 'square'
+      assign padding_bottom = '100%'
+    when 'portrait_4_5'
+      assign padding_bottom = '125%'
+    when 'portrait_3_4'
+      assign padding_bottom = '133.33%'
+    when 'story'
+      assign padding_bottom = '177.77%'
+  endcase
 -%}
 
 <section id="{{ section_id }}" class="zl-ins-section">
@@ -126,7 +139,7 @@
     display: block;
     position: relative;
     width: 100%;
-    padding-top: 56.6%; 
+    padding-top: {{ padding_bottom }};
     overflow: hidden;
     border-radius: 8px; 
     cursor: pointer;
@@ -273,6 +286,19 @@
       "options": [
         { "value": "grid", "label": "Grid (Rows & Cols)" },
         { "value": "carousel", "label": "Carousel (Slider)" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image Aspect Ratio",
+      "default": "portrait_3_4",
+      "options": [
+        { "value": "landscape", "label": "Landscape (16:9)" },
+        { "value": "square", "label": "Square (1:1)" },
+        { "value": "portrait_4_5", "label": "Portrait (4:5)" },
+        { "value": "portrait_3_4", "label": "Portrait (3:4)" },
+        { "value": "story", "label": "Story (9:16)" }
       ]
     },
     {
