@@ -1,9 +1,3 @@
-{% comment %}
-  Section: ZL - Instagram Style Gallery
-  Description: A responsive gallery/slider for lifestyle images.
-  Class Naming: zl-ins-*
-{% endcomment %}
-
 {%- liquid
   assign section_id = 'zl-ins-' | append: section.id
   assign layout_mode = section.settings.layout_mode
@@ -38,7 +32,7 @@
               <a href="{{ block.settings.link | default: '#' }}" class="zl-ins-card" {% if block.settings.link == blank %}onclick="return false;"{% endif %}>
                 <div class="zl-ins-img-box">
                   {% if block.settings.image != blank %}
-                    {{ block.settings.image | image_url: width: 600 | image_tag: class: 'zl-ins-img', loading: 'lazy' }}
+                    {{ block.settings.image | image_url: width: 800 | image_tag: class: 'zl-ins-img', loading: 'lazy' }}
                   {% else %}
                     {{ 'image' | placeholder_svg_tag: 'zl-ins-placeholder' }}
                   {% endif %}
@@ -80,7 +74,6 @@
     padding: 0 20px; 
   }
 
- 
   .zl-ins-header {
     text-align: center;
     margin-bottom: 40px;
@@ -107,7 +100,6 @@
     padding-bottom: 40px; 
   }
 
-
   .zl-ins-swiper[data-mode="grid"] {
     padding-bottom: 0;
     overflow: visible;
@@ -123,7 +115,6 @@
     height: auto !important;
   }
 
-
   .zl-ins-swiper[data-mode="carousel"] {
     overflow: hidden;
   }
@@ -131,12 +122,11 @@
     height: auto;
   }
 
-
   .zl-ins-card {
     display: block;
     position: relative;
     width: 100%;
-    padding-top: 100%; 
+    padding-top: 177.77%; 
     overflow: hidden;
     border-radius: 8px; 
     cursor: pointer;
@@ -167,17 +157,14 @@
   .zl-ins-card:hover .zl-ins-icon { transform: scale(1); }
   .zl-ins-card:hover .zl-ins-img { transform: scale(1.05); }
 
- 
   .zl-ins-pagination .swiper-pagination-bullet {
     background: #9887B8; opacity: 0.3;
   }
   .zl-ins-pagination .swiper-pagination-bullet-active { opacity: 1; }
 
-
   @media (max-width: 900px) {
     .zl-ins-heading { font-size: 26px; }
     
-    /* Mobile Grid Override */
     .zl-ins-swiper[data-mode="grid"] .zl-ins-track {
       grid-template-columns: repeat({{ mobile_cols }}, 1fr);
       gap: 10px; 
@@ -210,18 +197,14 @@
 
       var mode = sliderEl.getAttribute('data-mode');
       
-      // If Grid mode, we destroy swiper if it exists (to let CSS Grid handle it)
       if (mode === 'grid') {
         if (sliderEl.swiper) sliderEl.swiper.destroy(true, true);
         return; 
       }
 
-      // If Carousel mode, init Swiper
       var autoplaySetting = sliderEl.getAttribute('data-autoplay') === 'true';
       var speed = parseInt(sliderEl.getAttribute('data-speed')) || 3000;
       
-      // Calculate slidesPerView based on liquid settings passed to CSS variables or hardcoded
-      // Since liquid vars are rendered in CSS, we use breakpoints in JS
       var desktopCols = {{ desktop_cols }};
       var mobileCols = {{ mobile_cols }};
       var gap = {{ gap }};
