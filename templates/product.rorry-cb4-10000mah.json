@@ -1132,8 +1132,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_5.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_Mobile_5.jpg",
+        "image": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_PC_10.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_MO_10.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -1157,8 +1157,8 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 8,
-        "padding_bottom": 8,
+        "padding_top": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1168,8 +1168,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_PC_5.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_CB06-10000mAh_Portable_Charger_22.5W_Fast_Charging_Power_Bank_Mobile_5.jpg",
+        "image": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_PC_11.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_MO_11.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -1193,8 +1193,8 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 8,
-        "padding_bottom": 8,
+        "padding_top": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
