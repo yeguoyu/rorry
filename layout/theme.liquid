@@ -100,5 +100,18 @@
     {%- endif -%}
 
     <style>.product-card{border: 1px solid rgb(152 135 184 / 20%);}</style>
+    {% if request.path contains '/account/unsubscribe' %}
+  <style>
+
+    .shopify-email-marketing-confirmation__container {
+      margin-top: 100px !important;
+      margin-bottom: 150px !important;
+    }
+    .shopify-email-marketing-confirmation__container h1,
+    .shopify-email-marketing-confirmation__container p {
+      text-align: center !important;
+    }
+  </style>
+{% endif %}
   </body>
 </html>
