@@ -993,8 +993,8 @@
       ],
       "name": "t:sections.slideshow.name",
       "settings": {
-        "autoplay": false,
-        "autoplay_speed": 5,
+        "autoplay": true,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "image_height": "650px",
         "content_width": "small",
