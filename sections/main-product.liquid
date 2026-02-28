@@ -281,9 +281,16 @@
               <div class="product__price grid gap-3" {{ block.shopify_attributes }}>
                 <div class="no-js-hidden" id="Price-{{ section.id }}-{{ product.id }}">
                   {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:gap-1d5' -%}
-                          <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
-                {%- render 'product-badges', product: product, use_variant: true, show_sold_out: block.settings.show_sold_out, show_save_amount: block.settings.show_save_amount, save_type: block.settings.save_type, class: 'flex flex-wrap gap-3' -%}
-              </div>
+                  <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}">
+                    {%- render 'product-badges', 
+                      product: product, 
+                      use_variant: true, 
+                      show_sold_out: true, 
+                      show_save_amount: true, 
+                      save_type: 'percent', 
+                      class: 'flex flex-wrap gap-2' 
+                    -%}
+                  </div>
                   {%- if product.quantity_price_breaks_configured? -%}
                     <div class="text-opacity text-sm font-medium leading-tight" id="VolumeNote-{{ section.id }}-{{ product.id }}">
                       {{- 'products.volume_pricing.note' | t -}}
