@@ -12,14 +12,6 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
-        "badges_KmFRmE": {
-          "type": "badges",
-          "settings": {
-            "show_sold_out": false,
-            "show_save_amount": true,
-            "save_type": "percent"
-          }
-        },
         "text_qDbUpg": {
           "type": "text",
           "disabled": true,
@@ -49,6 +41,14 @@
             "title_size_mobile": "product-title-md",
             "show_price": true,
             "show_rating": true
+          }
+        },
+        "badges_KmFRmE": {
+          "type": "badges",
+          "settings": {
+            "show_sold_out": false,
+            "show_save_amount": true,
+            "save_type": "percent"
           }
         },
         "price_3CCint": {
@@ -158,10 +158,10 @@
         }
       },
       "block_order": [
-        "badges_KmFRmE",
         "text_qDbUpg",
         "vendor",
         "title",
+        "badges_KmFRmE",
         "price_3CCint",
         "judge_me_reviews_preview_badge_9EFiPW",
         "description",
