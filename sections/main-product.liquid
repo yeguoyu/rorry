@@ -230,10 +230,10 @@
                 {{- product.selected_or_first_available_variant.sku -}}
               </p>
 
-            {%- when 'badges' -%}
+            {% comment %} {%- when 'badges' -%}
               <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
                 {%- render 'product-badges', product: product, use_variant: true, show_sold_out: block.settings.show_sold_out, show_save_amount: block.settings.show_save_amount, save_type: block.settings.save_type, class: 'flex flex-wrap gap-3' -%}
-              </div>
+              </div> {% endcomment %}
 
             {%- when 'description' -%}
               <div class="product__text rte {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
@@ -287,6 +287,10 @@
                       {{- 'products.volume_pricing.note' | t -}}
                     </div>
                   {%- endif -%}
+                              {%- when 'badges' -%}
+              <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
+                {%- render 'product-badges', product: product, use_variant: true, show_sold_out: block.settings.show_sold_out, show_save_amount: block.settings.show_save_amount, save_type: block.settings.save_type, class: 'flex flex-wrap gap-3' -%}
+              </div>
                 </div>
 
                 {%- assign product_form_installment_id = 'ProductFormInstallment-' | append: section.id | append: '-' | append: product.id -%}
