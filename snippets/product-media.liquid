@@ -109,10 +109,9 @@
     {%- if image_ratio == 'adapt' or image_ratio_mobile == 'adapt' %} style="--aspect-ratio: {{ media.aspect_ratio }};"{% endif -%}
   >
     {%- render 'media', section_id: section_id, product_id: product_id, media: media, media_alt: media_alt, sizes: sizes, preload: preload, autoplay: autoplay, loop: loop -%}
-        {%- render 'product-badges', product: product, vertical_badges: vertical_badges, show_sold_out: show_sold_out, show_save_amount: show_save_amount, save_type: save_type, class: 'z-2 absolute grid gap-3 pointer-events-none' -%}
 
     {%- if image_zoom != 'none' and media.media_type == 'image' -%}
-      <button type="button" class="absolute top-0 left-0 w-full h-full flex items-center justify-center" is="media-{{ image_zoom }}-button" aria-label="{{ 'products.media.open_media' | t: index: media.position | escape }}" tabindex="-1">
+      <button type="button bigbang2" class="absolute top-0 left-0 w-full h-full flex items-center justify-center" is="media-{{ image_zoom }}-button" aria-label="{{ 'products.media.open_media' | t: index: media.position | escape }}" tabindex="-1">
         {%- render 'icon', icon: 'zoom', size: 'xs', class: 'lg:hidden' -%}
       </button>
     {%- endif -%}
