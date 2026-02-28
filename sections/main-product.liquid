@@ -231,7 +231,7 @@
               </p>
 
             {%- when 'badges' -%}
-              <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
+              <div class="product__badges bigbang" id="Badges-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
                 {%- render 'product-badges', product: product, use_variant: true, show_sold_out: block.settings.show_sold_out, show_save_amount: block.settings.show_save_amount, save_type: block.settings.save_type, class: 'flex flex-wrap gap-3' -%}
               </div>
 
