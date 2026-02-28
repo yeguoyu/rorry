@@ -116,9 +116,10 @@
     
   </style>
 {% endif %}
-<style>
-        .coupon-section{margin: 10px 0 !important;}
-
-</style>
+{% if template.name == 'product' %}
+  <style>
+    .coupon-section { margin: 10px 0 !important; }
+  </style>
+{% endif %}
   </body>
 </html>
