@@ -41,16 +41,7 @@
   {%- if on_sale %} price--on-sale{% endif -%}
   {%- if class != blank %} {{ class }}{% endif -%}"
 >
-  <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}">
-                    {%- render 'product-badges', 
-                      product: product, 
-                      use_variant: true, 
-                      show_sold_out: true, 
-                      show_save_amount: true, 
-                      save_type: 'percent', 
-                      class: 'flex flex-wrap gap-2' 
-                    -%}
-                  </div>
+  
   {%- if on_sale -%}
     <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
   {%- endif -%}
@@ -118,4 +109,14 @@
         </span>
     {%- endif -%}
   {%- endunless -%}
+  <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}">
+                    {%- render 'product-badges', 
+                      product: product, 
+                      use_variant: true, 
+                      show_sold_out: true, 
+                      show_save_amount: true, 
+                      save_type: 'percent', 
+                      class: 'flex flex-wrap gap-2' 
+                    -%}
+                  </div>
 </div>
