@@ -1403,6 +1403,7 @@
     },
     "rf_floating_video_Y8JLWx": {
       "type": "rf-floating-video",
+      "disabled": true,
       "name": "RF Floating Video",
       "settings": {
         "video_upload": "shopify://files/videos/These pastel charging banks from Amazon can charge iPhone, AirPods, Android, and Apple Watches!  LINK IN BIO  AS SEEN IN VIDEOS 2  Influencer Program   Home.mp4",
