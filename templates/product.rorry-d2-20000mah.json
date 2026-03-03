@@ -142,6 +142,7 @@
         },
         "collapsible_tab_6BhPzN": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "opened": false,
             "style": "with-border",
@@ -155,6 +156,7 @@
         },
         "collapsible_tab_7xnMQf": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "opened": false,
             "style": "with-border",
@@ -166,9 +168,22 @@
             "text_size": "text-sm"
           }
         },
+        "collapsible_tab_Yny9wr": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "opened": false,
+            "style": "with-border",
+            "icon": "none",
+            "heading": "Payment methods",
+            "content": "<p><strong>Buy now,Expected delivery in 2-7 business days.30 Days free returns and exchanges.</strong></p>",
+            "page": "",
+            "liquid": "",
+            "text_size": "text-sm"
+          }
+        },
         "text_LnfEUH": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "icon": "none",
             "iwidth": "custom",
@@ -225,6 +240,7 @@
         "klarna_on_site_messaging_app_block_gJMz7x",
         "collapsible_tab_6BhPzN",
         "collapsible_tab_7xnMQf",
+        "collapsible_tab_Yny9wr",
         "text_LnfEUH",
         "pickup_availability",
         "share",
