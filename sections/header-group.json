@@ -29,8 +29,8 @@
         "announcement_4pj3HQ": {
           "type": "announcement",
           "settings": {
-            "icon": "none",
-            "text": "🚚 Free Shipping | 2–7 Day Delivery | 30-Day Returns",
+            "icon": "lightning",
+            "text": "Buy 2 Get 20% Off Code: RORRY20 Shop Now >>",
             "link": "shopify://collections/new-releases",
             "hide_icon_mobile": true,
             "text_mobile": "",
