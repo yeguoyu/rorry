@@ -26,9 +26,20 @@
             "highlighted_scribble": "circle"
           }
         },
+        "announcement_4pj3HQ": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "text": "Limited time: Free shipping with no minimum spend!",
+            "link": "shopify://collections/new-releases",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "announcement_CqBzQy": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "lightning",
             "text": "Buy 2 Get 20% Off Code：RORRY20    Shop Now >>",
@@ -55,6 +66,7 @@
       },
       "block_order": [
         "announcement-2",
+        "announcement_4pj3HQ",
         "announcement_CqBzQy",
         "announcement-1"
       ],
