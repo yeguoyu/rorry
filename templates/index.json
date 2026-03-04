@@ -1278,6 +1278,16 @@
     "zl_wall_reviews_Uc8Az4": {
       "type": "zl-wall-reviews",
       "blocks": {
+        "review_Vwx4h7": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image_32_517f150e-1a1a-4615-91ca-103d2985f857.jpg",
+            "review_title": "It can be plugged in even with a protective case on!",
+            "stars": 5,
+            "text": "It's been a long time since I bought something I was so satisfied with! I heard some people say it wouldn't fit with an iPhone case on, but I tried it and it worked perfectly! It's lightweight and the design is great! I especially love the cute battery level display feature. ♡",
+            "author": "Wilson"
+          }
+        },
         "review_Wy7KhW": {
           "type": "review",
           "settings": {
@@ -1370,6 +1380,7 @@
         }
       },
       "block_order": [
+        "review_Vwx4h7",
         "review_Wy7KhW",
         "review_zMiABD",
         "review_jGji9i",
