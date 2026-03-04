@@ -1308,6 +1308,16 @@
             "author": "Emma"
           }
         },
+        "review_M9DApe": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image_7_77c818ee-b220-4a54-ae84-97df4ca22ac1.jpg",
+            "review_title": "This is all in one!",
+            "stars": 5,
+            "text": "It is compact and light at 10000 mA. The shape and shape are particularly nice when using while charging.\nSince it is compatible with pass-through charging, it was helpful to be able to charge my iPhone and Apple Watch with just this when I was on a business trip",
+            "author": "Centriculous"
+          }
+        },
         "review_FHFM8r": {
           "type": "review",
           "settings": {
@@ -1347,16 +1357,28 @@
             "text": "This product is great! I am a commuter college student and love taking trips so this is very practical since I can attach it to my bags. I love that it can charge both my phone and iPad for school and get a few charges before it needs to be recharged. Love it! I will probably end up buying mor",
             "author": "Madison"
           }
+        },
+        "review_cfUKNY": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image_4_2123339b-18e2-4972-a6a0-3ea29a81a8e3.jpg",
+            "review_title": "I'm glad I bought this!",
+            "stars": 5,
+            "text": "this is good!!\nYou can also charge your Apple Watch without any problems.\nThe remaining charge level is also displayed as a percentage, so it's easy to understand.\nIt's not heavy, so it won't get in the way of charging while using it.\nHaving this one for a trip will be enough for everything, so I think it will come in handy!",
+            "author": "Kris"
+          }
         }
       },
       "block_order": [
         "review_Wy7KhW",
         "review_zMiABD",
         "review_jGji9i",
+        "review_M9DApe",
         "review_FHFM8r",
         "review_f43MnJ",
         "review_NzxpRH",
-        "review_zr76A3"
+        "review_zr76A3",
+        "review_cfUKNY"
       ],
       "name": "ZL - Wall of Love",
       "settings": {
