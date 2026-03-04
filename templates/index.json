@@ -1278,16 +1278,6 @@
     "zl_wall_reviews_Uc8Az4": {
       "type": "zl-wall-reviews",
       "blocks": {
-        "review_Vwx4h7": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/image_32_517f150e-1a1a-4615-91ca-103d2985f857.jpg",
-            "review_title": "It can be plugged in even with a protective case on!",
-            "stars": 5,
-            "text": "It's been a long time since I bought something I was so satisfied with! I heard some people say it wouldn't fit with an iPhone case on, but I tried it and it worked perfectly! It's lightweight and the design is great! I especially love the cute battery level display feature. ♡",
-            "author": "Wilson"
-          }
-        },
         "review_Wy7KhW": {
           "type": "review",
           "settings": {
@@ -1298,6 +1288,16 @@
             "author": "Angie"
           }
         },
+        "review_VDGxT6": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/ba5aab27035d8dacf33731fbfa5489c9.png",
+            "review_title": "This made my life so easy!",
+            "stars": 5,
+            "text": "This is a power bank that every working person should have! I really like the design, the color, and the way it can charge all of my devices together, and it's really cool! I can charge my AirPods, watch, and phone all together and can still have much power left in it! It's not just stylish but also useful in many ways. It works the best while traveling and takes up less space too!",
+            "author": "Lasya Konduru"
+          }
+        },
         "review_zMiABD": {
           "type": "review",
           "settings": {
@@ -1306,6 +1306,16 @@
             "stars": 5,
             "text": "Amazing love it I used it to my trip to London and it was compact and no need to have wires it was all in one … great product",
             "author": "maridaly"
+          }
+        },
+        "review_Vwx4h7": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/image_32_517f150e-1a1a-4615-91ca-103d2985f857.jpg",
+            "review_title": "It can be plugged in even with a protective case on!",
+            "stars": 5,
+            "text": "It's been a long time since I bought something I was so satisfied with! I heard some people say it wouldn't fit with an iPhone case on, but I tried it and it worked perfectly! It's lightweight and the design is great! I especially love the cute battery level display feature. ♡",
+            "author": "Wilson"
           }
         },
         "review_jGji9i": {
@@ -1380,9 +1390,10 @@
         }
       },
       "block_order": [
-        "review_Vwx4h7",
         "review_Wy7KhW",
+        "review_VDGxT6",
         "review_zMiABD",
+        "review_Vwx4h7",
         "review_jGji9i",
         "review_M9DApe",
         "review_FHFM8r",
