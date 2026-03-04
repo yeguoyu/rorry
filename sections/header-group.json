@@ -16,6 +16,7 @@
       "blocks": {
         "announcement-2": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "🔥<strong>Enjoy 25% OFF Your First Purchase</strong> <strong>→ Shop Now!</strong>",
@@ -29,9 +30,22 @@
         "announcement_4pj3HQ": {
           "type": "announcement",
           "settings": {
-            "icon": "lightning",
-            "text": "Buy 2 Get 20% Off Code: RORRY20 Shop Now >>",
+            "icon": "none",
+            "text": "💕 <strong>Women's Day: Early Access! 25% Off Flash Sale → Shop Now! </strong>",
             "link": "shopify://collections/new-releases",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "announcement_ebawdF": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "text": "Welcome to our store",
+            "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
@@ -40,9 +54,10 @@
         },
         "announcement_CqBzQy": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "lightning",
-            "text": "Buy 2 Get 20% Off Code：RORRY20    Shop Now >>",
+            "text": "",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -67,6 +82,7 @@
       "block_order": [
         "announcement-2",
         "announcement_4pj3HQ",
+        "announcement_ebawdF",
         "announcement_CqBzQy",
         "announcement-1"
       ],
