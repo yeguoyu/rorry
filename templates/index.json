@@ -1713,7 +1713,7 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "image_ratio": "landscape",
+        "image_ratio": "adapt",
         "show_tags": false,
         "show_date": false,
         "show_comments": false,
