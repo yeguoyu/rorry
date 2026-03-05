@@ -31,8 +31,8 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "💕 <strong>Women's Day: Early Access! 25% Off Flash Sale → Shop Now! </strong>",
-            "link": "shopify://collections/new-releases",
+            "text": "💕 <strong>Women's Day: 25% OFF Everything | Shop Her Gifts → Shop Now!</strong>",
+            "link": "shopify://collections/gifts-for-her",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
@@ -45,19 +45,6 @@
           "settings": {
             "icon": "none",
             "text": "Welcome to our store",
-            "link": "",
-            "hide_icon_mobile": true,
-            "text_mobile": "",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "announcement_CqBzQy": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "icon": "lightning",
-            "text": "",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -83,7 +70,6 @@
         "announcement-2",
         "announcement_4pj3HQ",
         "announcement_ebawdF",
-        "announcement_CqBzQy",
         "announcement-1"
       ],
       "custom_css": [],
