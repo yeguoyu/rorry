@@ -479,7 +479,7 @@
       "settings": {
         "image": "shopify://shop_images/RORRY-M5-10000mAh-3-in-1-Charger-with-Charging-Station-for-Apple_Black_detail_PC_4.jpg",
         "image_mobile": "shopify://shop_images/RORRY-M5-10000mAh-3-in-1-Charger-with-Charging-Station-for-Apple_Black_detail_M_9.jpg",
-        "heading": "Up to 20W Fast Charging Power",
+        "heading": "Fast Charging for Apple Family",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h4",
@@ -1143,7 +1143,7 @@
           "type": "question",
           "settings": {
             "title": "<strong>Can the power bank be used separately?</strong>",
-            "text": "<p>Yes,the RORRY 3-in-1 Charging Station features a detachable 5000mAh MagSafe power bank that can be used completely separately from the charging station. Simply pop the power bank out when you're on the go for instant portable charging anywhere. It maintains the same MagSafe magnetic charging capability for your iPhone even when detached from the base station.</p>",
+            "text": "<p>Yes,the RORRY 3-in-1 Charging Station features a detachable 10000mAh MagSafe power bank that can be used completely separately from the charging station. Simply pop the power bank out when you're on the go for instant portable charging anywhere. It maintains the same MagSafe magnetic charging capability for your iPhone even when detached from the base station.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1157,34 +1157,29 @@
             "highlighted_scribble": "circle"
           }
         },
+        "question_6K9Kid": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can I use it as both a power bank and a charging station?</strong>",
+            "text": "<p>Absolutely. It functions as a portable power bank for travel and outdoor use, and also as a desktop charging station for home or office.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_eLdHG6": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can I adjust the viewing angle while charging my phone?</strong>",
+            "text": "<p>Yes. The charging stand supports an adjustable viewing angle up to 60°, allowing you to comfortably watch videos, attend video calls, or check notifications while your phone charges.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "question-4": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-5": {
-          "type": "question",
-          "disabled": true,
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "contact": {
-          "type": "contact",
-          "disabled": true,
-          "settings": {
-            "heading": "Didn’t find your answer?",
-            "text": "<p>Don't hestitate to contact us</p>",
-            "show_phone": false,
-            "avatar_height": 60,
+            "title": "<strong>Is the charger safe for overnight charging?</strong>",
+            "text": "<p>Absolutely. The RORRY M5 features a built-in smart protection chip that provides multiple safety protections, including over-temperature, over-current, over-voltage, and short-circuit protection, ensuring safe and stable charging overnight.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1194,9 +1189,9 @@
         "question-1",
         "question-2",
         "question-3",
-        "question-4",
-        "question-5",
-        "contact"
+        "question_6K9Kid",
+        "question_eLdHG6",
+        "question-4"
       ],
       "settings": {
         "style": "with-background",
