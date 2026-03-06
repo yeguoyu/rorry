@@ -393,6 +393,86 @@
         "rounded": false
       }
     },
+    "slideshow_AdNRyH": {
+      "type": "slideshow",
+      "blocks": {
+        "image_3AynfX": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_YWTUgK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY-M5-10000mAh-3-in-1-Charger-with-Charging-Station-for-Apple_Black_detail_PC_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY-M5-10000mAh-3-in-1-Charger-with-Charging-Station-for-Apple_Black_detail_M_9.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_DK7tda": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY-M5-10000mAh-3-in-1-Charger-with-Charging-Station-for-Apple_Black_detail_PC_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY-M5-10000mAh-3-in-1-Charger-with-Charging-Station-for-Apple_Black_detail_M_10.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_3AynfX",
+        "image_YWTUgK",
+        "image_DK7tda"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "650px",
+        "content_width": "small",
+        "image_height_mobile": "auto",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "rgba(0,0,0,0)",
+        "color_button_background": "rgba(0,0,0,0)",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "lookbook_g7PGNq": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
@@ -758,6 +838,25 @@
             "highlighted_scribble": "circle"
           }
         },
+        "column_4f4YeY": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "column_Wd4nYJ": {
           "type": "column",
           "settings": {
@@ -821,6 +920,7 @@
       },
       "block_order": [
         "column_Bi8VNJ",
+        "column_4f4YeY",
         "column_Wd4nYJ",
         "column_pUwcnj",
         "column_DmNEaL"
@@ -1231,6 +1331,7 @@
     "lookbook_KeMMNc",
     "video_mBkphM",
     "lookbook_DLCzxh",
+    "slideshow_AdNRyH",
     "lookbook_g7PGNq",
     "lookbook_7GaL3K",
     "lookbook_z9R6mG",
