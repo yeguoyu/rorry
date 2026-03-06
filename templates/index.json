@@ -44,7 +44,6 @@
         },
         "image_wBb9zr": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Mini_RingGo_f9a8b388-74a5-46cc-b0a9-2feb86495162.jpg",
             "image_mobile": "shopify://shop_images/Mini_RingGo_1.jpg",
@@ -60,6 +59,7 @@
         },
         "image_EKkjiB": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Wireless_Charger.jpg",
             "image_mobile": "shopify://shop_images/Wireless_Charger_c576cbfe-334f-48da-8aad-fcb9916c64a1.jpg",
