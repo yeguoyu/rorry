@@ -363,10 +363,10 @@
       "settings": {
         "image": "shopify://shop_images/RORRY-M5-10000mAh-3-in-1-Charger-with-Charging-Station-for-Apple_Black_detail_PC_3.jpg",
         "image_mobile": "shopify://shop_images/RORRY-M5-10000mAh-3-in-1-Charger-with-Charging-Station-for-Apple_Black_detail_PC_3.jpg",
-        "heading": "",
+        "heading": "<strong>3-in-1 Charging Station with Power Bank</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h4",
         "heading_position": "none",
         "subheading": "",
         "description": "",
