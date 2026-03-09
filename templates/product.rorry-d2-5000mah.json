@@ -847,8 +847,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does it support charging while discharging?</strong>",
-            "text": "<p>Yes, the power bank supports pass-through charging with a max input and output of 5V/2A.</p>",
+            "title": "<strong>Is it convenient for travel?</strong>",
+            "text": "<p>Absolutely. The compact and lightweight keychain design fits easily in your pocket or can attach to a backpack, making it a perfect on-the-go travel charger.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -856,8 +856,17 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Can RORRY Power bank charge 3 devices at the same time?</strong>",
-            "text": "<p>Yes, but the charging speed will be slightly slower than charging alone.</p>",
+            "title": "<strong>Can it charge multiple devices at the same time?</strong>",
+            "text": "<p>Yes. This portable charger can power Apple Watch, iPhone, AirPods, and other devices simultaneously, so you can charge everything in one place.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Which devices are compatible with this RORRY portable charger?</strong>",
+            "text": "<p>Designed for Apple Watch Ultra 2, Series 10/9/8/7/6/SE/5/4/3/2 and iPhone 16/15/14/13/12/11/Pro/Pro Max. It can also charge AirPods and other USB devices.<br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -865,28 +874,17 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Why is my power bank providing fewer charges than expected?</strong>",
-            "text": "<p>Energy loss during charging, due to inefficiencies in the battery cells and circuitry, results in a 30% to 45% capacity reduction. Therefore, a fully charged RORRY 5,000mAh Power Bank typically provides about 2,800mAh to 3,500mAh.<br/></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-4": {
-          "type": "question",
-          "disabled": true,
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>How much battery capacity does the power bank have?</strong>",
+            "text": "<p>The 5000mAh battery can charge an Apple Watch 7–10 times, an iPhone 15 about once, and AirPods 6–8 times, making it ideal for daily use or short trips.<br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "question-5": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Is it safe to use with my devices?</strong>",
+            "text": "<p>Yes. It features built-in protection against over-temperature, over-current, over-voltage, and short circuits, ensuring safe and reliable charging.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -907,8 +905,8 @@
       "block_order": [
         "question-3",
         "question-2",
-        "question-1",
         "question-4",
+        "question-1",
         "question-5",
         "contact"
       ],
