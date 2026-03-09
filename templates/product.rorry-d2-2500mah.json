@@ -611,7 +611,7 @@
         "image_height_mobile": "400px",
         "text_alignment_mobile": "left",
         "color_text": "#171717",
-        "color_background": "#f6f7fa",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
         "color_background_2": "rgba(0,0,0,0)",
         "gradient_background_2": "",
