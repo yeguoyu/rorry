@@ -1184,8 +1184,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>How many devices can it charge at once?</strong>",
-            "text": "<p>The RORRY Portable Charger can charge up to 4 devices simultaneously! This allows it to charge your phone, iPad, AirPods, and other devices simultaneously, which is very convenient.</p>",
+            "title": "<strong>Does it support fast charging?</strong>",
+            "text": "<p>Yes. With 22.5W fast charging, it can charge iPhone 16 Pro to 56% in about 30 minutes.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1193,8 +1193,26 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does it have overcharge protection?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger includes built-in safety protection features. The product description mentions precautions for proper charging methods and safe usage, indicating it has protective circuitry. The power bank uses lithium ion battery technology with regulated output voltages, which typically includes overcharge protection to prevent battery damage and ensure safe charging for your devices.</p>",
+            "title": "<strong>Does it come with built-in charging cables?</strong>",
+            "text": "<p>Yes. It features built-in USB-C and Lightning cables, plus a USB-A port and USB-C port, allowing you to charge up to 4 devices simultaneously.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What devices can this portable charger power?</strong>",
+            "text": "<p>Compatible with iPhone, iPad, Samsung, Google Pixel, AirPods, tablets, and most USB-C devices, covering your daily charging needs.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-5": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How long will the 10,000mAh battery last?</strong>",
+            "text": "<p>It can charge iPhone 16 Pro about 1.8 times, iPad Air once, or AirPods Pro 10–12 times, perfect for travel and everyday use.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1202,28 +1220,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is this charger airline approved?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger is airline approved! At 10,000mAh (38.5Wh), it falls well within the TSA and international airline limits for carry-on luggage.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-4": {
-          "type": "question",
-          "disabled": true,
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-5": {
-          "type": "question",
-          "disabled": true,
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>How do I recharge the power bank?</strong>",
+            "text": "<p>The built-in AC wall plug lets you plug it directly into a wall outlet—no extra charger or cable needed.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1244,9 +1242,9 @@
       "block_order": [
         "question-3",
         "question-2",
-        "question-1",
         "question-4",
         "question-5",
+        "question-1",
         "contact"
       ],
       "settings": {
