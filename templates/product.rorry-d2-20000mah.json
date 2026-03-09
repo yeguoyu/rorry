@@ -1258,8 +1258,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Can it charge an iPad?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger can charge an iPad.<br/>It features 30W PD fast charging via USB-C and a built-in cable, and its 20,000mAh capacity provides multiple full iPad charges. You can also charge other devices simultaneously using the additional USB-C and USB-A ports.</p>",
+            "title": "<strong>How many devices can this power bank charge at the same time?</strong>",
+            "text": "<p>This all-in-one power bank can charge up to 5 devices simultaneously. It features built-in USB-C and iOS cables, USB-C and USB-A ports, plus a magnetic charger for Apple Watch—perfect for powering your entire Apple lineup at once.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1267,8 +1267,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does it have overcharge protection?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger has built-in overcharge protection as one of its key safety features. It's equipped with an NTC temperature-control chip that provides pro-grade protection while charging and recharging, keeping your devices safe from overheating or overcharging. Each unit undergoes strict safety and durability testing for long-term reliability.</p>",
+            "title": "<strong>How fast does the 30W PD charging work?</strong>",
+            "text": "<p>With 30W Power Delivery fast charging, your iPhone can reach up to 50% in about 27 minutes. Both the USB-C port and built-in USB-C cable support 30W input and output, allowing fast charging for your devices and quick recharging of the power bank itself.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1276,8 +1276,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is this charger airline approved?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger is airline-approved! It's specifically marketed as \"travel essentials\" and mentioned as \"airplane-approved\" in its product features. At 20,000mAh capacity, it falls within the TSA and international airline limits for carry-on luggage (typically under 100Wh). </p>",
+            "title": "<strong>How long will the 20,000mAh battery last?</strong>",
+            "text": "<p>The 20,000mAh high-capacity battery can power your devices for several days, making it ideal for travel or busy days. The LCD display shows real-time battery levels so you always know how much power remains.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1285,18 +1285,17 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is it compatible with Android devices?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger is fully compatible with Android devices. While the product highlights Apple compatibility, its ports and charging standards are designed to work widely with Android devices as well.</p>",
+            "title": "<strong>Is this power bank portable and travel-friendly?</strong>",
+            "text": "<p>Yes! Despite its large capacity, it’s compact and lightweight, about the weight of two iPhone 15 Pro. The built-in keychain makes it easy to carry or attach to your bag, and it is airplane-approved, making it perfect for travel.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "question-5": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Is it safe to use for daily charging?</strong>",
+            "text": "<p>Absolutely. This power bank includes a latest NTC temperature-control chip and advanced protection against overheating, overcharging, and short circuits. The built-in cable is tested for over 30,000 pulls, ensuring long-lasting durability and safe charging.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
