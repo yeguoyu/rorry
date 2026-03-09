@@ -41,10 +41,9 @@
         },
         "announcement_ebawdF": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "none",
-            "text": "Welcome to our store",
+            "text": "🚚 <strong>Limited Time: Free Shipping — No Minimum!</strong>",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
