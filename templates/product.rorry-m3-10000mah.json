@@ -1141,8 +1141,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does it have overcharge protection?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger has multiple built-in safety features including overcharge protection, along with LED indicator lights and fast charging capabilities. The device includes various safety protections to prevent damage to your devices during charging. </p>",
+            "title": "<strong>What devices are compatible with this 3-in-1 charging station power bank?</strong>",
+            "text": "<p>It is designed for the Apple ecosystem and works with iPhone 17/16/15/14/13/12 series, Apple Watch Ultra 2/Ultra/Series 10–4, and AirPods 4/3/2/Pro/Pro 2, allowing you to charge all your essential devices in one place.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1150,8 +1150,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is this charger airline approved?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger is airline approved! With a capacity of 10,000mAh (38.5Wh), it falls well below the TSA's 100Wh limit for carry-on restrictions.</p>",
+            "title": "<strong>How much battery capacity does it provide?</strong>",
+            "text": "<p>The 10,000mAh battery can charge iPhone 16 Pro up to 1.8 times, Apple Watch Series 9 about 17–20 times, or AirPods Pro about 10–12 times, making it ideal for travel or short trips.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1159,18 +1159,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is it compatible with Android devices?</strong>",
-            "text": "<p>Yes,The RORRY Portable Charger is compatible with Android devices through its USB-C port. It offers 20W output (5V=3A, 9V=2.22A, 12V=1.67A) for fast charging most Android phones and tablets. While the wireless charging is designed for MagSafe-compatible iPhones, the USB-C port works universally with Android devices. You can use the included USB-C cable or your own Android charging cable.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-4": {
-          "type": "question",
-          "disabled": true,
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Does it support fast charging?</strong>",
+            "text": "<p>Yes. With PD 20W fast charging, your iPhone 16 Pro can reach 56% in just 30 minutes. The power bank itself can be fully recharged in about 3.5 hours via the USB-C port.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1178,8 +1168,17 @@
         "question-5": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does it come with a carrying case?</strong>",
-            "text": "<p>No, the RORRY Portable Charger<strong> </strong>doesn't come with a carrying case.</p>",
+            "title": "<strong>Can it charge multiple devices at the same time?</strong>",
+            "text": "<p>Yes. It can charge iPhone, Apple Watch, and AirPods simultaneously, and fully power all three devices in about 2–3 hours. <br/>Note: The product does not support charging four devices at once.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Is it safe and convenient for travel?</strong>",
+            "text": "<p>Absolutely. The foldable MagSafe design keeps it compact and travel-friendly. It also features a Hall effect magnetic switch and smart protection chips to prevent overheating, overcharging, and short circuits for safe charging.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1201,8 +1200,8 @@
         "question-1",
         "question-3",
         "question-2",
-        "question-4",
         "question-5",
+        "question-4",
         "contact"
       ],
       "settings": {
