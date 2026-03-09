@@ -902,7 +902,7 @@
         "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
-        "full_width": false,
+        "full_width": true,
         "rounded": false
       }
     },
