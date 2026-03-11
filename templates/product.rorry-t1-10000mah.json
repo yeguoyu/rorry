@@ -1247,20 +1247,29 @@
     "faq": {
       "type": "faq",
       "blocks": {
-        "question-1": {
+        "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Can it charge an iPad?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger can charge iPads. The power bank can charge tablets that support 30W charging, making it suitable for most modern iPads.</p>",
+            "title": "<strong>What devices are compatible with this portable charger for iPhone?</strong>",
+            "text": "<p>This portable charger power bank is designed for iPhone 17/16/15/14/13/12/11 series, including Pro, Pro Max, and Air models, and also works with AirPods 2/3/4/Pro** and other USB-powered devices.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
-        "question-2": {
+        "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is this charger compatible with Android devices?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger is fully compatible with Android devices! It features a built-in USB-C cable and USB-C port that support up to 30W fast charging, making it perfect for charging most modern Android phones.</p>",
+            "title": "<strong>How fast can a 30W portable charger charge an iPhone?</strong>",
+            "text": "<p>With PD 30W fast charging, this power bank can charge iPhone 16 Pro up to 56% in about 30 minutes and fully charge it in around 1.7 hours, delivering fast and efficient power on the go.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can this portable charger charge multiple devices at the same time?</strong>",
+            "text": "<p>Yes. This 3-in-1 keychain charger can charge up to three devices simultaneously, including iPhone, AirPods, Android devices, and even laptops that support 30W USB-C charging.<br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1268,28 +1277,17 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>How long does it take to recharge?</strong>",
-            "text": "<p>The RORRY Portable Charger fully recharges in around 1.7 hours. With USB-C input supporting up to 30W, it charges much faster than many traditional power banks that can take 4-6 hours to fully recharge.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-4": {
-          "type": "question",
-          "disabled": true,
-          "settings": {
-            "title": "<strong>How do I attach the keychain?</strong>",
-            "text": "<p>The RORRY Portable Charger has a built-in keychain design with a small metal loop attached to one corner of the device.<br/>To attach it: Simply clip keys, carabiner, or keychain rings directly onto the built-in metal loop.<br/></p>",
+            "title": "<strong>Is it safe to use a fast charging power bank every day?</strong>",
+            "text": "<p>Yes. This fast charging portable charger is designed with built-in safety protections to prevent overheating, overcharging, overcurrent, and short circuits, ensuring safe and reliable charging for everyday use.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "question-5": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Can you bring a 10000mAh power bank on an airplane?</strong>",
+            "text": "<p>Yes. A 10000mAh power bank is within airline safety limits and is generally allowed in carry-on luggage on flights, making it a great companion for air travel.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1308,10 +1306,10 @@
         }
       },
       "block_order": [
-        "question-1",
         "question-2",
-        "question-3",
+        "question-1",
         "question-4",
+        "question-3",
         "question-5",
         "contact"
       ],
