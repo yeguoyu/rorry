@@ -1058,8 +1058,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Can it charge an iPad?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger can charge an iPad through its USB-C output port, which provides up to 15W of power. </p>",
+            "title": "<strong>Is a 5000mAh portable charger enough for an iPhone?</strong>",
+            "text": "<p>Yes. A 5000mAh portable charger can charge most iPhones about one full time, making it perfect for emergency power during travel, commuting, or long days away from a wall outlet.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1067,8 +1067,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is this charger pocket-sized?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger<strong> </strong>is definitely pocket-sized! Its ultra-portable design makes it easy to carry in your pocket or attach to your backpack with the keychain design.</p>",
+            "title": "<strong>Is a keychain portable charger good for travel?</strong>",
+            "text": "<p>Yes. A keychain portable charger for iPhone is designed to be lightweight and compact, making it easy to attach to a backpack or carry in your pocket when traveling, commuting, or attending events.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1076,8 +1076,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does it have a built-in cable?</strong>",
-            "text": "<p>Yes, the RORRY Portable Charger has built-in cables as one of its key features. It's designed as a 3-in-1 keychain charger with built-in cables that can power up to 3 devices at the same time, including iPhone, AirPods, and Android devices. </p>",
+            "title": "<strong>Can a portable charger charge multiple devices at the same time?</strong>",
+            "text": "<p>Yes. This 3-in-1 keychain portable charger can charge up to three devices simultaneously, including iPhone, AirPods, and even Android devices.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1093,10 +1093,9 @@
         },
         "question-5": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Is a keychain portable charger good for travel?</strong>",
+            "text": "<p>Yes. A keychain portable charger for iPhone is designed to be lightweight and compact, making it easy to attach to a backpack or carry in your pocket when traveling, commuting, or attending events.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1125,11 +1124,11 @@
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
+        "description": "",
         "button_label": "",
         "button_link": "",
         "button_external": false,
@@ -1146,8 +1145,8 @@
         "color_button_gradient": "",
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
-        "padding_top": 12,
-        "padding_bottom": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": false,
         "rounded": false
