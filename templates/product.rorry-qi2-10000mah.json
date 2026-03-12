@@ -25,10 +25,16 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "product-title-md",
-            "title_size_mobile": "product-title-md",
+            "title_size": "product-title-sm",
+            "title_size_mobile": "product-title-sm",
             "show_price": true,
             "show_rating": false
+          }
+        },
+        "price_zFeEt6": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
           }
         },
         "judge_me_reviews_preview_badge_9yD9PV": {
@@ -38,7 +44,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text_size": "text-sm"
+            "text_size": "text-base"
           }
         },
         "countdown": {
@@ -158,6 +164,7 @@
       "block_order": [
         "vendor",
         "title",
+        "price_zFeEt6",
         "judge_me_reviews_preview_badge_9yD9PV",
         "description",
         "countdown",
@@ -189,7 +196,7 @@
         "padding_top": 0,
         "padding_bottom": 12,
         "divider": false,
-        "full_width": true,
+        "full_width": false,
         "rounded": false
       }
     },
