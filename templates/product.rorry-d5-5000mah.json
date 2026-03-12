@@ -38,7 +38,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text_size": "text-sm"
+            "text_size": "text-base"
           }
         },
         "countdown": {
