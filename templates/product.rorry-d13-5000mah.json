@@ -32,6 +32,12 @@
             "show_rating": false
           }
         },
+        "price_ND8ywj": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
         "judge_me_reviews_preview_badge_bzL3er": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -39,7 +45,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "text_size": "text-sm"
+            "text_size": "text-base"
           }
         },
         "variant_picker": {
@@ -143,6 +149,7 @@
       "block_order": [
         "vendor",
         "title",
+        "price_ND8ywj",
         "judge_me_reviews_preview_badge_bzL3er",
         "description",
         "variant_picker",
