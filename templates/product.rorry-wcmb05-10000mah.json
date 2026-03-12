@@ -1085,8 +1085,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Can it charge all three devices at the same time?</strong>",
-            "text": "<p>Yes. It’s a true 3-in-1 station that can wirelessly charge your iPhone (magnetically), Apple Watch, and AirPods all together.</p>",
+            "title": "<strong>Can it charge all devices at the same time?</strong>",
+            "text": "<p>Yes. This MagSafe charging station supports simultaneous wireless charging for iPhone, Apple Watch, and AirPods, keeping your desk clean and organized.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1094,8 +1094,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is the power bank removable for standalone use?</strong>",
-            "text": "<p>Yes. The 10000mAh power bank is detachable and portable, making it easy to take on the go.</p>",
+            "title": "<strong>Does this charging station have a detachable power bank?</strong>",
+            "text": "<p>Yes. The 10000mAh detachable power bank can be used separately for on-the-go charging. Simply press the power button to start charging when it’s removed from the main station.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1103,28 +1103,35 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is the charging fast and safe for overnight use?</strong>",
-            "text": "<p>Yes. With the included 20W fast-charging adapter, it can fully charge your phone in about 2–3.5 hours. It’s safety-certified with smart temperature control, so overnight charging is safe.</p>",
+            "title": "<strong>How fast can it charge my devices?</strong>",
+            "text": "<p>With the included PD 20W fast charging adapter, this 3-in-1 wireless charger fully charges your iPhone in about 2–3.3 hours and your Apple Watch/AirPods in approximately 3 hours, which is around 40% faster than standard chargers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "question-4": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Will my phone stay in place while charging?</strong>",
+            "text": "<p>Yes. The charger features a strong N52 magnetic grip, keeping your iPhone secure in both vertical and horizontal positions during charging.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "question-5": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Is this charging station portable for travel?</strong>",
+            "text": "<p>Absolutely. The foldable, compact design allows it to fit easily in your bag or suitcase, making it an ideal travel accessory without taking up much space.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_naqzFg": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Is this 3-in-1 charger safe to use?</strong>",
+            "text": "<p>Yes. The charger is CE, FCC, and UL certified, with dual protection from a smart microchip and advanced temperature monitoring system, guarding against short circuits, overheating, over-voltage, and over-current.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1148,6 +1155,7 @@
         "question-3",
         "question-4",
         "question-5",
+        "question_naqzFg",
         "contact"
       ],
       "settings": {
