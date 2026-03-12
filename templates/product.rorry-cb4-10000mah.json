@@ -1162,62 +1162,13 @@
         "rounded": false
       }
     },
-    "image_with_text_overlay_T7FM4g": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_LTgcc6": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>The Gift That Powers Their Day</strong>",
-            "heading_size": "title-sm",
-            "heading_tag": "h4",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_LTgcc6"
-      ],
-      "name": "t:sections.image-with-text-overlay.name",
-      "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_PC_13.jpg",
-        "image_height": "650px",
-        "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "center",
-        "image_mobile": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_MO_12.jpg",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
     "lookbook_9mLQif": {
       "type": "lookbook",
-      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_PC_13.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_MO_12.jpg",
-        "heading": "<strong>The Gift That Powers Their Day</strong>",
+        "image": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_PC_11.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_MO_11.jpg",
+        "heading": "<strong>Power Their Day – Best Portable Charger Gift</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h4",
@@ -1238,7 +1189,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#171717",
+        "color_overlay": "rgba(0,0,0,0)",
         "overlay_opacity": 0,
         "padding_top": 12,
         "padding_bottom": 0,
@@ -1499,7 +1450,6 @@
     "lookbook_fdbP7U",
     "lookbook_tQYipk",
     "lookbook_LTMJaV",
-    "image_with_text_overlay_T7FM4g",
     "lookbook_9mLQif",
     "lookbook_9ak4qF",
     "faq",
