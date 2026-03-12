@@ -1085,10 +1085,10 @@
       "settings": {
         "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_4.jpg",
         "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_5.jpg",
-        "heading": "",
-        "heading_size": "title-md",
+        "heading": "<strong>All-in-One 30W Portable Charger: Retractable Cable + iWatch Charger</strong>",
+        "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h4",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -1121,10 +1121,10 @@
       "settings": {
         "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_7.jpg",
         "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_7.jpg",
-        "heading": "",
-        "heading_size": "title-md",
+        "heading": "<strong>Soft Leather & Premium Metal Frame Portable Power Bank</strong>",
+        "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h4",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -1145,7 +1145,7 @@
         "color_overlay": "#171717",
         "overlay_opacity": 0,
         "padding_top": 12,
-        "padding_bottom": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1159,9 +1159,9 @@
           "settings": {
             "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_9.jpg",
             "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_9.jpg",
-            "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
+            "heading": "<strong>Portable Keychain Power Bank: Charge Anywhere, Anytime</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h4",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -1174,9 +1174,9 @@
           "settings": {
             "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_8.jpg",
             "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_8.jpg",
-            "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
+            "heading": "<strong>Portable Travel Power Bank: Charge Up for Every Adventure</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h4",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -1198,15 +1198,15 @@
         "content_width": "small",
         "image_height_mobile": "adapt",
         "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ffffff",
-        "color_background": "#ffffff",
+        "color_text": "#9887b8",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
-        "color_button_text": "#171717",
+        "color_button_text": "rgba(0,0,0,0)",
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
-        "color_overlay": "#171717",
+        "color_overlay": "rgba(0,0,0,0)",
         "overlay_opacity": 0,
-        "padding_top": 0,
+        "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
@@ -1230,8 +1230,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>How long does the retractable cable last?</strong>",
-            "text": "<p>The retractable cable on the RORRY Portable Charger is engineered for exceptional durability - it's designed to withstand 3,000+ pulls without loosening. This means with typical daily use (let's say pulling it out 5-10 times per day), the cable should maintain its retraction mechanism and connection quality for well over a year of regular use. The cable undergoes extensive aging tests before shipment to ensure reliable long-term performance.</p>",
+            "title": "<strong>Does the built-in cable prevent tangling?</strong>",
+            "text": "<p>Yes. The 2.13ft retractable cable stretches when you need it and snaps back magnetically when not in use, keeping your bag clutter-free. The keychain design also allows easy carrying on your backpack or wrist.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1258,8 +1258,26 @@
           "type": "question",
           "disabled": true,
           "settings": {
-            "title": "<strong>Frequently asked question</strong>",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Is this power bank travel-friendly?</strong>",
+            "text": "<p>Absolutely. With a compact size (5.27 × 2.55 × 0.98 inches) and airline-friendly design, this charger meets carry-on regulations, making it ideal for flights, commuting, and outdoor adventures.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_P9pTtE": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Is this portable charger safe to use?</strong>",
+            "text": "<p>Yes. The charger is UL-certified and features smart protection chips that safeguard your devices from overcharging, overcurrent, over-voltage, and short circuits, ensuring safe everyday use.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_zXgNqU": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can I bring this power bank on a plane?</strong>",
+            "text": "<p>Absolutely. With 12000mAh capacity and a compact design (5.27 × 2.55 × 0.98 inches), it meets airline carry-on regulations, making it safe for flights.<br/><br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1283,16 +1301,18 @@
         "question-3",
         "question-4",
         "question-5",
+        "question_P9pTtE",
+        "question_zXgNqU",
         "contact"
       ],
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
+        "description": "",
         "button_label": "",
         "button_link": "",
         "button_external": false,
@@ -1309,8 +1329,8 @@
         "color_button_gradient": "",
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
-        "padding_top": 84,
-        "padding_bottom": 84,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": false,
         "rounded": false
