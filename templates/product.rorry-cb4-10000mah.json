@@ -1238,11 +1238,29 @@
     "faq": {
       "type": "faq",
       "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Do I need to carry extra cables or a wall charger?</strong>",
+            "text": "<p>No. RORRY Flow is designed as an all-in-one mini charger. It includes a built-in USB-C cable and a foldable wall plug, so you can recharge the power bank directly from a wall outlet—no extra adapters needed. It’s perfect for travel, commuting, or everyday carry.<br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_UjKmre": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can I recharge the power bank directly from a wall outlet?</strong>",
+            "text": "<p>Yes. Thanks to the foldable wall plug, you can plug the charger directly into a power outlet to recharge the battery without needing a separate adapter.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>How many devices can this power bank charge at the same time?</strong>",
-            "text": "<p>RORRY Flow supports charging up to 4 devices simultaneously. It features a built-in USB-C cable, a foldable wall plug for recharging, and dedicated outputs including 40W fast charging and 5W Apple Watch charging—perfect for powering your iPhone, Apple Watch, iPad, and more at the same time.</p>",
+            "title": "<strong>Can this charger power multiple devices at the same time?</strong>",
+            "text": "<p>Yes. The multi-device portable charger supports charging up to four devices simultaneously, including iPhone, Apple Watch, iPad, and other USB-C devices.<br/><br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1256,31 +1274,29 @@
             "highlighted_scribble": "circle"
           }
         },
-        "question-1": {
+        "question-5": {
           "type": "question",
           "settings": {
-            "title": "<strong>Do I need to carry extra cables or a wall charger?</strong>",
-            "text": "<p>No. RORRY Flow is designed as an all-in-one mini charger. It includes a built-in USB-C cable and a foldable wall plug, so you can recharge the power bank directly from a wall outlet—no extra adapters needed. It’s perfect for travel, commuting, or everyday carry.<br/></p>",
+            "title": "<strong>What devices can the RORRY Flow 3-in-1 portable charger charge?</strong>",
+            "text": "<p>The RORRY Flow portable charger works with iPhone 17/16/15 series, Apple Watch, iPad, MacBook, AirPods, and other USB-C devices. It’s designed as an all-in-one charging solution for your Apple devices.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "question-4": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>What makes the RORRY Flow power bank different from others?</strong>",
+            "text": "<p>The RORRY Flow combines fast charging, built-in cable, foldable wall plug, and stylish design in one compact device. With its skin-friendly finish and modern colors, it works as both a powerful charger and a stylish everyday accessory.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
-        "question-5": {
+        "question_m7Nnbb": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Is this portable charger good for travel?</strong>",
+            "text": "<p>Yes. The compact and lightweight design fits easily in your pocket, purse, or backpack. The LoopLink strap also allows you to attach it securely for easy carrying while traveling or commuting.<br/><br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1299,11 +1315,13 @@
         }
       },
       "block_order": [
+        "question-1",
+        "question_UjKmre",
         "question-3",
         "question-2",
-        "question-1",
-        "question-4",
         "question-5",
+        "question-4",
+        "question_m7Nnbb",
         "contact"
       ],
       "settings": {
