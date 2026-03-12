@@ -841,11 +841,11 @@
     "faq": {
       "type": "faq",
       "blocks": {
-        "question-1": {
+        "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Can it charge an iPad?</strong>",
-            "text": "<p>Yes! It can charge an iPad. It's specifically listed as compatible with iPad, MacBook Air, iPhones, and Apple Watch. With its 35W power output and dual USB-C ports, it provides fast charging for iPads while also allowing you to charge other devices simultaneously through its USB-A port and built-in Apple Watch charger.</p>",
+            "title": "<strong>Is this USB-C charger good for travel?</strong>",
+            "text": "<p>Yes. With its compact size and foldable plug, this portable wall charger easily fits into your bag or luggage, making it ideal for travel, commuting, and everyday use.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -853,17 +853,17 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does it support fast charging?</strong>",
-            "text": "<p>Yes, It supports fast charging with 35W max power output using PD3.0 technology. It can charge your iPhone 15 Pro Max from 0 to 60% in just 30 minutes, and an iPad Pro 11\" from 0 to 100% in 2.5 hours.</p>",
+            "title": "<strong>How fast is the 35W USB-C fast charger?</strong>",
+            "text": "<p>With 35W PD3.0 fast charging, this charger can power iPhone 15 Pro Max up to about 60% in 30 minutes and fully charge iPad Pro 11\" in around 2.5 hours, delivering fast and efficient charging.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
-        "question-3": {
+        "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is this charger easy to carry?</strong>",
-            "text": "<p>Yes, It is designed for portability! The foldable plug design and foldable Apple Watch charger make it even more travel-friendly by preventing scratches to other items in your luggage.</p>",
+            "title": "<strong>What devices are compatible with this Apple charging block?</strong>",
+            "text": "<p>This multi-port USB-C charger is compatible with iPhone 15/14/13/12/11/XR/X/8/7/6, Apple Watch Series 9/Ultra 2/8/Ultra/7/6/5/4/3/SE, as well as iPad and MacBook Air. It’s designed as an all-in-one charging solution for Apple users.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -871,18 +871,17 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is the plug foldable?</strong>",
-            "text": "<p>Yes, It features a foldable plug design that makes it travel-friendly. The foldable prongs help prevent scratches to other items in your bag and make it more compact for storage.</p>",
+            "title": "<strong>Does this charger include a built-in Apple Watch charger?</strong>",
+            "text": "<p>Yes. The charger includes a built-in foldable Apple Watch charger, which can fully charge Apple Watch Series 9 in about 1.3 hours without needing an additional watch charging cable.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "question-5": {
           "type": "question",
-          "disabled": true,
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Is it safe to use this fast charger for Apple devices?</strong>",
+            "text": "<p>Yes. The charger includes a smart protection chip that prevents overheating, short circuits, overcharging, over-voltage, and over-current, ensuring safe and stable charging.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -901,9 +900,9 @@
         }
       },
       "block_order": [
-        "question-1",
-        "question-2",
         "question-3",
+        "question-2",
+        "question-1",
         "question-4",
         "question-5",
         "contact"
