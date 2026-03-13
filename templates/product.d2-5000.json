@@ -789,6 +789,7 @@
         "question-5",
         "contact"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
