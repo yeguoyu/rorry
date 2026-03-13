@@ -581,6 +581,7 @@
         "specification_Mj7KEt",
         "specification_w9fcg9"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-border",
         "open_first_row": true,
