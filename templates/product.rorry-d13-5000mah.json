@@ -67,6 +67,12 @@
             "color_scheme": "accent-1"
           }
         },
+        "liquid_BzCfGQ": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'couponcode' %}"
+          }
+        },
         "countdown": {
           "type": "countdown",
           "disabled": true,
@@ -154,6 +160,7 @@
         "description",
         "variant_picker",
         "inventory",
+        "liquid_BzCfGQ",
         "countdown",
         "buy_buttons",
         "liquid_fJMLx7",
