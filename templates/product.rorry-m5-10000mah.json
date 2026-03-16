@@ -98,6 +98,12 @@
             "color_scheme": "accent-1"
           }
         },
+        "liquid_CK9K8i": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'couponcode' %}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -176,6 +182,7 @@
         "product_variations_MzRwYY",
         "variant_picker",
         "inventory",
+        "liquid_CK9K8i",
         "buy_buttons",
         "liquid_V9M6gP",
         "klarna_on_site_messaging_app_block_QHWjGY",
