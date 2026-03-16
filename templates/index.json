@@ -243,10 +243,10 @@
         "products": [
           "rorry-d2-5000mah-portable-charger-keychain-power-bank",
           "rorry-d2-10000mah-pd-20w-portable-charger-keychain-power-bank",
-          "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank",
           "rorry-d5-10000mah-portable-charger-usb-c-power-bank",
           "rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w",
-          "rorry-cb06-10000mah-portable-charger-fast-charging-power-bank"
+          "rorry-cb06-10000mah-portable-charger-fast-charging-power-bank",
+          "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank"
         ],
         "product_limit": 5,
         "columns": 5,
