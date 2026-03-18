@@ -279,6 +279,7 @@
     },
     "video_mBkphM": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "video": "shopify://files/videos/RORRY d2-10000 mAh portable charger.mp4",
@@ -300,9 +301,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_1.jpg",
-        "heading": "<strong>RORRY All-in-One Portable Charger</strong>",
+        "image": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_1.jpg",
+        "heading": "<strong>RORRY CharmGo</strong> <strong>All-in-One Portable Charger</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h4",
@@ -325,7 +326,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 12,
+        "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
@@ -336,9 +337,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_2.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_2.jpg",
-        "heading": "<strong>PD 20W iPhone Charger: 1.5H Full Charge</strong>",
+        "image": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_2.jpg",
+        "heading": "<strong>10000mAh Keychain Portable Charger: Apple Watch Charging + Dual Cables</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h4",
@@ -372,8 +373,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_3.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_3.jpg",
+        "image": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_3.jpg",
         "heading": "<strong>Fast Charging for Apple Watch: 1.2H Full Charge</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -408,9 +409,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_4.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_4.jpg",
-        "heading": "<strong>18W Power Bank Recharging: 3.5H Full Charge</strong>",
+        "image": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_4.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_4.jpg",
+        "heading": "<strong>Goodbye Cable Mess. Hello Effortless Travel.</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h4",
@@ -444,9 +445,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_5.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_5.jpg",
-        "heading": "<strong>Charge Apple Watch, iPhone & More – All at Once</strong>",
+        "image": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_5.jpg",
+        "heading": "<strong>Clip. Carry. Charge Anywhere.</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h4",
@@ -480,9 +481,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_6.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_6.jpg",
-        "heading": "<strong>Compact & Lightweight</strong>",
+        "image": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_D2-10000mAh_Portable_Charger_Keychain_Power_Bank_20W_6.jpg",
+        "heading": "<strong>Certified Safe Portable Charger: UL & FCC Approved</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h4",
@@ -514,6 +515,7 @@
     },
     "lookbook_Yzqkkm": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_7.jpg",
@@ -673,6 +675,7 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/c368696f-bed6-4c33-b668-d37bb11d3f68.__CR0_0_800_600_PT0_SX800_V1_4dee3407-c753-406a-92f3-0a6abf1050c4.jpg",
         "image_height": "600px",
@@ -734,6 +737,7 @@
         "heading_Y4Kawm",
         "text_kDJtFA"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/86094f5a-f139-4daa-8270-cfec0de26a79.__CR0_0_800_600_PT0_SX800_V1.jpg",
         "image_height": "600px",
@@ -874,6 +878,7 @@
         "column_DmNEaL",
         "column_qjhFX3"
       ],
+      "disabled": true,
       "settings": {
         "gap": "small",
         "columns": 4,
@@ -908,11 +913,12 @@
     },
     "lookbook_Eq3R99": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank-After-Sales_Service_c0a6f897-342d-4333-a14f-061ec105ee91.jpg",
         "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank-After-Sales_Service.jpg",
-        "heading": "<strong>RORRY Complete Kit with Hassle-Free Support</strong>",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h4",
