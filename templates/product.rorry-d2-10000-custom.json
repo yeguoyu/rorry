@@ -95,6 +95,7 @@
         },
         "liquid_dHBKJC": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "{% render 'couponcode' %}"
           }
