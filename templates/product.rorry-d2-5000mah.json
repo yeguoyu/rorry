@@ -100,6 +100,7 @@
         },
         "liquid_QdhX33": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "{% render 'couponcode' %}"
           }
