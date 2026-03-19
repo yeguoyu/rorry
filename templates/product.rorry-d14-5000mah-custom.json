@@ -95,6 +95,7 @@
         },
         "liquid_nqBHUt": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "{% render 'couponcode' %}"
           }
