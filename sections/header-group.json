@@ -74,7 +74,7 @@
       "custom_css": [],
       "settings": {
         "show_social": false,
-        "enable_language_selector": false,
+        "enable_language_selector": true,
         "enable_country_selector": true,
         "invert_icons_selectors": false,
         "announcement_position": "center",
