@@ -198,6 +198,11 @@
         "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
         "disabled": true,
         "settings": {}
+      },
+      "6744518860797519131": {
+        "type": "shopify://apps/langwill-translate/blocks/floating-selector/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
