@@ -1304,6 +1304,16 @@
     "zl_wall_reviews_Uc8Az4": {
       "type": "zl-wall-reviews",
       "blocks": {
+        "review_QarmcY": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/f9dfcc7174d005c6985b5e2e8a3eeaab_996ef1c7-6c7c-4d7f-9599-367727963a5a.png",
+            "review_title": "Fast charger charges 4 devices at once- convenient for travel",
+            "stars": 5,
+            "text": "The Rorry portable charger with a built in USB-C cable and foldable wall plug is a lightweight charger that takes care of all of my travel charging needs. I don't need to carry\nextra cords or power bricks or an extra watch charger. You don't even need a cord to plug into the charger because of its built is foldable wall plug. It fits great in my purse or travel carryon and it has a ring you can clip to almost anything. It is a fast charger, it charges my phone in a bout 40 minutes. I can charge 4 devices at a time since there are additional ports in the side for a USB-A and USB-C connection. It is priced higher than some power banks but it is worth it because it can charge so many devices even my Apple Watch and all I need is this one power bank to charge all of my devices.",
+            "author": "love to read"
+          }
+        },
         "review_Wy7KhW": {
           "type": "review",
           "settings": {
@@ -1374,6 +1384,16 @@
             "author": "KGI"
           }
         },
+        "review_W4zgXU": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/bb2b1e07340151a730a0c99543475121_7038bef9-4bc2-4be2-9406-225a049ae135.png",
+            "review_title": "The portable charger I actually keep reaching for",
+            "stars": 5,
+            "text": "I have a few portable chargers, but this is the one I keep grabbing whenever I have the choice. It just works well and feels really practical for everyday use.\n\nI love that it has the built-in cable and the fold-out wall plug, so I don’t have to remember extra cords when I toss it in my bag. The size is compact enough to carry easily, but it still has plenty of power for multiple charges. It also feels solid and well made, not flimsy.\n\nThe display makes it easy to see the battery level, and I like that it can charge different devices without needing adapters. It’s just one of those simple, convenient products that makes life easier.\n\nDefinitely a 5-star pick for me and the one I reach for first when I’m heading out.",
+            "author": "Ashleigh"
+          }
+        },
         "review_f43MnJ": {
           "type": "review",
           "settings": {
@@ -1416,6 +1436,7 @@
         }
       },
       "block_order": [
+        "review_QarmcY",
         "review_Wy7KhW",
         "review_VDGxT6",
         "review_zMiABD",
@@ -1423,6 +1444,7 @@
         "review_jGji9i",
         "review_M9DApe",
         "review_FHFM8r",
+        "review_W4zgXU",
         "review_f43MnJ",
         "review_cfUKNY",
         "review_zr76A3",
