@@ -1356,6 +1356,7 @@
         },
         "review_jGji9i": {
           "type": "review",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/a3.jpg",
             "review_title": "Compact, light weight, and charges quickly!",
@@ -1426,12 +1427,23 @@
         },
         "review_NzxpRH": {
           "type": "review",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/a6.png",
             "review_title": "Excellent",
             "stars": 5,
             "text": "I recently purchased this charger and I am thrilled with its performance! The charging function is perfect – it powers up my devices quickly and efficiently. The color is amazing, a vibrant shade that stands out and adds a stylish touch to my tech accessories. I highly recommend this product to everyone looking for a reliable and visually appealing charger.",
             "author": "Luna"
+          }
+        },
+        "review_rCbFFB": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/img_v3_02102_3249a9c3-11b6-4a86-acc3-7373be9a1abg.jpg",
+            "review_title": "Nice All in One Travel Power Bank",
+            "stars": 5,
+            "text": "This is a black 10,000 mAh Portable Charger with foldable blades for US 120V outlets. It's reasonably slim so it doesn't take up much space in your luggage, and with the built in 120V plug it doesn't require a separate charging cable. The power bank includes a 40W Fast Charging USB-C Cable built into it, along with both USB-A and USB-C sockets for external cables and multiple charging. This power bank also includes the ability to charge an Apple Watch when laid on its side. It also includes a separate USB-C to USB-C charging cable if you need something longer than the short built-in USB-C cable. It includes a spring opening keyring, although I feel this is too large and heavy for use as a keyring, it would be very useful for hanging on the outside of a laptop bag for ready access.",
+            "author": "John Crissup"
           }
         }
       },
@@ -1448,7 +1460,8 @@
         "review_f43MnJ",
         "review_cfUKNY",
         "review_zr76A3",
-        "review_NzxpRH"
+        "review_NzxpRH",
+        "review_rCbFFB"
       ],
       "name": "ZL - Wall of Love",
       "settings": {
