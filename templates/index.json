@@ -1201,9 +1201,9 @@
       "blocks": {
         "image_UYANAQ": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "link": ""
+            "image": "shopify://shop_images/RORRY_Flow_CB4-10000.png",
+            "link": "shopify://products/rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w"
           }
         },
         "image_hW9QdF": {
