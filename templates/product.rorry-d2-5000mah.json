@@ -645,7 +645,7 @@
         "heading": "<strong>RORRY Complete Kit with Hassle-Free Support</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h4",
+        "heading_tag": "h3",
         "heading_position": "none",
         "subheading": "",
         "description": "",
