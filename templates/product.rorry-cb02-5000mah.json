@@ -130,7 +130,7 @@
         "liquid_THL6kn": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"inline\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"16\"\n    data-pp-placement=\"payment\"\n    data-pp-amount=\" 100.00\"\n    data-pp-buyercountry=\"AU\">\n</div>\n</html>\n\n<div id=\"pp-message\"></div>\n<script src=https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=AUD&components=messages,buttons></script>"
+            "liquid": "<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"inline\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"16\"\n    data-pp-placement=\"payment\"\n    data-pp-amount=\"{{ product.selected_or_first_available_variant.price | money_without_currency | remove: ',' | strip }}\"\n    data-pp-buyercountry=\"AU\">\n</div>\n</html>\n\n<div id=\"pp-message\"></div>\n<script src=https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=AUD&components=messages,buttons></script>"
           }
         },
         "text_xciqLC": {
