@@ -127,6 +127,12 @@
             "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->"
           }
         },
+        "liquid_THL6kn": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"inline\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"12\"\n    data-pp-placement=\"payment\"\n    data-pp-amount=\" 100.00\"\n    data-pp-buyercountry=\"AU\">\n</div>\n</html>\n\n<div id=\"pp-message\"></div>\n<script src=https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=AUD&components=messages,buttons></script>"
+          }
+        },
         "text_xciqLC": {
           "type": "text",
           "settings": {
@@ -181,6 +187,7 @@
         "buy_buttons",
         "klarna_on_site_messaging_app_block_L8DHAC",
         "liquid_Wah8M3",
+        "liquid_THL6kn",
         "text_xciqLC",
         "pickup_availability",
         "share",
