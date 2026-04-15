@@ -392,3 +392,17 @@
     </div>
   {%- endif -%}
 </div>
+<p>Pay Later Messaging</p>
+<p class="lead"></p>
+<script src="https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=USD&components=messages,buttons" defer></script>
+
+<div 
+    data-pp-message 
+    data-pp-style-layout="text" 
+    data-pp-style-logo-type="inline"
+    data-pp-style-text-color="black" 
+    data-pp-style-text-size="12" 
+    data-pp-amount="{{ product.selected_or_first_available_variant.price | divided_by: 100.0 }}"
+    data-pp-placement="product"
+    data-pp-buyercountry="US"> 
+</div>
