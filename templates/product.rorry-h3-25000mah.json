@@ -110,6 +110,12 @@
             "show_back_in_stock_phone": false
           }
         },
+        "liquid_3WjtxD": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<script src=\"https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=USD&components=messages,buttons\" defer></script>\n<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"primary\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"14\"\n    data-pp-amount=\"{{ product.selected_or_first_available_variant.price | divided_by: 100.0 }}\"\n    data-pp-placement=\"product\"\n    data-pp-buyercountry=\"US\"> \n</div>"
+          }
+        },
         "liquid_qkycTa": {
           "type": "liquid",
           "settings": {
@@ -179,6 +185,7 @@
         "inventory",
         "liquid_TKyqbU",
         "buy_buttons",
+        "liquid_3WjtxD",
         "liquid_qkycTa",
         "klarna_on_site_messaging_app_block_CTdwAz",
         "text_GcnMmw",
