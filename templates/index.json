@@ -12,21 +12,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_EKkjiB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/RORRY_All-in-mini_Something_Fast_Is_Coming._CharmGo_Collection.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_All-in-mini_Something_Fast_Is_Coming_CharmGo_Collection_20260414-US-1.jpg",
-            "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": true,
-            "button_icon": true
-          }
-        },
         "slide-1": {
           "type": "image",
           "settings": {
@@ -71,13 +56,28 @@
             "button_external": true,
             "button_icon": true
           }
+        },
+        "image_EKkjiB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_All-in-mini_Something_Fast_Is_Coming._CharmGo_Collection.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_All-in-mini_Something_Fast_Is_Coming_CharmGo_Collection_20260414-US-1.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": true,
+            "button_icon": true
+          }
         }
       },
       "block_order": [
-        "image_EKkjiB",
         "slide-1",
         "image_g6RnRc",
-        "image_wBb9zr"
+        "image_wBb9zr",
+        "image_EKkjiB"
       ],
       "custom_css": [
         ".banner {max-width: 100%; border-radius: 0px;}"
