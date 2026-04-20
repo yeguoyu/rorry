@@ -93,13 +93,6 @@
             "color_scheme": "accent-1"
           }
         },
-        "liquid_RHWhcy": {
-          "type": "liquid",
-          "disabled": true,
-          "settings": {
-            "liquid": "{% render 'couponcode' %}"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -120,6 +113,12 @@
             "topPadding": "0",
             "bottomPadding": "0",
             "messagePrefix": ""
+          }
+        },
+        "liquid_RHWhcy": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<script src=\"https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=USD&components=messages,buttons\" defer></script>\n<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"primary\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"14\"\n    data-pp-amount=\"{{ product.selected_or_first_available_variant.price | divided_by: 100.0 }}\"\n    data-pp-placement=\"product\"\n    data-pp-buyercountry=\"US\"> \n</div>"
           }
         },
         "liquid_Wah8M3": {
@@ -178,9 +177,9 @@
         "description",
         "variant_picker",
         "inventory",
-        "liquid_RHWhcy",
         "buy_buttons",
         "klarna_on_site_messaging_app_block_L8DHAC",
+        "liquid_RHWhcy",
         "liquid_Wah8M3",
         "text_xciqLC",
         "pickup_availability",
