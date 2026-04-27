@@ -1,0 +1,637 @@
+{%- liquid
+  assign s = section.settings
+  assign tabs_raw = ""
+  for block in section.blocks
+    assign t = block.settings.target_tab | strip
+    unless tabs_raw contains t
+      if tabs_raw == ""
+        assign tabs_raw = t
+      else
+        assign tabs_raw = tabs_raw | append: "||" | append: t
+      endif
+    endunless
+  endfor
+  assign tabs = tabs_raw | split: "||"
+-%}
+
+<style>
+  #zl-nano-{{ section.id }} *,
+  #zl-nano-{{ section.id }} *::before,
+  #zl-nano-{{ section.id }} *::after { box-sizing: border-box; }
+
+  #zl-nano-{{ section.id }} {
+    background-color: {{ s.bg_color }};
+    padding-top: {{ s.padding_top }}px;
+    padding-bottom: {{ s.padding_bottom }}px;
+  }
+  #zl-nano-{{ section.id }} .zl-container {
+    max-width: {{ s.container_width }}px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  #zl-nano-{{ section.id }} .zl-title {
+    text-align: center;
+    color: {{ s.title_color }};
+    font-size: {{ s.title_size_pc }}px;
+    font-weight: {{ s.title_weight }};
+    margin: 0 0 32px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  #zl-nano-{{ section.id }} .zl-tabs-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+  #zl-nano-{{ section.id }} .zl-tabs {
+    display: inline-flex;
+    align-items: center;
+    background: {{ s.tab_wrap_bg }};
+    border: 1.5px solid {{ s.tab_border_color }};
+    border-radius: 999px;
+    padding: 4px;
+    gap: 2px;
+  }
+  #zl-nano-{{ section.id }} .zl-tab-btn {
+    cursor: pointer; border: none;
+    background: transparent;
+    color: {{ s.tab_inactive_color }};
+    font-size: {{ s.tab_size_pc }}px;
+    font-weight: 500;
+    padding: 8px 22px;
+    border-radius: 999px;
+    transition: background .25s, color .25s;
+    white-space: nowrap; line-height: 1;
+  }
+  #zl-nano-{{ section.id }} .zl-tab-btn.is-active {
+    background: {{ s.tab_active_bg }};
+    color: {{ s.tab_active_color }};
+  }
+
+  #zl-nano-{{ section.id }} .zl-panel { display: none; }
+  #zl-nano-{{ section.id }} .zl-panel.is-active {
+    display: flex; gap: 12px; align-items: stretch;
+  }
+
+  #zl-nano-{{ section.id }} .zl-card {
+    position: relative; border-radius: 16px; overflow: hidden;
+    height: {{ s.card_height_pc }}px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    cursor: pointer;
+    transition: flex-grow 0.6s cubic-bezier(0.25, 1, 0.25, 1), flex-basis 0.6s cubic-bezier(0.25, 1, 0.25, 1);
+    background: #1a1a1a;
+    display: block; 
+    text-decoration: none; 
+  }
+  #zl-nano-{{ section.id }} .zl-card.is-open { 
+    flex-grow: 1; 
+    flex-basis: 0%; 
+  }
+  #zl-nano-{{ section.id }} .zl-card__img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center top;
+    transition: transform .6s cubic-bezier(0.25, 1, 0.25, 1);
+    pointer-events: none; display: block;
+  }
+  #zl-nano-{{ section.id }} .zl-card.is-open .zl-card__img { transform: scale(1.03); }
+  #zl-nano-{{ section.id }} .zl-card__overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, transparent 35%, rgba(0,0,0,.2) 85%, rgba(0,0,0,.55) 100%);
+    pointer-events: none;
+  }
+  #zl-nano-{{ section.id }} .zl-tag {
+    position: absolute; top: 14px; left: 14px;
+    background: {{ s.tag_bg }}; color: {{ s.tag_color }};
+    font-size: {{ s.tag_size_pc }}px; font-weight: 700;
+    padding: 4px 10px; border-radius: 999px;
+    white-space: nowrap; z-index: 2;
+    opacity: 0; transform: translateY(-6px);
+    transition: opacity .4s ease .1s, transform .4s ease .1s;
+  }
+  #zl-nano-{{ section.id }} .zl-card.is-open .zl-tag { opacity: 1; transform: translateY(0); }
+  #zl-nano-{{ section.id }} .zl-card__info {
+    position: absolute; bottom: 20px; left: 20px; right: 56px;
+    opacity: 0; transform: translateY(8px); z-index: 2;
+    transition: opacity .4s ease .15s, transform .4s ease .15s;
+    pointer-events: none;
+  }
+  #zl-nano-{{ section.id }} .zl-card.is-open .zl-card__info {
+    opacity: 1; transform: translateY(0); pointer-events: auto;
+  }
+  #zl-nano-{{ section.id }} .zl-card__title {
+    color: {{ s.card_title_color }};
+    font-size: {{ s.card_title_size_pc }}px;
+    font-weight: {{ s.card_title_weight }};
+    margin: 0 0 6px; line-height: 1.3;
+  }
+  #zl-nano-{{ section.id }} .zl-price-row {
+    display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap;
+  }
+  #zl-nano-{{ section.id }} .zl-price {
+    color: {{ s.price_color }};
+    font-size: {{ s.price_size_pc }}px;
+    font-weight: {{ s.price_weight }};
+  }
+  #zl-nano-{{ section.id }} .zl-compare {
+    color: {{ s.compare_color }};
+    font-size: {{ s.compare_size_pc }}px;
+    text-decoration: line-through;
+  }
+  #zl-nano-{{ section.id }} .zl-plus {
+    position: absolute; bottom: 30px; right: 20px;
+    width: 38px; height: 38px; border-radius: 50%;
+    background: {{ s.plus_bg }};
+    display: flex; align-items: center; justify-content: center;
+    border: none; cursor: pointer; z-index: 3;
+    opacity: 0; transform: scale(.8);
+    transition: opacity .4s ease .2s, transform .4s ease .2s, background .2s;
+  }
+  #zl-nano-{{ section.id }} .zl-card.is-open .zl-plus { opacity: 1; transform: scale(1); }
+  #zl-nano-{{ section.id }} .zl-plus:hover { background: rgba(255,255,255,.95); transform: scale(1.08) !important; }
+  #zl-nano-{{ section.id }} .zl-plus svg { width: 15px; height: 15px; display: block; }
+  #zl-nano-{{ section.id }} .zl-plus svg line {
+    stroke: {{ s.plus_color }}; stroke-width: 2.2; stroke-linecap: round;
+  }
+
+  .zl-qv-loading-overlay {
+    display: none;
+    position: fixed; inset: 0; z-index: 9998;
+    background: rgba(0,0,0,.35);
+    align-items: center; justify-content: center;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+  .zl-qv-loading-overlay.is-visible { display: flex; }
+  .zl-qv-spinner {
+    width: 40px; height: 40px; border-radius: 50%;
+    border: 3px solid rgba(255,255,255,.3);
+    border-top-color: #fff;
+    animation: zlSpin .7s linear infinite;
+  }
+  @keyframes zlSpin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 767px) {
+    #zl-nano-{{ section.id }} { padding-top: {{ s.padding_top_mb }}px; padding-bottom: {{ s.padding_bottom_mb }}px; }
+    #zl-nano-{{ section.id }} .zl-container { padding: 0; }
+    #zl-nano-{{ section.id }} .zl-title { font-size: {{ s.title_size_mb }}px; margin-bottom: 20px; padding: 0 20px; }
+    #zl-nano-{{ section.id }} .zl-tabs-wrap { padding: 0 20px; margin-bottom: 24px; }
+    #zl-nano-{{ section.id }} .zl-tab-btn { font-size: {{ s.tab_size_mb }}px; padding: 7px 16px; }
+    #zl-nano-{{ section.id }} .zl-panel.is-active {
+      flex-direction: row; overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 10px; padding: 0 20px 16px; scrollbar-width: none;
+      margin-left:20px;
+    }
+    #zl-nano-{{ section.id }} .zl-panel.is-active::-webkit-scrollbar { display: none; }
+    #zl-nano-{{ section.id }} .zl-card {
+      height: auto;
+      aspect-ratio: 1 / 1;
+      flex: 0 0 300px !important; width: 300px;
+      border-radius: 14px; scroll-snap-align: start; cursor: default;
+    }
+    #zl-nano-{{ section.id }} .zl-card .zl-tag,
+    #zl-nano-{{ section.id }} .zl-card .zl-card__info,
+    #zl-nano-{{ section.id }} .zl-card .zl-plus { opacity: 1 !important; transform: none !important; }
+    #zl-nano-{{ section.id }} .zl-tag { font-size: {{ s.tag_size_mb }}px; }
+    #zl-nano-{{ section.id }} .zl-card__title { font-size: {{ s.card_title_size_mb }}px; }
+    #zl-nano-{{ section.id }} .zl-price { font-size: {{ s.price_size_mb }}px; }
+    #zl-nano-{{ section.id }} .zl-compare { font-size: {{ s.compare_size_mb }}px; }
+
+    .zl-qv-backdrop { align-items: flex-end; padding: 0; }
+    .zl-qv-modal { border-radius: 20px 20px 0 0; max-height: 93vh; }
+
+    .zl-qv-content .zl-product-root {
+      grid-template-columns: 1fr !important;
+      padding: 16px !important;
+    }
+    .zl-qv-content .zl-col-media {
+      padding-right: 0 !important;
+      position: relative !important;
+    }
+    .zl-qv-content .zl-col-info {
+      padding-left: 0 !important;
+      border-left: none !important;
+      border-top: 1px solid #f0f0f0 !important;
+      padding-top: 16px !important;
+      max-height: none !important;
+    }
+  }
+</style>
+
+<section id="zl-nano-{{ section.id }}">
+  <div class="zl-container">
+
+    {%- if s.title != blank -%}
+      <h2 class="zl-title heading leading-none title-sm">{{ s.title }}</h2>
+    {%- endif -%}
+
+    {%- if tabs.size > 1 -%}
+      <div class="zl-tabs-wrap">
+        <div class="zl-tabs" role="tablist">
+          {%- for tab in tabs -%}
+            <button
+              class="zl-tab-btn{% if forloop.first %} is-active{% endif %}"
+              role="tab"
+              data-tab="{{ tab | strip | escape }}"
+              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+            >{{- tab | strip -}}</button>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- for tab in tabs -%}
+      <div
+        class="zl-panel{% if forloop.first %} is-active{% endif %}"
+        data-panel="{{ tab | strip | escape }}"
+        role="tabpanel"
+      >
+        {%- for block in section.blocks -%}
+          {%- if block.settings.target_tab == tab -%}
+            {%- assign bs = block.settings -%}
+            {%- assign linked_product = bs.product -%}
+
+            {%- if linked_product != blank -%}
+              {%- assign display_title   = linked_product.title -%}
+              {%- assign display_price   = linked_product.price_min | money -%}
+              {%- assign display_compare = linked_product.compare_at_price_min | money -%}
+              {%- assign display_link    = linked_product.url -%}
+            {%- else -%}
+              {%- assign display_title   = bs.title -%}
+              {%- assign display_price   = bs.price -%}
+              {%- assign display_compare = bs.compare_price -%}
+              {%- assign display_link    = bs.card_link | default: "#" -%}
+            {%- endif -%}
+
+            <a href="{{ display_link }}"
+              class="zl-card{% if forloop.first %} is-open{% endif %}"
+              data-card
+              data-block-id="{{ block.id }}"
+              data-product-handle="{{ linked_product.handle | default: '' }}"
+              data-product-url="{{ linked_product.url | default: '' }}"
+              {{ block.shopify_attributes }}
+            >
+              {%- if bs.image_pc != blank -%}
+                {{
+                  bs.image_pc
+                  | image_url: width: 900
+                  | image_tag:
+                    class: 'zl-card__img',
+                    alt: display_title,
+                    loading: 'lazy',
+                    widths: '400,600,800,900'
+                }}
+              {%- elsif linked_product != blank and linked_product.featured_image != blank -%}
+                {{
+                  linked_product.featured_image
+                  | image_url: width: 900
+                  | image_tag:
+                    class: 'zl-card__img',
+                    alt: display_title,
+                    loading: 'lazy',
+                    widths: '400,600,800,900'
+                }}
+              {%- else -%}
+                <div class="zl-card__img" style="background:#2a2a2a;"></div>
+              {%- endif -%}
+
+              <span class="zl-card__overlay"></span>
+
+              {%- if bs.tag != blank -%}
+                <span class="zl-tag">{{ bs.tag }}</span>
+              {%- endif -%}
+
+              <div class="zl-card__info">
+                {%- if display_title != blank -%}
+                  <p class="zl-card__title">{{ display_title }}</p>
+                {%- endif -%}
+                <div class="zl-price-row">
+                  {%- if display_price != blank -%}<span class="zl-price">{{ display_price }}</span>{%- endif -%}
+                  {%- if display_compare != blank and display_compare != display_price -%}
+                    <span class="zl-compare">{{ display_compare }}</span>
+                  {%- endif -%}
+                </div>
+              </div>
+
+              {%- if linked_product != blank -%}
+                <button
+                  class="zl-plus"
+                  aria-label="Quick view {{ display_title | escape }}"
+                  data-open-qv
+                  data-product-handle="{{ linked_product.handle }}"
+                  data-product-url="{{ linked_product.url }}"
+                  data-product-title="{{ linked_product.title | escape }}"
+                >
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <line x1="8" y1="2" x2="8" y2="14"/>
+                    <line x1="2" y1="8" x2="14" y2="8"/>
+                  </svg>
+                </button>
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+
+  </div>
+</section>
+
+<div class="zl-qv-loading-overlay" id="zl-qv-loading-{{ section.id }}">
+  <div class="zl-qv-spinner"></div>
+</div>
+<script>
+(function () {
+  var sec = document.getElementById('zl-nano-{{ section.id }}');
+  var loadingOverlay = document.getElementById('zl-qv-loading-{{ section.id }}');
+  if (!sec) return;
+
+  var tabBtns = sec.querySelectorAll('.zl-tab-btn');
+  var panels  = sec.querySelectorAll('.zl-panel');
+  tabBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var target = btn.getAttribute('data-tab');
+      tabBtns.forEach(function (b) {
+        b.classList.toggle('is-active', b === btn);
+        b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+      });
+      panels.forEach(function (p) {
+        var active = p.getAttribute('data-panel') === target;
+        p.classList.toggle('is-active', active);
+        if (active) {
+          p.querySelectorAll('[data-card]').forEach(function (c, i) {
+            c.classList.toggle('is-open', i === 0);
+          });
+        }
+      });
+    });
+  });
+
+  function isMobile() { return window.innerWidth < 768; }
+  panels.forEach(function (panel) {
+    var cards = panel.querySelectorAll('[data-card]');
+    cards.forEach(function (card) {
+      card.addEventListener('mouseenter', function () {
+        if (isMobile()) return;
+        cards.forEach(function (c) { c.classList.toggle('is-open', c === card); });
+      });
+    });
+  });
+
+  function showLoading() {
+    if (loadingOverlay) loadingOverlay.classList.add('is-visible');
+  }
+  function hideLoading() {
+    if (loadingOverlay) loadingOverlay.classList.remove('is-visible');
+  }
+
+  function openQuickView(handle, productUrl) {
+    showLoading();
+
+    var existingQv = document.querySelector(
+      'quick-view[data-product-url*="' + handle + '"], ' +
+      '[id*="Quickview"][data-product-url*="' + handle + '"]'
+    );
+    if (existingQv) {
+      hideLoading();
+      if (typeof existingQv.show === 'function') {
+        existingQv.show();
+      } else if (typeof existingQv.open === 'function') {
+        existingQv.open();
+      } else {
+        existingQv.setAttribute('open', '');
+        existingQv.setAttribute('active', '');
+        existingQv.dispatchEvent(new CustomEvent('open', { bubbles: true }));
+      }
+      return;
+    }
+
+    var qvTrigger = document.querySelector(
+      '[data-quick-view][data-product-handle="' + handle + '"], ' +
+      'button[data-quick-view*="' + handle + '"], ' +
+      '.quick-view-trigger[data-handle="' + handle + '"]'
+    );
+    if (qvTrigger) {
+      hideLoading();
+      qvTrigger.click();
+      return;
+    }
+
+    var sectionName = '{{ s.main_product_section | strip | default: "main-product-modal" }}';
+    var apiUrl = '/products/' + handle + '?sections=' + encodeURIComponent(sectionName);
+
+    fetch(apiUrl, { headers: { 'Accept': 'application/json' } })
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(data) {
+        var html = data[sectionName];
+        if (!html || html.length < 50) throw new Error('Empty section');
+
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+        var qvNode = doc.querySelector('.quick-view, quick-view, [class*="quick-view"]');
+
+        if (!qvNode) throw new Error('No quick-view element found');
+
+        var wrapper = document.createElement('div');
+        wrapper.id = 'zl-qv-wrapper-' + handle;
+        wrapper.style.cssText = 'position:fixed;inset:0;z-index:9999;pointer-events:none;';
+        wrapper.innerHTML = html;
+        document.body.appendChild(wrapper);
+
+        wrapper.querySelectorAll('script').forEach(function(oldScript) {
+          var newScript = document.createElement('script');
+          Array.from(oldScript.attributes).forEach(function(attr) {
+            newScript.setAttribute(attr.name, attr.value);
+          });
+          if (!oldScript.src) newScript.textContent = oldScript.textContent;
+          oldScript.parentNode.replaceChild(newScript, oldScript);
+        });
+
+        var sectionEl = wrapper.querySelector('.shopify-section, .product-section');
+        if (sectionEl) {
+          var sId = sectionEl.id ? sectionEl.id.replace('shopify-section-', '') : '';
+          document.dispatchEvent(new CustomEvent('shopify:section:load', {
+            bubbles: true, detail: { sectionId: sId }
+          }));
+        }
+
+        var qv = wrapper.querySelector('.quick-view, quick-view');
+        if (qv) {
+          qv.style.pointerEvents = 'auto';
+          qv.setAttribute('open', '');
+          qv.setAttribute('active', '');
+          requestAnimationFrame(function() {
+            qv.dispatchEvent(new CustomEvent('open', { bubbles: true }));
+          });
+        }
+
+        hideLoading();
+
+        var closeBtn = wrapper.querySelector('.drawer__close, [aria-label*="close"], [aria-label*="Close"]');
+        function cleanup() {
+          wrapper.remove();
+          document.body.style.overflow = '';
+        }
+        if (closeBtn) closeBtn.addEventListener('click', cleanup);
+        wrapper.querySelector('.overlay')
+          && wrapper.querySelector('.overlay').addEventListener('click', cleanup);
+        document.addEventListener('keydown', function onEsc(e) {
+          if (e.key === 'Escape') { cleanup(); document.removeEventListener('keydown', onEsc); }
+        });
+      })
+      .catch(function(err) {
+        hideLoading();
+        console.warn('[ZL Nano] Quick view failed, redirecting to product page:', err);
+        window.location.href = productUrl;
+      });
+  }
+
+  sec.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-open-qv]');
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var handle = btn.getAttribute('data-product-handle');
+    var url    = btn.getAttribute('data-product-url');
+    if (handle) openQuickView(handle, url);
+  });
+
+})();
+</script>
+
+{% schema %}
+{
+  "name": "ZL Nano Accordion",
+  "settings": [
+    { "type": "header", "content": "Section Settings" },
+    { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#ffffff" },
+    { "type": "range", "id": "container_width", "min": 800, "max": 1600, "step": 20, "unit": "px", "label": "Container Max Width", "default": 1200 },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding Top (PC)", "default": 60 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding Bottom (PC)", "default": 60 },
+    { "type": "range", "id": "padding_top_mb", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding Top (Mobile)", "default": 40 },
+    { "type": "range", "id": "padding_bottom_mb", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding Bottom (Mobile)", "default": 40 },
+    { "type": "header", "content": "Main Title" },
+    { "type": "text", "id": "title", "label": "Title", "default": "See How Anker Nano Powers Your Day" },
+    { "type": "color", "id": "title_color", "label": "Title Color", "default": "#111111" },
+    { "type": "select", "id": "title_weight", "label": "Title Weight", "options": [{"value":"400","label":"Normal"},{"value":"500","label":"Medium"},{"value":"600","label":"Semi Bold"},{"value":"700","label":"Bold"}], "default": "600" },
+    { "type": "header", "content": "Tabs Style" },
+    { "type": "color", "id": "tab_wrap_bg", "label": "Tabs Wrapper Background", "default": "#111111" },
+    { "type": "color", "id": "tab_border_color", "label": "Tabs Wrapper Border", "default": "#111111" },
+    { "type": "color", "id": "tab_active_bg", "label": "Active Tab Background", "default": "#ffffff" },
+    { "type": "color", "id": "tab_active_color", "label": "Active Tab Text", "default": "#111111" },
+    { "type": "color", "id": "tab_inactive_color", "label": "Inactive Tab Text", "default": "#ffffff" },
+    { "type": "range", "id": "tab_size_pc", "min": 12, "max": 24, "step": 1, "unit": "px", "label": "Tab Font Size (PC)", "default": 14 },
+    { "type": "range", "id": "tab_size_mb", "min": 10, "max": 20, "step": 1, "unit": "px", "label": "Tab Font Size (Mobile)", "default": 13 },
+    { "type": "header", "content": "Card Layout" },
+    { "type": "range", "id": "card_height_pc", "min": 300, "max": 800, "step": 10, "unit": "px", "label": "Card Height (PC) - Not Used if 1:1" , "default": 500 },
+    { "type": "range", "id": "card_height_mb", "min": 200, "max": 600, "step": 10, "unit": "px", "label": "Card Height (Mobile) - Not Used if 1:1", "default": 380 },
+    { "type": "header", "content": "Tag Style" },
+    { "type": "color", "id": "tag_bg", "label": "Tag Background", "default": "#00c3ff" },
+    { "type": "color", "id": "tag_color", "label": "Tag Text Color", "default": "#ffffff" },
+    { "type": "range", "id": "tag_size_pc", "min": 10, "max": 20, "step": 1, "unit": "px", "label": "Tag Size (PC)", "default": 13 },
+    { "type": "range", "id": "tag_size_mb", "min": 10, "max": 20, "step": 1, "unit": "px", "label": "Tag Size (Mobile)", "default": 12 },
+    { "type": "header", "content": "Card Text Style" },
+    { "type": "color", "id": "card_title_color", "label": "Title Color", "default": "#ffffff" },
+
+    { "type": "select", "id": "card_title_weight", "label": "Title Weight", "options": [{"value":"400","label":"Normal"},{"value":"500","label":"Medium"},{"value":"600","label":"Semi Bold"},{"value":"700","label":"Bold"}], "default": "600" },
+    { "type": "color", "id": "price_color", "label": "Price Color", "default": "#ffffff" },
+    { "type": "range", "id": "price_size_pc", "min": 12, "max": 30, "step": 1, "unit": "px", "label": "Price Size (PC)", "default": 18 },
+    { "type": "range", "id": "price_size_mb", "min": 12, "max": 24, "step": 1, "unit": "px", "label": "Price Size (Mobile)", "default": 16 },
+    { "type": "select", "id": "price_weight", "label": "Price Weight", "options": [{"value":"400","label":"Normal"},{"value":"500","label":"Medium"},{"value":"600","label":"Semi Bold"},{"value":"700","label":"Bold"}], "default": "700" },
+    { "type": "color", "id": "compare_color", "label": "Compare Price Color", "default": "#aaaaaa" },
+    { "type": "range", "id": "compare_size_pc", "min": 10, "max": 24, "step": 1, "unit": "px", "label": "Compare Price Size (PC)", "default": 14 },
+    { "type": "range", "id": "compare_size_mb", "min": 10, "max": 20, "step": 1, "unit": "px", "label": "Compare Price Size (Mobile)", "default": 12 },
+    { "type": "header", "content": "Plus Icon Style" },
+    { "type": "color", "id": "plus_bg", "label": "Icon Background", "default": "rgba(255,255,255,0.7)" },
+    { "type": "color", "id": "plus_color", "label": "Icon Line Color", "default": "#111111" },
+    { "type": "header", "content": "Quick View — Main Product Section Name" },
+    {
+      "type": "text",
+      "id": "main_product_section",
+      "label": "Main Product Section ID",
+      "default": "main-product-modal"
+      
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Accordion Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "target_tab",
+          "label": "Belongs to Tab",
+          "default": "For Everyday Carry",
+          "info": "Must match the tab name exactly."
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product",
+          "info": "Select a product. The Quick View modal will load the full product page layout including variants, images, and add-to-cart."
+        },
+        {
+          "type": "url",
+          "id": "card_link",
+          "label": "Card Link (fallback)",
+          "info": "If no product is selected, where should clicking the card go?"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_pc",
+          "label": "Card Background Image (PC)",
+          "info": "Optional override. Leave blank to use the product featured image."
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mb",
+          "label": "Card Background Image (Mobile)"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Discount Tag",
+          "default": "$14 Off"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card Title (fallback)",
+          "info": "Only shown if no product is selected."
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price (fallback)"
+        },
+        {
+          "type": "text",
+          "id": "compare_price",
+          "label": "Compare Price (fallback)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZL Nano Accordion",
+      "blocks": [
+        { "type": "card", "settings": { "target_tab": "For Everyday Carry", "tag": "$14 Off" } },
+        { "type": "card", "settings": { "target_tab": "For Everyday Carry", "tag": "$10 Off" } },
+        { "type": "card", "settings": { "target_tab": "For Everyday Carry", "tag": "$8 Off" } },
+        { "type": "card", "settings": { "target_tab": "For Desktop Charging", "tag": "$15 Off" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
