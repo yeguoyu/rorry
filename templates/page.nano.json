@@ -42,7 +42,7 @@
           "settings": {
             "text": "<p>All-in-Mini- Up to 45W<br/>Power Up & Go Anywhere</p>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-lg",
             "text_max_size": 24,
             "text_line_height": 1.2,
             "text_letter_spacing": 0,
@@ -200,7 +200,7 @@
             "text": "Compact Sleek Design",
             "text_color": "#9887b8",
             "text_size_pc": 28,
-            "text_size_mb": 18,
+            "text_size_mb": 14,
             "text_weight": "500"
           }
         },
