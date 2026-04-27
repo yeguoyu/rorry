@@ -11,6 +11,7 @@
   "sections": {
     "main-page": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left",
@@ -23,20 +24,927 @@
         "rounded": false
       }
     },
-    "17345766436cfde53f": {
-      "type": "apps",
+    "image_with_text_overlay_rmJqTC": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "powerful_form_builder_app_block_FcaWgt": {
-          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+        "heading_AcHXnU": {
+          "type": "heading",
           "settings": {
-            "shortcode": ""
+            "heading": "RORRY CharmGo Collection",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_cwzDUL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All-in-Mini- Up to 45W<br/>Power Up & Go Anywhere</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 24,
+            "text_line_height": 1.2,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_hjCw6e": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": false,
+            "button_icon": false
           }
         }
       },
       "block_order": [
-        "powerful_form_builder_app_block_FcaWgt"
+        "heading_AcHXnU",
+        "text_cwzDUL",
+        "button_hjCw6e"
       ],
+      "custom_css": [
+        ".rte {margin-top: 20px;}",
+        ".button {margin-top: 24px;}",
+        "@media screen and (min-width: 1280px) {.banner__box--small {max-width: 95rem; }}"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
       "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/charngo-__02.jpg",
+        "image_height": "900px",
+        "content_width": "small",
+        "content_position": "md:items-start md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "400px",
+        "content_position_mobile": "items-start justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#9887b8",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_xPzhXh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LJd47p": {
+          "type": "heading",
+          "settings": {
+            "heading": "All-in-Mini 45W-Power Up & Go Anywhere",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LJd47p"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 1024px) {.page-width--narrow {--page-padding: var(--sp-12); max-width: 90rem; }}"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "large",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 80,
+        "padding_bottom": 12,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "zl_nano_1_qmVeJr": {
+      "type": "zl-nano-1",
+      "blocks": {
+        "image_card_KUnLdL": {
+          "type": "image_card",
+          "settings": {
+            "width_pc": 60,
+            "width_mb": "100",
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__05.jpg",
+            "link": "shopify://collections/10-000mah-power-bank",
+            "content_position": "top-center",
+            "text": "All-in-Mini 45W",
+            "text_color": "#9887b8",
+            "text_size_pc": 28,
+            "text_size_mb": 18,
+            "text_weight": "500"
+          }
+        },
+        "image_card_Nit7dz": {
+          "type": "image_card",
+          "settings": {
+            "width_pc": 40,
+            "width_mb": "60",
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__07.jpg",
+            "link": "",
+            "content_position": "top-center",
+            "text": "5W iWatch Fast Charging",
+            "text_color": "#9887b8",
+            "text_size_pc": 28,
+            "text_size_mb": 18,
+            "text_weight": "500"
+          }
+        },
+        "image_card_YXYBH8": {
+          "type": "image_card",
+          "settings": {
+            "width_pc": 40,
+            "width_mb": "40",
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__12.jpg",
+            "link": "",
+            "content_position": "top-center",
+            "text": "Compact Sleek Design",
+            "text_color": "#9887b8",
+            "text_size_pc": 28,
+            "text_size_mb": 18,
+            "text_weight": "500"
+          }
+        },
+        "image_card_B9qmfy": {
+          "type": "image_card",
+          "settings": {
+            "width_pc": 60,
+            "width_mb": "100",
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__14.jpg",
+            "link": "",
+            "content_position": "top-center",
+            "text": "Inspired by Sea Glass\nRounded in Hand, Gentle in Glow",
+            "text_color": "#9887b8",
+            "text_size_pc": 28,
+            "text_size_mb": 18,
+            "text_weight": "500"
+          }
+        }
+      },
+      "block_order": [
+        "image_card_KUnLdL",
+        "image_card_Nit7dz",
+        "image_card_YXYBH8",
+        "image_card_B9qmfy"
+      ],
+      "name": "ZL Nano Grid",
+      "settings": {
+        "bg_color": "#ffffff",
+        "container_width": 1300,
+        "border_radius": 16,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "grid_gap": 20,
+        "grid_gap_mobile": 12,
+        "title_max_width": 800,
+        "title_spacing": 20,
+        "title_spacing_mobile": 30
+      }
+    },
+    "zl_nano_2_QBx8fX": {
+      "type": "zl-nano-2",
+      "blocks": {
+        "product_card_EkVyUq": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-d2-2500mah-mini-portable-charger-keychain-power-bank",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "",
+            "custom_price": "",
+            "custom_compare_price": "",
+            "custom_tag": "",
+            "custom_btn_text": "",
+            "custom_btn_link": ""
+          }
+        },
+        "product_card_D9pGCH": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "",
+            "custom_price": "",
+            "custom_compare_price": "",
+            "custom_tag": "",
+            "custom_btn_text": "",
+            "custom_btn_link": ""
+          }
+        },
+        "product_card_XwDQQc": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "",
+            "custom_price": "",
+            "custom_compare_price": "",
+            "custom_tag": "",
+            "custom_btn_text": "",
+            "custom_btn_link": ""
+          }
+        },
+        "product_card_KBzE3A": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "",
+            "custom_price": "",
+            "custom_compare_price": "",
+            "custom_tag": "",
+            "custom_btn_text": "",
+            "custom_btn_link": ""
+          }
+        },
+        "product_card_YPXtYd": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "",
+            "custom_price": "",
+            "custom_compare_price": "",
+            "custom_tag": "",
+            "custom_btn_text": "",
+            "custom_btn_link": ""
+          }
+        },
+        "product_card_mfq7dH": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "",
+            "custom_price": "",
+            "custom_compare_price": "",
+            "custom_tag": "",
+            "custom_btn_text": "",
+            "custom_btn_link": ""
+          }
+        },
+        "product_card_y38tJp": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "",
+            "custom_price": "",
+            "custom_compare_price": "",
+            "custom_tag": "",
+            "custom_btn_text": "",
+            "custom_btn_link": ""
+          }
+        },
+        "product_card_VgxqmM": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "",
+            "custom_price": "",
+            "custom_compare_price": "",
+            "custom_tag": "",
+            "custom_btn_text": "",
+            "custom_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_card_EkVyUq",
+        "product_card_D9pGCH",
+        "product_card_XwDQQc",
+        "product_card_KBzE3A",
+        "product_card_YPXtYd",
+        "product_card_mfq7dH",
+        "product_card_y38tJp",
+        "product_card_VgxqmM"
+      ],
+      "custom_css": [
+        ".button .btn-fill {border-radius: 4px;}"
+      ],
+      "name": "ZL Nano Products",
+      "settings": {
+        "bg_color": "#ffffff",
+        "container_width": 1300,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mb": 40,
+        "padding_bottom_mb": 40,
+        "title_max_width": 400,
+        "title_spacing": 40,
+        "title_spacing_mb": 30,
+        "pc_layout": "carousel",
+        "items_pc": 5,
+        "grid_gap": 12,
+        "mobile_layout": "grid",
+        "items_mb": 2,
+        "grid_gap_mobile": 10,
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "card_bg": "#f4f5f7",
+        "card_radius": 12,
+        "card_padding_pc": 16,
+        "card_padding_mb": 10,
+        "image_height_pc": 220,
+        "image_height_mb": 180,
+        "title_color": "#232323",
+        "title_size_pc": 16,
+        "title_size_mb": 16,
+        "title_weight": "400",
+        "price_color": "#9887b8",
+        "price_size_pc": 20,
+        "price_size_mb": 16,
+        "price_weight": "700",
+        "compare_color": "#bab3c7",
+        "compare_size_pc": 14,
+        "compare_size_mb": 12,
+        "compare_weight": "400",
+        "tag_bg": "#9887b8",
+        "tag_color": "#ffffff",
+        "tag_size_pc": 14,
+        "tag_size_mb": 12,
+        "global_btn_text": "Shop Now",
+        "btn_bg": "#9887b8",
+        "btn_color": "#ffffff",
+        "btn_bg_hover": "#ad9fc7",
+        "btn_color_hover": "#ffffff",
+        "btn_size_pc": 16,
+        "btn_size_mb": 14,
+        "btn_weight": "600",
+        "btn_radius": 4
+      }
+    },
+    "zl_nano_3_KeHCKR": {
+      "type": "zl-nano-3",
+      "blocks": {
+        "card_9Azdnd": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "shopify://products/rorry-cb02-5000mah-portable-charger-bank-type-c-20w",
+            "image_pc": "shopify://shop_images/1_4235fef6-38ab-4316-82fe-7fd94481b26f.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_F7eDFT": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/2_2c062ebf-b9c8-49c8-9efb-8e13b8f7f750.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_LCQLQ7": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/3_2e08a5cc-7a5f-4db9-96f5-d3b27db6c753.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_RgGA79": {
+          "type": "card",
+          "settings": {
+            "target_tab": "For Desktop Charging",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/1_4235fef6-38ab-4316-82fe-7fd94481b26f.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_prnEUK": {
+          "type": "card",
+          "settings": {
+            "target_tab": "For Desktop Charging",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/2_2c062ebf-b9c8-49c8-9efb-8e13b8f7f750.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_ttBqyQ": {
+          "type": "card",
+          "settings": {
+            "target_tab": "For Desktop Charging",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/3_2e08a5cc-7a5f-4db9-96f5-d3b27db6c753.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_9Azdnd",
+        "card_F7eDFT",
+        "card_LCQLQ7",
+        "card_RgGA79",
+        "card_prnEUK",
+        "card_ttBqyQ"
+      ],
+      "name": "ZL Nano Accordion",
+      "settings": {
+        "bg_color": "#ffffff",
+        "container_width": 1300,
+        "padding_top": 40,
+        "padding_bottom": 60,
+        "padding_top_mb": 40,
+        "padding_bottom_mb": 40,
+        "title": "See How Anker Nano Powers Your Day",
+        "title_color": "#9887b8",
+        "title_weight": "600",
+        "tab_wrap_bg": "#9887b8",
+        "tab_border_color": "#9887b8",
+        "tab_active_bg": "#ffffff",
+        "tab_active_color": "#9887b8",
+        "tab_inactive_color": "#ffffff",
+        "tab_size_pc": 20,
+        "tab_size_mb": 16,
+        "card_height_pc": 700,
+        "card_height_mb": 400,
+        "tag_bg": "#9887b8",
+        "tag_color": "#ffffff",
+        "tag_size_pc": 13,
+        "tag_size_mb": 12,
+        "card_title_color": "#ffffff",
+        "card_title_weight": "600",
+        "price_color": "#ffffff",
+        "price_size_pc": 20,
+        "price_size_mb": 18,
+        "price_weight": "600",
+        "compare_color": "#9887b8",
+        "compare_size_pc": 18,
+        "compare_size_mb": 16,
+        "plus_bg": "#ffffffb3",
+        "plus_color": "#111111",
+        "main_product_section": "main-product-modal"
+      }
+    },
+    "image_with_text_overlay_RCaW3T": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_qijXXx": {
+          "type": "heading",
+          "settings": {
+            "heading": "CharmGo Collection",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_QWDamU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your Mood, in Color</p>",
+            "text_font": "body",
+            "text_size": "subtext-custom",
+            "text_max_size": 28,
+            "text_line_height": 1.8,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_9z9cLD": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NEW",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qijXXx",
+        "text_QWDamU",
+        "button_9z9cLD"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 1280px) {.banner__box--small {max-width: 55rem; }}",
+        ".rte {line-height: 1.2;}"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/charngo-__18.jpg",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-start md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "400px",
+        "content_position_mobile": "items-start justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#46356b",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 52,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "zl_nano_4_baLq3H": {
+      "type": "zl-nano-4",
+      "blocks": {
+        "grid_card_LPFBnY": {
+          "type": "grid_card",
+          "settings": {
+            "col_span_pc": 5,
+            "col_span_mb": 12,
+            "height_pc": 320,
+            "height_mb": 240,
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__20.jpg",
+            "link": "",
+            "title": "45W fast Charging\nCharge iPhone 17 to xx% in xx mins",
+            "content_position": "top-left",
+            "title_color": "#9887b8",
+            "title_size_pc": 28,
+            "title_size_mb": 18,
+            "title_weight": "600"
+          }
+        },
+        "grid_card_rGGR34": {
+          "type": "grid_card",
+          "settings": {
+            "col_span_pc": 3.5,
+            "col_span_mb": 6,
+            "height_pc": 320,
+            "height_mb": 240,
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__22.jpg",
+            "link": "",
+            "title": "All-in-One Charging\nCharge All Your Devices",
+            "content_position": "top-left",
+            "title_color": "#9887b8",
+            "title_size_pc": 32,
+            "title_size_mb": 18,
+            "title_weight": "600"
+          }
+        },
+        "grid_card_AUYwGz": {
+          "type": "grid_card",
+          "settings": {
+            "col_span_pc": 3.5,
+            "col_span_mb": 6,
+            "height_pc": 320,
+            "height_mb": 240,
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__24.jpg",
+            "link": "",
+            "title": "30W Rapid Input\nFully Recharge in x Hours",
+            "content_position": "top-left",
+            "title_color": "#9887b8",
+            "title_size_pc": 28,
+            "title_size_mb": 18,
+            "title_weight": "600"
+          }
+        },
+        "grid_card_gdMD3K": {
+          "type": "grid_card",
+          "settings": {
+            "col_span_pc": 4.5,
+            "col_span_mb": 12,
+            "height_pc": 320,
+            "height_mb": 240,
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__29.jpg",
+            "link": "",
+            "title": "",
+            "content_position": "top-left",
+            "title_color": "#ffffff",
+            "title_size_pc": 28,
+            "title_size_mb": 18,
+            "title_weight": "600"
+          }
+        },
+        "grid_card_etzAJ9": {
+          "type": "grid_card",
+          "settings": {
+            "col_span_pc": 3.5,
+            "col_span_mb": 6,
+            "height_pc": 320,
+            "height_mb": 240,
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__31.jpg",
+            "link": "",
+            "title": "2 built-in cables.\n1 extra-long cable.",
+            "content_position": "top-left",
+            "title_color": "#9887b8",
+            "title_size_pc": 28,
+            "title_size_mb": 18,
+            "title_weight": "600"
+          }
+        },
+        "grid_card_pDJAMV": {
+          "type": "grid_card",
+          "settings": {
+            "col_span_pc": 4,
+            "col_span_mb": 6,
+            "height_pc": 320,
+            "height_mb": 240,
+            "image_pc": "shopify://shop_images/G-_Desktop_DTC_charngo-__33.jpg",
+            "link": "",
+            "title": "Low-current charging mode",
+            "content_position": "top-left",
+            "title_color": "#9887b8",
+            "title_size_pc": 28,
+            "title_size_mb": 18,
+            "title_weight": "600"
+          }
+        }
+      },
+      "block_order": [
+        "grid_card_LPFBnY",
+        "grid_card_rGGR34",
+        "grid_card_AUYwGz",
+        "grid_card_gdMD3K",
+        "grid_card_etzAJ9",
+        "grid_card_pDJAMV"
+      ],
+      "name": "ZL Tri Grid",
+      "settings": {
+        "bg_color": "#9887b8",
+        "container_width": 1680,
+        "border_radius": 0,
+        "gap_pc": 16,
+        "gap_mb": 10,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mb": 20,
+        "padding_bottom_mb": 20
+      }
+    },
+    "zl_nano_5_aWaACm": {
+      "type": "zl-nano-5",
+      "blocks": {
+        "product_column_EkAKCy": {
+          "type": "product_column",
+          "settings": {
+            "product": "rorry-charmgo-d2-10000mah-portable-charger-keychain-power-bank-20w",
+            "custom_title": "",
+            "custom_price": "",
+            "badge": "New",
+            "show_color_swatches": true,
+            "spec_1": "Magnetic Watch\nCharging",
+            "spec_2": "10000 mAh",
+            "spec_3": "2× USB-C\n1× USB-A",
+            "spec_4": "2.09 × 1.68 × 1.24 in\n(5.30 × 4.26 × 3.15 cm)",
+            "spec_5": "",
+            "spec_6": "",
+            "spec_7": "",
+            "spec_8": "",
+            "spec_9": "",
+            "spec_10": ""
+          }
+        },
+        "product_column_mRiLKL": {
+          "type": "product_column",
+          "settings": {
+            "product": "rorry-charmgo-d2-5000mah-portable-charger-keychain-power-bank",
+            "custom_title": "",
+            "custom_price": "",
+            "badge": "New",
+            "show_color_swatches": true,
+            "spec_1": "Supports",
+            "spec_2": "5000 mAh",
+            "spec_3": "2× USB-C\n1× USB-A",
+            "spec_4": "2.09 × 1.68 × 1.24 in\n(5.30 × 4.26 × 3.15 cm)",
+            "spec_5": "",
+            "spec_6": "",
+            "spec_7": "",
+            "spec_8": "",
+            "spec_9": "",
+            "spec_10": ""
+          }
+        },
+        "product_column_rdnMzQ": {
+          "type": "product_column",
+          "settings": {
+            "product": "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank",
+            "custom_title": "",
+            "custom_price": "",
+            "badge": "New",
+            "show_color_swatches": true,
+            "spec_1": "NO",
+            "spec_2": "5000 mAh",
+            "spec_3": "2× USB-C\n1× USB-A",
+            "spec_4": "2.09 × 1.68 × 1.24 in\n(5.30 × 4.26 × 3.15 cm)",
+            "spec_5": "",
+            "spec_6": "",
+            "spec_7": "",
+            "spec_8": "",
+            "spec_9": "",
+            "spec_10": ""
+          }
+        },
+        "product_column_babWtM": {
+          "type": "product_column",
+          "settings": {
+            "product": "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank",
+            "custom_title": "",
+            "custom_price": "",
+            "badge": "New",
+            "show_color_swatches": true,
+            "spec_1": "Supports",
+            "spec_2": "5000 mAh",
+            "spec_3": "2× USB-C\n1× USB-A",
+            "spec_4": "2.09 × 1.68 × 1.24 in\n(5.30 × 4.26 × 3.15 cm)",
+            "spec_5": "",
+            "spec_6": "",
+            "spec_7": "",
+            "spec_8": "",
+            "spec_9": "",
+            "spec_10": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_column_EkAKCy",
+        "product_column_mRiLKL",
+        "product_column_rdnMzQ",
+        "product_column_babWtM"
+      ],
+      "name": "ZL Specifications Table",
+      "settings": {
+        "bg_color": "#ffffff",
+        "container_width": 1300,
+        "padding_top": 100,
+        "padding_bottom": 60,
+        "padding_top_mb": 40,
+        "padding_bottom_mb": 40,
+        "title": "",
+        "title_color": "#111111",
+        "title_size_pc": 36,
+        "title_size_mb": 24,
+        "title_weight": "500",
+        "link_text": "",
+        "link_url": "shopify://collections/all",
+        "link_color": "#555555",
+        "link_size_pc": 14,
+        "link_size_mb": 12,
+        "text_color": "#111111",
+        "badge_color": "#ff9900",
+        "product_title_size_pc": 14,
+        "product_title_size_mb": 13,
+        "product_title_weight": "500",
+        "price_size_pc": 18,
+        "price_size_mb": 16,
+        "btn_text": "Buy Now",
+        "btn_bg": "#9887b8",
+        "btn_color": "#ffffff",
+        "spec_label_color": "#888888",
+        "spec_label_size_pc": 14,
+        "spec_label_size_mb": 14,
+        "spec_1_label": "",
+        "spec_2_label": "Capacity",
+        "spec_3_label": "Dimensions",
+        "spec_4_label": "Weight",
+        "spec_5_label": "",
+        "spec_6_label": "",
+        "spec_7_label": "",
+        "spec_8_label": "",
+        "spec_9_label": "",
+        "spec_10_label": "",
+        "spec_value_size_pc": 14,
+        "spec_value_size_mb": 14,
+        "spec_value_weight": "500"
+      }
+    },
+    "faq_XjyrqX": {
+      "type": "faq",
+      "blocks": {
+        "question_tHQEij": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_UJRxzq": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_w8dAMF": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_tHQEij",
+        "question_UJRxzq",
+        "question_w8dAMF"
+      ],
+      "disabled": true,
+      "name": "t:sections.faq.name",
+      "settings": {
+        "style": "with-border",
+        "heading": "FAQs",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -45,16 +953,26 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": false,
-        "full_width": false,
+        "narrow": true,
         "rounded": false
       }
     }
   },
   "order": [
     "main-page",
-    "17345766436cfde53f"
+    "image_with_text_overlay_rmJqTC",
+    "rich_text_xPzhXh",
+    "zl_nano_1_qmVeJr",
+    "zl_nano_2_QBx8fX",
+    "zl_nano_3_KeHCKR",
+    "image_with_text_overlay_RCaW3T",
+    "zl_nano_4_baLq3H",
+    "zl_nano_5_aWaACm",
+    "faq_XjyrqX"
   ]
 }
