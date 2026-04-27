@@ -1,0 +1,981 @@
+{%- style -%}
+  .zl-nano-2-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.bg_color }};
+    --global-img-h-pc: {{ section.settings.image_height_pc }}px;
+    --global-img-h-mb: {{ section.settings.image_height_mb }}px;
+    --items-pc: {{ section.settings.items_pc }};
+    --items-mb: {{ section.settings.items_mb }};
+    --gap-pc: {{ section.settings.grid_gap }}px;
+    --gap-mb: {{ section.settings.grid_gap_mobile }}px;
+  }
+
+  .zl-nano-2-container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .zl-nano-2-title-img-wrap {
+    text-align: center;
+    margin-bottom: {{ section.settings.title_spacing }}px;
+  }
+
+  .zl-nano-2-title-img {
+    max-width: {{ section.settings.title_max_width }}px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .zl-nano-2-swiper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .zl-nano-2-card {
+    position: relative;
+    background-color: {{ section.settings.card_bg }};
+    border-radius: {{ section.settings.card_radius }}px;
+    padding: {{ section.settings.card_padding_pc }}px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s;
+  }
+
+  .zl-nano-2-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: {{ section.settings.tag_bg }};
+    color: {{ section.settings.tag_color }};
+    font-size: {{ section.settings.tag_size_pc }}px;
+    font-weight: 600;
+    padding: 6px 16px 6px 12px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+    border-top-left-radius: {{ section.settings.card_radius }}px;
+    z-index: 2;
+  }
+
+  .zl-nano-2-img-wrap {
+    width: 100%;
+    height: var(--img-h-pc, var(--global-img-h-pc));
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  .zl-nano-2-img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .zl-nano-2-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .zl-nano-2-product-title {
+    color: {{ section.settings.title_color }};
+    font-size: {{ section.settings.title_size_pc }}px;
+    font-weight: {{ section.settings.title_weight }};
+    line-height: 1.4;
+    text-decoration: none;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .zl-nano-2-price-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 20px;
+    margin-top: auto;
+  }
+
+  .zl-nano-2-price {
+    font-size: {{ section.settings.price_size_pc }}px;
+    color: {{ section.settings.price_color }};
+    font-weight: {{ section.settings.price_weight }};
+  }
+
+  .zl-nano-2-compare-price {
+    font-size: {{ section.settings.compare_size_pc }}px;
+    color: {{ section.settings.compare_color }};
+    font-weight: {{ section.settings.compare_weight }};
+    text-decoration: line-through;
+  }
+
+  .zl-nano-2-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    background-color: {{ section.settings.btn_bg }};
+    color: {{ section.settings.btn_color }};
+    font-size: {{ section.settings.btn_size_pc }}px;
+    font-weight: {{ section.settings.btn_weight }};
+    text-decoration: none;
+    border-radius: {{ section.settings.btn_radius }}px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .zl-nano-2-btn:hover {
+    background-color: {{ section.settings.btn_bg_hover }};
+    color: {{ section.settings.btn_color_hover }};
+  }
+
+  @media screen and (min-width: 769px) {
+    .zl-nano-2-swiper.swiper-disabled .swiper-wrapper {
+      display: grid !important;
+      grid-template-columns: repeat(var(--items-pc), 1fr);
+      gap: var(--gap-pc);
+    }
+    .zl-nano-2-swiper.swiper-disabled .swiper-slide {
+      width: 100% !important;
+      margin-right: 0 !important;
+    }
+    .zl-nano-2-nav-wrapper {
+      position: relative;
+    }
+    .zl-nano-2-prev, .zl-nano-2-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+    .zl-nano-2-nav-wrapper:hover .zl-nano-2-prev:not(.swiper-button-disabled),
+    .zl-nano-2-nav-wrapper:hover .zl-nano-2-next:not(.swiper-button-disabled) {
+      opacity: 1;
+      visibility: visible;
+    }
+    .zl-nano-2-prev.swiper-button-disabled,
+    .zl-nano-2-next.swiper-button-disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .zl-nano-2-prev { left: -18px; }
+    .zl-nano-2-next { right: -18px; }
+    .zl-nano-2-prev svg, .zl-nano-2-next svg {
+      width: 18px;
+      height: 18px;
+      fill: #333;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .zl-nano-2-section-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top_mb }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mb }}px;
+    }
+    .zl-nano-2-container {
+      padding: 0 16px;
+    }
+    .zl-nano-2-title-img-wrap {
+      margin-bottom: {{ section.settings.title_spacing_mb }}px;
+    }
+    .zl-nano-2-swiper.swiper-disabled .swiper-wrapper {
+      display: grid !important;
+      grid-template-columns: repeat(var(--items-mb), 1fr);
+      gap: var(--gap-mb);
+      transform: none !important;
+      width: 100% !important;
+    }
+    .zl-nano-2-swiper.swiper-disabled .swiper-slide {
+      width: 100% !important;
+      margin-right: 0 !important;
+      height: auto !important;
+    }
+    .zl-nano-2-card {
+      padding: {{ section.settings.card_padding_mb }}px;
+    }
+    .zl-nano-2-img-wrap {
+      height: var(--img-h-mb, var(--global-img-h-mb));
+      margin-bottom: 15px;
+    }
+    .zl-nano-2-tag {
+      font-size: {{ section.settings.tag_size_mb }}px;
+      padding: 4px 12px 4px 8px;
+    }
+    .zl-nano-2-product-title {
+      font-size: {{ section.settings.title_size_mb }}px;
+    }
+    .zl-nano-2-price {
+      font-size: {{ section.settings.price_size_mb }}px;
+    }
+    .zl-nano-2-compare-price {
+      font-size: {{ section.settings.compare_size_mb }}px;
+    }
+    .zl-nano-2-btn {
+      padding: 10px;
+      font-size: {{ section.settings.btn_size_mb }}px;
+    }
+    .zl-nano-2-prev, .zl-nano-2-next {
+      display: none;
+    }
+  }
+{%- endstyle -%}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" media="print" onload="this.media='all'">
+
+<section class="zl-nano-2-section-{{ section.id }}">
+  <div class="zl-nano-2-container">
+    {%- if section.settings.title_image_pc != blank -%}
+      <div class="zl-nano-2-title-img-wrap">
+        <picture>
+          {%- if section.settings.title_image_mb != blank -%}
+            <source media="(max-width: 768px)" srcset="{{ section.settings.title_image_mb | image_url: width: 800 }}">
+          {%- endif -%}
+          {{ section.settings.title_image_pc | image_url: width: 1200 | image_tag: loading: 'lazy', class: 'zl-nano-2-title-img' }}
+        </picture>
+      </div>
+    {%- endif -%}
+
+    <div class="zl-nano-2-content">
+      <div class="zl-nano-2-nav-wrapper" style="width: 100%;">
+        <div class="swiper zl-nano-2-swiper" data-items-pc="{{ section.settings.items_pc }}" data-items-mb="{{ section.settings.items_mb }}" data-layout-pc="{{ section.settings.pc_layout }}" data-layout-mb="{{ section.settings.mobile_layout }}" data-gap-pc="{{ section.settings.grid_gap }}" data-gap-mb="{{ section.settings.grid_gap_mobile }}">
+          <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+              {%- assign product = block.settings.product -%}
+              {%- assign img = block.settings.custom_image | default: product.featured_image -%}
+              {%- assign title = block.settings.custom_title | default: product.title | default: 'Product Title' -%}
+              {%- assign btn_text = block.settings.custom_btn_text | default: section.settings.global_btn_text | default: 'Shop Now' -%}
+              {%- assign btn_link = block.settings.custom_btn_link | default: product.url | default: '#' -%}
+              
+              <div class="swiper-slide zl-nano-2-slide" {{ block.shopify_attributes }}>
+                <div class="zl-nano-2-card">
+                  {%- if block.settings.custom_tag != blank -%}
+                    <div class="zl-nano-2-tag">{{ block.settings.custom_tag }}</div>
+                  {%- endif -%}
+
+                  <a href="{{ btn_link }}" class="zl-nano-2-img-wrap" style="{% if block.settings.custom_image_height_pc > 0 %}--img-h-pc: {{ block.settings.custom_image_height_pc }}px;{% endif %} {% if block.settings.custom_image_height_mb > 0 %}--img-h-mb: {{ block.settings.custom_image_height_mb }}px;{% endif %}">
+                    {%- if img != blank -%}
+                      <img src="{{ img | image_url: width: 600 }}" alt="{{ title | escape }}" loading="lazy">
+                    {%- else -%}
+                      {{ 'product-1' | placeholder_svg_tag }}
+                    {%- endif -%}
+                  </a>
+
+                  <div class="zl-nano-2-info">
+                    <a href="{{ btn_link }}" class="zl-nano-2-product-title">{{ title }}</a>
+                    
+                    <div class="zl-nano-2-price-wrap">
+                      <span class="zl-nano-2-price">
+                        {%- if block.settings.custom_price != blank -%}
+                          {{ block.settings.custom_price }}
+                        {%- elsif product != blank -%}
+                          {{ product.price | money }}
+                        {%- else -%}
+                          $29.99
+                        {%- endif -%}
+                      </span>
+                      
+                      {%- if block.settings.custom_compare_price != blank or product.compare_at_price > product.price -%}
+                        <span class="zl-nano-2-compare-price">
+                          {%- if block.settings.custom_compare_price != blank -%}
+                            {{ block.settings.custom_compare_price }}
+                          {%- else -%}
+                            {{ product.compare_at_price | money }}
+                          {%- endif -%}
+                        </span>
+                      {%- endif -%}
+                    </div>
+
+                    {%- if btn_text != blank -%}
+                      <a href="{{ btn_link }}" class="zl-nano-2-btn">{{ btn_text }}</a>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+        
+        {%- if section.settings.pc_layout == 'carousel' -%}
+          <div class="zl-nano-2-prev">
+            <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+          </div>
+          <div class="zl-nano-2-next">
+            <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const section = document.querySelector('.zl-nano-2-section-{{ section.id }}');
+    if (!section) return;
+
+    let initAttempts = 0;
+    const initCarousel = () => {
+      if (typeof Swiper === 'undefined') {
+        if (initAttempts < 10) { initAttempts++; setTimeout(initCarousel, 200); }
+        return;
+      }
+
+      const swiperContainer = section.querySelector('.zl-nano-2-swiper');
+      if (!swiperContainer) return;
+
+      const prevBtn = section.querySelector('.zl-nano-2-prev');
+      const nextBtn = section.querySelector('.zl-nano-2-next');
+      const autoplayEnabled = {{ section.settings.autoplay }};
+      const autoplaySpeed = {{ section.settings.autoplay_speed }} * 1000;
+
+      const itemsPc = parseFloat(swiperContainer.dataset.itemsPc);
+      const itemsMb = parseFloat(swiperContainer.dataset.itemsMb);
+      const layoutPc = swiperContainer.dataset.layoutPc;
+      const layoutMb = swiperContainer.dataset.layoutMb;
+      const gapPc = parseFloat(swiperContainer.dataset.gapPc);
+      const gapMb = parseFloat(swiperContainer.dataset.gapMb);
+
+      let swiperInstance = new Swiper(swiperContainer, {
+        autoplay: autoplayEnabled ? { delay: autoplaySpeed, disableOnInteraction: false } : false,
+        navigation: {
+          nextEl: nextBtn,
+          prevEl: prevBtn,
+        },
+        breakpoints: {
+          0: {
+            enabled: layoutMb === 'carousel',
+            slidesPerView: itemsMb,
+            spaceBetween: gapMb
+          },
+          769: {
+            enabled: layoutPc === 'carousel',
+            slidesPerView: itemsPc,
+            spaceBetween: gapPc
+          }
+        },
+        on: {
+          init: function () {
+            if (window.innerWidth <= 768 && layoutMb === 'grid') {
+              this.destroy(false, true);
+              swiperContainer.classList.add('swiper-disabled');
+            }
+          },
+          resize: function () {
+             if (window.innerWidth <= 768 && layoutMb === 'grid') {
+               if(!this.destroyed) this.destroy(false, true);
+               swiperContainer.classList.add('swiper-disabled');
+             } else if (window.innerWidth > 768 && layoutPc === 'grid') {
+               if(!this.destroyed) this.destroy(false, true);
+               swiperContainer.classList.add('swiper-disabled');
+             } else {
+               if(this.destroyed) {
+                  swiperContainer.classList.remove('swiper-disabled');
+                  initCarousel();
+               }
+             }
+          }
+        }
+      });
+    };
+
+    initCarousel();
+  });
+</script>
+
+{% schema %}
+{
+  "name": "ZL Nano Products",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 800,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "label": "Container Max Width",
+      "default": 1400
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (PC)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (PC)",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Title Image Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_image_pc",
+      "label": "Title Image (PC)"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_image_mb",
+      "label": "Title Image (Mobile)"
+    },
+    {
+      "type": "range",
+      "id": "title_max_width",
+      "min": 100,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Title Image Max Width",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Space Below Title (PC)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "title_spacing_mb",
+      "min": 10,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Space Below Title (Mobile)",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Grid & Slider Settings"
+    },
+    {
+      "type": "select",
+      "id": "pc_layout",
+      "label": "PC Layout",
+      "options": [
+        { "value": "grid", "label": "Grid" },
+        { "value": "carousel", "label": "Carousel" }
+      ],
+      "default": "grid"
+    },
+    {
+      "type": "range",
+      "id": "items_pc",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "label": "Items Per Row (PC)",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Grid Gap (PC)",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile Layout",
+      "options": [
+        { "value": "grid", "label": "Grid" },
+        { "value": "carousel", "label": "Carousel" }
+      ],
+      "default": "carousel"
+    },
+    {
+      "type": "range",
+      "id": "items_mb",
+      "min": 1,
+      "max": 4,
+      "step": 0.5,
+      "label": "Items Per Row (Mobile)",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "grid_gap_mobile",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Grid Gap (Mobile)",
+      "default": 12
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable Autoplay (Carousel)",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Autoplay Speed",
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Card Styling"
+    },
+    {
+      "type": "color",
+      "id": "card_bg",
+      "label": "Card Background",
+      "default": "#f4f5f7"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card Border Radius",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "card_padding_pc",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card Padding (PC)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_padding_mb",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card Padding (Mobile)",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "image_height_pc",
+      "min": 100,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Image Wrapper Height (PC)",
+      "default": 220
+    },
+    {
+      "type": "range",
+      "id": "image_height_mb",
+      "min": 100,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Image Wrapper Height (Mobile)",
+      "default": 160
+    },
+    {
+      "type": "header",
+      "content": "Text Styling"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#111111"
+    },
+    {
+      "type": "range",
+      "id": "title_size_pc",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Title Size (PC)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_size_mb",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Title Size (Mobile)",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "Title Weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price Color",
+      "default": "#111111"
+    },
+    {
+      "type": "range",
+      "id": "price_size_pc",
+      "min": 12,
+      "max": 36,
+      "step": 1,
+      "unit": "px",
+      "label": "Price Size (PC)",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "price_size_mb",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Price Size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "price_weight",
+      "label": "Price Weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "color",
+      "id": "compare_color",
+      "label": "Compare Price Color",
+      "default": "#888888"
+    },
+    {
+      "type": "range",
+      "id": "compare_size_pc",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Compare Price Size (PC)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "compare_size_mb",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Compare Price Size (Mobile)",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "compare_weight",
+      "label": "Compare Price Weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "header",
+      "content": "Discount Tag Styling"
+    },
+    {
+      "type": "color",
+      "id": "tag_bg",
+      "label": "Tag Background",
+      "default": "#00c3ff"
+    },
+    {
+      "type": "color",
+      "id": "tag_color",
+      "label": "Tag Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "tag_size_pc",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Tag Font Size (PC)",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "tag_size_mb",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Tag Font Size (Mobile)",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Button Styling"
+    },
+    {
+      "type": "text",
+      "id": "global_btn_text",
+      "label": "Global Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Button Background",
+      "default": "#00c3ff"
+    },
+    {
+      "type": "color",
+      "id": "btn_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg_hover",
+      "label": "Button Background (Hover)",
+      "default": "#009acc"
+    },
+    {
+      "type": "color",
+      "id": "btn_color_hover",
+      "label": "Button Text Color (Hover)",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "btn_size_pc",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Font Size (PC)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "btn_size_mb",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Font Size (Mobile)",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "btn_weight",
+      "label": "Button Font Weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "btn_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Button Border Radius",
+      "default": 4
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_card",
+      "name": "Product / Custom Item",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product",
+          "info": "Values below will override product data if filled."
+        },
+        {
+          "type": "header",
+          "content": "Custom Overrides"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Custom Image"
+        },
+        {
+          "type": "range",
+          "id": "custom_image_height_pc",
+          "min": 0,
+          "max": 500,
+          "step": 10,
+          "unit": "px",
+          "label": "Custom Image Height (PC)",
+          "info": "Set to 0 to use global height.",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "custom_image_height_mb",
+          "min": 0,
+          "max": 500,
+          "step": 10,
+          "unit": "px",
+          "label": "Custom Image Height (Mobile)",
+          "info": "Set to 0 to use global height.",
+          "default": 0
+        },
+        {
+          "type": "text",
+          "id": "custom_title",
+          "label": "Custom Title"
+        },
+        {
+          "type": "text",
+          "id": "custom_price",
+          "label": "Custom Price",
+          "info": "E.g. $29.99"
+        },
+        {
+          "type": "text",
+          "id": "custom_compare_price",
+          "label": "Custom Compare Price",
+          "info": "E.g. $39.99"
+        },
+        {
+          "type": "text",
+          "id": "custom_tag",
+          "label": "Custom Tag Text",
+          "info": "E.g. 10% OFF"
+        },
+        {
+          "type": "text",
+          "id": "custom_btn_text",
+          "label": "Custom Button Text"
+        },
+        {
+          "type": "url",
+          "id": "custom_btn_link",
+          "label": "Custom Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ZL Nano Products",
+      "blocks": [
+        { "type": "product_card" },
+        { "type": "product_card" },
+        { "type": "product_card" },
+        { "type": "product_card" },
+        { "type": "product_card" },
+        { "type": "product_card" }
+      ]
+    }
+  ]
+}
+{% endschema %}
