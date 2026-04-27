@@ -335,6 +335,7 @@
                 </button>
               {%- endif -%}
             </a>
+
           {%- endif -%}
         {%- endfor -%}
       </div>
@@ -346,6 +347,7 @@
 <div class="zl-qv-loading-overlay" id="zl-qv-loading-{{ section.id }}">
   <div class="zl-qv-spinner"></div>
 </div>
+
 <script>
 (function () {
   var sec = document.getElementById('zl-nano-{{ section.id }}');
@@ -498,7 +500,7 @@
   sec.addEventListener('click', function (e) {
     var btn = e.target.closest('[data-open-qv]');
     if (!btn) return;
-    e.preventDefault();
+    e.preventDefault(); 
     e.stopPropagation();
     var handle = btn.getAttribute('data-product-handle');
     var url    = btn.getAttribute('data-product-url');
@@ -541,7 +543,6 @@
     { "type": "range", "id": "tag_size_mb", "min": 10, "max": 20, "step": 1, "unit": "px", "label": "Tag Size (Mobile)", "default": 12 },
     { "type": "header", "content": "Card Text Style" },
     { "type": "color", "id": "card_title_color", "label": "Title Color", "default": "#ffffff" },
-
     { "type": "select", "id": "card_title_weight", "label": "Title Weight", "options": [{"value":"400","label":"Normal"},{"value":"500","label":"Medium"},{"value":"600","label":"Semi Bold"},{"value":"700","label":"Bold"}], "default": "600" },
     { "type": "color", "id": "price_color", "label": "Price Color", "default": "#ffffff" },
     { "type": "range", "id": "price_size_pc", "min": 12, "max": 30, "step": 1, "unit": "px", "label": "Price Size (PC)", "default": 18 },
@@ -559,7 +560,6 @@
       "id": "main_product_section",
       "label": "Main Product Section ID",
       "default": "main-product-modal"
-      
     }
   ],
   "blocks": [
