@@ -645,7 +645,7 @@
             "title": "45W fast Charging\nCharge iPhone 17 to xx% in xx mins",
             "content_position": "top-left",
             "title_color": "#9887b8",
-            "title_size_pc": 28,
+            "title_size_pc": 20,
             "title_size_mb": 18,
             "title_weight": "600"
           }
@@ -662,7 +662,7 @@
             "title": "All-in-One Charging\nCharge All Your Devices",
             "content_position": "top-left",
             "title_color": "#9887b8",
-            "title_size_pc": 32,
+            "title_size_pc": 20,
             "title_size_mb": 18,
             "title_weight": "600"
           }
@@ -679,7 +679,7 @@
             "title": "30W Rapid Input\nFully Recharge in x Hours",
             "content_position": "top-left",
             "title_color": "#9887b8",
-            "title_size_pc": 28,
+            "title_size_pc": 20,
             "title_size_mb": 18,
             "title_weight": "600"
           }
@@ -713,7 +713,7 @@
             "title": "2 built-in cables.\n1 extra-long cable.",
             "content_position": "top-left",
             "title_color": "#9887b8",
-            "title_size_pc": 28,
+            "title_size_pc": 20,
             "title_size_mb": 18,
             "title_weight": "600"
           }
@@ -730,7 +730,7 @@
             "title": "Low-current charging mode",
             "content_position": "top-left",
             "title_color": "#9887b8",
-            "title_size_pc": 28,
+            "title_size_pc": 20,
             "title_size_mb": 18,
             "title_weight": "600"
           }
@@ -749,7 +749,7 @@
         "bg_color": "#9887b8",
         "container_width": 1680,
         "border_radius": 0,
-        "gap_pc": 16,
+        "gap_pc": 4,
         "gap_mb": 10,
         "padding_top": 40,
         "padding_bottom": 40,
