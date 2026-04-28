@@ -1023,7 +1023,7 @@
         "padding_top_pc": 0,
         "padding_bottom_pc": 60,
         "padding_top_mb": 20,
-        "padding_bottom_mb": 20,
+        "padding_bottom_mb": 0,
         "title": "FAQs",
         "title_color": "#171717",
         "title_size_pc": 48,
