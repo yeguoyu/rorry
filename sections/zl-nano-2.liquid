@@ -1,3 +1,5 @@
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
 {%- style -%}
   .zl-nano-2-section-{{ section.id }} {
     padding-top: {{ section.settings.padding_top }}px;
@@ -247,7 +249,7 @@
   }
 {%- endstyle -%}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" media="print" onload="this.media='all'">
+
 
 <section class="zl-nano-2-section-{{ section.id }}">
   <div class="zl-nano-2-container">
@@ -335,7 +337,7 @@
   </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+
 <script>
   (function() {
     const initZLNanoCarousel = () => {
