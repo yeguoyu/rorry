@@ -337,79 +337,92 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const section = document.querySelector('.zl-nano-2-section-{{ section.id }}');
-    if (!section) return;
-
-    let initAttempts = 0;
-    const initCarousel = () => {
-      if (typeof Swiper === 'undefined') {
-        if (initAttempts < 10) { initAttempts++; setTimeout(initCarousel, 200); }
-        return;
-      }
+  (function() {
+    const initZLNanoCarousel = () => {
+      const section = document.querySelector('.zl-nano-2-section-{{ section.id }}');
+      if (!section) return;
 
       const swiperContainer = section.querySelector('.zl-nano-2-swiper');
       if (!swiperContainer) return;
 
-      const prevBtn = section.querySelector('.zl-nano-2-prev');
-      const nextBtn = section.querySelector('.zl-nano-2-next');
-      const autoplayEnabled = {{ section.settings.autoplay }};
-      const autoplaySpeed = {{ section.settings.autoplay_speed }} * 1000;
+      if (swiperContainer.swiper) {
+        swiperContainer.swiper.destroy(true, true);
+      }
 
-      const itemsPc = parseFloat(swiperContainer.dataset.itemsPc);
-      const itemsMb = parseFloat(swiperContainer.dataset.itemsMb);
-      const layoutPc = swiperContainer.dataset.layoutPc;
-      const layoutMb = swiperContainer.dataset.layoutMb;
-      const gapPc = parseFloat(swiperContainer.dataset.gapPc);
-      const gapMb = parseFloat(swiperContainer.dataset.gapMb);
+      let initAttempts = 0;
+      const init = () => {
+        if (typeof Swiper === 'undefined') {
+          if (initAttempts < 10) { initAttempts++; setTimeout(init, 200); }
+          return;
+        }
 
-      let swiperInstance = new Swiper(swiperContainer, {
-        autoplay: autoplayEnabled ? { delay: autoplaySpeed, disableOnInteraction: false } : false,
-        navigation: {
-          nextEl: nextBtn,
-          prevEl: prevBtn,
-        },
-        breakpoints: {
-          0: {
-            enabled: layoutMb === 'carousel',
-            slidesPerView: itemsMb,
-            spaceBetween: gapMb
+        const prevBtn = section.querySelector('.zl-nano-2-prev');
+        const nextBtn = section.querySelector('.zl-nano-2-next');
+        const autoplayEnabled = {{ section.settings.autoplay | default: false }};
+        const autoplaySpeed = {{ section.settings.autoplay_speed | default: 3 }} * 1000;
+
+        const itemsPc = parseFloat(swiperContainer.dataset.itemsPc || 4);
+        const itemsMb = parseFloat(swiperContainer.dataset.itemsMb || 2);
+        const layoutPc = swiperContainer.dataset.layoutPc;
+        const layoutMb = swiperContainer.dataset.layoutMb;
+        const gapPc = parseFloat(swiperContainer.dataset.gapPc || 20);
+        const gapMb = parseFloat(swiperContainer.dataset.gapMb || 10);
+
+        new Swiper(swiperContainer, {
+          autoplay: autoplayEnabled ? { delay: autoplaySpeed, disableOnInteraction: false } : false,
+          navigation: {
+            nextEl: nextBtn,
+            prevEl: prevBtn,
           },
-          769: {
-            enabled: layoutPc === 'carousel',
-            slidesPerView: itemsPc,
-            spaceBetween: gapPc
-          }
-        },
-        on: {
-          init: function () {
-            if (window.innerWidth <= 768 && layoutMb === 'grid') {
-              this.destroy(false, true);
-              swiperContainer.classList.add('swiper-disabled');
+          breakpoints: {
+            0: {
+              enabled: layoutMb === 'carousel',
+              slidesPerView: itemsMb,
+              spaceBetween: gapMb
+            },
+            769: {
+              enabled: layoutPc === 'carousel',
+              slidesPerView: itemsPc,
+              spaceBetween: gapPc
             }
           },
-          resize: function () {
-             if (window.innerWidth <= 768 && layoutMb === 'grid') {
-               if(!this.destroyed) this.destroy(false, true);
-               swiperContainer.classList.add('swiper-disabled');
-             } else if (window.innerWidth > 768 && layoutPc === 'grid') {
-               if(!this.destroyed) this.destroy(false, true);
-               swiperContainer.classList.add('swiper-disabled');
-             } else {
-               if(this.destroyed) {
-                  swiperContainer.classList.remove('swiper-disabled');
-                  initCarousel();
+          on: {
+            init: function () {
+              if (window.innerWidth <= 768 && layoutMb === 'grid') {
+                this.destroy(false, true);
+                swiperContainer.classList.add('swiper-disabled');
+              }
+            },
+            resize: function () {
+               if (window.innerWidth <= 768 && layoutMb === 'grid') {
+                 if(!this.destroyed) this.destroy(false, true);
+                 swiperContainer.classList.add('swiper-disabled');
+               } else if (window.innerWidth > 768 && layoutPc === 'grid') {
+                 if(!this.destroyed) this.destroy(false, true);
+                 swiperContainer.classList.add('swiper-disabled');
+               } else {
+                 if(this.destroyed) {
+                    swiperContainer.classList.remove('swiper-disabled');
+                    init();
+                 }
                }
-             }
+            }
           }
-        }
-      });
+        });
+      };
+
+      init();
     };
 
-    initCarousel();
-  });
-</script>
+    document.addEventListener('DOMContentLoaded', initZLNanoCarousel);
 
+    document.addEventListener('shopify:section:load', function(event) {
+      if (event.detail.sectionId === '{{ section.id }}') {
+        initZLNanoCarousel();
+      }
+    });
+  })();
+</script>
 {% schema %}
 {
   "name": "ZL Nano Products",
