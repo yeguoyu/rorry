@@ -234,7 +234,7 @@
         "padding_top": 24,
         "padding_bottom": 40,
         "padding_top_mobile": 16,
-        "padding_bottom_mobile": 40,
+        "padding_bottom_mobile": 32,
         "grid_gap": 20,
         "grid_gap_mobile": 12,
         "title_max_width": 800,
