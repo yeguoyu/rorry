@@ -910,13 +910,12 @@
         "question_UJRxzq",
         "question_w8dAMF"
       ],
-      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
-        "style": "with-border",
+        "style": "with-background",
         "heading": "FAQs",
         "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
