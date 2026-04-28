@@ -799,7 +799,7 @@
       ],
       "name": "ZL Tri Grid",
       "settings": {
-        "bg_color": "#c7d1e7",
+        "bg_color": "#c5cce5",
         "container_width": 1680,
         "border_radius": 0,
         "gap_pc": 4,
