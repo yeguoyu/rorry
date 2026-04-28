@@ -382,7 +382,7 @@
         "title_max_width": 400,
         "title_spacing": 40,
         "title_spacing_mb": 30,
-        "pc_layout": "carousel",
+        "pc_layout": "grid",
         "items_pc": 5,
         "grid_gap": 12,
         "mobile_layout": "grid",
