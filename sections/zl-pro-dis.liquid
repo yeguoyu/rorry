@@ -1,4 +1,9 @@
 {%- style -%}
+  #zl-dis-wrapper-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_pc }}px;
+    padding-bottom: {{ section.settings.padding_bottom_pc }}px;
+  }
+
   #zl-dis-{{ section.id }} {
     position: relative;
     width: 100%;
@@ -120,6 +125,11 @@
   }
 
   @media screen and (max-width: 768px) {
+    #zl-dis-wrapper-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top_mb }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mb }}px;
+    }
+
     #zl-dis-{{ section.id }} {
       height: {{ section.settings.height_mb }}px;
     }
@@ -171,55 +181,57 @@
   }
 {%- endstyle -%}
 
-<section id="zl-dis-{{ section.id }}" class="zl-dis-section">
-  <div class="zl-dis-bg">
-    <picture>
-      {%- if section.settings.image_mb != blank -%}
-        <source media="(max-width: 768px)" srcset="{{ section.settings.image_mb | image_url: width: 750 }}">
-      {%- endif -%}
-      {%- if section.settings.image_pc != blank -%}
-        <img src="{{ section.settings.image_pc | image_url: width: 1920 }}" alt="" loading="lazy">
-      {%- endif -%}
-    </picture>
-  </div>
-
-  <div class="zl-dis-container">
-    <div class="zl-dis-text-wrap">
-      {%- if section.settings.title != blank -%}
-        <h2 class="zl-dis-title">{{ section.settings.title }}</h2>
-      {%- endif -%}
-      {%- if section.settings.subtitle != blank -%}
-        <p class="zl-dis-subtitle">{{ section.settings.subtitle }}</p>
-      {%- endif -%}
+<div id="zl-dis-wrapper-{{ section.id }}">
+  <section id="zl-dis-{{ section.id }}" class="zl-dis-section">
+    <div class="zl-dis-bg">
+      <picture>
+        {%- if section.settings.image_mb != blank -%}
+          <source media="(max-width: 768px)" srcset="{{ section.settings.image_mb | image_url: width: 750 }}">
+        {%- endif -%}
+        {%- if section.settings.image_pc != blank -%}
+          <img src="{{ section.settings.image_pc | image_url: width: 1920 }}" alt="" loading="lazy">
+        {%- endif -%}
+      </picture>
     </div>
 
-    <div class="zl-dis-timer-wrap" data-endtime="{{ section.settings.end_time }}">
-      <div class="zl-dis-timer-box">
-        <span class="zl-dis-time zl-dis-days">00</span>
-        <span class="zl-dis-label">DAYS</span>
+    <div class="zl-dis-container">
+      <div class="zl-dis-text-wrap">
+        {%- if section.settings.title != blank -%}
+          <h2 class="zl-dis-title">{{ section.settings.title }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subtitle != blank -%}
+          <p class="zl-dis-subtitle">{{ section.settings.subtitle }}</p>
+        {%- endif -%}
       </div>
-      <span class="zl-dis-colon">:</span>
-      <div class="zl-dis-timer-box">
-        <span class="zl-dis-time zl-dis-hours">00</span>
-        <span class="zl-dis-label">HOURS</span>
-      </div>
-      <span class="zl-dis-colon">:</span>
-      <div class="zl-dis-timer-box">
-        <span class="zl-dis-time zl-dis-mins">00</span>
-        <span class="zl-dis-label">MINS</span>
-      </div>
-      <span class="zl-dis-colon">:</span>
-      <div class="zl-dis-timer-box">
-        <span class="zl-dis-time zl-dis-secs">00</span>
-        <span class="zl-dis-label">SECS</span>
-      </div>
-    </div>
 
-    {%- if section.settings.btn_text != blank -%}
-      <a href="{{ section.settings.btn_link | default: '#' }}" class="zl-dis-btn">{{ section.settings.btn_text }}</a>
-    {%- endif -%}
-  </div>
-</section>
+      <div class="zl-dis-timer-wrap" data-endtime="{{ section.settings.end_time }}">
+        <div class="zl-dis-timer-box">
+          <span class="zl-dis-time zl-dis-days">00</span>
+          <span class="zl-dis-label">DAYS</span>
+        </div>
+        <span class="zl-dis-colon">:</span>
+        <div class="zl-dis-timer-box">
+          <span class="zl-dis-time zl-dis-hours">00</span>
+          <span class="zl-dis-label">HOURS</span>
+        </div>
+        <span class="zl-dis-colon">:</span>
+        <div class="zl-dis-timer-box">
+          <span class="zl-dis-time zl-dis-mins">00</span>
+          <span class="zl-dis-label">MINS</span>
+        </div>
+        <span class="zl-dis-colon">:</span>
+        <div class="zl-dis-timer-box">
+          <span class="zl-dis-time zl-dis-secs">00</span>
+          <span class="zl-dis-label">SECS</span>
+        </div>
+      </div>
+
+      {%- if section.settings.btn_text != blank -%}
+        <a href="{{ section.settings.btn_link | default: '#' }}" class="zl-dis-btn">{{ section.settings.btn_text }}</a>
+      {%- endif -%}
+    </div>
+  </section>
+</div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -269,6 +281,54 @@ document.addEventListener("DOMContentLoaded", function() {
   "name": "ZL Countdown Banner",
   "settings": [
     {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_pc",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (PC)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_pc",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (PC)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Banner Settings"
+    },
+    {
       "type": "color",
       "id": "bg_color",
       "label": "Fallback Background Color",
@@ -291,7 +351,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "max": 200,
       "step": 2,
       "unit": "px",
-      "label": "Section Height (PC)",
+      "label": "Banner Height (PC)",
       "default": 80
     },
     {
@@ -301,7 +361,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "max": 300,
       "step": 5,
       "unit": "px",
-      "label": "Section Height (Mobile)",
+      "label": "Banner Height (Mobile)",
       "default": 200
     },
     {
