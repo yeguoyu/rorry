@@ -290,7 +290,8 @@
         "product_card_EkVyUq": {
           "type": "product_card",
           "settings": {
-            "product": "rorry-d2-2500mah-mini-portable-charger-keychain-power-bank",
+            "product": "rorry-d2-5000mah-portable-charger-keychain-power-bank",
+            "custom_image": "shopify://shop_images/d2-5000_6d512e3c-8f6f-4bf7-8ef2-dcd7dd1a6210.jpg",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "",
@@ -304,7 +305,8 @@
         "product_card_D9pGCH": {
           "type": "product_card",
           "settings": {
-            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "product": "rorry-d2-10000mah-pd-20w-portable-charger-keychain-power-bank",
+            "custom_image": "shopify://shop_images/d2-10000.jpg",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "",
@@ -318,7 +320,8 @@
         "product_card_XwDQQc": {
           "type": "product_card",
           "settings": {
-            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "product": "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank",
+            "custom_image": "shopify://shop_images/d2-20000.jpg",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "",
@@ -332,7 +335,8 @@
         "product_card_KBzE3A": {
           "type": "product_card",
           "settings": {
-            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "product": "",
+            "custom_image": "shopify://shop_images/d4-10000.jpg",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "",
@@ -346,7 +350,8 @@
         "product_card_YPXtYd": {
           "type": "product_card",
           "settings": {
-            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "product": "rorry-t1-5000mah-portable-charger-keychain-power-bank-with-built-in-cables-travel-charger-battery-pack",
+            "custom_image": "shopify://shop_images/t1-5000.jpg",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "",
@@ -360,7 +365,8 @@
         "product_card_mfq7dH": {
           "type": "product_card",
           "settings": {
-            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "product": "rorry-t1-10000mah-portable-charger-keychain-power-bank",
+            "custom_image": "shopify://shop_images/t1-10000.jpg",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "",
@@ -373,6 +379,7 @@
         },
         "product_card_y38tJp": {
           "type": "product_card",
+          "disabled": true,
           "settings": {
             "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
             "custom_image_height_pc": 0,
@@ -387,6 +394,7 @@
         },
         "product_card_VgxqmM": {
           "type": "product_card",
+          "disabled": true,
           "settings": {
             "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
             "custom_image_height_pc": 0,
