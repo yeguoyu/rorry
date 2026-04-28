@@ -242,6 +242,44 @@
         "title_spacing_mobile": 30
       }
     },
+    "zl_pro_dis_CLHkeR": {
+      "type": "zl-pro-dis",
+      "name": "ZL Countdown Banner",
+      "settings": {
+        "bg_color": "#9887b8",
+        "height_pc": 80,
+        "height_mb": 200,
+        "title": "Mother's Day Offers",
+        "title_color": "#ffffff",
+        "title_size_pc": 24,
+        "title_size_mb": 20,
+        "title_weight": "700",
+        "subtitle": "Up to 20% OFF!",
+        "subtitle_color": "#ffffff",
+        "subtitle_size_pc": 14,
+        "subtitle_size_mb": 12,
+        "subtitle_weight": "400",
+        "end_time": "2026-12-31 23:59:59",
+        "timer_bg": "#ffffff",
+        "time_color": "#46356b",
+        "time_size_pc": 24,
+        "time_size_mb": 20,
+        "time_weight": "600",
+        "label_color": "#46356b",
+        "label_size_pc": 10,
+        "label_size_mb": 9,
+        "label_weight": "400",
+        "colon_color": "#000000",
+        "btn_text": "Buy Now",
+        "btn_link": "",
+        "btn_bg": "#46356b",
+        "btn_color": "#ffffff",
+        "btn_size_pc": 14,
+        "btn_size_mb": 14,
+        "btn_weight": "500",
+        "btn_radius": 4
+      }
+    },
     "zl_nano_2_QBx8fX": {
       "type": "zl-nano-2",
       "blocks": {
@@ -1007,6 +1045,7 @@
     "image_with_text_overlay_rmJqTC",
     "rich_text_xPzhXh",
     "zl_nano_1_qmVeJr",
+    "zl_pro_dis_CLHkeR",
     "zl_nano_2_QBx8fX",
     "zl_nano_3_KeHCKR",
     "image_with_text_overlay_RCaW3T",
