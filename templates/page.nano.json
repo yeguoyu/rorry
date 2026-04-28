@@ -979,7 +979,7 @@
         "container_width": 900,
         "padding_top_pc": 0,
         "padding_bottom_pc": 60,
-        "padding_top_mb": 0,
+        "padding_top_mb": 20,
         "padding_bottom_mb": 40,
         "title": "FAQs",
         "title_color": "#171717",
