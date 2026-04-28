@@ -385,7 +385,7 @@
         "pc_layout": "carousel",
         "items_pc": 5,
         "grid_gap": 12,
-        "mobile_layout": "carousel",
+        "mobile_layout": "grid",
         "items_mb": 2,
         "grid_gap_mobile": 10,
         "autoplay": false,
