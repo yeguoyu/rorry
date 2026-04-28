@@ -622,7 +622,7 @@
         "color_overlay": "#171717",
         "overlay_opacity": 0,
         "padding_top": 40,
-        "padding_bottom": 80,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": true,
         "rounded": false,
