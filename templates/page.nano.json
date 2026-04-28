@@ -31,7 +31,7 @@
           "type": "heading",
           "settings": {
             "heading": "RORRY CharmGo Collection",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -910,6 +910,7 @@
         "question_UJRxzq",
         "question_w8dAMF"
       ],
+      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
         "style": "with-background",
@@ -941,6 +942,64 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "zl_faq_info_4HAa6C": {
+      "type": "zl-faq-info",
+      "blocks": {
+        "faq_item_FNbAUc": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 1",
+            "answer": "<p>Answer to question 1 goes here.</p>"
+          }
+        },
+        "faq_item_4gxnMJ": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 2",
+            "answer": "<p>Answer to question 2 goes here.</p>"
+          }
+        },
+        "faq_item_xMMXMq": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 3",
+            "answer": "<p>Answer to question 3 goes here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_FNbAUc",
+        "faq_item_4gxnMJ",
+        "faq_item_xMMXMq"
+      ],
+      "name": "ZL FAQ",
+      "settings": {
+        "bg_color": "#ffffff",
+        "container_width": 900,
+        "padding_top_pc": 0,
+        "padding_bottom_pc": 60,
+        "padding_top_mb": 40,
+        "padding_bottom_mb": 40,
+        "title": "FAQs",
+        "title_color": "#171717",
+        "title_size_pc": 48,
+        "title_size_mb": 28,
+        "title_weight": "600",
+        "item_bg_color": "#ffffff",
+        "q_color": "#000000",
+        "q_size_pc": 20,
+        "q_size_mb": 18,
+        "q_weight": "400",
+        "a_color": "#333333",
+        "a_size_pc": 18,
+        "a_size_mb": 16,
+        "a_weight": "300",
+        "read_more_text": "Read More",
+        "read_less_text": "Read Less",
+        "btn_bg_color": "#000b46",
+        "btn_text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -953,6 +1012,7 @@
     "image_with_text_overlay_RCaW3T",
     "zl_nano_4_baLq3H",
     "zl_nano_5_aWaACm",
-    "faq_XjyrqX"
+    "faq_XjyrqX",
+    "zl_faq_info_4HAa6C"
   ]
 }
