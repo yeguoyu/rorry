@@ -643,7 +643,7 @@
         ".rte {line-height: 1.2;}",
         ".rte {margin-top: 12px;}",
         ".button {margin-top: 24px;}",
-        "@media screen and (max-width: 768px) {.rte {margin-top: 10px;}.button {margin-top: 12px;}}"
+        "@media screen and (max-width: 768px) {.rte {margin-top: 10px; } .button {margin-top: 12px; }}"
       ],
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
@@ -1023,7 +1023,7 @@
         "padding_top_pc": 0,
         "padding_bottom_pc": 60,
         "padding_top_mb": 20,
-        "padding_bottom_mb": 40,
+        "padding_bottom_mb": 20,
         "title": "FAQs",
         "title_color": "#171717",
         "title_size_pc": 48,
