@@ -382,7 +382,7 @@
         "title_max_width": 400,
         "title_spacing": 40,
         "title_spacing_mb": 30,
-        "pc_layout": "grid",
+        "pc_layout": "carousel",
         "items_pc": 5,
         "grid_gap": 12,
         "mobile_layout": "grid",
@@ -663,7 +663,7 @@
             "content_position": "top-left",
             "title_color": "#9887b8",
             "title_size_pc": 20,
-            "title_size_mb": 18,
+            "title_size_mb": 14,
             "title_weight": "600"
           }
         },
@@ -680,7 +680,7 @@
             "content_position": "top-left",
             "title_color": "#9887b8",
             "title_size_pc": 20,
-            "title_size_mb": 18,
+            "title_size_mb": 14,
             "title_weight": "600"
           }
         },
@@ -714,7 +714,7 @@
             "content_position": "top-left",
             "title_color": "#9887b8",
             "title_size_pc": 20,
-            "title_size_mb": 18,
+            "title_size_mb": 14,
             "title_weight": "600"
           }
         },
@@ -731,7 +731,7 @@
             "content_position": "top-left",
             "title_color": "#9887b8",
             "title_size_pc": 20,
-            "title_size_mb": 18,
+            "title_size_mb": 14,
             "title_weight": "600"
           }
         }
