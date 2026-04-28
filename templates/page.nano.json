@@ -795,7 +795,7 @@
         "container_width": 1680,
         "border_radius": 0,
         "gap_pc": 4,
-        "gap_mb": 10,
+        "gap_mb": 4,
         "padding_top": 40,
         "padding_bottom": 40,
         "padding_top_mb": 20,
