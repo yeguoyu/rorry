@@ -149,7 +149,7 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 80,
+        "padding_top": 28,
         "padding_bottom": 0,
         "divider": false,
         "narrow": true,
@@ -238,7 +238,7 @@
         "grid_gap": 8,
         "grid_gap_mobile": 8,
         "title_max_width": 800,
-        "title_spacing": 20,
+        "title_spacing": 30,
         "title_spacing_mobile": 30
       }
     },
@@ -246,10 +246,10 @@
       "type": "zl-pro-dis",
       "name": "ZL Countdown Banner",
       "settings": {
-        "padding_top_pc": 20,
-        "padding_bottom_pc": 20,
-        "padding_top_mb": 12,
-        "padding_bottom_mb": 12,
+        "padding_top_pc": 0,
+        "padding_bottom_pc": 0,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 0,
         "bg_color": "#9887b8",
         "height_pc": 80,
         "height_mb": 200,
