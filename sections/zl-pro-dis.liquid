@@ -238,6 +238,22 @@ document.addEventListener("DOMContentLoaded", function() {
   const section = document.getElementById('zl-dis-{{ section.id }}');
   if (!section) return;
 
+  const btn = section.querySelector('.zl-dis-btn');
+  if (btn && btn.getAttribute('href').startsWith('#')) {
+    btn.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        e.preventDefault();
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  }
+
   const timerWrap = section.querySelector('.zl-dis-timer-wrap');
   const endTimeStr = timerWrap.getAttribute('data-endtime');
   if (!endTimeStr) return;
