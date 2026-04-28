@@ -215,7 +215,7 @@
           <span class="zl-dis-label">HOURS</span>
         </div>
         <span class="zl-dis-colon">:</span>
-        <div class="zl-dis-timer-box">
+        {% comment %} <div class="zl-dis-timer-box">
           <span class="zl-dis-time zl-dis-mins">00</span>
           <span class="zl-dis-label">MINS</span>
         </div>
@@ -223,7 +223,7 @@
         <div class="zl-dis-timer-box">
           <span class="zl-dis-time zl-dis-secs">00</span>
           <span class="zl-dis-label">SECS</span>
-        </div>
+        </div> {% endcomment %}
       </div>
 
       {%- if section.settings.btn_text != blank -%}
