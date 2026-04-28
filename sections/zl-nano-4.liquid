@@ -65,6 +65,12 @@
     margin: 0;
     line-height: 1.2;
   }
+  .zl-tri-container-last-title{
+    color:#fff;
+    font-size:2rem;
+    margin-top:1.6rem;
+    text-align:end;
+  }
 
   {%- for block in section.blocks -%}
     .zl-tri-card-{{ block.id }} {
@@ -194,7 +200,7 @@
         </a>
       {%- endfor -%}
     </div>
-    <p>Tested in RORRY Lab; results may vary</p>
+    <p class="zl-tri-container-last-title">Tested in RORRY Lab; results may vary</p>
   </div>
   
 </section>
