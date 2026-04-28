@@ -599,7 +599,7 @@
       "custom_css": [
         "@media screen and (min-width: 1280px) {.banner__box--small {max-width: 55rem; }}",
         ".rte {line-height: 1.2;}",
-        ".rte {margin-top: 20px;}",
+        ".rte {margin-top: 12px;}",
         ".button {margin-top: 24px;}"
       ],
       "name": "t:sections.image-with-text-overlay.name",
