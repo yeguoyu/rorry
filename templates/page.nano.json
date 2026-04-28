@@ -569,7 +569,7 @@
           "settings": {
             "text": "<p>Your Mood, in Color</p>",
             "text_font": "body",
-            "text_size": "subtext-custom",
+            "text_size": "subtext-lg",
             "text_max_size": 28,
             "text_line_height": 1.8,
             "text_letter_spacing": 0,
@@ -598,7 +598,9 @@
       ],
       "custom_css": [
         "@media screen and (min-width: 1280px) {.banner__box--small {max-width: 55rem; }}",
-        ".rte {line-height: 1.2;}"
+        ".rte {line-height: 1.2;}",
+        ".rte {margin-top: 20px;}",
+        ".button {margin-top: 24px;}"
       ],
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
