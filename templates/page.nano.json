@@ -520,7 +520,7 @@
         "padding_top": 40,
         "padding_bottom": 40,
         "padding_top_mb": 32,
-        "padding_bottom_mb": 32,
+        "padding_bottom_mb": 16,
         "title": "Power up your day, go anywhere with RORRY CharmGo",
         "title_color": "#9887b8",
         "title_weight": "600",
