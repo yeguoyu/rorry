@@ -1077,9 +1077,9 @@
         "padding_top": 72,
         "padding_bottom": 72,
         "divider": false,
-        "narrow": false,
+        "narrow": true,
         "rounded": false,
-        "enable_parallax": true,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     }
