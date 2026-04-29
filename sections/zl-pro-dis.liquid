@@ -41,12 +41,15 @@
               type="email" 
               name="contact[email]" 
               class="zl-dis-input" 
-              placeholder="{{ section.settings.input_placeholder | default: 'Email address' }}" 
+              placeholder="{{ section.settings.input_placeholder | default: 'Enter your email' }}" 
               required
               aria-label="Email address"
             >
-            <button type="submit" class="zl-dis-btn">
-              {{ section.settings.btn_text | default: 'Submit' }}
+            <button type="submit" class="zl-dis-btn" aria-label="Submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
             </button>
           </div>
           {%- if form.posted_successfully? -%}
@@ -171,9 +174,10 @@
     margin-bottom: 15px;
   }
 
+  /* --- 新增订阅表单样式 --- */
   #zl-dis-{{ section.id }} .zl-dis-form-wrap {
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
   }
 
   #zl-dis-{{ section.id }} .zl-dis-form {
@@ -184,37 +188,55 @@
 
   #zl-dis-{{ section.id }} .zl-dis-input-group {
     display: flex;
+    align-items: center;
     width: 100%;
-    height: 44px;
+    height: 48px;
+    background-color: {{ section.settings.input_bg }};
+    border-radius: 40px;
+    padding: 4px 6px 4px 20px;
   }
 
   #zl-dis-{{ section.id }} .zl-dis-input {
     flex-grow: 1;
     height: 100%;
-    padding: 0 15px;
+    background: transparent;
     border: none;
-    border-radius: {{ section.settings.btn_radius }}px 0 0 {{ section.settings.btn_radius }}px;
+    color: {{ section.settings.input_color }};
     font-size: 14px;
-    color: #333;
     outline: none;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  #zl-dis-{{ section.id }} .zl-dis-input::placeholder {
+    color: {{ section.settings.input_color }};
+    opacity: 0.8;
   }
 
   #zl-dis-{{ section.id }} .zl-dis-btn {
-    height: 100%;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
     background-color: {{ section.settings.btn_bg }};
     color: {{ section.settings.btn_color }};
-    font-size: {{ section.settings.btn_size_pc }}px;
-    font-weight: {{ section.settings.btn_weight }};
-    padding: 0 25px;
-    border-radius: 0 {{ section.settings.btn_radius }}px {{ section.settings.btn_radius }}px 0;
+    border-radius: 50%;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: opacity 0.3s;
-    white-space: nowrap;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    padding: 0;
+  }
+
+  #zl-dis-{{ section.id }} .zl-dis-btn svg {
+    width: 18px;
+    height: 18px;
   }
 
   #zl-dis-{{ section.id }} .zl-dis-btn:hover {
-    opacity: 0.85;
+    transform: scale(1.05);
+    opacity: 0.9;
   }
 
   #zl-dis-{{ section.id }} .zl-dis-form-success {
@@ -287,12 +309,13 @@
     }
 
     #zl-dis-{{ section.id }} .zl-dis-input-group {
-      height: 40px;
+      height: 44px;
+      padding: 4px 5px 4px 15px;
     }
 
     #zl-dis-{{ section.id }} .zl-dis-btn {
-      font-size: {{ section.settings.btn_size_mb }}px;
-      padding: 0 20px;
+      width: 36px;
+      height: 36px;
     }
   }
 </style>
@@ -328,7 +351,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   updateTimer();
-  setInterval(updateTimer, 60000); // Update every minute since we only show days/hours
+  setInterval(updateTimer, 60000); // 因为只显示到小时，一分钟更新一次即可
 });
 </script>
 
@@ -609,7 +632,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "type": "color",
       "id": "colon_color",
       "label": "Colon Color",
-      "default": "#000000"
+      "default": "#ffffff"
     },
     {
       "type": "header",
@@ -623,69 +646,33 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       "type": "text",
-      "id": "btn_text",
-      "label": "Button Text",
-      "default": "Subscribe"
-    },
-    {
-      "type": "text",
       "id": "success_message",
       "label": "Success Message",
       "default": "Thanks for subscribing!"
     },
     {
       "type": "color",
+      "id": "input_bg",
+      "label": "Input Background Color",
+      "default": "rgba(255, 255, 255, 0.2)"
+    },
+    {
+      "type": "color",
+      "id": "input_color",
+      "label": "Input Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
       "id": "btn_bg",
-      "label": "Button Background",
-      "default": "#453265"
+      "label": "Circle Button Background",
+      "default": "#ffffff"
     },
     {
       "type": "color",
       "id": "btn_color",
-      "label": "Button Text Color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "range",
-      "id": "btn_size_pc",
-      "min": 10,
-      "max": 24,
-      "step": 1,
-      "unit": "px",
-      "label": "Button Size (PC)",
-      "default": 14
-    },
-    {
-      "type": "range",
-      "id": "btn_size_mb",
-      "min": 10,
-      "max": 20,
-      "step": 1,
-      "unit": "px",
-      "label": "Button Size (Mobile)",
-      "default": 14
-    },
-    {
-      "type": "select",
-      "id": "btn_weight",
-      "label": "Button Weight",
-      "options": [
-        { "value": "400", "label": "Normal" },
-        { "value": "500", "label": "Medium" },
-        { "value": "600", "label": "Semi Bold" },
-        { "value": "700", "label": "Bold" }
-      ],
-      "default": "600"
-    },
-    {
-      "type": "range",
-      "id": "btn_radius",
-      "min": 0,
-      "max": 30,
-      "step": 1,
-      "unit": "px",
-      "label": "Input & Button Radius",
-      "default": 4
+      "label": "Arrow Icon Color",
+      "default": "#000000"
     }
   ],
   "presets": [
