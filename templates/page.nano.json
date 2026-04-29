@@ -829,12 +829,13 @@
         "product_column_nzQcVq": {
           "type": "product_column",
           "settings": {
-            "product": "rorry-charmgo-d2-10000mah-portable-charger-keychain-power-bank-20w",
-            "custom_title": "",
+            "product": "rorry-d2-5000mah-portable-charger-keychain-power-bank",
+            "custom_image": "shopify://shop_images/RORRY-D2-5000mAh.jpg",
+            "custom_title": "CharmGo portable charger（Most-loved. 20 colors. 5000mAh.)",
             "custom_price": "",
             "badge": "New",
             "show_color_swatches": true,
-            "spec_1": "Magnetic Watch\nCharging",
+            "spec_1": "Supports",
             "spec_2": "10000 mAh",
             "spec_3": "2× USB-C\n1× USB-A",
             "spec_4": "2.09 × 1.68 × 1.24 in\n(5.30 × 4.26 × 3.15 cm)",
@@ -849,8 +850,9 @@
         "product_column_MYDQaj": {
           "type": "product_column",
           "settings": {
-            "product": "rorry-charmgo-d2-10000mah-portable-charger-keychain-power-bank-20w",
-            "custom_title": "",
+            "product": "rorry-t1-5000mah-portable-charger-keychain-power-bank-with-built-in-cables-travel-charger-battery-pack",
+            "custom_image": "shopify://shop_images/RORRY-T1-5000mAh.jpg",
+            "custom_title": "CharmGo portable charger(Light. Smart Buy.)",
             "custom_price": "",
             "badge": "New",
             "show_color_swatches": true,
@@ -869,8 +871,9 @@
         "product_column_LP4Rrc": {
           "type": "product_column",
           "settings": {
-            "product": "rorry-charmgo-d2-10000mah-portable-charger-keychain-power-bank-20w",
-            "custom_title": "",
+            "product": "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank",
+            "custom_image": "shopify://shop_images/RORRY-D2-20000mAh.jpg",
+            "custom_title": "CharmGo portable charger(20,000mAh. Big Smart Power. )",
             "custom_price": "",
             "badge": "New",
             "show_color_swatches": true,
