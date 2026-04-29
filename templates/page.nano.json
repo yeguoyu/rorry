@@ -635,7 +635,7 @@
         "button_9z9cLD": {
           "type": "button",
           "settings": {
-            "button_label": "SHOP NEW",
+            "button_label": "Learn More",
             "button_link": "",
             "button_style": "primary",
             "button_size": "sm",
@@ -736,7 +736,7 @@
             "image_pc": "shopify://shop_images/RORRY-D4-10000mAh_7.jpg",
             "image_mb": "shopify://shop_images/D4-10000-keychain-power-bank_1.jpg",
             "link": "",
-            "title": "30W Rapid Input\nFully Recharge in x Hours",
+            "title": "30W Rapid Input\nFully Recharge in 2.2 Hours",
             "content_position": "top-left",
             "title_color": "#9887b8",
             "title_size_pc": 20,
