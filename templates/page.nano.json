@@ -54,6 +54,7 @@
         },
         "button_hjCw6e": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "SHOP NOW",
             "button_link": "",
@@ -634,6 +635,7 @@
         },
         "button_9z9cLD": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Learn More",
             "button_link": "",
