@@ -374,7 +374,7 @@
             "custom_image": "shopify://shop_images/RORRY-D4-10000mAh.jpg",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
-            "custom_title": "RORRY D4-10000mAh Portable Charger KeychainPower Bank 45W",
+            "custom_title": "CharmGo portable charger(45W Flagship. 1000mAh.)",
             "custom_price": "$51.99",
             "custom_compare_price": "",
             "custom_tag": "",
@@ -848,26 +848,6 @@
             "spec_10": ""
           }
         },
-        "product_column_Xbgwm7": {
-          "type": "product_column",
-          "settings": {
-            "product": "",
-            "custom_title": "",
-            "custom_price": "",
-            "badge": "New",
-            "show_color_swatches": true,
-            "spec_1": "70W",
-            "spec_2": "70W",
-            "spec_3": "2× USB-C\n1× USB-A",
-            "spec_4": "2.09 × 1.68 × 1.24 in\n(5.30 × 4.26 × 3.15 cm)",
-            "spec_5": "4.23 oz (120 g)",
-            "spec_6": "ActiveShield 4.0",
-            "spec_7": "",
-            "spec_8": "",
-            "spec_9": "",
-            "spec_10": ""
-          }
-        },
         "product_column_nzQcVq": {
           "type": "product_column",
           "settings": {
@@ -934,7 +914,6 @@
       },
       "block_order": [
         "product_column_JCg3fm",
-        "product_column_Xbgwm7",
         "product_column_nzQcVq",
         "product_column_MYDQaj",
         "product_column_LP4Rrc"
