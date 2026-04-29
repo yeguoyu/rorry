@@ -1,4 +1,67 @@
-{%- style -%}
+<div id="zl-dis-wrapper-{{ section.id }}">
+  <section id="zl-dis-{{ section.id }}" class="zl-dis-section">
+    <div class="zl-dis-bg">
+      <picture>
+        {%- if section.settings.image_mb != blank -%}
+          <source media="(max-width: 768px)" srcset="{{ section.settings.image_mb | image_url: width: 750 }}">
+        {%- endif -%}
+        {%- if section.settings.image_pc != blank -%}
+          <img src="{{ section.settings.image_pc | image_url: width: 1920 }}" alt="" loading="lazy">
+        {%- endif -%}
+      </picture>
+    </div>
+
+    <div class="zl-dis-container">
+      <div class="zl-dis-text-wrap">
+        {%- if section.settings.title != blank -%}
+          <h2 class="zl-dis-title">{{ section.settings.title }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subtitle != blank -%}
+          <p class="zl-dis-subtitle">{{ section.settings.subtitle }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="zl-dis-timer-wrap" data-endtime="{{ section.settings.end_time }}">
+        <div class="zl-dis-timer-box">
+          <span class="zl-dis-time zl-dis-days">00</span>
+          <span class="zl-dis-label">DAYS</span>
+        </div>
+        <span class="zl-dis-colon">:</span>
+        <div class="zl-dis-timer-box">
+          <span class="zl-dis-time zl-dis-hours">00</span>
+          <span class="zl-dis-label">HOURS</span>
+        </div>
+      </div>
+
+      <div class="zl-dis-form-wrap">
+        {% form 'customer', class: 'zl-dis-form' %}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <div class="zl-dis-input-group">
+            <input 
+              type="email" 
+              name="contact[email]" 
+              class="zl-dis-input" 
+              placeholder="{{ section.settings.input_placeholder | default: 'Email address' }}" 
+              required
+              aria-label="Email address"
+            >
+            <button type="submit" class="zl-dis-btn">
+              {{ section.settings.btn_text | default: 'Submit' }}
+            </button>
+          </div>
+          {%- if form.posted_successfully? -%}
+            <p class="zl-dis-form-success">{{ section.settings.success_message | default: 'Thanks for subscribing!' }}</p>
+          {%- endif -%}
+          {%- if form.errors -%}
+            <p class="zl-dis-form-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</p>
+          {%- endif -%}
+        {% endform %}
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
   #zl-dis-wrapper-{{ section.id }} {
     padding-top: {{ section.settings.padding_top_pc }}px;
     padding-bottom: {{ section.settings.padding_bottom_pc }}px;
@@ -80,8 +143,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 50px;
-    padding: 4px 8px;
+    min-width: 60px;
+    padding: 6px 10px;
   }
 
   #zl-dis-{{ section.id }} .zl-dis-time {
@@ -96,7 +159,7 @@
     font-size: {{ section.settings.label_size_pc }}px;
     font-weight: {{ section.settings.label_weight }};
     line-height: 1;
-    margin-top: 2px;
+    margin-top: 4px;
     text-transform: uppercase;
   }
 
@@ -105,23 +168,67 @@
     font-size: {{ section.settings.time_size_pc }}px;
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  #zl-dis-{{ section.id }} .zl-dis-form-wrap {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  #zl-dis-{{ section.id }} .zl-dis-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #zl-dis-{{ section.id }} .zl-dis-input-group {
+    display: flex;
+    width: 100%;
+    height: 44px;
+  }
+
+  #zl-dis-{{ section.id }} .zl-dis-input {
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    border-radius: {{ section.settings.btn_radius }}px 0 0 {{ section.settings.btn_radius }}px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
   }
 
   #zl-dis-{{ section.id }} .zl-dis-btn {
+    height: 100%;
     background-color: {{ section.settings.btn_bg }};
     color: {{ section.settings.btn_color }};
     font-size: {{ section.settings.btn_size_pc }}px;
     font-weight: {{ section.settings.btn_weight }};
-    padding: 10px 30px;
-    border-radius: {{ section.settings.btn_radius }}px;
-    text-decoration: none;
+    padding: 0 25px;
+    border-radius: 0 {{ section.settings.btn_radius }}px {{ section.settings.btn_radius }}px 0;
+    border: none;
+    cursor: pointer;
     transition: opacity 0.3s;
-    display: inline-block;
+    white-space: nowrap;
   }
 
   #zl-dis-{{ section.id }} .zl-dis-btn:hover {
     opacity: 0.85;
+  }
+
+  #zl-dis-{{ section.id }} .zl-dis-form-success {
+    color: #28a745;
+    font-size: 13px;
+    margin: 8px 0 0 0;
+    text-align: left;
+  }
+
+  #zl-dis-{{ section.id }} .zl-dis-form-error {
+    color: #dc3545;
+    font-size: 13px;
+    margin: 8px 0 0 0;
+    text-align: left;
   }
 
   @media screen and (max-width: 768px) {
@@ -157,8 +264,8 @@
     }
 
     #zl-dis-{{ section.id }} .zl-dis-timer-box {
-      min-width: 45px;
-      padding: 4px;
+      min-width: 50px;
+      padding: 5px 8px;
     }
 
     #zl-dis-{{ section.id }} .zl-dis-time {
@@ -171,88 +278,29 @@
 
     #zl-dis-{{ section.id }} .zl-dis-colon {
       font-size: {{ section.settings.time_size_mb }}px;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    #zl-dis-{{ section.id }} .zl-dis-form-wrap {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+
+    #zl-dis-{{ section.id }} .zl-dis-input-group {
+      height: 40px;
     }
 
     #zl-dis-{{ section.id }} .zl-dis-btn {
       font-size: {{ section.settings.btn_size_mb }}px;
-      padding: 8px 24px;
+      padding: 0 20px;
     }
   }
-{%- endstyle -%}
-
-<div id="zl-dis-wrapper-{{ section.id }}">
-  <section id="zl-dis-{{ section.id }}" class="zl-dis-section">
-    <div class="zl-dis-bg">
-      <picture>
-        {%- if section.settings.image_mb != blank -%}
-          <source media="(max-width: 768px)" srcset="{{ section.settings.image_mb | image_url: width: 750 }}">
-        {%- endif -%}
-        {%- if section.settings.image_pc != blank -%}
-          <img src="{{ section.settings.image_pc | image_url: width: 1920 }}" alt="" loading="lazy">
-        {%- endif -%}
-      </picture>
-    </div>
-
-    <div class="zl-dis-container">
-      <div class="zl-dis-text-wrap">
-        {%- if section.settings.title != blank -%}
-          <h2 class="zl-dis-title">{{ section.settings.title }}</h2>
-        {%- endif -%}
-        {%- if section.settings.subtitle != blank -%}
-          <p class="zl-dis-subtitle">{{ section.settings.subtitle }}</p>
-        {%- endif -%}
-      </div>
-
-      <div class="zl-dis-timer-wrap" data-endtime="{{ section.settings.end_time }}">
-        <div class="zl-dis-timer-box">
-          <span class="zl-dis-time zl-dis-days">00</span>
-          <span class="zl-dis-label">DAYS</span>
-        </div>
-        <span class="zl-dis-colon">:</span>
-        <div class="zl-dis-timer-box">
-          <span class="zl-dis-time zl-dis-hours">00</span>
-          <span class="zl-dis-label">HOURS</span>
-        </div>
-        {% comment %} <span class="zl-dis-colon">:</span>
-        <div class="zl-dis-timer-box">
-          <span class="zl-dis-time zl-dis-mins">00</span>
-          <span class="zl-dis-label">MINS</span>
-        </div>
-        <span class="zl-dis-colon">:</span>
-        <div class="zl-dis-timer-box">
-          <span class="zl-dis-time zl-dis-secs">00</span>
-          <span class="zl-dis-label">SECS</span>
-        </div> {% endcomment %}
-      </div>
-
-      {%- if section.settings.btn_text != blank -%}
-        <a href="#buymap" class="zl-dis-btn">{{ section.settings.btn_text }}</a>
-      {%- endif -%}
-    </div>
-  </section>
-</div>
+</style>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const section = document.getElementById('zl-dis-{{ section.id }}');
   if (!section) return;
-
-  const btn = section.querySelector('.zl-dis-btn');
-  if (btn && btn.getAttribute('href').startsWith('#')) {
-    btn.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      
-      if (targetElement) {
-        e.preventDefault();
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    });
-  }
 
   const timerWrap = section.querySelector('.zl-dis-timer-wrap');
   const endTimeStr = timerWrap.getAttribute('data-endtime');
@@ -261,40 +309,32 @@ document.addEventListener("DOMContentLoaded", function() {
   const targetDate = new Date(endTimeStr.replace(/-/g, "/")).getTime();
   const daysEl = section.querySelector('.zl-dis-days');
   const hoursEl = section.querySelector('.zl-dis-hours');
-  const minsEl = section.querySelector('.zl-dis-mins');
-  const secsEl = section.querySelector('.zl-dis-secs');
 
   function updateTimer() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
     if (distance < 0) {
-      daysEl.innerText = "00";
-      hoursEl.innerText = "00";
-      minsEl.innerText = "00";
-      secsEl.innerText = "00";
+      if(daysEl) daysEl.innerText = "00";
+      if(hoursEl) hoursEl.innerText = "00";
       return;
     }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    daysEl.innerText = days < 10 ? "0" + days : days;
-    hoursEl.innerText = hours < 10 ? "0" + hours : hours;
-    minsEl.innerText = minutes < 10 ? "0" + minutes : minutes;
-    secsEl.innerText = seconds < 10 ? "0" + seconds : seconds;
+    if(daysEl) daysEl.innerText = days < 10 ? "0" + days : days;
+    if(hoursEl) hoursEl.innerText = hours < 10 ? "0" + hours : hours;
   }
 
   updateTimer();
-  setInterval(updateTimer, 1000);
+  setInterval(updateTimer, 60000); // Update every minute since we only show days/hours
 });
 </script>
 
 {% schema %}
 {
-  "name": "ZL Countdown Banner",
+  "name": "ZL Countdown Form Banner",
   "settings": [
     {
       "type": "header",
@@ -348,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "type": "color",
       "id": "bg_color",
       "label": "Fallback Background Color",
-      "default": "#fde4b2"
+      "default": "#937EB2"
     },
     {
       "type": "image_picker",
@@ -368,7 +408,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "step": 2,
       "unit": "px",
       "label": "Banner Height (PC)",
-      "default": 80
+      "default": 90
     },
     {
       "type": "range",
@@ -394,7 +434,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "type": "color",
       "id": "title_color",
       "label": "Title Color",
-      "default": "#000000"
+      "default": "#ffffff"
     },
     {
       "type": "range",
@@ -404,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "step": 1,
       "unit": "px",
       "label": "Title Size (PC)",
-      "default": 24
+      "default": 28
     },
     {
       "type": "range",
@@ -414,7 +454,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "step": 1,
       "unit": "px",
       "label": "Title Size (Mobile)",
-      "default": 20
+      "default": 22
     },
     {
       "type": "select",
@@ -438,7 +478,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "type": "color",
       "id": "subtitle_color",
       "label": "Subtitle Color",
-      "default": "#333333"
+      "default": "#ffffff"
     },
     {
       "type": "range",
@@ -487,33 +527,33 @@ document.addEventListener("DOMContentLoaded", function() {
       "type": "color",
       "id": "timer_bg",
       "label": "Timer Box Background",
-      "default": "#f5c375"
+      "default": "#ffffff"
     },
     {
       "type": "color",
       "id": "time_color",
       "label": "Time Numbers Color",
-      "default": "#00643c"
+      "default": "#453265"
     },
     {
       "type": "range",
       "id": "time_size_pc",
       "min": 12,
-      "max": 36,
+      "max": 48,
       "step": 1,
       "unit": "px",
       "label": "Time Number Size (PC)",
-      "default": 24
+      "default": 32
     },
     {
       "type": "range",
       "id": "time_size_mb",
       "min": 12,
-      "max": 28,
+      "max": 36,
       "step": 1,
       "unit": "px",
       "label": "Time Number Size (Mobile)",
-      "default": 20
+      "default": 24
     },
     {
       "type": "select",
@@ -525,13 +565,13 @@ document.addEventListener("DOMContentLoaded", function() {
         { "value": "600", "label": "Semi Bold" },
         { "value": "700", "label": "Bold" }
       ],
-      "default": "600"
+      "default": "700"
     },
     {
       "type": "color",
       "id": "label_color",
       "label": "Timer Label Color",
-      "default": "#000000"
+      "default": "#666666"
     },
     {
       "type": "range",
@@ -573,30 +613,37 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       "type": "header",
-      "content": "Button Settings"
+      "content": "Form Settings"
+    },
+    {
+      "type": "text",
+      "id": "input_placeholder",
+      "label": "Input Placeholder",
+      "default": "Enter your email"
     },
     {
       "type": "text",
       "id": "btn_text",
       "label": "Button Text",
-      "default": "Buy Now"
+      "default": "Subscribe"
     },
     {
-      "type": "url",
-      "id": "btn_link",
-      "label": "Button Link"
+      "type": "text",
+      "id": "success_message",
+      "label": "Success Message",
+      "default": "Thanks for subscribing!"
     },
     {
       "type": "color",
       "id": "btn_bg",
       "label": "Button Background",
-      "default": "#fcb858"
+      "default": "#453265"
     },
     {
       "type": "color",
       "id": "btn_color",
       "label": "Button Text Color",
-      "default": "#000000"
+      "default": "#ffffff"
     },
     {
       "type": "range",
@@ -628,7 +675,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { "value": "600", "label": "Semi Bold" },
         { "value": "700", "label": "Bold" }
       ],
-      "default": "500"
+      "default": "600"
     },
     {
       "type": "range",
@@ -637,13 +684,13 @@ document.addEventListener("DOMContentLoaded", function() {
       "max": 30,
       "step": 1,
       "unit": "px",
-      "label": "Button Border Radius",
+      "label": "Input & Button Radius",
       "default": 4
     }
   ],
   "presets": [
     {
-      "name": "ZL Countdown Banner"
+      "name": "ZL Countdown Form Banner"
     }
   ]
 }
