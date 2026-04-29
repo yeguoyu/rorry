@@ -86,7 +86,7 @@
         "image_mobile": "shopify://shop_images/CharmGo-collection_1.jpg",
         "image_height_mobile": "400px",
         "content_position_mobile": "items-start justify-start",
-        "text_alignment_mobile": "left",
+        "text_alignment_mobile": "center",
         "color_text": "#ffffff",
         "color_background": "",
         "gradient_background": "",
@@ -257,7 +257,7 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 0,
         "bg_color": "#9887b8",
-        "height_pc": 80,
+        "height_pc": 110,
         "height_mb": 200,
         "title": "Exclusive Launch Offers",
         "title_color": "#ffffff",
@@ -977,7 +977,6 @@
         "question_UJRxzq",
         "question_w8dAMF"
       ],
-      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
         "style": "with-background",
@@ -1040,6 +1039,7 @@
         "faq_item_4gxnMJ",
         "faq_item_xMMXMq"
       ],
+      "disabled": true,
       "name": "ZL FAQ",
       "settings": {
         "bg_color": "#ffffff",
@@ -1070,6 +1070,7 @@
     },
     "contact_with_map_WQjxtN": {
       "type": "contact-with-map",
+      "disabled": true,
       "name": "t:sections.contact-with-map.name",
       "settings": {
         "heading": "Contact Us",
