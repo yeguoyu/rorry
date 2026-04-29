@@ -630,7 +630,7 @@
         "button_9z9cLD": {
           "type": "button",
           "settings": {
-            "button_label": "SHOP NEW",
+            "button_label": "Learn More",
             "button_link": "",
             "button_style": "primary",
             "button_size": "sm",
@@ -961,7 +961,7 @@
       ],
       "custom_css": [
         "@media screen and (min-width: 1280px) {.faqs.with-background > :is(div, form) {padding: 0; }}",
-        ".faqs.with-background>:is(div,form) {padding: 0px;}"
+        ".faqs.with-background > :is(div, form) {padding: 0px;}"
       ],
       "name": "t:sections.faq.name",
       "settings": {
