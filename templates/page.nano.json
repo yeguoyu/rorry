@@ -274,6 +274,10 @@
         "label_size_mb": 9,
         "label_weight": "400",
         "colon_color": "#000000",
+        "input_placeholder": "Enter your email",
+        "success_message": "Thanks for subscribing!",
+        "input_bg": "#ffffff33",
+        "input_color": "#ffffff",
         "btn_bg": "#46356b",
         "btn_color": "#ffffff"
       }
@@ -955,12 +959,11 @@
         "question_UJRxzq",
         "question_w8dAMF"
       ],
-      "disabled": true,
       "name": "t:sections.faq.name",
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
-        "heading_size": "title-md",
+        "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
@@ -981,8 +984,8 @@
         "color_button_gradient": "",
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -1018,6 +1021,7 @@
         "faq_item_4gxnMJ",
         "faq_item_xMMXMq"
       ],
+      "disabled": true,
       "name": "ZL FAQ",
       "settings": {
         "bg_color": "#ffffff",
