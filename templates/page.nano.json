@@ -1001,13 +1001,13 @@
         "question_w8dAMF"
       ],
       "custom_css": [
-        ".faqs.with-background>:is(div,form) {padding: 0;}"
+        ".faqs.with-background > :is(div, form) {padding: 0;}"
       ],
       "name": "t:sections.faq.name",
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
-        "heading_size": "title-md",
+        "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
@@ -1029,7 +1029,7 @@
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 80,
         "divider": false,
         "narrow": true,
         "rounded": false
