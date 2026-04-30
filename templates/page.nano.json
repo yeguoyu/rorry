@@ -295,7 +295,7 @@
           "type": "product_card",
           "settings": {
             "product": "rorry-d2-5000mah-portable-charger-keychain-power-bank",
-            "custom_image": "shopify://shop_images/RORRY-D2-5000mAh.jpg",
+            "custom_image": "shopify://shop_images/rorry-d2-5000.png",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "CharmGo portable charger(Most-loved. 20 colors. 5000mAh.)",
@@ -310,7 +310,7 @@
           "type": "product_card",
           "settings": {
             "product": "rorry-d2-10000mah-pd-20w-portable-charger-keychain-power-bank",
-            "custom_image": "shopify://shop_images/RORRY-D2-10000mAh.jpg",
+            "custom_image": "shopify://shop_images/rorry-d2-10000.png",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "CharmGo portable charger(Smart Daily Power. 10000mAh.)",
@@ -325,7 +325,7 @@
           "type": "product_card",
           "settings": {
             "product": "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank",
-            "custom_image": "shopify://shop_images/RORRY-D2-20000mAh.jpg",
+            "custom_image": "shopify://shop_images/rorry-d2-20000.png",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "CharmGo portable charger(20000mAh. Big Smart Power.)",
@@ -340,7 +340,7 @@
           "type": "product_card",
           "settings": {
             "product": "rorry-t1-5000mah-portable-charger-keychain-power-bank-with-built-in-cables-travel-charger-battery-pack",
-            "custom_image": "shopify://shop_images/RORRY-T1-5000mAh.jpg",
+            "custom_image": "shopify://shop_images/rorry-t1-5000.png",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "CharmGo portable charger(Light. Smart Buy. 5000mAh.)",
@@ -355,7 +355,7 @@
           "type": "product_card",
           "settings": {
             "product": "rorry-t1-10000mah-portable-charger-keychain-power-bank",
-            "custom_image": "shopify://shop_images/RORRY-T1-10000mAh.jpg",
+            "custom_image": "shopify://shop_images/rorry-t1-10000.png",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "CharmGo portable charger(Smart Buy. Day-Long Power. 10000mAh.)",
@@ -370,7 +370,7 @@
           "type": "product_card",
           "settings": {
             "product": "",
-            "custom_image": "shopify://shop_images/RORRY-D4-10000mAh.jpg",
+            "custom_image": "shopify://shop_images/rorry-d4-10000.png",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "CharmGo portable charger(45W Flagship. 10000mAh.)",
