@@ -60,8 +60,8 @@
         "image_EKkjiB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_All-in-mini_Something_Fast_Is_Coming._CharmGo_Collection.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_All-in-mini_Something_Fast_Is_Coming_CharmGo_Collection_20260414-US-1.jpg",
+            "image": "shopify://shop_images/charngo-collection_2.jpg",
+            "image_mobile": "shopify://shop_images/CharmGo-collection_1.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
