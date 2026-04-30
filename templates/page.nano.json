@@ -519,13 +519,13 @@
             "compare_price": ""
           }
         },
-        "card_RgGA79": {
+        "card_ttBqyQ": {
           "type": "card",
           "settings": {
             "target_tab": "Indoor Moments",
             "product": "",
             "card_link": "",
-            "image_pc": "shopify://shop_images/charngo-collection_9.jpg",
+            "image_pc": "shopify://shop_images/charngo-collection_11.jpg",
             "tag": "",
             "title": "",
             "price": "",
@@ -545,13 +545,13 @@
             "compare_price": ""
           }
         },
-        "card_ttBqyQ": {
+        "card_RgGA79": {
           "type": "card",
           "settings": {
             "target_tab": "Indoor Moments",
             "product": "",
             "card_link": "",
-            "image_pc": "shopify://shop_images/charngo-collection_11.jpg",
+            "image_pc": "shopify://shop_images/charngo-collection_9.jpg",
             "tag": "",
             "title": "",
             "price": "",
@@ -563,9 +563,9 @@
         "card_F7eDFT",
         "card_9Azdnd",
         "card_LCQLQ7",
-        "card_RgGA79",
+        "card_ttBqyQ",
         "card_prnEUK",
-        "card_ttBqyQ"
+        "card_RgGA79"
       ],
       "name": "ZL Nano Accordion",
       "settings": {
