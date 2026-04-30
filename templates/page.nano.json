@@ -368,7 +368,6 @@
         },
         "product_card_KBzE3A": {
           "type": "product_card",
-          "disabled": true,
           "settings": {
             "product": "",
             "custom_image": "shopify://shop_images/RORRY-D4-10000mAh.jpg",
