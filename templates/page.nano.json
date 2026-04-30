@@ -151,8 +151,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 28,
-        "padding_bottom": 0,
+        "padding_top": 56,
+        "padding_bottom": 36,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -480,19 +480,6 @@
     "zl_nano_3_KeHCKR": {
       "type": "zl-nano-3",
       "blocks": {
-        "card_9Azdnd": {
-          "type": "card",
-          "settings": {
-            "target_tab": "On the Go",
-            "product": "",
-            "card_link": "",
-            "image_pc": "shopify://shop_images/charngo-collection_6.jpg",
-            "tag": "",
-            "title": "",
-            "price": "",
-            "compare_price": ""
-          }
-        },
         "card_F7eDFT": {
           "type": "card",
           "settings": {
@@ -500,6 +487,19 @@
             "product": "",
             "card_link": "",
             "image_pc": "shopify://shop_images/charngo-collection_7.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_9Azdnd": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/charngo-collection_6.jpg",
             "tag": "",
             "title": "",
             "price": "",
@@ -560,8 +560,8 @@
         }
       },
       "block_order": [
-        "card_9Azdnd",
         "card_F7eDFT",
+        "card_9Azdnd",
         "card_LCQLQ7",
         "card_RgGA79",
         "card_prnEUK",
