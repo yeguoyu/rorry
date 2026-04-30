@@ -969,7 +969,7 @@
         "question_tHQEij": {
           "type": "question",
           "settings": {
-            "title": "<strong>1. What is the RORRY CharmGo Collection?</strong>",
+            "title": "1. What is the RORRY CharmGo Collection?",
             "text": "<p>The CharmGo Collection is a family of stylish portable power banks designed for everyday use. Inspired by a charm keychain concept, each model combines compact design, fashion colors, and practical fast charging features, making it easy to power your devices anytime, anywhere.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -978,7 +978,7 @@
         "question_UJRxzq": {
           "type": "question",
           "settings": {
-            "title": "<strong>2. What are the key differences between the CharmGo models?</strong>",
+            "title": "2. What are the key differences between the CharmGo models?",
             "text": "<p>The collection caters to different needs:</p><ul><li><strong>D2 Series (5000/10000/20000mAh):</strong> Supports magnetic watch charging, available in vibrant colors, with the20000mAh model offering dual ports for multi-device charging.</li><li><strong>T1 Series (5000/10000mAh):</strong> High cost-performance options without magnetic watch charging, perfect for daily use.</li></ul>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -987,7 +987,7 @@
         "question_w8dAMF": {
           "type": "question",
           "settings": {
-            "title": "<strong>3. Can all CharmGo power banks charge Apple Watch?</strong>",
+            "title": "3. Can all CharmGo power banks charge Apple Watch?",
             "text": "<p>Not all models support Apple Watch charging.<br/>Only selected D-series models with magnetic charging function support Apple Watch wireless charging.<br/>T1 series models do not support watch charging.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -996,7 +996,7 @@
         "question_Gqnktg": {
           "type": "question",
           "settings": {
-            "title": "<strong>4. Are CharmGo power banks travel-friendly and airline approved?</strong>",
+            "title": "4. Are CharmGo power banks travel-friendly and airline approved?",
             "text": "<p>Yes. All CharmGo power banks are designed under airline safety standards and are generally safe for carry-on luggage.<br/>For example, 10000mAh models are well below the TSA limit (100Wh), making them suitable for travel.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -1005,7 +1005,7 @@
         "question_zxNBBt": {
           "type": "question",
           "settings": {
-            "title": "<strong>5. What capacity should I choose for my daily use?</strong>",
+            "title": "5. What capacity should I choose for my daily use?",
             "text": "<ul><li><strong>5000mAh models (D2/T1): </strong>Ultra-light, perfect for light daily use and emergency top-ups.</li><li><strong>10000mAh models (all series): </strong>Covers full-day charging needs for most smartphones and small devices.</li><li><strong>20000mAh model (</strong><a href=\"/products/rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank\" title=\"RORRY D2-20000mAh Portable Charger Keychain Power Bank 30W\"><strong>D2-20000</strong></a><strong>):</strong> Ideal for multi-device users or those needing extended power on trips.</li></ul>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
