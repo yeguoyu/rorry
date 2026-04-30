@@ -661,7 +661,7 @@
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
         "transparent_header": false,
-        "image": "shopify://shop_images/charngo-collectio1.jpg",
+        "image": "shopify://shop_images/charngo-collection2.jpg",
         "image_height": "adapt",
         "content_width": "small",
         "content_position": "md:items-start md:justify-center",
