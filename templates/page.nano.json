@@ -979,7 +979,7 @@
           "type": "question",
           "settings": {
             "title": "<strong>2. What are the key differences between the CharmGo models?</strong>",
-            "text": "<p>The collection caters to different needs:<br/>- Flagship D4-10000: 45W fast-charging, magnetic watch charging, and a digital display for precise battery level tracking.<br/>- D2 Series (5000/10000/20000mAh): Supports magnetic watch charging, available in vibrant colors, with the 20000mAh model offering dual ports for multi-device charging.<br/>- T1 Series (5000/10000mAh): High cost-performance options without magnetic watch charging, perfect for daily use.</p>",
+            "text": "<p>The collection caters to different needs:</p><ul><li><strong>D2 Series (5000/10000/20000mAh):</strong> Supports magnetic watch charging, available in vibrant colors, with the20000mAh model offering dual ports for multi-device charging.</li><li><strong>T1 Series (5000/10000mAh):</strong> High cost-performance options without magnetic watch charging, perfect for daily use.</li></ul>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1006,7 +1006,7 @@
           "type": "question",
           "settings": {
             "title": "<strong>5. What capacity should I choose for my daily use?</strong>",
-            "text": "<p>- 5000mAh models (D2/T1): Ultra-light, perfect for light daily use and emergency top-ups.<br/>- 10000mAh models (all series): Covers full-day charging needs for most smartphones and small devices.<br/>- 20000mAh model (D2-20000): Ideal for multi-device users or those needing extended power on trips.</p>",
+            "text": "<ul><li><strong>5000mAh models (D2/T1): </strong>Ultra-light, perfect for light daily use and emergency top-ups.</li><li><strong>10000mAh models (all series): </strong>Covers full-day charging needs for most smartphones and small devices.</li><li><strong>20000mAh model (</strong><a href=\"/products/rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank\" title=\"RORRY D2-20000mAh Portable Charger Keychain Power Bank 30W\"><strong>D2-20000</strong></a><strong>):</strong> Ideal for multi-device users or those needing extended power on trips.</li></ul>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1026,7 +1026,7 @@
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
-        "heading_size": "title-sm",
+        "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
@@ -1097,7 +1097,7 @@
         "title_color": "#171717",
         "title_size_pc": 48,
         "title_size_mb": 28,
-        "title_weight": "600",
+        "title_weight": "500",
         "item_bg_color": "#ffffff",
         "q_color": "#000000",
         "q_size_pc": 20,
