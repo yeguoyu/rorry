@@ -34,32 +34,56 @@
       </div>
 
       <div class="zl-dis-form-wrap">
-        {% form 'customer', class: 'zl-dis-form' %}
-             <input type="hidden" name="contact[tags]" value="presale-charmgo">
-             <input type="hidden" name="contact[accepts_marketing]" value="true">
-          <div class="zl-dis-input-group">
-            <input 
-              type="email" 
-              name="contact[email]" 
-              class="zl-dis-input" 
-              placeholder="{{ section.settings.input_placeholder | default: 'Enter your email' }}" 
-              required
-              aria-label="Email address"
-            >
-            <button type="submit" class="zl-dis-btn" aria-label="Submit">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-          </div>
-          {%- if form.posted_successfully? -%}
-            <p class="zl-dis-form-success">{{ section.settings.success_message | default: 'Thanks for subscribing!' }}</p>
-          {%- endif -%}
-          {%- if form.errors -%}
-            <p class="zl-dis-form-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</p>
-          {%- endif -%}
-        {% endform %}
+        <form class="zl-dis-form" id="zl-custom-form-{{ section.id }}">
+  <input type="hidden" name="contact[tags]" value="presale-charmgo">
+  <input type="hidden" name="contact[accepts_marketing]" value="true">
+  <div class="zl-dis-input-group">
+    <input
+      type="email"
+      name="contact[email]"
+      class="zl-dis-input"
+      placeholder="{{ section.settings.input_placeholder | default: 'Enter your email' }}"
+      required
+      aria-label="Email address"
+    >
+    <button type="submit" class="zl-dis-btn" aria-label="Submit">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </button>
+  </div>
+  <p class="zl-dis-form-success" style="display:none">{{ section.settings.success_message | default: 'Thanks for subscribing!' }}</p>
+  <p class="zl-dis-form-error" style="display:none"></p>
+</form>
+<script>
+(function() {
+  var form = document.getElementById('zl-custom-form-{{ section.id }}');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = form.querySelector('input[type="email"]').value;
+    var formData = new FormData();
+    formData.append('form_type', 'customer');
+    formData.append('utf8', '✓');
+    formData.append('contact[email]', email);
+    formData.append('contact[tags]', 'presale-charmgo');
+    formData.append('contact[accepts_marketing]', 'true');
+    fetch('/contact', {
+      method: 'POST',
+      headers: { 'X-Requested-With': 'XMLHttpRequest' },
+      body: formData
+    }).then(function() {
+      form.querySelector('.zl-dis-form-success').style.display = 'block';
+      form.querySelector('.zl-dis-form-error').style.display = 'none';
+      form.reset();
+    }).catch(function() {
+      form.querySelector('.zl-dis-form-error').style.display = 'block';
+      form.querySelector('.zl-dis-form-error').textContent = 'Something went wrong. Please try again.';
+    });
+  });
+})();
+</script>
       </div>
     </div>
   </section>
