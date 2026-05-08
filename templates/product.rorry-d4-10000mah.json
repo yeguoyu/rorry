@@ -1227,7 +1227,7 @@
           "settings": {
             "image": "shopify://shop_images/RORRY-CharmGo-D4-10000mAh-pc_11.jpg",
             "image_mobile": "shopify://shop_images/CharmGo-D4-10000mAh-Portable-Charger-mo_11.jpg",
-            "heading": "<strong>Power in Style, Always</strong>",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -1242,7 +1242,7 @@
           "settings": {
             "image": "shopify://shop_images/RORRY-CharmGo-D4-10000mAh-pc_12.jpg",
             "image_mobile": "shopify://shop_images/CharmGo-D4-10000mAh-Portable-Charger-mo_12.jpg",
-            "heading": "<strong>The Perfect Gift for Every Occasion</strong>",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
