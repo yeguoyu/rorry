@@ -890,7 +890,6 @@
         },
         "product_column_JCg3fm": {
           "type": "product_column",
-          "disabled": true,
           "settings": {
             "product": "rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
             "custom_image": "shopify://shop_images/RORRY-D4-10000mAh.jpg",
