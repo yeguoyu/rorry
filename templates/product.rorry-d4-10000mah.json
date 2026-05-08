@@ -1290,8 +1290,8 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "<strong>What devices are compatible with this RORRY PalmGo portable charger?</strong>",
-            "text": "<p>This PalmGo portable charger for Apple devices is compatible with iPhone 17/16/15 series, iPad Pro and iPad Air, and Apple Watch Ultra 3/Ultra 2/Series 11/10/9/8/7/6/5/4/SE. It features a built-in USB-C connector and a dedicated Apple Watch charger for convenient charging.</p>",
+            "title": "<strong>What makes the CharmGo D4-10000 different from a regular power bank?</strong>",
+            "text": "<p>The D4-10000 is designed as a mini fast-charging power bank with built-in convenience features, combining high-speed charging, wireless capability, and a portable fashion design in one device.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1299,8 +1299,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "<strong>How long to fully recharge the mini power bank?</strong>",
-            "text": "<p>The recharge time depends on the charger's power and the ambient temperature. Using a 18W or higher charger at 77°F (25°C), it typically takes about 3.2 hours to fully recharge the power bank.</p>",
+            "title": "<strong>What devices is it compatible with?</strong>",
+            "text": "<p>It supports both iOS and Android devices, including iPhones, Samsung phones, iPads, earbuds, and other USB-C devices. It is built for universal compatibility, not limited to Apple products.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1308,8 +1308,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Can I use this small portable charger with my phone case on?</strong>",
-            "text": "<p>Yes, it is fully compatible as long as your phone case is not thicker than 4mm.</p>",
+            "title": "<strong>Does it support fast charging?</strong>",
+            "text": "<p>Yes. The D4-10000 delivers up to 45W fast charging, allowing you to quickly recharge smartphones, tablets, and other compatible devices when you're on the go.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1317,8 +1317,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>How can I check the remaining battery level?</strong>",
-            "text": "<p>It features a clear digital LED display that shows the exact remaining battery percentage in 1% increments, so you'll always know how much power is left at a glance. </p>",
+            "title": "<strong>Can it charge multiple devices at the same time?</strong>",
+            "text": "<p>Yes. It supports multi-device charging, including wired output and magnetic wireless charging for Apple Watch, so you can power several devices at once.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1326,17 +1326,8 @@
         "question_AXRBtd": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does this portable charger support fast charging?</strong>",
-            "text": "<p>Yes. The 22.5W fast charging output can charge iPhone 17 up to 50% in around 30 minutes, helping you quickly power up when you're on the move.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-5": {
-          "type": "question",
-          "settings": {
-            "title": "<strong>Is this portable charger easy to carry when traveling?</strong>",
-            "text": "<p>Yes. This mini portable charger measures 3.3 × 2.1 × 1.3 inches and weighs only 0.4 lbs, making it compact enough to fit in a pocket, purse, or backpack. It's perfect for travel, commuting, and outdoor activities.</p>",
+            "title": "<strong>Is it portable and easy to carry?</strong>",
+            "text": "<p>Absolutely. The D4 features a mini compact body with a charm-style keychain design, making it easy to carry in hand, attach to a bag, or take while traveling.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -1360,10 +1351,8 @@
         "question-3",
         "question-2",
         "question_AXRBtd",
-        "question-5",
         "contact"
       ],
-      "disabled": true,
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
