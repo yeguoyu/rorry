@@ -291,6 +291,21 @@
     "zl_nano_2_QBx8fX": {
       "type": "zl-nano-2",
       "blocks": {
+        "product_card_KBzE3A": {
+          "type": "product_card",
+          "settings": {
+            "product": "rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
+            "custom_image": "shopify://shop_images/rorry-d4-10000_33e98dca-d4d7-4987-a774-8d2d0980516c.png",
+            "custom_image_height_pc": 0,
+            "custom_image_height_mb": 0,
+            "custom_title": "CharmGo portable charger(45W Flagship. 10000mAh.)",
+            "custom_price": "$51.99",
+            "custom_compare_price": "",
+            "custom_tag": "10000mAh",
+            "custom_btn_text": "Pre-Sale",
+            "custom_btn_link": ""
+          }
+        },
         "product_card_EkVyUq": {
           "type": "product_card",
           "settings": {
@@ -366,21 +381,6 @@
             "custom_btn_link": ""
           }
         },
-        "product_card_KBzE3A": {
-          "type": "product_card",
-          "settings": {
-            "product": "rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
-            "custom_image": "shopify://shop_images/rorry-d4-10000_33e98dca-d4d7-4987-a774-8d2d0980516c.png",
-            "custom_image_height_pc": 0,
-            "custom_image_height_mb": 0,
-            "custom_title": "CharmGo portable charger(45W Flagship. 10000mAh.)",
-            "custom_price": "$51.99",
-            "custom_compare_price": "",
-            "custom_tag": "10000mAh",
-            "custom_btn_text": "Pre-Sale",
-            "custom_btn_link": ""
-          }
-        },
         "product_card_y38tJp": {
           "type": "product_card",
           "disabled": true,
@@ -413,12 +413,12 @@
         }
       },
       "block_order": [
+        "product_card_KBzE3A",
         "product_card_EkVyUq",
         "product_card_D9pGCH",
         "product_card_XwDQQc",
         "product_card_YPXtYd",
         "product_card_mfq7dH",
-        "product_card_KBzE3A",
         "product_card_y38tJp",
         "product_card_VgxqmM"
       ],
