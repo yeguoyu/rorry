@@ -34,32 +34,80 @@
       </div>
 
       <div class="zl-dis-form-wrap">
-       {% form 'customer', class: 'zl-dis-form' %}
-             <input type="hidden" name="contact[tags]" value="presale-charmgo">
-             <input type="hidden" name="contact[accepts_marketing]" value="true">
-          <div class="zl-dis-input-group">
-            <input 
-              type="email" 
-              name="contact[email]" 
-              class="zl-dis-input" 
-              placeholder="{{ section.settings.input_placeholder | default: 'Enter your email' }}" 
-              required
-              aria-label="Email address"
-            >
-            <button type="submit" class="zl-dis-btn" aria-label="Submit">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </button>
-          </div>
-          {%- if form.posted_successfully? -%}
-            <p class="zl-dis-form-success">{{ section.settings.success_message | default: 'Thanks for subscribing!' }}</p>
-          {%- endif -%}
-          {%- if form.errors -%}
-            <p class="zl-dis-form-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</p>
-          {%- endif -%}
-        {% endform %}
+  {% form 'customer', class: 'zl-dis-form', id: 'zl-dis-form' %}
+  <input type="hidden" name="contact[tags]" value="presale-charmgo">
+  <input type="hidden" name="contact[accepts_marketing]" value="true">
+  <div class="zl-dis-input-group">
+    <input 
+      type="email" 
+      name="contact[email]" 
+      id="zl-dis-email"
+      class="zl-dis-input" 
+      placeholder="{{ section.settings.input_placeholder | default: 'Enter your email' }}" 
+      required
+      aria-label="Email address"
+    >
+    <button type="submit" class="zl-dis-btn" aria-label="Submit">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </button>
+  </div>
+  {%- if form.posted_successfully? -%}
+    <p class="zl-dis-form-success">{{ section.settings.success_message | default: 'Thanks for subscribing!' }}</p>
+  {%- endif -%}
+  {%- if form.errors -%}
+    <p class="zl-dis-form-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</p>
+  {%- endif -%}
+{% endform %}
+
+<script>
+(function() {
+  var form = document.getElementById('zl-dis-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    // 检查是否已登录（Shopify 会在 meta 标签里暴露登录状态）
+    var isLoggedIn = document.querySelector('meta[name="customer-id"]') !== null
+      || (window.__st && window.__st.cid);
+
+    if (!isLoggedIn) {
+      // 未登录游客，直接提交，走正常流程
+      return true;
+    }
+
+    // 已登录用户：先移除标签，再提交
+    e.preventDefault();
+
+    var btn = form.querySelector('.zl-dis-btn');
+    if (btn) btn.disabled = true;
+
+    // 通过 /account 接口移除 presale-charmgo 标签
+    fetch('/account', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'X-Requested-With': 'XMLHttpRequest'
+      },
+      body: new URLSearchParams({
+        '_method': 'put',
+        'customer[tags]': '' // 清空标签（注意：这会清空所有标签）
+      })
+    })
+    .catch(function() {
+      // 即使失败也继续提交表单
+    })
+    .finally(function() {
+      // 延迟500ms后提交，确保标签移除生效
+      setTimeout(function() {
+        form.submit();
+      }, 500);
+    });
+  });
+})();
+</script>
+
       </div>
     </div>
   </section>
