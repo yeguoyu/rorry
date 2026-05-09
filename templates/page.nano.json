@@ -383,15 +383,14 @@
         },
         "product_card_y38tJp": {
           "type": "product_card",
-          "disabled": true,
           "settings": {
-            "product": "rorry-cb01-usb-c-dual-foldable-plug-wall-charger-block",
+            "product": "rorry-d3-12000mah-portable-charger-keychain-power-bank-30w-retractable-cable",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
-            "custom_title": "",
+            "custom_title": "CharmGo portable charger(Compact. All-Day Power. 12000mAh.)",
             "custom_price": "",
             "custom_compare_price": "",
-            "custom_tag": "",
+            "custom_tag": "12000mAh",
             "custom_btn_text": "",
             "custom_btn_link": ""
           }
