@@ -35,7 +35,7 @@
 
       <div class="zl-dis-form-wrap">
   {% form 'customer', class: 'zl-dis-form', id: 'zl-dis-form' %}
-  <input type="hidden" name="contact[tags]" value="presale-charmgo">
+  <input type="hidden" name="contact[tags]" value="presale-charmgo" id="zl-tag-input">
   <input type="hidden" name="contact[accepts_marketing]" value="true">
   <div class="zl-dis-input-group">
     <input 
@@ -65,45 +65,13 @@
 <script>
 (function() {
   var form = document.getElementById('zl-dis-form');
-  if (!form) return;
+  var tagInput = document.getElementById('zl-tag-input');
+  if (!form || !tagInput) return;
 
-  form.addEventListener('submit', function(e) {
-    // 检查是否已登录（Shopify 会在 meta 标签里暴露登录状态）
-    var isLoggedIn = document.querySelector('meta[name="customer-id"]') !== null
-      || (window.__st && window.__st.cid);
-
-    if (!isLoggedIn) {
-      // 未登录游客，直接提交，走正常流程
-      return true;
-    }
-
-    // 已登录用户：先移除标签，再提交
-    e.preventDefault();
-
-    var btn = form.querySelector('.zl-dis-btn');
-    if (btn) btn.disabled = true;
-
-    // 通过 /account 接口移除 presale-charmgo 标签
-    fetch('/account', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'X-Requested-With': 'XMLHttpRequest'
-      },
-      body: new URLSearchParams({
-        '_method': 'put',
-        'customer[tags]': '' // 清空标签（注意：这会清空所有标签）
-      })
-    })
-    .catch(function() {
-      // 即使失败也继续提交表单
-    })
-    .finally(function() {
-      // 延迟500ms后提交，确保标签移除生效
-      setTimeout(function() {
-        form.submit();
-      }, 500);
-    });
+  form.addEventListener('submit', function() {
+    // 每次提交生成唯一时间戳标签，确保 Flow 每次都触发
+    var timestamp = Math.floor(Date.now() / 1000);
+    tagInput.value = 'presale-charmgo, presale-charmgo-' + timestamp;
   });
 })();
 </script>
