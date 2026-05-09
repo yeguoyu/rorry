@@ -385,6 +385,7 @@
           "type": "product_card",
           "settings": {
             "product": "rorry-d3-12000mah-portable-charger-keychain-power-bank-30w-retractable-cable",
+            "custom_image": "shopify://shop_images/rorry-d3-12000.png",
             "custom_image_height_pc": 0,
             "custom_image_height_mb": 0,
             "custom_title": "CharmGo portable charger(Compact. All-Day Power. 12000mAh.)",
