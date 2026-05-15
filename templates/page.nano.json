@@ -250,6 +250,7 @@
     },
     "zl_pro_dis_CLHkeR": {
       "type": "zl-pro-dis",
+      "disabled": true,
       "name": "ZL Countdown Banner",
       "settings": {
         "padding_top_pc": 0,
@@ -302,7 +303,7 @@
             "custom_price": "$51.99",
             "custom_compare_price": "",
             "custom_tag": "10000mAh",
-            "custom_btn_text": "Pre-Sale",
+            "custom_btn_text": "Shop Now",
             "custom_btn_link": ""
           }
         },
