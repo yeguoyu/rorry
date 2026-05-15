@@ -823,7 +823,7 @@
       "settings": {
         "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc-1.jpg",
         "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo.jpg",
-        "heading": "<strong>RORRY D14-10000mAh</strong> <strong>Magsafe Power Bank</strong>",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
