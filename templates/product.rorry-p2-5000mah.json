@@ -198,7 +198,7 @@
         "enable_video_autoplay": true,
         "enable_video_looping": true,
         "mobile_layout": "full_width",
-        "image_ratio_mobile": "adapt_first",
+        "image_ratio_mobile": "square",
         "mobile_thumbnail": true,
         "padding_top": 0,
         "padding_bottom": 12,
@@ -444,18 +444,6 @@
     "product_details_fWKXwU": {
       "type": "product-details",
       "blocks": {
-        "collapsible_tab_y66aqM": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "file_text",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "About this item",
-            "content": "<ul><li><strong>Magnetic Power Bank for Seamless Charging:</strong> Effortlessly power up your iPhone and Apple Watch at the same time. Compatible with MagSafe cases and iPhone 16/15/14/13/12 series, Apple Watch Ultra 2/Ultra 1/10/9/8/7/6/5/4/3/SE, and AirPods. Just snap your device and enjoy fast cable-free charging.</li><li><strong>10,000mAh Fast Charging: </strong>Delivers 2 full charges for iPhone 16, 21 charges for Apple Watch 10, and 1.2 for iPad. iPhone 16 charges to 56% in 30 mins (wired) and fully in 2.5 hrs (wireless). Apple Watch S10 charges to 100% in 2 hrs 10 mins. Power bank recharges in 3.2 hrs!</li><li><strong>Powerful Magnetic Lock + Ring Stand:</strong> Equipped with a 1000g magnetic force, this wireless battery pack locks your iPhone securely in place—no slips, no shakes. A built-in 360° rotatable phone ring on the back gives you a secure grip and flips out into a stand for easy viewing anywhere.</li><li><strong>Slim, Lightweight & Travel Ready: </strong>Only 0.63 inches thick and 7.16 oz, this sleek and compact charger slips easily into your pocket or bag. It's the perfect companion for business trips, vacations, flights, or daily use—keeping your iPhone and Apple Watch powered wherever you go.</li><li><strong>Smart, Safe & Cool Charging: </strong>Engineered with an advanced low-temperature core and intelligent chip, this charger ensures optimal charging efficiency while minimizing heat. Multiple safety protections guard against overcharging, overcurrent, and short circuits—keeping your devices and battery safe at all times.</li></ul>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
         "description_LrzrAa": {
           "type": "description",
           "disabled": true,
@@ -470,7 +458,6 @@
         }
       },
       "block_order": [
-        "collapsible_tab_y66aqM",
         "description_LrzrAa"
       ],
       "name": "Product details",
@@ -546,9 +533,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_3.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_1.jpg",
-        "heading": "<strong>RORRY 3IN1 Portable Charger with Rotatable Ring Grip</strong>",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_1.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -582,9 +569,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_4.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_2.jpg",
-        "heading": "<strong>Wireless Power + Rotatable Ring Stand</strong>",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_2.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -618,9 +605,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_5.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_3.jpg",
-        "heading": "<strong>10000mAh Universal Compatibility: Power All Apple Devices</strong>",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_3.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -654,9 +641,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_6.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_4.jpg",
-        "heading": "<strong>Snap-On Stability: N52 Magnets for MagSafe</strong>",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_4.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_4.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -690,9 +677,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_7.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_5.jpg",
-        "heading": "<strong>All-in-One Charger for Apple Watch Series</strong>",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_5.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -726,9 +713,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_8.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_6.jpg",
-        "heading": "<strong>360°+180° Adjustable Ring Holder: Versatile Stand & Grip</strong>",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_6.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -762,9 +749,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_9.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_7.jpg",
-        "heading": "<strong>Two Ways to Recharge: 20W USB-C & 10W Lightning Input</strong>",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_7.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_7.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -798,9 +785,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_10.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_8.jpg",
-        "heading": "<strong>Pass-Through Charging: Simultaneous Charge & Power Supply</strong>",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_8.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_8.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -834,9 +821,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_11.jpg",
+        "image": "shopify://shop_images/RORRY_P2-5000mAh_MagSafe_Power_Bank_9.jpg",
         "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_9.jpg",
-        "heading": "<strong>Charge 3 Apple Devices Simultaneously</strong>",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -868,6 +855,7 @@
     },
     "lookbook_WBHemL": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_12.jpg",
@@ -908,17 +896,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "<strong>What devices are compatible with this magnetic power bank?</strong>",
-            "text": "<p>This magnetic power bank is compatible with iPhone 16/15/14/13/12 series, Apple Watch Ultra 2 / Ultra / 10 / 9 / 8 / 7 / 6 / 5 / 4 / 3 / SE, and AirPods with wireless charging case. It works with MagSafe-compatible cases, allowing you to snap your iPhone on instantly for wireless charging.<br/></p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "title": "<strong>Will the magnetic power bank work with phone cases?</strong>",
-            "text": "<p>Yes, it works with MagSafe-compatible cases. For the best magnetic connection and charging efficiency, we recommend using MagSafe cases or going caseless. Thick or non-magnetic cases may weaken the magnetic attachment.</p>",
+            "title": "<strong>What devices can this power bank charge?</strong>",
+            "text": "<p>This is a 2-in-1 magnetic wireless power bank designed for iPhone, Apple Watch, and AirPods. It also supports USB-C wired charging for additional devices like iPads and other USB-C compatible electronics.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -926,8 +905,8 @@
         "question_ynVUfW": {
           "type": "question",
           "settings": {
-            "title": "<strong>Is this power bank safe for daily and travel use?</strong>",
-            "text": "<p>Yes. The charger includes an advanced smart safety system with protections against overcharging, overcurrent, overheating, and short circuits. The low-temperature core also helps reduce heat during charging, ensuring safe and stable performance wherever you go.</p>",
+            "title": "<strong>What is the battery capacity and how many charges does it provide?</strong>",
+            "text": "<p>It has a 5,000mAh capacity, designed for daily portable use. It can provide approximately:<br/><br/>* 1 full charge for most iPhones<br/>* Up to 8 charges for Apple Watch<br/>* Up to 10 charges for AirPods<br/>  (Actual results may vary depending on device model and usage)</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -935,8 +914,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "<strong>Can I use the ring stand while charging my phone?</strong>",
-            "text": "<p>Yes. The built-in 360° rotatable ring stand allows you to hold your phone securely or prop it up for hands-free viewing while charging. It’s perfect for watching videos, making video calls, or browsing comfortably.<br/></p>",
+            "title": "<strong>Does it support fast charging?</strong>",
+            "text": "<p>Yes. It includes a USB-C port with up to 20W fast charging output, allowing faster wired charging for compatible devices.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -944,14 +923,24 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "<strong>Does this magnetic charger support fast charging?</strong>",
-            "text": "<p>Yes. With fast charging support, your iPhone 16 can reach up to 56% in about 30 minutes (wired) and fully charge wirelessly in about 2.5 hours. The Apple Watch Series 10 can charge to 100% in around 2 hours and 10 minutes.</p>",
+            "title": "<strong>Is it easy to carry around?</strong>",
+            "text": "<p>Absolutely. With a slim 0.6-inch (15mm) card-size design, it fits easily into your pocket or bag, making it highly portable for everyday carry.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Can it charge multiple devices at the same time?</strong>",
+            "text": "<p>No. While it supports multiple devices, it cannot charge a smartphone and Apple Watch simultaneously. You can switch between devices depending on your charging needs.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
         "question-5": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "<strong>How strong is the magnetic connection? Will the phone fall off?</strong>",
             "text": "<p>The charger features a powerful 1000g magnetic force, ensuring a strong and secure attachment to your iPhone. Once attached, your phone stays firmly in place, even while texting, watching videos, or moving around.</p>",
@@ -961,6 +950,7 @@
         },
         "question_a7Uw43": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "<strong>Is this power bank allowed on airplanes?</strong>",
             "text": "<p>Yes. The 10,000mAh battery capacity is within airline safety limits, making it airplane-approved for carry-on luggage. It’s a perfect travel companion for flights, business trips, and vacations.</p>",
@@ -983,10 +973,10 @@
       },
       "block_order": [
         "question-2",
-        "question-1",
         "question_ynVUfW",
         "question-3",
         "question-4",
+        "question-1",
         "question-5",
         "question_a7Uw43",
         "contact"
