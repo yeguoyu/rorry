@@ -90,7 +90,7 @@
         "liquid_VpzdjA": {
           "type": "liquid",
           "settings": {
-            "liquid": ""
+            "liquid": "{% render 'couponcode' %}"
           }
         },
         "buy_buttons": {
