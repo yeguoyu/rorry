@@ -31,6 +31,12 @@
             "show_rating": false
           }
         },
+        "price_ChKmeB": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
         "judge_me_reviews_preview_badge_9yD9PV": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -170,6 +176,7 @@
       "block_order": [
         "vendor",
         "title",
+        "price_ChKmeB",
         "judge_me_reviews_preview_badge_9yD9PV",
         "description",
         "countdown",
