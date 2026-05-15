@@ -1474,6 +1474,7 @@
       "block_order": [
         "judge_me_reviews_trust_badge_YTPmkL"
       ],
+      "disabled": true,
       "settings": {
         "color_text": "",
         "color_background": "",
