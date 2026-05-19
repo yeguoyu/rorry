@@ -35,7 +35,7 @@
           "settings": {
             "heading": "Sign up and get 25<em>% off</em> your first order",
             "heading_size": "text-2xl lg:text-3xl",
-            "heading_tag": "h2",
+            "heading_tag": "span",
             "highlighted_text": "scribble",
             "highlighted_scribble": "basic-underline"
           }
