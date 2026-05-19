@@ -1646,28 +1646,12 @@
             "link": "https://finance.yahoo.com/news/rorry-unveils-d2-series-portable-180000822.html"
           }
         },
-        "logo_pzCpgH": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/MENAFNlogo.jpg",
-            "height": 48,
-            "link": "https://menafn.com/1109013072/RORRY-Unveils-D2-Series-Of-Portable-Chargers-Sleek-Pocket-Sized-Chargers-Redefining-On-The-Go-Power"
-          }
-        },
         "logo_CqAqnP": {
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/ceoca-06.svg",
             "height": 120,
             "link": ""
-          }
-        },
-        "logo_PLe6fr": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/marketwatch.png",
-            "height": 80,
-            "link": "https://www.marketwatch.com/press-release/rorry-unveils-d2-series-of-portable-chargers-sleek-pocket-sized-chargers-redefining-on-the-go-power-5efbdac6?mod=search_headline"
           }
         }
       },
@@ -1678,9 +1662,7 @@
         "logo_tECdhj",
         "logo_96CNen",
         "logo_qJiEjp",
-        "logo_pzCpgH",
-        "logo_CqAqnP",
-        "logo_PLe6fr"
+        "logo_CqAqnP"
       ],
       "settings": {
         "layout": "marquee",
