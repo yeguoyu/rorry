@@ -554,5 +554,13 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "/* 价格与星级评分并排显示 */product-info.product__info {display: flex !important; flex-wrap: wrap !important; align-items: flex-start !important;}",
+      "product-info.product__info > * {flex: 0 0 100%; min-width: 0;}",
+      "product-info.product__info > .product__price {flex: 0 0 auto !important; width: auto !important; margin-right: 12px;}",
+      "product-info.product__info > shopify-block:has(.jdgm-prev-badge) {flex: 0 0 auto !important; width: auto !important; align-self: center;}"
+    ]
   }
 }
