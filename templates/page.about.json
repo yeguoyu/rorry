@@ -27,12 +27,17 @@
     "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
+        "breadcrumb_DHjaUe": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {}
+        },
         "text": {
           "type": "text",
           "settings": {
             "text": "<h1>Our Story: Empowering Women with Power in Style</h1>",
             "text_font": "body",
-            "text_size": "subtext-lg",
+            "text_size": "subtext-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -55,6 +60,7 @@
         }
       },
       "block_order": [
+        "breadcrumb_DHjaUe",
         "text",
         "heading"
       ],
