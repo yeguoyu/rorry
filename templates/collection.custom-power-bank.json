@@ -903,7 +903,25 @@
             "highlighted_scribble": "circle"
           }
         },
+        "rich_text_xWNRLG": {
+          "type": "rich-text",
+          "settings": {
+            "heading": "3. Finance & Invoicing",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "question_U3TgRD": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_QzF4FE": {
           "type": "question",
           "settings": {
             "title": "Frequently asked question",
@@ -921,7 +939,9 @@
         "rich_text_W8HXbF",
         "question_RWBYCw",
         "question_4PcamU",
-        "question_U3TgRD"
+        "rich_text_xWNRLG",
+        "question_U3TgRD",
+        "question_QzF4FE"
       ],
       "name": "t:sections.faq.name",
       "settings": {
