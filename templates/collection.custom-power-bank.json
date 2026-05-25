@@ -653,6 +653,256 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "timeline_dMQJwD": {
+      "type": "timeline",
+      "blocks": {
+        "content_cfbbWj": {
+          "type": "content",
+          "settings": {
+            "subheading": "Step1",
+            "heading": "Expert Consultation & Selection",
+            "heading_tag": "h3",
+            "text": "<p>Browse our collection and choose the model that best fits your event—be it the ultra-compact D2 Keychain Series or the high-capacity PalmGo D5. Our team provides personalized recommendations based on your budget and target audience.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_mDXbjk": {
+          "type": "content",
+          "settings": {
+            "subheading": "2021",
+            "heading": "Example heading",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_hPttqK": {
+          "type": "content",
+          "settings": {
+            "subheading": "2023",
+            "heading": "Example heading",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_iBTcAA": {
+          "type": "content",
+          "settings": {
+            "subheading": "2024",
+            "heading": "Example heading",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_6xhe4Q": {
+          "type": "content",
+          "settings": {
+            "subheading": "2025",
+            "heading": "Example heading",
+            "heading_tag": "h2",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "content_cfbbWj",
+        "content_mDXbjk",
+        "content_hPttqK",
+        "content_iBTcAA",
+        "content_6xhe4Q"
+      ],
+      "name": "t:sections.timeline.name",
+      "settings": {
+        "show_navigation": true,
+        "layout": "image_first",
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "wide",
+        "heading": "Our Seamless Customization Process (4 Steps)",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_cAPDNp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PFrgUx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tailored Solutions for the Apple Ecosystem (Bulk Orders)",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_ygf9Fe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Specially designed for the modern professional and the Apple ecosystem, our CharmGo and PalmGo series combine high-speed performance with a fashion-forward aesthetic. Whether you are planning a high-end corporate event, rewarding a dedicated team, or looking for premium branded merchandise, RORRY provides the perfect canvas for your logo. Empower your clients and partners to stay connected in style, anywhere in the world.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PFrgUx",
+        "text_ygf9Fe"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_XjaEM8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Ayy6fe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why RORRY is Your Best Wholesale Power Bank Supplier?",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_XMq3wE": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><h3>Aesthetic Leadership & Brand Alignment</h3></li></ul><p>Ditch the bulky, industrial-looking chargers. RORRY offers aesthetic portable chargers in pastel tones (Lavender, Rose Quartz, Cream) that align with modern lifestyle brands. Give a gift that your clients and employees will actually feel proud to carry and show off.</p><ul><li><h3>The Ultimate 3-in-1 Efficiency</h3></li></ul><p>Our wholesale power bank chargers are designed specifically for the Apple ecosystem. With built-in cables and dedicated Apple Watch wireless charging, your recipients won't need to carry extra wires—making it the most functional custom branded power bank they’ve ever received.</p><ul><li><h3>Safety Certified & Travel Ready</h3></li></ul><p>Quality is non-negotiable for bulk orders. All RORRY devices are airline-approved and come with global safety certifications (CE, FCC, RoHS). We provide a 12-month worry-free protection, ensuring your corporate reputation is safe with our hardware.</p><ul><li><h3>Small Business Friendly (Low MOQ)</h3></li></ul><p>We empower brands of all sizes. While most portable power bank suppliers require thousands of units, RORRY supports your growth with a low Minimum Order Quantity (MOQ) starting from 100 units for custom logo printing.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ayy6fe",
+        "text_XMq3wE"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -666,6 +916,9 @@
     "slideshow_3xLGnP",
     "177969614752e73ece",
     "image_comparison_7grt6K",
-    "number_counter_ir7iUU"
+    "number_counter_ir7iUU",
+    "timeline_dMQJwD",
+    "rich_text_cAPDNp",
+    "rich_text_XjaEM8"
   ]
 }
