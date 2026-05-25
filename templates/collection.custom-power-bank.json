@@ -915,17 +915,17 @@
         "question_U3TgRD": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>How do I apply for an invoice for my bulk order?</strong>",
+            "text": "<p>You can request an invoice during checkout or by contacting our support team after payment. Once your order is shipped, a formal commercial invoice will be sent to your registered email address.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         },
-        "question_QzF4FE": {
-          "type": "question",
+        "rich_text_kDzjCa": {
+          "type": "rich-text",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "heading": "4. Logistics & Warranty",
+            "text": "",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -941,7 +941,7 @@
         "question_4PcamU",
         "rich_text_xWNRLG",
         "question_U3TgRD",
-        "question_QzF4FE"
+        "rich_text_kDzjCa"
       ],
       "name": "t:sections.faq.name",
       "settings": {
