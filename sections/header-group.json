@@ -387,8 +387,8 @@
         "color_localization": "",
         "padding_top": 16,
         "padding_bottom": 16,
-        "full_width": false,
-        "rounded": false
+        "full_width": true,
+        "rounded": true
       }
     }
   },
