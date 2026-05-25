@@ -369,7 +369,7 @@
         "menu_active": "block",
         "hover_menu": true,
         "header_layout": "left-center",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "none",
         "icons_size": "lg",
         "menu_drawer_icon_label": "",
         "enable_language_selector_desktop": false,
