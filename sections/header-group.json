@@ -370,7 +370,7 @@
         "hover_menu": true,
         "header_layout": "left-center",
         "sticky_header_type": "always",
-        "icons_size": "sm",
+        "icons_size": "lg",
         "menu_drawer_icon_label": "",
         "enable_language_selector_desktop": false,
         "enable_country_selector_desktop": false,
@@ -387,7 +387,7 @@
         "color_localization": "",
         "padding_top": 16,
         "padding_bottom": 16,
-        "full_width": true,
+        "full_width": false,
         "rounded": false
       }
     }
