@@ -1159,6 +1159,14 @@
             "product": "rorry-d2-5000mah-portable-charger-keychain-power-bank"
           }
         },
+        "embed_slide_t6VaTf": {
+          "type": "embed_slide",
+          "settings": {
+            "social_url": "Top Portable Chargers for Stocking Stuffers | TikTok",
+            "social_handle": "@Rorry",
+            "product": "rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w"
+          }
+        },
         "embed_slide_TULGDm": {
           "type": "embed_slide",
           "settings": {
@@ -1166,20 +1174,12 @@
             "social_handle": "@Rorry",
             "product": "rorry-d2-10000mah-pd-20w-portable-charger-keychain-power-bank"
           }
-        },
-        "embed_slide_t6VaTf": {
-          "type": "embed_slide",
-          "settings": {
-            "social_url": "https://www.tiktok.com/@danpluskate/video/7630338071132753166?is_from_webapp=1&sender_device=pc",
-            "social_handle": "@Rorry",
-            "product": "rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w"
-          }
         }
       },
       "block_order": [
         "embed_slide_CQqEM9",
-        "embed_slide_TULGDm",
-        "embed_slide_t6VaTf"
+        "embed_slide_t6VaTf",
+        "embed_slide_TULGDm"
       ],
       "custom_css": [
         "@media (max-width: 768px) {.zl-ti-heading {font-size: 24px; margin: 0px; }}"
