@@ -544,7 +544,7 @@
         "counter_rUAbYU": {
           "type": "counter",
           "settings": {
-            "title": "Example title",
+            "title": "Happy Users Worldwide",
             "number": "150",
             "unit": "K+",
             "duration": 2
@@ -553,26 +553,26 @@
         "counter_t8xKzJ": {
           "type": "counter",
           "settings": {
-            "title": "Example title",
-            "number": "16",
-            "unit": "",
+            "title": "Countries Served",
+            "number": "174",
+            "unit": "+",
             "duration": 2
           }
         },
         "counter_3JacrU": {
           "type": "counter",
           "settings": {
-            "title": "Example title",
-            "number": "95",
-            "unit": "%",
+            "title": "Trustpilot Rating",
+            "number": "4.9",
+            "unit": "/5",
             "duration": 2
           }
         },
         "counter_GXMAzq": {
           "type": "counter",
           "settings": {
-            "title": "Example title",
-            "number": "32",
+            "title": "Months Product Warranty",
+            "number": "12",
             "unit": "",
             "duration": 2
           }
@@ -590,12 +590,12 @@
         "columns": 4,
         "text_alignment": "center",
         "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "text_alignment_mobile": "center",
         "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
-        "color_highlight": "",
+        "color_highlight": "#9887b8",
         "gradient_highlight": "",
         "padding_top": 72,
         "padding_bottom": 72,
