@@ -538,6 +538,71 @@
         "rounded": false
       }
     },
+    "rich_text_cAPDNp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PFrgUx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tailored Solutions for the Apple Ecosystem (Bulk Orders)",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_ygf9Fe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Specially designed for the modern professional and the Apple ecosystem, our CharmGo and PalmGo series combine high-speed performance with a fashion-forward aesthetic. Whether you are planning a high-end corporate event, rewarding a dedicated team, or looking for premium branded merchandise, RORRY provides the perfect canvas for your logo. Empower your clients and partners to stay connected in style, anywhere in the world.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PFrgUx",
+        "text_ygf9Fe"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "number_counter_ir7iUU": {
       "type": "number-counter",
       "blocks": {
@@ -601,71 +666,6 @@
         "padding_bottom": 72,
         "divider": false,
         "full_width": false,
-        "rounded": false
-      }
-    },
-    "rich_text_cAPDNp": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_PFrgUx": {
-          "type": "heading",
-          "settings": {
-            "heading": "Tailored Solutions for the Apple Ecosystem (Bulk Orders)",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_ygf9Fe": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Specially designed for the modern professional and the Apple ecosystem, our CharmGo and PalmGo series combine high-speed performance with a fashion-forward aesthetic. Whether you are planning a high-end corporate event, rewarding a dedicated team, or looking for premium branded merchandise, RORRY provides the perfect canvas for your logo. Empower your clients and partners to stay connected in style, anywhere in the world.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_PFrgUx",
-        "text_ygf9Fe"
-      ],
-      "name": "t:sections.rich-text.name",
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 24,
-        "padding_bottom": 24,
-        "divider": false,
-        "narrow": true,
         "rounded": false
       }
     },
@@ -1025,8 +1025,8 @@
     "recently-viewed",
     "slideshow_3xLGnP",
     "image_comparison_7grt6K",
-    "number_counter_ir7iUU",
     "rich_text_cAPDNp",
+    "number_counter_ir7iUU",
     "rich_text_XjaEM8",
     "timeline_dMQJwD",
     "faq_t4cwnM"
