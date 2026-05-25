@@ -929,6 +929,24 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "question_JNkTMN": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Do you offer priority shipping for large corporate orders?</strong>",
+            "text": "<p>Yes, all wholesale orders are shipped via <strong>Global Air Express (DHL/UPS/FedEx)</strong>. We provide door-to-door tracking to ensure your gifts arrive safely and on time for your event.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_tKa79y": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
@@ -941,7 +959,9 @@
         "question_4PcamU",
         "rich_text_xWNRLG",
         "question_U3TgRD",
-        "rich_text_kDzjCa"
+        "rich_text_kDzjCa",
+        "question_JNkTMN",
+        "question_tKa79y"
       ],
       "name": "t:sections.faq.name",
       "settings": {
