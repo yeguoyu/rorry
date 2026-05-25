@@ -942,8 +942,8 @@
         "question_tKa79y": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Are wholesale products covered under the RORRY warranty?</strong>",
+            "text": "<p>Yes, all RORRY products purchased through our corporate program are covered by our <strong>12-Month Protection Plan</strong>. We provide hassle-free replacements for any units with manufacturing defects.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
