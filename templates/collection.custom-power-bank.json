@@ -186,6 +186,7 @@
         "image_QM6jbt": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/D2-10000-VS-D2-_5000.jpg",
             "heading": "Image slide",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -233,9 +234,9 @@
         "autoplay": false,
         "autoplay_speed": 5,
         "show_navigation": true,
-        "image_height": "650px",
+        "image_height": "100vh",
         "content_width": "small",
-        "image_height_mobile": "auto",
+        "image_height_mobile": "600px",
         "accessibility_info": "Slideshow about our brand",
         "color_text": "#ffffff",
         "color_background": "",
@@ -251,13 +252,13 @@
         "full_width": true,
         "rounded": false,
         "enable_parallax": false,
-        "parallax_direction": "vertical"
+        "parallax_direction": "zoom"
       }
     },
     "image_comparison_7grt6K": {
       "type": "image-comparison",
       "blocks": {
-        "image_PfiBCM": {
+        "image_cqPWBc": {
           "type": "image",
           "settings": {
             "subheading": "",
@@ -269,6 +270,7 @@
         "image_qEAd3H": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/What_Is_MagSafe_and_How_Does_It_Work_8c42e0ef-4d99-493f-b183-1d8e3f97eb70.png",
             "subheading": "",
             "heading": "",
             "content_position": "end",
@@ -277,7 +279,7 @@
         }
       },
       "block_order": [
-        "image_PfiBCM",
+        "image_cqPWBc",
         "image_qEAd3H"
       ],
       "name": "t:sections.image-comparison.name",
