@@ -95,7 +95,7 @@
     "product_quick_view": false,
     "product_quick_add": false,
     "product_color_swatches": true,
-    "product_max_color_swatches": 5,
+    "product_max_color_swatches": 4,
     "product_color_swatch_type": "variant",
     "product_vertical_badges": false,
     "product_sold_out": true,
