@@ -234,9 +234,9 @@
         "autoplay": false,
         "autoplay_speed": 5,
         "show_navigation": true,
-        "image_height": "100vh",
+        "image_height": "600px",
         "content_width": "small",
-        "image_height_mobile": "600px",
+        "image_height_mobile": "500px",
         "accessibility_info": "Slideshow about our brand",
         "color_text": "#ffffff",
         "color_background": "",
@@ -261,6 +261,8 @@
         "image_cqPWBc": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/D2-10000-VS-D2-_5000.jpg",
+            "image_mobile": "shopify://shop_images/D2-10000-VS-D2-_5000.jpg",
             "subheading": "",
             "heading": "",
             "content_position": "end",
@@ -285,7 +287,7 @@
       "name": "t:sections.image-comparison.name",
       "settings": {
         "layout": "horizontal",
-        "image_height": "adapt",
+        "image_height": "650px",
         "image_height_mobile": "adapt",
         "heading": "Your Brand, Powered in Style",
         "heading_size": "title-md",
