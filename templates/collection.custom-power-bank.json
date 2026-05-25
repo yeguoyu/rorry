@@ -837,70 +837,82 @@
         "rounded": false
       }
     },
-    "zl_faq_info_EX9EPj": {
-      "type": "zl-faq-info",
+    "faq_t4cwnM": {
+      "type": "faq",
       "blocks": {
-        "faq_item_TJCQAT": {
-          "type": "faq_item",
+        "rich_text_P7gYKR": {
+          "type": "rich-text",
           "settings": {
-            "question": "What is the return policy?",
-            "answer": "<p>You can return any item within 30 days of purchase.</p>"
+            "heading": "1. Ordering & Pricing",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "faq_item_pE4GHQ": {
-          "type": "faq_item",
+        "question_PUtfqG": {
+          "type": "question",
           "settings": {
-            "question": "Question 1",
-            "answer": "<p>Answer to question 1 goes here.</p>"
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "faq_item_L7PwHF": {
-          "type": "faq_item",
+        "question_CPQmmw": {
+          "type": "question",
           "settings": {
-            "question": "Question 2",
-            "answer": "<p>Answer to question 2 goes here.</p>"
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "faq_item_fkCamd": {
-          "type": "faq_item",
+        "question_DCqK3q": {
+          "type": "question",
           "settings": {
-            "question": "Question 3",
-            "answer": "<p>Answer to question 3 goes here.</p>"
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "faq_item_TJCQAT",
-        "faq_item_pE4GHQ",
-        "faq_item_L7PwHF",
-        "faq_item_fkCamd"
+        "rich_text_P7gYKR",
+        "question_PUtfqG",
+        "question_CPQmmw",
+        "question_DCqK3q"
       ],
-      "name": "ZL FAQ",
+      "name": "t:sections.faq.name",
       "settings": {
-        "bg_color": "#ffffff",
-        "container_width": 1200,
-        "padding_top_pc": 60,
-        "padding_bottom_pc": 60,
-        "padding_top_mb": 40,
-        "padding_bottom_mb": 40,
-        "title": "Wholesale & Corporate Gifting FAQ",
-        "title_color": "#000b46",
-        "title_size_pc": 40,
-        "title_size_mb": 24,
-        "title_weight": "600",
-        "item_bg_color": "#ffffff",
-        "q_color": "#000000",
-        "q_size_pc": 20,
-        "q_size_mb": 18,
-        "q_weight": "400",
-        "a_color": "#333333",
-        "a_size_pc": 18,
-        "a_size_mb": 16,
-        "a_weight": "300",
-        "read_more_text": "Read More",
-        "read_less_text": "Read Less",
-        "btn_bg_color": "#000b46",
-        "btn_text_color": "#ffffff"
+        "style": "with-border",
+        "heading": "Wholesale & Corporate Gifting FAQs",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
       }
     }
   },
@@ -917,6 +929,6 @@
     "rich_text_cAPDNp",
     "rich_text_XjaEM8",
     "timeline_dMQJwD",
-    "zl_faq_info_EX9EPj"
+    "faq_t4cwnM"
   ]
 }
