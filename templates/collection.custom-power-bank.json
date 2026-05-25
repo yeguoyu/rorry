@@ -947,6 +947,24 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "rich_text_7pEnwC": {
+          "type": "rich-text",
+          "settings": {
+            "heading": "5. Channel Policy",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_rP9awn": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
@@ -961,7 +979,9 @@
         "question_U3TgRD",
         "rich_text_kDzjCa",
         "question_JNkTMN",
-        "question_tKa79y"
+        "question_tKa79y",
+        "rich_text_7pEnwC",
+        "question_rP9awn"
       ],
       "name": "t:sections.faq.name",
       "settings": {
