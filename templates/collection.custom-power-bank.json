@@ -861,8 +861,8 @@
         "question_CPQmmw": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>What is the Minimum Order Quantity (MOQ) for bulk purchases?</strong>",
+            "text": "<p>For standard RORRY products in stock, the MOQ is <strong>50 units</strong>. For customized orders with your brand logo, the MOQ starts at <strong>100 units</strong>.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
