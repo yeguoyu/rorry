@@ -234,7 +234,7 @@
         "autoplay": false,
         "autoplay_speed": 5,
         "show_navigation": true,
-        "image_height": "600px",
+        "image_height": "650px",
         "content_width": "small",
         "image_height_mobile": "500px",
         "accessibility_info": "Slideshow about our brand",
