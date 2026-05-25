@@ -498,38 +498,6 @@
         "parallax_direction": "vertical"
       }
     },
-    "177969614752e73ece": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_5fc5bd2_CAKtTw": {
-          "type": "ai_gen_block_5fc5bd2",
-          "settings": {
-            "aspect_ratio": 50,
-            "desktop_width_percent": 100,
-            "border_radius": 8,
-            "initial_position": 50,
-            "divider_width": 3,
-            "divider_color": "#ffffff",
-            "handle_size": 50,
-            "handle_color": "#ffffff",
-            "handle_arrow_color": "#171717",
-            "show_labels": true,
-            "before_label": "Before",
-            "after_label": "After",
-            "label_font_size": 14,
-            "label_bg_color": "#171717",
-            "label_text_color": "#ffffff",
-            "label_position_vertical": 20,
-            "label_position_horizontal": 20
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_5fc5bd2_CAKtTw"
-      ],
-      "settings": {}
-    },
     "image_comparison_7grt6K": {
       "type": "image-comparison",
       "blocks": {
@@ -886,6 +854,72 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "zl_faq_info_EX9EPj": {
+      "type": "zl-faq-info",
+      "blocks": {
+        "faq_item_TJCQAT": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is the return policy?",
+            "answer": "<p>You can return any item within 30 days of purchase.</p>"
+          }
+        },
+        "faq_item_pE4GHQ": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 1",
+            "answer": "<p>Answer to question 1 goes here.</p>"
+          }
+        },
+        "faq_item_L7PwHF": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 2",
+            "answer": "<p>Answer to question 2 goes here.</p>"
+          }
+        },
+        "faq_item_fkCamd": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Question 3",
+            "answer": "<p>Answer to question 3 goes here.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_TJCQAT",
+        "faq_item_pE4GHQ",
+        "faq_item_L7PwHF",
+        "faq_item_fkCamd"
+      ],
+      "name": "ZL FAQ",
+      "settings": {
+        "bg_color": "#ffffff",
+        "container_width": 1200,
+        "padding_top_pc": 60,
+        "padding_bottom_pc": 60,
+        "padding_top_mb": 40,
+        "padding_bottom_mb": 40,
+        "title": "Wholesale & Corporate Gifting FAQ",
+        "title_color": "#000b46",
+        "title_size_pc": 40,
+        "title_size_mb": 24,
+        "title_weight": "600",
+        "item_bg_color": "#ffffff",
+        "q_color": "#000000",
+        "q_size_pc": 20,
+        "q_size_mb": 18,
+        "q_weight": "400",
+        "a_color": "#333333",
+        "a_size_pc": 18,
+        "a_size_mb": 16,
+        "a_weight": "300",
+        "read_more_text": "Read More",
+        "read_less_text": "Read Less",
+        "btn_bg_color": "#000b46",
+        "btn_text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -897,11 +931,11 @@
     "recently-viewed",
     "custom_liquid_zxmeRq",
     "slideshow_3xLGnP",
-    "177969614752e73ece",
     "image_comparison_7grt6K",
     "number_counter_ir7iUU",
     "rich_text_cAPDNp",
     "rich_text_XjaEM8",
-    "timeline_dMQJwD"
+    "timeline_dMQJwD",
+    "zl_faq_info_EX9EPj"
   ]
 }
