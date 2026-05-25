@@ -852,8 +852,8 @@
         "question_PUtfqG": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>How can I get a corporate discount for RORRY products?</strong>",
+            "text": "<p>Our corporate pricing is tiered based on the order quantity. To get a personalized quote, please contact our sales team at <a href=\"mailto:support@rorry.com\" title=\"mailto:support@rorry.com\">support@rorry.com</a>. Share your order quantity, delivery address, and preferred delivery date. We typically respond with a full price list within 12-24 hours.<br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
