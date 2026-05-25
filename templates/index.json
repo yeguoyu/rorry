@@ -1200,6 +1200,13 @@
     "zl_insta_gallery_XTQNFA": {
       "type": "zl-insta-gallery",
       "blocks": {
+        "image_GynBxM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/D4-10000mah-power-bank.jpg",
+            "link": "shopify://products/rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w"
+          }
+        },
         "image_UYANAQ": {
           "type": "image",
           "settings": {
@@ -1226,6 +1233,13 @@
           "settings": {
             "image": "shopify://shop_images/2_2228acf5-3b2d-4c4c-9f54-177143bfcab1.jpg",
             "link": "https://rorry.com/products/rorry-d2-10000mah-pd-20w-portable-charger-keychain-power-bank"
+          }
+        },
+        "image_Ji3faH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/rorry-charmgo-d4-10000mah-keychain-power_bank.jpg",
+            "link": "shopify://products/rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w"
           }
         },
         "image_yMfDpY": {
@@ -1286,10 +1300,12 @@
         }
       },
       "block_order": [
+        "image_GynBxM",
         "image_UYANAQ",
         "image_hW9QdF",
         "image_ifa38p",
         "image_N4pidD",
+        "image_Ji3faH",
         "image_yMfDpY",
         "image_c4axRd",
         "image_ATPFyj",
