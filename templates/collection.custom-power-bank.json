@@ -951,8 +951,8 @@
         "rich_text_7pEnwC": {
           "type": "rich-text",
           "settings": {
-            "heading": "Can I resell RORRY products?",
-            "text": "<p>To protect our brand integrity and existing partners, we <strong>do not allow</strong> unauthorized resale on third-party marketplaces. Bulk purchases are intended for corporate gifting, employee appreciation, or authorized physical retail stores only.</p>",
+            "heading": "5. Channel Policy",
+            "text": "",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -960,8 +960,8 @@
         "question_rP9awn": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "<strong>Can I resell RORRY products?</strong>",
+            "text": "<p>To protect our brand integrity and existing partners, we <strong>do not allow</strong> unauthorized resale on third-party marketplaces. Bulk purchases are intended for corporate gifting, employee appreciation, or authorized physical retail stores only.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
