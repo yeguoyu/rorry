@@ -86,7 +86,7 @@
     "currency_code_enabled": false,
     "swatch_config": "Blue:#D1E8ED",
     "swatch_image_tooltip": true,
-    "product_image_ratio": "adapt",
+    "product_image_ratio": "square",
     "product_image_fill": true,
     "product_vendor": false,
     "product_secondary_image": true,
@@ -196,11 +196,6 @@
       },
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
       },
