@@ -870,8 +870,8 @@
         "question_DCqK3q": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "Can I get a formal quote for my company's internal approval?",
+            "text": "<p>Absolutely. Once you select the models and quantities, we will issue a formal PDF quotation including shipping costs and estimated lead times for your procurement department's review.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
