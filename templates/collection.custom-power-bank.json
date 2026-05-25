@@ -870,8 +870,44 @@
         "question_DCqK3q": {
           "type": "question",
           "settings": {
-            "title": "Can I get a formal quote for my company's internal approval?",
+            "title": "<strong>Can I get a formal quote for my company's internal approval?</strong>",
             "text": "<p>Absolutely. Once you select the models and quantities, we will issue a formal PDF quotation including shipping costs and estimated lead times for your procurement department's review.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "rich_text_W8HXbF": {
+          "type": "rich-text",
+          "settings": {
+            "heading": "2. Customization & Branding",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_RWBYCw": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Where can my company logo be placed on the charger?</strong>",
+            "text": "<p>We offer high-precision laser engraving or silk-screen printing. The logo is typically placed on the front or side of the power banks to ensure maximum visibility without compromising the product's aesthetic.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_4PcamU": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How long does the customization process take?</strong>",
+            "text": "<p>After you approve the digital mockup (usually provided within 24 hours), bulk production takes <strong>3-7 business days</strong>. Total turnaround time, including global express shipping, is approximately <strong>10-15 days</strong>.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_U3TgRD": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -881,7 +917,11 @@
         "rich_text_P7gYKR",
         "question_PUtfqG",
         "question_CPQmmw",
-        "question_DCqK3q"
+        "question_DCqK3q",
+        "rich_text_W8HXbF",
+        "question_RWBYCw",
+        "question_4PcamU",
+        "question_U3TgRD"
       ],
       "name": "t:sections.faq.name",
       "settings": {
