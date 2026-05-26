@@ -181,6 +181,39 @@
         "rounded": true
       }
     },
+    "highlight_text_dktwA4": {
+      "type": "highlight-text",
+      "name": "t:sections.highlight-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "Our Custom Portfolio",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Real-world examples of premium branded power banks we’ve created for corporate gifts and special events.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "slideshow_3xLGnP": {
       "type": "slideshow",
       "blocks": {
@@ -799,6 +832,7 @@
     "main-collection-banner",
     "main-collection",
     "recently-viewed",
+    "highlight_text_dktwA4",
     "slideshow_3xLGnP",
     "image_comparison_7grt6K",
     "rich_text_cAPDNp",
