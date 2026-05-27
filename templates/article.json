@@ -117,7 +117,7 @@
         "comments"
       ],
       "settings": {
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 72,
         "divider": false,
         "narrow": false,
