@@ -1182,8 +1182,7 @@
         "embed_slide_TULGDm"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.zl-ti-heading {font-size: 24px; margin: 0px; }}",
-        ".slideshow .banner[data-type=\"video\"] video,.slideshow .banner[data-type=\"video\"] iframe {pointer-events: none;}"
+        "@media (max-width: 768px) {.zl-ti-heading {font-size: 24px; margin: 0px; }}"
       ],
       "name": "ZL - TikTok Slider",
       "settings": {
