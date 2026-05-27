@@ -59,7 +59,7 @@
       ],
       "settings": {
         "text_alignment": "left",
-        "text_alignment_mobile": "left",
+        "text_alignment_mobile": "center",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
