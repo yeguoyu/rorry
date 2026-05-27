@@ -1151,14 +1151,6 @@
     "zl_tiktok_slider_LaYkUz": {
       "type": "zl-tiktok-slider",
       "blocks": {
-        "embed_slide_LtUTJc": {
-          "type": "embed_slide",
-          "settings": {
-            "social_url": "",
-            "social_handle": "@username",
-            "product": ""
-          }
-        },
         "embed_slide_CQqEM9": {
           "type": "embed_slide",
           "settings": {
@@ -1185,7 +1177,6 @@
         }
       },
       "block_order": [
-        "embed_slide_LtUTJc",
         "embed_slide_CQqEM9",
         "embed_slide_t6VaTf",
         "embed_slide_TULGDm"
