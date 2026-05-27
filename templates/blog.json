@@ -9,6 +9,30 @@
  */
 {
   "sections": {
+    "main-blog": {
+      "type": "main-blog",
+      "settings": {
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-center justify-center",
+        "heading_tag": "h1",
+        "subheading": "",
+        "description": "",
+        "show_tag_filter": true,
+        "per_page": 9,
+        "layout": "grid",
+        "image_ratio": "adapt",
+        "show_tags": true,
+        "show_date": true,
+        "show_comments": true,
+        "show_author": false,
+        "show_excerpt": true,
+        "padding_top": 16,
+        "padding_bottom": 120,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "blocks_6wM9nz": {
       "type": "_blocks",
       "blocks": {
@@ -38,30 +62,6 @@
       ],
       "name": "Breadcrumb navigation",
       "settings": {}
-    },
-    "main-blog": {
-      "type": "main-blog",
-      "settings": {
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-center justify-center",
-        "heading_tag": "h1",
-        "subheading": "",
-        "description": "",
-        "show_tag_filter": true,
-        "per_page": 9,
-        "layout": "grid",
-        "image_ratio": "adapt",
-        "show_tags": true,
-        "show_date": true,
-        "show_comments": true,
-        "show_author": false,
-        "show_excerpt": true,
-        "padding_top": 16,
-        "padding_bottom": 120,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
     }
   },
   "order": [
