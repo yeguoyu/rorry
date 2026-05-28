@@ -35,7 +35,9 @@
                 
                 <div class="zl-ti-embed-card js-ti-embed-card" data-url="{{ block.settings.social_url }}">
                   <div class="zl-ti-loading-placeholder">
-                    <svg class="zl-ti-spinner" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
+                    <svg class="zl-ti-spinner" viewBox="0 0 50 50">
+                      <circle cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                    </svg>
                   </div>
                 </div>
 
@@ -50,11 +52,16 @@
 
           </div>
           
-          <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          <div class="zl-ti-nav-btn zl-ti-prev js-ti-prev" aria-label="Previous video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
           </div>
-          <div class="zl-ti-nav-btn zl-ti-next js-ti-next">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+
+          <div class="zl-ti-nav-btn zl-ti-next js-ti-next" aria-label="Next video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
           </div>
          
         </div>
@@ -74,7 +81,9 @@
                       <div class="zl-ti-prod-price">{{ product.price | money }}</div>
                     </div>
                     <div class="zl-ti-prod-arrow">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
                     </div>
                   </a>
                 </div>
@@ -83,152 +92,360 @@
           </div>
         </div>
 
-      </div> </div>
+      </div>
 
+    </div>
   </div>
 </section>
 
 <style>
-  #{{ section_id }} * { box-sizing: border-box; }
+  #{{ section_id }} * {
+    box-sizing: border-box;
+  }
+
   #{{ section_id }}.zl-ti-section {
     background-color: {{ section.settings.bg_color }};
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
     overflow: hidden;
   }
-  .zl-ti-container { max-width: {{ section.settings.container_width }}px; margin: 0 auto; padding: 0 20px; }
+
+  #{{ section_id }} .zl-ti-container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
   /* Upper Layout */
-  .zl-ti-upper-wrapper { display: flex; flex-wrap: wrap; align-items: flex-start; margin-bottom: 0; gap: 40px; }
-  .zl-ti-text-col { flex: 0 0 30%; padding-right: 20px; }
-  .zl-ti-slider-col { flex: 1; min-width: 0; position: relative; }
+  #{{ section_id }} .zl-ti-upper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 0;
+    gap: 40px;
+  }
+
+  #{{ section_id }} .zl-ti-text-col {
+    flex: 0 0 30%;
+    padding-right: 20px;
+  }
+
+  #{{ section_id }} .zl-ti-slider-col {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+  }
 
   /* Typography */
-  .zl-ti-subtitle { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; color: {{ section.settings.text_color }}; opacity: 0.7; }
-  .zl-ti-heading { font-size: 46px; line-height: 1.1; font-weight: 700; margin: 0 0 20px 0; color: {{ section.settings.text_color }}; }
-  .zl-ti-desc { font-size: 16px; line-height: 1.5; color: {{ section.settings.text_color }}; }
+  #{{ section_id }} .zl-ti-subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.7;
+  }
+
+  #{{ section_id }} .zl-ti-heading {
+    font-size: 46px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: {{ section.settings.text_color }};
+  }
+
+  #{{ section_id }} .zl-ti-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: {{ section.settings.text_color }};
+  }
 
   /* Slider */
-  .zl-ti-swiper { overflow: hidden; padding: 10px 5px; }
-  .zl-ti-slide { width: auto; flex-shrink: 0; }
+  #{{ section_id }} .zl-ti-swiper {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 5px;
+  }
+
+  #{{ section_id }} .zl-ti-slide {
+    width: auto;
+    flex-shrink: 0;
+  }
 
   /* Embed Card */
-  .zl-ti-embed-card {
-    position: relative; width: 280px; height: 500px;
-    border-radius: 16px; overflow: hidden; background: #000;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15); transition: transform 0.3s ease;
+  #{{ section_id }} .zl-ti-embed-card {
+    position: relative;
+    width: 325px;
+    height: 580px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
   }
-  .zl-ti-embed-card:hover { transform: translateY(-5px); }
-  .zl-ti-iframe { width: 100%; height: 100%; border: none; display: block; background: #000; }
-  .zl-ti-loading-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
-  .zl-ti-spinner { width: 40px; height: 40px; animation: zl-spin 1s linear infinite; stroke: #999; }
-  @keyframes zl-spin { 100% { transform: rotate(360deg); } }
-  .zl-ti-handle { position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.9); padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; color: #000; z-index: 5; pointer-events: none; }
 
-  /* Nav Buttons - PC hidden, Mobile visible */
-.zl-ti-swiper {
-  position: relative;
-}
-
-/* 默认 PC 隐藏按钮 */
-.zl-ti-nav-btn {
-  display: none;
-}
-
-/* 移动端显示按钮，并放在容器内部，避免被裁切 */
-@media (max-width: 900px) {
-  .evgfhlu1 {
-    width: 77%;  
+  #{{ section_id }} .zl-ti-embed-card:hover {
+    transform: translateY(-5px);
   }
-  .zl-ti-nav-btn {
+
+  #{{ section_id }} .zl-ti-embed-card.is-tiktok {
+    width: 325px;
+    height: 580px;
+    background: #000;
+  }
+
+  #{{ section_id }} .zl-ti-embed-card.is-instagram {
+    width: 326px;
+    height: 600px;
+    background: #fff;
+  }
+
+  #{{ section_id }} .zl-ti-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    background: #000;
+  }
+
+  #{{ section_id }} .zl-ti-embed-card.is-instagram .zl-ti-iframe {
+    background: #fff;
+  }
+
+  #{{ section_id }} .zl-ti-loading-placeholder {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 38px;
-    height: 38px;
-    background: rgba(255,255,255,0.96);
-    border-radius: 50%;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    z-index: 50;
-    color: #333;
-    transition: all 0.2s ease;
-    user-select: none;
-    -webkit-user-select: none;
   }
 
-  .zl-ti-nav-btn:active {
-    transform: translateY(-50%) scale(0.94);
+  #{{ section_id }} .zl-ti-spinner {
+    width: 40px;
+    height: 40px;
+    animation: zl-spin 1s linear infinite;
+    stroke: #999;
   }
 
-  .zl-ti-prev {
-    left: 10px;
+  @keyframes zl-spin {
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
-  .zl-ti-next {
-    right: 10px;
-  }
-
-  .zl-ti-nav-btn.swiper-button-disabled {
-    opacity: 0.35;
+  #{{ section_id }} .zl-ti-handle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255,255,255,0.9);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #000;
+    z-index: 5;
     pointer-events: none;
   }
-}
 
-  /* Bottom Bar */
-  .zl-ti-bottom-bar {
-    margin-top: 20px; background: #fff; border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 10px 0; overflow: hidden; border: 1px solid #eee; width: 100%;
-  }
-  .zl-ti-products-scroll {
-    display: flex; overflow-x: auto; gap: 12px; padding: 0 15px;
-    scrollbar-width: none; -ms-overflow-style: none;
-  }
-  .zl-ti-products-scroll::-webkit-scrollbar { display: none; }
-  
-  /* PRODUCT CARD STYLE - CONTROLLED BY SCHEMA */
-  .zl-ti-product-item { 
-    /* This variable is set by the schema setting below */
-    flex: 0 0 {{ section.settings.product_card_width }}px; 
-    
-    background: #f9f9f9; border-radius: 8px; padding: 8px; 
-    transition: background 0.2s;
-  }
-  .zl-ti-product-item:hover { background: #f2f2f2; }
-
-  .zl-ti-product-link { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
-  
-  .zl-ti-prod-img-box { 
-    width: 44px; height: 44px; flex-shrink: 0; 
-    border-radius: 4px; overflow: hidden; background: #fff; border: 1px solid #eee; 
-  }
-  .zl-ti-prod-img-box img { width: 100%; height: 100%; object-fit: contain; }
-  
-  .zl-ti-prod-info { flex: 1; overflow: hidden; display: flex; flex-direction: column; justify-content: center; }
-  
-  .zl-ti-prod-title { 
-    font-size: 12px; font-weight: 600; 
-   overflow: hidden; text-overflow: ellipsis; 
-    margin-bottom: 2px; 
-    line-height: 1.2;
-  }
-  .zl-ti-prod-price { font-size: 11px; color: #666; }
-  
-  .zl-ti-prod-arrow { 
-    width: 20px; height: 20px; background: #9887B8; color: #fff; 
-    border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; 
+  /* Nav Buttons - PC hidden, Mobile visible */
+  #{{ section_id }} .zl-ti-nav-btn {
+    display: none;
   }
 
   @media (max-width: 900px) {
-    .zl-ti-upper-wrapper { flex-direction: column; align-items: flex-start; gap: 20px; }
-    .zl-ti-text-col { flex: 0 0 100%; width: 100%; padding-right: 0; }
-    .zl-ti-slider-col { width: 100%; margin-right: -20px; }
-    .zl-ti-embed-card { width: 240px; height: 420px; } 
-    {% comment %} .zl-ti-nav-btn { display: none; } {% endcomment %}
-    .zl-ti-bottom-bar { margin-left: -20px; margin-right: -20px; width: auto; border-radius: 0; border-left: none; border-right: none; }
+    #{{ section_id }} .evgfhlu1 {
+      width: 77%;
+    }
+
+    #{{ section_id }} .zl-ti-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 38px;
+      height: 38px;
+      background: rgba(255,255,255,0.96);
+      border-radius: 50%;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 50;
+      color: #333;
+      transition: all 0.2s ease;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    #{{ section_id }} .zl-ti-nav-btn:active {
+      transform: translateY(-50%) scale(0.94);
+    }
+
+    #{{ section_id }} .zl-ti-prev {
+      left: 10px;
+    }
+
+    #{{ section_id }} .zl-ti-next {
+      right: 10px;
+    }
+
+    #{{ section_id }} .zl-ti-nav-btn.swiper-button-disabled {
+      opacity: 0.35;
+      pointer-events: none;
+    }
+  }
+
+  /* Bottom Bar */
+  #{{ section_id }} .zl-ti-bottom-bar {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 10px 0;
+    overflow: hidden;
+    border: 1px solid #eee;
+    width: 100%;
+  }
+
+  #{{ section_id }} .zl-ti-products-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 0 15px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  #{{ section_id }} .zl-ti-products-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Product Card */
+  #{{ section_id }} .zl-ti-product-item {
+    flex: 0 0 {{ section.settings.product_card_width }}px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 8px;
+    transition: background 0.2s;
+  }
+
+  #{{ section_id }} .zl-ti-product-item:hover {
+    background: #f2f2f2;
+  }
+
+  #{{ section_id }} .zl-ti-product-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #{{ section_id }} .zl-ti-prod-img-box {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #eee;
+  }
+
+  #{{ section_id }} .zl-ti-prod-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #{{ section_id }} .zl-ti-prod-info {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #{{ section_id }} .zl-ti-prod-title {
+    font-size: 12px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+    line-height: 1.2;
+  }
+
+  #{{ section_id }} .zl-ti-prod-price {
+    font-size: 11px;
+    color: #666;
+  }
+
+  #{{ section_id }} .zl-ti-prod-arrow {
+    width: 20px;
+    height: 20px;
+    background: #9887B8;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 900px) {
+    #{{ section_id }} .zl-ti-upper-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    #{{ section_id }} .zl-ti-text-col {
+      flex: 0 0 100%;
+      width: 100%;
+      padding-right: 0;
+    }
+
+    #{{ section_id }} .zl-ti-slider-col {
+      width: 100%;
+      margin-right: -20px;
+    }
+
+    #{{ section_id }} .zl-ti-embed-card {
+      width: 325px;
+      height: 580px;
+    }
+
+    #{{ section_id }} .zl-ti-embed-card.is-tiktok {
+      width: 325px;
+      height: 580px;
+    }
+
+    #{{ section_id }} .zl-ti-embed-card.is-instagram {
+      width: 326px;
+      height: 600px;
+    }
+
+    #{{ section_id }} .zl-ti-bottom-bar {
+      margin-left: -20px;
+      margin-right: -20px;
+      width: auto;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  @media (max-width: 360px) {
+    #{{ section_id }} .zl-ti-embed-card,
+    #{{ section_id }} .zl-ti-embed-card.is-tiktok {
+      width: 310px;
+      height: 555px;
+    }
+
+    #{{ section_id }} .zl-ti-embed-card.is-instagram {
+      width: 310px;
+      height: 575px;
+    }
   }
 </style>
 
@@ -239,32 +456,51 @@
 
     function getEmbedSrc(url) {
       if (!url) return null;
+
       if (url.includes('instagram.com')) {
         var cleanUrl = url.split('?')[0].replace(/\/$/, "");
         return cleanUrl + "/embed";
       }
+
       if (url.includes('tiktok.com')) {
         var match = url.match(/video\/(\d+)/);
         if (match && match[1]) {
           return "https://www.tiktok.com/embed/v2/" + match[1] + "?lang=en-US";
         }
       }
+
       return null;
     }
 
     function buildEmbeds() {
       var cards = root.querySelectorAll('.js-ti-embed-card');
+
       cards.forEach(function(card) {
-        var url = card.getAttribute('data-url');
+        var url = card.getAttribute('data-url') || '';
         var src = getEmbedSrc(url);
+        var lowerUrl = url.toLowerCase();
+
+        card.classList.remove('is-tiktok', 'is-instagram');
+
+        if (lowerUrl.includes('tiktok.com')) {
+          card.classList.add('is-tiktok');
+        }
+
+        if (lowerUrl.includes('instagram.com')) {
+          card.classList.add('is-instagram');
+        }
+
         if (src) {
           var iframe = document.createElement('iframe');
           iframe.src = src;
           iframe.className = 'zl-ti-iframe';
           iframe.setAttribute('allowfullscreen', 'true');
-          iframe.setAttribute('scrolling', 'no');
           iframe.setAttribute('frameborder', '0');
-          card.innerHTML = ''; 
+          iframe.setAttribute('loading', 'lazy');
+          iframe.setAttribute('title', 'Embedded social video');
+          iframe.setAttribute('allow', 'encrypted-media; picture-in-picture; fullscreen');
+
+          card.innerHTML = '';
           card.appendChild(iframe);
         } else {
           console.warn('ZL Slider: Invalid Social URL', url);
@@ -274,9 +510,33 @@
 
     function loadSwiperAssets() {
       if(window.Swiper) return Promise.resolve();
-      var link = document.createElement('link'); link.rel = 'stylesheet'; link.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'; document.head.appendChild(link);
+
+      if (!document.querySelector('link[data-zl-swiper-css="true"]')) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
+        link.setAttribute('data-zl-swiper-css', 'true');
+        document.head.appendChild(link);
+      }
+
+      var existingScript = document.querySelector('script[data-zl-swiper-js="true"]');
+
+      if (existingScript) {
+        return new Promise(function(resolve) {
+          if (window.Swiper) {
+            resolve();
+          } else {
+            existingScript.addEventListener('load', resolve);
+          }
+        });
+      }
+
       return new Promise(function(resolve) {
-        var script = document.createElement('script'); script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'; script.onload = resolve; document.head.appendChild(script);
+        var script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+        script.setAttribute('data-zl-swiper-js', 'true');
+        script.onload = resolve;
+        document.head.appendChild(script);
       });
     }
 
@@ -284,14 +544,43 @@
       var sliderEl = root.querySelector('.js-zl-ti-slider');
       var prevBtn = root.querySelector('.js-ti-prev');
       var nextBtn = root.querySelector('.js-ti-next');
-      if(!sliderEl) return;
+
+      if(!sliderEl || !window.Swiper) return;
+
+      if (sliderEl.swiper) {
+        sliderEl.swiper.destroy(true, true);
+      }
 
       new window.Swiper(sliderEl, {
         slidesPerView: 'auto',
         spaceBetween: 20,
         grabCursor: true,
-        navigation: { nextEl: nextBtn, prevEl: prevBtn },
-        breakpoints: { 320: { spaceBetween: 12 }, 900: { spaceBetween: 24 } }
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        resizeObserver: true,
+        navigation: {
+          nextEl: nextBtn,
+          prevEl: prevBtn
+        },
+        breakpoints: {
+          320: {
+            spaceBetween: 12
+          },
+          900: {
+            spaceBetween: 24
+          }
+        },
+        on: {
+          init: function(swiper) {
+            setTimeout(function() {
+              swiper.update();
+            }, 300);
+          },
+          resize: function(swiper) {
+            swiper.update();
+          }
+        }
       });
     }
 
@@ -300,11 +589,16 @@
       initSlider();
     });
 
-    if (Shopify && Shopify.designMode) {
+    if (window.Shopify && Shopify.designMode) {
       document.addEventListener('shopify:section:load', function(e) {
-        if(e.target.id === '{{ section_id }}') {
-          buildEmbeds();
-          initSlider();
+        if(e.target && e.target.id === '{{ section_id }}') {
+          root = document.getElementById('{{ section_id }}');
+          if(!root) return;
+
+          loadSwiperAssets().then(function(){
+            buildEmbeds();
+            initSlider();
+          });
         }
       });
     }
@@ -428,8 +722,12 @@
     {
       "name": "ZL - TikTok Embed Slider",
       "blocks": [
-        { "type": "embed_slide" },
-        { "type": "embed_slide" }
+        {
+          "type": "embed_slide"
+        },
+        {
+          "type": "embed_slide"
+        }
       ]
     }
   ]
