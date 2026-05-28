@@ -249,9 +249,48 @@
   }
 
   /* Nav Buttons - PC hidden, Mobile visible */
-  #{{ section_id }} .zl-ti-nav-btn {
-    display: none;
-  }
+ /* Nav Buttons - PC and Mobile visible */
+#{{ section_id }} .zl-ti-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+  color: #333;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#{{ section_id }} .zl-ti-nav-btn:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.06);
+}
+
+#{{ section_id }} .zl-ti-nav-btn:active {
+  transform: translateY(-50%) scale(0.94);
+}
+
+#{{ section_id }} .zl-ti-prev {
+  left: 10px;
+}
+
+#{{ section_id }} .zl-ti-next {
+  right: 10px;
+}
+
+#{{ section_id }} .zl-ti-nav-btn.swiper-button-disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
 
   @media (max-width: 900px) {
     #{{ section_id }} .evgfhlu1 {
