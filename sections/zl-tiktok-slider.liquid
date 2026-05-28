@@ -125,14 +125,55 @@
   @keyframes zl-spin { 100% { transform: rotate(360deg); } }
   .zl-ti-handle { position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.9); padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; color: #000; z-index: 5; pointer-events: none; }
 
-  /* Nav Buttons */
+  /* Nav Buttons - PC hidden, Mobile visible */
+.zl-ti-swiper {
+  position: relative;
+}
+
+/* 默认 PC 隐藏按钮 */
+.zl-ti-nav-btn {
+  display: none;
+}
+
+/* 移动端显示按钮，并放在容器内部，避免被裁切 */
+@media (max-width: 900px) {
   .zl-ti-nav-btn {
-    position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; background: #fff; border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; transition: all 0.2s; color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.96);
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 50;
+    color: #333;
+    transition: all 0.2s ease;
+    user-select: none;
+    -webkit-user-select: none;
   }
-  .zl-ti-nav-btn:hover { background: #f8f8f8; }
-  .zl-ti-prev { left: -20px; }
-  .zl-ti-next { right: -20px; }
+
+  .zl-ti-nav-btn:active {
+    transform: translateY(-50%) scale(0.94);
+  }
+
+  .zl-ti-prev {
+    left: 10px;
+  }
+
+  .zl-ti-next {
+    right: 10px;
+  }
+
+  .zl-ti-nav-btn.swiper-button-disabled {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+}
 
   /* Bottom Bar */
   .zl-ti-bottom-bar {
