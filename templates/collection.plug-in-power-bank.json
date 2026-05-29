@@ -385,6 +385,266 @@
         "enable_parallax": true
       }
     },
+    "rich_text_YFm4a6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GcwzKk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why a Wall Plug Power Bank is Your New Travel Must-Have",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FBfgCk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GcwzKk",
+        "text_FBfgCk"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_C7MpJQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QT3NtK": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Magic of \"Plug & Go\"",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_HbUzHe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’ve all been there: arriving at a hotel room or a coffee shop, only to realize you’ve forgotten your <strong>ac adapter</strong> or the right charging cable. At RORRY, we designed the <strong>RORRY Flow</strong> series to solve this exact problem. By choosing a plug in power bank, you’re choosing an all-in-one solution. Our <strong>power bank with outlet</strong> functionality means you can plug the device directly into any portable wall socket to recharge both the bank and your phone simultaneously. No more hunting for blocks in the bottom of your bag—just pure, streamlined efficiency.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QT3NtK",
+        "text_HbUzHe"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_LMGxPz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_E4TNBc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Lighten Your Carry, Empower Your Journey",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_PUkkD4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For the modern woman, a <strong>portable plug in charger</strong> should be as discreet and stylish as a piece of jewelry. Our portable power with outlet collection features high-capacity cells wrapped in a compact, portable plug design with foldable prongs. It’s the best plug in power bank for those who value space in their carry-on. Whether it’s a <strong>usb c charging block</strong> for your iPad or a portable battery charger with outlet for your Apple Watch, RORRY ensures you stay connected from the airport lounge to the boardroom.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_E4TNBc",
+        "text_PUkkD4"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_XcbRPe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hb9Bby": {
+          "type": "heading",
+          "settings": {
+            "heading": "Versatility for the Modern Apple Ecosystem",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Hmkn4a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our <a href=\"/collections/power-banks\" title=\"Power Banks\"><strong>portable charger</strong></a> with wall plug isn’t just about the AC input; it’s about what it can do for your devices. Featuring <strong>built in cables and wall plugs</strong>, RORRY devices are the smallest power banks with ac outlet that don’t compromise on speed. They act as a portable power plug when connected to the wall and a high-speed battery when you’re on the move. Join the community of travelers who have switched to a power bank with built in ac wall plug and experience the freedom of cable-free power.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hb9Bby",
+        "text_Hmkn4a"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "custom_liquid_zxmeRq": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.name",
@@ -441,6 +701,10 @@
     "main-collection-banner",
     "main-collection",
     "images-with-text-overlay",
+    "rich_text_YFm4a6",
+    "rich_text_C7MpJQ",
+    "rich_text_LMGxPz",
+    "rich_text_XcbRPe",
     "custom_liquid_zxmeRq",
     "recently-viewed"
   ]
