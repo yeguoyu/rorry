@@ -391,32 +391,16 @@
         "heading_KBeitM": {
           "type": "heading",
           "settings": {
-            "heading": "Rich text",
+            "heading": "Power in Your Palm: Why the T1 Series is Every Woman’s Best Friend",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_bdzDjT": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "heading_KBeitM",
-        "text_bdzDjT"
+        "heading_KBeitM"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
@@ -456,7 +440,7 @@
         "heading_rE6jQV": {
           "type": "heading",
           "settings": {
-            "heading": "Rich text",
+            "heading": "Lipstick-Sized Power, Zero Burden",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -466,7 +450,7 @@
         "text_t7rFbA": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>We believe your tech should never weigh you down. The <strong>RORRY T1 Series</strong> was created for the woman who values both space and style. It is the best <a href=\"/collections/mini-keychain\" title=\"Mini & Keychain\"><strong>mini keychain power bank</strong></a> that fits into the palm of your hand—or clips elegantly onto your favorite designer bag. No more bulky bricks stretching out your pockets; the T1 provides a sleek, portable plug-in experience that feels more like a chic accessory than a piece of hardware.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -521,7 +505,7 @@
         "heading_gDhjNB": {
           "type": "heading",
           "settings": {
-            "heading": "Rich text",
+            "heading": "Your Emergency Charge, Always Ready",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -531,7 +515,7 @@
         "text_hYWFbz": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Whether you’re heading to a brunch date, a business meeting, or a late-night gym session, the T1 keychain charger ensures your iPhone or Apple Watch never hits 0%. Our <a href=\"/products/rorry-t1-5000mah-portable-charger-keychain-power-bank-with-built-in-cables-travel-charger-battery-pack\" title=\"RORRY CharmGo T1-5000mAh Portable Charger Keychain Power Bank\"><strong>T1-5000mAh</strong></a> and <a href=\"/products/rorry-t1-10000mah-portable-charger-keychain-power-bank\" title=\"RORRY CharmGo T1-10000mAh Portable Charger Keychain Power Bank 30W\"><strong>T1-10000mAh</strong></a> models offer high-speed <strong>30W fast charging</strong> in a form factor that’s truly lipstick-sized. It’s the perfect mini portable charger for women who need a reliable \"juice-up\" during their daily commute without the hassle of extra cables.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -586,7 +570,7 @@
         "heading_rp9Ezi": {
           "type": "heading",
           "settings": {
-            "heading": "Rich text",
+            "heading": "A Palette to Match Your Style",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -596,7 +580,7 @@
         "text_xrbpGK": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Available in our signature Lavender, Rose Quartz, and Mint Green, the T1 doesn't just charge your phone; it complements your outfit. Every keychain power bank features a soft-touch finish and a high-durability ring that clips onto keys, belts, or straps. Join over 150,000 stylish users who have switched to RORRY and experience the freedom of cable-free power with the most aesthetic battery pack on the market.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
