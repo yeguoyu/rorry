@@ -694,6 +694,24 @@
         "rounded": false
       }
     },
+    "custom_liquid_zxmeRq": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": {
+        "liquid": "{% render 'faq-info' %}",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "recently-viewed": {
       "type": "recently-viewed",
       "settings": {
@@ -724,24 +742,6 @@
         "full_width": false,
         "rounded": true
       }
-    },
-    "custom_liquid_zxmeRq": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.name",
-      "settings": {
-        "liquid": "{% render 'faq-info' %}",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
     }
   },
   "order": [
@@ -755,7 +755,7 @@
     "rich_text_iGJpbt",
     "rich_text_XgbdzT",
     "rich_text_zy6NHj",
-    "recently-viewed",
-    "custom_liquid_zxmeRq"
+    "custom_liquid_zxmeRq",
+    "recently-viewed"
   ]
 }
