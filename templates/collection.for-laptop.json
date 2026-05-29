@@ -165,7 +165,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "title-sm"
+            "title_size": "title-md"
           }
         },
         "description_qqgM8H": {
@@ -392,7 +392,7 @@
           "type": "heading",
           "settings": {
             "heading": "Why RORRY is the Modern Woman's Choice for Laptop Power",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
