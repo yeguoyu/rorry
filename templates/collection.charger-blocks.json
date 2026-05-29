@@ -450,6 +450,201 @@
         "rounded": false
       }
     },
+    "rich_text_HJCdKe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XeLLCb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Travel-Ready Power for the Jetsetter and the Commuter",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_GLqaBT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you’ve ever stayed in a hotel where the charging block sticks to wall only to fall out a minute later, you know the frustration of unreliable gear. Our usb c charging blocks are engineered with a focus on stability and weight distribution. Featuring foldable plugs and an ultra-slim profile, they are the best charging blocks for slipping into a laptop sleeve or a small crossbody bag. Whether you’re working from a Parisian cafe or prepping for a boardroom presentation, RORRY ensures your iPhone or Apple Watch is always powered up and ready for the next move.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XeLLCb",
+        "text_GLqaBT"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_WNVGWq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GpJwtT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fast Charging for a Fast-Paced World",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FgxDYN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Time is your most precious resource. Waiting hours for a full charge is no longer an option for the modern professional or the busy mom. It’s not just a c block charger; it’s a tool that empowers you to stay connected to what matters most, without being tethered to a wall all day.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GpJwtT",
+        "text_FgxDYN"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_MrF8TC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CpWKhx": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Future-Proof Choice for Your Apple Ecosystem",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_eWPLRz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As technology evolves, so does RORRY. Our charger block series is specifically optimized for the latest generation of devices, ensuring maximum efficiency and battery health protection. From the versatile usbc charger block to multi-port solutions that power your entire ensemble at once, we provide the best battery bank companions and wall plugs that the market has to offer. Join over 150,000 women who have upgraded their daily carry with RORRY—where fashion finally meets function.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CpWKhx",
+        "text_eWPLRz"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "custom_liquid_zxmeRq": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.name",
@@ -507,6 +702,9 @@
     "main-collection",
     "images-with-text-overlay",
     "rich_text_tQUYfj",
+    "rich_text_HJCdKe",
+    "rich_text_WNVGWq",
+    "rich_text_MrF8TC",
     "custom_liquid_zxmeRq",
     "recently-viewed"
   ]
