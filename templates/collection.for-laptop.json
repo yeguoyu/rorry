@@ -391,32 +391,16 @@
         "heading_8Y7nN9": {
           "type": "heading",
           "settings": {
-            "heading": "Rich text",
+            "heading": "Why RORRY is the Modern Woman's Choice for Laptop Power",
             "heading_size": "title-md",
             "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_aXTXBJ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "heading_8Y7nN9",
-        "text_aXTXBJ"
+        "heading_8Y7nN9"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
@@ -456,7 +440,7 @@
         "heading_r7dTMW": {
           "type": "heading",
           "settings": {
-            "heading": "Rich text",
+            "heading": "Power Without the Bulk",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -466,7 +450,7 @@
         "text_VxMdXy": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>For the modern professional, your laptop is your gateway to the world. But carrying a heavy, industrial-looking <strong>laptop charger</strong> can ruin the silhouette of a designer work bag. At <a href=\"https://rorry.com/\" title=\"rorry\"><strong>RORRY</strong></a>, we’ve reimagined the <strong>power bank for laptop</strong> users. Our high-capacity 20000mAh models are engineered to be slim and lightweight, offering a portable laptop charging power bank solution that fits as perfectly in your tote as your favorite planner.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -521,7 +505,7 @@
         "heading_p9ydXq": {
           "type": "heading",
           "settings": {
-            "heading": "Rich text",
+            "heading": "65W Fast Charging for Your Busy Schedule",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -531,7 +515,7 @@
         "text_HGQrKT": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>We know your time is non-renewable. Whether you're rushing between meetings or finishing a project at a terminal, you need a <strong>usb c laptop charger</strong> that keeps up. RORRY’s laptop portable chargers deliver a blazing-fast 65W PD output, capable of charging a MacBook Pro or MacBook Air from 0% to 50% in just 30 minutes. It’s not just a mac laptop charger; it’s the peace of mind that comes from knowing you’re never tethered to a wall socket.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -586,7 +570,7 @@
         "heading_PzEL4m": {
           "type": "heading",
           "settings": {
-            "heading": "Rich text",
+            "heading": "Universal Compatibility, Elegant Design",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -596,7 +580,7 @@
         "text_THbRwy": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Our <strong>universal laptop chargers</strong> are designed to bridge the gap between all your devices. With multi-port functionality, you can charge your computer, iPhone, and Apple Watch simultaneously. Whether you use a mac laptop or a high-end PC, RORRY provides a type c laptop charger experience that is as beautiful as it is powerful. Available in our signature soft-touch finishes, it’s the best power bank for laptops for those who refuse to compromise on their aesthetic.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -612,6 +596,71 @@
       "block_order": [
         "heading_PzEL4m",
         "text_THbRwy"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_zy6NHj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wdD6jy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Flight-Approved Freedom",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_BWVCHU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As a jetsetting professional, you deserve the freedom to work from 30,000 feet without battery anxiety. Choose the best laptop <a href=\"/collections/power-banks\" title=\"Power Banks\"><strong>power bank</strong></a> that matches your drive and your style.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wdD6jy",
+        "text_BWVCHU"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
@@ -705,6 +754,7 @@
     "rich_text_W3xThh",
     "rich_text_iGJpbt",
     "rich_text_XgbdzT",
+    "rich_text_zy6NHj",
     "recently-viewed",
     "custom_liquid_zxmeRq"
   ]
