@@ -385,6 +385,284 @@
         "enable_parallax": true
       }
     },
+    "rich_text_cym7UV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LcQcGE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Latest Power Bank Models: RORRY 2026 New Releases",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_ytbL4d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore RORRY’s latest arrivals for 2026. Discover the newest 3-in-1 keychain chargers and MagSafe power banks featuring cutting-edge technology and chic designs. Upgrade your daily carry in style.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LcQcGE",
+        "text_ytbL4d"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_6HFz9G": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cTVwL9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Your Tech Should Be as Current as Your Lifestyle",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_db3YPR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In a fast-paced world, your tech essentials shouldn't just keep up—they should stand out. At RORRY, we treat every new release as a blend of high-fashion and high-performance. A latest power bank is no longer just a battery; it’s a statement piece. Our latest power bank case designs utilize soft-touch materials and curated pastel palettes like Rose Quartz and Lavender, ensuring that your power bank latest model looks just as good as the iPhone it’s charging.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cTVwL9",
+        "text_db3YPR"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_NikrL3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ez7kxb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cutting-Edge Fast Charging Technology for Women on the Go",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_JcRtBX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We understand that for the modern professional or the busy mom, time is the ultimate luxury. That’s why our latest power bank fast charging modules are engineered with the newest GaN (Gallium Nitride) technology. This latest power bank technology allows us to pack massive 10,000mAh and 20000mAh capacity into ultra-slim profiles that slip effortlessly into a clutch or a laptop sleeve. Whether you’re looking for the latest best power bank for a weekend getaway or a daily commuter essential, RORRY’s new arrivals provide the speed you need with the style you crave.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ez7kxb",
+        "text_JcRtBX"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "rich_text_af4XYz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aU9Fwd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Future-Proofing Your Apple Ecosystem",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_FHFtfg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As Apple updates its devices, RORRY stays one step ahead. Every product in our New Releases collection is rigorously tested for compatibility with the latest iPhone and Apple Watch series. By choosing the latest power bank from RORRY, you’re investing in a power bank latest model that features built-in USB-C arms and optimized MagSafe alignment. Don't settle for last year's tech—embrace the latest power bank 2026 trends and power your life with elegance and ease.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_aU9Fwd",
+        "text_FHFtfg"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "custom_liquid_zxmeRq": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": {
+        "liquid": "{% render 'faq-info' %}",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "recently-viewed": {
       "type": "recently-viewed",
       "settings": {
@@ -415,24 +693,6 @@
         "full_width": false,
         "rounded": true
       }
-    },
-    "custom_liquid_zxmeRq": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.name",
-      "settings": {
-        "liquid": "{% render 'faq-info' %}",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
     }
   },
   "order": [
@@ -441,7 +701,11 @@
     "main-collection-banner",
     "main-collection",
     "images-with-text-overlay",
-    "recently-viewed",
-    "custom_liquid_zxmeRq"
+    "rich_text_cym7UV",
+    "rich_text_6HFz9G",
+    "rich_text_NikrL3",
+    "rich_text_af4XYz",
+    "custom_liquid_zxmeRq",
+    "recently-viewed"
   ]
 }
