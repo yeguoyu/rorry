@@ -165,7 +165,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "title-sm"
+            "title_size": "title-md"
           }
         },
         "description_qqgM8H": {
@@ -385,6 +385,89 @@
         "enable_parallax": true
       }
     },
+    "rich_text_Qzb3ta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QaY8Wb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Finding the Perfect Wireless Power Solution for Your Lifestyle",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_DMq6TT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Are you tired of your iPhone running out of battery during a busy day or while traveling? A <strong>wireless power bank</strong> is the ultimate solution for a cordless lifestyle. At RORRY, we specialize in <strong>MagSafe power banks</strong> that are not only powerful but also serve as a chic accessory for your phone.<br/><br/>For those with multiple devices, our <strong>3-in-1 wireless charging station</strong> is a game-changer. It allows you to charge your iPhone, Apple Watch, and AirPods simultaneously, creating a clutter-free desk setup. Whether you need a MagSafe charging stand for your bedside or a <strong>flat iPhone charger</strong> for your travel bag, RORRY combines <strong>fast-charge wireless</strong> technology with an elegant aesthetic that matches your unique style.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QaY8Wb",
+        "text_DMq6TT"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "custom_liquid_zxmeRq": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": {
+        "liquid": "{% render 'faq-info' %}",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
     "recently-viewed": {
       "type": "recently-viewed",
       "settings": {
@@ -415,24 +498,6 @@
         "full_width": false,
         "rounded": true
       }
-    },
-    "custom_liquid_zxmeRq": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.name",
-      "settings": {
-        "liquid": "{% render 'faq-info' %}",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
     }
   },
   "order": [
@@ -441,7 +506,8 @@
     "main-collection-banner",
     "main-collection",
     "images-with-text-overlay",
-    "recently-viewed",
-    "custom_liquid_zxmeRq"
+    "rich_text_Qzb3ta",
+    "custom_liquid_zxmeRq",
+    "recently-viewed"
   ]
 }
