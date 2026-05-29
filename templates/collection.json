@@ -401,7 +401,7 @@
         "description": "",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -421,7 +421,7 @@
       "name": "t:sections.custom-liquid.name",
       "settings": {
         "liquid": "{% render 'faq-info' %}",
-        "color_text": "",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_button_text": "",
