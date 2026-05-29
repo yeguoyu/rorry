@@ -455,7 +455,7 @@
       "name": "t:sections.custom-liquid.name",
       "settings": {
         "liquid": "{% render 'faq-info' %}",
-        "color_text": "",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_button_text": "",
