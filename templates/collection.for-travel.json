@@ -398,6 +398,21 @@
             "highlighted_scribble": "circle"
           }
         },
+        "text_4JE9zt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pack light, travel far, and stay connected. RORRY’s travel-pro power banks are engineered to eliminate the stress of dead batteries and tangled wires. Every charger in this collection is 100% airline-approved and designed with a 3-in-1 cable-free philosophy, fitting seamlessly into your carry-on so you can focus on the journey, not the juice.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "heading_gBceLc": {
           "type": "heading",
           "settings": {
@@ -476,6 +491,7 @@
       },
       "block_order": [
         "heading_68YqNF",
+        "text_4JE9zt",
         "heading_gBceLc",
         "text_qmMyhB",
         "heading_NJAJaD",
