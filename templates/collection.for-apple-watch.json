@@ -504,7 +504,7 @@
         "text_alignment": "left",
         "text_alignment_mobile": "left",
         "heading": "",
-        "heading_size": "title-md",
+        "heading_size": "title-sm",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
         "heading_tag": "h2",
