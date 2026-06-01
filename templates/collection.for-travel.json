@@ -436,7 +436,7 @@
         "text_HAi6PX": {
           "type": "text",
           "settings": {
-            "text": "<p>Security checkpoints should be the least of your worries. Every traveler battery charger at RORRY is strictly compliant with TSA and international aviation standards. If you need a portable power bank for international travel that lasts through a 12-hour flight, the CharmGo D4 10000mAh provides high-speed 45W charging in a mini size. It's the best size power bank for travel.</p>",
+            "text": "<p>Security checkpoints should be the least of your worries. Every <strong>traveler battery charger</strong> at <a href=\"https://rorry.com/\" title=\"rorry\"><strong>RORRY</strong></a> is strictly compliant with TSA and international aviation standards. If you need a portable power bank for international travel that lasts through a 12-hour flight, the CharmGo D4 10000mAh provides high-speed 45W charging in a mini size. It's the best size power bank for travel.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
