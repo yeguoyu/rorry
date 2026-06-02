@@ -12,13 +12,6 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
-        "sticky_buy_button_v2_qaTgPb": {
-          "type": "sticky_buy_button_v2",
-          "settings": {
-            "delivery_text": "In Stock—Estimated delivery in 1-5 business days.",
-            "buy_now_text": "Buy Now"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -123,6 +116,13 @@
           "type": "sticky_buy_button",
           "settings": {}
         },
+        "sticky_buy_button_v2_qaTgPb": {
+          "type": "sticky_buy_button_v2",
+          "settings": {
+            "delivery_text": "In Stock—Estimated delivery in 1-5 business days.",
+            "buy_now_text": "Buy Now"
+          }
+        },
         "pickup_availability": {
           "type": "pickup_availability",
           "settings": {}
@@ -159,7 +159,6 @@
         }
       },
       "block_order": [
-        "sticky_buy_button_v2_qaTgPb",
         "title",
         "price_dhxX3T",
         "liquid_7LW8an",
@@ -174,6 +173,7 @@
         "buy_buttons",
         "inventory",
         "sticky_buy_button_cgt3tr",
+        "sticky_buy_button_v2_qaTgPb",
         "pickup_availability",
         "trust_features_CQtqc3",
         "share"
