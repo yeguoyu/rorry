@@ -9,17 +9,13 @@
     margin-bottom: 0 !important;
     }
     {% comment %} 固定粘性加购按钮 {% endcomment %}
-      .sticky-bar-custom {
+      .sticky-bar-custom-v2 {
       opacity: 1 !important;
       visibility: visible !important;
       transform: translateY(0) !important;
       transition: none !important; /* 可选，取消动画 */
     }
-    .product-sticky-form__card {
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: translateY(0) !important;
-}
+
      #shopify-section-{{ section.id }} {
         --section-padding-top: {{ section.settings.padding_top }}px;
         --section-padding-bottom: {{ section.settings.padding_bottom }}px;
