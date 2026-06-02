@@ -1,0 +1,593 @@
+<style>
+    
+
+
+  #shopify-section-{{section.id}} .pageMax-{{ section.id }}{
+   max-width:{{section.settings.max-width}}px;
+        padding: 0 5rem;
+    max-width: var(--page-width);
+  }
+    #shopify-section-{{section.id}} .pagepadding-{{ section.id }}{
+    padding-bottom:{{section.settings.padding-bottom}}px;
+    padding-top:{{section.settings.padding-top}}px;
+  }
+  @media(max-width:750px){
+    #shopify-section-{{section.id}} .pageMax-{{ section.id }}{
+      padding:0;
+    }
+  #shopify-section-{{section.id}} .pagepadding-{{ section.id }}{
+    padding-bottom:{{section.settings.padding-bottom-mob}}px;
+    padding-top:{{section.settings.padding-top-mob}}px;
+  }
+     
+  }
+
+</style>
+<style>
+  #shopify-section-{{section.id}} .collapsible-switch{
+        margin: 0 auto;
+    background:{{section.settings.color-2}}
+  }
+  #shopify-section-{{section.id}} .collapsible-container{
+        display: flex;
+    flex-direction: column;
+        gap: 40px;
+        gap: {{ section.settings.title_bottom }}px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding:40px 20px;
+  }
+  #shopify-section-{{section.id}} .collapsible-title{
+        text-align: center;
+    font-size:{{section.settings.title_size}}px;
+    color:{{section.settings.title_color}};
+    font-weight:600;
+  }
+  /* #shopify-section-{{section.id}} .collapsible-title *{
+    color:{{section.settings.color-1}}
+  } */
+  #shopify-section-{{section.id}} .collapsible-switch-container{
+        display: flex;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border-top: 1px solid #E8ECEF;
+  }
+  #shopify-section-{{section.id}} .switch-tab{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+        flex: 2;
+        cursor: pointer;
+  }
+  #shopify-section-{{section.id}} .switch-tab.art_one{
+    display:none;
+  }
+  #shopify-section-{{section.id}} .collapsible-tab{
+    font-size: {{section.settings.tab_size}}px;
+    font-weight: 500;
+    text-align: left;
+    color: {{section.settings.tab_color}};
+  }
+  #shopify-section-{{section.id}} .collapsible-content{
+        flex: 7;
+        padding-left: 40px;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+  }
+  #shopify-section-{{section.id}} .collapsible-content.art_one{
+    padding-left: 0;
+    border-left: none;
+  }
+  #shopify-section-{{section.id}} .collapsible-tab.active{
+    color: {{section.settings.tab_color_art}};
+    font-weight: 700;
+       
+  }
+   #shopify-section-{{section.id}} .accordion-box{
+     border-bottom:1px solid #E8ECEF;
+   }
+  #shopify-section-{{section.id}} .collapsible-box{
+    display:none;
+        flex-direction: column;
+  }
+  #shopify-section-{{section.id}} .collapsible-box.active{
+    display:flex;
+  }
+  #shopify-section-{{section.id}} .clear-margin .accordion-header *{
+    margin-top:0;
+    margin-bottom:18px;
+  }
+  #shopify-section-{{section.id}} .collapsible-more *{
+    color:{{section.settings.color-4}};
+  }
+  #shopify-section-{{section.id}} .accordion-items{
+        margin-top: 40px;
+        margin-top: 15px;
+  }
+   #shopify-section-{{section.id}} .accordion-box:nth-child(1) .accordion .accordion-items{
+     margin-top: 0;
+   }
+ #shopify-section-{{section.id}} .accordion-items .accordion-header{
+  color:{{section.settings.item_title_color}};
+   font-size:{{section.settings.item_title_size}}px;
+   line-height: 1.2;
+}
+    #shopify-section-{{section.id}} .accordion{
+      padding-bottom: 30px;
+      padding-bottom: 15px;
+    }
+   #shopify-section-{{section.id}} .accordion .accordion-contents{
+  color:{{section.settings.item_details_color}};
+     font-size:{{section.settings.item_details_size}}px;
+     margin-top:10px;
+     border-bottom:none;
+    
+  }
+
+  #shopify-section-{{section.id}} .accordion .accordion-contents a{
+  color:#333;
+  }
+  #shopify-section-{{section.id}} .collapsible-more a{
+   color: rgba(5, 5, 5, 1);
+  }
+
+#shopify-section-{{section.id}} .collapsible-more *{
+  margin:0;
+}
+  #shopify-section-{{section.id}} .collapsible-title *{
+    margin:0;
+  }
+  @media(max-width:750px){
+    .collapsible-switch-container{
+      flex-direction: column;
+          gap: 20px;
+    }
+    #shopify-section-{{section.id}} .collapsible-container{
+          flex-direction: column;
+          gap: 20px;
+          gap: {{ section.settings.mobile_title_bottom }}px;
+      padding:20px 0;
+    }
+    #shopify-section-{{section.id}} .switch-tab{
+          flex-direction: row;
+              gap: 0;
+    }
+    #shopify-section-{{section.id}} .collapsible-content{
+      padding:0;
+      border:none;
+    }
+    #shopify-section-{{section.id}} .accordion-contents *{
+     margin-left:0; 
+    }
+#shopify-section-{{section.id}} .collapsible-tab{
+
+font-size: 14px;
+font-weight: 400;
+line-height: 25.2px;
+text-align: center;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(0, 0, 0,.7);
+        flex: auto;
+}
+    #shopify-section-{{section.id}} .collapsible-title{
+      font-size:{{section.settings.mobile_title_size}}px;
+    }
+    #shopify-section-{{section.id}} .collapsible-switch-container{
+      border-top:none;
+      width: 100%;
+      padding-top:0;
+    }
+    #shopify-section-{{section.id}} .switch-tab{
+              padding: 20px 0 10px;
+        border-top: 1px solid #E8ECEF;
+        border-bottom: 1px solid #E8ECEF;
+              overflow-x: auto;
+        width: 100%;
+      column-gap: 10px;
+    }
+     #shopify-section-{{section.id}} .collapsible-tab{
+       border:none;
+      font-size:{{section.settings.mobile_tab_size}}px;
+               gap: 20px;
+               white-space: nowrap;
+       
+    }
+    #shopify-section-{{section.id}} .accordion-items .accordion-header{
+      font-size:{{section.settings.mobile_item_title_size}}px;
+    }
+    #shopify-section-{{section.id}} .accordion .accordion-contents{
+      font-size:{{section.settings.mobile_item_details_size}}px;
+      background:transparent;
+      margin-top: 0px;
+    }
+     #shopify-section-{{section.id}} .accordion-items.active + .accordion-contents{
+          margin-top: 10px;
+    }
+  }
+</style>
+
+{%- assign has_faq_content = false -%}
+{%- for block in section.blocks -%}
+  {%- if block.type == 'tab-content' and block.settings.collapsible-title != blank and block.settings.collapsible-content != blank -%}
+    {%- assign has_faq_content = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if has_faq_content -%}
+<section class="collapsible-switch pagepadding-{{ section.id }} pagepaddinggap-{{ section.id }} ">
+  <div class="collapsible-container pageMax-{{ section.id }}" name="{{ section.settings.sectionname }}">
+    <div class="collapsible-title {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"><h2 style="all: unset;">{{ section.settings.title }}</h2></div>
+    
+    <div class="collapsible-switch-container">
+        <div class="switch-tab  {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" style="display:none;">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'tab' %}
+          <div class="collapsible-tab tab-btn {% if forloop.first %}active {% endif %}" data-index="{{ forloop.index }}">{{ block.settings.tab-name }}</div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+
+      <div class="collapsible-content">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'tab' %}
+          <div class="collapsible-box {% if forloop.first %}active {% endif %}" data-index="{{ forloop.index }}">
+           {% assign isfirstitem = true %} 
+            {% for item in section.blocks %}
+              {% case item.type %}
+                {% when 'tab-content' %}
+                {% if item.settings.tab-name==block.settings.tab-name %}
+
+                  <div class="accordion-box {% if isfirstitem  %} clear-margin {% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                    {% render 'product-accordion' block:item %}
+                  </div>
+                   {% assign isfirstitem = false %} 
+                {% endif %}
+              {% endcase %}
+            {% endfor %}
+            
+          </div>
+        {% endcase %}
+      {% endfor %}
+      </div>
+    </div>
+      
+  </div>
+</section>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {%- for block in section.blocks -%}
+        {% case block.type %}
+        {% when 'tab-content' %}
+          {%- if block.settings.collapsible-title != blank and block.settings.collapsible-content != blank -%}
+            {% assign nextindex = forloop.index  %}
+            {
+              "@type": "Question",
+              "name": {{ block.settings.collapsible-title | strip_html | json }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ block.settings.collapsible-content  | strip_html | json }}
+              }
+            }{% if section.blocks[nextindex].settings.collapsible-title != blank and section.blocks[nextindex].settings.collapsible-content != blank %}{% unless forloop.last %},{% endunless %}{% endif %}
+          {%- endif -%}
+        {% endcase %}
+        {%- endfor -%}
+      ]
+    }
+  </script>
+{%- endif -%}
+
+
+
+<script>
+      document.querySelectorAll('#shopify-section-{{ section.id }} .accordion-items').forEach(item => {
+
+     if (item.classList.contains('active')) {
+		item.nextElementSibling.style.maxHeight = item.nextElementSibling.scrollHeight + 'px';
+    } else {
+      item.nextElementSibling.style.maxHeight = null;
+    }
+    
+    item.addEventListener('click', function() {
+      const isActive = item.classList.contains('active');
+
+      document.querySelectorAll('#shopify-section-{{ section.id }} .accordion-items.active').forEach(activeItem => {
+        activeItem.classList.remove('active');
+        activeItem.nextElementSibling.style.maxHeight = null;
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+        const accordionContent =item.nextElementSibling;
+		accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+<script>
+    //tab切换
+  const tabss = document.querySelectorAll('#shopify-section-{{ section.id }} .collapsible-tab');
+const contentss = document.querySelectorAll('#shopify-section-{{ section.id }} .collapsible-box');
+
+  const switch_tab = document.querySelectorAll('#shopify-section-{{ section.id }} .switch-tab');
+  const collapsible_content = document.querySelectorAll('#shopify-section-{{ section.id }} .collapsible-content');
+    
+    if (switch_tab.length == 1 && collapsible_content.length == 1) {
+      switch_tab[0].classList.add("art_one");
+      collapsible_content[0].classList.add("art_one");
+    }
+  
+  
+
+  console.log("123123",switch_tab)
+tabss.forEach((tab, index) => {
+  tab.addEventListener('click', function() {
+    console.log('sss')
+    // 移除所有按钮的 active 类
+    tabss.forEach(t => t.classList.remove('active'));
+    // 隐藏所有内容
+    contentss.forEach(c => c.classList.remove('active'));
+
+    // 添加 active 类到当前按钮
+    this.classList.add('active');
+    // 显示对应的内容
+    contentss[index].classList.add('active');
+  });
+});
+</script>
+{% schema %}
+  {
+    "name": "faq",
+    "settings": [
+      {
+      "type": "text",
+        "id": "sectionname",
+        "label": "section name"
+      },
+      {
+            "type": "color",
+            "id": "color-2",
+            "label": "背景颜色"
+        },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "title"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "title_color"
+      },
+      {
+            "type": "range",
+            "id": "title_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "title size",
+            "default":36
+          },
+          {
+            "type": "range",
+            "id": "mobile_title_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "mobile title size",
+            "default": 24
+          },
+      {
+            "type": "range",
+            "id": "title_bottom",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "title_bottom",
+            "default":24
+          },
+          {
+            "type": "range",
+            "id": "mobile_title_bottom",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "mobile_title_bottom",
+            "default": 16
+          },
+      {
+        "type": "header",
+        "content": "内容配置"
+      },
+      {
+            "type": "range",
+            "id": "tab_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "tab size",
+            "default":36
+          },
+          {
+            "type": "range",
+            "id": "mobile_tab_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "mobile tab size",
+            "default": 24
+          },
+      {
+        "type": "color",
+        "id": "tab_color",
+        "label": "tab_color"
+      },
+      {
+        "type": "color",
+        "id": "tab_color_art",
+        "info": "选中状态",
+        "label": "tab_color_art"
+      },
+      {
+        "type": "color",
+        "id": "item_title_color",
+        "label": "title_color"
+      },
+      {
+            "type": "range",
+            "id": "item_title_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "title size",
+            "default":36
+          },
+          {
+            "type": "range",
+            "id": "mobile_item_title_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "mobile title size",
+            "default": 24
+          },
+      {
+            "type": "color",
+            "id": "item_details_color",
+            "label": "details_color"
+          },
+      {
+            "type": "range",
+            "id": "item_details_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "details size",
+            "default": 16
+          },
+          {
+            "type": "range",
+            "id": "mobile_item_details_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "mobile details size",
+            "default": 16
+          },
+          
+      
+      
+       {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+              {
+        "type": "range",
+        "id": "padding-top",
+        "label": "顶部填充",
+        "min": 0,
+        "max": 160,
+        "step": 2,
+        "default":0
+      },
+        {
+        "type": "range",
+        "id": "padding-bottom",
+        "label": "底部填充",
+          "min": 0,
+        "max": 160,
+        "step": 2,
+        "default":0 
+      },
+
+      {
+      "type": "range",
+      "id": "padding-top-mob",
+      "label": "移动端顶部填充",
+      "min": 0,
+      "max": 99,
+      "step": 1,
+      "default":0
+    },
+      {
+      "type": "range",
+      "id": "padding-bottom-mob",
+      "label": "移动端底部填充",
+      "min": 0,
+      "max": 99,
+      "step": 1,
+      "default":0
+    },
+            {
+      "type": "range",
+      "id": "max-width",
+      "label": "最大宽度",
+      "min": 600,
+      "max": 1920,
+      "step": 20,
+      "default":1200
+    }
+
+        
+             
+                    
+    ],
+    "blocks": [
+      {
+        "type": "tab",
+        "name":"tab",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab-name",
+            "label": "tab名称"
+          }
+        ]
+      },
+      {
+        "type": "tab-content",
+        "name":"tab-content",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab-name",
+            "label": "属于哪一个tab项"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "collapsible-title",
+            "label": "折叠项标题"
+          },
+          {
+            "type": "richtext",
+            "id": "collapsible-content",
+            "label": "折叠项内容"
+          },
+          {
+            "type":"checkbox",
+            "id": "isactive",
+            "label": "默认状态",
+            "default":false
+          }
+        ]
+      }
+    ],
+    "presets": [{"name": "product faq"}]
+  }
+{% endschema %}
