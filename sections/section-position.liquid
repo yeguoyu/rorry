@@ -1,0 +1,433 @@
+<style>
+  #shopify-section-{{ section.id }}{
+    /* border-bottom: 2px solid #eaeaea; */
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background:{{section.settings.background}};
+    z-index: 50;
+    /* z-index: 2; */
+  }
+  #shopify-section-template--18221504692327__section_position_NhnEdc {
+  z-index: 20 !important;
+}
+  .product-position-div{
+    padding:0;
+  }
+  .product-position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:1rem;
+    height: 100%;
+  }
+  .position-text-div{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height:100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: #f3f3f3; */
+    border-radius: 35px;
+    /* column-gap: 40px; */
+  }
+    
+  .position-text-div span{
+    
+    cursor: pointer;
+    padding-top: 4px;
+    transition: all .3s;
+    text-decoration:none;
+    cursor:pointer;
+    white-space: nowrap;
+    height:100%;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    flex: 0 0 auto;
+    max-width: fit-content;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  #shopify-section-{{ section.id }} .product-position-div{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #shopify-section-{{ section.id }} .position-text-div .text{
+
+    padding:0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     padding: 0 100px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+
+  }
+  #shopify-section-{{ section.id }} .position-text-div .activea .text{
+    color: #19D3C5;
+    font-weight: bold;
+       
+  }
+  
+  #shopify-section-{{ section.id }} .position-text-div .text:hover{
+    color: #19D3C5;
+  }
+  #shopify-section-{{ section.id }} .position-text-div .text:before{
+      display: block;
+      content: "";
+      width: 0%;
+      height:3px;
+      background:#19D3C5;
+      position: absolute;
+      bottom:-1px;
+      left: auto;
+      transition: all 0.5s;
+      
+  }
+   #shopify-section-{{ section.id }} .position-text-div .activea .text:before, #shopify-section-{{ section.id }} .position-text-div .text:hover:before{
+     width:100%;
+     transition: all 0.5s;
+   }
+ .product-position ,
+  .position-text-div{
+    justify-content: center;
+  }
+   .product-position{
+     padding-top:0;
+   }
+  .position-text-div span.activea{
+          background: #fff;
+    }
+  
+  
+  
+  
+  @media(max-width:749px){
+  #shopify-section-{{ section.id }}{
+    /* border-bottom: 2px solid #eaeaea; */
+    /* z-index:1; */
+    z-index:50;
+    
+  }
+    #shopify-section-{{ section.id }} .product-position-div{
+          width: 100%;
+      height:55px;
+        overflow: hidden;
+    }
+  .product-position{
+     width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .position-text-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5rem 0.5rem;
+    background: #f3f3f3;
+    column-gap: 15px;
+  }
+  .position-text-div::-webkit-scrollbar{
+    display:none;
+  }
+  .position-text-div span{
+    font-size: 18px;
+    color: #000;
+    margin:auto;
+    /* padding:10px 0; */
+    cursor: pointer;
+    transition: all .3s;
+    line-height: 1.4375;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    flex: 0 0 auto;
+    max-width: fit-content;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+    .position-product-div p{
+      margin:0;
+    }
+  }
+  @media screen and ( max-width: 750px ) {
+  .product-position-div{
+    padding:0;
+  }
+    .position-text-div span{
+          width: 33.3%;
+              max-width: none;
+    }
+    .position-text-div {
+      background: unset;
+      padding: 0 5%;
+              padding: 0;
+        border-radius: 0;
+        width: 100%;
+       column-gap: 0px;
+    }
+    .activea {
+      color: #fff !important;
+     /* border-bottom:2px solid #FF841F !important; */
+      /* background-color: #da2525;
+      border-radius: 20px */
+    }
+    #shopify-section-{{ section.id }} .position-text-div .text{
+        font-size: 14px;
+        margin: 0;
+      padding:0
+    }
+    #shopify-section-{{ section.id }} .position-text-div .text:hover:before{
+      width:0;
+    }
+    #shopify-section-{{ section.id }} .position-text-div .activea .text:before{
+      width:60px;
+              width: 300%;
+    }
+    #shopify-section-{{ section.id }} .position-text-div .text{
+    white-space: nowrap; /* 防止文本换行 */
+    overflow: hidden; /* 超出部分隐藏 */
+    text-overflow: ellipsis;
+    width: 80%;
+    display: block;
+    text-align: center;
+      line-height: 3;
+  }
+  }
+</style>
+
+
+<div
+  class="product-position-div page-width"
+  id="{{ section.settings.sectionname }}"
+>
+  <div class="product-position" id="product-position-{{ product.id }}">
+    <div class="position-text-div">
+      {% for block in section.blocks %}
+        {% if block.type == 'map' %}
+          <span
+            class="smoothScroll {% if forloop.index == 1 %}activea{% endif %}"
+            id="{{ block.settings.maptext | escape }}-text"
+            data-position="{{ block.settings.map }}"
+            onclick="mapClick('{{ block.settings.map | escape }}',this)"
+          >
+            <span class="text"> {{ block.settings.maptext }}</span>
+               <style>
+                 #shopify-section-{{ section.id }} .position-text-div .text{
+                   color:{{ block.settings.text_color }};
+                     font-size: {{block.settings.text_size}}px;
+                 }
+                  #shopify-section-{{ section.id }} .position-text-div .text:hover{
+                   color:{{ block.settings.activea_color}};
+                 }
+                 #shopify-section-{{ section.id }} .position-text-div .activea .text{
+                   color:{{ block.settings.activea_color}};
+                 }
+                #shopify-section-{{ section.id }} .position-text-div .text:before{
+                   background:{{ block.settings.activea_color}};
+                 }
+                 @media screen and ( max-width: 750px ) {
+                   #shopify-section-{{ section.id }} .position-text-div .text{
+                      font-size: {{block.settings.mobile_text_size}}px;
+                   }
+                 }
+               </style>
+          </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+
+  
+  
+  function mapClick(eve,dom) {
+    let sticky_header = document.querySelector("sticky-header")
+    let showAll = true
+    let domArr = document.querySelectorAll('.smoothScroll')
+    const postion_name = dom.getAttribute('data-position')
+    const target_ele = document.querySelector(`[name="${postion_name}"]`);
+    
+    // 移除tag高亮 并高亮当前选中tag
+    domArr.forEach(item=>item.classList.remove('activea'))
+    dom.classList.add('activea')
+    
+
+    
+
+    if(window.innerWidth >= 750){
+      window.scrollTo({
+        top: window.pageYOffset+target_ele.getBoundingClientRect().top - 90 ,
+        behavior: 'smooth' // 可选，启用平滑滚动
+      });
+    }else{
+      window.scrollTo({
+        top: window.pageYOffset+target_ele.getBoundingClientRect().top-50 ,
+        behavior: 'smooth' // 可选，启用平滑滚动
+      });
+    }
+
+    
+
+       handleScroll();
+  }
+  function handleScroll() {
+    const domArr = document.querySelectorAll('.smoothScroll');
+    
+    domArr.forEach(item => {
+      const position = item.getAttribute('data-position');
+      const target_ele = document.querySelector(`[name="${position}"]`);
+      const target_position = target_ele ? target_ele.getBoundingClientRect().top + window.pageYOffset : 0;
+
+      // 获取视口顶部和底部的位置
+      const viewport_top = window.pageYOffset;
+      const viewport_bottom = viewport_top + window.innerHeight;
+
+      if (target_position <= viewport_top + 300) {
+        domArr.forEach(i => i.classList.remove('activea'));
+        item.classList.add('activea');
+      }
+    });
+  }
+
+  // 添加滚动事件监听器
+  window.addEventListener('scroll', handleScroll);
+
+  // 页面加载时，确保第一个元素被选中
+// window.addEventListener('load', () => {
+//     const domArr = document.querySelectorAll('.smoothScroll');
+//     if (domArr.length > 0) {
+//         domArr[0].classList.add('activea');
+//     }
+//     handleScroll(); // 初始化调用，检查当前位置
+// });
+  window.addEventListener('load', () => {
+    const domArr = document.querySelectorAll('.smoothScroll');
+    if (domArr.length > 0) {
+        // 确保第一个元素默认有 activea
+      domArr.forEach(item => item.classList.remove("activea"));
+        domArr[0].classList.add('activea');
+    }
+    // handleScroll();
+    // 不需要立即调用 handleScroll，因为第一次加载时页面顶部应该已经选中第一个元素
+});
+
+
+
+  window.addEventListener('scroll', () => {
+        const section = document.querySelector('#shopify-section-{{ section.id }}');
+      const header = document.querySelector('.shopify-section-group-header-group.section-header');
+    if (section) {
+    const rect = section.getBoundingClientRect();
+    
+    // 当section的顶部到达或超过视口顶部时
+    if (rect.top <= 0) {
+      // 这里写当section到达顶部时要执行的代码
+      // console.log('Section has reached the top of the viewport!');
+      // setTimeout(() => {
+      //     header.classList.add('shopify-section-header-hidden');
+      //    }, 100)  
+     
+    } else {
+      // 可选：当section离开顶部时移除类
+      // console.log('Section !',header);
+      
+    }
+  }
+});
+  
+
+  
+
+</script>
+
+
+{% schema %}
+{
+  "name": "Section Position",
+   "class":"stickey_bar_i",
+  
+  "settings": [
+  {
+    "type": "text",
+    "id": "sectionname",
+    "label": "section name"
+  },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "background"
+    }
+  ],
+  "blocks": [
+  {
+    "type": "map",
+    "name": "map",
+    "settings": [
+      {
+        "type": "text",
+        "id": "map",
+        "label": "position id"
+      },
+      {
+        "type": "text",
+        "id": "maptext",
+        "label": "position name"
+      },
+      {
+            "type": "range",
+            "id": "text_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "text size",
+            "default":36
+          },
+          {
+            "type": "range",
+            "id": "mobile_text_size",
+            "min": 12,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "mobile text size",
+            "default": 24
+          },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "text_color"
+      },
+      {
+        "type": "color",
+        "id": "activea_color",
+        "label": "activea_color"
+      },
+      
+    ]
+  }
+  ],
+  "presets": [{ "name": "Section Position" }]
+}
+{% endschema %}
