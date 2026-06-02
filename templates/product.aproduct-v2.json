@@ -114,6 +114,7 @@
         },
         "sticky_buy_button_cgt3tr": {
           "type": "sticky_buy_button",
+          "disabled": true,
           "settings": {}
         },
         "sticky_buy_button_v2_qaTgPb": {
