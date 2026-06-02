@@ -16202,3 +16202,9 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
 .scrollspy-section .header__menu>ul.with-block .back-to-top .btn-duplicate {
   padding: 0;
 }
+
+.product-sticky-form__card {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
