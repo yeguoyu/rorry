@@ -1,102 +1,102 @@
 <style>
-  .features-show .metafield-rich_text_field ul{
-  margin-top: 0 !important;
-}
-product-info.product__info .rte {
-      margin: 0 !important;
-  } 
-  .tf-mf-trigger {
-  margin-bottom: 0 !important;
+    .features-show .metafield-rich_text_field ul{
+    margin-top: 0 !important;
   }
-  {% comment %} 固定粘性加购按钮 {% endcomment %}
-    .sticky-bar-custom {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: translateY(0) !important;
-    transition: none !important; /* 可选，取消动画 */
-  }
-   #shopify-section-{{ section.id }} {
-      --section-padding-top: {{ section.settings.padding_top }}px;
-      --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  product-info.product__info .rte {
+        margin: 0 !important;
     }
-    .alert--success{
-     color:#4D7C0F !important;
-     background-color:#F5F9EF !important;
+    .tf-mf-trigger {
+    margin-bottom: 0 !important;
     }
-   .product-form__buttons .flex-wrap {
-      flex-wrap: nowrap;
-  }
-    @media screen and (min-width: 1024px) {
-      #shopify-section-{{ section.id }} {
-        {%- assign media_ratio = section.settings.media_size | divided_by: 50.0 -%}
-        --product-grid: auto / minmax(0, {{ media_ratio }}fr) minmax(0, {{ 2.0 | minus: media_ratio }}fr);
+    {% comment %} 固定粘性加购按钮 {% endcomment %}
+      .sticky-bar-custom {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: translateY(0) !important;
+      transition: none !important; /* 可选，取消动画 */
+    }
+     #shopify-section-{{ section.id }} {
+        --section-padding-top: {{ section.settings.padding_top }}px;
+        --section-padding-bottom: {{ section.settings.padding_bottom }}px;
       }
-    }
-
-    {%- assign first_media = product.selected_or_first_available_variant.featured_media | default: product.media.first -%}
-    @media screen and (max-width: 767px) {
-      #shopify-section-{{ section.id }} {
-        --aspect-ratio: {{ first_media.aspect_ratio }};
+      .alert--success{
+       color:#4D7C0F !important;
+       background-color:#F5F9EF !important;
       }
+     .product-form__buttons .flex-wrap {
+        flex-wrap: nowrap;
     }
-
-    @media screen and (min-width: 768px) {
-      #shopify-section-{{ section.id }} {
-        --aspect-ratio: {{ first_media.aspect_ratio }};
+      @media screen and (min-width: 1024px) {
+        #shopify-section-{{ section.id }} {
+          {%- assign media_ratio = section.settings.media_size | divided_by: 50.0 -%}
+          --product-grid: auto / minmax(0, {{ media_ratio }}fr) minmax(0, {{ 2.0 | minus: media_ratio }}fr);
+        }
       }
-    }
-  .tf-box { overflow: hidden; margin-bottom: 20px; }
-    .tf-list { list-style: none; padding: 0; margin: 0; }
-    .tf-item { display: flex; justify-content: space-between; align-items: center; padding: 16px; border-bottom: 1px solid #e5e5e5; cursor: pointer; transition: background 0.2s ease; }
-    .tf-item:last-child { border-bottom: none; }
-    .tf-item:hover { background: #f9f9f9; }
-    .tf-item-static { cursor: default; flex-direction: column; align-items: flex-start; gap: 12px; }
-    .tf-item-static:hover { background: transparent; }
-    .tf-payment-icons { display: flex; flex-wrap: wrap; gap: 6px; }
-    .tf-payment-icons svg { width: 38px; height: 24px; }
-    .tf-delivery-img { max-height: 24px; width: auto; object-fit: contain; }
-  .tf-modal { border: none; border-radius: 8px; padding: 0; width: 90%; max-width: 480px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: auto; }
-  .tf-modal::backdrop { background: rgba(0, 0, 0, 0.5); }
-  .tf-modal-header { display: flex; justify-content: space-between; align-items: center; padding: 20px;margin-bottom:20px; border-bottom: 1px solid #e5e5e5; position: sticky; top: 0; background: #fff; z-index: 2; }
-  .tf-modal-title { font-size: 1.125rem; font-weight: 600; margin: 0; }
-  .tf-modal-close { cursor: pointer; background: transparent; border: 1px solid #ddd; border-radius: 4px; display: flex; padding: 4px; transition: background 0.2s; }
-  .tf-modal-close:hover { background: #f0f0f0; }
-  .tf-modal-body { padding: 0 20px 20px 20px; max-height: 65vh; overflow-y: auto; }
-  .tf-accordion { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
-  .tf-accordion:last-child { border-bottom: none; }
-  .tf-accordion-summary { display: flex; justify-content: space-between; align-items: center; cursor: pointer; list-style: none; }
-  .tf-accordion-summary::-webkit-details-marker { display: none; }
-  .tf-accordion[open] .tf-chevron { transform: rotate(180deg); }
-  .tf-accordion-content { margin-top: 12px; color: #555; font-size: 0.9rem; line-height: 1.6; }
-  .tf-mf-trigger { margin:20px 0;display: block; cursor: pointer; padding: 20px 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;  transition: opacity 0.2s; }
-  .tf-mf-trigger:hover { opacity: 0.7; }
-  .tf-mf-header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0px; }
-  .tf-mf-title { font-size: 1.125rem; font-weight: 600; margin: 0; }
-  .tf-mf-summary p, .tf-mf-summary img, .tf-mf-summary ul, .tf-mf-summary ol, .tf-mf-summary blockquote, .tf-mf-summary h1, .tf-mf-summary h2, .tf-mf-summary h3, .tf-mf-summary h4, .tf-mf-summary h6 { display: none !important; }
-  .tf-mf-summary h5 strong{font-weight: 400 !important;}
-  .tf-mf-summary h5 { display: list-item !important; list-style-type: disc !important; margin: 0 0 8px 24px !important; font-size: 1rem !important; font-weight: 400 !important; line-height: 1.4 !important; color: #333 !important; }
-  .tf-mf-modal { border: none; border-radius: 8px; padding: 0; width: 90%; max-width: 550px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: auto; }
-  .tf-mf-modal::backdrop { background: rgba(0, 0, 0, 0.5); }
-  .tf-mf-modal-body { padding: 20px;padding-top:0px; max-height: 70vh; overflow-y: auto; }
-  .tf-mf-modal-body h5 { font-size: 16px !important; font-weight: 600; margin: 20px 0 6px 0; color: #111; }
-  .tf-mf-modal-body p { font-size: 0.95rem; line-height: 1.5; color: #555; margin: 0 0 10px 0; }
-  .tf-mf-modal-body > *:first-child { margin-top: 0; }
-  .product__metafield-popup{margin-top:0px;}
-    {% comment %} .tf-coupon-box { ... 旧版注释样式 ... } {% endcomment %}
-  .tf-coupon-box{display:flex;margin-bottom:10px;align-items:stretch;width:80%;-webkit-mask-image:radial-gradient(circle at 0 0,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 0,transparent 5px,#000 5.5px),radial-gradient(circle at 0 100%,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 100%,transparent 5px,#000 5.5px);-webkit-mask-size:51% 51%;-webkit-mask-position:top left,top right,bottom left,bottom right;-webkit-mask-repeat:no-repeat;mask-image:radial-gradient(circle at 0 0,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 0,transparent 5px,#000 5.5px),radial-gradient(circle at 0 100%,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 100%,transparent 5px,#000 5.5px);mask-size:51% 51%;mask-position:top left,top right,bottom left,bottom right;mask-repeat:no-repeat}.tf-coupon-left{background:#e8e4f2;padding:20px 14px;display:flex;align-items:center;gap:10px;flex:1}.tf-coupon-icon{color:#000;flex-shrink:0;width:16px;height:16px}.tf-coupon-save-text{background:#000;color:#fff;font-size:11px;font-weight:800;padding:3px 10px;border-radius:12px;text-transform:uppercase;line-height:1.2;flex-shrink:0}.tf-coupon-amount{font-size:16px;font-weight:800;color:#000;white-space:nowrap;flex-shrink:0}.tf-coupon-title{font-size:16px;color:#000;margin:0}.tf-coupon-title p{margin:0}.tf-coupon-right{background:#9887b8;padding:10px 18px;display:flex;align-items:center;justify-content:center;border-left:2px dashed #fff}.tf-coupon-copy-btn{color:#fff;font-size:13px;font-weight:600;text-decoration:underline;background:none;border:none;padding:0;cursor:pointer;transition:opacity .2s;white-space:nowrap}.tf-coupon-copy-btn:hover{opacity:.8}.tf-coupon-timer-row{display:flex;align-items:center;gap:6px;color:#666;font-size:13px;font-weight:500;margin-bottom:15px}.tf-coupon-timer-row svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.product__coupon{margin-top:10px}@media (max-width:768px){.tf-coupon-left{flex-wrap:wrap;gap:8px;padding:10px}.tf-coupon-right{padding:10px}}
-  .tf-coupon-title{margin-left:10px;}
 
-   @media (max-width: 1400px) {.tf-coupon-box{width:100%;}}
-   @media (max-width: 768px) {
-    .tf-coupon-left{min-width:100px;}
-    .tf-item{padding:8px;}
-    .tf-item .icon-custom{width:14px;height:14px;}
-    .tf-item .text-base{font-size:14px;}
-    .tf-right-icon{width:14px;height:14px;}
-    .tf-item:last-child{margin-top:8px;}
-    .tf-item-static{gap:8px;}
-    .tf-coupon-title{font-size:14px;margin-left:23px;}
-  }
+      {%- assign first_media = product.selected_or_first_available_variant.featured_media | default: product.media.first -%}
+      @media screen and (max-width: 767px) {
+        #shopify-section-{{ section.id }} {
+          --aspect-ratio: {{ first_media.aspect_ratio }};
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        #shopify-section-{{ section.id }} {
+          --aspect-ratio: {{ first_media.aspect_ratio }};
+        }
+      }
+    .tf-box { overflow: hidden; margin-bottom: 20px; }
+      .tf-list { list-style: none; padding: 0; margin: 0; }
+      .tf-item { display: flex; justify-content: space-between; align-items: center; padding: 16px; border-bottom: 1px solid #e5e5e5; cursor: pointer; transition: background 0.2s ease; }
+      .tf-item:last-child { border-bottom: none; }
+      .tf-item:hover { background: #f9f9f9; }
+      .tf-item-static { cursor: default; flex-direction: column; align-items: flex-start; gap: 12px; }
+      .tf-item-static:hover { background: transparent; }
+      .tf-payment-icons { display: flex; flex-wrap: wrap; gap: 6px; }
+      .tf-payment-icons svg { width: 38px; height: 24px; }
+      .tf-delivery-img { max-height: 24px; width: auto; object-fit: contain; }
+    .tf-modal { border: none; border-radius: 8px; padding: 0; width: 90%; max-width: 480px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: auto; }
+    .tf-modal::backdrop { background: rgba(0, 0, 0, 0.5); }
+    .tf-modal-header { display: flex; justify-content: space-between; align-items: center; padding: 20px;margin-bottom:20px; border-bottom: 1px solid #e5e5e5; position: sticky; top: 0; background: #fff; z-index: 2; }
+    .tf-modal-title { font-size: 1.125rem; font-weight: 600; margin: 0; }
+    .tf-modal-close { cursor: pointer; background: transparent; border: 1px solid #ddd; border-radius: 4px; display: flex; padding: 4px; transition: background 0.2s; }
+    .tf-modal-close:hover { background: #f0f0f0; }
+    .tf-modal-body { padding: 0 20px 20px 20px; max-height: 65vh; overflow-y: auto; }
+    .tf-accordion { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
+    .tf-accordion:last-child { border-bottom: none; }
+    .tf-accordion-summary { display: flex; justify-content: space-between; align-items: center; cursor: pointer; list-style: none; }
+    .tf-accordion-summary::-webkit-details-marker { display: none; }
+    .tf-accordion[open] .tf-chevron { transform: rotate(180deg); }
+    .tf-accordion-content { margin-top: 12px; color: #555; font-size: 0.9rem; line-height: 1.6; }
+    .tf-mf-trigger { margin:20px 0;display: block; cursor: pointer; padding: 20px 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;  transition: opacity 0.2s; }
+    .tf-mf-trigger:hover { opacity: 0.7; }
+    .tf-mf-header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0px; }
+    .tf-mf-title { font-size: 1.125rem; font-weight: 600; margin: 0; }
+    .tf-mf-summary p, .tf-mf-summary img, .tf-mf-summary ul, .tf-mf-summary ol, .tf-mf-summary blockquote, .tf-mf-summary h1, .tf-mf-summary h2, .tf-mf-summary h3, .tf-mf-summary h4, .tf-mf-summary h6 { display: none !important; }
+    .tf-mf-summary h5 strong{font-weight: 400 !important;}
+    .tf-mf-summary h5 { display: list-item !important; list-style-type: disc !important; margin: 0 0 8px 24px !important; font-size: 1rem !important; font-weight: 400 !important; line-height: 1.4 !important; color: #333 !important; }
+    .tf-mf-modal { border: none; border-radius: 8px; padding: 0; width: 90%; max-width: 550px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: auto; }
+    .tf-mf-modal::backdrop { background: rgba(0, 0, 0, 0.5); }
+    .tf-mf-modal-body { padding: 20px;padding-top:0px; max-height: 70vh; overflow-y: auto; }
+    .tf-mf-modal-body h5 { font-size: 16px !important; font-weight: 600; margin: 20px 0 6px 0; color: #111; }
+    .tf-mf-modal-body p { font-size: 0.95rem; line-height: 1.5; color: #555; margin: 0 0 10px 0; }
+    .tf-mf-modal-body > *:first-child { margin-top: 0; }
+    .product__metafield-popup{margin-top:0px;}
+      {% comment %} .tf-coupon-box { ... 旧版注释样式 ... } {% endcomment %}
+    .tf-coupon-box{display:flex;margin-bottom:10px;align-items:stretch;width:80%;-webkit-mask-image:radial-gradient(circle at 0 0,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 0,transparent 5px,#000 5.5px),radial-gradient(circle at 0 100%,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 100%,transparent 5px,#000 5.5px);-webkit-mask-size:51% 51%;-webkit-mask-position:top left,top right,bottom left,bottom right;-webkit-mask-repeat:no-repeat;mask-image:radial-gradient(circle at 0 0,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 0,transparent 5px,#000 5.5px),radial-gradient(circle at 0 100%,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 100%,transparent 5px,#000 5.5px);mask-size:51% 51%;mask-position:top left,top right,bottom left,bottom right;mask-repeat:no-repeat}.tf-coupon-left{background:#e8e4f2;padding:20px 14px;display:flex;align-items:center;gap:10px;flex:1}.tf-coupon-icon{color:#000;flex-shrink:0;width:16px;height:16px}.tf-coupon-save-text{background:#000;color:#fff;font-size:11px;font-weight:800;padding:3px 10px;border-radius:12px;text-transform:uppercase;line-height:1.2;flex-shrink:0}.tf-coupon-amount{font-size:16px;font-weight:800;color:#000;white-space:nowrap;flex-shrink:0}.tf-coupon-title{font-size:16px;color:#000;margin:0}.tf-coupon-title p{margin:0}.tf-coupon-right{background:#9887b8;padding:10px 18px;display:flex;align-items:center;justify-content:center;border-left:2px dashed #fff}.tf-coupon-copy-btn{color:#fff;font-size:13px;font-weight:600;text-decoration:underline;background:none;border:none;padding:0;cursor:pointer;transition:opacity .2s;white-space:nowrap}.tf-coupon-copy-btn:hover{opacity:.8}.tf-coupon-timer-row{display:flex;align-items:center;gap:6px;color:#666;font-size:13px;font-weight:500;margin-bottom:15px}.tf-coupon-timer-row svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.product__coupon{margin-top:10px}@media (max-width:768px){.tf-coupon-left{flex-wrap:wrap;gap:8px;padding:10px}.tf-coupon-right{padding:10px}}
+    .tf-coupon-title{margin-left:10px;}
+
+     @media (max-width: 1400px) {.tf-coupon-box{width:100%;}}
+     @media (max-width: 768px) {
+      .tf-coupon-left{min-width:100px;}
+      .tf-item{padding:8px;}
+      .tf-item .icon-custom{width:14px;height:14px;}
+      .tf-item .text-base{font-size:14px;}
+      .tf-right-icon{width:14px;height:14px;}
+      .tf-item:last-child{margin-top:8px;}
+      .tf-item-static{gap:8px;}
+      .tf-coupon-title{font-size:14px;margin-left:23px;}
+    }
 </style>
 
 {%- liquid
@@ -114,14 +114,14 @@ product-info.product__info .rte {
     href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css"
     media="print"
     onload="this.media='all'"
-  />
+  >
   <link
     id="ModelViewerOverride"
     rel="stylesheet"
     href="{{ 'model-viewer-ui.css' | asset_url }}"
     media="print"
     onload="this.media='all'"
-  />
+  >
 {%- endif -%}
 
 {%- if product.quantity_price_breaks_configured? -%}
@@ -183,7 +183,7 @@ product-info.product__info .rte {
       {%- endif -%}
     {%- endif -%}
   {%- endcapture -%}
-{%- endif  -%}
+{%- endif -%}
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
   <div class="page-width{% if media_count > 0 %}{% if section.settings.full_width %} page-width--full{% endif %}{% else %} page-width--narrow{% endif %} relative">
@@ -491,7 +491,7 @@ product-info.product__info .rte {
                   }
                 </script>
               </div>
-            
+
             {%- when '@app' -%}
               {%- render block -%}
 
@@ -506,26 +506,29 @@ product-info.product__info .rte {
                     assign prev_block = section.blocks[prev_index]
                     assign next_index = forloop.index0 | plus: 1
                     assign next_block = section.blocks[next_index]
-  
+
                     if prev_block.type == 'sticky_buy_button'
                       assign prev_index = prev_index | minus: 1
                       assign prev_block = section.blocks[prev_index]
                     endif
-  
+
                     if next_block.type == 'sticky_buy_button'
                       assign next_index = next_index | plus: 1
                       assign next_block = section.blocks[next_index]
                     endif
-  
+
                     if prev_block.type != 'text'
                       assign block_index = 1
                     else
                       assign block_index = block_index | plus: 1
                     endif
-  
+
                     assign modulo = block_index | modulo: 2
                   -%}
-                  <div class="product__text{% if modulo == 0 %} even{% endif %}{% if prev_block.type != 'text' %} first{% endif %}{% if next_block.type != 'text' %} last{% endif %}" {{ block.shopify_attributes }}>
+                  <div
+                    class="product__text{% if modulo == 0 %} even{% endif %}{% if prev_block.type != 'text' %} first{% endif %}{% if next_block.type != 'text' %} last{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
                     <div class="product__text-inner flex items-center gap-2d5">
                       {%- if block.settings.icon_image != blank -%}
                         {%- liquid
@@ -538,9 +541,21 @@ product-info.product__info .rte {
                         <figure class="media media--transparent relative inline-block">
                           {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
                           {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                          {%- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape -%}
+                          {%- assign image_alt = block.settings.icon_image.alt
+                            | default: block.settings.accessibility_info
+                            | escape
+                          -%}
                           {%- assign image_alt = image_alt | default: block.settings.text | escape -%}
-                          {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
+                          {{-
+                            block.settings.icon_image
+                            | image_url: width: block.settings.icon_image.width
+                            | image_tag:
+                              loading: 'lazy',
+                              sizes: sizes,
+                              widths: widths,
+                              alt: image_alt,
+                              class: 'image-fit'
+                          -}}
                         </figure>
                       {%- elsif block.settings.icon != 'none' -%}
                         {%- liquid
@@ -556,7 +571,7 @@ product-info.product__info .rte {
                   </div>
                 {%- else -%}
                   <p class="product__vendor {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
-                    {{- product.vendor | link_to_vendor : class: 'reversed-link' -}}
+                    {{- product.vendor | link_to_vendor: class: 'reversed-link' -}}
                   </p>
                 {%- endif -%}
               {%- endif -%}
@@ -566,32 +581,46 @@ product-info.product__info .rte {
                 {{- product.selected_or_first_available_variant.sku -}}
               </p>
 
-            {% comment %} {%- when 'badges' -%}
-              <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
-                {%- render 'product-badges', product: product, use_variant: true, show_sold_out: block.settings.show_sold_out, show_save_amount: block.settings.show_save_amount, save_type: block.settings.save_type, class: 'flex flex-wrap gap-3' -%}
-              </div> {% endcomment %}
+              {% comment %}
+                {%- when 'badges' -%}
+                <div class="product__badges" id="Badges-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
+                  {%- render 'product-badges', product: product, use_variant: true, show_sold_out: block.settings.show_sold_out, show_save_amount: block.settings.show_save_amount, save_type: block.settings.save_type, class: 'flex flex-wrap gap-3' -%}
+                </div>
+              {% endcomment %}
 
             {%- when 'description' -%}
               <div class="product__text rte {{ block.settings.text_size }}" {{ block.shopify_attributes }}>
                 {{- product.description -}}
               </div>
-            
+
             {%- when 'title' -%}
               {%- liquid
-                assign price_block = section.blocks | where: "type", "price" | first
-                assign rating_block = section.blocks | where: "type", "rating" | first
+                assign price_block = section.blocks | where: 'type', 'price' | first
+                assign rating_block = section.blocks | where: 'type', 'rating' | first
               -%}
-              <div class="product__title grid gap-3{% if price_block == blank and block.settings.show_price %} with-price{% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %} with-price--on-sale{% endif %}{% endif %}" {{ block.shopify_attributes }}>
+              <div
+                class="product__title grid gap-3{% if price_block == blank and block.settings.show_price %} with-price{% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %} with-price--on-sale{% endif %}{% endif %}"
+                {{ block.shopify_attributes }}
+              >
                 <h1 class="heading leading-none {{ block.settings.title_size }} mobile:{{ block.settings.title_size_mobile }} col-span-full">
-                  <split-words class="split-words js-invisible block" data-animate="fade-up">{{ product.title }}</split-words>
+                  <split-words class="split-words js-invisible block" data-animate="fade-up">
+                    {{- product.title -}}
+                  </split-words>
                 </h1>
 
                 {%- if price_block == blank and block.settings.show_price -%}
                   <div id="Price-{{ section.id }}-{{ product.id }}" class="product__price">
-                    {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:flex-col xl:items-end lg:gap-1d5' -%}
-                    
+                    {%- render 'product-price',
+                      product: product,
+                      use_variant: true,
+                      class: 'flex flex-wrap items-baseline gap-2 lg:flex-col xl:items-end lg:gap-1d5'
+                    -%}
+
                     {%- if product.quantity_price_breaks_configured? -%}
-                      <div class="text-opacity text-sm font-medium leading-tight" id="VolumeNote-{{ section.id }}-{{ product.id }}">
+                      <div
+                        class="text-opacity text-sm font-medium leading-tight"
+                        id="VolumeNote-{{ section.id }}-{{ product.id }}"
+                      >
                         {{- 'products.volume_pricing.note' | t -}}
                       </div>
                     {%- endif -%}
@@ -606,9 +635,17 @@ product-info.product__info .rte {
               </div>
 
               {%- if price_block == blank and block.settings.show_price -%}
-                {%- assign product_form_installment_id = 'ProductFormInstallment-' | append: section.id | append: '-' | append: product.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment text-sm leading-tight' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
+                {%- assign product_form_installment_id = 'ProductFormInstallment-'
+                  | append: section.id
+                  | append: '-'
+                  | append: product.id
+                -%}
+                {%- form 'product',
+                  product,
+                  id: product_form_installment_id,
+                  class: 'installment text-sm leading-tight'
+                -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   {{ form | payment_terms }}
                 {%- endform -%}
               {%- endif -%}
@@ -616,19 +653,33 @@ product-info.product__info .rte {
             {%- when 'price' -%}
               <div class="product__price grid gap-3" {{ block.shopify_attributes }}>
                 <div class="no-js-hidden" id="Price-{{ section.id }}-{{ product.id }}">
-                  {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:gap-1d5' -%}
-                  
+                  {%- render 'product-price',
+                    product: product,
+                    use_variant: true,
+                    class: 'flex flex-wrap items-baseline gap-2 lg:gap-1d5'
+                  -%}
+
                   {%- if product.quantity_price_breaks_configured? -%}
-                    <div class="text-opacity text-sm font-medium leading-tight" id="VolumeNote-{{ section.id }}-{{ product.id }}">
+                    <div
+                      class="text-opacity text-sm font-medium leading-tight"
+                      id="VolumeNote-{{ section.id }}-{{ product.id }}"
+                    >
                       {{- 'products.volume_pricing.note' | t -}}
                     </div>
                   {%- endif -%}
-                  
                 </div>
 
-                {%- assign product_form_installment_id = 'ProductFormInstallment-' | append: section.id | append: '-' | append: product.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment text-sm leading-tight' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
+                {%- assign product_form_installment_id = 'ProductFormInstallment-'
+                  | append: section.id
+                  | append: '-'
+                  | append: product.id
+                -%}
+                {%- form 'product',
+                  product,
+                  id: product_form_installment_id,
+                  class: 'installment text-sm leading-tight'
+                -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   {{ form | payment_terms }}
                 {%- endform -%}
 
@@ -651,16 +702,36 @@ product-info.product__info .rte {
             {%- when 'quantity_selector' -%}
               {%- if product.available -%}
                 <div id="QuantityForm-{{ section.id }}-{{ product.id }}" class="field" {{ block.shopify_attributes }}>
-                  {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
-                  <label for="Quantity-{{ section.id }}-{{ product.id }}" class="quantity__label label" is="quantity-label">
+                  {%- assign cart_qty = cart
+                    | item_count_for_variant: product.selected_or_first_available_variant.id
+                  -%}
+                  <label
+                    for="Quantity-{{ section.id }}-{{ product.id }}"
+                    class="quantity__label label"
+                    is="quantity-label"
+                  >
                     {{ 'products.quantity.label' | t }}
-                    <span id="QuantityRulesCart-{{ section.id }}-{{ product.id }}" class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %} relative">
-                      <span class="quantity-cart font-medium">({{ 'products.quantity.in_cart_html' | t: quantity: cart_qty }})</span>
+                    <span
+                      id="QuantityRulesCart-{{ section.id }}-{{ product.id }}"
+                      class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %} relative"
+                    >
+                      <span class="quantity-cart font-medium"
+                        >({{ 'products.quantity.in_cart_html' | t: quantity: cart_qty }})</span
+                      >
                     </span>
                   </label>
                   <div class="flex items-center gap-4">
-                    <quantity-input class="quantity inline-flex relative" data-section-id="{{ section.id }}" data-product-id="{{ product.id }}">
-                      <button type="button" name="minus" class="quantity__button" aria-label="{{ 'products.quantity.decrease' | t: product: product.title | escape }}">
+                    <quantity-input
+                      class="quantity inline-flex relative"
+                      data-section-id="{{ section.id }}"
+                      data-product-id="{{ product.id }}"
+                    >
+                      <button
+                        type="button"
+                        name="minus"
+                        class="quantity__button"
+                        aria-label="{{ 'products.quantity.decrease' | t: product: product.title | escape }}"
+                      >
                         {%- render 'icon', icon: 'chevron-left', size: 'sm', class: 'stroke-2 transform' -%}
                       </button>
                       <input
@@ -681,8 +752,13 @@ product-info.product__info .rte {
                         step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
                         value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
                         form="{{ product_form_id }}"
-                      />
-                      <button type="button" name="plus" class="quantity__button" aria-label="{{ 'products.quantity.increase' | t: product: product.title | escape }}">
+                      >
+                      <button
+                        type="button"
+                        name="plus"
+                        class="quantity__button"
+                        aria-label="{{ 'products.quantity.increase' | t: product: product.title | escape }}"
+                      >
                         {%- render 'icon', icon: 'chevron-right', size: 'sm', class: 'stroke-2 transform' -%}
                       </button>
                     </quantity-input>
@@ -716,7 +792,7 @@ product-info.product__info .rte {
                           </span>
                           <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
                         {%- endif -%}
-                        
+
                         {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
                           {%- if current_qty_for_volume_pricing < volume_pricing_array.last.minimum_quantity -%}
                             {%- liquid
@@ -762,21 +838,36 @@ product-info.product__info .rte {
                     {%- endif -%}
                   </div>
 
-                  {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 or product.selected_or_first_available_variant.quantity_rule.min > 1 or product.selected_or_first_available_variant.quantity_rule.max != null -%}
-                    <div class="quantity__rules text-sm font-medium leading-tight" id="QuantityRules-{{ section.id }}-{{ product.id }}">
+                  {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1
+                    or product.selected_or_first_available_variant.quantity_rule.min > 1
+                    or product.selected_or_first_available_variant.quantity_rule.max != null
+                  -%}
+                    <div
+                      class="quantity__rules text-sm font-medium leading-tight"
+                      id="QuantityRules-{{ section.id }}-{{ product.id }}"
+                    >
                       {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                         <span class="divider">
-                          {{- 'products.quantity.multiples_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.increment -}}
+                          {{-
+                            'products.quantity.multiples_of'
+                            | t: quantity: product.selected_or_first_available_variant.quantity_rule.increment
+                          -}}
                         </span>
                       {%- endif -%}
                       {%- if product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
                         <span class="divider">
-                          {{- 'products.quantity.minimum_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.min -}}
+                          {{-
+                            'products.quantity.minimum_of'
+                            | t: quantity: product.selected_or_first_available_variant.quantity_rule.min
+                          -}}
                         </span>
                       {%- endif -%}
                       {%- if product.selected_or_first_available_variant.quantity_rule.max != null -%}
                         <span class="divider">
-                          {{- 'products.quantity.maximum_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.max -}}
+                          {{-
+                            'products.quantity.maximum_of'
+                            | t: quantity: product.selected_or_first_available_variant.quantity_rule.max
+                          -}}
                         </span>
                       {%- endif -%}
                     </div>
@@ -791,7 +882,9 @@ product-info.product__info .rte {
                     <span class="caption-large font-medium">{{ 'products.volume_pricing.title' | t }}</span>
                     <ul class="list-unstyled">
                       <li class="text-sm flex gap-2d5 justify-between">
-                        <span class="font-medium">{{ product.selected_or_first_available_variant.quantity_rule.min }}+</span>
+                        <span class="font-medium">
+                          {{- product.selected_or_first_available_variant.quantity_rule.min }}+</span
+                        >
                         {%- liquid
                           if settings.currency_code_enabled
                             assign variant_price = product.selected_or_first_available_variant.price | money_with_currency
@@ -848,7 +941,7 @@ product-info.product__info .rte {
                 image_ratio_mobile: section.settings.image_ratio_mobile,
                 image_fill: settings.product_image_fill
               -%}
-              
+
             {%- when 'product_variations' -%}
               {%- render 'product-variants',
                 block: block,
@@ -907,11 +1000,23 @@ product-info.product__info .rte {
                   <div class="flex items-center gap-2">
                     {%- render 'icon', icon: 'question' -%}
                     {%- if block.settings.help_type == 'drawer' -%}
-                      <button type="button" class="link text-sm leading-tight cursor-pointer" aria-controls="HelpDrawer">
+                      <button
+                        type="button"
+                        class="link text-sm leading-tight cursor-pointer"
+                        aria-controls="HelpDrawer"
+                      >
                         {{- block.settings.help_label | escape -}}
                       </button>
                     {%- else -%}
-                      <a class="link text-sm leading-tight cursor-pointer"{% if block.settings.help_page != blank %} href="{{ block.settings.help_page.url }}"{% if block.settings.help_page_external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %}>
+                      <a
+                        class="link text-sm leading-tight cursor-pointer"
+                        {% if block.settings.help_page != blank %}
+                          href="{{ block.settings.help_page.url }}"
+                          {%- if block.settings.help_page_external %} target="_blank" rel="noopener"{% endif -%}
+                        {% else %}
+                          role="link" aria-disabled="true"
+                        {% endif %}
+                      >
                         {{- block.settings.help_label | escape -}}
                       </a>
                     {%- endif -%}
@@ -927,7 +1032,15 @@ product-info.product__info .rte {
                     {{- block.settings.help_label | escape -}}
                   </button>
                 {%- else -%}
-                  <a class="link text-sm leading-tight cursor-pointer"{% if block.settings.help_page != blank %} href="{{ block.settings.help_page.url }}"{% if block.settings.help_page_external %} target="_blank" rel="noopener"{% endif %}{% else %} role="link" aria-disabled="true"{% endif %}>
+                  <a
+                    class="link text-sm leading-tight cursor-pointer"
+                    {% if block.settings.help_page != blank %}
+                      href="{{ block.settings.help_page.url }}"
+                      {%- if block.settings.help_page_external %} target="_blank" rel="noopener"{% endif -%}
+                    {% else %}
+                      role="link" aria-disabled="true"
+                    {% endif %}
+                  >
                     {{- block.settings.help_label | escape -}}
                   </a>
                 {%- endif -%}
@@ -945,7 +1058,7 @@ product-info.product__info .rte {
                 limit: block.settings.product_limit,
                 heading: block.settings.heading,
                 show_vendor: block.settings.show_vendor,
-                show_price: block.settings.show_price,
+                show_price: block.settings.show_price
               -%}
 
             {%- when 'liquid' -%}
@@ -956,11 +1069,20 @@ product-info.product__info .rte {
               {%- endif -%}
 
             {%- when 'collapsible_tab' -%}
-              <details class="product__accordion details {{ block.settings.style }}" is="accordion-details"{% if block.settings.opened %} open{% endif %} {{ block.shopify_attributes }}>
+              <details
+                class="product__accordion details {{ block.settings.style }}"
+                is="accordion-details"
+                {% if block.settings.opened %}
+                  open
+                {% endif %}
+                {{ block.shopify_attributes }}
+              >
                 <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
                   <div class="flex items-center gap-2d5">
                     {%- render 'icon-accordion', icon: block.settings.icon -%}
-                    <span class="text-sm-base font-medium leading-none">{{ block.settings.heading | default: block.settings.page.title | escape }}</span>
+                    <span class="text-sm-base font-medium leading-none">
+                      {{- block.settings.heading | default: block.settings.page.title | escape -}}
+                    </span>
                   </div>
                   {%- render 'icon', icon: 'plus-2', size: 'xs', class: 'shrink-0' -%}
                 </summary>
@@ -978,15 +1100,23 @@ product-info.product__info .rte {
                   assign countdown_time = product.metafields.theme.countdown.value | date: '%s' | times: 1
                 -%}
                 {%- if countdown_time > now_time -%}
-                  <div class="product-countdown grid sm:flex items-center justify-between gap-2d5" id="shopify-block-{{ block.id }}" {{ block.shopify_attributes }}>
+                  <div
+                    class="product-countdown grid sm:flex items-center justify-between gap-2d5"
+                    id="shopify-block-{{ block.id }}"
+                    {{ block.shopify_attributes }}
+                  >
                     <div class="flex items-center gap-3">
                       {%- render 'icon', icon: 'countdown', size: 'xl', class: 'shrink-0 block lg:hidden xl:block' -%}
                       <div class="grid">
                         {%- if block.settings.heading != blank -%}
-                          <p class="heading text-base lg:text-lg xl:text-xl leading-tight">{{ block.settings.heading | escape }}</p>
+                          <p class="heading text-base lg:text-lg xl:text-xl leading-tight">
+                            {{ block.settings.heading | escape }}
+                          </p>
                         {%- endif -%}
                         {%- if block.settings.subheading != blank -%}
-                          <p class="uppercase text-3xs font-medium leading-none tracking-widest">{{ block.settings.subheading | escape }}</p>
+                          <p class="uppercase text-3xs font-medium leading-none tracking-widest">
+                            {{ block.settings.subheading | escape }}
+                          </p>
                         {%- endif -%}
                       </div>
                     </div>
@@ -995,16 +1125,20 @@ product-info.product__info .rte {
                       data-expires="{{ product.metafields.theme.countdown.value | date: '%FT%T%:z' | escape }}"
                     >
                       <div class="countdown__item">
-                        <p>--</p><span>{{ 'general.date.days' | t }}</span>
+                        <p>--</p>
+                        <span>{{ 'general.date.days' | t }}</span>
                       </div>
                       <div class="countdown__item">
-                        <p>--</p><span>{{ 'general.date.hours' | t }}</span>
+                        <p>--</p>
+                        <span>{{ 'general.date.hours' | t }}</span>
                       </div>
                       <div class="countdown__item">
-                        <p>--</p><span>{{ 'general.date.minutes' | t }}</span>
+                        <p>--</p>
+                        <span>{{ 'general.date.minutes' | t }}</span>
                       </div>
                       <div class="countdown__item">
-                        <p>--</p><span>{{ 'general.date.seconds' | t }}</span>
+                        <p>--</p>
+                        <span>{{ 'general.date.seconds' | t }}</span>
                       </div>
                     </countdown-timer>
                     <style>
@@ -1017,10 +1151,14 @@ product-info.product__info .rte {
               {%- endif -%}
 
             {%- when 'back_in_stock' -%}
-              <div id="BackInStock-{{ section.id }}-{{ product.id }}" class="back-in-stock" {{ block.shopify_attributes }}>
+              <div
+                id="BackInStock-{{ section.id }}-{{ product.id }}"
+                class="back-in-stock"
+                {{ block.shopify_attributes }}
+              >
                 {%- liquid
                   assign check_against_inventory = true
-                  if product.selected_or_first_available_variant.inventory_management != 'shopify' or  product.selected_or_first_available_variant.inventory_policy == 'continue'
+                  if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
                     assign check_against_inventory = false
                   endif
                   if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
@@ -1036,12 +1174,12 @@ product-info.product__info .rte {
             {%- when 'product_bundle' -%}
               {%- liquid
                 assign products = block.settings.products
-                
+
                 if block.settings.metafield != blank
                   assign metafield_parts = block.settings.metafield | split: '.'
                   assign metafield_namespace = metafield_parts | first
                   assign metafield_key = metafield_parts | last
-                  
+
                   assign metafield = product.metafields[metafield_namespace][metafield_key]
                   if metafield.value != blank and metafield.list?
                     assign products = metafield.value
@@ -1055,7 +1193,14 @@ product-info.product__info .rte {
               -%}
               <div id="ProductBundle-{{ section.id }}-{{ product.id }}" {{ block.shopify_attributes }}>
                 {%- if products.count > 0 -%}
-                  <details class="product__accordion details with-background" is="product-bundle-details"{% if product.selected_or_first_available_variant.available and block.settings.opened %} open{% endif %} form="{{ product_form_id }}">
+                  <details
+                    class="product__accordion details with-background"
+                    is="product-bundle-details"
+                    {% if product.selected_or_first_available_variant.available and block.settings.opened %}
+                      open
+                    {% endif %}
+                    form="{{ product_form_id }}"
+                  >
                     <summary class="details__summary flex items-center justify-between gap-2 cursor-pointer">
                       <div class="flex items-center gap-2d5">
                         {%- if block.settings.icon_image != blank -%}
@@ -1069,9 +1214,21 @@ product-info.product__info .rte {
                           <figure class="media media--transparent relative inline-block">
                             {%- capture sizes -%}{{ icon_width }}px{%- endcapture -%}
                             {%- capture widths -%}{{ icon_width }}, {{ icon_width | times: 2 | at_most: block.settings.icon_image.width }}{%- endcapture -%}
-                            {%- assign image_alt = block.settings.icon_image.alt | default: block.settings.accessibility_info | escape -%}
+                            {%- assign image_alt = block.settings.icon_image.alt
+                              | default: block.settings.accessibility_info
+                              | escape
+                            -%}
                             {%- assign image_alt = image_alt | default: block.settings.heading | escape -%}
-                            {{- block.settings.icon_image | image_url: width: block.settings.icon_image.width | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: image_alt, class: 'image-fit' -}}
+                            {{-
+                              block.settings.icon_image
+                              | image_url: width: block.settings.icon_image.width
+                              | image_tag:
+                                loading: 'lazy',
+                                sizes: sizes,
+                                widths: widths,
+                                alt: image_alt,
+                                class: 'image-fit'
+                            -}}
                           </figure>
                         {%- elsif block.settings.icon != 'none' -%}
                           {%- liquid
@@ -1096,17 +1253,34 @@ product-info.product__info .rte {
                             assign show_variant_title = false
                           endif
 
-                          if product.first_available_variant == nil
+                          if product.first_available_variant == null
                             assign show_variant_title = false
                           endif
                         -%}
                         {%- if variant.product -%}
                           {%- assign variant_image = variant.image | default: variant.product.featured_image -%}
-                          <label class="product-bundle__info flex items-center gap-4 md:gap-6" for="Recommendations-{{ section.id }}-{{ variant.id }}">
-                            <input name="bundles" value="{{ variant.id }}" data-price="{{ variant.price }}" class="checkbox" id="Recommendations-{{ section.id }}-{{ variant.id }}" type="checkbox"{% unless variant.available %} disabled{% endunless %} />
+                          <label
+                            class="product-bundle__info flex items-center gap-4 md:gap-6"
+                            for="Recommendations-{{ section.id }}-{{ variant.id }}"
+                          >
+                            <input
+                              name="bundles"
+                              value="{{ variant.id }}"
+                              data-price="{{ variant.price }}"
+                              class="checkbox"
+                              id="Recommendations-{{ section.id }}-{{ variant.id }}"
+                              type="checkbox"
+                              {% unless variant.available %}
+                                disabled
+                              {% endunless %}
+                            >
                             {%- if variant_image -%}
                               <picture class="horizontal-product__media media media--{{ settings.product_image_ratio }}{% unless settings.product_image_fill %} media--contain{% endunless %} relative overflow-hidden shrink-0 pointer-events-none">
-                                {{- variant_image | image_url: width: variant_image.width | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image' -}}
+                                {{-
+                                  variant_image
+                                  | image_url: width: variant_image.width
+                                  | image_tag: loading: 'lazy', widths: '180,360,540', is: 'lazy-image'
+                                -}}
                               </picture>
                             {%- endif -%}
                             <div class="horizontal-product__details grow flex flex-col justify-start gap-1d5">
@@ -1127,7 +1301,12 @@ product-info.product__info .rte {
                             </div>
                             <div class="horizontal-product__quantity shrink-0">
                               {%- if variant.available -%}
-                                {%- render 'product-price', product: variant.product, variant: variant, use_variant: true, class: 'flex flex-wrap items-baseline gap-2 lg:flex-col xl:items-end lg:gap-1d5' -%}
+                                {%- render 'product-price',
+                                  product: variant.product,
+                                  variant: variant,
+                                  use_variant: true,
+                                  class: 'flex flex-wrap items-baseline gap-2 lg:flex-col xl:items-end lg:gap-1d5'
+                                -%}
                               {%- else -%}
                                 <span class="text-sm-base text-opacity">{{ 'products.product.sold_out' | t }}</span>
                               {%- endif -%}
@@ -1147,25 +1326,30 @@ product-info.product__info .rte {
               {%- assign custom_name = block.settings.title | escape -%}
               <div class="field" {{ block.shopify_attributes }}>
                 {%- if block.settings.type == 'checkbox' -%}
-                  <label for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}" class="flex items-center gap-3">
+                  <label
+                    for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}"
+                    class="flex items-center gap-3"
+                  >
                     <input
                       type="hidden"
                       name="properties[{{ custom_name }}]"
                       form="{{ product_form_id }}"
                       value="{{ block.settings.unchecked_value | escape }}"
-                    />
+                    >
                     <input
                       type="checkbox"
                       id="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}"
                       name="properties[{{ custom_name }}]"
                       form="{{ product_form_id }}"
                       value="{{ block.settings.checked_value | escape }}"
-                      {%- if block.settings.required %} required{% endif -%}
-                    />
+                      {%- if block.settings.required %}
+                        required
+                      {% endif -%}
+                    >
                     {{- block.settings.title | escape -}}
                   </label>
 
-                  {%- elsif block.settings.type == 'radio' -%}
+                {%- elsif block.settings.type == 'radio' -%}
                   <div class="grid gap-4">
                     <p>{{ block.settings.title | escape }}</p>
                     {%- assign options = block.settings.radio_options | split: ',' -%}
@@ -1174,15 +1358,20 @@ product-info.product__info .rte {
                         {%- for option in options -%}
                           {%- assign option_2 = option | strip | escape -%}
                           <li>
-                            <label for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}-{{ forloop.index0 }}" class="inline-flex items-center gap-3">
+                            <label
+                              for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}-{{ forloop.index0 }}"
+                              class="inline-flex items-center gap-3"
+                            >
                               <input
                                 type="radio"
                                 id="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}-{{ forloop.index0 }}"
                                 name="properties[{{ custom_name }}]"
                                 form="{{ product_form_id }}"
                                 value="{{ option_2 }}"
-                                {%- if block.settings.required %} required{% endif -%}
-                              />
+                                {%- if block.settings.required %}
+                                  required
+                                {% endif -%}
+                              >
                               {{- option_2 -}}
                             </label>
                           </li>
@@ -1190,7 +1379,7 @@ product-info.product__info .rte {
                       </ul>
                     {%- endif -%}
                   </div>
-  
+
                 {%- else -%}
                   {%- case block.settings.type -%}
                     {%- when 'text' -%}
@@ -1201,10 +1390,17 @@ product-info.product__info .rte {
                         name="properties[{{ custom_name }}]"
                         form="{{ product_form_id }}"
                         placeholder="{{ block.settings.title | escape }}"
-                        {%- if block.settings.required %} required{% endif -%}
-                      />
-                      <label class="label is-floating" for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}">{{ block.settings.title | escape }}</label>
-  
+                        {%- if block.settings.required %}
+                          required
+                        {% endif -%}
+                      >
+                      <label
+                        class="label is-floating"
+                        for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}"
+                      >
+                        {{- block.settings.title | escape -}}
+                      </label>
+
                     {%- when 'textarea' -%}
                       <textarea
                         class="textarea is-floating"
@@ -1213,10 +1409,17 @@ product-info.product__info .rte {
                         name="properties[{{ custom_name }}]"
                         form="{{ product_form_id }}"
                         placeholder=" "
-                        {%- if block.settings.required %} required{% endif -%}
+                        {%- if block.settings.required %}
+                          required
+                        {% endif -%}
                       ></textarea>
-                      <label class="label is-floating" for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}">{{ block.settings.title | escape }}</label>
-  
+                      <label
+                        class="label is-floating"
+                        for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}"
+                      >
+                        {{- block.settings.title | escape -}}
+                      </label>
+
                     {%- when 'select' -%}
                       {%- assign options = block.settings.select_options | split: ',' -%}
                       {%- if options.size > 0 -%}
@@ -1225,7 +1428,11 @@ product-info.product__info .rte {
                           id="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}"
                           name="properties[{{ custom_name }}]"
                           form="{{ product_form_id }}"
-                          {%- if block.settings.required %} required{% else %} is="custom-select"{% endif -%}
+                          {%- if block.settings.required %}
+                            required
+                          {% else %}
+                            is="custom-select"
+                          {% endif -%}
                         >
                           <option value="" disabled selected></option>
                           {%- for option in options -%}
@@ -1235,7 +1442,12 @@ product-info.product__info .rte {
                         </select>
                         {%- render 'icon', icon: 'chevron-up', size: 'sm', class: 'absolute pointer-events-none' -%}
                       {%- endif -%}
-                      <label class="label{% if options.size > 0 %} is-floating{% endif %}" for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}">{{ block.settings.title | escape }}</label>
+                      <label
+                        class="label{% if options.size > 0 %} is-floating{% endif %}"
+                        for="LineItemInput-{{ section.id }}-{{ product.id }}-{{ block.id }}"
+                      >
+                        {{- block.settings.title | escape -}}
+                      </label>
                   {%- endcase -%}
                 {%- endif -%}
               </div>
@@ -1244,7 +1456,7 @@ product-info.product__info .rte {
       </product-info>
     </div>
 
-    {%- assign sticky_buy_button = section.blocks | where: "type", "sticky_buy_button" | first -%}
+    {%- assign sticky_buy_button = section.blocks | where: 'type', 'sticky_buy_button' | first -%}
     {%- if product.available and sticky_buy_button -%}
       <product-sticky-form
         class="product-sticky-form w-full fixed z-20 bottom-0 right-0 pointer-events-none"
@@ -1252,11 +1464,21 @@ product-info.product__info .rte {
         form="{{ product_form_id }}"
       >
         <div class="product-sticky-form__card grid gap-4 opacity-0 invisible pointer-events-auto">
-          {%- assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
+          {%- assign featured_media = product.selected_or_first_available_variant.featured_media
+            | default: product.featured_media
+          -%}
           <div class="product-sticky-form__variant{% if featured_media == blank %} no-image{% endif %} grid items-center gap-4">
             {%- if featured_media != blank -%}
-              <div class="hidden md:block media media--adapt relative overflow-hidden" data-widths="80,160" data-sticky-product-media>
-                {{- featured_media | image_url: width: featured_media.width | image_tag: loading: 'lazy', sizes: '80px', widths: '80,160', is: 'lazy-image' -}}
+              <div
+                class="hidden md:block media media--adapt relative overflow-hidden"
+                data-widths="80,160"
+                data-sticky-product-media
+              >
+                {{-
+                  featured_media
+                  | image_url: width: featured_media.width
+                  | image_tag: loading: 'lazy', sizes: '80px', widths: '80,160', is: 'lazy-image'
+                -}}
               </div>
             {%- endif -%}
 
@@ -1271,7 +1493,11 @@ product-info.product__info .rte {
               </div>
               <div id="StickyPrice-{{ section.id }}-{{ product.id }}">
                 {%- if product.quantity_price_breaks_configured? != true -%}
-                  {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-center gap-2 lg:gap-1d5' -%}
+                  {%- render 'product-price',
+                    product: product,
+                    use_variant: true,
+                    class: 'flex flex-wrap items-center gap-2 lg:gap-1d5'
+                  -%}
                 {%- else -%}
                   {%- liquid
                     assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id
@@ -1302,7 +1528,7 @@ product-info.product__info .rte {
                       </span>
                       <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
                     {%- endif -%}
-                    
+
                     {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
                       {%- if current_qty_for_volume_pricing < volume_pricing_array.last.minimum_quantity -%}
                         {%- liquid
@@ -1351,7 +1577,7 @@ product-info.product__info .rte {
 
             {%- liquid
               assign check_against_inventory = true
-              if product.selected_or_first_available_variant.inventory_management != 'shopify' or  product.selected_or_first_available_variant.inventory_policy == 'continue'
+              if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
                 assign check_against_inventory = false
               endif
               if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
@@ -1364,8 +1590,12 @@ product-info.product__info .rte {
               form="{{ product_form_id }}"
               class="button button--primary"
               is="hover-button"
-              {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %} disabled{% endif -%}
-              {%- if product.template_suffix == 'pre-order' %} data-pre-order{% endif -%}
+              {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
+                disabled
+              {% endif -%}
+              {%- if product.template_suffix == 'pre-order' %}
+                data-pre-order
+              {% endif -%}
             >
               <span class="btn-fill" data-fill></span>
               <span class="btn-text">
@@ -1384,10 +1614,142 @@ product-info.product__info .rte {
               </span>
             </button>
           </div>
-          <div class="product-form__error-message alert alert--error text-sm font-medium leading-tight" role="alert" hidden></div>
+          <div
+            class="product-form__error-message alert alert--error text-sm font-medium leading-tight"
+            role="alert"
+            hidden
+          ></div>
         </div>
       </product-sticky-form>
     {%- endif -%}
+
+    {%- assign sticky_buy_button_v2 = section.blocks | where: 'type', 'sticky_buy_button_v2' | first -%}
+{%- if product.available and sticky_buy_button_v2 -%}
+  {%- liquid
+    assign check_against_inventory_v2 = true
+    if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
+      assign check_against_inventory_v2 = false
+    endif
+    if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory_v2
+      assign quantity_rule_soldout_v2 = true
+    endif
+  -%}
+
+  <product-sticky-form
+    class="product-sticky-form-v2"
+    id="ProductStickyFormV2-{{ section.id }}-{{ product.id }}"
+    form="{{ product_form_id }}"
+  >
+    <div class="sticky-bar-custom-v2">
+      <div class="sticky-bar-custom-v2__inner">
+        <div class="sticky-bar-custom-v2__info">
+          <span>{{ sticky_buy_button_v2.settings.delivery_text }}</span>
+        </div>
+
+        <div class="sticky-bar-custom-v2__actions">
+          <div class="sticky-bar-custom-v2__price" id="StickyPriceV2-{{ section.id }}-{{ product.id }}">
+            {%- render 'product-price', product: product, use_variant: true, class: 'flex flex-wrap items-center gap-2' -%}
+          </div>
+
+          <button
+            type="submit"
+            name="add"
+            form="{{ product_form_id }}"
+            class="sticky-bar-custom-v2__btn sticky-bar-custom-v2__btn--atc"
+            {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout_v2 %} disabled{% endif -%}
+          >
+            {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout_v2 -%}
+              {{ 'products.product.sold_out' | t }}
+            {%- else -%}
+              {{ 'products.product.add_to_cart' | t }}
+            {%- endif -%}
+          </button>
+
+          <button
+            type="button"
+            class="sticky-bar-custom-v2__btn sticky-bar-custom-v2__btn--buy js-sticky-buy-now-v2-{{ section.id }}-{{ product.id }}"
+            {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout_v2 %} disabled{% endif -%}
+          >
+            {{ sticky_buy_button_v2.settings.buy_now_text }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </product-sticky-form>
+
+  <style>
+    .product-sticky-form-v2{position:fixed!important;left:0!important;bottom:0!important;width:100%!important;z-index:60!important;pointer-events:none}
+    .sticky-bar-custom-v2{pointer-events:auto;background:#fff;box-shadow:0 -5px 20px rgba(0,0,0,.08)}
+    .sticky-bar-custom-v2__inner{display:flex;justify-content:space-between;align-items:center;max-width:1600px;margin:0 auto;padding:15px 40px}
+    .sticky-bar-custom-v2__actions{display:flex;align-items:center;gap:15px}
+    .sticky-bar-custom-v2__btn{padding:12px 30px;border-radius:4px;border:none;cursor:pointer}
+    .sticky-bar-custom-v2__btn--atc{background:transparent;border:1px solid #9887b8;color:#9887b8}
+    .sticky-bar-custom-v2__btn--buy{background:#9887b8;color:#fff}
+    @media (max-width:768px){
+      .sticky-bar-custom-v2__inner{flex-direction:column;align-items:flex-start;padding:10px 15px;gap:8px}
+      .sticky-bar-custom-v2__actions{width:100%;flex-wrap:wrap}
+      .sticky-bar-custom-v2__btn{flex:1;min-width:0;padding:10px 15px}
+    }
+  </style>
+
+  <script>
+    (function() {
+      var buyBtn = document.querySelector('.js-sticky-buy-now-v2-{{ section.id }}-{{ product.id }}');
+      if (!buyBtn) return;
+
+      var productFormId = '{{ product_form_id }}';
+      var currentVariantId = '{{ product.selected_or_first_available_variant.id }}';
+      var variantMap = {
+        {% for variant in product.variants %}
+          "{{ variant.id }}": true{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      };
+
+      function getVariantId() {
+        var form = document.getElementById(productFormId);
+        if (form) {
+          var idInput = form.querySelector('input[name="id"], select[name="id"]');
+          if (idInput && variantMap[idInput.value]) return idInput.value;
+        }
+        var urlVid = new URLSearchParams(window.location.search).get('variant');
+        if (urlVid && variantMap[urlVid]) return urlVid;
+        return currentVariantId;
+      }
+
+      function getQuantity() {
+        var inputs = document.querySelectorAll('input[name="quantity"]');
+        for (var i = 0; i < inputs.length; i++) {
+          if (!inputs[i].closest('[id*="drawer"]') && !inputs[i].closest('.cart-drawer') && !inputs[i].closest('.mini-cart')) {
+            return parseInt(inputs[i].value) || 1;
+          }
+        }
+        return 1;
+      }
+
+      buyBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var vid = getVariantId();
+        var qty = getQuantity();
+        if (!vid) return;
+
+        buyBtn.disabled = true;
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          credentials: 'same-origin',
+          body: JSON.stringify({ id: parseInt(vid), quantity: qty })
+        })
+        .then(function(res) {
+          if (!res.ok) throw new Error(res.status);
+          window.location.href = '/checkout';
+        })
+        .catch(function() {
+          buyBtn.disabled = false;
+        });
+      });
+    })();
+  </script>
+{%- endif -%}
   </div>
 
   {%- if first_3d_model -%}
@@ -1395,7 +1757,7 @@ product-info.product__info .rte {
       {{ product.media | where: 'media_type', 'model' | json }}
     </script>
   {%- endif -%}
-  
+
   <script type="application/ld+json">
     {{- product | structured_data -}}
   </script>
@@ -1641,7 +2003,7 @@ product-info.product__info .rte {
     }
   ],
   "blocks": [
-        {
+    {
       "type": "coupon_code",
       "name": "Discount Coupon Box",
       "limit": 3,
@@ -3545,6 +3907,25 @@ product-info.product__info .rte {
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.sticky_buy_button.settings.paragraph.content"
+        }
+      ]
+    },
+    {
+      "type": "sticky_buy_button_v2",
+      "name": "Sticky Buy Button V2",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "delivery_text",
+          "label": "Delivery text",
+          "default": "In Stock—Estimated delivery in 1-5 business days."
+        },
+        {
+          "type": "text",
+          "id": "buy_now_text",
+          "label": "Buy now button text",
+          "default": "Buy Now"
         }
       ]
     }
