@@ -1,0 +1,223 @@
+<style>
+  .zl-video-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: {{ section.settings.background }};
+  }
+
+  .zl-video-container {
+    width: 90%;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .zl-video-grid {
+    display: grid;
+    grid-template-columns: repeat({{ section.settings.cols_pc }}, 1fr);
+    gap: {{ section.settings.gap_pc }}px;
+  }
+
+  .zl-video-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 177.77%;
+    background: #000;
+    border-radius: {{ section.settings.border_radius }}px;
+    overflow: hidden;
+  }
+
+  .zl-video-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+  }
+
+  @media screen and (max-width: 750px) {
+    .zl-video-section-{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }
+    .zl-video-container {
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .zl-video-grid {
+      grid-template-columns: repeat({{ section.settings.cols_mb }}, 1fr);
+      gap: {{ section.settings.gap_mb }}px;
+    }
+  }
+</style>
+
+<div class="zl-video-section-{{ section.id }}" name="{{ section.settings.sectionname }}">
+  <div class="zl-video-container">
+    <div class="zl-video-grid">
+      {% for block in section.blocks %}
+        <div class="zl-video-item" {{ block.shopify_attributes }}>
+          {% if block.settings.video != blank %}
+            {{ block.settings.video | video_tag: image_size: '1100x', loop: false, controls: true, muted: false, class: 'zl-video-el' }}
+          {% elsif block.settings.video_url != blank %}
+            {% if block.settings.video_url.type == 'youtube' %}
+              <iframe src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0" allow="autoplay; encrypted-media" allowfullscreen class="zl-video-el"></iframe>
+            {% elsif block.settings.video_url.type == 'vimeo' %}
+              <iframe src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" allow="autoplay; fullscreen" allowfullscreen class="zl-video-el"></iframe>
+            {% endif %}
+          {% else %}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'zl-video-el' }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ZL Video Gallery",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sectionname",
+      "label": "Section Name"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Video Border Radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Grid Settings"
+    },
+    {
+      "type": "range",
+      "id": "cols_pc",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Videos per row (Desktop)",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "cols_mb",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Videos per row (Mobile)",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "gap_pc",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Grid Gap (Desktop)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "gap_mb",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Grid Gap (Mobile)",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Padding Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (Desktop)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (Desktop)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 24
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_block",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video file",
+          "info": "Upload a direct video file (MP4)."
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": ["youtube", "vimeo"],
+          "label": "YouTube/Vimeo Link",
+          "info": "If both file and link are filled, the video file takes priority."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "selling points 11 Video",
+      "blocks": [
+        { "type": "video_block" },
+        { "type": "video_block" },
+        { "type": "video_block" },
+        { "type": "video_block" }
+      ]
+    }
+  ]
+}
+{% endschema %}
