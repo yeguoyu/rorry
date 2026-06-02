@@ -156,6 +156,268 @@
       >
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+            {%- when 'coupon_code' -%}
+              <div class="product__coupon w-full" {{ block.shopify_attributes }}>
+                <div class="tf-coupon-box">
+                  <div class="tf-coupon-left">
+                    <svg
+                      class="tf-coupon-icon"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    </svg>
+                    <div class="tf-coupon-save-text">{{ block.settings.left_top_text }}</div>
+                    <div class="tf-coupon-amount">{{ block.settings.left_bottom_text }}</div>
+                    <div class="tf-coupon-title rte">With Code: {{ block.settings.main_title }}</div>
+                  </div>
+                  <div class="tf-coupon-right">
+                    <button
+                      type="button"
+                      class="tf-coupon-copy-btn"
+                      onclick="tfCopyCode(this, '{{ block.settings.discount_code }}')"
+                    >
+                      {{ block.settings.copy_text }}
+                    </button>
+                  </div>
+                </div>
+
+                <script>
+                  window.tfCopyCode =
+                    window.tfCopyCode ||
+                    function (btn, code) {
+                      navigator.clipboard.writeText(code).then(() => {
+                        const originalText = btn.innerText;
+                        btn.innerText = 'Copied!';
+                        setTimeout(() => {
+                          btn.innerText = originalText;
+                        }, 2000);
+                      });
+                    };
+                </script>
+              </div>
+            {%- when 'metafield_popup' -%}
+              {%- liquid
+                assign mf_parts = block.settings.metafield_key | split: '.'
+                assign mf_namespace = mf_parts | first
+                assign mf_key = mf_parts | last
+                assign mf_value = product.metafields[mf_namespace][mf_key]
+              -%}
+
+              {%- if mf_value != blank -%}
+                <div class="product__metafield-popup w-full" {{ block.shopify_attributes }}>
+                  <div
+                    class="tf-mf-trigger"
+                    onclick="document.getElementById('MfModal-{{ section.id }}-{{ block.id }}').showModal()"
+                  >
+                    <div class="tf-mf-header-row">
+                      <div class="tf-mf-title">{{ block.settings.title }}</div>
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </div>
+                    <div class="tf-mf-summary">
+                      {{ mf_value | metafield_tag }}
+                    </div>
+                  </div>
+
+                  <dialog id="MfModal-{{ section.id }}-{{ block.id }}" class="tf-mf-modal tf-modal">
+                    <div class="tf-modal-header">
+                      <h3 class="tf-modal-title">{{ block.settings.title }}</h3>
+                      <button
+                        type="button"
+                        class="tf-modal-close"
+                        onclick="document.getElementById('MfModal-{{ section.id }}-{{ block.id }}').close()"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          width="20"
+                          height="20"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="tf-mf-modal-body rte">
+                      {{ mf_value | metafield_tag }}
+                    </div>
+                  </dialog>
+                </div>
+              {%- endif -%}
+            {%- when 'trust_features' -%}
+              <div class="product__trust-features w-full" {{ block.shopify_attributes }}>
+                <div class="tf-box">
+                  <ul class="tf-list">
+                    {%- for i in (1..4) -%}
+                      {%- assign title_key = 'title_' | append: i -%}
+                      {%- assign desc_key = 'desc_' | append: i -%}
+                      {%- assign icon_key = 'icon_' | append: i -%}
+                      {%- assign title = block.settings[title_key] -%}
+                      {%- assign desc = block.settings[desc_key] -%}
+                      {%- assign icon = block.settings[icon_key] -%}
+
+                      {%- if title != blank -%}
+                        <li class="tf-item" onclick="openTrustModal('{{ section.id }}-{{ block.id }}', {{ i }})">
+                          <div class="flex items-center gap-3">
+                            {%- if icon != 'none' -%}
+                              <span class="flex items-center justify-center shrink-0">
+                                {%- render 'icon-guarantee',
+                                  icon: icon,
+                                  size: 'custom',
+                                  class: 'inline-block stroke-1',
+                                  width: 22
+                                -%}
+                              </span>
+                            {%- endif -%}
+                            <span class="text-base font-medium">{{ title }}</span>
+                          </div>
+                          <div class="tf-right-icon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              width="18"
+                              height="18"
+                              stroke="#aaa"
+                              stroke-width="2"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                          </div>
+                        </li>
+                      {%- endif -%}
+                    {%- endfor -%}
+
+                    {%- if block.settings.show_payment -%}
+                      <li class="tf-item tf-item-static">
+                        <div class="font-medium text-base">Payment Methods</div>
+                        <div class="tf-payment-icons">
+                          {%- for type in shop.enabled_payment_types -%}
+                            {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                          {%- endfor -%}
+                        </div>
+                      </li>
+                    {%- endif -%}
+
+                    {%- if block.settings.delivery_img != blank -%}
+                      <li class="tf-item tf-item-static">
+                        <div class="font-medium text-base">Delivery Method</div>
+                        <img
+                          src="{{ block.settings.delivery_img | image_url: width: 300 }}"
+                          alt="Delivery"
+                          class="tf-delivery-img"
+                        >
+                      </li>
+                    {%- endif -%}
+                  </ul>
+                </div>
+
+                <dialog id="TrustModal-{{ section.id }}-{{ block.id }}" class="tf-modal">
+                  <div class="tf-modal-header">
+                    <h3 class="tf-modal-title">{{ block.settings.modal_title }}</h3>
+                    <button
+                      type="button"
+                      class="tf-modal-close"
+                      onclick="closeTrustModal('{{ section.id }}-{{ block.id }}')"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="tf-modal-body">
+                    {%- for i in (1..4) -%}
+                      {%- assign title_key = 'title_' | append: i -%}
+                      {%- assign desc_key = 'desc_' | append: i -%}
+                      {%- assign icon_key = 'icon_' | append: i -%}
+                      {%- assign title = block.settings[title_key] -%}
+                      {%- assign desc = block.settings[desc_key] -%}
+                      {%- assign icon = block.settings[icon_key] -%}
+
+                      {%- if title != blank and desc != blank -%}
+                        <details class="tf-accordion" id="tf-accordion-{{ section.id }}-{{ block.id }}-{{ i }}">
+                          <summary class="tf-accordion-summary">
+                            <div class="flex items-center gap-3">
+                              {%- if icon != 'none' -%}
+                                <span class="flex items-center justify-center shrink-0">
+                                  {%- render 'icon-guarantee',
+                                    icon: icon,
+                                    size: 'custom',
+                                    class: 'inline-block stroke-1',
+                                    width: 22
+                                  -%}
+                                </span>
+                              {%- endif -%}
+                              <span class="font-medium">{{ title }}</span>
+                            </div>
+                            <svg
+                              class="tf-chevron shrink-0 transition-transform"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              height="16"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                          </summary>
+                          <div class="tf-accordion-content rte">
+                            {{ desc }}
+                          </div>
+                        </details>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                </dialog>
+                <script>
+                  function openTrustModal(id, index) {
+                    const modal = document.getElementById('TrustModal-' + id);
+                    if (modal) {
+                      modal.showModal();
+                      const allDetails = modal.querySelectorAll('details');
+                      allDetails.forEach((el) => (el.open = false));
+                      const target = document.getElementById('tf-accordion-' + id + '-' + index);
+                      if (target) target.open = true;
+                    }
+                  }
+                  function closeTrustModal(id) {
+                    const modal = document.getElementById('TrustModal-' + id);
+                    if (modal) modal.close();
+                  }
+                </script>
+              </div>
+            
             {%- when '@app' -%}
               {%- render block -%}
 
@@ -1305,6 +1567,146 @@
     }
   ],
   "blocks": [
+        {
+      "type": "coupon_code",
+      "name": "Discount Coupon Box",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "left_top_text",
+          "label": "Left Box Top Text",
+          "default": "Save"
+        },
+        {
+          "type": "text",
+          "id": "left_bottom_text",
+          "label": "Left Box Bottom Text (Amount)",
+          "default": "$58"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "main_title",
+          "label": "Main Title",
+          "default": "<strong>Save $58</strong> with our auto-applied code."
+        },
+        {
+          "type": "text",
+          "id": "copy_text",
+          "label": "Copy Button Text",
+          "default": "Copy Code"
+        },
+        {
+          "type": "text",
+          "id": "discount_code",
+          "label": "Discount Code to Copy",
+          "default": "SAVE58"
+        }
+      ]
+    },
+    {
+      "type": "metafield_popup",
+      "name": "Key Features (Metafield)",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Key Features"
+        },
+        {
+          "type": "text",
+          "id": "metafield_key",
+          "label": "Metafield Key",
+          "info": "custom.key_features",
+          "default": "custom.key_features"
+        }
+      ]
+    },
+    {
+      "type": "trust_features",
+      "name": "Key Features List",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "modal_title", "label": "Modal Title", "default": "Key Features" },
+        { "type": "header", "content": "Feature 1" },
+        { "type": "text", "id": "title_1", "label": "Title", "default": "Fast, Free Shipping" },
+        { "type": "richtext", "id": "desc_1", "label": "Description" },
+        {
+          "type": "select",
+          "id": "icon_1",
+          "label": "Icon",
+          "default": "truck",
+          "options": [
+            { "value": "none", "label": "None" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "tag", "label": "Tag" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "chat_bubble", "label": "Chat" },
+            { "value": "return", "label": "Return" },
+            { "value": "star", "label": "Star" }
+          ]
+        },
+        { "type": "header", "content": "Feature 2" },
+        { "type": "text", "id": "title_2", "label": "Title", "default": "30-Day Money-Back Guarantee" },
+        { "type": "richtext", "id": "desc_2", "label": "Description" },
+        {
+          "type": "select",
+          "id": "icon_2",
+          "label": "Icon",
+          "default": "tag",
+          "options": [
+            { "value": "none", "label": "None" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "tag", "label": "Tag" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "chat_bubble", "label": "Chat" },
+            { "value": "return", "label": "Return" },
+            { "value": "star", "label": "Star" }
+          ]
+        },
+        { "type": "header", "content": "Feature 3" },
+        { "type": "text", "id": "title_3", "label": "Title", "default": "Hassle-Free Warranty" },
+        { "type": "richtext", "id": "desc_3", "label": "Description" },
+        {
+          "type": "select",
+          "id": "icon_3",
+          "label": "Icon",
+          "default": "shield",
+          "options": [
+            { "value": "none", "label": "None" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "tag", "label": "Tag" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "chat_bubble", "label": "Chat" },
+            { "value": "return", "label": "Return" },
+            { "value": "star", "label": "Star" }
+          ]
+        },
+        { "type": "header", "content": "Feature 4" },
+        { "type": "text", "id": "title_4", "label": "Title", "default": "Lifetime Customer Support" },
+        { "type": "richtext", "id": "desc_4", "label": "Description" },
+        {
+          "type": "select",
+          "id": "icon_4",
+          "label": "Icon",
+          "default": "chat_bubble",
+          "options": [
+            { "value": "none", "label": "None" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "tag", "label": "Tag" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "chat_bubble", "label": "Chat" },
+            { "value": "return", "label": "Return" },
+            { "value": "star", "label": "Star" }
+          ]
+        },
+        { "type": "header", "content": "Payment & Delivery" },
+        { "type": "checkbox", "id": "show_payment", "label": "Show Payment Methods", "default": true },
+        { "type": "image_picker", "id": "delivery_img", "label": "Delivery Methods Image" }
+      ]
+    },
     {
       "type": "@app"
     },
