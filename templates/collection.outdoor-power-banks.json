@@ -391,9 +391,24 @@
         "heading_68YqNF": {
           "type": "heading",
           "settings": {
-            "heading": "Finding the Best Power Bank for Your iPhone: A Simplified Guide",
+            "heading": "Why RORRY Portable Charger is Your Newest Adventure Essential",
             "heading_size": "title-md",
             "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_U9BPhp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Adventure shouldn’t mean compromising on style. RORRY’s outdoor collection is designed for those who find peace in nature but need to stay powered for the perfect shot. From trail-ready keychain banks to high-capacity chargers, our gear is as resilient as it is beautiful—giving you the freedom to wander further without a worry.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -401,7 +416,7 @@
         "heading_gBceLc": {
           "type": "heading",
           "settings": {
-            "heading": "The Freedom of Going Cable-Free",
+            "heading": "The Carabiner Advantage: Secure & Stylish",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -411,7 +426,7 @@
         "text_qmMyhB": {
           "type": "text",
           "settings": {
-            "text": "<p>We’ve all experienced the frustration of a tangled mess at the bottom of a handbag. That’s why we’ve curated the <strong>best power bank chargers for iPhone</strong> that eliminate the need for extra wires. Whether you’re looking for a magnetic power bank for iphone that snaps directly to the back of your device or a <a href=\"/collections/power-banks\" title=\"Power Banks\"><strong>portable charger</strong></a> apple-ready with built-in connectors, our goal is to keep your life organized. Our branded power bank for iphone series ensures that your tech looks as chic as your outfit.</p>",
+            "text": "<p>For the active people, a portable outdoor power bank with carabiner is a total game-changer. Our RORRY D2 Keychain Series isn’t just small; it’s designed to clip onto your backpack, belt loop, or water bottle. This \"hands-free\" approach ensures that your outdoor portable charger is always accessible, whether you’re capturing a sunset or navigating a new trail. It’s the ultimate best outdoor power bank for those who believe functionality should always look this good.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -426,7 +441,7 @@
         "heading_NJAJaD": {
           "type": "heading",
           "settings": {
-            "heading": "MagSafe vs. Plug-in: Which One Suits You?",
+            "heading": "Power for the \"Off-the-Grid\" Moments",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -436,7 +451,7 @@
         "text_HAi6PX": {
           "type": "text",
           "settings": {
-            "text": "<p>If you value convenience, our best magsafe power bank for iphone models offer a seamless \"snap and charge\" experience. They are perfect for long commutes where you need to use your phone while it recharges. On the other hand, if you prefer a traditional boost, our apple portable charger collection features ultra-compact plug-in designs that are barely larger than a lipstick. For the iPhone 16 early adopters, we’ve ensured all our newest models are optimized for the latest charging standards, providing a <strong>good power bank for iphone</strong> experience that protects your battery health.</p>",
+            "text": "<p>There’s nothing like a day at the park or a Saturday hike to recharge your soul. To ensure your devices keep up, our RORRY CharmGo D4 offers 10,000mAh of high-speed power in a durable, soft-touch case. As a top portable power bank for outdoor use, the D4 provides enough juice to charge your iPhone and Apple Watch multiple times, making it a reliable outdoor battery power bank that won't weigh you down. In a world of bulky gear, RORRY remains the best portable charger for outdoors that still fits in your aesthetic.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -451,7 +466,7 @@
         "heading_8YayEk": {
           "type": "heading",
           "settings": {
-            "heading": "Travel-Ready and TSA-Compliant",
+            "heading": "Resilient Tech in Pastel Palettes",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -461,7 +476,7 @@
         "text_GkMCeX": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"https://rorry.com/\" title=\"rorry\"><strong>RORRY</strong></a> As a recommended power bank for iphone brand among travel vloggers, we know that reliability is non-negotiable. Every <strong>apple powerbank</strong> in our shop is airline-approved, making them the perfect companions for your next getaway. If you also carry an Apple Watch, you’ll find that many of our best magnetic power banks for iphone are part of our integrated watch and phone charging station collection. For those who need even more versatility, don't forget to pair your new battery pack with one of our fast-charging wall blocks to ensure you're always ready for the next adventure.</p>",
+            "text": "<p>Most outdoor power banks look like tactical gear, but RORRY proves that rugged can be refined. Our outdoor usb power bank collection features high-grade internal protection wrapped in our signature Lavender and Rose Quartz colors. It’s a power bank for outdoor use that you’ll actually want to show off in your nature Vlogs. Join a community of over 150,000 women who have traded their heavy bricks for RORRY—where the great outdoors meets great design.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -476,6 +491,7 @@
       },
       "block_order": [
         "heading_68YqNF",
+        "text_U9BPhp",
         "heading_gBceLc",
         "text_qmMyhB",
         "heading_NJAJaD",
