@@ -323,8 +323,8 @@
         "details_color_i": "",
         "padding_top": 36,
         "padding_bottom": 36,
-        "mobile_padding_top": 36,
-        "mobile_padding_bottom": 36
+        "mobile_padding_top": 16,
+        "mobile_padding_bottom": 16
       }
     },
     "selling_points_11_iJyeM4": {
@@ -348,8 +348,8 @@
         "details_color_i": "",
         "padding_top": 36,
         "padding_bottom": 36,
-        "mobile_padding_top": 36,
-        "mobile_padding_bottom": 36
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 20
       }
     },
     "selling_points_11_7iwmPi": {
