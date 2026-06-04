@@ -594,6 +594,8 @@
         "content_hPttqK": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/powerbank-customization-process-3-pc.png",
+            "image_mobile": "shopify://shop_images/powerbank-customization-process-3.png",
             "subheading": "Step3",
             "heading": "Free Digital Proof & Approval",
             "heading_tag": "h3",
