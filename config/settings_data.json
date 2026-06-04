@@ -99,7 +99,7 @@
     "product_color_swatch_type": "variant",
     "product_vertical_badges": false,
     "product_sold_out": true,
-    "product_save_amount": true,
+    "product_save_amount": false,
     "product_save_type": "percent",
     "product_disable_collection_portion": true,
     "cart_type": "drawer",
