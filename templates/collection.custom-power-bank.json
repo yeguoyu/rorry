@@ -558,6 +558,8 @@
         "content_cfbbWj": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/powerbank-customization-process-1-pc.png",
+            "image_mobile": "shopify://shop_images/powerbank-customization-process-1.png",
             "subheading": "Step1",
             "heading": "Expert Consultation & Selection",
             "heading_tag": "h3",
@@ -574,6 +576,8 @@
         "content_mDXbjk": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/powerbank-customization-process-2-pc.png",
+            "image_mobile": "shopify://shop_images/powerbank-customization-process-2.png",
             "subheading": "Step2",
             "heading": "Logo Submission & Design Layout",
             "heading_tag": "h3",
@@ -630,8 +634,8 @@
       "settings": {
         "show_navigation": true,
         "layout": "image_first",
-        "image_ratio": "portrait",
-        "image_ratio_mobile": "wide",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
         "heading": "Our Seamless Customization Process (4 Steps)",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
