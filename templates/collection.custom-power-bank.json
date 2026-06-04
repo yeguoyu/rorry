@@ -221,11 +221,12 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/cb4-10000mah-powerbank-custom.png",
-            "heading": "Image slide",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
+            "image_mobile": "shopify://shop_images/custom-cb4-10000mah.png",
+            "heading": "Custom CB4 10000mAh",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
             "button_label": "",
-            "button_link": "",
+            "button_link": "shopify://products/rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w-custom-logo",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
