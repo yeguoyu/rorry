@@ -612,6 +612,8 @@
         "content_iBTcAA": {
           "type": "content",
           "settings": {
+            "image": "shopify://shop_images/powerbank-customization-process-4-pc.png",
+            "image_mobile": "shopify://shop_images/powerbank-customization-process-4.png",
             "subheading": "Step4",
             "heading": "Precision Production & Global Express",
             "heading_tag": "h3",
