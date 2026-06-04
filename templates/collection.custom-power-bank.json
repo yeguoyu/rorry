@@ -252,11 +252,11 @@
           "settings": {
             "image": "shopify://shop_images/palmgo-d5-10000mah-charger-custom.png",
             "image_mobile": "shopify://shop_images/custom-d5-10000mah.png",
-            "heading": "Custom D2 10000mAh",
+            "heading": "Custom D5 10000mAh",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
-            "button_link": "shopify://products/rorry-d2-10000-portable-chargercustom-logo",
+            "button_link": "shopify://products/rorry-palmgo-d5-10000mah-portable-charger-custom-logo",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
