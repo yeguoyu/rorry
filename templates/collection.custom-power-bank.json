@@ -199,7 +199,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -261,40 +261,12 @@
             "button_external": false,
             "button_icon": false
           }
-        },
-        "image_bQDheq": {
-          "type": "image",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_tmenzC": {
-          "type": "image",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
         }
       },
       "block_order": [
         "image_QM6jbt",
         "image_4VaHTz",
-        "image_xqzWq3",
-        "image_bQDheq",
-        "image_tmenzC"
+        "image_xqzWq3"
       ],
       "name": "t:sections.slideshow.name",
       "settings": {
@@ -328,8 +300,8 @@
         "image_cqPWBc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/D2-10000-VS-D2-_5000.jpg",
-            "image_mobile": "shopify://shop_images/D2-10000-VS-D2-_5000.jpg",
+            "image": "shopify://shop_images/custom-d14-banks.jpg",
+            "image_mobile": "shopify://shop_images/custom-d14-bank.jpg",
             "subheading": "",
             "heading": "",
             "content_position": "end",
@@ -339,7 +311,8 @@
         "image_qEAd3H": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/What_Is_MagSafe_and_How_Does_It_Work_8c42e0ef-4d99-493f-b183-1d8e3f97eb70.png",
+            "image": "shopify://shop_images/d14-10000mah-custom-charger.jpg",
+            "image_mobile": "shopify://shop_images/custom-d14-charger.jpg",
             "subheading": "",
             "heading": "",
             "content_position": "end",
@@ -368,7 +341,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -433,10 +406,10 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "rgba(0,0,0,0)",
         "color_background": "",
         "gradient_background": "",
-        "color_highlight": "",
+        "color_highlight": "rgba(0,0,0,0)",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
