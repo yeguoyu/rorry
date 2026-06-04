@@ -237,11 +237,11 @@
           "settings": {
             "image": "shopify://shop_images/d2-10000mah-charger-custom.png",
             "image_mobile": "shopify://shop_images/custom-d2-10000mah.png",
-            "heading": "Custom CB4 10000mAh",
+            "heading": "Custom D2 10000mAh",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
-            "button_link": "shopify://products/rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w-custom-logo",
+            "button_link": "shopify://products/rorry-d2-10000-portable-chargercustom-logo",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
