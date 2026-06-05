@@ -101,7 +101,7 @@
       ],
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 3,
+        "autoplay_speed": 5,
         "show_navigation": true,
         "image_height": "adapt",
         "content_width": "small",
