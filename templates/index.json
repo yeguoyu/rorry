@@ -15,6 +15,21 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/rorry-powerbanks-summer-sale-3840x1600.jpg",
+            "image_mobile": "shopify://shop_images/rorry-powerbanks-summer-sale-800x1200.png",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://collections/power-banks",
+            "button_style": "primary",
+            "button_external": true,
+            "button_icon": true
+          }
+        },
+        "image_KJpLAi": {
+          "type": "image",
+          "settings": {
             "image": "shopify://shop_images/20260519-180645.jpg",
             "image_mobile": "shopify://shop_images/Plug_in_Power_Bank_f53dc58f-fec5-4a3f-bb19-b83991ffe1d0.jpg",
             "heading": "",
@@ -75,6 +90,7 @@
       },
       "block_order": [
         "slide-1",
+        "image_KJpLAi",
         "image_g6RnRc",
         "image_wBb9zr",
         "image_EKkjiB"
