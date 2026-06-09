@@ -46,11 +46,31 @@
         "coupon_code_QVtbex": {
           "type": "coupon_code",
           "settings": {
-            "left_top_text": "Save",
-            "left_bottom_text": "21%",
-            "main_title": "BDWD20",
+            "left_top_text": "Buy 1 -> Save",
+            "left_bottom_text": "25%",
+            "main_title": "RORRY-25",
             "copy_text": "Copy Code",
-            "discount_code": "BDWD20"
+            "discount_code": "RORRY-25"
+          }
+        },
+        "coupon_code_RdP3ME": {
+          "type": "coupon_code",
+          "settings": {
+            "left_top_text": "Buy 2 -> Save",
+            "left_bottom_text": "30%",
+            "main_title": "RORRY-30",
+            "copy_text": "Copy Code",
+            "discount_code": "RORRY-30"
+          }
+        },
+        "coupon_code_7q6exG": {
+          "type": "coupon_code",
+          "settings": {
+            "left_top_text": "Buy 3+ -> Save",
+            "left_bottom_text": "35%",
+            "main_title": "RORRY-35",
+            "copy_text": "Copy Code",
+            "discount_code": "RORRY-35"
           }
         },
         "metafield_popup_9kgmVH": {
@@ -166,6 +186,8 @@
         "judge_me_reviews_preview_badge_9EFiPW",
         "liquid_zUX79j",
         "coupon_code_QVtbex",
+        "coupon_code_RdP3ME",
+        "coupon_code_7q6exG",
         "metafield_popup_9kgmVH",
         "liquid_FhJ6Yp",
         "variant_picker",
@@ -386,7 +408,7 @@
             "title": "Product Model",
             "title_color": "",
             "title_size": 24,
-            "mobile_title_size": 24,
+            "mobile_title_size": 20,
             "details": "",
             "details_color": "",
             "details_size": 24,
@@ -399,7 +421,7 @@
             "title": "Dimensions",
             "title_color": "",
             "title_size": 24,
-            "mobile_title_size": 24,
+            "mobile_title_size": 20,
             "details": "",
             "details_color": "",
             "details_size": 24,
@@ -412,7 +434,7 @@
             "title": "Total Capacity",
             "title_color": "",
             "title_size": 24,
-            "mobile_title_size": 24,
+            "mobile_title_size": 20,
             "details": "",
             "details_color": "",
             "details_size": 24,
@@ -464,7 +486,7 @@
             "title": "Supported Protocol",
             "title_color": "",
             "title_size": 24,
-            "mobile_title_size": 24,
+            "mobile_title_size": 20,
             "details": "",
             "details_color": "",
             "details_size": 24,
@@ -492,7 +514,7 @@
         "title": "<p><strong>Tech Specs</strong></p>",
         "title_size": 30,
         "mobile_title_size": 24,
-        "title_color": "#171717",
+        "title_color": "#9887b8",
         "border_color": "#ffffff",
         "padding_top": 36,
         "padding_bottom": 36,
