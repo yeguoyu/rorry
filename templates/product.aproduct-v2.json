@@ -171,7 +171,7 @@
           "type": "share",
           "settings": {
             "share_label": "Share",
-            "show_help_desk": true,
+            "show_help_desk": false,
             "help_label": "Need help?",
             "help_type": "drawer",
             "help_page": "",
@@ -220,7 +220,7 @@
         "image_ratio_mobile": "adapt_first",
         "mobile_thumbnail": true,
         "padding_top": 0,
-        "padding_bottom": 84,
+        "padding_bottom": 16,
         "divider": false,
         "full_width": false,
         "rounded": false
