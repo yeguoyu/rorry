@@ -207,7 +207,7 @@
         ".alert--success {background-color: #9887b8; color: #ffffff;}"
       ],
       "settings": {
-        "enable_sticky_info": false,
+        "enable_sticky_info": true,
         "media_size": 50,
         "gallery_layout": "thumbnail",
         "thumbnail_position": "beside",
