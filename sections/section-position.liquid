@@ -2,12 +2,11 @@
 #shopify-section-{{ section.id }} {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 20;
   background: {{ section.settings.background | default: '#f2f2f2' }};
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-}
-
+} 
 @media (max-width: 749px) {
   #shopify-section-{{ section.id }} {
     top: 0;
