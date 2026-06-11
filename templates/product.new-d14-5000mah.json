@@ -349,34 +349,6 @@
     },
     "lookbook_HMJ6qr": {
       "type": "lookbook",
-      "blocks": {
-        "product_Rpbktn": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "color_text": "#ffffff",
-            "vertical": 25,
-            "horizontal": 25,
-            "vertical_mobile": 25,
-            "horizontal_mobile": 25
-          }
-        },
-        "product_f9FjYY": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "color_text": "#ffffff",
-            "vertical": 75,
-            "horizontal": 65,
-            "vertical_mobile": 75,
-            "horizontal_mobile": 65
-          }
-        }
-      },
-      "block_order": [
-        "product_Rpbktn",
-        "product_f9FjYY"
-      ],
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_1.jpg",
@@ -405,6 +377,42 @@
         "color_overlay": "#171717",
         "overlay_opacity": 30,
         "padding_top": 32,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_qm4M33": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_2.jpg",
+        "heading": "<strong>Recommend by Thousands of Customers & Professional Media</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 24,
         "padding_bottom": 12,
         "divider": false,
         "full_width": false,
@@ -815,6 +823,7 @@
     "selling_points_2_video_iNKajX",
     "video_YdbGmg",
     "lookbook_HMJ6qr",
+    "lookbook_qm4M33",
     "selling_points_11_AdeUUX",
     "selling_points_11_iJyeM4",
     "selling_points_11_7iwmPi",
