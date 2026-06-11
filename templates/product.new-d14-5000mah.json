@@ -111,6 +111,15 @@
             "save_type": "percent"
           }
         },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -121,15 +130,6 @@
             "enable_back_in_stock": false,
             "show_back_in_stock_name": false,
             "show_back_in_stock_phone": false
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "settings": {
-            "inventory_threshold": 15,
-            "show_inventory_transfer": true,
-            "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
           }
         },
         "sticky_buy_button_cgt3tr": {
@@ -194,8 +194,8 @@
         "variant_picker",
         "description_yLmb9U",
         "badges_8dEdrC",
-        "buy_buttons",
         "inventory",
+        "buy_buttons",
         "sticky_buy_button_cgt3tr",
         "sticky_buy_button_v2_qaTgPb",
         "pickup_availability",
@@ -340,6 +340,7 @@
         "enable_video_looping": false,
         "image_height": "adapt",
         "video_mobile": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
+        "video_url_mobile": "",
         "image_height_mobile": "auto",
         "padding_top": 0,
         "padding_bottom": 0,
