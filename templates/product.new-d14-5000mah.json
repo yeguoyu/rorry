@@ -366,7 +366,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -402,7 +402,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -419,79 +419,120 @@
         "rounded": false
       }
     },
-    "selling_points_11_AdeUUX": {
-      "type": "selling-points-11",
-      "name": "selling points 11",
+    "slideshow_cCPNm8": {
+      "type": "slideshow",
+      "blocks": {
+        "image_TFitUt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_4.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_yVLLyA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_3.jpg",
+            "heading": "Slim & Pocket-Sized: RORRY Charging Without the Clutter",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_BaBf63": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_6.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_6.jpg",
+            "heading": "2-in-1 Fast Charging: RORRY Power Bank for iPhone & AirPods",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_TFitUt",
+        "image_yVLLyA",
+        "image_BaBf63"
+      ],
+      "name": "Slideshow",
       "settings": {
-        "bk-top": false,
-        "sectionname": "TUPIAN",
-        "background": "",
-        "image": "shopify://shop_images/G-_Desktop_DTC_charngo-__31.jpg",
-        "image_box": false,
-        "title": "",
-        "title_size": 64,
-        "mobile_title_size": 24,
-        "title_color": "",
-        "details": "",
-        "details_size": 64,
-        "mobile_details_size": 24,
-        "details_color": "",
-        "details_color_b": "",
-        "details_color_i": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "mobile_padding_top": 16,
-        "mobile_padding_bottom": 16
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
       }
     },
-    "selling_points_11_iJyeM4": {
-      "type": "selling-points-11",
-      "name": "selling points 11",
+    "lookbook_4TKzMc": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
       "settings": {
-        "bk-top": false,
-        "sectionname": "TUPIAN",
-        "background": "",
-        "image": "shopify://shop_images/G-_Desktop_DTC_charngo-__31.jpg",
-        "image_box": false,
-        "title": "",
-        "title_size": 64,
-        "mobile_title_size": 24,
-        "title_color": "",
-        "details": "",
-        "details_size": 64,
-        "mobile_details_size": 24,
-        "details_color": "",
-        "details_color_b": "",
-        "details_color_i": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "mobile_padding_top": 20,
-        "mobile_padding_bottom": 20
-      }
-    },
-    "selling_points_11_7iwmPi": {
-      "type": "selling-points-11",
-      "name": "selling points 11",
-      "settings": {
-        "bk-top": false,
-        "sectionname": "TUPIAN",
-        "background": "",
-        "image": "shopify://shop_images/G-_Desktop_DTC_charngo-__31.jpg",
-        "image_box": false,
-        "title": "",
-        "title_size": 64,
-        "mobile_title_size": 24,
-        "title_color": "",
-        "details": "",
-        "details_size": 64,
-        "mobile_details_size": 24,
-        "details_color": "",
-        "details_color_b": "",
-        "details_color_i": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "mobile_padding_top": 36,
-        "mobile_padding_bottom": 36
+        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_7.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_7.jpg",
+        "heading": "<strong>Universal Compatibility: RORRY Wireless & 18W PD Wired Charging</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 24,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "selling_points_9_J3teY8": {
@@ -659,6 +700,42 @@
         "mobile_padding_bottom": 36
       }
     },
+    "lookbook_xBUtkC": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_8.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_8.jpg",
+        "heading": "<strong>Hassle-Free After-Sales & Complete RORRY Kit</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 24,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "product_faq_iXcLnC": {
       "type": "product-faq",
       "blocks": {
@@ -672,8 +749,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Q1: Which devices are compatible with this magnetic wireless charger?\t\t</strong>",
-            "collapsible-content": "<p>This magnetic wireless charger is primarily designed for the iPhone 12–iPhone 17 series, ensuring perfect alignment and fast wireless charging with Qi2 15W support. It also works through most standard phone cases up to 4 mm thick, so you don’t need to remove your case every time. While optimized as an iPhone charging stand, you can also remove the charging pad and use it as a handheld charger.</p>",
+            "collapsible-title": "Can it charge through a phone case?",
+            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is specifically designed to work with MagSafe cases and can charge through compatible phone cases.</p>",
             "isactive": false
           }
         },
@@ -681,8 +758,44 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Q1: Which devices are compatible with this magnetic wireless charger?\t\t</strong>",
-            "collapsible-content": "<p>This magnetic wireless charger is primarily designed for the iPhone 12–iPhone 17 series, ensuring perfect alignment and fast wireless charging with Qi2 15W support. It also works through most standard phone cases up to 4 mm thick, so you don’t need to remove your case every time. While optimized as an iPhone charging stand, you can also remove the charging pad and use it as a handheld charger.</p>",
+            "collapsible-title": "How strong is the magnetic attachment?",
+            "collapsible-content": "<p>It provides up to 12N of magnetic force—4x stronger than standard options. It stays firmly attached to your phone, even with heavy shaking in your pocket, and has been tested to maintain continuous wireless charging after over 3,000 shakes.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_Wrb3qd": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Does it have overcharge protection?</strong>",
+            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank includes comprehensive safety features including short circuit protection to prevent overcharging and device damage. It features an industrial-leading temperature control system that keeps it running 50°F cooler than competitors, effectively protecting both your device's battery and the power bank for long-term use.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_KQRxtY": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>How long does it take to recharge?</strong>",
+            "collapsible-content": "<p>The RORRY MagSafe Power Bank takes approximately 2 hours to fully recharge when using a 5V/3A adapter via the USB-C port.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_NVT3iN": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Is this charger compatible with Android phones?</strong>",
+            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is compatible with Android phones! It supports Samsung Galaxy S21-S24 series, Google Pixel, and other wireless charging enabled devices. For Android phones without built-in magnetic capabilities, it includes a magnetic metal ring that you can attach to your phone case to enable magnetic charging.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_rjgjrP": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Is this power bank compatible with non-MagSafe phones like Samsung?</strong>",
+            "collapsible-content": "<p>Yes! It works natively with iPhone 12–16 series and MagSafe cases. For Samsung Galaxy S21–S24 (or other non-magnetic devices), simply use the included magnetic ring: peel off the backing and stick it to the outside of your phone case to enable secure magnetic charging.</p>",
             "isactive": false
           }
         }
@@ -690,14 +803,18 @@
       "block_order": [
         "tab_Fq7LBp",
         "tab_content_683zbz",
-        "tab_content_fjWWzA"
+        "tab_content_fjWWzA",
+        "tab_content_Wrb3qd",
+        "tab_content_KQRxtY",
+        "tab_content_NVT3iN",
+        "tab_content_rjgjrP"
       ],
       "name": "product faq",
       "settings": {
         "sectionname": "FAQ & Review",
         "color-2": "",
         "title": "FAQ",
-        "title_color": "",
+        "title_color": "#9887b8",
         "title_size": 24,
         "mobile_title_size": 24,
         "title_bottom": 24,
@@ -824,10 +941,10 @@
     "video_YdbGmg",
     "lookbook_HMJ6qr",
     "lookbook_qm4M33",
-    "selling_points_11_AdeUUX",
-    "selling_points_11_iJyeM4",
-    "selling_points_11_7iwmPi",
+    "slideshow_cCPNm8",
+    "lookbook_4TKzMc",
     "selling_points_9_J3teY8",
+    "lookbook_xBUtkC",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
     "recently-viewed",
