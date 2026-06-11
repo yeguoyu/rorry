@@ -197,7 +197,7 @@
         "content_position": "md:items-center md:justify-start",
         "text_alignment": "left",
         "image_mobile": "{{ collection.metafields.custom.collection_mobile_banner.value }}",
-        "image_height_mobile": "adapt",
+        "image_height_mobile": "400px",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
         "color_text": "#171717",
