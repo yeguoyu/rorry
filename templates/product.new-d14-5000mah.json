@@ -324,6 +324,26 @@
         "mobile_padding_bottom": 24
       }
     },
+    "video_YdbGmg": {
+      "type": "video",
+      "name": "t:sections.video.name",
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
+        "video_url": "",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_mobile": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
+        "image_height_mobile": "auto",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
     "selling_points_11_AdeUUX": {
       "type": "selling-points-11",
       "name": "selling points 11",
@@ -726,6 +746,7 @@
     "main-product",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
+    "video_YdbGmg",
     "selling_points_11_AdeUUX",
     "selling_points_11_iJyeM4",
     "selling_points_11_7iwmPi",
