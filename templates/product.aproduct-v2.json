@@ -409,7 +409,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "132",
+            "details": "D14",
             "details_color": "",
             "details_size": 24,
             "mobile_details_size": 14
@@ -418,11 +418,11 @@
         "item_block_aWqf8a": {
           "type": "item_block",
           "settings": {
-            "title": "Dimensions",
+            "title": "Product with feature",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "",
+            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
             "details_color": "",
             "details_size": 24,
             "mobile_details_size": 14
@@ -431,11 +431,11 @@
         "item_block_qcHcQg": {
           "type": "item_block",
           "settings": {
-            "title": "Total Capacity",
+            "title": "Category",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "",
+            "details": "<a href=\"/collections/power-banks\" title=\"Power Banks\">Power Bank</a>",
             "details_color": "",
             "details_size": 24,
             "mobile_details_size": 14
