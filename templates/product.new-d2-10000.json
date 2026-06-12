@@ -735,6 +735,150 @@
         "parallax_direction": "vertical"
       }
     },
+    "multicolumn_qV4naq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HXjctx": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/63563e10-9742-4a5c-8a3d-c88fc2f97ac4.__CR0_0_300_225_PT0_SX300_V1.jpg",
+            "image_ratio": "adapt",
+            "heading": "Portable Keychain Design",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>With its small and lightweight keychain design, you can easily carry this portable charger in your pocket or hang it on your backpack.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_VDqQ3d": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/94737b68-7ee6-47c8-881d-c438eb2054c5.__CR0_0_300_225_PT0_SX300_V1.jpg",
+            "image_ratio": "adapt",
+            "heading": "USB-C Input & Output",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>USB C port can fully recharge the battery in 3 hours, and can also output current to the device you need to charge through this port.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_aKNRn3": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/9d3984fa-878d-435d-b46a-643fc11b98ec.__CR0_0_300_225_PT0_SX300_V1.jpg",
+            "image_ratio": "adapt",
+            "heading": "Pass Through Charging",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Charge for iPhone and for Apple Watch while recharging the power bank, great for over-night charging.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_GerPEF": {
+          "type": "column",
+          "settings": {
+            "show_border": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/0c215439-932f-4579-9187-084a05cef274.__CR0_0_300_225_PT0_SX300_V1.jpg",
+            "image_ratio": "landscape",
+            "heading": "Packing List",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Power Bank 10000mah * 1<br/>USB-C to USB-C Charging Cable * 1<br/>User manual * 1</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_nwUYtr": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Christmas_red_detail.jpg",
+            "image_ratio": "adapt",
+            "heading": "Christmas Packing",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>10000mAh Power Bank * 1</p><p>USB-C to USB-C Charging Cable * 1</p><p>User manual * 1</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_HXjctx",
+        "column_VDqQ3d",
+        "column_aKNRn3",
+        "column_GerPEF",
+        "column_nwUYtr"
+      ],
+      "settings": {
+        "gap": "small",
+        "columns": 4,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
     "selling_points_9_J3teY8": {
       "type": "selling-points-9",
       "blocks": {
@@ -1152,6 +1296,7 @@
     "lookbook_R9efNf",
     "image_with_text_hadYmP",
     "image_with_text_Kbizcm",
+    "multicolumn_qV4naq",
     "selling_points_9_J3teY8",
     "lookbook_EEBmCV",
     "product_faq_iXcLnC",
