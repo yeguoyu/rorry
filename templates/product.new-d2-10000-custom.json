@@ -57,6 +57,7 @@
         },
         "coupon_code_QVtbex": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 1 -> Save",
             "left_bottom_text": "25%",
@@ -67,6 +68,7 @@
         },
         "coupon_code_RdP3ME": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 2 -> Save",
             "left_bottom_text": "30%",
@@ -77,6 +79,7 @@
         },
         "coupon_code_7q6exG": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 3+ -> Save",
             "left_bottom_text": "35%",
@@ -292,13 +295,6 @@
     "selling_points_2_video_iNKajX": {
       "type": "selling-points-2-video",
       "blocks": {
-        "video_block_nm7Uqn": {
-          "type": "video_block",
-          "settings": {
-            "video": "shopify://files/videos/d2-10000mah-pd-20w-portable-charger-4.mp4",
-            "video_url": ""
-          }
-        },
         "video_block_kj3C3K": {
           "type": "video_block",
           "settings": {
@@ -313,6 +309,13 @@
             "video_url": ""
           }
         },
+        "video_block_nm7Uqn": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-10000mah-pd-20w-portable-charger-4.mp4",
+            "video_url": ""
+          }
+        },
         "video_block_DNXxce": {
           "type": "video_block",
           "settings": {
@@ -322,9 +325,9 @@
         }
       },
       "block_order": [
-        "video_block_nm7Uqn",
         "video_block_kj3C3K",
         "video_block_zUgyKR",
+        "video_block_nm7Uqn",
         "video_block_DNXxce"
       ],
       "name": "selling points 11 Video",
@@ -361,16 +364,16 @@
         "rounded": true
       }
     },
-    "lookbook_K9HkCc": {
+    "lookbook_MmgYJp": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_1.jpg",
-        "heading": "<strong>RORRY All-in-One Portable Charger</strong>",
-        "heading_size": "title-sm",
+        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_1.jpg",
+        "heading": "",
+        "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
+        "heading_tag": "h2",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -380,7 +383,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -397,16 +400,64 @@
         "rounded": false
       }
     },
-    "lookbook_Y8eKDn": {
+    "slideshow_rxJAAf": {
+      "type": "slideshow",
+      "blocks": {
+        "image_6LgiCn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_6.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_6.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_6LgiCn"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "lookbook_M99WPJ": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_2.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_2.jpg",
-        "heading": "<strong>PD 20W iPhone Charger: 1.5H Full Charge</strong>",
-        "heading_size": "title-sm",
+        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_16.jpg",
+        "heading": "",
+        "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
+        "heading_tag": "h2",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -416,7 +467,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -433,429 +484,17 @@
         "rounded": false
       }
     },
-    "lookbook_8fByJL": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_3.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_3.jpg",
-        "heading": "<strong>Fast Charging for Apple Watch: 1.2H Full Charge</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_tgeTBX": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_4.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_4.jpg",
-        "heading": "<strong>18W Power Bank Recharging: 3.5H Full Charge</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_pY7Fcb": {
+    "lookbook_AJWYzh": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_5.jpg",
         "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_5.jpg",
-        "heading": "<strong>Charge Apple Watch, iPhone & More – All at Once</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_bcErtq": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_6.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_6.jpg",
-        "heading": "<strong>Compact & Lightweight</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_R9efNf": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Pc_7.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Details_Mobile_7.jpg",
-        "heading": "<strong>Travel Friendly</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "image_with_text_hadYmP": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_DpAARd": {
-          "type": "heading",
-          "settings": {
-            "heading": "Charger for Apple Family iPhone/Airpod/iPad",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_r38WmL": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li>2025 - for iPhone 17/17 Plus/17 Pro/17 Pro Max</li><li>2024 - for iPhone 16/16 Plus/16 Pro/16 Pro Max</li><li>2023 - for iPhone 15/15 Plus/15 Pro/15 Pro Max</li><li>2022 - for iPhone 14/14 Plus/14 Pro/14 Pro Max/iPhone SE</li><li>2021 - for iPhone 13 Pro Max/13 Pro/13/13 mini; </li><li>2020 - for iPhone 12 Pro Max/12 Pro/12/12 mini/ SE (2nd); </li><li>2019 - for iPhone 11 Pro/ 11 Pro Max/ 11; </li><li>2018 - for iPhone XS/ XS Max/ XR/ X; </li><li>2017 - for iPhone 8/ 8  Plus</li><li>for AirPods (1nd Gen), AirPods (2nd Gen), AirPods Pro, AirPods (3rd Gen), AirPods Pro (2nd Gen), AirPods (4rd Gen)</li></ul>",
-            "text_font": "body",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_DpAARd",
-        "text_r38WmL"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/c368696f-bed6-4c33-b668-d37bb11d3f68.__CR0_0_800_600_PT0_SX800_V1_4dee3407-c753-406a-92f3-0a6abf1050c4.jpg",
-        "image_height": "600px",
-        "image_width": "medium",
-        "layout": "image_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "400px",
-        "text_alignment_mobile": "left",
-        "color_text": "#171717",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_background_2": "rgba(0,0,0,0)",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "image_with_text_Kbizcm": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_fiVNNK": {
-          "type": "heading",
-          "settings": {
-            "heading": "Compatible with Apple Watch",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_eGbtdC": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li>2025 - for Apple Watch Series 11;</li><li>2024 - for Apple Watch Series 10;</li><li>2023 - for Apple Watch Series 9 / Ultra 2;</li><li>2022 - for Apple Watch Series 8 / Ultra / SE(2nd Gen);</li><li>2021 - for Apple Watch Series 7;</li><li>2020 - for Apple Watch Series 6/SE;</li><li>2019 - for Apple Watch Series 5; </li><li>2018 - for Apple Watch Series 4; </li><li>2017 - for Apple Watch Series 3;</li></ul>",
-            "text_font": "body",
-            "text_size": "subtext-sm",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_fiVNNK",
-        "text_eGbtdC"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/86094f5a-f139-4daa-8270-cfec0de26a79.__CR0_0_800_600_PT0_SX800_V1.jpg",
-        "image_height": "600px",
-        "image_width": "medium",
-        "layout": "text_first",
-        "text_alignment": "left",
-        "content_position": "align-self-center",
-        "image_height_mobile": "400px",
-        "text_alignment_mobile": "left",
-        "color_text": "#171717",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "rgba(0,0,0,0)",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "multicolumn_qV4naq": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_HXjctx": {
-          "type": "column",
-          "settings": {
-            "show_border": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "image": "shopify://shop_images/63563e10-9742-4a5c-8a3d-c88fc2f97ac4.__CR0_0_300_225_PT0_SX300_V1.jpg",
-            "image_ratio": "adapt",
-            "heading": "Portable Keychain Design",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>With its small and lightweight keychain design, you can easily carry this portable charger in your pocket or hang it on your backpack.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_VDqQ3d": {
-          "type": "column",
-          "settings": {
-            "show_border": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "image": "shopify://shop_images/94737b68-7ee6-47c8-881d-c438eb2054c5.__CR0_0_300_225_PT0_SX300_V1.jpg",
-            "image_ratio": "adapt",
-            "heading": "USB-C Input & Output",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>USB C port can fully recharge the battery in 3 hours, and can also output current to the device you need to charge through this port.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_aKNRn3": {
-          "type": "column",
-          "settings": {
-            "show_border": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "image": "shopify://shop_images/9d3984fa-878d-435d-b46a-643fc11b98ec.__CR0_0_300_225_PT0_SX300_V1.jpg",
-            "image_ratio": "adapt",
-            "heading": "Pass Through Charging",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Charge for iPhone and for Apple Watch while recharging the power bank, great for over-night charging.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_GerPEF": {
-          "type": "column",
-          "settings": {
-            "show_border": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "image": "shopify://shop_images/0c215439-932f-4579-9187-084a05cef274.__CR0_0_300_225_PT0_SX300_V1.jpg",
-            "image_ratio": "landscape",
-            "heading": "Packing List",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Power Bank 10000mah * 1<br/>USB-C to USB-C Charging Cable * 1<br/>User manual * 1</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_nwUYtr": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank_Christmas_red_detail.jpg",
-            "image_ratio": "adapt",
-            "heading": "Christmas Packing",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>10000mAh Power Bank * 1</p><p>USB-C to USB-C Charging Cable * 1</p><p>User manual * 1</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "column_HXjctx",
-        "column_VDqQ3d",
-        "column_aKNRn3",
-        "column_GerPEF",
-        "column_nwUYtr"
-      ],
-      "settings": {
-        "gap": "small",
-        "columns": 4,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
         "heading": "",
-        "heading_size": "title-sm",
+        "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
+        "heading_position": "none",
         "subheading": "",
         "description": "",
         "button_label": "",
@@ -872,6 +511,8 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
         "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
@@ -1058,14 +699,14 @@
         "mobile_padding_bottom": 36
       }
     },
-    "lookbook_EEBmCV": {
+    "lookbook_bz3pVH": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank-After-Sales_Service_c0a6f897-342d-4333-a14f-061ec105ee91.jpg",
         "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank-After-Sales_Service.jpg",
-        "heading": "<strong>RORRY Complete Kit with Hassle-Free Support</strong>",
-        "heading_size": "title-sm",
+        "heading": "",
+        "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "heading_position": "none",
@@ -1077,7 +718,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -1107,8 +748,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Does it support charging while discharging?</strong>",
-            "collapsible-content": "<p>Yes, the power bank supports pass-through charging with a max input and output of 5V/2A.</p>",
+            "collapsible-title": "<strong>What makes this power bank unique?</strong>",
+            "collapsible-content": "<p>This is a bulk-order-only power bank that supports custom logo printing on the front panel. It's ideal for corporate branding and promotions. The design features a keychain for portability.</p>",
             "isactive": false
           }
         },
@@ -1121,30 +762,12 @@
             "isactive": false
           }
         },
-        "tab_content_fjWWzA": {
+        "tab_content_QYaG7b": {
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is it convenient for travel?</strong>",
-            "collapsible-content": "<p>Yes! Compact and lightweight (7.3oz, 4.33” x 2.83” x 0.83”), slips into a purse or backpack, and includes a keychain ring for on-the-go portability.</p>",
-            "isactive": false
-          }
-        },
-        "tab_content_KQRxtY": {
-          "type": "tab-content",
-          "settings": {
-            "tab-name": "Product",
-            "collapsible-title": "<strong>How fast does it charge my devices?</strong>",
-            "collapsible-content": "<p>With PD 20W fast charging, it powers iPhone 16 Pro to 56% in 30 minutes and fully charges in 1.5 hours. Apple Watch Series 9 fully charges in 1.2 hours</p>",
-            "isactive": false
-          }
-        },
-        "tab_content_NVT3iN": {
-          "type": "tab-content",
-          "settings": {
-            "tab-name": "Product",
-            "collapsible-title": "<strong>Why can’t the power bank charge my Apple Watch?</strong>",
-            "collapsible-content": "<p>Press the power button before charging your Apple Watch. Even if the indicator is on while charging a phone or recharging the power bank, you still need to press it to start watch charging. This prevents unnecessary power loss.</p>",
+            "collapsible-title": "<strong>What is the logo customization process, and how long does it take?</strong>",
+            "collapsible-content": "<p><strong>The process is simple:</strong><br/>1. Email support@rorry.com with your logo file.<br/>2. Approve the design proof.<br/>3. We'll handle the rest.<br/>4. The total time for customization and production is approximately 7 to 15 days.</p>",
             "isactive": false
           }
         }
@@ -1153,9 +776,7 @@
         "tab_Fq7LBp",
         "tab_content_683zbz",
         "tab_content_Wrb3qd",
-        "tab_content_fjWWzA",
-        "tab_content_KQRxtY",
-        "tab_content_NVT3iN"
+        "tab_content_QYaG7b"
       ],
       "name": "product faq",
       "settings": {
@@ -1287,18 +908,12 @@
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
     "video_4MJ7E7",
-    "lookbook_K9HkCc",
-    "lookbook_Y8eKDn",
-    "lookbook_8fByJL",
-    "lookbook_tgeTBX",
-    "lookbook_pY7Fcb",
-    "lookbook_bcErtq",
-    "lookbook_R9efNf",
-    "image_with_text_hadYmP",
-    "image_with_text_Kbizcm",
-    "multicolumn_qV4naq",
+    "lookbook_MmgYJp",
+    "slideshow_rxJAAf",
+    "lookbook_M99WPJ",
+    "lookbook_AJWYzh",
     "selling_points_9_J3teY8",
-    "lookbook_EEBmCV",
+    "lookbook_bz3pVH",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
     "recently-viewed",
