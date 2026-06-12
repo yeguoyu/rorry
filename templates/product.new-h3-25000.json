@@ -295,28 +295,21 @@
         "video_block_nm7Uqn": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/4k-rorry-d14-2025-0410.mp4",
+            "video": "shopify://files/videos/H3-25000mah.mp4",
             "video_url": ""
           }
         },
         "video_block_kj3C3K": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-windiaries.mp4",
+            "video": "shopify://files/videos/H3-25000mah-2.mp4",
             "video_url": ""
           }
         },
         "video_block_zUgyKR": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
-            "video_url": ""
-          }
-        },
-        "video_block_DNXxce": {
-          "type": "video_block",
-          "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-dary_rem.mp4",
+            "video": "shopify://files/videos/H3-25000mah3.mp4",
             "video_url": ""
           }
         }
@@ -324,15 +317,14 @@
       "block_order": [
         "video_block_nm7Uqn",
         "video_block_kj3C3K",
-        "video_block_zUgyKR",
-        "video_block_DNXxce"
+        "video_block_zUgyKR"
       ],
       "name": "selling points 11 Video",
       "settings": {
         "sectionname": "Overview",
         "background": "#ffffff",
         "border_radius": 8,
-        "cols_pc": 4,
+        "cols_pc": 3,
         "cols_mb": 2,
         "gap_pc": 20,
         "gap_mb": 10,
@@ -342,25 +334,40 @@
         "mobile_padding_bottom": 24
       }
     },
-    "video_YdbGmg": {
-      "type": "video",
-      "name": "t:sections.video.name",
+    "lookbook_G63kBD": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
       "settings": {
-        "transparent_header": false,
-        "video": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
-        "video_url": "",
+        "image": "shopify://shop_images/RORRY_H3_25000mAh_Laptop_Power_Bank_65W_pc_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_H3_25000mAh_Laptop_Power_Bank_65W_mo_1.jpg",
+        "heading": "<strong>RORRY H3 25000mAh Laptop Power Bank: Retractable Cable, Power Simplified </strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
         "description": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
-        "image_height": "adapt",
-        "video_mobile": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
         "padding_top": 0,
-        "padding_bottom": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
-        "rounded": true
+        "rounded": false
       }
     },
     "lookbook_HMJ6qr": {
@@ -954,7 +961,7 @@
     "main-product",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
-    "video_YdbGmg",
+    "lookbook_G63kBD",
     "lookbook_HMJ6qr",
     "lookbook_qm4M33",
     "slideshow_cCPNm8",
