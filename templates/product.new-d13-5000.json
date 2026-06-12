@@ -930,8 +930,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "Can it charge through a phone case?",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is specifically designed to work with MagSafe cases and can charge through compatible phone cases.</p>",
+            "collapsible-title": "Is it compatible with MagSafe cases?",
+            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is specifically designed to work with MagSafe cases and is compatible with iPhone 15/14/13/12 series.</p>",
             "isactive": false
           }
         },
@@ -939,8 +939,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "How strong is the magnetic attachment?",
-            "collapsible-content": "<p>It provides up to 12N of magnetic force—4x stronger than standard options. It stays firmly attached to your phone, even with heavy shaking in your pocket, and has been tested to maintain continuous wireless charging after over 3,000 shakes.</p>",
+            "collapsible-title": "Can it charge Apple Watch?",
+            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank<br/>can wirelessly charge your Apple Watch simultaneously with your iPhone.</p>",
             "isactive": false
           }
         },
@@ -948,8 +948,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Does it have overcharge protection?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank includes comprehensive safety features including short circuit protection to prevent overcharging and device damage. It features an industrial-leading temperature control system that keeps it running 50°F cooler than competitors, effectively protecting both your device's battery and the power bank for long-term use.</p>",
+            "collapsible-title": "How do the stand and ring function work?",
+            "collapsible-content": "<p>The stand securely holds your phone for horizontal video watching or video calls. The ring allows for comfortable one-handed grip. A separate side power button prevents accidentally starting charging when using it just as a stand or ring, making it a versatile 2-in-1 accessory.</p>",
             "isactive": false
           }
         },
@@ -957,8 +957,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How long does it take to recharge?</strong>",
-            "collapsible-content": "<p>The RORRY MagSafe Power Bank takes approximately 2 hours to fully recharge when using a 5V/3A adapter via the USB-C port.</p>",
+            "collapsible-title": "Which devices are compatible with this power bank?",
+            "collapsible-content": "<p>This compact power bank is designed specifically for the Apple family, including iPhone 16/15/15 Plus/Pro/Pro Max, Apple Watch Ultra 2/9/8/Ultra/7/6/5/4/SE, and AirPods. It’s your perfect all-in-one Apple companion.</p>",
             "isactive": false
           }
         },
@@ -966,17 +966,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is this charger compatible with Android phones?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is compatible with Android phones! It supports Samsung Galaxy S21-S24 series, Google Pixel, and other wireless charging enabled devices. For Android phones without built-in magnetic capabilities, it includes a magnetic metal ring that you can attach to your phone case to enable magnetic charging.</p>",
-            "isactive": false
-          }
-        },
-        "tab_content_rjgjrP": {
-          "type": "tab-content",
-          "settings": {
-            "tab-name": "Product",
-            "collapsible-title": "<strong>Is this power bank compatible with non-MagSafe phones like Samsung?</strong>",
-            "collapsible-content": "<p>Yes! It works natively with iPhone 12–16 series and MagSafe cases. For Samsung Galaxy S21–S24 (or other non-magnetic devices), simply use the included magnetic ring: peel off the backing and stick it to the outside of your phone case to enable secure magnetic charging.</p>",
+            "collapsible-title": "Is it portable and easy to carry?",
+            "collapsible-content": "<p>Absolutely. Weighing only 0.14kg and 20% lighter than others, its pocket-sized design makes it perfect for travel or everyday carry.</p>",
             "isactive": false
           }
         }
@@ -987,8 +978,7 @@
         "tab_content_fjWWzA",
         "tab_content_Wrb3qd",
         "tab_content_KQRxtY",
-        "tab_content_NVT3iN",
-        "tab_content_rjgjrP"
+        "tab_content_NVT3iN"
       ],
       "name": "product faq",
       "settings": {
