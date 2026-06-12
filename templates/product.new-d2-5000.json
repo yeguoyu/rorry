@@ -916,8 +916,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "<strong>Is it convenient for travel?</strong>",
+            "collapsible-content": "<p>Absolutely. The compact and lightweight keychain design fits easily in your pocket or can attach to a backpack, making it a perfect on-the-go travel charger.</p>",
             "isactive": false
           }
         },
@@ -925,8 +925,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "<strong>Can it charge multiple devices at the same time?</strong>",
+            "collapsible-content": "<p>Yes. This portable charger can power Apple Watch, iPhone, AirPods, and other devices simultaneously, so you can charge everything in one place.</p>",
             "isactive": false
           }
         },
@@ -934,8 +934,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "<strong>Which devices are compatible with this RORRY portable charger?</strong>",
+            "collapsible-content": "<p>Designed for Apple Watch Ultra 2, Series 10/9/8/7/6/SE/5/4/3/2 and iPhone 16/15/14/13/12/11/Pro/Pro Max. It can also charge AirPods and other USB devices.</p>",
             "isactive": false
           }
         },
@@ -943,8 +943,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "<strong>How much battery capacity does the power bank have?</strong>",
+            "collapsible-content": "<p>The 5000mAh battery can charge an Apple Watch 7–10 times, an iPhone 15 about once, and AirPods 6–8 times, making it ideal for daily use or short trips.</p>",
             "isactive": false
           }
         },
@@ -952,8 +952,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "<strong>Is it safe to use with my devices?</strong>",
+            "collapsible-content": "<p>Yes. It features built-in protection against over-temperature, over-current, over-voltage, and short circuits, ensuring safe and reliable charging.</p>",
             "isactive": false
           }
         }
