@@ -295,12 +295,13 @@
         "video_block_nm7Uqn": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/4k-rorry-d14-2025-0410.mp4",
+            "video": "shopify://files/videos/d2-2500mah-mini-portable-charger.mp4",
             "video_url": ""
           }
         },
         "video_block_kj3C3K": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-windiaries.mp4",
             "video_url": ""
@@ -308,6 +309,7 @@
         },
         "video_block_zUgyKR": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
             "video_url": ""
@@ -315,6 +317,7 @@
         },
         "video_block_DNXxce": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-dary_rem.mp4",
             "video_url": ""
