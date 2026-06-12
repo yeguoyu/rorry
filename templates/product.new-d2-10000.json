@@ -542,6 +542,42 @@
         "mobile_padding_bottom": 36
       }
     },
+    "lookbook_EEBmCV": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank-After-Sales_Service_c0a6f897-342d-4333-a14f-061ec105ee91.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D2-10000mAh_PD_20W_Portable_Charger_Keychain_Power_Bank-After-Sales_Service.jpg",
+        "heading": "<strong>RORRY Complete Kit with Hassle-Free Support</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "product_faq_iXcLnC": {
       "type": "product-faq",
       "blocks": {
@@ -736,6 +772,7 @@
     "selling_points_2_video_iNKajX",
     "video_YdbGmg",
     "selling_points_9_J3teY8",
+    "lookbook_EEBmCV",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
     "recently-viewed",
