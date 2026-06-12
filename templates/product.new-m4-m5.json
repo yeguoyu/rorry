@@ -736,6 +736,15 @@
             "tab-name": "Product"
           }
         },
+        "tab_content_fjWWzA": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "Does it charge all three devices simultaneously?",
+            "collapsible-content": "<p>Yes, the RORRY 3-in-1 Charging Station is designed to wirelessly charge your iPhone, Apple Watch, and AirPods all at the same time. This eliminates cable clutter and keeps your desk tidy and organized.</p>",
+            "isactive": false
+          }
+        },
         "tab_content_683zbz": {
           "type": "tab-content",
           "settings": {
@@ -745,21 +754,12 @@
             "isactive": false
           }
         },
-        "tab_content_fjWWzA": {
-          "type": "tab-content",
-          "settings": {
-            "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
-            "isactive": false
-          }
-        },
         "tab_content_Wrb3qd": {
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "What input voltage does this require?",
+            "collapsible-content": "<p>The RORRY 3-in-1 Charging Station operates at 9 volts with 3 amps output current. It comes with a 45W charger adapter and uses USB-C connector type. The charging station includes built-in smart chip protection for overheat, overcurrent, overvoltage, and short-circuit safety.</p>",
             "isactive": false
           }
         },
@@ -767,8 +767,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "Can I use it as both a power bank and a charging station?",
+            "collapsible-content": "<p>Absolutely. It functions as a portable power bank for travel and outdoor use, and also as a desktop charging station for home or office.</p>",
             "isactive": false
           }
         },
@@ -776,8 +776,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "Can I adjust the viewing angle while charging my phone?",
+            "collapsible-content": "<p>Yes. The charging stand supports an adjustable viewing angle up to 60°, allowing you to comfortably watch videos, attend video calls, or check notifications while your phone charges.</p>",
             "isactive": false
           }
         },
@@ -785,16 +785,16 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "",
-            "collapsible-content": "",
+            "collapsible-title": "Is the charger safe for overnight charging?",
+            "collapsible-content": "<p>Absolutely. The RORRY M5 features a built-in smart protection chip that provides multiple safety protections, including over-temperature, over-current, over-voltage, and short-circuit protection, ensuring safe and stable charging overnight.</p>",
             "isactive": false
           }
         }
       },
       "block_order": [
         "tab_Fq7LBp",
-        "tab_content_683zbz",
         "tab_content_fjWWzA",
+        "tab_content_683zbz",
         "tab_content_Wrb3qd",
         "tab_content_KQRxtY",
         "tab_content_NVT3iN",
