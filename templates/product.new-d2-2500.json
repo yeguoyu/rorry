@@ -644,7 +644,7 @@
         "image": "shopify://shop_images/86094f5a-f139-4daa-8270-cfec0de26a79.__CR0_0_800_600_PT0_SX800_V1.jpg",
         "image_height": "600px",
         "image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "text_alignment": "left",
         "content_position": "align-self-center",
         "image_height_mobile": "400px",
