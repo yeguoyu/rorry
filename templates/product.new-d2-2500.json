@@ -362,6 +362,309 @@
         "rounded": true
       }
     },
+    "lookbook_VbEbRf": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Pc_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Mobile_1.jpg",
+        "heading": "<strong>RORRY Portable Charger for iWatch: Magnetic Fast Charging, Keychain Design</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_HYPhLr": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Pc_4.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Mobile_4.jpg",
+        "heading": "<strong>Charge Anytime & Anywhere! Perfect for Work, Travel, Commute & Exercise</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_rDARcP": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Pc_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Mobile_3.jpg",
+        "heading": "Say Goodbye to Dead Watch, Messy Cables & Weak Magnetic",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_cgzyB6": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Pc_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Mobile_5.jpg",
+        "heading": "<strong>For Apple Watch Only: All Series, Ultra & SE, Plus USB-C for iPhone & More</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_RNBbtz": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Pc_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D2-2500mAh_Mini_Portable_Charger_Keychain_Power_Bank_Details_Mobile_2.jpg",
+        "heading": "<strong>Recommended by Thousands of Customers & Trusted by Top Media</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image_with_text_XrGBKn": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_eWgfbR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Charger for Apple Family iPhone/Airpod/iPad",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_MXtdT6": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>2025 - for iPhone 17/17 Plus/17 Pro/17 Pro Max</li><li>2024 - for iPhone 16/16 Plus/16 Pro/16 Pro Max</li><li>2023 - for iPhone 15/15 Plus/15 Pro/15 Pro Max</li></ul><p></p><ul><li><strong>D2-2500</strong> 𝐝𝐨𝐞𝐬 𝐍𝐎𝐓 𝐜𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐥𝐞 𝐰𝐢𝐭𝐡 𝐢𝐏𝐡𝐨𝐧𝐞 𝟏𝟒/𝟏𝟑/𝟏𝟐/𝟏𝟏 𝐬𝐞𝐫𝐢𝐞𝐬 𝐰𝐢𝐭𝐡 𝐋 𝐜𝐡𝐚𝐫𝐠𝐢𝐧𝐠 𝐩𝐨𝐫𝐭. 𝐎𝐧𝐥𝐲 𝐜𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐥𝐞 𝐰𝐢𝐭𝐡 𝐢𝐏𝐡𝐨𝐧𝐞<strong> </strong>𝟏𝟓/𝟏𝟔<strong>/17</strong> 𝐬𝐞𝐫𝐢𝐞𝐬 𝐰𝐢𝐭𝐡 𝐔𝐒𝐁 𝐂 𝐜𝐡𝐚𝐫𝐠𝐢𝐧𝐠 𝐩𝐨𝐫𝐭.</li></ul>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eWgfbR",
+        "text_MXtdT6"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "image": "shopify://shop_images/c368696f-bed6-4c33-b668-d37bb11d3f68.__CR0_0_800_600_PT0_SX800_V1_4dee3407-c753-406a-92f3-0a6abf1050c4.jpg",
+        "image_height": "600px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_with_text_bn7A3W": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dr9jcJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Compatible with Apple Watch",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_DzJYUe": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>2025 - for Apple Watch Series 11;</li><li>2024 - for Apple Watch Series 10;</li><li>2023 - for Apple Watch Series 9 / Ultra 2;</li><li>2022 - for Apple Watch Series 8 / Ultra / SE(2nd Gen);</li><li>2021 - for Apple Watch Series 7;</li><li>2020 - for Apple Watch Series 6/SE;</li><li>2019 - for Apple Watch Series 5; </li><li>2018 - for Apple Watch Series 4; </li><li>2017 - for Apple Watch Series 3;</li></ul>",
+            "text_font": "body",
+            "text_size": "subtext-sm",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dr9jcJ",
+        "text_DzJYUe"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/86094f5a-f139-4daa-8270-cfec0de26a79.__CR0_0_800_600_PT0_SX800_V1.jpg",
+        "image_height": "600px",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "400px",
+        "text_alignment_mobile": "left",
+        "color_text": "#171717",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "rgba(0,0,0,0)",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "selling_points_9_J3teY8": {
       "type": "selling-points-9",
       "blocks": {
@@ -372,7 +675,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "D14",
+            "details": "D2",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -381,11 +684,11 @@
         "item_block_aWqf8a": {
           "type": "item_block",
           "settings": {
-            "title": "Product with feature",
+            "title": "<strong>Connector Type</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
+            "details": "USB Type C",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -404,6 +707,19 @@
             "mobile_details_size": 16
           }
         },
+        "item_block_3Ti8LJ": {
+          "type": "item_block",
+          "settings": {
+            "title": "Total Capacity",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2500 Milliamp Hours",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
         "item_block_dBKhQd": {
           "type": "item_block",
           "settings": {
@@ -411,7 +727,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "4.03*2.59*0.3inch (10.2*6.5*0.76cm) [Thinnest in Market]",
+            "details": "2.95 x 1.77 x 0.47 inches",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -424,20 +740,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.9oz (110g) [Lightweight]",
-            "details_color": "",
-            "details_size": 22,
-            "mobile_details_size": 16
-          }
-        },
-        "item_block_3Ti8LJ": {
-          "type": "item_block",
-          "settings": {
-            "title": "Total Capacity",
-            "title_color": "",
-            "title_size": 24,
-            "mobile_title_size": 20,
-            "details": "5,000mAh",
+            "details": "2.82oz (80g)",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -446,11 +749,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "<strong>Voltage</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (5V/3A Adapter)",
+            "details": "5 Volts",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -459,11 +762,11 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "<strong>Rapid Charging Performance</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "In/output Supported & USB C Cable Included",
+            "details": "100% Recharged in 1.5 Hours",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -472,11 +775,24 @@
         "item_block_F88Hib": {
           "type": "item_block",
           "settings": {
-            "title": "Compatibility",
+            "title": "<strong>Compatible Devices</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for iPhone 16 /iPhone 16 Pro/ iPhone 16 Plus/ iPhone 16 Pro Max/iPhone 15 /iPhone 15 Pro/ iPhone 15 Plus/ iPhone 15 Pro Max/iPhone 14 /iPhone 14 Pro/ iPhone 14 Plus/ iPhone 14 Pro Max/iPhone 13mini /iPhone 13/ iPhone 13 Pro/ iPhone 13 Pro Max/iPhone 12mini /iPhone 12/ iPhone 12 Pro/ iPhone 12 Pro Max/Magnetic Phone Case/ for Samsung Galaxy S24/S23/S22/S21 Series",
+            "details": "For Apple Watch Series 11 10 9 8 7 6 5 4 3 2, Ultra 3, Ultra 2, Ultra, SE (Gen 2), SE //For Airpods 4, Pro 2, Pro 3",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_9KTrNa": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Compatible Phone Models</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "For Apple Watch Series 10 9 8 7 6 5 4 3 2, Ultra 2, Ultra, SE (Gen 2), SE //For Airpods 4, Pro 2",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -489,7 +805,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "Fast Charging, Lightweight, Short Circuit Protection, Slim, Wireless Charging",
+            "details": "Built-in USB C Cable, Charging Indicator, Fast Charging, Travel, Wireless Charging",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -500,12 +816,13 @@
         "item_block_EcRAaC",
         "item_block_aWqf8a",
         "item_block_qcHcQg",
+        "item_block_3Ti8LJ",
         "item_block_dBKhQd",
         "item_block_z6ym3P",
-        "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
         "item_block_F88Hib",
+        "item_block_9KTrNa",
         "item_block_qTEqAw"
       ],
       "custom_css": [
@@ -720,6 +1037,13 @@
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
     "video_84Tr7P",
+    "lookbook_VbEbRf",
+    "lookbook_HYPhLr",
+    "lookbook_rDARcP",
+    "lookbook_cgzyB6",
+    "lookbook_RNBbtz",
+    "image_with_text_XrGBKn",
+    "image_with_text_bn7A3W",
     "selling_points_9_J3teY8",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
