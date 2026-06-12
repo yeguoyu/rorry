@@ -721,11 +721,11 @@
         "item_block_aWqf8a": {
           "type": "item_block",
           "settings": {
-            "title": "Product with feature",
+            "title": "<strong>Connector Type</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
+            "details": "Built-in Cable L+C, USB-C Port",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -751,7 +751,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "4.03*2.59*0.3inch (10.2*6.5*0.76cm) [Thinnest in Market]",
+            "details": "3.86\"L x 0.65\"W x 2.82\"Th",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -764,7 +764,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.9oz (110g) [Lightweight]",
+            "details": "4.64 oz (131.5g)",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -786,11 +786,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "<strong>Amperage</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (5V/3A Adapter)",
+            "details": "2 Amps",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -799,11 +799,37 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "<strong>Battery Charge Time</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "In/output Supported & USB C Cable Included",
+            "details": "2.5 Hours",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_pxinnR": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Reusability</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Rechargeable",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_Lyg9ka": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Number of Outlets</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "3",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -812,11 +838,37 @@
         "item_block_F88Hib": {
           "type": "item_block",
           "settings": {
-            "title": "Compatibility",
+            "title": "<strong>Compatible Devices</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for iPhone 16 /iPhone 16 Pro/ iPhone 16 Plus/ iPhone 16 Pro Max/iPhone 15 /iPhone 15 Pro/ iPhone 15 Plus/ iPhone 15 Pro Max/iPhone 14 /iPhone 14 Pro/ iPhone 14 Plus/ iPhone 14 Pro Max/iPhone 13mini /iPhone 13/ iPhone 13 Pro/ iPhone 13 Pro Max/iPhone 12mini /iPhone 12/ iPhone 12 Pro/ iPhone 12 Pro Max/Magnetic Phone Case/ for Samsung Galaxy S24/S23/S22/S21 Series",
+            "details": "for AirPods/AirPods Pro, for Apple Watch Ultra 1/2/3, Apple Watch Series 11/10/9/8/7/6/SE/5/4, for iPhone 17/16/15/14/13/12/11/XS/X/8/SE",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_N3mhBi": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Compatible Cellular Phone Models</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Apple iPhone 16 Pro Max, Samsung Galaxy S24 Ultra",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_FDmfPk": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Compatible Phone Models</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "iPhone 17/16/15/14/13/12/11/XS/X/8/SE",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -845,7 +897,11 @@
         "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
+        "item_block_pxinnR",
+        "item_block_Lyg9ka",
         "item_block_F88Hib",
+        "item_block_N3mhBi",
+        "item_block_FDmfPk",
         "item_block_qTEqAw"
       ],
       "custom_css": [
