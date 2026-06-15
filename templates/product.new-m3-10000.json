@@ -683,7 +683,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "D14",
+            "details": "M3",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -696,7 +696,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
+            "details": "Fast Charging, LED Indicator Lights, Magnetic, Travel, Wireless Charging",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -722,7 +722,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "4.03*2.59*0.3inch (10.2*6.5*0.76cm) [Thinnest in Market]",
+            "details": "4.6\"L x 2.83\"W x 1.26\"Th",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -735,7 +735,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.9oz (110g) [Lightweight]",
+            "details": "303g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -748,7 +748,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5,000mAh",
+            "details": "10,000mAh",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -757,11 +757,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "<strong>Connector Type</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (5V/3A Adapter)",
+            "details": "USB-C & Wireless",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -770,11 +770,24 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "<strong>Voltage</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "In/output Supported & USB C Cable Included",
+            "details": "9 Volts",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_qTEqAw": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Wireless Charging Standard</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "MagSafe",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -787,20 +800,20 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for iPhone 16 /iPhone 16 Pro/ iPhone 16 Plus/ iPhone 16 Pro Max/iPhone 15 /iPhone 15 Pro/ iPhone 15 Plus/ iPhone 15 Pro Max/iPhone 14 /iPhone 14 Pro/ iPhone 14 Plus/ iPhone 14 Pro Max/iPhone 13mini /iPhone 13/ iPhone 13 Pro/ iPhone 13 Pro Max/iPhone 12mini /iPhone 12/ iPhone 12 Pro/ iPhone 12 Pro Max/Magnetic Phone Case/ for Samsung Galaxy S24/S23/S22/S21 Series",
+            "details": "for AirPods 4/3/2/Pro/Pro 2, for Apple Watch Ultra/Ultra 2; for Apple Watch Series 10/9/8/7/6/5/4/3/SE, for iPhone 17/16/15/14/13/12 Plus/Pro/Pro Max",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
           }
         },
-        "item_block_qTEqAw": {
+        "item_block_8whT8q": {
           "type": "item_block",
           "settings": {
-            "title": "Other Special Features",
+            "title": "<strong>Built-In Media</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "Fast Charging, Lightweight, Short Circuit Protection, Slim, Wireless Charging",
+            "details": "3-in-1 Portable Charger Station, Built in Cables, Not included adapter, User Manual",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -816,8 +829,9 @@
         "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
+        "item_block_qTEqAw",
         "item_block_F88Hib",
-        "item_block_qTEqAw"
+        "item_block_8whT8q"
       ],
       "custom_css": [
         ".selling_points_9 .centent .list .item .details {word-break: break-word;}",
