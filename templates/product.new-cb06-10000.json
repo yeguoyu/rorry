@@ -712,7 +712,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "D14",
+            "details": "CB06",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -725,7 +725,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
+            "details": "Built In Cable, Built In Wall Plug, Digital Display, Fast Charging, Pocket Size",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -751,7 +751,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "4.03*2.59*0.3inch (10.2*6.5*0.76cm) [Thinnest in Market]",
+            "details": "4.37\"L x 2.5\"W x 1\"Th",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -764,7 +764,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.9oz (110g) [Lightweight]",
+            "details": "180g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -777,7 +777,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5,000mAh",
+            "details": "10,000mAh",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -786,11 +786,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "Connector Type",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (5V/3A Adapter)",
+            "details": "USB-C & Wireless",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -799,11 +799,24 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "<strong>Voltage</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "In/output Supported & USB C Cable Included",
+            "details": "9 Volts",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_gtQ3Mt": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Number of Ports</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -812,24 +825,24 @@
         "item_block_F88Hib": {
           "type": "item_block",
           "settings": {
-            "title": "Compatibility",
+            "title": "<strong>Compatible Devices</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for iPhone 16 /iPhone 16 Pro/ iPhone 16 Plus/ iPhone 16 Pro Max/iPhone 15 /iPhone 15 Pro/ iPhone 15 Plus/ iPhone 15 Pro Max/iPhone 14 /iPhone 14 Pro/ iPhone 14 Plus/ iPhone 14 Pro Max/iPhone 13mini /iPhone 13/ iPhone 13 Pro/ iPhone 13 Pro Max/iPhone 12mini /iPhone 12/ iPhone 12 Pro/ iPhone 12 Pro Max/Magnetic Phone Case/ for Samsung Galaxy S24/S23/S22/S21 Series",
+            "details": "for Pixel Moto LG Android Table, for Samsung Galaxy S24/S23/S22/S21/S20/+/Ultra/FE, for Switch/for steam deck/for Drone, for iPhone 17/16/15/14/13/12/11/Air/Plus/Pro/Pro Max; for AirPods 4/3/2/Pro/Pro 2",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
           }
         },
-        "item_block_qTEqAw": {
+        "item_block_jPUYFE": {
           "type": "item_block",
           "settings": {
-            "title": "Other Special Features",
+            "title": "<strong>Compatible Phone Models</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "Fast Charging, Lightweight, Short Circuit Protection, Slim, Wireless Charging",
+            "details": "for Pixel Moto LG Android Table, for Samsung Galaxy S24/S23/S22/S21/S20/+/Ultra/FE, for iPhone 16/15/14/13/12/11/Plus/Pro/Pro Max ; for Apple Watch Ultra/Ultra 2; for Apple Watch Series 10/9/8/7/6/5/4/3/SE; for AirPods 4/3/2/Pro/Pro 2",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -845,8 +858,9 @@
         "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
+        "item_block_gtQ3Mt",
         "item_block_F88Hib",
-        "item_block_qTEqAw"
+        "item_block_jPUYFE"
       ],
       "custom_css": [
         ".selling_points_9 .centent .list .item .details {word-break: break-word;}",
