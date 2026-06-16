@@ -486,6 +486,138 @@
         "rounded": false
       }
     },
+    "lookbook_zqiX6K": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_5.jpg",
+        "heading": "<strong>Efficient & Versatile: Charge Your Way, Effortlessly!</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_ET63Ek": {
+      "type": "slideshow",
+      "blocks": {
+        "image_wLDBwN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_2.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_2.jpg",
+            "heading": "<strong>Charge On-the-Go</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h4",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_zmX3tJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_4.jpg",
+            "heading": "Charge in Style",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_YcDULY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_3.jpg",
+            "heading": "<strong>Easy to Carry</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_FJmqAX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_1.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_1.jpg",
+            "heading": "<strong>Great for Gifting</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_wLDBwN",
+        "image_zmX3tJ",
+        "image_YcDULY",
+        "image_FJmqAX"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#9887b8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "selling_points_9_J3teY8": {
       "type": "selling-points-9",
       "blocks": {
@@ -664,8 +796,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "How portable is this power bank?",
-            "collapsible-content": "<p>Extremely portable! Measuring just 3.1” x 1.56” x 1” and weighing only 76g, it’s as compact as a lipstick. Slip it in your pocket, purse, or bag for effortless on-the-go charging.</p>",
+            "collapsible-title": "<strong>What devices are compatible with this RORRY PalmGo portable charger?</strong>",
+            "collapsible-content": "<p>This PalmGo portable charger for Apple devices is compatible with iPhone 17/16/15 series, iPad Pro and iPad Air, and Apple Watch Ultra 3/Ultra 2/Series 11/10/9/8/7/6/5/4/SE. It features a built-in USB-C connector and a dedicated Apple Watch charger for convenient charging.</p>",
             "isactive": false
           }
         },
@@ -673,8 +805,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "How fast can it charge my devices?",
-            "collapsible-content": "<p>Thanks to the built-in foldable USB-C connector:<br/>* iPhone 15 charges to 50% in 40 minutes and 80% in 1.3 hours<br/>* Apple Watch Series 9 charges to 50% in 45 minutes and 80% in 1 hour<br/>  Enjoy fast, convenient power anytime, anywhere.</p>",
+            "collapsible-title": "<strong>How long to fully recharge the mini power bank?</strong>",
+            "collapsible-content": "<p>The recharge time depends on the charger's power and the ambient temperature. Using a 18W or higher charger at 77°F (25°C), it typically takes about 3.2 hours to fully recharge the power bank.</p>",
             "isactive": false
           }
         },
@@ -682,8 +814,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "Can it charge other USB-C devices?",
-            "collapsible-content": "<p>Yes, it can charge other USB-C devices through its built-in foldable USB-C connector and includes a USB-C to USB-C cable.</p>",
+            "collapsible-title": "<strong>Can I use this small portable charger with my phone case on?</strong>",
+            "collapsible-content": "<p>Yes, it is fully compatible as long as your phone case is not thicker than 4mm.</p>",
             "isactive": false
           }
         },
@@ -691,8 +823,17 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "How long does it take to recharge?",
-            "collapsible-content": "<p>It takes about 1 hour to recharge itself completely. This fast recharge time means you won't be without your power bank for long.</p>",
+            "collapsible-title": "<strong>How can I check the remaining battery level?</strong>",
+            "collapsible-content": "<p>It features a clear digital LED display that shows the exact remaining battery percentage in 1% increments, so you'll always know how much power is left at a glance. </p>",
+            "isactive": false
+          }
+        },
+        "tab_content_ALMUYQ": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Does this portable charger support fast charging?</strong>",
+            "collapsible-content": "<p>Yes. The 22.5W fast charging output can charge iPhone 17 up to 50% in around 30 minutes, helping you quickly power up when you're on the move.</p>",
             "isactive": false
           }
         },
@@ -700,8 +841,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "Is it safe to use?",
-            "collapsible-content": "<p>Absolutely. The power bank features a smart microchip for multi-layered protection against short circuits, overheating, overcharging, overvoltage, and overcurrent. Its drop-resistant, scratch-proof PC shell has been tested 30,000 times for durability and certified by CE, FCC, and RoHS, keeping your devices safe at all times.</p>",
+            "collapsible-title": "<strong>Is this portable charger easy to carry when traveling?</strong>",
+            "collapsible-content": "<p>Yes. This mini portable charger measures 3.3 × 2.1 × 1.3 inches and weighs only 0.4 lbs, making it compact enough to fit in a pocket, purse, or backpack. It's perfect for travel, commuting, and outdoor activities.</p>",
             "isactive": false
           }
         }
@@ -712,6 +853,7 @@
         "tab_content_fjWWzA",
         "tab_content_Wrb3qd",
         "tab_content_KQRxtY",
+        "tab_content_ALMUYQ",
         "tab_content_NVT3iN"
       ],
       "name": "product faq",
@@ -847,6 +989,8 @@
     "lookbook_6FgqTX",
     "lookbook_PzMX6d",
     "lookbook_CU78pF",
+    "lookbook_zqiX6K",
+    "slideshow_ET63Ek",
     "selling_points_9_J3teY8",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
