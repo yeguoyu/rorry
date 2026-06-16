@@ -295,19 +295,21 @@
         "video_block_nm7Uqn": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/4k-rorry-d14-2025-0410.mp4",
+            "video": "shopify://files/videos/3-in-1-charger-d17-d18.mp4",
             "video_url": ""
           }
         },
         "video_block_kj3C3K": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-windiaries.mp4",
+            "video": "shopify://files/videos/RORRY D17 5000mAh D18 10000mAh 3-in-1 Portable Charger for Apple Devices, Foldable Wireless Charging Station for iPhone 1615141312, Apple Watch, and AirPods vedio.mp4",
             "video_url": ""
           }
         },
         "video_block_zUgyKR": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
             "video_url": ""
@@ -315,6 +317,7 @@
         },
         "video_block_DNXxce": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-dary_rem.mp4",
             "video_url": ""
@@ -342,22 +345,22 @@
         "mobile_padding_bottom": 24
       }
     },
-    "video_YdbGmg": {
+    "video_Jz4zMF": {
       "type": "video",
-      "name": "t:sections.video.name",
       "settings": {
         "transparent_header": false,
-        "video": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
+        "video": "shopify://files/videos/RORRY D17 5000mAh D18 10000mAh 3-in-1 Portable Charger for Apple Devices, Foldable Wireless Charging Station for iPhone 1615141312, Apple Watch, and AirPods vedio.mp4",
         "video_url": "",
         "description": "",
         "enable_video_autoplay": false,
         "enable_video_looping": false,
-        "image_height": "adapt",
-        "video_mobile": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
+        "image_height": "600px",
+        "video_mobile": "shopify://files/videos/RORRY M3-10000mAh Foldable Charger Megsafe Power Bank Video.mp4",
         "video_url_mobile": "",
+        "cover_image_mobile": "shopify://shop_images/RORRY_M3-10000mAh_Foldable_Charger_Megsafe_Power_Bank_image.png",
         "image_height_mobile": "auto",
         "padding_top": 0,
-        "padding_bottom": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": true
@@ -954,7 +957,7 @@
     "main-product",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
-    "video_YdbGmg",
+    "video_Jz4zMF",
     "lookbook_HMJ6qr",
     "lookbook_qm4M33",
     "slideshow_cCPNm8",
