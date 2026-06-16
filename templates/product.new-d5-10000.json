@@ -628,7 +628,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "D5",
+            "details": "D5-10000",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -641,7 +641,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY USB-C/Lightning port Power Bank",
+            "details": "Fast Charging, Digital Display, Built In USB-C Connector, Lightweight, Pocket Size, Short Circuit Protection, Airline Approved Travel Charger, Scratch Resistant",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -667,7 +667,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.1” x 1.56” x 1”",
+            "details": "3.3\"L x 2.1\"W x 1.3\"Th",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -680,7 +680,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "76g",
+            "details": "170g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -693,7 +693,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5,000mAh",
+            "details": "10,000mAh",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -702,11 +702,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "Connector Type",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (3.7V/18.5Wh)",
+            "details": "IN/OUT: USB Type C*2",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -715,11 +715,50 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "<strong>Voltage</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "USB-C/Lightning port",
+            "details": "9 Volts",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_MdJ64D": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Amperage</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2.25 Amps",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_dRDLjH": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Number of Ports</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_rXW7aX": {
+          "type": "item_block",
+          "settings": {
+            "title": "Antenna Location",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Indoor/Outdoor",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -728,11 +767,11 @@
         "item_block_F88Hib": {
           "type": "item_block",
           "settings": {
-            "title": "Compatibility",
+            "title": "<strong>Compatible Devices</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for iPhone 16/15 Plus/Pro/Pro Max, for Apple Watch Ultra 2/9/8/Ultra/7/6/5/4/3/SE Series",
+            "details": "Apple Watch Ultra3/Ultra2/Ultra/11/10/9/8/7/6/SE5/4/3, iPad, AirPods, iPhone 17/16/15 Plus/Pro/Pro Max",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -741,11 +780,24 @@
         "item_block_qTEqAw": {
           "type": "item_block",
           "settings": {
-            "title": "Other Special Features",
+            "title": "<strong>Compatible Phone Models</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "Light, sleek, and easy to carry",
+            "details": "iPhone",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_yLdVwR": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Built-In Media</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "1* power bank, 1* user manual, 2* Lanyard cables",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -761,8 +813,12 @@
         "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
+        "item_block_MdJ64D",
+        "item_block_dRDLjH",
+        "item_block_rXW7aX",
         "item_block_F88Hib",
-        "item_block_qTEqAw"
+        "item_block_qTEqAw",
+        "item_block_yLdVwR"
       ],
       "custom_css": [
         ".selling_points_9 .centent .list .item .details {word-break: break-word;}",
