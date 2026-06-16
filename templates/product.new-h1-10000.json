@@ -623,7 +623,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "D14",
+            "details": "<strong>H1</strong>",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -636,7 +636,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
+            "details": "All-in-One, Auto Shut-Off, Built In Cable, Fast Charging, LED Ind",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -662,7 +662,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "4.03*2.59*0.3inch (10.2*6.5*0.76cm) [Thinnest in Market]",
+            "details": "4.33\"L x 2.44\"W x 0.94\"Th",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -675,7 +675,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.9oz (110g) [Lightweight]",
+            "details": "250g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -688,7 +688,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5,000mAh",
+            "details": "10,000mAh",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -697,11 +697,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "Connector Type",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (5V/3A Adapter)",
+            "details": "Built-in Cable L+C, 1A1C",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -710,11 +710,24 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "Antenna Location",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "In/output Supported & USB C Cable Included",
+            "details": "Indoor/Outdoor",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_Q3ztnN": {
+          "type": "item_block",
+          "settings": {
+            "title": "Battery Charge Time",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2.2 Hours",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -756,6 +769,7 @@
         "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
+        "item_block_Q3ztnN",
         "item_block_F88Hib",
         "item_block_qTEqAw"
       ],
