@@ -295,28 +295,28 @@
         "video_block_nm7Uqn": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/d2-10000mah-pd-20w-portable-charger-4.mp4",
+            "video": "shopify://files/videos/d2-20000mah-pd-30w-portable-charger-6.mp4",
             "video_url": ""
           }
         },
         "video_block_kj3C3K": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/d2-10000mah-pd-20w-portable-charger-3.mp4",
+            "video": "shopify://files/videos/d2-20000mah-pd-30w-portable-charger-2.mp4",
             "video_url": ""
           }
         },
         "video_block_zUgyKR": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/d2-10000mah-pd-20w-portable-charger.mp4",
+            "video": "shopify://files/videos/d2-20000mah-pd-30w-portable-charger-3.mp4",
             "video_url": ""
           }
         },
         "video_block_DNXxce": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/d2-10000mah-pd-20w-portable-charger-2.mp4",
+            "video": "shopify://files/videos/d2-20000mah-pd-30w-portable-charger.mp4",
             "video_url": ""
           }
         }
@@ -361,7 +361,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -397,7 +397,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
