@@ -294,6 +294,7 @@
       "blocks": {
         "video_block_nm7Uqn": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/4k-rorry-d14-2025-0410.mp4",
             "video_url": ""
@@ -301,6 +302,7 @@
         },
         "video_block_kj3C3K": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-windiaries.mp4",
             "video_url": ""
@@ -308,6 +310,7 @@
         },
         "video_block_zUgyKR": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
             "video_url": ""
@@ -315,6 +318,7 @@
         },
         "video_block_DNXxce": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-dary_rem.mp4",
             "video_url": ""
@@ -342,73 +346,16 @@
         "mobile_padding_bottom": 24
       }
     },
-    "video_YdbGmg": {
-      "type": "video",
-      "name": "t:sections.video.name",
-      "settings": {
-        "transparent_header": false,
-        "video": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
-        "video_url": "",
-        "description": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
-        "image_height": "adapt",
-        "video_mobile": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": true
-      }
-    },
-    "lookbook_HMJ6qr": {
+    "lookbook_XRiybg": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_1.jpg",
-        "heading": "<strong>RORRY Magnetic Portable Charger</strong>",
+        "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_1.jpg",
+        "heading": "<strong>RORRY 12000mAh All-in-One Keychain Power Bank: 30W Fast Charge + Retractable Cable</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 30,
-        "padding_top": 20,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_qm4M33": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_2.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_2.jpg",
-        "heading": "<strong>Recommend by Thousands of Customers & Professional Media</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h3",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -418,7 +365,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -428,22 +375,22 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
       }
     },
-    "slideshow_cCPNm8": {
+    "slideshow_Wf6aRe": {
       "type": "slideshow",
       "blocks": {
-        "image_TFitUt": {
+        "image_63EKR3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_4.jpg",
-            "heading": "",
+            "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_2.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_2.jpg",
+            "heading": "<strong>30W Fast Charging: iPhone 17 Pro to 50% in Just 30 Minutes</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -453,27 +400,12 @@
             "button_icon": false
           }
         },
-        "image_yVLLyA": {
+        "image_EwjdwR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_3.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_3.jpg",
-            "heading": "Slim & Pocket-Sized: RORRY Charging Without the Clutter",
-            "heading_size": "title-sm",
-            "heading_tag": "h3",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_BaBf63": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_6.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_6.jpg",
-            "heading": "2-in-1 Fast Charging: RORRY Power Bank for iPhone & AirPods",
+            "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_6.jpg",
+            "heading": "<strong>Dual Recharge: 0-100% in 2H via Built-in USB-C Cable or Port</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -485,28 +417,27 @@
         }
       },
       "block_order": [
-        "image_TFitUt",
-        "image_yVLLyA",
-        "image_BaBf63"
+        "image_63EKR3",
+        "image_EwjdwR"
       ],
       "name": "Slideshow",
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 4,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "image_height": "adapt",
         "content_width": "small",
         "image_height_mobile": "adapt",
         "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ffffff",
+        "color_text": "#9887b8",
         "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
+        "color_button_text": "rgba(0,0,0,0)",
+        "color_button_background": "rgba(0,0,0,0)",
         "color_button_gradient": "",
-        "color_overlay": "#171717",
+        "color_overlay": "rgba(0,0,0,0)",
         "overlay_opacity": 0,
-        "padding_top": 0,
+        "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
@@ -515,16 +446,16 @@
         "parallax_direction": "vertical"
       }
     },
-    "lookbook_4TKzMc": {
+    "lookbook_UYNLDw": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_7.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_7.jpg",
-        "heading": "<strong>Universal Compatibility: RORRY Wireless & 18W PD Wired Charging</strong>",
+        "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_3.jpg",
+        "heading": "<strong>2.13ft Retractable Cable: 30,000+ Retractions for Adjustable, Long-Lasting Convenience</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h3",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -534,7 +465,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -544,11 +475,183 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
+        "padding_top": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
+      }
+    },
+    "lookbook_dCzfnB": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_4.jpg",
+        "heading": "<strong>12000mAh Portable Keychain Power Bank: More Juice for Your Longest Days</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_R97iXj": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_4.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_5.jpg",
+        "heading": "<strong>All-in-One 30W Portable Charger: Retractable Cable + iWatch Charger</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_BGgNJk": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_7.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_7.jpg",
+        "heading": "<strong>Soft Leather & Premium Metal Frame Portable Power Bank</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_FQJgfw": {
+      "type": "slideshow",
+      "blocks": {
+        "image_9CtKLm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_9.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_9.jpg",
+            "heading": "<strong>Portable Keychain Power Bank: Charge Anywhere, Anytime</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_zgxEV6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_pc_8.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D3-12000mAh_Portable_Charger_Keychain_Power_Bank_30W_Retractable_Cable_mo_8.jpg",
+            "heading": "<strong>Portable Travel Power Bank: Charge Up for Every Adventure</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_9CtKLm",
+        "image_zgxEV6"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#9887b8",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_button_text": "rgba(0,0,0,0)",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "rgba(0,0,0,0)",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
       }
     },
     "selling_points_9_J3teY8": {
@@ -714,42 +817,6 @@
         "padding_bottom": 36,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36
-      }
-    },
-    "lookbook_xBUtkC": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_8.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_8.jpg",
-        "heading": "<strong>Hassle-Free After-Sales & Complete RORRY Kit</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "product_faq_iXcLnC": {
@@ -954,13 +1021,14 @@
     "main-product",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
-    "video_YdbGmg",
-    "lookbook_HMJ6qr",
-    "lookbook_qm4M33",
-    "slideshow_cCPNm8",
-    "lookbook_4TKzMc",
+    "lookbook_XRiybg",
+    "slideshow_Wf6aRe",
+    "lookbook_UYNLDw",
+    "lookbook_dCzfnB",
+    "lookbook_R97iXj",
+    "lookbook_BGgNJk",
+    "slideshow_FQJgfw",
     "selling_points_9_J3teY8",
-    "lookbook_xBUtkC",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
     "recently-viewed",
