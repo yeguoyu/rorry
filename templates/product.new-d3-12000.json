@@ -664,7 +664,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "D14",
+            "details": "D3-12000",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -677,7 +677,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
+            "details": "RORRY [UltimaBuilt In Cable, Digital Display, Fast Charging, Over Charging Protection, Slimte Slim] Magnetic Portable Charger",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -703,7 +703,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "4.03*2.59*0.3inch (10.2*6.5*0.76cm) [Thinnest in Market]",
+            "details": "5.27\"L x 2.55\"W x 0.98\"Th",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -716,7 +716,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.9oz (110g) [Lightweight]",
+            "details": "350g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -729,7 +729,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5,000mAh",
+            "details": "12,000mAh",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -738,11 +738,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "Connector Type",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (5V/3A Adapter)",
+            "details": "Built-in Cable C, USB-C Port, Charger for iWatch",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -751,11 +751,63 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "<strong>Voltage</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "In/output Supported & USB C Cable Included",
+            "details": "9.0",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_yFLj9n": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Amperage</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "3 Amps",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_eNdGUq": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Number of Ports</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_fexcNR": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Rapid Charging Performance</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "60% in 30mins",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_8TN7MG": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Battery Charge Time</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2 Hours",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -764,24 +816,24 @@
         "item_block_F88Hib": {
           "type": "item_block",
           "settings": {
-            "title": "Compatibility",
+            "title": "<strong>Compatible Devices</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for iPhone 16 /iPhone 16 Pro/ iPhone 16 Plus/ iPhone 16 Pro Max/iPhone 15 /iPhone 15 Pro/ iPhone 15 Plus/ iPhone 15 Pro Max/iPhone 14 /iPhone 14 Pro/ iPhone 14 Plus/ iPhone 14 Pro Max/iPhone 13mini /iPhone 13/ iPhone 13 Pro/ iPhone 13 Pro Max/iPhone 12mini /iPhone 12/ iPhone 12 Pro/ iPhone 12 Pro Max/Magnetic Phone Case/ for Samsung Galaxy S24/S23/S22/S21 Series",
+            "details": "for Apple Watch Ultra 3/Ultra 2/Ultra/11/10/9/8/7/6/SE/5/4/3/2, for iPhone 17/16/15 Plus/ Pro/Pro Max; For iPad/ AirPods Series",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
           }
         },
-        "item_block_qTEqAw": {
+        "item_block_7Nt8Rr": {
           "type": "item_block",
           "settings": {
-            "title": "Other Special Features",
+            "title": "<strong>Built-In Media</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "Fast Charging, Lightweight, Short Circuit Protection, Slim, Wireless Charging",
+            "details": "12000mAh Portable Charger * 1, Built in Cables, User Manual * 1",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -797,8 +849,12 @@
         "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
+        "item_block_yFLj9n",
+        "item_block_eNdGUq",
+        "item_block_fexcNR",
+        "item_block_8TN7MG",
         "item_block_F88Hib",
-        "item_block_qTEqAw"
+        "item_block_7Nt8Rr"
       ],
       "custom_css": [
         ".selling_points_9 .centent .list .item .details {word-break: break-word;}",
