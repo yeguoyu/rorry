@@ -832,8 +832,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "Can it charge through a phone case?",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is specifically designed to work with MagSafe cases and can charge through compatible phone cases.</p>",
+            "collapsible-title": "<strong>Does this charge multiple Apple devices simultaneously?</strong>",
+            "collapsible-content": "<p>Absolutely! It is specifically designed to charge 3 Apple devices simultaneously:<br/>Built-in retractable USB-C cable for iPhone/iPad<br/>Additional USB-C port (30W output)<br/>Magnetic Apple Watch charger (5W output)<br/>This means you can charge your iPhone, iPad, and Apple Watch all at the same time. It's compatible with iPhone 17/16/15 series, all Apple Watch models (including Ultra series), AirPods, and iPads - making it the perfect all-in-one solution for your Apple ecosystem.</p>",
             "isactive": false
           }
         },
@@ -841,8 +841,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "How strong is the magnetic attachment?",
-            "collapsible-content": "<p>It provides up to 12N of magnetic force—4x stronger than standard options. It stays firmly attached to your phone, even with heavy shaking in your pocket, and has been tested to maintain continuous wireless charging after over 3,000 shakes.</p>",
+            "collapsible-title": "<strong>Does the built-in cable prevent tangling?</strong>",
+            "collapsible-content": "<p>Yes. The 2.13ft retractable cable stretches when you need it and snaps back magnetically when not in use, keeping your bag clutter-free. The keychain design also allows easy carrying on your backpack or wrist.</p>",
             "isactive": false
           }
         },
@@ -850,8 +850,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Does it have overcharge protection?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank includes comprehensive safety features including short circuit protection to prevent overcharging and device damage. It features an industrial-leading temperature control system that keeps it running 50°F cooler than competitors, effectively protecting both your device's battery and the power bank for long-term use.</p>",
+            "collapsible-title": "<strong>What's the full charging time for iPhone?</strong>",
+            "collapsible-content": "<p>It can charge your iPhone to 60% in just 30 minutes with its 30W fast charging capability. For a complete charge from 0% to 100%, it typically takes about 1.5-2 hours depending on your specific iPhone model. The newer iPhone models (15 Pro Max) may take slightly longer for a full charge due to their larger battery capacity.</p>",
             "isactive": false
           }
         },
@@ -859,8 +859,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How long does it take to recharge?</strong>",
-            "collapsible-content": "<p>The RORRY MagSafe Power Bank takes approximately 2 hours to fully recharge when using a 5V/3A adapter via the USB-C port.</p>",
+            "collapsible-title": "<strong>Does the cable tangle or get damaged easily?</strong>",
+            "collapsible-content": "<p>No, It is specifically designed to eliminate cable tangling and damage issues! The built-in retractable cable features a magnetic snap-back mechanism that keeps it neat and organized - it extends when you need it and retracts automatically when you don't. This eliminates the common problem of cables getting twisted or knotted in your bag. For durability, the cable is engineered to withstand 3,000+ pulls without loosening, and the entire power bank undergoes extensive aging tests before shipment to ensure reliable performance.</p>",
             "isactive": false
           }
         },
@@ -868,8 +868,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is this charger compatible with Android phones?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is compatible with Android phones! It supports Samsung Galaxy S21-S24 series, Google Pixel, and other wireless charging enabled devices. For Android phones without built-in magnetic capabilities, it includes a magnetic metal ring that you can attach to your phone case to enable magnetic charging.</p>",
+            "collapsible-title": "<strong>Is this portable charger safe to use?</strong>",
+            "collapsible-content": "<p>Yes. The charger is UL-certified and features smart protection chips that safeguard your devices from overcharging, overcurrent, over-voltage, and short circuits, ensuring safe everyday use.</p>",
             "isactive": false
           }
         },
@@ -877,8 +877,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is this power bank compatible with non-MagSafe phones like Samsung?</strong>",
-            "collapsible-content": "<p>Yes! It works natively with iPhone 12–16 series and MagSafe cases. For Samsung Galaxy S21–S24 (or other non-magnetic devices), simply use the included magnetic ring: peel off the backing and stick it to the outside of your phone case to enable secure magnetic charging.</p>",
+            "collapsible-title": "<strong>Can I bring this power bank on a plane?</strong>",
+            "collapsible-content": "<p>Absolutely. With 12000mAh capacity and a compact design (5.27 × 2.55 × 0.98 inches), it meets airline carry-on regulations, making it safe for flights.</p>",
             "isactive": false
           }
         }
