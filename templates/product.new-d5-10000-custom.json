@@ -57,6 +57,7 @@
         },
         "coupon_code_QVtbex": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 1 -> Save",
             "left_bottom_text": "25%",
@@ -67,6 +68,7 @@
         },
         "coupon_code_RdP3ME": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 2 -> Save",
             "left_bottom_text": "30%",
@@ -77,6 +79,7 @@
         },
         "coupon_code_7q6exG": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 3+ -> Save",
             "left_bottom_text": "35%",
@@ -361,7 +364,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -397,7 +400,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -433,7 +436,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -469,7 +472,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -505,7 +508,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
