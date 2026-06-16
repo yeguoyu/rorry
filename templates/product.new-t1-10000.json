@@ -295,19 +295,20 @@
         "video_block_nm7Uqn": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/t1-5000mah-portable-charger-keychain-4.mp4",
+            "video": "shopify://files/videos/t1-10000mah-portable-charger-1.mp4",
             "video_url": ""
           }
         },
         "video_block_kj3C3K": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/t1-5000mah-portable-charger-keychain-3.mp4",
+            "video": "shopify://files/videos/t1-10000mah-portable-charger.mp4",
             "video_url": ""
           }
         },
         "video_block_zUgyKR": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/t1-5000mah-portable-charger-keychain-2.mp4",
             "video_url": ""
@@ -315,6 +316,7 @@
         },
         "video_block_DNXxce": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/t1-5000mah-portable-charger-keychain.mp4",
             "video_url": ""
