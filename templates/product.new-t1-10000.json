@@ -342,13 +342,13 @@
         "mobile_padding_bottom": 24
       }
     },
-    "lookbook_7CJk7J": {
+    "lookbook_iGNqQ9": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_T1-5000mAh_Portable_Charger_Keychain_Power_Bank_pc.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_T1-5000mAh_Portable_Charger_Keychain_Power_Bank_pc_676daead-69db-4e0a-b1c6-bead7fcae737.jpg",
-        "heading": "<strong>RORRY 5000mAh Keychain Portable Charger: Built-in USB-C & Lightning Cables</strong>",
+        "image": "shopify://shop_images/RORRY_T1-10000mAh_Portable_Charger_Keychain_Power_Bank_30W_pc.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_1.jpg",
+        "heading": "<strong>RORRY 10000mAh 30W PD Keychain Charger: Built-in Cable & Colorful Options</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -378,13 +378,13 @@
         "rounded": false
       }
     },
-    "lookbook_GhBQjf": {
+    "lookbook_JG7gfn": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_us_details_pc_3.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_details_m_us_9.jpg",
-        "heading": "<strong>Step Out with Everything in One: 5000mAh Keychain Charger</strong>",
+        "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_3.jpg",
+        "heading": "<strong>Step Out with Everything in One: 30W 10000mAh Keychain Charger</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -397,7 +397,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -414,159 +414,15 @@
         "rounded": false
       }
     },
-    "lookbook_BQLcxH": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_us_details_pc_4.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_details_m_us_10.jpg",
-        "heading": "<strong>Charging 3 Devices Simultaneously</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_xJH6eg": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_us_details_pc_5.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_details_m_us_1.jpg",
-        "heading": "<strong>Portable 5000mAh Power Bank for Travel: Compatible with All Devices</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_zMX4w6": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_us_details_pc_6.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_details_m_us_2.jpg",
-        "heading": "<strong>Portable Charger with Keychain for Travel: Your Ultimate On-the-Go Power</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_4WCJfF": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_us_details_pc_7.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_Portable_Charger_5000mAh_Portable_Charger_Power_Bank_with_Built-in_Cables_Travel_Keychain_Charger_Battery_Pack_details_m_us_3.jpg",
-        "heading": "<strong>Universal Compatibility: for iPhone, AirPods, iPad & All Devices</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "slideshow_TjibF7": {
+    "slideshow_P9zJxX": {
       "type": "slideshow",
       "blocks": {
-        "image_mYFYiP": {
+        "image_JhcMD4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1-5000mAh_Portable_Charger_Keychain_Power_Bank_pc_8.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1-5000mAh_Portable_Charger_Keychain_Power_Bank_mo_8.jpg",
-            "heading": "<strong>Flight-Approved</strong>",
+            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_4.jpg",
+            "heading": "<strong>Charging 3 Devices Simultaneously</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -576,12 +432,12 @@
             "button_icon": false
           }
         },
-        "image_TAEtWd": {
+        "image_UbcADF": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1-5000mAh_Portable_Charger_Keychain_Power_Bank_pc_9.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1-5000mAh_Portable_Charger_Keychain_Power_Bank_mo_9.jpg",
-            "heading": "<strong>Business Work</strong>",
+            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_7.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_7.jpg",
+            "heading": "<strong>PD 30W: Fast Charging</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -591,12 +447,42 @@
             "button_icon": false
           }
         },
-        "image_YUyNqU": {
+        "image_Q6bMcR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1-5000mAh_Portable_Charger_Keychain_Power_Bank_pc_10.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1-5000mAh_Portable_Charger_Keychain_Power_Bank_mo_10.jpg",
-            "heading": "<strong>Travel Gadgets</strong>",
+            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_6.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_6.jpg",
+            "heading": "<strong>Portable Charger with Keychain for Travel</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_WJQDwz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_5.jpg",
+            "heading": "<strong>Portable 10000mAh Power Bank for Travel</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_mWQMxd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_8.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_8.jpg",
+            "heading": "<strong>2 Ways Quick Recharge</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -608,26 +494,29 @@
         }
       },
       "block_order": [
-        "image_mYFYiP",
-        "image_TAEtWd",
-        "image_YUyNqU"
+        "image_JhcMD4",
+        "image_UbcADF",
+        "image_Q6bMcR",
+        "image_WJQDwz",
+        "image_mWQMxd"
       ],
+      "name": "Slideshow",
       "settings": {
-        "autoplay": false,
-        "autoplay_speed": 5,
+        "autoplay": true,
+        "autoplay_speed": 3,
         "show_navigation": true,
-        "image_height": "650px",
+        "image_height": "adapt",
         "content_width": "small",
-        "image_height_mobile": "auto",
+        "image_height_mobile": "adapt",
         "accessibility_info": "Slideshow about our brand",
-        "color_text": "#FFFFFF",
-        "color_background": "#f6f7fa",
+        "color_text": "#9887b8",
+        "color_background": "#ffffff",
         "gradient_background": "",
         "color_button_text": "#171717",
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
-        "color_overlay": "rgba(0,0,0,0)",
-        "overlay_opacity": 20,
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
         "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
@@ -635,6 +524,122 @@
         "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
+      }
+    },
+    "slideshow_ewtn77": {
+      "type": "slideshow",
+      "blocks": {
+        "image_gphmrY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_10.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_10.jpg",
+            "heading": "<strong>Flight-Approved: Your Travel Companionfor Stress-Free Journeys</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_jqCtPM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_12.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_12.jpg",
+            "heading": "<strong>Travel Gadgets: Making it the perfect all-in-onetravel accessories</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_Ez4XtD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_11.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_11.jpg",
+            "heading": "<strong>Business Work: Triple DeviceSimultaneous Charging</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_gphmrY",
+        "image_jqCtPM",
+        "image_Ez4XtD"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#9887b8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "lookbook_i9fkKU": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_9.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_9.jpg",
+        "heading": "<strong>Universal Compatibility: 30W PD for All Your Devices</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "selling_points_9_J3teY8": {
@@ -843,8 +848,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is a 5000mAh portable charger enough for an iPhone?</strong>",
-            "collapsible-content": "<p>Yes. A 5000mAh portable charger can charge most iPhones about one full time, making it perfect for emergency power during travel, commuting, or long days away from a wall outlet.</p>",
+            "collapsible-title": "<strong>What devices are compatible with this portable charger for iPhone?</strong>",
+            "collapsible-content": "<p>This portable charger power bank is designed for iPhone 17/16/15/14/13/12/11 series, including Pro, Pro Max, and Air models, and also works with AirPods 2/3/4/Pro** and other USB-powered devices.</p>",
             "isactive": false
           }
         },
@@ -852,8 +857,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is a keychain portable charger good for travel?</strong>",
-            "collapsible-content": "<p>Yes. A keychain portable charger for iPhone is designed to be lightweight and compact, making it easy to attach to a backpack or carry in your pocket when traveling, commuting, or attending events.</p>",
+            "collapsible-title": "<strong>How fast can a 30W portable charger charge an iPhone?</strong>",
+            "collapsible-content": "<p>With PD 30W fast charging, this power bank can charge iPhone 16 Pro up to 56% in about 30 minutes and fully charge it in around 1.7 hours, delivering fast and efficient power on the go.</p>",
             "isactive": false
           }
         },
@@ -861,8 +866,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can a portable charger charge multiple devices at the same time?</strong>",
-            "collapsible-content": "<p>Yes. This 3-in-1 keychain portable charger can charge up to three devices simultaneously, including iPhone, AirPods, and even Android devices.</p>",
+            "collapsible-title": "<strong>Can this portable charger charge multiple devices at the same time?</strong>",
+            "collapsible-content": "<p>Yes. This 3-in-1 keychain charger can charge up to three devices simultaneously, including iPhone, AirPods, Android devices, and even laptops that support 30W USB-C charging.</p>",
             "isactive": false
           }
         },
@@ -870,8 +875,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Does it have overcharge protection?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY Portable Charger has comprehensive overcharge protection built-in. These safety features prevent damage to both the power bank and your connected devices.</p>",
+            "collapsible-title": "<strong>Is it safe to use a fast charging power bank every day?</strong>",
+            "collapsible-content": "<p>Yes. This fast charging portable charger is designed with built-in safety protections to prevent overheating, overcharging, overcurrent, and short circuits, ensuring safe and reliable charging for everyday use.</p>",
             "isactive": false
           }
         },
@@ -879,8 +884,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is a keychain portable charger good for travel?</strong>",
-            "collapsible-content": "<p>Yes. A keychain portable charger for iPhone is designed to be lightweight and compact, making it easy to attach to a backpack or carry in your pocket when traveling, commuting, or attending events.</p>",
+            "collapsible-title": "<strong>Can you bring a 10000mAh power bank on an airplane?</strong>",
+            "collapsible-content": "<p>Yes. A 10000mAh power bank is within airline safety limits and is generally allowed in carry-on luggage on flights, making it a great companion for air travel.</p>",
             "isactive": false
           }
         }
@@ -1022,13 +1027,11 @@
     "main-product",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
-    "lookbook_7CJk7J",
-    "lookbook_GhBQjf",
-    "lookbook_BQLcxH",
-    "lookbook_xJH6eg",
-    "lookbook_zMX4w6",
-    "lookbook_4WCJfF",
-    "slideshow_TjibF7",
+    "lookbook_iGNqQ9",
+    "lookbook_JG7gfn",
+    "slideshow_P9zJxX",
+    "slideshow_ewtn77",
+    "lookbook_i9fkKU",
     "selling_points_9_J3teY8",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
