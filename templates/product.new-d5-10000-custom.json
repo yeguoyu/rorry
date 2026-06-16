@@ -1,0 +1,1056 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-sm",
+            "title_size_mobile": "product-title-sm",
+            "show_price": false,
+            "show_rating": false
+          }
+        },
+        "judge_me_reviews_preview_badge_9EFiPW": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price_dhxX3T": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "liquid_MLLwaT": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<script src=\"https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=USD&components=messages,buttons\" defer></script>\n<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"primary\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"14\"\n    data-pp-amount=\"{{ product.selected_or_first_available_variant.price | divided_by: 100.0 }}\"\n    data-pp-placement=\"product\"\n    data-pp-buyercountry=\"US\"> \n</div>"
+          }
+        },
+        "liquid_xq8RgL": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->"
+          }
+        },
+        "liquid_7LW8an": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"margin-top: 12px;\"></div>"
+          }
+        },
+        "liquid_zUX79j": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"margin-top: 12px;\"></div>"
+          }
+        },
+        "coupon_code_QVtbex": {
+          "type": "coupon_code",
+          "settings": {
+            "left_top_text": "Buy 1 -> Save",
+            "left_bottom_text": "25%",
+            "main_title": "RORRY-25",
+            "copy_text": "Copy Code",
+            "discount_code": "RORRY-25"
+          }
+        },
+        "coupon_code_RdP3ME": {
+          "type": "coupon_code",
+          "settings": {
+            "left_top_text": "Buy 2 -> Save",
+            "left_bottom_text": "30%",
+            "main_title": "RORRY-30",
+            "copy_text": "Copy Code",
+            "discount_code": "RORRY-30"
+          }
+        },
+        "coupon_code_7q6exG": {
+          "type": "coupon_code",
+          "settings": {
+            "left_top_text": "Buy 3+ -> Save",
+            "left_bottom_text": "35%",
+            "main_title": "RORRY-35",
+            "copy_text": "Copy Code",
+            "discount_code": "RORRY-35"
+          }
+        },
+        "metafield_popup_9kgmVH": {
+          "type": "metafield_popup",
+          "settings": {
+            "title": "Key Features",
+            "metafield_key": "custom.key_features"
+          }
+        },
+        "liquid_FhJ6Yp": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.custom.featuresshow != blank %}\n  <style>\n    .features-show {\n      margin: 16px 0;\n      font-size: 14px;\n      line-height: 1.6;\n    }\n  </style>\n  <div class=\"features-show\">\n    {{ product.metafields.custom.featuresshow | metafield_tag }}\n  </div>\n{% endif %}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "description_yLmb9U": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "badges_8dEdrC": {
+          "type": "badges",
+          "settings": {
+            "show_sold_out": false,
+            "show_save_amount": true,
+            "save_type": "percent"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
+          }
+        },
+        "sticky_buy_button_cgt3tr": {
+          "type": "sticky_buy_button",
+          "disabled": true,
+          "settings": {}
+        },
+        "sticky_buy_button_v2_qaTgPb": {
+          "type": "sticky_buy_button_v2",
+          "settings": {
+            "delivery_text": "In Stock—Estimated delivery in 2 - 7 business days.",
+            "buy_now_text": "Buy Now"
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "trust_features_CQtqc3": {
+          "type": "trust_features",
+          "settings": {
+            "modal_title": "Key Features",
+            "title_1": "Free & Fast Shipping",
+            "desc_1": "<p>Enjoy <strong>free shipping</strong> straight to your doorstep with no minimum purchase required. Your RORRY order is processed quickly from our local warehouses and typically delivered within <strong>2-7 business days</strong> throughout the contiguous US. Please see our <a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">shipping policy</a> for more details.</p>",
+            "icon_1": "truck",
+            "title_2": "30-Day Free Returns & Exchanges",
+            "desc_2": "<p>Not completely in love with your new tech accessory? We’ve got you covered. We offer a hassle-free, 30-day <strong>free return and exchange</strong> policy for any reason. Simply keep the product in its original condition and contact our team to start a smooth refund or exchange process. Please see our <a href=\"/policies/refund-policy\" title=\"Refund Policy\">return policy</a> for more details.</p>",
+            "icon_2": "tag",
+            "title_3": "12-Month Worry-Free Warranty",
+            "desc_3": "<p>We stand behind the quality and craftsmanship of our products. Every RORRY charger is protected by a <strong>12-month worry-free warranty</strong> against manufacturing defects. Want longer protection? Register your product on our <a href=\"/pages/activate-warranty\" title=\"Activate Warranty\">warranty activation page</a> to extend your coverage to <strong>18 months</strong> for ultimate peace of mind.</p>",
+            "icon_3": "shield",
+            "title_4": "Lifetime Customer Support",
+            "desc_4": "<p>We’re always here for you. Whether you have questions about device compatibility, fast-charging protocols, or order tracking, our dedicated support team is ready to assist. Reach out to us anytime at <a href=\"mailto:hello@domain.com\">support@rorry.com</a> and expect a friendly response within <strong>12-24 hours</strong> on business days.</p>",
+            "icon_4": "chat_bubble",
+            "show_payment": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": false,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "",
+            "help_page_external": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_9EFiPW",
+        "price_dhxX3T",
+        "liquid_MLLwaT",
+        "liquid_xq8RgL",
+        "liquid_7LW8an",
+        "liquid_zUX79j",
+        "coupon_code_QVtbex",
+        "coupon_code_RdP3ME",
+        "coupon_code_7q6exG",
+        "metafield_popup_9kgmVH",
+        "liquid_FhJ6Yp",
+        "variant_picker",
+        "description_yLmb9U",
+        "badges_8dEdrC",
+        "inventory",
+        "buy_buttons",
+        "sticky_buy_button_cgt3tr",
+        "sticky_buy_button_v2_qaTgPb",
+        "pickup_availability",
+        "trust_features_CQtqc3",
+        "share"
+      ],
+      "custom_css": [
+        ".product__title h1 {line-height: 1.3 !important;}",
+        ".shopify-app-block {margin-top: 0px;}",
+        ".alert--success {background-color: #9887b8; color: #ffffff;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 50,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "beside",
+        "image_ratio": "adapt",
+        "image_zoom": "hover",
+        "hide_variants": true,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt",
+        "mobile_thumbnail": true,
+        "padding_top": 0,
+        "padding_bottom": 16,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "section_position_NhnEdc": {
+      "type": "section-position",
+      "blocks": {
+        "map_DeAPni": {
+          "type": "map",
+          "settings": {
+            "map": "Overview",
+            "maptext": "Overview",
+            "text_size": 36,
+            "mobile_text_size": 14,
+            "text_color": "#171717",
+            "activea_color": "#9887b8"
+          }
+        },
+        "map_iETRiP": {
+          "type": "map",
+          "settings": {
+            "map": "Tech Specs",
+            "maptext": "Tech Specs",
+            "text_size": 36,
+            "mobile_text_size": 14,
+            "text_color": "",
+            "activea_color": ""
+          }
+        },
+        "map_LiUMrN": {
+          "type": "map",
+          "settings": {
+            "map": "FAQ & Review",
+            "maptext": "FAQ & Review",
+            "text_size": 36,
+            "mobile_text_size": 14,
+            "text_color": "",
+            "activea_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "map_DeAPni",
+        "map_iETRiP",
+        "map_LiUMrN"
+      ],
+      "name": "Section Position",
+      "settings": {
+        "sectionname": "",
+        "background": "#f2f2f2"
+      }
+    },
+    "selling_points_2_video_iNKajX": {
+      "type": "selling-points-2-video",
+      "blocks": {
+        "video_block_nm7Uqn": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d5-5000mah-powerbank-unboxing.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_kj3C3K": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d5-5000mah-powerbank-2.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_zUgyKR": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d5-5000mah-powerbank-1.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_DNXxce": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d5-5000mah-powerbank.mp4",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_block_nm7Uqn",
+        "video_block_kj3C3K",
+        "video_block_zUgyKR",
+        "video_block_DNXxce"
+      ],
+      "name": "selling points 11 Video",
+      "settings": {
+        "sectionname": "Overview",
+        "background": "#ffffff",
+        "border_radius": 8,
+        "cols_pc": 4,
+        "cols_mb": 2,
+        "gap_pc": 20,
+        "gap_mb": 10,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 24
+      }
+    },
+    "lookbook_iCkGJ6": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_1.jpg",
+        "heading": "<strong>RORRY 10000mAh Mini Portable Charger: 22.5W Fast Charging + iWatch Charger</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_6FgqTX": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_2.jpg",
+        "heading": "<strong>Massive 10000mAh Capacity: Pocket-Sized & Flight-Approved</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_PzMX6d": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_3.jpg",
+        "heading": "<strong>22.5W Super Fast Charging: iPhone & Apple Watch Simultaneously</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_CU78pF": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_4.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_4.jpg",
+        "heading": "<strong>Wide Compatibility: For All Apple & Android Devices</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_zqiX6K": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_5.jpg",
+        "heading": "<strong>Efficient & Versatile: Charge Your Way, Effortlessly!</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_ET63Ek": {
+      "type": "slideshow",
+      "blocks": {
+        "image_wLDBwN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_2.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_2.jpg",
+            "heading": "<strong>Charge On-the-Go</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h4",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_zmX3tJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_4.jpg",
+            "heading": "Charge in Style",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_YcDULY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_3.jpg",
+            "heading": "<strong>Easy to Carry</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_FJmqAX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_1.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_1.jpg",
+            "heading": "<strong>Great for Gifting</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_wLDBwN",
+        "image_zmX3tJ",
+        "image_YcDULY",
+        "image_FJmqAX"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#9887b8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "selling_points_9_J3teY8": {
+      "type": "selling-points-9",
+      "blocks": {
+        "item_block_EcRAaC": {
+          "type": "item_block",
+          "settings": {
+            "title": "Product Model",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "D5-10000",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_aWqf8a": {
+          "type": "item_block",
+          "settings": {
+            "title": "Product with feature",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Fast Charging, Digital Display, Built In USB-C Connector, Lightweight, Pocket Size, Short Circuit Protection, Airline Approved Travel Charger, Scratch Resistant",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_qcHcQg": {
+          "type": "item_block",
+          "settings": {
+            "title": "Category",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "<a href=\"/collections/power-banks\" title=\"Power Banks\">Power Bank</a>",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_dBKhQd": {
+          "type": "item_block",
+          "settings": {
+            "title": "Dimensions",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "3.3\"L x 2.1\"W x 1.3\"Th",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_z6ym3P": {
+          "type": "item_block",
+          "settings": {
+            "title": "Weight",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "170g",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_3Ti8LJ": {
+          "type": "item_block",
+          "settings": {
+            "title": "Total Capacity",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "10,000mAh",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_tXWnEr": {
+          "type": "item_block",
+          "settings": {
+            "title": "Connector Type",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "IN/OUT: USB Type C*2",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_wyfkAG": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Voltage</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "9 Volts",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_MdJ64D": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Amperage</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2.25 Amps",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_dRDLjH": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Number of Ports</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_rXW7aX": {
+          "type": "item_block",
+          "settings": {
+            "title": "Antenna Location",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Indoor/Outdoor",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_F88Hib": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Compatible Devices</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Apple Watch Ultra3/Ultra2/Ultra/11/10/9/8/7/6/SE5/4/3, iPad, AirPods, iPhone 17/16/15 Plus/Pro/Pro Max",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_qTEqAw": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Compatible Phone Models</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "iPhone",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_yLdVwR": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Built-In Media</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "1* power bank, 1* user manual, 2* Lanyard cables",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "item_block_EcRAaC",
+        "item_block_aWqf8a",
+        "item_block_qcHcQg",
+        "item_block_dBKhQd",
+        "item_block_z6ym3P",
+        "item_block_3Ti8LJ",
+        "item_block_tXWnEr",
+        "item_block_wyfkAG",
+        "item_block_MdJ64D",
+        "item_block_dRDLjH",
+        "item_block_rXW7aX",
+        "item_block_F88Hib",
+        "item_block_qTEqAw",
+        "item_block_yLdVwR"
+      ],
+      "custom_css": [
+        ".selling_points_9 .centent .list .item .details {word-break: break-word;}",
+        "@media screen and (max-width: 749px) {.selling_points_9 .centent .list .item5 {width: 100%; align-items: flex-start; }}"
+      ],
+      "name": "selling points 9",
+      "settings": {
+        "sectionname": "Tech Specs",
+        "background": "",
+        "title": "<p><strong>Tech Specs</strong></p>",
+        "title_size": 40,
+        "mobile_title_size": 32,
+        "title_color": "#9887b8",
+        "border_color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36
+      }
+    },
+    "product_faq_iXcLnC": {
+      "type": "product-faq",
+      "blocks": {
+        "tab_Fq7LBp": {
+          "type": "tab",
+          "settings": {
+            "tab-name": "Product"
+          }
+        },
+        "tab_content_683zbz": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>What devices are compatible with this RORRY PalmGo portable charger?</strong>",
+            "collapsible-content": "<p>This PalmGo portable charger for Apple devices is compatible with iPhone 17/16/15 series, iPad Pro and iPad Air, and Apple Watch Ultra 3/Ultra 2/Series 11/10/9/8/7/6/5/4/SE. It features a built-in USB-C connector and a dedicated Apple Watch charger for convenient charging.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_fjWWzA": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>How long to fully recharge the mini power bank?</strong>",
+            "collapsible-content": "<p>The recharge time depends on the charger's power and the ambient temperature. Using a 18W or higher charger at 77°F (25°C), it typically takes about 3.2 hours to fully recharge the power bank.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_Wrb3qd": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Can I use this small portable charger with my phone case on?</strong>",
+            "collapsible-content": "<p>Yes, it is fully compatible as long as your phone case is not thicker than 4mm.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_KQRxtY": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>How can I check the remaining battery level?</strong>",
+            "collapsible-content": "<p>It features a clear digital LED display that shows the exact remaining battery percentage in 1% increments, so you'll always know how much power is left at a glance. </p>",
+            "isactive": false
+          }
+        },
+        "tab_content_ALMUYQ": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Does this portable charger support fast charging?</strong>",
+            "collapsible-content": "<p>Yes. The 22.5W fast charging output can charge iPhone 17 up to 50% in around 30 minutes, helping you quickly power up when you're on the move.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_NVT3iN": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Is this portable charger easy to carry when traveling?</strong>",
+            "collapsible-content": "<p>Yes. This mini portable charger measures 3.3 × 2.1 × 1.3 inches and weighs only 0.4 lbs, making it compact enough to fit in a pocket, purse, or backpack. It's perfect for travel, commuting, and outdoor activities.</p>",
+            "isactive": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_Fq7LBp",
+        "tab_content_683zbz",
+        "tab_content_fjWWzA",
+        "tab_content_Wrb3qd",
+        "tab_content_KQRxtY",
+        "tab_content_ALMUYQ",
+        "tab_content_NVT3iN"
+      ],
+      "name": "product faq",
+      "settings": {
+        "sectionname": "FAQ & Review",
+        "color-2": "",
+        "title": "FAQ",
+        "title_color": "#9887b8",
+        "title_size": 40,
+        "mobile_title_size": 32,
+        "title_bottom": 24,
+        "mobile_title_bottom": 16,
+        "tab_size": 36,
+        "mobile_tab_size": 24,
+        "tab_color": "",
+        "tab_color_art": "",
+        "item_title_color": "",
+        "item_title_size": 36,
+        "mobile_item_title_size": 24,
+        "item_details_color": "",
+        "item_details_size": 16,
+        "mobile_item_details_size": 16,
+        "padding-top": 0,
+        "padding-bottom": 0,
+        "padding-top-mob": 0,
+        "padding-bottom-mob": 0,
+        "max-width": 1200
+      }
+    },
+    "1733908196fc5c0365": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_r8daHY": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_r8daHY"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 768px) {.section--padding {padding-top: 0px; padding-bottom: 10px; }}"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 4,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You may also like",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "section_position_NhnEdc",
+    "selling_points_2_video_iNKajX",
+    "lookbook_iCkGJ6",
+    "lookbook_6FgqTX",
+    "lookbook_PzMX6d",
+    "lookbook_CU78pF",
+    "lookbook_zqiX6K",
+    "slideshow_ET63Ek",
+    "selling_points_9_J3teY8",
+    "product_faq_iXcLnC",
+    "1733908196fc5c0365",
+    "recently-viewed",
+    "product-recommendations"
+  ]
+}
