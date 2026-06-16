@@ -295,28 +295,28 @@
         "video_block_nm7Uqn": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/4k-rorry-d14-2025-0410.mp4",
+            "video": "shopify://files/videos/cb01-usb-c-dual-foldable-plug-1.mp4",
             "video_url": ""
           }
         },
         "video_block_kj3C3K": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-windiaries.mp4",
+            "video": "shopify://files/videos/cb01-usb-c-dual-foldable-plug-2.mp4",
             "video_url": ""
           }
         },
         "video_block_zUgyKR": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
+            "video": "shopify://files/videos/cb01-usb-c-dual-foldable-plug.mp4",
             "video_url": ""
           }
         },
         "video_block_DNXxce": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-dary_rem.mp4",
+            "video": "shopify://files/videos/cb01-usb-c-dual-foldable-plug-3.mp4",
             "video_url": ""
           }
         }
@@ -342,73 +342,16 @@
         "mobile_padding_bottom": 24
       }
     },
-    "video_YdbGmg": {
-      "type": "video",
-      "name": "t:sections.video.name",
-      "settings": {
-        "transparent_header": false,
-        "video": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
-        "video_url": "",
-        "description": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
-        "image_height": "adapt",
-        "video_mobile": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "padding_top": 0,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": true
-      }
-    },
-    "lookbook_HMJ6qr": {
+    "lookbook_ceaHmC": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_1.jpg",
-        "heading": "<strong>RORRY Magnetic Portable Charger</strong>",
+        "image": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_pc_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_mo_1.jpg",
+        "heading": "RORRY 4 in 1 35W PD Fast Charger Block",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 30,
-        "padding_top": 20,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_qm4M33": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_2.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_2.jpg",
-        "heading": "<strong>Recommend by Thousands of Customers & Professional Media</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h3",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -418,7 +361,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -428,22 +371,58 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
       }
     },
-    "slideshow_cCPNm8": {
+    "lookbook_96A8Hw": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_USB_C_Dual_Foldable_Plug_Wall_Charger_Block_black_white_pc_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_USB_C_Dual_Foldable_Plug_Wall_Charger_Block_black_white_mo_2.jpg",
+        "heading": "<strong>35W PD Fast Charger: 5X Faster Charging in 30 Minutes</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_fVbebm": {
       "type": "slideshow",
       "blocks": {
-        "image_TFitUt": {
+        "image_3P4red": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_4.jpg",
-            "heading": "",
+            "image": "shopify://shop_images/RORRY_USB_C_Dual_Foldable_Plug_Wall_Charger_Block_black_white_pc_3_62cb268a-658b-4a0e-b5c9-c0b7dbd4e80f.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_USB_C_Dual_Foldable_Plug_Wall_Charger_Block_black_white_mo_3_a3e48b30-a10b-4cef-a115-275f9e3a5eb7.jpg",
+            "heading": "<strong>3X Faster iWatch Charger: Charge Your Apple Watch in Half Time</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -453,12 +432,12 @@
             "button_icon": false
           }
         },
-        "image_yVLLyA": {
+        "image_i9aEiQ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_3.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_3.jpg",
-            "heading": "Slim & Pocket-Sized: RORRY Charging Without the Clutter",
+            "image": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_pc_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_mo_5.jpg",
+            "heading": "<strong>More Stable Watch Charger: Secure Charging for Your Apple Watch</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -468,12 +447,12 @@
             "button_icon": false
           }
         },
-        "image_BaBf63": {
+        "image_KGHM4g": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_6.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_6.jpg",
-            "heading": "2-in-1 Fast Charging: RORRY Power Bank for iPhone & AirPods",
+            "image": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_pc_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_mo_4.jpg",
+            "heading": "<strong>Good Heat Dissipation: Cool & Efficient Charging</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -485,28 +464,28 @@
         }
       },
       "block_order": [
-        "image_TFitUt",
-        "image_yVLLyA",
-        "image_BaBf63"
+        "image_3P4red",
+        "image_i9aEiQ",
+        "image_KGHM4g"
       ],
       "name": "Slideshow",
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 4,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "image_height": "adapt",
         "content_width": "small",
         "image_height_mobile": "adapt",
         "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ffffff",
-        "color_background": "rgba(0,0,0,0)",
+        "color_text": "#9887b8",
+        "color_background": "#ffffff",
         "gradient_background": "",
         "color_button_text": "#171717",
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 0,
+        "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
@@ -515,16 +494,16 @@
         "parallax_direction": "vertical"
       }
     },
-    "lookbook_4TKzMc": {
+    "lookbook_QEXe8a": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_7.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_7.jpg",
-        "heading": "<strong>Universal Compatibility: RORRY Wireless & 18W PD Wired Charging</strong>",
+        "image": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_pc_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_mo_6.jpg",
+        "heading": "<strong>3-Port 35W PD Charger: Smart Power Allocation for All Your Devices</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h3",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -534,7 +513,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -544,8 +523,116 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_DatbpX": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_pc_9.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_mo_9.jpg",
+        "heading": "<strong>Compatible with Apple Family: One Charger for All Your Apple Devices</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_KDh9Dj": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_USB_C_Dual_Foldable_Plug_Wall_Charger_Block_black_white_pc_7_f3822681-d81c-4c67-8e4d-91bd6e94c214.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_USB_C_Dual_Foldable_Plug_Wall_Charger_Block_black_white_mo_7_32efbfec-0721-4aae-8a21-15f2b755318f.jpg",
+        "heading": "<strong>Perfect Travel Companion: Compact Charger for Your Journeys</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_ELm6TA": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_pc_8.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB01_Type-C_Dual_Foldable_Plug_Wall_Charger_Block_black_mo_8.jpg",
+        "heading": "<strong>4-in-1 Safety Protection: Safe & Reliable Charging</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -714,42 +801,6 @@
         "padding_bottom": 36,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36
-      }
-    },
-    "lookbook_xBUtkC": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_8.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_8.jpg",
-        "heading": "<strong>Hassle-Free After-Sales & Complete RORRY Kit</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "product_faq_iXcLnC": {
@@ -954,13 +1005,14 @@
     "main-product",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
-    "video_YdbGmg",
-    "lookbook_HMJ6qr",
-    "lookbook_qm4M33",
-    "slideshow_cCPNm8",
-    "lookbook_4TKzMc",
+    "lookbook_ceaHmC",
+    "lookbook_96A8Hw",
+    "slideshow_fVbebm",
+    "lookbook_QEXe8a",
+    "lookbook_DatbpX",
+    "lookbook_KDh9Dj",
+    "lookbook_ELm6TA",
     "selling_points_9_J3teY8",
-    "lookbook_xBUtkC",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
     "recently-viewed",
