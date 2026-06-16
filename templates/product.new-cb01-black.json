@@ -648,7 +648,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "D14",
+            "details": "CB01",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -657,11 +657,11 @@
         "item_block_aWqf8a": {
           "type": "item_block",
           "settings": {
-            "title": "Product with feature",
+            "title": "Connector Type",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
+            "details": "USB Type C",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -680,19 +680,6 @@
             "mobile_details_size": 16
           }
         },
-        "item_block_dBKhQd": {
-          "type": "item_block",
-          "settings": {
-            "title": "Dimensions",
-            "title_color": "",
-            "title_size": 24,
-            "mobile_title_size": 20,
-            "details": "4.03*2.59*0.3inch (10.2*6.5*0.76cm) [Thinnest in Market]",
-            "details_color": "",
-            "details_size": 22,
-            "mobile_details_size": 16
-          }
-        },
         "item_block_z6ym3P": {
           "type": "item_block",
           "settings": {
@@ -700,7 +687,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.9oz (110g) [Lightweight]",
+            "details": "94g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -709,11 +696,11 @@
         "item_block_3Ti8LJ": {
           "type": "item_block",
           "settings": {
-            "title": "Total Capacity",
+            "title": "<strong>Additional Features</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5,000mAh",
+            "details": "Fast Charging, Travel, All-in-One",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -722,11 +709,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "<strong>Input Voltage</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (5V/3A Adapter)",
+            "details": "110 Volts (AC)",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -735,11 +722,180 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "<strong>Amperage</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "In/output Supported & USB C Cable Included",
+            "details": "1.3 Amps",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_eYrFex": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Total Usb Ports</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "3",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_TLcHFt": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Wattage</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "35 watts",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_bzbHan": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Output Current</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "3 Amps",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_CphzLA": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Output Voltage</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "20 Volts",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_yUprrm": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Power Source</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Corded Electric",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_pidRbx": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Frequency Range</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "50-60HZ",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_mFqEcX": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Main Power Connector Type</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2 Pin",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_bpc473": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Power Plug</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Type C",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_i3fKFR": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Compatible Cellular Phone Models</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Apple iPhone 15, Apple iPhone 15 Pro Max",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_UQFyyH": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Mounting Type</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Wall Mount",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_kj4B8N": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Connectivity Technology</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "USB",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_bTReke": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Total USB 3.0 Ports</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_m4b9kN": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Built-In Media</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Charging block with 2 USB-C ports, 1 USB-A port, and a built-in Apple Watch charger",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -748,11 +904,11 @@
         "item_block_F88Hib": {
           "type": "item_block",
           "settings": {
-            "title": "Compatibility",
+            "title": "<strong>Compatible Devices</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for iPhone 16 /iPhone 16 Pro/ iPhone 16 Plus/ iPhone 16 Pro Max/iPhone 15 /iPhone 15 Pro/ iPhone 15 Plus/ iPhone 15 Pro Max/iPhone 14 /iPhone 14 Pro/ iPhone 14 Plus/ iPhone 14 Pro Max/iPhone 13mini /iPhone 13/ iPhone 13 Pro/ iPhone 13 Pro Max/iPhone 12mini /iPhone 12/ iPhone 12 Pro/ iPhone 12 Pro Max/Magnetic Phone Case/ for Samsung Galaxy S24/S23/S22/S21 Series",
+            "details": "Apple Watch Ultra 1/Ultra 2/9/8/7/6/5/4/3, iPad, Macbook Air, iPhone 15/14/13/12/11/XR/X/8/7/6 Series",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -761,11 +917,11 @@
         "item_block_qTEqAw": {
           "type": "item_block",
           "settings": {
-            "title": "Other Special Features",
+            "title": "<strong>Compatible Phone Models</strong>",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "Fast Charging, Lightweight, Short Circuit Protection, Slim, Wireless Charging",
+            "details": "Apple Watch Ultra 1/Ultra 2/9/8/7/6/5/4/3, iPhone 15/14/13/12/11/XR/X/8/7/6 Series",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -776,11 +932,23 @@
         "item_block_EcRAaC",
         "item_block_aWqf8a",
         "item_block_qcHcQg",
-        "item_block_dBKhQd",
         "item_block_z6ym3P",
         "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
+        "item_block_eYrFex",
+        "item_block_TLcHFt",
+        "item_block_bzbHan",
+        "item_block_CphzLA",
+        "item_block_yUprrm",
+        "item_block_pidRbx",
+        "item_block_mFqEcX",
+        "item_block_bpc473",
+        "item_block_i3fKFR",
+        "item_block_UQFyyH",
+        "item_block_kj4B8N",
+        "item_block_bTReke",
+        "item_block_m4b9kN",
         "item_block_F88Hib",
         "item_block_qTEqAw"
       ],
