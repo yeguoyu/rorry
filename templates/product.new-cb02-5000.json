@@ -308,6 +308,7 @@
         },
         "video_block_zUgyKR": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
             "video_url": ""
@@ -315,6 +316,7 @@
         },
         "video_block_DNXxce": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-dary_rem.mp4",
             "video_url": ""
@@ -363,52 +365,16 @@
         "rounded": true
       }
     },
-    "lookbook_HMJ6qr": {
+    "lookbook_DapGHn": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_1.jpg",
-        "heading": "<strong>RORRY Magnetic Portable Charger</strong>",
+        "image": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_pc_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_mo_1.jpg",
+        "heading": "<strong>RORRY 2 in 1 Portable Charger: For iPhone & Apple Watch</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 30,
-        "padding_top": 20,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_qm4M33": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_2.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_2.jpg",
-        "heading": "<strong>Recommend by Thousands of Customers & Professional Media</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h3",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -418,7 +384,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -428,22 +394,58 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
       }
     },
-    "slideshow_cCPNm8": {
+    "lookbook_xqCxf7": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_pc_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_mo_2.jpg",
+        "heading": "<strong>2 Charging Modes: Detachable Adapter + Portable Power Bank</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_N6zVWb": {
       "type": "slideshow",
       "blocks": {
-        "image_TFitUt": {
+        "image_Uiicqe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_4.jpg",
-            "heading": "",
+            "image": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_pc_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_mo_4.jpg",
+            "heading": "<strong>Pocket-Sized Portable Charger: Power Wherever You Go</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -453,12 +455,12 @@
             "button_icon": false
           }
         },
-        "image_yVLLyA": {
+        "image_iAFgfd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_3.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_3.jpg",
-            "heading": "Slim & Pocket-Sized: RORRY Charging Without the Clutter",
+            "image": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_pc_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_mo_3.jpg",
+            "heading": "<strong>2-in-1 Portable Charger: Power iPhone & Apple Watch at Once</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -468,12 +470,12 @@
             "button_icon": false
           }
         },
-        "image_BaBf63": {
+        "image_TCdBzi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_6.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_6.jpg",
-            "heading": "2-in-1 Fast Charging: RORRY Power Bank for iPhone & AirPods",
+            "image": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_pc_6.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_mo_6.jpg",
+            "heading": "<strong>Compact Portable Charger: Ideal for Business Travel</strong>",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -485,20 +487,20 @@
         }
       },
       "block_order": [
-        "image_TFitUt",
-        "image_yVLLyA",
-        "image_BaBf63"
+        "image_Uiicqe",
+        "image_iAFgfd",
+        "image_TCdBzi"
       ],
       "name": "Slideshow",
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 4,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "image_height": "adapt",
         "content_width": "small",
         "image_height_mobile": "adapt",
         "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ffffff",
+        "color_text": "#9887b8",
         "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
         "color_button_text": "#171717",
@@ -506,7 +508,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 0,
+        "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
@@ -515,14 +517,14 @@
         "parallax_direction": "vertical"
       }
     },
-    "lookbook_4TKzMc": {
+    "lookbook_WPQ8MN": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_7.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_7.jpg",
-        "heading": "<strong>Universal Compatibility: RORRY Wireless & 18W PD Wired Charging</strong>",
-        "heading_size": "title-sm",
+        "image": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_pc_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_mo_5.jpg",
+        "heading": "<strong>Wide Compatibility for All Devices</strong>",
+        "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "heading_position": "none",
@@ -534,7 +536,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -544,8 +546,44 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_dFA7gH": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_pc_7.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB02-5000mAh_Portable_Charger_Bank_Type_C_20W_black_mo_7.jpg",
+        "heading": "<strong>Safe and Reliable: 8-Layer Protection for Worry-Free Charging</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -716,42 +754,6 @@
         "mobile_padding_bottom": 36
       }
     },
-    "lookbook_xBUtkC": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_8.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_8.jpg",
-        "heading": "<strong>Hassle-Free After-Sales & Complete RORRY Kit</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "product_faq_iXcLnC": {
       "type": "product-faq",
       "blocks": {
@@ -765,8 +767,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "Can it charge through a phone case?",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is specifically designed to work with MagSafe cases and can charge through compatible phone cases.</p>",
+            "collapsible-title": "<strong>What devices are compatible with this portable charger?</strong>",
+            "collapsible-content": "<p>This portable charger power bank is compatible with iPhone 15/14/13/12 series, Apple Watch Series 9/8/7/6/SE, and other USB-C devices. It features a built-in cable and USB-C port for convenient charging.</p>",
             "isactive": false
           }
         },
@@ -774,8 +776,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "How strong is the magnetic attachment?",
-            "collapsible-content": "<p>It provides up to 12N of magnetic force—4x stronger than standard options. It stays firmly attached to your phone, even with heavy shaking in your pocket, and has been tested to maintain continuous wireless charging after over 3,000 shakes.</p>",
+            "collapsible-title": "<strong>How fast can this charger charge an iPhone?</strong>",
+            "collapsible-content": "<p>With 20W PD fast charging, this portable charger can power iPhone 15 Pro up to 56% in about 30 minutes and fully charge it in approximately 1.5 hours.</p>",
             "isactive": false
           }
         },
@@ -783,8 +785,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Does it have overcharge protection?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank includes comprehensive safety features including short circuit protection to prevent overcharging and device damage. It features an industrial-leading temperature control system that keeps it running 50°F cooler than competitors, effectively protecting both your device's battery and the power bank for long-term use.</p>",
+            "collapsible-title": "<strong>Is this portable charger travel-friendly?</strong>",
+            "collapsible-content": "<p>Yes. With its compact size, foldable plug, and lightweight design, this portable charger easily fits into your pocket, backpack, or suitcase, making it ideal for travel, commuting, and outdoor activities.</p>",
             "isactive": false
           }
         },
@@ -792,8 +794,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How long does it take to recharge?</strong>",
-            "collapsible-content": "<p>The RORRY MagSafe Power Bank takes approximately 2 hours to fully recharge when using a 5V/3A adapter via the USB-C port.</p>",
+            "collapsible-title": "<strong>Can this device be used as both a wall charger and a power bank?</strong>",
+            "collapsible-content": "<p>Yes. This 2-in-1 portable charger works as both a wall adapter and a power bank. Simply plug it directly into a wall outlet to recharge the battery or use it as a charger for your devices.</p>",
             "isactive": false
           }
         },
@@ -801,17 +803,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is this charger compatible with Android phones?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is compatible with Android phones! It supports Samsung Galaxy S21-S24 series, Google Pixel, and other wireless charging enabled devices. For Android phones without built-in magnetic capabilities, it includes a magnetic metal ring that you can attach to your phone case to enable magnetic charging.</p>",
-            "isactive": false
-          }
-        },
-        "tab_content_rjgjrP": {
-          "type": "tab-content",
-          "settings": {
-            "tab-name": "Product",
-            "collapsible-title": "<strong>Is this power bank compatible with non-MagSafe phones like Samsung?</strong>",
-            "collapsible-content": "<p>Yes! It works natively with iPhone 12–16 series and MagSafe cases. For Samsung Galaxy S21–S24 (or other non-magnetic devices), simply use the included magnetic ring: peel off the backing and stick it to the outside of your phone case to enable secure magnetic charging.</p>",
+            "collapsible-title": "<strong>Does this portable charger have a built-in charging cable?</strong>",
+            "collapsible-content": "<p>Yes. The power bank with built-in cable allows you to charge your device anytime without carrying extra cables. The cable can also function as a lanyard, making it easy to attach to a backpack or hold while traveling.</p>",
             "isactive": false
           }
         }
@@ -822,8 +815,7 @@
         "tab_content_fjWWzA",
         "tab_content_Wrb3qd",
         "tab_content_KQRxtY",
-        "tab_content_NVT3iN",
-        "tab_content_rjgjrP"
+        "tab_content_NVT3iN"
       ],
       "name": "product faq",
       "settings": {
@@ -955,12 +947,12 @@
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
     "video_YdbGmg",
-    "lookbook_HMJ6qr",
-    "lookbook_qm4M33",
-    "slideshow_cCPNm8",
-    "lookbook_4TKzMc",
+    "lookbook_DapGHn",
+    "lookbook_xqCxf7",
+    "slideshow_N6zVWb",
+    "lookbook_WPQ8MN",
+    "lookbook_dFA7gH",
     "selling_points_9_J3teY8",
-    "lookbook_xBUtkC",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
     "recently-viewed",
