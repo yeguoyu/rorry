@@ -294,6 +294,7 @@
       "blocks": {
         "video_block_nm7Uqn": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/4k-rorry-d14-2025-0410.mp4",
             "video_url": ""
@@ -301,6 +302,7 @@
         },
         "video_block_kj3C3K": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-windiaries.mp4",
             "video_url": ""
@@ -308,6 +310,7 @@
         },
         "video_block_zUgyKR": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
             "video_url": ""
@@ -315,6 +318,7 @@
         },
         "video_block_DNXxce": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/rorry-d14-5000mah-dary_rem.mp4",
             "video_url": ""
@@ -342,73 +346,36 @@
         "mobile_padding_bottom": 24
       }
     },
-    "video_YdbGmg": {
+    "video_8tCj3r": {
       "type": "video",
-      "name": "t:sections.video.name",
       "settings": {
         "transparent_header": false,
-        "video": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
+        "video": "shopify://files/videos/D14-10000.mp4",
         "video_url": "",
         "description": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
         "image_height": "adapt",
         "video_mobile": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
         "video_url_mobile": "",
-        "image_height_mobile": "auto",
+        "image_height_mobile": "adapt",
         "padding_top": 0,
-        "padding_bottom": 12,
+        "padding_bottom": 0,
         "divider": false,
         "full_width": false,
         "rounded": true
       }
     },
-    "lookbook_HMJ6qr": {
+    "lookbook_WWK8Vg": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_1.jpg",
-        "heading": "<strong>RORRY Magnetic Portable Charger</strong>",
+        "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc-1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo.jpg",
+        "heading": "<strong>RORRY D14-10000mAh</strong> <strong>Magsafe Power Bank</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 30,
-        "padding_top": 20,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_qm4M33": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_2.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_2.jpg",
-        "heading": "<strong>Recommend by Thousands of Customers & Professional Media</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h3",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -418,7 +385,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -428,21 +395,57 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 24,
+        "padding_top": 12,
         "padding_bottom": 12,
         "divider": false,
         "full_width": false,
         "rounded": false
       }
     },
-    "slideshow_cCPNm8": {
+    "lookbook_gKK6KK": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_2.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_beLcEt": {
       "type": "slideshow",
       "blocks": {
-        "image_TFitUt": {
+        "image_eMtG7R": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_4.jpg",
+            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_4.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -453,12 +456,12 @@
             "button_icon": false
           }
         },
-        "image_yVLLyA": {
+        "image_cW4Bxg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_3.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_3.jpg",
-            "heading": "Slim & Pocket-Sized: RORRY Charging Without the Clutter",
+            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_5.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -468,12 +471,12 @@
             "button_icon": false
           }
         },
-        "image_BaBf63": {
+        "image_bkRkqz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_6.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_6.jpg",
-            "heading": "2-in-1 Fast Charging: RORRY Power Bank for iPhone & AirPods",
+            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_2.jpg",
+            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_3.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -485,14 +488,14 @@
         }
       },
       "block_order": [
-        "image_TFitUt",
-        "image_yVLLyA",
-        "image_BaBf63"
+        "image_eMtG7R",
+        "image_cW4Bxg",
+        "image_bkRkqz"
       ],
       "name": "Slideshow",
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 4,
+        "autoplay_speed": 3,
         "show_navigation": true,
         "image_height": "adapt",
         "content_width": "small",
@@ -515,16 +518,16 @@
         "parallax_direction": "vertical"
       }
     },
-    "lookbook_4TKzMc": {
+    "lookbook_XDFtaM": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_7.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_7.jpg",
-        "heading": "<strong>Universal Compatibility: RORRY Wireless & 18W PD Wired Charging</strong>",
+        "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_6.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
+        "heading_tag": "h3",
         "heading_position": "none",
         "subheading": "",
         "description": "",
@@ -534,7 +537,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -544,11 +547,127 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 24,
+        "padding_top": 12,
         "padding_bottom": 12,
         "divider": false,
         "full_width": false,
         "rounded": false
+      }
+    },
+    "lookbook_fmFE7a": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_7.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_yQRDrU": {
+      "type": "slideshow",
+      "blocks": {
+        "image_xgatgc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_7.jpg",
+            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_8.jpg",
+            "heading": "<strong>Compact Power</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_nic4ir": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_8.jpg",
+            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_9.jpg",
+            "heading": "<strong>Power Anywhere</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_Er7ykA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_9.jpg",
+            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_10.jpg",
+            "heading": "<strong>Pass-Through</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_xgatgc",
+        "image_nic4ir",
+        "image_Er7ykA"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 3,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#9887B8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
       }
     },
     "selling_points_9_J3teY8": {
@@ -714,42 +833,6 @@
         "padding_bottom": 36,
         "mobile_padding_top": 36,
         "mobile_padding_bottom": 36
-      }
-    },
-    "lookbook_xBUtkC": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_8.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_8.jpg",
-        "heading": "<strong>Hassle-Free After-Sales & Complete RORRY Kit</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 24,
-        "padding_bottom": 12,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "product_faq_iXcLnC": {
@@ -954,13 +1037,14 @@
     "main-product",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
-    "video_YdbGmg",
-    "lookbook_HMJ6qr",
-    "lookbook_qm4M33",
-    "slideshow_cCPNm8",
-    "lookbook_4TKzMc",
+    "video_8tCj3r",
+    "lookbook_WWK8Vg",
+    "lookbook_gKK6KK",
+    "slideshow_beLcEt",
+    "lookbook_XDFtaM",
+    "lookbook_fmFE7a",
+    "slideshow_yQRDrU",
     "selling_points_9_J3teY8",
-    "lookbook_xBUtkC",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
     "recently-viewed",
