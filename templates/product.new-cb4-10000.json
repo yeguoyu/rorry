@@ -295,21 +295,21 @@
         "video_block_nm7Uqn": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/4k-rorry-d14-2025-0410.mp4",
+            "video": "shopify://files/videos/cb4-10000mah-portable-charger.mp4",
             "video_url": ""
           }
         },
         "video_block_kj3C3K": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-windiaries.mp4",
+            "video": "shopify://files/videos/cb4-10000mah-portable-charger-2.mp4",
             "video_url": ""
           }
         },
         "video_block_zUgyKR": {
           "type": "video_block",
           "settings": {
-            "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
+            "video": "shopify://files/videos/cb4-10000mah-portable-charger-3.mp4",
             "video_url": ""
           }
         },
@@ -812,12 +812,21 @@
             "tab-name": "Product"
           }
         },
+        "tab_content_NVT3iN": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Do I need to carry extra cables or a wall charger?</strong>",
+            "collapsible-content": "<p>No. RORRY Flow is designed as an all-in-one mini charger. It includes a built-in USB-C cable and a foldable wall plug, so you can recharge the power bank directly from a wall outlet—no extra adapters needed. It’s perfect for travel, commuting, or everyday carry.</p>",
+            "isactive": false
+          }
+        },
         "tab_content_683zbz": {
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "Can it charge through a phone case?",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is specifically designed to work with MagSafe cases and can charge through compatible phone cases.</p>",
+            "collapsible-title": "<strong>Can I recharge the power bank directly from a wall outlet?</strong>",
+            "collapsible-content": "<p>Yes. Thanks to the foldable wall plug, you can plug the charger directly into a power outlet to recharge the battery without needing a separate adapter.</p>",
             "isactive": false
           }
         },
@@ -825,8 +834,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "How strong is the magnetic attachment?",
-            "collapsible-content": "<p>It provides up to 12N of magnetic force—4x stronger than standard options. It stays firmly attached to your phone, even with heavy shaking in your pocket, and has been tested to maintain continuous wireless charging after over 3,000 shakes.</p>",
+            "collapsible-title": "<strong>Can this charger power multiple devices at the same time?</strong>",
+            "collapsible-content": "<p>Yes. The multi-device portable charger supports charging up to four devices simultaneously, including iPhone, Apple Watch, iPad, and other USB-C devices.</p>",
             "isactive": false
           }
         },
@@ -834,8 +843,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Does it have overcharge protection?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank includes comprehensive safety features including short circuit protection to prevent overcharging and device damage. It features an industrial-leading temperature control system that keeps it running 50°F cooler than competitors, effectively protecting both your device's battery and the power bank for long-term use.</p>",
+            "collapsible-title": "<strong>How fast does it charge an iPhone and Apple Watch?</strong>",
+            "collapsible-content": "<p>With 40W fast charging, you can charge your iPhone 17 up to 50% in just 20 minutes. The dedicated 5W magnetic charging module powers up your Apple Watch Series 11 in approximately 1.2 hours. It’s designed to keep your day moving without long wait times.</p>",
             "isactive": false
           }
         },
@@ -843,17 +852,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How long does it take to recharge?</strong>",
-            "collapsible-content": "<p>The RORRY MagSafe Power Bank takes approximately 2 hours to fully recharge when using a 5V/3A adapter via the USB-C port.</p>",
-            "isactive": false
-          }
-        },
-        "tab_content_NVT3iN": {
-          "type": "tab-content",
-          "settings": {
-            "tab-name": "Product",
-            "collapsible-title": "<strong>Is this charger compatible with Android phones?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is compatible with Android phones! It supports Samsung Galaxy S21-S24 series, Google Pixel, and other wireless charging enabled devices. For Android phones without built-in magnetic capabilities, it includes a magnetic metal ring that you can attach to your phone case to enable magnetic charging.</p>",
+            "collapsible-title": "<strong>What devices can the RORRY Flow 3-in-1 portable charger charge?</strong>",
+            "collapsible-content": "<p>The RORRY Flow portable charger works with iPhone 17/16/15 series, Apple Watch, iPad, MacBook, AirPods, and other USB-C devices. It’s designed as an all-in-one charging solution for your Apple devices.</p>",
             "isactive": false
           }
         },
@@ -861,20 +861,30 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is this power bank compatible with non-MagSafe phones like Samsung?</strong>",
-            "collapsible-content": "<p>Yes! It works natively with iPhone 12–16 series and MagSafe cases. For Samsung Galaxy S21–S24 (or other non-magnetic devices), simply use the included magnetic ring: peel off the backing and stick it to the outside of your phone case to enable secure magnetic charging.</p>",
+            "collapsible-title": "<strong>What makes the RORRY Flow power bank different from others?</strong>",
+            "collapsible-content": "<p>The RORRY Flow combines fast charging, built-in cable, foldable wall plug, and stylish design in one compact device. With its skin-friendly finish and modern colors, it works as both a powerful charger and a stylish everyday accessory.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_F8JMyU": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Is this portable charger good for travel?</strong>",
+            "collapsible-content": "<p>Yes. The compact and lightweight design fits easily in your pocket, purse, or backpack. The LoopLink strap also allows you to attach it securely for easy carrying while traveling or commuting.</p>",
             "isactive": false
           }
         }
       },
       "block_order": [
         "tab_Fq7LBp",
+        "tab_content_NVT3iN",
         "tab_content_683zbz",
         "tab_content_fjWWzA",
         "tab_content_Wrb3qd",
         "tab_content_KQRxtY",
-        "tab_content_NVT3iN",
-        "tab_content_rjgjrP"
+        "tab_content_rjgjrP",
+        "tab_content_F8JMyU"
       ],
       "name": "product faq",
       "settings": {
