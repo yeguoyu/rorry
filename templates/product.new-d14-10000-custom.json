@@ -57,6 +57,7 @@
         },
         "coupon_code_QVtbex": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 1 -> Save",
             "left_bottom_text": "25%",
@@ -67,6 +68,7 @@
         },
         "coupon_code_RdP3ME": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 2 -> Save",
             "left_bottom_text": "30%",
@@ -77,6 +79,7 @@
         },
         "coupon_code_7q6exG": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Buy 3+ -> Save",
             "left_bottom_text": "35%",
@@ -346,7 +349,7 @@
         "mobile_padding_bottom": 24
       }
     },
-    "video_8tCj3r": {
+    "video_63RXbA": {
       "type": "video",
       "settings": {
         "transparent_header": false,
@@ -385,7 +388,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -653,7 +656,7 @@
         "content_width": "small",
         "image_height_mobile": "adapt",
         "accessibility_info": "Slideshow about our brand",
-        "color_text": "#FFFFFF",
+        "color_text": "#ffffff",
         "color_background": "#ffffff",
         "gradient_background": "",
         "color_button_text": "#171717",
@@ -1065,7 +1068,7 @@
     "main-product",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
-    "video_8tCj3r",
+    "video_63RXbA",
     "lookbook_WWK8Vg",
     "lookbook_gKK6KK",
     "slideshow_beLcEt",
