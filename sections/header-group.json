@@ -63,13 +63,26 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "announcement_HbpVYP": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "text": "Welcome to our store",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
         "announcement-2",
         "announcement_4pj3HQ",
         "announcement_ebawdF",
-        "announcement-1"
+        "announcement-1",
+        "announcement_HbpVYP"
       ],
       "custom_css": [],
       "settings": {
