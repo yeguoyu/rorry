@@ -680,7 +680,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "D14",
+            "details": "P2-5000",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -693,7 +693,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "RORRY [Ultimate Slim] Magnetic Portable Charger",
+            "details": "Overcharge Protection",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -719,7 +719,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "4.03*2.59*0.3inch (10.2*6.5*0.76cm) [Thinnest in Market]",
+            "details": "3.66 x 2.50 x 0.60 in",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -732,7 +732,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.9oz (110g) [Lightweight]",
+            "details": "120g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -754,11 +754,11 @@
         "item_block_tXWnEr": {
           "type": "item_block",
           "settings": {
-            "title": "Recharge Time",
+            "title": "Watts",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2H (5V/3A Adapter)",
+            "details": "20 W",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -767,11 +767,11 @@
         "item_block_wyfkAG": {
           "type": "item_block",
           "settings": {
-            "title": "USB C Port",
+            "title": "Volts",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "In/output Supported & USB C Cable Included",
+            "details": "5 V",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -784,20 +784,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for iPhone 16 /iPhone 16 Pro/ iPhone 16 Plus/ iPhone 16 Pro Max/iPhone 15 /iPhone 15 Pro/ iPhone 15 Plus/ iPhone 15 Pro Max/iPhone 14 /iPhone 14 Pro/ iPhone 14 Plus/ iPhone 14 Pro Max/iPhone 13mini /iPhone 13/ iPhone 13 Pro/ iPhone 13 Pro Max/iPhone 12mini /iPhone 12/ iPhone 12 Pro/ iPhone 12 Pro Max/Magnetic Phone Case/ for Samsung Galaxy S24/S23/S22/S21 Series",
-            "details_color": "",
-            "details_size": 22,
-            "mobile_details_size": 16
-          }
-        },
-        "item_block_qTEqAw": {
-          "type": "item_block",
-          "settings": {
-            "title": "Other Special Features",
-            "title_color": "",
-            "title_size": 24,
-            "mobile_title_size": 20,
-            "details": "Fast Charging, Lightweight, Short Circuit Protection, Slim, Wireless Charging",
+            "details": "for iPhone 17/16/15/14/13/12 series for fast",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -813,8 +800,7 @@
         "item_block_3Ti8LJ",
         "item_block_tXWnEr",
         "item_block_wyfkAG",
-        "item_block_F88Hib",
-        "item_block_qTEqAw"
+        "item_block_F88Hib"
       ],
       "custom_css": [
         ".selling_points_9 .centent .list .item .details {word-break: break-word;}",
