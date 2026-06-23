@@ -52,8 +52,8 @@
               <div class="tf-coupon-card__header">
                 <svg
                   class="tf-coupon-card__tag-icon"
-                  width="18"
-                  height="18"
+                  width="14"
+                  height="14"
                   viewBox="0 0 24 24"
                   fill="none"
                   aria-hidden="true"
@@ -132,7 +132,7 @@
 
     #shopify-section-{{ section.id }} .tf-coupon-card__top {
       background: #e8e4f2;
-      padding: 16px 12px 14px;
+      padding: 12px 8px 10px;
       text-align: center;
       flex: 1;
     }
@@ -141,43 +141,48 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      margin-bottom: 10px;
-      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+      flex-wrap: nowrap;
     }
 
     #shopify-section-{{ section.id }} .tf-coupon-card__tag-icon {
       flex-shrink: 0;
+      width: 14px;
+      height: 14px;
     }
 
     #shopify-section-{{ section.id }} .tf-coupon-card__badge {
       display: inline-block;
       background: #1a1a1a;
       color: #fff;
-      font-size: 11px;
+      font-size: 9px;
       font-weight: 700;
       letter-spacing: 0.02em;
-      padding: 5px 12px;
+      padding: 4px 8px;
       border-radius: 999px;
       line-height: 1.2;
       white-space: nowrap;
     }
 
     #shopify-section-{{ section.id }} .tf-coupon-card__amount {
-      font-size: 25px;
+      font-size: 28px;
       font-weight: 800;
       color: #1a1a1a;
       line-height: 1;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       letter-spacing: -0.02em;
     }
 
     #shopify-section-{{ section.id }} .tf-coupon-card__code-label {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 500;
       color: #333;
-      line-height: 1.3;
-       white-space: nowrap;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
     }
 
     #shopify-section-{{ section.id }} .tf-coupon-card__divider {
@@ -210,13 +215,13 @@
 
     #shopify-section-{{ section.id }} .tf-coupon-card__bottom {
       background: #9887b8;
-      padding: 14px 12px;
+      padding: 10px 8px;
       text-align: center;
     }
 
     #shopify-section-{{ section.id }} .tf-coupon-card__copy-btn {
       color: #fff;
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 600;
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -234,7 +239,7 @@
 
     @media (max-width: 768px) {
       #shopify-section-{{ section.id }} .tf-coupon-cards-row {
-        gap: 8px;
+        gap: 6px;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
@@ -246,33 +251,45 @@
       }
 
       #shopify-section-{{ section.id }} .tf-coupon-card {
-        flex: 0 0 calc(33.333% - 6px);
-        min-width: 110px;
+        flex: 0 0 calc(33.333% - 4px);
+        min-width: 100px;
       }
 
       #shopify-section-{{ section.id }} .tf-coupon-card__top {
-        padding: 12px 8px 10px;
+        padding: 8px 4px 6px;
+      }
+
+      #shopify-section-{{ section.id }} .tf-coupon-card__header {
+        gap: 4px;
+        margin-bottom: 6px;
+      }
+
+      #shopify-section-{{ section.id }} .tf-coupon-card__tag-icon {
+        width: 11px;
+        height: 11px;
       }
 
       #shopify-section-{{ section.id }} .tf-coupon-card__badge {
-        font-size: 9px;
-        padding: 4px 8px;
+        font-size: 7px;
+        padding: 3px 6px;
       }
 
       #shopify-section-{{ section.id }} .tf-coupon-card__amount {
-        font-size: 26px;
+        font-size: 20px;
+        margin-bottom: 4px;
       }
 
       #shopify-section-{{ section.id }} .tf-coupon-card__code-label {
-        font-size: 11px;
+        font-size: 9px;
+        letter-spacing: -0.01em;
       }
 
       #shopify-section-{{ section.id }} .tf-coupon-card__bottom {
-        padding: 10px 8px;
+        padding: 8px 4px;
       }
 
       #shopify-section-{{ section.id }} .tf-coupon-card__copy-btn {
-        font-size: 13px;
+        font-size: 11px;
       }
     }
   </style>
