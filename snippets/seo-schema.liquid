@@ -72,7 +72,29 @@
 </script>
 {%- endif -%}
 
-{%- if request.page_type == 'collection' and collection -%}
+{%- if request.page_type == 'collection' and collection.handle -%}
+  {%- assign schema_image = collection.image | default: page_image -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ shop.url }}{{ collection.url }}",
+  "url": "{{ shop.url }}{{ collection.url }}",
+  "name": {{ collection.title | json }}
+  {%- if collection.description != blank -%}
+  ,"description": {{ collection.description | strip_html | json }}
+  {%- endif -%}
+  {%- if schema_image != blank -%}
+  ,"image": {
+    "@type": "ImageObject",
+    "url": {{ schema_image | image_url: width: 1200 | prepend: "https:" | json }},
+    "width": {{ schema_image.width | json }},
+    "height": {{ schema_image.height | json }}
+  }
+  {%- endif -%}
+}
+</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
