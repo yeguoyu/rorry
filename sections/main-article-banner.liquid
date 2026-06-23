@@ -40,10 +40,10 @@
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}"{% if section.settings.transparent_header and article_image != blank %} allow-transparent-header{% endif %}>
   <div class="{% unless section.settings.full_width %}page-width {% endunless %}relative">
-    <article class="article banner relative{% if article_image != blank %} media--{{ section.settings.image_height }} mobile:media--{{ section.settings.image_height_mobile }}{% endif %}" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="article banner relative{% if article_image != blank %} media--{{ section.settings.image_height }} mobile:media--{{ section.settings.image_height_mobile }}{% endif %}">
       {%- if article_image != blank -%}
         <media-element class="banner__media block w-full h-full overflow-hidden"{% if section.settings.enable_parallax %} data-parallax="0.3" data-parallax-dir="{{ section.settings.parallax_direction }}"{% endif %}>
-          <picture class="media media--height block w-full h-full relative overflow-hidden" itemprop="image" is="animate-picture" data-animate="zoom-out">
+          <picture class="media media--height block w-full h-full relative overflow-hidden" is="animate-picture" data-animate="zoom-out">
             {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
             {{- article_image | image_url: width: article_image.width | image_tag: loading: loading, fetchpriority: fetchpriority, widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', sizes: sizes, is: lazyimage, alt: article_alt -}}
           </picture>
@@ -103,7 +103,7 @@
                             {%- if block.settings.show_date or block.settings.show_comments or block.settings.show_author -%}
                               {%- capture article_meta -%}
                                 {%- if block.settings.show_date -%}
-                                  <li class="inline-flex items-center gap-2 text-sm relative" itemprop="dateCreated pubdate datePublished">
+                                  <li class="inline-flex items-center gap-2 text-sm relative">
                                     {%- render 'icon', icon: 'calendar', size: 'xs', class: 'stroke-1' -%}
                                     {{- article.published_at | time_tag: format: 'date' -}}
                                   </li>
@@ -117,8 +117,8 @@
                                   </li>
                                 {%- endif -%}
                                 {%- if block.settings.show_author -%}
-                                  <li class="italic text-sm relative" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                                    {%- capture author -%}<span class="font-medium not-italic" itemprop="name">{{ article.author }}</span>{%- endcapture -%}
+                                  <li class="italic text-sm relative">
+                                    {%- capture author -%}<span class="font-medium not-italic">{{ article.author }}</span>{%- endcapture -%}
                                     {{- 'blogs.article.written_by_html' | t: author: author -}}
                                   </li>
                                 {%- endif -%}
@@ -133,7 +133,7 @@
                         {%- assign delay = delay | plus: 1 -%}
                       {%- endif -%}
 
-                      <h1 class="banner__title heading leading-none {{ block.settings.title_size }}{% if block.settings.title_size == 'title-xl' %} tracking-heading{% endif %}{% unless article_image %} relative{% endunless %}" itemprop="headline">
+                      <h1 class="banner__title heading leading-none {{ block.settings.title_size }}{% if block.settings.title_size == 'title-xl' %} tracking-heading{% endif %}{% unless article_image %} relative{% endunless %}">
                         <split-words class="split-words js-invisible block" data-animate="fade-up-large" data-animate-delay="{{ delay | times: 250 }}">{{ article.title }}</split-words>
                       </h1>
 
