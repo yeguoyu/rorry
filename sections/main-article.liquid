@@ -35,7 +35,7 @@
 {{ 'article.css' | asset_url | stylesheet_tag }}
 
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
-  <article class="article relative grid gap-8" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="article relative grid gap-8">
     <div class="page-width{% if section.settings.narrow %} page-width--narrow{% endif %} grid gap-5 text-center">
       {%- if section.settings.show_tags or section.settings.show_date or section.settings.show_comments or section.settings.show_author -%}
         <div class="flex flex-wrap items-center justify-center gap-6">
@@ -54,7 +54,7 @@
           {%- if section.settings.show_date or section.settings.show_comments or section.settings.show_author -%}
             {%- capture article_meta -%}
               {%- if section.settings.show_date -%}
-                <li class="inline-flex items-center gap-2 text-sm relative" itemprop="dateCreated pubdate datePublished">
+                <li class="inline-flex items-center gap-2 text-sm relative">
                   {%- render 'icon', icon: 'calendar', size: 'xs', class: 'stroke-1' -%}
                   {{- article.published_at | time_tag: format: 'date' -}}
                 </li>
@@ -68,8 +68,8 @@
                 </li>
               {%- endif -%}
               {%- if section.settings.show_author -%}
-                <li class="italic text-sm relative" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  {%- capture author -%}<span class="font-medium not-italic" itemprop="name">{{ article.author }}</span>{%- endcapture -%}
+                <li class="italic text-sm relative">
+                  {%- capture author -%}<span class="font-medium not-italic">{{ article.author }}</span>{%- endcapture -%}
                   {{- 'blogs.article.written_by_html' | t: author: author -}}
                 </li>
               {%- endif -%}
@@ -82,7 +82,7 @@
         </div>
       {%- endif -%}
 
-      <{{ section.settings.heading_tag }} class="heading {{ section.settings.heading_size }}" itemprop="headline">
+      <{{ section.settings.heading_tag }} class="heading {{ section.settings.heading_size }}">
         <split-words class="split-words js-invisible block" data-animate="fade-up-large">{{ article.title }}</split-words>
       </{{ section.settings.heading_tag }}>
       
@@ -96,7 +96,7 @@
     {%- if article_image != blank -%}
       <div class="article__media w-full media--{{ section.settings.image_height }}">
         <media-element class="article__image block h-full overflow-hidden"{% if section.settings.enable_parallax %} data-parallax="0.3" data-parallax-dir="{{ section.settings.parallax_direction }}"{% endif %}>
-          <picture class="media media--height block w-full h-full relative overflow-hidden" itemprop="image" is="animate-picture" data-animate="zoom-out">
+          <picture class="media media--height block w-full h-full relative overflow-hidden" is="animate-picture" data-animate="zoom-out">
             {%- capture sizes -%}{% if section.settings.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
             {{- article_image | image_url: width: article_image.width | image_tag: loading: loading, fetchpriority: fetchpriority, widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', sizes: sizes, is: lazyimage, alt: article_alt -}}
           </picture>
@@ -104,7 +104,7 @@
       </div>
     {%- endif -%}
 
-    <div class="page-width{% if section.settings.narrow %} page-width--narrow{% endif %} rte text-base md:text-lg" itemprop="articleBody">
+    <div class="page-width{% if section.settings.narrow %} page-width--narrow{% endif %} rte text-base md:text-lg">
       {{- article.content -}}
     </div>
   </article>
