@@ -1,108 +1,108 @@
 <style>
-  .product__info klarna-placement::part(osm-container),
-.product__info klarna-placement .container {
-  border-color: transparent !important;
-  padding-left: 0px !important;
-}
-    .features-show .metafield-rich_text_field ul{
-    margin-top: 0 !important;
+    .product__info klarna-placement::part(osm-container),
+  .product__info klarna-placement .container {
+    border-color: transparent !important;
+    padding-left: 0px !important;
   }
-  product-info.product__info .rte {
-        margin: 0 !important;
+      .features-show .metafield-rich_text_field ul{
+      margin-top: 0 !important;
     }
-    .tf-mf-trigger {
-    margin-bottom: 0 !important;
-    }
-    {% comment %} 固定粘性加购按钮 {% endcomment %}
-      .sticky-bar-custom-v2 {
-      opacity: 1 !important;
-      visibility: visible !important;
-      transform: translateY(0) !important;
-      transition: none !important; /* 可选，取消动画 */
-    }
+    product-info.product__info .rte {
+          margin: 0 !important;
+      }
+      .tf-mf-trigger {
+      margin-bottom: 0 !important;
+      }
+      {% comment %} 固定粘性加购按钮 {% endcomment %}
+        .sticky-bar-custom-v2 {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        transition: none !important; /* 可选，取消动画 */
+      }
 
-     #shopify-section-{{ section.id }} {
-        --section-padding-top: {{ section.settings.padding_top }}px;
-        --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-      .alert--success{
-       color:#4D7C0F !important;
-       background-color:#F5F9EF !important;
-      }
-     .product-form__buttons .flex-wrap {
-        flex-wrap: nowrap;
-    }
-      @media screen and (min-width: 1024px) {
-        #shopify-section-{{ section.id }} {
-          {%- assign media_ratio = section.settings.media_size | divided_by: 50.0 -%}
-          --product-grid: auto / minmax(0, {{ media_ratio }}fr) minmax(0, {{ 2.0 | minus: media_ratio }}fr);
+       #shopify-section-{{ section.id }} {
+          --section-padding-top: {{ section.settings.padding_top }}px;
+          --section-padding-bottom: {{ section.settings.padding_bottom }}px;
         }
-      }
-
-      {%- assign first_media = product.selected_or_first_available_variant.featured_media | default: product.media.first -%}
-      @media screen and (max-width: 767px) {
-        #shopify-section-{{ section.id }} {
-          --aspect-ratio: {{ first_media.aspect_ratio }};
+        .alert--success{
+         color:#4D7C0F !important;
+         background-color:#F5F9EF !important;
         }
+       .product-form__buttons .flex-wrap {
+          flex-wrap: nowrap;
       }
-
-      @media screen and (min-width: 768px) {
-        #shopify-section-{{ section.id }} {
-          --aspect-ratio: {{ first_media.aspect_ratio }};
+        @media screen and (min-width: 1024px) {
+          #shopify-section-{{ section.id }} {
+            {%- assign media_ratio = section.settings.media_size | divided_by: 50.0 -%}
+            --product-grid: auto / minmax(0, {{ media_ratio }}fr) minmax(0, {{ 2.0 | minus: media_ratio }}fr);
+          }
         }
-      }
-    .tf-box { overflow: hidden; margin-bottom: 20px; }
-      .tf-list { list-style: none; padding: 0; margin: 0; }
-      .tf-item { display: flex; justify-content: space-between; align-items: center; padding: 16px; border-bottom: 1px solid #e5e5e5; cursor: pointer; transition: background 0.2s ease; }
-      .tf-item:last-child { border-bottom: none; }
-      .tf-item:hover { background: #f9f9f9; }
-      .tf-item-static { cursor: default; flex-direction: column; align-items: flex-start; gap: 12px; }
-      .tf-item-static:hover { background: transparent; }
-      .tf-payment-icons { display: flex; flex-wrap: wrap; gap: 6px; }
-      .tf-payment-icons svg { width: 38px; height: 24px; }
-      .tf-delivery-img { max-height: 24px; width: auto; object-fit: contain; }
-    .tf-modal { border: none; border-radius: 8px; padding: 0; width: 90%; max-width: 480px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: auto; }
-    .tf-modal::backdrop { background: rgba(0, 0, 0, 0.5); }
-    .tf-modal-header { display: flex; justify-content: space-between; align-items: center; padding: 20px;margin-bottom:20px; border-bottom: 1px solid #e5e5e5; position: sticky; top: 0; background: #fff; z-index: 2; }
-    .tf-modal-title { font-size: 1.125rem; font-weight: 600; margin: 0; }
-    .tf-modal-close { cursor: pointer; background: transparent; border: 1px solid #ddd; border-radius: 4px; display: flex; padding: 4px; transition: background 0.2s; }
-    .tf-modal-close:hover { background: #f0f0f0; }
-    .tf-modal-body { padding: 0 20px 20px 20px; max-height: 65vh; overflow-y: auto; }
-    .tf-accordion { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
-    .tf-accordion:last-child { border-bottom: none; }
-    .tf-accordion-summary { display: flex; justify-content: space-between; align-items: center; cursor: pointer; list-style: none; }
-    .tf-accordion-summary::-webkit-details-marker { display: none; }
-    .tf-accordion[open] .tf-chevron { transform: rotate(180deg); }
-    .tf-accordion-content { margin-top: 12px; color: #555; font-size: 0.9rem; line-height: 1.6; }
-    .tf-mf-trigger { margin:20px 0;display: block; cursor: pointer; padding: 20px 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;  transition: opacity 0.2s; }
-    .tf-mf-trigger:hover { opacity: 0.7; }
-    .tf-mf-header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0px; }
-    .tf-mf-title { font-size: 1.125rem; font-weight: 600; margin: 0; }
-    .tf-mf-summary p, .tf-mf-summary img, .tf-mf-summary ul, .tf-mf-summary ol, .tf-mf-summary blockquote, .tf-mf-summary h1, .tf-mf-summary h2, .tf-mf-summary h3, .tf-mf-summary h4, .tf-mf-summary h6 { display: none !important; }
-    .tf-mf-summary h5 strong{font-weight: 400 !important;}
-    .tf-mf-summary h5 { display: list-item !important; list-style-type: disc !important; margin: 0 0 8px 24px !important; font-size: 1rem !important; font-weight: 400 !important; line-height: 1.4 !important; color: #333 !important; }
-    .tf-mf-modal { border: none; border-radius: 8px; padding: 0; width: 90%; max-width: 550px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: auto; }
-    .tf-mf-modal::backdrop { background: rgba(0, 0, 0, 0.5); }
-    .tf-mf-modal-body { padding: 20px;padding-top:0px; max-height: 70vh; overflow-y: auto; }
-    .tf-mf-modal-body h5 { font-size: 16px !important; font-weight: 600; margin: 20px 0 6px 0; color: #111; }
-    .tf-mf-modal-body p { font-size: 0.95rem; line-height: 1.5; color: #555; margin: 0 0 10px 0; }
-    .tf-mf-modal-body > *:first-child { margin-top: 0; }
-    .product__metafield-popup{margin-top:0px;}
-      {% comment %} .tf-coupon-box { ... 旧版注释样式 ... } {% endcomment %}
-    .tf-coupon-box{display:flex;margin-bottom:10px;align-items:stretch;width:80%;-webkit-mask-image:radial-gradient(circle at 0 0,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 0,transparent 5px,#000 5.5px),radial-gradient(circle at 0 100%,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 100%,transparent 5px,#000 5.5px);-webkit-mask-size:51% 51%;-webkit-mask-position:top left,top right,bottom left,bottom right;-webkit-mask-repeat:no-repeat;mask-image:radial-gradient(circle at 0 0,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 0,transparent 5px,#000 5.5px),radial-gradient(circle at 0 100%,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 100%,transparent 5px,#000 5.5px);mask-size:51% 51%;mask-position:top left,top right,bottom left,bottom right;mask-repeat:no-repeat}.tf-coupon-left{background:#e8e4f2;padding:20px 14px;display:flex;align-items:center;gap:10px;flex:1}.tf-coupon-icon{color:#000;flex-shrink:0;width:16px;height:16px}.tf-coupon-save-text{background:#000;color:#fff;font-size:11px;font-weight:800;padding:3px 10px;border-radius:12px;text-transform:uppercase;line-height:1.2;flex-shrink:0}.tf-coupon-amount{font-size:16px;font-weight:800;color:#000;white-space:nowrap;flex-shrink:0}.tf-coupon-title{font-size:16px;color:#000;margin:0}.tf-coupon-title p{margin:0}.tf-coupon-right{background:#9887b8;padding:10px 18px;display:flex;align-items:center;justify-content:center;border-left:2px dashed #fff}.tf-coupon-copy-btn{color:#fff;font-size:13px;font-weight:600;text-decoration:underline;background:none;border:none;padding:0;cursor:pointer;transition:opacity .2s;white-space:nowrap}.tf-coupon-copy-btn:hover{opacity:.8}.tf-coupon-timer-row{display:flex;align-items:center;gap:6px;color:#666;font-size:13px;font-weight:500;margin-bottom:15px}.tf-coupon-timer-row svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.product__coupon{margin-top:10px}@media (max-width:768px){.tf-coupon-left{flex-wrap:wrap;gap:8px;padding:10px}.tf-coupon-right{padding:10px}}
-    .tf-coupon-title{margin-left:10px;}
 
-     @media (max-width: 1400px) {.tf-coupon-box{width:100%;}}
-     @media (max-width: 768px) {
-      .tf-coupon-left{min-width:100px;}
-      .tf-item{padding:8px;}
-      .tf-item .icon-custom{width:14px;height:14px;}
-      .tf-item .text-base{font-size:14px;}
-      .tf-right-icon{width:14px;height:14px;}
-      .tf-item:last-child{margin-top:8px;}
-      .tf-item-static{gap:8px;}
-      .tf-coupon-title{font-size:14px;margin-left:23px;}
-    }
+        {%- assign first_media = product.selected_or_first_available_variant.featured_media | default: product.media.first -%}
+        @media screen and (max-width: 767px) {
+          #shopify-section-{{ section.id }} {
+            --aspect-ratio: {{ first_media.aspect_ratio }};
+          }
+        }
+
+        @media screen and (min-width: 768px) {
+          #shopify-section-{{ section.id }} {
+            --aspect-ratio: {{ first_media.aspect_ratio }};
+          }
+        }
+      .tf-box { overflow: hidden; margin-bottom: 20px; }
+        .tf-list { list-style: none; padding: 0; margin: 0; }
+        .tf-item { display: flex; justify-content: space-between; align-items: center; padding: 16px; border-bottom: 1px solid #e5e5e5; cursor: pointer; transition: background 0.2s ease; }
+        .tf-item:last-child { border-bottom: none; }
+        .tf-item:hover { background: #f9f9f9; }
+        .tf-item-static { cursor: default; flex-direction: column; align-items: flex-start; gap: 12px; }
+        .tf-item-static:hover { background: transparent; }
+        .tf-payment-icons { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tf-payment-icons svg { width: 38px; height: 24px; }
+        .tf-delivery-img { max-height: 24px; width: auto; object-fit: contain; }
+      .tf-modal { border: none; border-radius: 8px; padding: 0; width: 90%; max-width: 480px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: auto; }
+      .tf-modal::backdrop { background: rgba(0, 0, 0, 0.5); }
+      .tf-modal-header { display: flex; justify-content: space-between; align-items: center; padding: 20px;margin-bottom:20px; border-bottom: 1px solid #e5e5e5; position: sticky; top: 0; background: #fff; z-index: 2; }
+      .tf-modal-title { font-size: 1.125rem; font-weight: 600; margin: 0; }
+      .tf-modal-close { cursor: pointer; background: transparent; border: 1px solid #ddd; border-radius: 4px; display: flex; padding: 4px; transition: background 0.2s; }
+      .tf-modal-close:hover { background: #f0f0f0; }
+      .tf-modal-body { padding: 0 20px 20px 20px; max-height: 65vh; overflow-y: auto; }
+      .tf-accordion { border-bottom: 1px solid #e5e5e5; padding: 16px 0; }
+      .tf-accordion:last-child { border-bottom: none; }
+      .tf-accordion-summary { display: flex; justify-content: space-between; align-items: center; cursor: pointer; list-style: none; }
+      .tf-accordion-summary::-webkit-details-marker { display: none; }
+      .tf-accordion[open] .tf-chevron { transform: rotate(180deg); }
+      .tf-accordion-content { margin-top: 12px; color: #555; font-size: 0.9rem; line-height: 1.6; }
+      .tf-mf-trigger { margin:20px 0;display: block; cursor: pointer; padding: 20px 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;  transition: opacity 0.2s; }
+      .tf-mf-trigger:hover { opacity: 0.7; }
+      .tf-mf-header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0px; }
+      .tf-mf-title { font-size: 1.125rem; font-weight: 600; margin: 0; }
+      .tf-mf-summary p, .tf-mf-summary img, .tf-mf-summary ul, .tf-mf-summary ol, .tf-mf-summary blockquote, .tf-mf-summary h1, .tf-mf-summary h2, .tf-mf-summary h3, .tf-mf-summary h4, .tf-mf-summary h6 { display: none !important; }
+      .tf-mf-summary h5 strong{font-weight: 400 !important;}
+      .tf-mf-summary h5 { display: list-item !important; list-style-type: disc !important; margin: 0 0 8px 24px !important; font-size: 1rem !important; font-weight: 400 !important; line-height: 1.4 !important; color: #333 !important; }
+      .tf-mf-modal { border: none; border-radius: 8px; padding: 0; width: 90%; max-width: 550px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin: auto; }
+      .tf-mf-modal::backdrop { background: rgba(0, 0, 0, 0.5); }
+      .tf-mf-modal-body { padding: 20px;padding-top:0px; max-height: 70vh; overflow-y: auto; }
+      .tf-mf-modal-body h5 { font-size: 16px !important; font-weight: 600; margin: 20px 0 6px 0; color: #111; }
+      .tf-mf-modal-body p { font-size: 0.95rem; line-height: 1.5; color: #555; margin: 0 0 10px 0; }
+      .tf-mf-modal-body > *:first-child { margin-top: 0; }
+      .product__metafield-popup{margin-top:0px;}
+        {% comment %} .tf-coupon-box { ... 旧版注释样式 ... } {% endcomment %}
+      .tf-coupon-box{display:flex;margin-bottom:10px;align-items:stretch;width:80%;-webkit-mask-image:radial-gradient(circle at 0 0,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 0,transparent 5px,#000 5.5px),radial-gradient(circle at 0 100%,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 100%,transparent 5px,#000 5.5px);-webkit-mask-size:51% 51%;-webkit-mask-position:top left,top right,bottom left,bottom right;-webkit-mask-repeat:no-repeat;mask-image:radial-gradient(circle at 0 0,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 0,transparent 5px,#000 5.5px),radial-gradient(circle at 0 100%,transparent 5px,#000 5.5px),radial-gradient(circle at 100% 100%,transparent 5px,#000 5.5px);mask-size:51% 51%;mask-position:top left,top right,bottom left,bottom right;mask-repeat:no-repeat}.tf-coupon-left{background:#e8e4f2;padding:20px 14px;display:flex;align-items:center;gap:10px;flex:1}.tf-coupon-icon{color:#000;flex-shrink:0;width:16px;height:16px}.tf-coupon-save-text{background:#000;color:#fff;font-size:11px;font-weight:800;padding:3px 10px;border-radius:12px;text-transform:uppercase;line-height:1.2;flex-shrink:0}.tf-coupon-amount{font-size:16px;font-weight:800;color:#000;white-space:nowrap;flex-shrink:0}.tf-coupon-title{font-size:16px;color:#000;margin:0}.tf-coupon-title p{margin:0}.tf-coupon-right{background:#9887b8;padding:10px 18px;display:flex;align-items:center;justify-content:center;border-left:2px dashed #fff}.tf-coupon-copy-btn{color:#fff;font-size:13px;font-weight:600;text-decoration:underline;background:none;border:none;padding:0;cursor:pointer;transition:opacity .2s;white-space:nowrap}.tf-coupon-copy-btn:hover{opacity:.8}.tf-coupon-timer-row{display:flex;align-items:center;gap:6px;color:#666;font-size:13px;font-weight:500;margin-bottom:15px}.tf-coupon-timer-row svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.product__coupon{margin-top:10px}@media (max-width:768px){.tf-coupon-left{flex-wrap:wrap;gap:8px;padding:10px}.tf-coupon-right{padding:10px}}
+      .tf-coupon-title{margin-left:10px;}
+
+       @media (max-width: 1400px) {.tf-coupon-box{width:100%;}}
+       @media (max-width: 768px) {
+        .tf-coupon-left{min-width:100px;}
+        .tf-item{padding:8px;}
+        .tf-item .icon-custom{width:14px;height:14px;}
+        .tf-item .text-base{font-size:14px;}
+        .tf-right-icon{width:14px;height:14px;}
+        .tf-item:last-child{margin-top:8px;}
+        .tf-item-static{gap:8px;}
+        .tf-coupon-title{font-size:14px;margin-left:23px;}
+      }
 </style>
 
 {%- liquid
@@ -2197,6 +2197,12 @@
           "default": "Copy Code"
         },
         {
+          "type": "image_picker",
+          "id": "tag_icon",
+          "label": "Tag icon",
+          "info": "Upload a custom tag icon. Theme default is used if empty."
+        },
+        {
           "type": "text",
           "id": "discount_code",
           "label": "Discount Code to Copy",
@@ -2204,7 +2210,7 @@
         }
       ]
     },
-        {
+    {
       "type": "coupon_cards_row",
       "name": "Discount Coupon Cards",
       "limit": 1,
