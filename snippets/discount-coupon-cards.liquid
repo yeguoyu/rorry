@@ -58,18 +58,21 @@
           <div class="tf-coupon-card">
             <div class="tf-coupon-card__shell">
               <div class="tf-coupon-card__top">
-                <img
-                  class="tf-coupon-card__tag-icon"
-                  src="{{ tag_icon_url }}"
-                  alt=""
-                  width="22"
-                  height="22"
-                  loading="lazy"
-                >
                 <div class="tf-coupon-card__text-col">
-                  {%- if badge != blank -%}
-                    <span class="tf-coupon-card__badge">{{ badge }}</span>
-                  {%- endif -%}
+                  <div class="tf-coupon-card__header">
+                    <img
+                      class="tf-coupon-card__tag-icon"
+                      src="{{ tag_icon_url }}"
+                      alt=""
+                      width="22"
+                      height="22"
+                      loading="lazy"
+                    >
+                    {%- if badge != blank -%}
+                      <span class="tf-coupon-card__badge">{{ badge }}</span>
+                    {%- endif -%}
+                    <span class="tf-coupon-card__tag-spacer" aria-hidden="true"></span>
+                  </div>
                   {%- if amount != blank -%}
                     <div class="tf-coupon-card__amount">{{ amount }}</div>
                   {%- endif -%}
@@ -147,7 +150,6 @@
     }
 
     #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__top {
-      position: relative;
       background: #e8e4f2;
       padding: 14px 8px 12px;
       text-align: center;
@@ -158,18 +160,6 @@
       min-height: 100px;
     }
 
-    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__tag-icon {
-      position: absolute;
-      left: 8px;
-      top: 14px;
-      flex-shrink: 0;
-      width: 22px;
-      height: 22px;
-      object-fit: contain;
-      display: block;
-      pointer-events: none;
-    }
-
     #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__text-col {
       display: flex;
       flex-direction: column;
@@ -177,6 +167,31 @@
       justify-content: center;
       text-align: center;
       width: 100%;
+    }
+
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__header {
+      display: grid;
+      grid-template-columns: 22px auto 22px;
+      align-items: center;
+      column-gap: 6px;
+      margin-bottom: 5px;
+      max-width: 100%;
+    }
+
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__tag-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      display: block;
+    }
+
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__tag-spacer {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      pointer-events: none;
+      visibility: hidden;
     }
 
     #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__badge {
@@ -191,7 +206,6 @@
       line-height: 1.2;
       white-space: nowrap;
       text-align: center;
-      margin-bottom: 5px;
     }
 
     #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__amount {
@@ -277,9 +291,18 @@
         min-height: 88px;
       }
 
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__header {
+        grid-template-columns: 16px auto 16px;
+        column-gap: 4px;
+        margin-bottom: 5px;
+      }
+
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__tag-icon {
-        left: 4px;
-        top: 10px;
+        width: 16px;
+        height: 16px;
+      }
+
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__tag-spacer {
         width: 16px;
         height: 16px;
       }
@@ -287,7 +310,6 @@
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__badge {
         font-size: 7px;
         padding: 3px 6px;
-        margin-bottom: 5px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__amount {
