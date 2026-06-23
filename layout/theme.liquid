@@ -51,6 +51,8 @@
 
     {{ content_for_header }}
 
+    {%- render 'seo-schema' -%}
+
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
