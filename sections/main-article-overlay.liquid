@@ -18,9 +18,9 @@
 <script src="{{ 'custer-blog.js' | asset_url }}" defer="defer"></script>
 <div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
   
-  <article class="article page-width{% if section.settings.narrow %} page-width--narrow{% endif %} relative zl-blog-all" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="article page-width{% if section.settings.narrow %} page-width--narrow{% endif %} relative zl-blog-all">
     {%- render 'blog-mobile-toc' -%} <div class="zl-blog-cotainer">{%- render 'blog-toc' -%}{%- render 'article-recommended-products' -%}{%- render 'article-related-posts' -%} </div>
-    <div class="rte text-base md:text-lg" itemprop="articleBody">
+    <div class="rte text-base md:text-lg">
       {{- article.content -}}
     </div>
   </article>
