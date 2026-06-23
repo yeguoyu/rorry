@@ -1,12 +1,13 @@
 {%- if request.page_type == 'index' -%}
-  {%- assign same_as = '' | split: '' -%}
-  {%- if settings.social_facebook_link != blank -%}{%- assign same_as = same_as | push: settings.social_facebook_link -%}{%- endif -%}
-  {%- if settings.social_instagram_link != blank -%}{%- assign same_as = same_as | push: settings.social_instagram_link -%}{%- endif -%}
-  {%- if settings.social_twitter_link != blank -%}{%- assign same_as = same_as | push: settings.social_twitter_link -%}{%- endif -%}
-  {%- if settings.social_youtube_link != blank -%}{%- assign same_as = same_as | push: settings.social_youtube_link -%}{%- endif -%}
-  {%- if settings.social_tiktok_link != blank -%}{%- assign same_as = same_as | push: settings.social_tiktok_link -%}{%- endif -%}
-  {%- if settings.social_pinterest_link != blank -%}{%- assign same_as = same_as | push: settings.social_pinterest_link -%}{%- endif -%}
-  {%- if settings.social_linkedin_link != blank -%}{%- assign same_as = same_as | push: settings.social_linkedin_link -%}{%- endif -%}
+  {%- assign same_as_string = '' -%}
+  {%- if settings.social_facebook_link != blank -%}{%- assign same_as_string = same_as_string | append: settings.social_facebook_link | append: '|||' -%}{%- endif -%}
+  {%- if settings.social_instagram_link != blank -%}{%- assign same_as_string = same_as_string | append: settings.social_instagram_link | append: '|||' -%}{%- endif -%}
+  {%- if settings.social_twitter_link != blank -%}{%- assign same_as_string = same_as_string | append: settings.social_twitter_link | append: '|||' -%}{%- endif -%}
+  {%- if settings.social_youtube_link != blank -%}{%- assign same_as_string = same_as_string | append: settings.social_youtube_link | append: '|||' -%}{%- endif -%}
+  {%- if settings.social_tiktok_link != blank -%}{%- assign same_as_string = same_as_string | append: settings.social_tiktok_link | append: '|||' -%}{%- endif -%}
+  {%- if settings.social_pinterest_link != blank -%}{%- assign same_as_string = same_as_string | append: settings.social_pinterest_link | append: '|||' -%}{%- endif -%}
+  {%- if settings.social_linkedin_link != blank -%}{%- assign same_as_string = same_as_string | append: settings.social_linkedin_link | append: '|||' -%}{%- endif -%}
+  {%- assign same_as = same_as_string | split: '|||' | compact -%}
 
 <script type="application/ld+json">
 {
