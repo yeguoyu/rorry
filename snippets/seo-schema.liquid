@@ -1,0 +1,218 @@
+{%- if request.page_type == 'index' -%}
+  {%- assign same_as = '' | split: '' -%}
+  {%- if settings.social_facebook_link != blank -%}{%- assign same_as = same_as | push: settings.social_facebook_link -%}{%- endif -%}
+  {%- if settings.social_instagram_link != blank -%}{%- assign same_as = same_as | push: settings.social_instagram_link -%}{%- endif -%}
+  {%- if settings.social_twitter_link != blank -%}{%- assign same_as = same_as | push: settings.social_twitter_link -%}{%- endif -%}
+  {%- if settings.social_youtube_link != blank -%}{%- assign same_as = same_as | push: settings.social_youtube_link -%}{%- endif -%}
+  {%- if settings.social_tiktok_link != blank -%}{%- assign same_as = same_as | push: settings.social_tiktok_link -%}{%- endif -%}
+  {%- if settings.social_pinterest_link != blank -%}{%- assign same_as = same_as | push: settings.social_pinterest_link -%}{%- endif -%}
+  {%- if settings.social_linkedin_link != blank -%}{%- assign same_as = same_as | push: settings.social_linkedin_link -%}{%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ shop.url }}/#organization",
+  "name": {{ shop.name | json }},
+  "url": {{ shop.url | json }}
+  {%- if settings.logo != blank -%}
+  ,"logo": "https:{{ settings.logo | image_url: width: 600 }}"
+  {%- endif -%}
+  {%- if shop.description != blank -%}
+  ,"description": {{ shop.description | strip_html | json }}
+  {%- endif -%}
+  {%- if same_as.size > 0 -%}
+  ,"sameAs": {{ same_as | json }}
+  {%- endif -%}
+  ,"contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "url": "{{ shop.url }}/pages/contact"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ shop.url }}/#website",
+  "name": {{ shop.name | json }},
+  "url": {{ shop.url | json }},
+  "publisher": { "@id": "{{ shop.url }}/#organization" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ shop.url }}{{ routes.search_url }}?options%5Bprefix%5D=last&q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{%- endif -%}
+
+{%- if request.page_type == 'blog' and blog -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "{{ shop.url }}{{ blog.url }}#blog",
+  "name": {{ blog.title | json }},
+  "url": "{{ shop.url }}{{ blog.url }}"
+  {%- if page_description != blank -%}
+  ,"description": {{ page_description | strip_html | json }}
+  {%- endif -%}
+  ,"publisher": {
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    "url": {{ shop.url | json }}
+  }
+}
+</script>
+{%- endif -%}
+
+{%- if request.page_type == 'collection' and collection -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ shop.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ collection.title | json }},
+      "item": "{{ shop.url }}{{ collection.url }}"
+    }
+  ]
+}
+</script>
+{%- endif -%}
+
+{%- if request.page_type == 'blog' and blog -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ shop.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ blog.title | json }},
+      "item": "{{ shop.url }}{{ blog.url }}"
+    }
+  ]
+}
+</script>
+{%- endif -%}
+
+{%- if request.page_type == 'article' and article and blog -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ shop.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ blog.title | json }},
+      "item": "{{ shop.url }}{{ blog.url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ article.title | json }},
+      "item": "{{ shop.url }}{{ article.url }}"
+    }
+  ]
+}
+</script>
+{%- endif -%}
+
+{%- if request.page_type == 'product' and product -%}
+  {%- assign breadcrumb_collection = collection | default: product.collections.first -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ shop.url }}/"
+    }
+    {%- if breadcrumb_collection != blank -%}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ breadcrumb_collection.title | json }},
+      "item": "{{ shop.url }}{{ breadcrumb_collection.url }}"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ product.title | json }},
+      "item": "{{ shop.url }}{{ product.url }}"
+    }
+    {%- else -%}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ product.title | json }},
+      "item": "{{ shop.url }}{{ product.url }}"
+    }
+    {%- endif -%}
+  ]
+}
+</script>
+{%- endif -%}
+
+{%- if request.page_type == 'collection' and collection -%}
+  {%- assign faq_questions = collection.metafields.custom.faq_question.value -%}
+  {%- assign faq_answers = collection.metafields.custom.faq_answer.value -%}
+  {%- if faq_questions != blank and faq_answers != blank and faq_questions.size > 0 and faq_answers.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- assign faq_first = true -%}
+    {%- for question in faq_questions -%}
+      {%- assign answer = faq_answers[forloop.index0] -%}
+      {%- if question != blank and answer != blank -%}
+        {%- unless faq_first -%},{%- endunless -%}
+        {%- assign faq_first = false -%}
+        {
+          "@type": "Question",
+          "name": {{ question | strip_html | json }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ answer | strip_html | json }}
+          }
+        }
+      {%- endif -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+  {%- endif -%}
+{%- endif -%}
