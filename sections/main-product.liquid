@@ -275,6 +275,8 @@
                     };
                 </script>
               </div>
+            {%- when 'coupon_cards_row' -%}
+              {%- render 'discount-coupon-cards', block: block, section: section -%}
             {%- when 'metafield_popup' -%}
               {%- liquid
                 assign mf_parts = block.settings.metafield_key | split: '.'
@@ -2194,6 +2196,107 @@
           "id": "discount_code",
           "label": "Discount Code to Copy",
           "default": "SAVE58"
+        }
+      ]
+    },
+        {
+      "type": "coupon_cards_row",
+      "name": "Discount Coupon Cards",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Card-style coupons displayed in a row. Leave a coupon slot blank to hide it."
+        },
+        {
+          "type": "text",
+          "id": "copy_text",
+          "label": "Copy Button Text",
+          "default": "Copy Code"
+        },
+        {
+          "type": "header",
+          "content": "Coupon 1"
+        },
+        {
+          "type": "text",
+          "id": "card_1_badge",
+          "label": "Badge text",
+          "default": "BUY 1 SAVE"
+        },
+        {
+          "type": "text",
+          "id": "card_1_amount",
+          "label": "Discount amount",
+          "default": "25%"
+        },
+        {
+          "type": "text",
+          "id": "card_1_code_label",
+          "label": "Code display text",
+          "default": "RORRY-25"
+        },
+        {
+          "type": "text",
+          "id": "card_1_discount_code",
+          "label": "Code to copy",
+          "default": "RORRY-25"
+        },
+        {
+          "type": "header",
+          "content": "Coupon 2"
+        },
+        {
+          "type": "text",
+          "id": "card_2_badge",
+          "label": "Badge text",
+          "default": "BUY 2 SAVE"
+        },
+        {
+          "type": "text",
+          "id": "card_2_amount",
+          "label": "Discount amount",
+          "default": "30%"
+        },
+        {
+          "type": "text",
+          "id": "card_2_code_label",
+          "label": "Code display text",
+          "default": "RORRY-30"
+        },
+        {
+          "type": "text",
+          "id": "card_2_discount_code",
+          "label": "Code to copy",
+          "default": "RORRY-30"
+        },
+        {
+          "type": "header",
+          "content": "Coupon 3"
+        },
+        {
+          "type": "text",
+          "id": "card_3_badge",
+          "label": "Badge text",
+          "default": "BUY 3 SAVE"
+        },
+        {
+          "type": "text",
+          "id": "card_3_amount",
+          "label": "Discount amount",
+          "default": "35%"
+        },
+        {
+          "type": "text",
+          "id": "card_3_code_label",
+          "label": "Code display text",
+          "default": "RORRY-35"
+        },
+        {
+          "type": "text",
+          "id": "card_3_discount_code",
+          "label": "Code to copy",
+          "default": "RORRY-35"
         }
       ]
     },
