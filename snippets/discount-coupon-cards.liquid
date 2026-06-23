@@ -282,19 +282,24 @@
     }
 
     @media (max-width: 768px) {
+      #CouponCards-{{ section.id }}-{{ block.id }} {
+        margin-top: 8px;
+      }
+
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-cards-row {
         gap: 6px;
+        margin-bottom: 8px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__top {
-        padding: 10px 4px 8px;
-        min-height: 88px;
+        padding: 8px 4px 6px;
+        min-height: 80px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__header {
         grid-template-columns: 16px auto 16px;
         column-gap: 4px;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__tag-icon {
@@ -309,28 +314,35 @@
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__badge {
         font-size: 7px;
-        padding: 3px 6px;
+        padding: 2px 6px;
+        line-height: 1.1;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__amount {
-        font-size: 22px;
-        margin-bottom: 4px;
+        font-size: 15px;
+        margin-bottom: 3px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__code-label {
         font-size: 9px;
+        line-height: 1.1;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__divider {
-        height: 10px;
+        height: 8px;
+      }
+
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__divider-line {
+        border-top-width: 1.5px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__bottom {
-        padding: 0 4px 8px;
+        padding: 0 4px 6px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__copy-btn {
-        font-size: 11px;
+        font-size: 10px;
+        text-underline-offset: 2px;
       }
     }
   </style>
