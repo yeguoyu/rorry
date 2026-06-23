@@ -79,7 +79,9 @@
                 {%- endif -%}
               </div>
 
-              <div class="tf-coupon-card__divider" aria-hidden="true"></div>
+              <div class="tf-coupon-card__divider" aria-hidden="true">
+                <span class="tf-coupon-card__divider-line"></span>
+              </div>
 
               <div class="tf-coupon-card__bottom">
                 <button
@@ -214,8 +216,14 @@
       position: relative;
       height: 8px;
       background: #9887b8;
-      border-top: 2px dashed #fff;
       flex-shrink: 0;
+    }
+
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__divider-line {
+      display: block;
+      width: 100%;
+      height: 0;
+      border-top: 2px dashed #fff;
     }
 
     #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__bottom {
