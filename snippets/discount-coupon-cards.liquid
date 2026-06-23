@@ -1,6 +1,6 @@
 {%- comment -%}
   Discount Coupon Cards (row layout)
-  Usage: {% render 'discount-coupon-cards', block: block %}
+  Usage: {% render 'discount-coupon-cards', block: block, section: section %}
 {%- endcomment -%}
 
 {%- liquid
@@ -16,10 +16,18 @@
   if block.settings.card_3_discount_code != blank or block.settings.card_3_code_label != blank
     assign card_count = card_count | plus: 1
   endif
+
+  if block.settings.tag_icon != blank
+    assign tag_icon_url = block.settings.tag_icon | image_url: width: 64
+    assign tag_icon_width = block.settings.tag_icon.width | at_most: 64
+  else
+    assign tag_icon_url = 'coupon-tag-icon.png' | asset_url
+    assign tag_icon_width = 64
+  endif
 -%}
 
 {%- if card_count > 0 -%}
-  <div class="product__coupon-cards" {{ block.shopify_attributes }}>
+  <div class="product__coupon-cards" id="CouponCards-{{ section.id }}-{{ block.id }}" {{ block.shopify_attributes }}>
     <div class="tf-coupon-cards-row" data-card-count="{{ card_count }}">
       {%- for i in (1..3) -%}
         {%- liquid
@@ -48,47 +56,44 @@
 
         {%- if discount_code != blank or code_label != blank -%}
           <div class="tf-coupon-card">
-            <div class="tf-coupon-card__top">
-              <div class="tf-coupon-card__header">
-                <svg
-                  class="tf-coupon-card__tag-icon"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.41a2 2 0 0 1 0 2.83z"
-                    fill="#F5C518"
-                    stroke="#1a1a1a"
-                    stroke-width="1.5"
-                    stroke-linejoin="round"
-                  />
-                  <circle cx="7" cy="7" r="1.5" fill="#1a1a1a" />
-                </svg>
-                {%- if badge != blank -%}
-                  <span class="tf-coupon-card__badge">{{ badge }}</span>
+            <div class="tf-coupon-card__shell">
+              <div class="tf-coupon-card__top">
+                <div class="tf-coupon-card__header">
+                  <img
+                    class="tf-coupon-card__tag-icon"
+                    src="{{ tag_icon_url }}"
+                    alt=""
+                    width="22"
+                    height="22"
+                    loading="lazy"
+                  >
+                  {%- if badge != blank -%}
+                    <span class="tf-coupon-card__badge">{{ badge }}</span>
+                  {%- endif -%}
+                </div>
+                {%- if amount != blank -%}
+                  <div class="tf-coupon-card__amount">{{ amount }}</div>
+                {%- endif -%}
+                {%- if code_label != blank -%}
+                  <div class="tf-coupon-card__code-label">With Code: {{ code_label }}</div>
                 {%- endif -%}
               </div>
-              {%- if amount != blank -%}
-                <div class="tf-coupon-card__amount">{{ amount }}</div>
-              {%- endif -%}
-              {%- if code_label != blank -%}
-                <div class="tf-coupon-card__code-label">With Code: {{ code_label }}</div>
-              {%- endif -%}
-            </div>
 
-            <div class="tf-coupon-card__divider" aria-hidden="true"></div>
+              <div class="tf-coupon-card__divider" aria-hidden="true">
+                <span class="tf-coupon-card__notch tf-coupon-card__notch--left"></span>
+                <span class="tf-coupon-card__notch tf-coupon-card__notch--right"></span>
+              </div>
 
-            <div class="tf-coupon-card__bottom">
-              <button
-                type="button"
-                class="tf-coupon-card__copy-btn"
-                onclick="tfCopyCode(this, '{{ discount_code | escape }}')"
-              >
-                {{ copy_text }}
-              </button>
+              <div class="tf-coupon-card__bottom">
+                <button
+                  type="button"
+                  class="tf-coupon-card__copy-btn"
+                  data-copy-code="{{ discount_code | escape }}"
+                  data-copy-label="{{ copy_text | escape }}"
+                >
+                  {{ copy_text }}
+                </button>
+              </div>
             </div>
           </div>
         {%- endif -%}
@@ -97,91 +102,105 @@
   </div>
 
   <style>
-    #shopify-section-{{ section.id }} .product__coupon-cards {
+    #CouponCards-{{ section.id }}-{{ block.id }} {
       width: 80%;
       margin-top: 10px;
       margin-bottom: 0;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-cards-row {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-cards-row {
       display: flex;
       flex-wrap: nowrap;
-      gap: 12px;
-      width: 80%;
+      gap: 10px;
+      width: 100%;
       margin-bottom: 10px;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card {
       flex: 1 1 0;
       min-width: 0;
+      overflow: visible;
+    }
+
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__shell {
       display: flex;
       flex-direction: column;
-      border-radius: 6px;
-      overflow: hidden;
+      height: 100%;
+      border-radius: 4px;
+      overflow: visible;
       -webkit-mask-image:
-        radial-gradient(circle at 0 0, transparent 6px, #000 6.5px),
-        radial-gradient(circle at 100% 0, transparent 6px, #000 6.5px),
-        radial-gradient(circle at 0 100%, transparent 6px, #000 6.5px),
-        radial-gradient(circle at 100% 100%, transparent 6px, #000 6.5px);
+        radial-gradient(circle at 0 0, transparent 5px, #000 5.5px),
+        radial-gradient(circle at 100% 0, transparent 5px, #000 5.5px),
+        radial-gradient(circle at 0 100%, transparent 5px, #000 5.5px),
+        radial-gradient(circle at 100% 100%, transparent 5px, #000 5.5px);
       -webkit-mask-size: 51% 51%;
       -webkit-mask-position: top left, top right, bottom left, bottom right;
       -webkit-mask-repeat: no-repeat;
       mask-image:
-        radial-gradient(circle at 0 0, transparent 6px, #000 6.5px),
-        radial-gradient(circle at 100% 0, transparent 6px, #000 6.5px),
-        radial-gradient(circle at 0 100%, transparent 6px, #000 6.5px),
-        radial-gradient(circle at 100% 100%, transparent 6px, #000 6.5px);
+        radial-gradient(circle at 0 0, transparent 5px, #000 5.5px),
+        radial-gradient(circle at 100% 0, transparent 5px, #000 5.5px),
+        radial-gradient(circle at 0 100%, transparent 5px, #000 5.5px),
+        radial-gradient(circle at 100% 100%, transparent 5px, #000 5.5px);
       mask-size: 51% 51%;
       mask-position: top left, top right, bottom left, bottom right;
       mask-repeat: no-repeat;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__top {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__top {
       background: #e8e4f2;
-      padding: 12px 8px 10px;
+      padding: 14px 8px 12px;
       text-align: center;
-      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 108px;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__header {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__header {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
-      margin-bottom: 8px;
-      flex-wrap: nowrap;
+      margin-bottom: 10px;
+      width: 100%;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__tag-icon {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__tag-icon {
       flex-shrink: 0;
-      width: 14px;
-      height: 14px;
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      display: block;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__badge {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__badge {
       display: inline-block;
       background: #1a1a1a;
       color: #fff;
-      font-size: 9px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: 0.02em;
-      padding: 4px 8px;
+      letter-spacing: 0.01em;
+      padding: 4px 10px;
       border-radius: 999px;
       line-height: 1.2;
       white-space: nowrap;
+      text-align: center;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__amount {
-      font-size: 28px;
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__amount {
+      font-size: 32px;
       font-weight: 800;
       color: #1a1a1a;
       line-height: 1;
-      margin-bottom: 6px;
+      margin: 0 0 8px;
       letter-spacing: -0.02em;
+      text-align: center;
+      width: 100%;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__code-label {
-      font-size: 11px;
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__code-label {
+      font-size: 12px;
       font-weight: 500;
       color: #333;
       line-height: 1.2;
@@ -189,45 +208,49 @@
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 100%;
+      text-align: center;
+      width: 100%;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__divider {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__divider {
       position: relative;
-      height: 0;
-      border-top: 2px dashed rgba(255, 255, 255, 0.85);
+      height: 12px;
       background: #9887b8;
-      margin: 0;
+      border-top: 2px dashed #fff;
+      flex-shrink: 0;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__divider::before,
-    #shopify-section-{{ section.id }} .tf-coupon-card__divider::after {
-      content: '';
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch {
       position: absolute;
-      top: -7px;
-      width: 14px;
-      height: 14px;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      margin-top: -6px;
       background: #fff;
       border-radius: 50%;
-      z-index: 1;
+      z-index: 2;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__divider::before {
-      left: -7px;
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--left {
+      left: -6px;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__divider::after {
-      right: -7px;
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--right {
+      right: -6px;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__bottom {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__bottom {
       background: #9887b8;
-      padding: 10px 8px;
+      padding: 12px 8px;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__copy-btn {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__copy-btn {
       color: #fff;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 600;
       text-decoration: underline;
       text-underline-offset: 3px;
@@ -237,87 +260,109 @@
       cursor: pointer;
       line-height: 1.2;
       transition: opacity 0.2s;
+      text-align: center;
+      width: 100%;
     }
 
-    #shopify-section-{{ section.id }} .tf-coupon-card__copy-btn:hover {
+    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__copy-btn:hover {
       opacity: 0.85;
     }
 
     @media (max-width: 1400px) {
-      #shopify-section-{{ section.id }} .product__coupon-cards {
+      #CouponCards-{{ section.id }}-{{ block.id }} {
         width: 100%;
       }
     }
 
     @media (max-width: 768px) {
-      #shopify-section-{{ section.id }} .tf-coupon-cards-row {
-        width: 100%;
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-cards-row {
         gap: 6px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        padding-bottom: 2px;
       }
 
-      #shopify-section-{{ section.id }} .tf-coupon-cards-row::-webkit-scrollbar {
-        display: none;
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__top {
+        padding: 10px 4px 8px;
+        min-height: 88px;
       }
 
-      #shopify-section-{{ section.id }} .tf-coupon-card {
-        flex: 0 0 calc(33.333% - 4px);
-        min-width: 100px;
-      }
-
-      #shopify-section-{{ section.id }} .tf-coupon-card__top {
-        padding: 8px 4px 6px;
-      }
-
-      #shopify-section-{{ section.id }} .tf-coupon-card__header {
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__header {
         gap: 4px;
         margin-bottom: 6px;
       }
 
-      #shopify-section-{{ section.id }} .tf-coupon-card__tag-icon {
-        width: 11px;
-        height: 11px;
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__tag-icon {
+        width: 16px;
+        height: 16px;
       }
 
-      #shopify-section-{{ section.id }} .tf-coupon-card__badge {
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__badge {
         font-size: 7px;
         padding: 3px 6px;
       }
 
-      #shopify-section-{{ section.id }} .tf-coupon-card__amount {
-        font-size: 20px;
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__amount {
+        font-size: 22px;
         margin-bottom: 4px;
       }
 
-      #shopify-section-{{ section.id }} .tf-coupon-card__code-label {
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__code-label {
         font-size: 9px;
-        letter-spacing: -0.01em;
       }
 
-      #shopify-section-{{ section.id }} .tf-coupon-card__bottom {
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__divider {
+        height: 10px;
+      }
+
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch {
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+      }
+
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--left {
+        left: -5px;
+      }
+
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--right {
+        right: -5px;
+      }
+
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__bottom {
         padding: 8px 4px;
       }
 
-      #shopify-section-{{ section.id }} .tf-coupon-card__copy-btn {
+      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__copy-btn {
         font-size: 11px;
       }
     }
   </style>
 
   <script data-no-lazy="1">
-    window.tfCopyCode =
-      window.tfCopyCode ||
-      function (btn, code) {
+    (function () {
+      var root = document.getElementById('CouponCards-{{ section.id }}-{{ block.id }}');
+      if (!root) return;
+
+      function copyCode(btn, code) {
+        if (!code) return;
         navigator.clipboard.writeText(code).then(function () {
-          var originalText = btn.innerText;
+          var originalText = btn.getAttribute('data-copy-label') || btn.innerText;
           btn.innerText = 'Copied!';
           setTimeout(function () {
             btn.innerText = originalText;
           }, 2000);
         });
-      };
+      }
+
+      window.tfCopyCode =
+        window.tfCopyCode ||
+        function (btn, code) {
+          copyCode(btn, code);
+        };
+
+      root.querySelectorAll('.tf-coupon-card__copy-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          copyCode(btn, btn.getAttribute('data-copy-code'));
+        });
+      });
+    })();
   </script>
 {%- endif -%}
