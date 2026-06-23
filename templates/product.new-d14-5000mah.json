@@ -92,6 +92,7 @@
           "type": "coupon_cards_row",
           "settings": {
             "copy_text": "Copy Code",
+            "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
             "card_1_badge": "BUY 1 SAVE",
             "card_1_amount": "25%",
             "card_1_code_label": "RORRY-25",
