@@ -31,16 +31,16 @@
             "show_taxes_notice": false
           }
         },
-        "liquid_MLLwaT": {
+        "liquid_z8QpHM": {
           "type": "liquid",
           "settings": {
             "liquid": "<script src=\"https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=USD&components=messages,buttons\" defer></script>\n<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"primary\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"14\"\n    data-pp-amount=\"{{ product.selected_or_first_available_variant.price | divided_by: 100.0 }}\"\n    data-pp-placement=\"product\"\n    data-pp-buyercountry=\"US\"> \n</div>"
           }
         },
-        "liquid_xq8RgL": {
+        "liquid_ayHmRG": {
           "type": "liquid",
           "settings": {
-            "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->"
+            "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n id=\"product-klarna-badge\"\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->\n<style>\n    .product__info klarna-placement::part(osm-container),\n  .product__info klarna-placement .container {\n    border-color: transparent !important;\n    padding-left: 0px !important;\n  }\n #product-klarna-badge::part(osm-badge) {\n  width: 48px !important;\n  height: auto !important;\n}\n@media screen and (min-width: 750px) {\n  #product-klarna-badge::part(osm-container) {\n    padding-top: 0 !important;\n  }\n}\n</style>"
           }
         },
         "liquid_7LW8an": {
@@ -218,8 +218,8 @@
         "title",
         "judge_me_reviews_preview_badge_9EFiPW",
         "price_dhxX3T",
-        "liquid_MLLwaT",
-        "liquid_xq8RgL",
+        "liquid_z8QpHM",
+        "liquid_ayHmRG",
         "liquid_7LW8an",
         "liquid_zUX79j",
         "coupon_code_QVtbex",
