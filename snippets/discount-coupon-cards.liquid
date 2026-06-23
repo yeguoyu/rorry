@@ -79,10 +79,7 @@
                 {%- endif -%}
               </div>
 
-              <div class="tf-coupon-card__divider" aria-hidden="true">
-                <span class="tf-coupon-card__notch tf-coupon-card__notch--left"></span>
-                <span class="tf-coupon-card__notch tf-coupon-card__notch--right"></span>
-              </div>
+              <div class="tf-coupon-card__divider" aria-hidden="true"></div>
 
               <div class="tf-coupon-card__bottom">
                 <button
@@ -221,25 +218,6 @@
       flex-shrink: 0;
     }
 
-    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch {
-      position: absolute;
-      top: 50%;
-      width: 12px;
-      height: 12px;
-      margin-top: -6px;
-      background: #fff;
-      border-radius: 50%;
-      z-index: 2;
-    }
-
-    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--left {
-      left: -6px;
-    }
-
-    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--right {
-      right: -6px;
-    }
-
     #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__bottom {
       background: #9887b8;
       padding: 0 8px 8px;
@@ -311,20 +289,6 @@
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__divider {
         height: 10px;
-      }
-
-      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch {
-        width: 10px;
-        height: 10px;
-        margin-top: -5px;
-      }
-
-      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--left {
-        left: -5px;
-      }
-
-      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--right {
-        right: -5px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__bottom {
