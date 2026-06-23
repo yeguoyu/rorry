@@ -308,17 +308,15 @@
         },
         "video_block_zUgyKR": {
           "type": "video_block",
-          "disabled": true,
           "settings": {
-            "video": "shopify://files/videos/t1-5000mah-portable-charger-keychain-2.mp4",
+            "video": "shopify://files/videos/t1-10000mah-portable-charger-3.mp4",
             "video_url": ""
           }
         },
         "video_block_DNXxce": {
           "type": "video_block",
-          "disabled": true,
           "settings": {
-            "video": "shopify://files/videos/t1-5000mah-portable-charger-keychain.mp4",
+            "video": "shopify://files/videos/t1-10000mah-portable-charger-2.mp4",
             "video_url": ""
           }
         }
@@ -363,7 +361,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -399,7 +397,7 @@
         "button_icon": false,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -627,7 +625,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
