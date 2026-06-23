@@ -21,7 +21,6 @@
   {%- if logo != blank -%}
     <a
       href="{{ routes.root_url }}"
-      itemprop="url"
       class="header__logo-link{% if white_logo %} has-white-logo{% endif %} flex items-center relative"
     >
       <span class="sr-only">{{ shop.name }}</span>
@@ -37,8 +36,8 @@
       {%- capture mobile_style -%}max-height: {{ settings.logo_width_mobile | divided_by: logo_mobile.aspect_ratio }}px;max-width: {{ settings.logo_width_mobile }}px;{%- endcapture -%}
 
       {%- liquid
-        echo logo | image_url: width: logo.width | image_tag: loading: 'lazy', widths: widths, sizes: sizes, style: style, preload: true, itemprop: 'logo', is: 'lazy-image', class: 'logo hidden md:block'
-        echo logo_mobile | image_url: width: logo_mobile.width | image_tag: loading: 'lazy', widths: mobile_widths, sizes: mobile_sizes, style: mobile_style, preload: true, itemprop: 'logo', is: 'lazy-image', class: 'logo md:hidden'
+        echo logo | image_url: width: logo.width | image_tag: loading: 'lazy', widths: widths, sizes: sizes, style: style, preload: true, is: 'lazy-image', class: 'logo hidden md:block'
+        echo logo_mobile | image_url: width: logo_mobile.width | image_tag: loading: 'lazy', widths: mobile_widths, sizes: mobile_sizes, style: mobile_style, preload: true, is: 'lazy-image', class: 'logo md:hidden'
       -%}
 
       {%- if white_logo -%}
@@ -53,22 +52,22 @@
         {%- capture mobile_style -%}max-height: {{ settings.logo_width_mobile | divided_by: white_logo_mobile.aspect_ratio }}px;max-width: {{ settings.logo_width_mobile }}px;{%- endcapture -%}
 
         {%- liquid
-          echo white_logo | image_url: width: white_logo.width | image_tag: loading: 'lazy', widths: widths, sizes: sizes, style: style, preload: true, itemprop: 'logo', is: 'lazy-image', class: 'white-logo hidden md:block absolute'
-          echo white_logo_mobile | image_url: width: white_logo_mobile.width | image_tag: loading: 'lazy', widths: mobile_widths, sizes: mobile_sizes, style: mobile_style, preload: true, itemprop: 'logo', is: 'lazy-image', class: 'white-logo md:hidden absolute'
+          echo white_logo | image_url: width: white_logo.width | image_tag: loading: 'lazy', widths: widths, sizes: sizes, style: style, preload: true, is: 'lazy-image', class: 'white-logo hidden md:block absolute'
+          echo white_logo_mobile | image_url: width: white_logo_mobile.width | image_tag: loading: 'lazy', widths: mobile_widths, sizes: mobile_sizes, style: mobile_style, preload: true, is: 'lazy-image', class: 'white-logo md:hidden absolute'
         -%}
       {%- endif -%}
     </a>
   {%- else -%}
-    <a href="{{ routes.root_url }}" itemprop="url" class="h3">{{ shop.name }}</a>
+    <a href="{{ routes.root_url }}" class="h3">{{ shop.name }}</a>
   {%- endif -%}
 {%- endcapture -%}
 
 {%- if request.page_type == 'index' and logo_h1 -%}
-  <h1 class="header__logo flex justify-center z-2" itemscope itemtype="http://schema.org/Organization">
+  <h1 class="header__logo flex justify-center z-2">
     {{- logo_content -}}
   </h1>
 {%- else -%}
-  <div class="header__logo flex justify-center z-2" itemscope itemtype="http://schema.org/Organization">
+  <div class="header__logo flex justify-center z-2">
     {{- logo_content -}}
   </div>
 {%- endif -%}
