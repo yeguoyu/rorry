@@ -79,10 +79,7 @@
                 {%- endif -%}
               </div>
 
-              <div class="tf-coupon-card__divider" aria-hidden="true">
-                <span class="tf-coupon-card__notch tf-coupon-card__notch--left"></span>
-                <span class="tf-coupon-card__notch tf-coupon-card__notch--right"></span>
-              </div>
+              <div class="tf-coupon-card__divider" aria-hidden="true"></div>
 
               <div class="tf-coupon-card__bottom">
                 <button
@@ -130,20 +127,16 @@
       border-radius: 4px;
       overflow: visible;
       -webkit-mask-image:
-        radial-gradient(circle at 0 0, transparent 5px, #000 5.5px),
-        radial-gradient(circle at 100% 0, transparent 5px, #000 5.5px),
         radial-gradient(circle at 0 100%, transparent 5px, #000 5.5px),
         radial-gradient(circle at 100% 100%, transparent 5px, #000 5.5px);
       -webkit-mask-size: 51% 51%;
-      -webkit-mask-position: top left, top right, bottom left, bottom right;
+      -webkit-mask-position: bottom left, bottom right;
       -webkit-mask-repeat: no-repeat;
       mask-image:
-        radial-gradient(circle at 0 0, transparent 5px, #000 5.5px),
-        radial-gradient(circle at 100% 0, transparent 5px, #000 5.5px),
         radial-gradient(circle at 0 100%, transparent 5px, #000 5.5px),
         radial-gradient(circle at 100% 100%, transparent 5px, #000 5.5px);
       mask-size: 51% 51%;
-      mask-position: top left, top right, bottom left, bottom right;
+      mask-position: bottom left, bottom right;
       mask-repeat: no-repeat;
     }
 
@@ -156,6 +149,7 @@
       align-items: center;
       justify-content: center;
       min-height: 100px;
+      border-radius: 4px 4px 0 0;
     }
 
     #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__header {
@@ -219,25 +213,6 @@
       background: #9887b8;
       border-top: 2px dashed #fff;
       flex-shrink: 0;
-    }
-
-    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch {
-      position: absolute;
-      top: 50%;
-      width: 12px;
-      height: 12px;
-      margin-top: -6px;
-      background: #fff;
-      border-radius: 50%;
-      z-index: 2;
-    }
-
-    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--left {
-      left: -6px;
-    }
-
-    #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--right {
-      right: -6px;
     }
 
     #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__bottom {
@@ -310,21 +285,7 @@
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__divider {
-        height: 10px;
-      }
-
-      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch {
-        width: 10px;
-        height: 10px;
-        margin-top: -5px;
-      }
-
-      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--left {
-        left: -5px;
-      }
-
-      #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__notch--right {
-        right: -5px;
+        height: 8px;
       }
 
       #CouponCards-{{ section.id }}-{{ block.id }} .tf-coupon-card__bottom {
