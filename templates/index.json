@@ -45,13 +45,13 @@
         "image_g6RnRc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/rorry-vip-members-day-2.jpg",
-            "image_mobile": "shopify://shop_images/rorry-vip-members-day-m.jpg",
+            "image": "shopify://shop_images/custom-logo-power-banks-corporate-gifting-pc-banner.jpg",
+            "image_mobile": "shopify://shop_images/custom-logo-powerbanks-corporate-gifting-mobile-banner.jpg",
             "heading": "",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
             "button_label": "",
-            "button_link": "shopify://products/rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
+            "button_link": "shopify://collections/custom-logo-power-banks-wholesale",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
@@ -107,7 +107,7 @@
         "content_width": "small",
         "image_height_mobile": "adapt",
         "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ab9ce9",
+        "color_text": "#FBFBFB",
         "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
         "color_button_text": "rgba(0,0,0,0)",
@@ -157,11 +157,28 @@
             "button_external": false,
             "button_icon": false
           }
+        },
+        "image_rReHnL": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/rorry-vip-members-day-2.jpg",
+            "image_mobile": "shopify://shop_images/rorry-vip-members-day-m.jpg",
+            "heading": "",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://products/rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
         }
       },
       "block_order": [
         "image_PcyEYq",
-        "image_FMJEPR"
+        "image_FMJEPR",
+        "image_rReHnL"
       ],
       "disabled": true,
       "custom_css": [
