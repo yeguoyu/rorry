@@ -275,7 +275,7 @@
         "show_navigation": true,
         "image_height": "800px",
         "content_width": "small",
-        "image_height_mobile": "500px",
+        "image_height_mobile": "400px",
         "accessibility_info": "Our Custom Portfolio",
         "color_text": "#ffffff",
         "color_background": "",
