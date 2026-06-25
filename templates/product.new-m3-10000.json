@@ -328,11 +328,27 @@
             "video": "shopify://files/videos/m3-10000mah-foldable-charger-2.mp4",
             "video_url": ""
           }
+        },
+        "video_block_WHUVTc": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/m3-10000mah-foldable-charger-5.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_fM3iQj": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/m3-10000mah-foldable-charger-6.mp4",
+            "video_url": ""
+          }
         }
       },
       "block_order": [
         "video_block_geEWzG",
-        "video_block_kj3C3K"
+        "video_block_kj3C3K",
+        "video_block_WHUVTc",
+        "video_block_fM3iQj"
       ],
       "name": "selling points 11 Video",
       "settings": {
