@@ -756,60 +756,6 @@
         "rounded": false
       }
     },
-    "rich-text-1": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "disabled": true,
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "<em>ABOUT US</em>",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "Learn More",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "basic-underline",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
     "highlight_text_CaUmN4": {
       "type": "highlight-text",
       "blocks": {
@@ -894,42 +840,6 @@
         "color_button_gradient": "",
         "padding_top": 40,
         "padding_bottom": 40,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "blog-posts-collage": {
-      "type": "blog-posts-collage",
-      "disabled": true,
-      "settings": {
-        "blog": "editors-picks",
-        "post_limit": 3,
-        "show_view_all": true,
-        "image_ratio": "landscape",
-        "show_tags": false,
-        "show_date": true,
-        "show_comments": false,
-        "show_author": false,
-        "show_excerpt": false,
-        "heading": "Brand Stories",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1612,57 +1522,6 @@
         "padding_bottom": 60
       }
     },
-    "slideshow_PhWzBQ": {
-      "type": "slideshow",
-      "blocks": {
-        "image_9H8Ngb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Trust_endorsement_diagram-2.jpg",
-            "image_mobile": "shopify://shop_images/750x800-2.jpg",
-            "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "shopify://collections/power-banks",
-            "button_style": "primary",
-            "button_external": true,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "image_9H8Ngb"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".banner {max-width: 100%; border-radius: 0px;}"
-      ],
-      "settings": {
-        "autoplay": true,
-        "autoplay_speed": 3,
-        "show_navigation": true,
-        "image_height": "adapt",
-        "content_width": "small",
-        "image_height_mobile": "adapt",
-        "accessibility_info": "Slideshow about our brand",
-        "color_text": "#ab9ce9",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#ffffff",
-        "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 32,
-        "divider": true,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
     "logo_list_APpgqX": {
       "type": "logo-list",
       "blocks": {
@@ -1761,6 +1620,54 @@
         "padding_bottom": 36,
         "divider": false,
         "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich_text_iFXMEH": {
+      "type": "rich-text",
+      "blocks": {
+        "image_pGq8LK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bulk-portable-chargers-wholesale-supplier-pc.png",
+            "image_width": "full_width",
+            "image_max_width": 1000,
+            "image_max_width_mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "image_pGq8LK"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "shopify://collections/custom-logo-power-banks-wholesale",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
         "rounded": false
       }
     },
@@ -1900,10 +1807,8 @@
     "image_with_text_overlay_GMVMbi",
     "collage_grid_CyD43h",
     "highlight_text_63rT9k",
-    "rich-text-1",
     "highlight_text_CaUmN4",
     "17335405975bc5cc52",
-    "blog-posts-collage",
     "multicolumn_with_icons_7aDRtB",
     "reveal_video_with_text_overlay_ggdaRP",
     "testimonials_knfAYg",
@@ -1912,8 +1817,8 @@
     "zl_insta_gallery_XTQNFA",
     "zl_wall_reviews_Uc8Az4",
     "zl_hailed_by_DGiwd8",
-    "slideshow_PhWzBQ",
     "logo_list_APpgqX",
+    "rich_text_iFXMEH",
     "zl_pick_features_Na6Xba",
     "blog_posts_GgU9iL"
   ]
