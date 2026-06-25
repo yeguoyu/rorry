@@ -39,8 +39,8 @@
           "settings": {
             "title_size": "product-title-sm",
             "title_size_mobile": "product-title-sm",
-            "show_price": true,
-            "show_rating": true
+            "show_price": false,
+            "show_rating": false
           }
         },
         "price_3CCint": {
