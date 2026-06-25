@@ -347,7 +347,7 @@
         "sectionname": "Overview",
         "background": "#ffffff",
         "border_radius": 8,
-        "cols_pc": 3,
+        "cols_pc": 4,
         "cols_mb": 2,
         "gap_pc": 20,
         "gap_mb": 10,
