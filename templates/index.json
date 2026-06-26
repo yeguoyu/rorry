@@ -1623,52 +1623,55 @@
         "rounded": false
       }
     },
-    "rich_text_iFXMEH": {
-      "type": "rich-text",
+    "slideshow_8PA94c": {
+      "type": "slideshow",
       "blocks": {
-        "image_pGq8LK": {
+        "image_W4MfhU": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/bulk-portable-chargers-wholesale-supplier-pc.png",
-            "image_width": "full_width",
-            "image_max_width": 1000,
-            "image_max_width_mobile": 50
+            "image_mobile": "shopify://shop_images/bulk-portable-chargers-wholesale-supplier-mobile.png",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://collections/power-banks",
+            "button_style": "primary",
+            "button_external": true,
+            "button_icon": true
           }
         }
       },
       "block_order": [
-        "image_pGq8LK"
+        "image_W4MfhU"
       ],
-      "name": "t:sections.rich-text.name",
+      "custom_css": [
+        ".banner {max-width: 100%; border-radius: 0px;}",
+        ".banner__image {width: 100%; height: auto; object-fit: cover;}"
+      ],
       "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "shopify://collections/custom-logo-power-banks-wholesale",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#fbfbfb",
+        "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
+        "color_button_text": "rgba(0,0,0,0)",
+        "color_button_background": "rgba(0,0,0,0)",
         "color_button_gradient": "",
+        "color_overlay": "rgba(0,0,0,0)",
+        "overlay_opacity": 0,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
-        "narrow": false,
-        "rounded": true
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
       }
     },
     "zl_pick_features_Na6Xba": {
@@ -1818,7 +1821,7 @@
     "zl_wall_reviews_Uc8Az4",
     "zl_hailed_by_DGiwd8",
     "logo_list_APpgqX",
-    "rich_text_iFXMEH",
+    "slideshow_8PA94c",
     "zl_pick_features_Na6Xba",
     "blog_posts_GgU9iL"
   ]
