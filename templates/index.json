@@ -1635,7 +1635,7 @@
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "",
-            "button_link": "shopify://collections/power-banks",
+            "button_link": "shopify://collections/custom-logo-power-banks-wholesale",
             "button_style": "primary",
             "button_external": true,
             "button_icon": true
@@ -1650,13 +1650,13 @@
         ".banner__image {width: 100%; height: auto; object-fit: cover;}"
       ],
       "settings": {
-        "autoplay": true,
+        "autoplay": false,
         "autoplay_speed": 5,
-        "show_navigation": true,
+        "show_navigation": false,
         "image_height": "adapt",
         "content_width": "small",
         "image_height_mobile": "adapt",
-        "accessibility_info": "Slideshow about our brand",
+        "accessibility_info": "",
         "color_text": "#fbfbfb",
         "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
@@ -1668,8 +1668,8 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
-        "full_width": true,
-        "rounded": false,
+        "full_width": false,
+        "rounded": true,
         "enable_parallax": false,
         "parallax_direction": "vertical"
       }
