@@ -388,9 +388,9 @@
       "custom_css": [],
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_1.jpg",
-        "heading": "RORRY AuraDock - ALL iN ONE Power Bank",
+        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_16.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-MO.jpg",
+        "heading": "RORRY AuraDock - ALL iN ONE Magnetic Power Bank",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -422,6 +422,7 @@
     },
     "lookbook_qm4M33": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_3.jpg",
@@ -485,7 +486,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 0,
+        "padding_top": 12,
         "padding_bottom": 12,
         "divider": false,
         "full_width": false,
@@ -833,6 +834,20 @@
             "mobile_details_size": 16
           }
         },
+        "item_block_YaeNeX": {
+          "type": "item_block",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size": 64,
+            "mobile_title_size": 24,
+            "details": "",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
         "item_block_dBKhQd": {
           "type": "item_block",
           "settings": {
@@ -840,7 +855,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "105*68*36mm / 105*68*43mm",
+            "details": "105*68*36mm",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -853,7 +868,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "367g / 455g",
+            "details": "367g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -879,7 +894,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5000mAh / 10000mAh",
+            "details": "5000mAh",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -931,7 +946,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "【iPhone Series】iPhone 17,iPhone 17 Pro Max, iPhone 17 Pro, iPhone Air, iPhone 16e, iPhone 16 Pro Max, iPhone 16 Pro, iPhone 16, iPhone 16 plus, iPhone 15 Pro Max, iPhone 15 Pro, iPhone 15, iPhone 15 plus, iPhone 14 Pro Max, iPhone 14 Pro, iPhone 14, iPhone 14 plus, iPhone 13, iPhone 13 Pro Max, iPhone 13 Pro, iPhone 13 Pro Mini, iPhone 12， iPhone 12 Pro Max, iPhone 12 Pro, iPhone 12, iPhone 12 mini, iPhone 11 Pro, iPhone 11 Pro Max, iPhone 11, iPhone SE (2nd generation), iPhone XS, iPhone XS Max, iPhone XR, iPhone X, iPhone 8, iPhone 8 Plus; 【AirPods】Airpods 4,Airpods 3,AirPods Pro 2, AirPods Pro, AirPods Pro 3, AirPods (3rd generation), AirPods 2 Wireless Charging Case; 【Apple Watch】Apple Watch Series 11/10/9/8/7/6/5/4/3/2/1, Apple Watch Series SE 3/2/1, Apple Watch Series Ultra 3/2/1",
+            "details": "<strong>[iPhone Series]</strong> iPhone 17,iPhone 17 Pro Max, iPhone 17 Pro, iPhone Air, iPhone 16e, iPhone 16 Pro Max, iPhone 16 Pro, iPhone 16, iPhone 16 plus, iPhone 15 Pro Max, iPhone 15 Pro, iPhone 15, iPhone 15 plus, iPhone 14 Pro Max, iPhone 14 Pro, iPhone 14, iPhone 14 plus, iPhone 13, iPhone 13 Pro Max, iPhone 13 Pro, iPhone 13 Pro Mini, iPhone 12， iPhone 12 Pro Max, iPhone 12 Pro, iPhone 12, iPhone 12 mini, iPhone 11 Pro, iPhone 11 Pro Max, iPhone 11, iPhone SE (2nd generation), iPhone XS, iPhone XS Max, iPhone XR, iPhone X, iPhone 8, iPhone 8 Plus;<strong> [AirPods]</strong> Airpods 4,Airpods 3,AirPods Pro 2, AirPods Pro, AirPods Pro 3, AirPods (3rd generation), AirPods 2 Wireless Charging Case; <strong>[Apple Watch]</strong> Apple Watch Series 11/10/9/8/7/6/5/4/3/2/1, Apple Watch Series SE 3/2/1, Apple Watch Series Ultra 3/2/1",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -954,6 +969,7 @@
       "block_order": [
         "item_block_EcRAaC",
         "item_block_qcHcQg",
+        "item_block_YaeNeX",
         "item_block_dBKhQd",
         "item_block_z6ym3P",
         "item_block_8E8aLa",
@@ -1033,8 +1049,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "Can it charge through a phone case?",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is specifically designed to work with MagSafe cases and can charge through compatible phone cases.</p>",
+            "collapsible-title": "<strong>Is it compatible with iPhone cases?</strong>",
+            "collapsible-content": "<p>Yes, the RORRY AuraDock 4-in-1 Charging Station is compatible with iPhones in cases. It uses MagSafe technology and includes a magnetic reinforcement ring that you can attach to your iPhone case for a stronger magnetic connection if needed.Your iPhone will charge securely whether it's in a case or not, as long as the case isn't excessively thick (standard cases work great).</p>",
             "isactive": false
           }
         },
@@ -1042,8 +1058,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "How strong is the magnetic attachment?",
-            "collapsible-content": "<p>It provides up to 12N of magnetic force—4x stronger than standard options. It stays firmly attached to your phone, even with heavy shaking in your pocket, and has been tested to maintain continuous wireless charging after over 3,000 shakes.</p>",
+            "collapsible-title": "<strong>How long is the charging time?</strong>",
+            "collapsible-content": "<p>The RORRY AuraDock 4-in-1 Charging Station charges quickly:</p><p>•<strong>iPhone</strong>: Fully charged in 3 hours (reaches 40% in just 30 minutes with the 20W USB-C adapter)</p><p>•<strong>Power bank</strong>: Fully charged in 3 hours</p><p>•<strong>All devices together</strong>: iPhone, Apple Watch, and AirPods all charge simultaneously in 3 hours</p><p>Note: While your phone is on the dock, the detachable power bank won't charge—you'll need to remove your phone first to charge the power bank separately.<br/><br/></p>",
             "isactive": false
           }
         },
@@ -1051,8 +1067,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Does it have overcharge protection?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank includes comprehensive safety features including short circuit protection to prevent overcharging and device damage. It features an industrial-leading temperature control system that keeps it running 50°F cooler than competitors, effectively protecting both your device's battery and the power bank for long-term use.</p>",
+            "collapsible-title": "<strong>Is the charging station suitable for travel?</strong>",
+            "collapsible-content": "<p>Absolutely. Its foldable design saves space in your bag, and the detachable magnetic power bank lets you take portable power with you wherever you go. It's ideal for home, the office, and travel.<br/></p>",
             "isactive": false
           }
         },
@@ -1060,8 +1076,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How long does it take to recharge?</strong>",
-            "collapsible-content": "<p>The RORRY MagSafe Power Bank takes approximately 2 hours to fully recharge when using a 5V/3A adapter via the USB-C port.</p>",
+            "collapsible-title": "<strong>Can it charge Android phones?</strong>",
+            "collapsible-content": "<p>The magnetic wireless charging function is designed for MagSafe-compatible iPhones. Other Qi-compatible devices may charge wirelessly if properly aligned, but magnetic attachment and optimal performance are not guaranteed.</p>",
             "isactive": false
           }
         },
@@ -1069,8 +1085,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is this charger compatible with Android phones?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY MagSafe Power Bank is compatible with Android phones! It supports Samsung Galaxy S21-S24 series, Google Pixel, and other wireless charging enabled devices. For Android phones without built-in magnetic capabilities, it includes a magnetic metal ring that you can attach to your phone case to enable magnetic charging.</p>",
+            "collapsible-title": "<strong>Can I use the detachable power bank by itself?</strong>",
+            "collapsible-content": "<p>Yes! The 5,000mAh magnetic power bank is fully detachable and can be used independently for charging your compatible iPhone while you're away from your desk. It stays charged while docked, making it perfect for daily commuting or short trips.</p>",
             "isactive": false
           }
         },
@@ -1078,8 +1094,17 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is this power bank compatible with non-MagSafe phones like Samsung?</strong>",
-            "collapsible-content": "<p>Yes! It works natively with iPhone 12–16 series and MagSafe cases. For Samsung Galaxy S21–S24 (or other non-magnetic devices), simply use the included magnetic ring: peel off the backing and stick it to the outside of your phone case to enable secure magnetic charging.</p>",
+            "collapsible-title": "<strong>Can the power bank be charged while my iPhone is attached to the charging stand?</strong>",
+            "collapsible-content": "<p>No. When your iPhone is magnetically attached to the charging stand, the charging dock prioritizes charging your phone. To recharge the detachable 5,000mAh power bank itself, simply remove your iPhone from the stand.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_pyUjBg": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "product",
+            "collapsible-title": "<strong>Can I charge four devices at the same time?</strong>",
+            "collapsible-content": "<p>Yes. The charging station can charge:</p><ul><li>One iPhone</li><li>One Apple Watch</li><li>One pair of AirPods</li><li>The built-in detachable 5,000mAh magnetic power bank (when the phone is not attached)</li></ul><p>This gives you a complete 4-in-1 charging solution.</p>",
             "isactive": false
           }
         }
@@ -1091,7 +1116,8 @@
         "tab_content_Wrb3qd",
         "tab_content_KQRxtY",
         "tab_content_NVT3iN",
-        "tab_content_rjgjrP"
+        "tab_content_rjgjrP",
+        "tab_content_pyUjBg"
       ],
       "name": "product faq",
       "settings": {
