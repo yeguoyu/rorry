@@ -586,8 +586,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY-CharmGo-D4-10000mAh-pc_8.jpg",
-        "image_mobile": "shopify://shop_images/CharmGo-D4-10000mAh-Portable-Charger-mo_8.jpg",
+        "image": "shopify://shop_images/RORRY-CharmGo-D4-10000mAh-pc-1.jpg",
+        "image_mobile": "shopify://shop_images/CharmGo-D4-10000mAh-Portable-Charger-mo-1.jpg",
         "heading": "<strong>Wide Compatibility</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
