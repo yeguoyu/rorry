@@ -388,9 +388,9 @@
       "custom_css": [],
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_16.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-MO.jpg",
-        "heading": "RORRY AuraDock - ALL iN ONE Magnetic Power Bank",
+        "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black.jpg",
+        "heading": "RORRY AuraDock - ALL iN ONE Foldable Charging Station",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -461,8 +461,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_4.jpg",
+        "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_4.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_4.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -499,8 +499,8 @@
         "image_TFitUt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_5.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_5.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_5.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -514,8 +514,8 @@
         "image_YBJqUC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_6.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_6.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_6.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_6.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -529,8 +529,8 @@
         "image_BaBf63": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_3.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_3.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -579,8 +579,8 @@
         "image_BANW6B": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_10.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_10.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_10.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_10.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -594,8 +594,8 @@
         "image_kBkatF": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_11.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_11.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_11.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_11.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -609,8 +609,8 @@
         "image_Mp3nWC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_12.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_12.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_12.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_15.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -659,8 +659,8 @@
         "image_GVLNjC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_7.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_7.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_7.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_7.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -674,8 +674,8 @@
         "image_fd3XXk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_8.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_8.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_8.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_8.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -689,8 +689,8 @@
         "image_DEezUH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_9.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_9.jpg",
+            "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_9.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_9.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -737,8 +737,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_14.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_14.jpg",
+        "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_14.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_14.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -773,8 +773,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_13.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_13.jpg",
+        "image": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Power_Bank-PC_13.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_AuraDock_M1-10000mAh_4-in-1_Charging_Station-black_13.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -834,20 +834,6 @@
             "mobile_details_size": 16
           }
         },
-        "item_block_YaeNeX": {
-          "type": "item_block",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "title_size": 64,
-            "mobile_title_size": 24,
-            "details": "",
-            "details_color": "",
-            "details_size": 24,
-            "mobile_details_size": 14
-          }
-        },
         "item_block_dBKhQd": {
           "type": "item_block",
           "settings": {
@@ -855,7 +841,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "105*68*36mm",
+            "details": "105*68*43mm",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -868,7 +854,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "367g",
+            "details": "455g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -881,7 +867,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "2.5 Hours",
+            "details": "3 Hours",
             "details_color": "",
             "details_size": 24,
             "mobile_details_size": 14
@@ -894,7 +880,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5000mAh",
+            "details": "10000mAh",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -920,7 +906,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "20W",
+            "details": "30W",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -969,7 +955,6 @@
       "block_order": [
         "item_block_EcRAaC",
         "item_block_qcHcQg",
-        "item_block_YaeNeX",
         "item_block_dBKhQd",
         "item_block_z6ym3P",
         "item_block_8E8aLa",
@@ -1049,8 +1034,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is it compatible with iPhone cases?</strong>",
-            "collapsible-content": "<p>Yes, the RORRY AuraDock 4-in-1 Charging Station is compatible with iPhones in cases. It uses MagSafe technology and includes a magnetic reinforcement ring that you can attach to your iPhone case for a stronger magnetic connection if needed.Your iPhone will charge securely whether it's in a case or not, as long as the case isn't excessively thick (standard cases work great).</p>",
+            "collapsible-title": "<strong>Can I charge my iPhone, Apple Watch, and AirPods at the same time?</strong>",
+            "collapsible-content": "<p>Yes. This 4-in-1 charging station is designed to charge your iPhone, Apple Watch, and AirPods simultaneously, making it a convenient all-in-one solution for your Apple devices.</p>",
             "isactive": false
           }
         },
@@ -1058,8 +1043,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How long is the charging time?</strong>",
-            "collapsible-content": "<p>The RORRY AuraDock 4-in-1 Charging Station charges quickly:</p><p>•<strong>iPhone</strong>: Fully charged in 3 hours (reaches 40% in just 30 minutes with the 20W USB-C adapter)</p><p>•<strong>Power bank</strong>: Fully charged in 3 hours</p><p>•<strong>All devices together</strong>: iPhone, Apple Watch, and AirPods all charge simultaneously in 3 hours</p><p>Note: While your phone is on the dock, the detachable power bank won't charge—you'll need to remove your phone first to charge the power bank separately.<br/><br/></p>",
+            "collapsible-title": "<strong>Does the power bank charge while the phone is attached?</strong>",
+            "collapsible-content": "<p>No. When your phone is connected to the charging stand, the power bank will not charge. To recharge the power bank, you need to first remove your phone from the stand.</p>",
             "isactive": false
           }
         },
@@ -1067,8 +1052,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is the charging station suitable for travel?</strong>",
-            "collapsible-content": "<p>Absolutely. Its foldable design saves space in your bag, and the detachable magnetic power bank lets you take portable power with you wherever you go. It's ideal for home, the office, and travel.<br/></p>",
+            "collapsible-title": "<strong>How long does it take to fully charge the devices?</strong>",
+            "collapsible-content": "<p>Using the 30W USB-C adapter, it takes about 2 hours to fully charge the power bank, and around 3 hours to charge an iPhone, Apple Watch, and AirPods simultaneously (depending on device models and usage conditions).<br/></p>",
             "isactive": false
           }
         },
@@ -1076,8 +1061,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can it charge Android phones?</strong>",
-            "collapsible-content": "<p>The magnetic wireless charging function is designed for MagSafe-compatible iPhones. Other Qi-compatible devices may charge wirelessly if properly aligned, but magnetic attachment and optimal performance are not guaranteed.</p>",
+            "collapsible-title": "<strong>Is the magnetic power bank removable?</strong>",
+            "collapsible-content": "<p>Yes. The 10,000mAh magnetic power bank is detachable and can be used separately. It also supports magnetic charging and can function as a phone stand for watching videos or attending meetings.</p>",
             "isactive": false
           }
         },
@@ -1085,8 +1070,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can I use the detachable power bank by itself?</strong>",
-            "collapsible-content": "<p>Yes! The 5,000mAh magnetic power bank is fully detachable and can be used independently for charging your compatible iPhone while you're away from your desk. It stays charged while docked, making it perfect for daily commuting or short trips.</p>",
+            "collapsible-title": "<strong>Which devices are compatible with this charging station?</strong>",
+            "collapsible-content": "<p>It is compatible with iPhone 12–17 series, Apple Watch Ultra/Series 4–11, and AirPods 2–Pro 3. It is designed specifically for Apple ecosystem devices with MagSafe or magnetic cases.</p>",
             "isactive": false
           }
         },
@@ -1094,17 +1079,18 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can the power bank be charged while my iPhone is attached to the charging stand?</strong>",
-            "collapsible-content": "<p>No. When your iPhone is magnetically attached to the charging stand, the charging dock prioritizes charging your phone. To recharge the detachable 5,000mAh power bank itself, simply remove your iPhone from the stand.</p>",
+            "collapsible-title": "<strong>Does it support fast charging?</strong>",
+            "collapsible-content": "<p>Yes. The 30W USB-C port supports fast charging, allowing compatible iPhones (such as iPhone 17 Pro) to reach up to 50% charge in about 30 minutes under optimal conditions.</p>",
             "isactive": false
           }
         },
         "tab_content_pyUjBg": {
           "type": "tab-content",
+          "disabled": true,
           "settings": {
             "tab-name": "product",
-            "collapsible-title": "<strong>Can I charge four devices at the same time?</strong>",
-            "collapsible-content": "<p>Yes. The charging station can charge:</p><ul><li>One iPhone</li><li>One Apple Watch</li><li>One pair of AirPods</li><li>The built-in detachable 5,000mAh magnetic power bank (when the phone is not attached)</li></ul><p>This gives you a complete 4-in-1 charging solution.</p>",
+            "collapsible-title": "<strong>Does this charging bundle come with a charging adapter and cable?</strong>",
+            "collapsible-content": "<p>All essential accessories are included in the package: the 4-in-1 magnetic charging dock with detachable 10000mAh power bank, a 30W USB-C power adapter, a 40-inch USB-C to USB-C cable, a magnetic reinforcement ring and a user guide. </p>",
             "isactive": false
           }
         }
