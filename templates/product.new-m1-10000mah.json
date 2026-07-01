@@ -1,0 +1,1266 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-sm",
+            "title_size_mobile": "product-title-sm",
+            "show_price": false,
+            "show_rating": false
+          }
+        },
+        "judge_me_reviews_preview_badge_9EFiPW": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price_dhxX3T": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "liquid_MLLwaT": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<script src=\"https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=USD&components=messages,buttons\" defer></script>\n<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"primary\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"14\"\n    data-pp-amount=\"{{ product.selected_or_first_available_variant.price | divided_by: 100.0 }}\"\n    data-pp-placement=\"product\"\n    data-pp-buyercountry=\"US\"> \n</div>"
+          }
+        },
+        "liquid_xq8RgL": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n id=\"product-klarna-badge\"\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->\n<style>\n    .product__info klarna-placement::part(osm-container),\n  .product__info klarna-placement .container {\n    border-color: transparent !important;\n    padding-left: 0px !important;\n  }\n #product-klarna-badge::part(osm-badge) {\n  width: 48px !important;\n  height: auto !important;\n}\n@media screen and (min-width: 750px) {\n  #product-klarna-badge::part(osm-container) {\n    padding-top: 0 !important;\n  }\n}\n</style>"
+          }
+        },
+        "liquid_7LW8an": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"margin-top: 12px;\"></div>"
+          }
+        },
+        "liquid_zUX79j": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"margin-top: 12px;\"></div>"
+          }
+        },
+        "coupon_code_QVtbex": {
+          "type": "coupon_code",
+          "disabled": true,
+          "settings": {
+            "left_top_text": "Buy 1 -> Save",
+            "left_bottom_text": "25%",
+            "main_title": "RORRY-25",
+            "copy_text": "Copy Code",
+            "discount_code": "RORRY-25"
+          }
+        },
+        "coupon_code_RdP3ME": {
+          "type": "coupon_code",
+          "disabled": true,
+          "settings": {
+            "left_top_text": "Buy 2 -> Save",
+            "left_bottom_text": "30%",
+            "main_title": "RORRY-30",
+            "copy_text": "Copy Code",
+            "discount_code": "RORRY-30"
+          }
+        },
+        "coupon_code_7q6exG": {
+          "type": "coupon_code",
+          "disabled": true,
+          "settings": {
+            "left_top_text": "Buy 3+ -> Save",
+            "left_bottom_text": "35%",
+            "main_title": "RORRY-35",
+            "copy_text": "Copy Code",
+            "discount_code": "RORRY-35"
+          }
+        },
+        "coupon_cards_row_P66BHr": {
+          "type": "coupon_cards_row",
+          "settings": {
+            "copy_text": "Copy Code",
+            "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
+            "card_1_badge": "BUY 1 SAVE",
+            "card_1_amount": "25%",
+            "card_1_code_label": "RORRY-25",
+            "card_1_discount_code": "RORRY-25",
+            "card_2_badge": "BUY 2 SAVE",
+            "card_2_amount": "30%",
+            "card_2_code_label": "RORRY-30",
+            "card_2_discount_code": "RORRY-30",
+            "card_3_badge": "BUY 3+ SAVE",
+            "card_3_amount": "35%",
+            "card_3_code_label": "RORRY-35",
+            "card_3_discount_code": "RORRY-35"
+          }
+        },
+        "metafield_popup_9kgmVH": {
+          "type": "metafield_popup",
+          "settings": {
+            "title": "Key Features",
+            "metafield_key": "custom.key_features"
+          }
+        },
+        "liquid_FhJ6Yp": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.custom.featuresshow != blank %}\n  <style>\n    .features-show {\n      margin: 16px 0;\n      font-size: 14px;\n      line-height: 1.6;\n    }\n  </style>\n  <div class=\"features-show\">\n    {{ product.metafields.custom.featuresshow | metafield_tag }}\n  </div>\n{% endif %}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "description_yLmb9U": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "badges_8dEdrC": {
+          "type": "badges",
+          "settings": {
+            "show_sold_out": false,
+            "show_save_amount": true,
+            "save_type": "percent"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
+          }
+        },
+        "sticky_buy_button_cgt3tr": {
+          "type": "sticky_buy_button",
+          "disabled": true,
+          "settings": {}
+        },
+        "sticky_buy_button_v2_qaTgPb": {
+          "type": "sticky_buy_button_v2",
+          "settings": {
+            "delivery_text": "In Stock—Estimated delivery in 2 - 7 business days.",
+            "buy_now_text": "Buy Now"
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "collapsible_tab_Fw3Va7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "opened": false,
+            "style": "with-border",
+            "icon": "none",
+            "heading": "🎁 Need Custom Logo Gifts?",
+            "content": "<p>Planning an event or corporate giveaway? Get bulk pricing starting from 100 units. [<a href=\"/products/rorry-d14-magsafe-power-bank-5k-slimcustom-logo\" title=\"RORRY D14 Magsafe Power Bank 5K Slim(Custom Logo)\"><strong>Request a Free Mockup & Quote</strong></a>]</p>",
+            "page": "",
+            "liquid": "",
+            "text_size": "text-sm"
+          }
+        },
+        "trust_features_CQtqc3": {
+          "type": "trust_features",
+          "settings": {
+            "modal_title": "Key Features",
+            "title_1": "Free & Fast Shipping",
+            "desc_1": "<p>Enjoy <strong>free shipping</strong> straight to your doorstep with no minimum purchase required. Your RORRY order is processed quickly from our local warehouses and typically delivered within <strong>2-7 business days</strong> throughout the contiguous US. Please see our <a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">shipping policy</a> for more details.</p>",
+            "icon_1": "truck",
+            "title_2": "30-Day Free Returns & Exchanges",
+            "desc_2": "<p>Not completely in love with your new tech accessory? We’ve got you covered. We offer a hassle-free, 30-day <strong>free return and exchange</strong> policy for any reason. Simply keep the product in its original condition and contact our team to start a smooth refund or exchange process. Please see our <a href=\"/policies/refund-policy\" title=\"Refund Policy\">return policy</a> for more details.</p>",
+            "icon_2": "tag",
+            "title_3": "12-Month Worry-Free Warranty",
+            "desc_3": "<p>We stand behind the quality and craftsmanship of our products. Every RORRY charger is protected by a <strong>12-month worry-free warranty</strong> against manufacturing defects. Want longer protection? Register your product on our <a href=\"/pages/activate-warranty\" title=\"Activate Warranty\">warranty activation page</a> to extend your coverage to <strong>18 months</strong> for ultimate peace of mind.</p>",
+            "icon_3": "shield",
+            "title_4": "Lifetime Customer Support",
+            "desc_4": "<p>We’re always here for you. Whether you have questions about device compatibility, fast-charging protocols, or order tracking, our dedicated support team is ready to assist. Reach out to us anytime at <a href=\"mailto:hello@domain.com\">support@rorry.com</a> and expect a friendly response within <strong>12-24 hours</strong> on business days.</p>",
+            "icon_4": "chat_bubble",
+            "show_payment": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": false,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "",
+            "help_page_external": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_9EFiPW",
+        "price_dhxX3T",
+        "liquid_MLLwaT",
+        "liquid_xq8RgL",
+        "liquid_7LW8an",
+        "liquid_zUX79j",
+        "coupon_code_QVtbex",
+        "coupon_code_RdP3ME",
+        "coupon_code_7q6exG",
+        "coupon_cards_row_P66BHr",
+        "metafield_popup_9kgmVH",
+        "liquid_FhJ6Yp",
+        "variant_picker",
+        "description_yLmb9U",
+        "badges_8dEdrC",
+        "inventory",
+        "buy_buttons",
+        "sticky_buy_button_cgt3tr",
+        "sticky_buy_button_v2_qaTgPb",
+        "pickup_availability",
+        "collapsible_tab_Fw3Va7",
+        "trust_features_CQtqc3",
+        "share"
+      ],
+      "custom_css": [
+        ".product__title h1 {line-height: 1.3 !important;}",
+        ".shopify-app-block {margin-top: 0px;}",
+        ".alert--success {background-color: #9887b8; color: #ffffff;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 50,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "beside",
+        "image_ratio": "adapt",
+        "image_zoom": "hover",
+        "hide_variants": true,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": true,
+        "padding_top": 0,
+        "padding_bottom": 16,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "section_position_NhnEdc": {
+      "type": "section-position",
+      "blocks": {
+        "map_DeAPni": {
+          "type": "map",
+          "settings": {
+            "map": "Overview",
+            "maptext": "Overview",
+            "text_size": 36,
+            "mobile_text_size": 14,
+            "text_color": "#171717",
+            "activea_color": "#9887b8"
+          }
+        },
+        "map_iETRiP": {
+          "type": "map",
+          "settings": {
+            "map": "Tech Specs",
+            "maptext": "Tech Specs",
+            "text_size": 36,
+            "mobile_text_size": 14,
+            "text_color": "",
+            "activea_color": ""
+          }
+        },
+        "map_LiUMrN": {
+          "type": "map",
+          "settings": {
+            "map": "FAQ & Review",
+            "maptext": "FAQ & Review",
+            "text_size": 36,
+            "mobile_text_size": 14,
+            "text_color": "",
+            "activea_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "map_DeAPni",
+        "map_iETRiP",
+        "map_LiUMrN"
+      ],
+      "name": "Section Position",
+      "settings": {
+        "sectionname": "",
+        "background": "#f2f2f2"
+      }
+    },
+    "selling_points_2_video_iNKajX": {
+      "type": "selling-points-2-video",
+      "blocks": {
+        "video_block_nm7Uqn": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/4k-rorry-d14-2025-0410.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_kj3C3K": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/rorry-d14-5000mah-windiaries.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_zUgyKR": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/rorry-d14-5000mah-anniefernnn.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_DNXxce": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/rorry-d14-5000mah-dary_rem.mp4",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_block_nm7Uqn",
+        "video_block_kj3C3K",
+        "video_block_zUgyKR",
+        "video_block_DNXxce"
+      ],
+      "name": "selling points 11 Video",
+      "settings": {
+        "sectionname": "Overview",
+        "background": "#ffffff",
+        "border_radius": 8,
+        "cols_pc": 4,
+        "cols_mb": 2,
+        "gap_pc": 20,
+        "gap_mb": 10,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0
+      }
+    },
+    "lookbook_HMJ6qr": {
+      "type": "lookbook",
+      "custom_css": [],
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_16.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-MO.jpg",
+        "heading": "RORRY AuraDock - ALL iN ONE Magnetic Power Bank",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 30,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_qm4M33": {
+      "type": "lookbook",
+      "disabled": true,
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_2.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_GXPgYX": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_4.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_cCPNm8": {
+      "type": "slideshow",
+      "blocks": {
+        "image_TFitUt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_5.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_YBJqUC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_6.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_6.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_BaBf63": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_3.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_TFitUt",
+        "image_YBJqUC",
+        "image_BaBf63"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "slideshow_iMYkdM": {
+      "type": "slideshow",
+      "blocks": {
+        "image_BANW6B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_10.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_10.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_kBkatF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_11.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_11.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_Mp3nWC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_12.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_12.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_BANW6B",
+        "image_kBkatF",
+        "image_Mp3nWC"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "slideshow_iB7Kzz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_GVLNjC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_7.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_7.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_fd3XXk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_8.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_8.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_DEezUH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_9.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_9.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_GVLNjC",
+        "image_fd3XXk",
+        "image_DEezUH"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "lookbook_4TKzMc": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_14.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_14.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_PXaDB3": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-PC_13.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_M1-5000mAh_4-in-1_Magnetic_Charging_Station_with_Power_Bank-mo_13.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "selling_points_9_J3teY8": {
+      "type": "selling-points-9",
+      "blocks": {
+        "item_block_EcRAaC": {
+          "type": "item_block",
+          "settings": {
+            "title": "Product Model",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "M1",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_qcHcQg": {
+          "type": "item_block",
+          "settings": {
+            "title": "Category",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "<a href=\"/collections/power-banks\" title=\"Power Banks\">Power Bank</a>",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_YaeNeX": {
+          "type": "item_block",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size": 64,
+            "mobile_title_size": 24,
+            "details": "",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_dBKhQd": {
+          "type": "item_block",
+          "settings": {
+            "title": "Dimensions",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "105*68*36mm",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_z6ym3P": {
+          "type": "item_block",
+          "settings": {
+            "title": "Weight",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "367g",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_8E8aLa": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Battery Charge Time</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2.5 Hours",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_3Ti8LJ": {
+          "type": "item_block",
+          "settings": {
+            "title": "Total Capacity",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "5000mAh",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_tXWnEr": {
+          "type": "item_block",
+          "settings": {
+            "title": "Total Ouput(Max)",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "5V 3A(15W)",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_aWqf8a": {
+          "type": "item_block",
+          "settings": {
+            "title": "Single Port Output(Max)",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "20W",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_wyfkAG": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Compatible Power Plug Type</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Type C",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_F88Hib": {
+          "type": "item_block",
+          "settings": {
+            "title": "Compatibility",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "<strong>[iPhone Series]</strong> iPhone 17,iPhone 17 Pro Max, iPhone 17 Pro, iPhone Air, iPhone 16e, iPhone 16 Pro Max, iPhone 16 Pro, iPhone 16, iPhone 16 plus, iPhone 15 Pro Max, iPhone 15 Pro, iPhone 15, iPhone 15 plus, iPhone 14 Pro Max, iPhone 14 Pro, iPhone 14, iPhone 14 plus, iPhone 13, iPhone 13 Pro Max, iPhone 13 Pro, iPhone 13 Pro Mini, iPhone 12， iPhone 12 Pro Max, iPhone 12 Pro, iPhone 12, iPhone 12 mini, iPhone 11 Pro, iPhone 11 Pro Max, iPhone 11, iPhone SE (2nd generation), iPhone XS, iPhone XS Max, iPhone XR, iPhone X, iPhone 8, iPhone 8 Plus;<strong> [AirPods]</strong> Airpods 4,Airpods 3,AirPods Pro 2, AirPods Pro, AirPods Pro 3, AirPods (3rd generation), AirPods 2 Wireless Charging Case; <strong>[Apple Watch]</strong> Apple Watch Series 11/10/9/8/7/6/5/4/3/2/1, Apple Watch Series SE 3/2/1, Apple Watch Series Ultra 3/2/1",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        },
+        "item_block_qTEqAw": {
+          "type": "item_block",
+          "settings": {
+            "title": "Other Special Features",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "3 in1 Magnetic Wireless Charger, Fast Charging, Magnetic, Magsafe Compatible, Wireless Charging",
+            "details_color": "",
+            "details_size": 22,
+            "mobile_details_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "item_block_EcRAaC",
+        "item_block_qcHcQg",
+        "item_block_YaeNeX",
+        "item_block_dBKhQd",
+        "item_block_z6ym3P",
+        "item_block_8E8aLa",
+        "item_block_3Ti8LJ",
+        "item_block_tXWnEr",
+        "item_block_aWqf8a",
+        "item_block_wyfkAG",
+        "item_block_F88Hib",
+        "item_block_qTEqAw"
+      ],
+      "custom_css": [
+        ".selling_points_9 .centent .list .item .details {word-break: break-word;}",
+        "@media screen and (max-width: 749px) {.selling_points_9 .centent .list .item5 {width: 100%; align-items: flex-start; }}"
+      ],
+      "name": "selling points 9",
+      "settings": {
+        "sectionname": "Tech Specs",
+        "background": "",
+        "title": "<p><strong>Tech Specs</strong></p>",
+        "title_size": 40,
+        "mobile_title_size": 32,
+        "title_color": "#9887b8",
+        "border_color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36
+      }
+    },
+    "lookbook_xBUtkC": {
+      "type": "lookbook",
+      "disabled": true,
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_8.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_8.jpg",
+        "heading": "<strong>Hassle-Free After-Sales & Complete RORRY Kit</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 24,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product_faq_iXcLnC": {
+      "type": "product-faq",
+      "blocks": {
+        "tab_Fq7LBp": {
+          "type": "tab",
+          "settings": {
+            "tab-name": "Product"
+          }
+        },
+        "tab_content_683zbz": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Is it compatible with iPhone cases?</strong>",
+            "collapsible-content": "<p>Yes, the RORRY AuraDock 4-in-1 Charging Station is compatible with iPhones in cases. It uses MagSafe technology and includes a magnetic reinforcement ring that you can attach to your iPhone case for a stronger magnetic connection if needed.Your iPhone will charge securely whether it's in a case or not, as long as the case isn't excessively thick (standard cases work great).</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_fjWWzA": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>How long is the charging time?</strong>",
+            "collapsible-content": "<p>The RORRY AuraDock 4-in-1 Charging Station charges quickly:</p><p>•<strong>iPhone</strong>: Fully charged in 3 hours (reaches 40% in just 30 minutes with the 20W USB-C adapter)</p><p>•<strong>Power bank</strong>: Fully charged in 3 hours</p><p>•<strong>All devices together</strong>: iPhone, Apple Watch, and AirPods all charge simultaneously in 3 hours</p><p>Note: While your phone is on the dock, the detachable power bank won't charge—you'll need to remove your phone first to charge the power bank separately.<br/><br/></p>",
+            "isactive": false
+          }
+        },
+        "tab_content_Wrb3qd": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Is the charging station suitable for travel?</strong>",
+            "collapsible-content": "<p>Absolutely. Its foldable design saves space in your bag, and the detachable magnetic power bank lets you take portable power with you wherever you go. It's ideal for home, the office, and travel.<br/></p>",
+            "isactive": false
+          }
+        },
+        "tab_content_KQRxtY": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Can it charge Android phones?</strong>",
+            "collapsible-content": "<p>The magnetic wireless charging function is designed for MagSafe-compatible iPhones. Other Qi-compatible devices may charge wirelessly if properly aligned, but magnetic attachment and optimal performance are not guaranteed.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_NVT3iN": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Can I use the detachable power bank by itself?</strong>",
+            "collapsible-content": "<p>Yes! The 5,000mAh magnetic power bank is fully detachable and can be used independently for charging your compatible iPhone while you're away from your desk. It stays charged while docked, making it perfect for daily commuting or short trips.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_rjgjrP": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "<strong>Can the power bank be charged while my iPhone is attached to the charging stand?</strong>",
+            "collapsible-content": "<p>No. When your iPhone is magnetically attached to the charging stand, the charging dock prioritizes charging your phone. To recharge the detachable 5,000mAh power bank itself, simply remove your iPhone from the stand.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_pyUjBg": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "product",
+            "collapsible-title": "<strong>Can I charge four devices at the same time?</strong>",
+            "collapsible-content": "<p>Yes. The charging station can charge:</p><ul><li>One iPhone</li><li>One Apple Watch</li><li>One pair of AirPods</li><li>The built-in detachable 5,000mAh magnetic power bank (when the phone is not attached)</li></ul><p>This gives you a complete 4-in-1 charging solution.</p>",
+            "isactive": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_Fq7LBp",
+        "tab_content_683zbz",
+        "tab_content_fjWWzA",
+        "tab_content_Wrb3qd",
+        "tab_content_KQRxtY",
+        "tab_content_NVT3iN",
+        "tab_content_rjgjrP",
+        "tab_content_pyUjBg"
+      ],
+      "name": "product faq",
+      "settings": {
+        "sectionname": "FAQ & Review",
+        "color-2": "",
+        "title": "FAQ",
+        "title_color": "#9887b8",
+        "title_size": 40,
+        "mobile_title_size": 32,
+        "title_bottom": 24,
+        "mobile_title_bottom": 16,
+        "tab_size": 36,
+        "mobile_tab_size": 24,
+        "tab_color": "",
+        "tab_color_art": "",
+        "item_title_color": "",
+        "item_title_size": 36,
+        "mobile_item_title_size": 24,
+        "item_details_color": "",
+        "item_details_size": 16,
+        "mobile_item_details_size": 16,
+        "padding-top": 0,
+        "padding-bottom": 0,
+        "padding-top-mob": 0,
+        "padding-bottom-mob": 0,
+        "max-width": 1200
+      }
+    },
+    "1733908196fc5c0365": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_r8daHY": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_r8daHY"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 768px) {.section--padding {padding-top: 0px; padding-bottom: 10px; }}"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 4,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You may also like",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "section_position_NhnEdc",
+    "selling_points_2_video_iNKajX",
+    "lookbook_HMJ6qr",
+    "lookbook_qm4M33",
+    "lookbook_GXPgYX",
+    "slideshow_cCPNm8",
+    "slideshow_iMYkdM",
+    "slideshow_iB7Kzz",
+    "lookbook_4TKzMc",
+    "lookbook_PXaDB3",
+    "selling_points_9_J3teY8",
+    "lookbook_xBUtkC",
+    "product_faq_iXcLnC",
+    "1733908196fc5c0365",
+    "recently-viewed",
+    "product-recommendations"
+  ]
+}
