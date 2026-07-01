@@ -660,9 +660,9 @@
         "image_LwpJrg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY-CharmGo-D4-10000mAh-pc_10.jpg",
-            "image_mobile": "shopify://shop_images/CharmGo-D4-10000mAh-Portable-Charger-mo_10.jpg",
-            "heading": "<strong>On-the-Go Charging</strong>",
+            "image": "shopify://shop_images/RORRY-CharmGo-D4-10000mAh-pc-_1.jpg",
+            "image_mobile": "shopify://shop_images/CharmGo-D4-10000mAh-Portable-Charger-mo-_1.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h4",
             "button_label": "",
@@ -680,6 +680,21 @@
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_Mmt3xP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY-CharmGo-D4-10000mAh-pc-_2.jpg",
+            "image_mobile": "shopify://shop_images/CharmGo-D4-10000mAh-Portable-Charger-mo-_2.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -706,6 +721,7 @@
       "block_order": [
         "image_LwpJrg",
         "image_HBhVxt",
+        "image_Mmt3xP",
         "image_gmQUfT"
       ],
       "name": "Slideshow",
