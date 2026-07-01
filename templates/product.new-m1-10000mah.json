@@ -413,7 +413,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 30,
-        "padding_top": 12,
+        "padding_top": 16,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
