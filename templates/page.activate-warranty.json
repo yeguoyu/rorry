@@ -58,7 +58,7 @@
         "text"
       ],
       "settings": {
-        "text_alignment": "left",
+        "text_alignment": "center",
         "text_alignment_mobile": "left",
         "heading": "",
         "heading_size": "title-md",
@@ -169,7 +169,62 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 0,
-        "padding_bottom": 72,
+        "padding_bottom": 12,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "featured_collections_7caTEM": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_8fLKaf": {
+          "type": "collection",
+          "settings": {
+            "collection": "power-banks",
+            "products": [],
+            "title": "For Individuals"
+          }
+        },
+        "collection_zaT9pb": {
+          "type": "collection",
+          "settings": {
+            "collection": "custom-logo-power-banks-wholesale",
+            "products": [],
+            "title": "For Businesses"
+          }
+        }
+      },
+      "block_order": [
+        "collection_8fLKaf",
+        "collection_zaT9pb"
+      ],
+      "name": "t:sections.featured-collections.name",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Exclusive offer on the official online store",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<ul><li>Buy 1 -&gt; 25% OFF</li><li>Buy 2 -&gt; 30% OFF</li><li>Buy 3 or More -&gt; 35% OFF</li></ul>",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 52,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -180,6 +235,7 @@
     "main",
     "rich-text",
     "contact-form",
-    "1734576542366a9632"
+    "1734576542366a9632",
+    "featured_collections_7caTEM"
   ]
 }
