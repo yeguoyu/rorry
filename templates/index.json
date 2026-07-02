@@ -1297,6 +1297,25 @@
     "zl_wall_reviews_Uc8Az4": {
       "type": "zl-wall-reviews",
       "blocks": {
+        "review_mBgA3p": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/D4-10000mah_7bd72051-8504-4a76-afec-c9f1aaef302c.jpg",
+            "review_title": "Cute!",
+            "stars": 5,
+            "text": "The design and colors are cute, and since it has a built-in cable, it's helpful to be able to charge various types with just this one.",
+            "author": "Megan"
+          }
+        },
+        "review_cXNVQU": {
+          "type": "review",
+          "settings": {
+            "review_title": "Worked Great",
+            "stars": 5,
+            "text": "Most people told me that I wouldn't get a great production with this being a wearable but I usually use this...",
+            "author": "Chelsey Silva"
+          }
+        },
         "review_QarmcY": {
           "type": "review",
           "settings": {
@@ -1315,6 +1334,16 @@
             "stars": 5,
             "text": "Compact! Fits in purse easily. I like that it is compatible with both charger types so I can use on my phone and iPad. I use it when traveling for my Apple watch. Durable and great quality! Great value for the money!",
             "author": "Angie"
+          }
+        },
+        "review_akk8ix": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/d4-10000mah_3504977a-6b01-4124-9c97-89cd1cd2ebbf.jpg",
+            "review_title": "Cute and easy to use!",
+            "stars": 5,
+            "text": "The charging speed is also fast and very easy to use. It looks cute, and it's nice to be able to clip it in.",
+            "author": "Jorge L."
           }
         },
         "review_VDGxT6": {
@@ -1441,8 +1470,11 @@
         }
       },
       "block_order": [
+        "review_mBgA3p",
+        "review_cXNVQU",
         "review_QarmcY",
         "review_Wy7KhW",
+        "review_akk8ix",
         "review_VDGxT6",
         "review_zMiABD",
         "review_Vwx4h7",
