@@ -1309,6 +1309,7 @@
         },
         "review_cXNVQU": {
           "type": "review",
+          "disabled": true,
           "settings": {
             "review_title": "Worked Great",
             "stars": 5,
