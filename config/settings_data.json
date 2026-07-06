@@ -211,7 +211,7 @@
       },
       "7872257831342662540": {
         "type": "shopify://apps/worry-free-purchase/blocks/index/c61a403d-127f-4a83-aa2d-dd891cc35fd1",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     }
