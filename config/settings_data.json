@@ -208,6 +208,11 @@
         "type": "shopify://apps/statcounter/blocks/statcounter/b742c529-4c15-43ad-85e6-17a3d10c43b0",
         "disabled": false,
         "settings": {}
+      },
+      "7872257831342662540": {
+        "type": "shopify://apps/worry-free-purchase/blocks/index/c61a403d-127f-4a83-aa2d-dd891cc35fd1",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
