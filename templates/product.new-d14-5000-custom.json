@@ -569,6 +569,42 @@
         "rounded": false
       }
     },
+    "lookbook_q7wG8V": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/custom-d14-banks_9a8ee48b-12c9-42f8-b3f9-86d23fead658.jpg",
+        "image_mobile": "shopify://shop_images/custom-d14-bank_fe128b01-9b80-4611-98fe-f38a9d5af6aa.jpg",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "selling_points_9_J3teY8": {
       "type": "selling-points-9",
       "blocks": {
@@ -947,6 +983,7 @@
     "slideshow_KkY7iF",
     "lookbook_Ge7kbk",
     "lookbook_VGBUcf",
+    "lookbook_q7wG8V",
     "selling_points_9_J3teY8",
     "lookbook_4HJrVR",
     "product_faq_yKMxrh",
