@@ -525,6 +525,42 @@
         "rounded": false
       }
     },
+    "lookbook_yYgUpm": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/D5-10000mAh_Portable_Charger_Custom_Logo.jpg",
+        "image_mobile": "shopify://shop_images/D5-10000mAh_Portable_Charger_Custom_Logo.jpg",
+        "heading": "<strong>PalmGo D5-10000mAh Portable Charger Custom Logo</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "slideshow_ET63Ek": {
       "type": "slideshow",
       "blocks": {
@@ -1049,6 +1085,7 @@
     "lookbook_PzMX6d",
     "lookbook_CU78pF",
     "lookbook_zqiX6K",
+    "lookbook_yYgUpm",
     "slideshow_ET63Ek",
     "selling_points_9_J3teY8",
     "product_faq_iXcLnC",
