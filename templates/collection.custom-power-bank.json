@@ -729,6 +729,24 @@
             "highlighted_scribble": "circle"
           }
         },
+        "question_AeJre9": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How many colors can be used for a custom logo?</strong>",
+            "text": "<p>We support both laser engraving and full-color logo printing. The available customization method will depend on your logo design and printing requirements.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_AQXRwy": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Where should I send my logo file for customization?</strong>",
+            "text": "<p>Please email your logo file to support@rorry.com. For the best printing results, we recommend providing a vector file in formats such as SVG, AI, EPS, PDF, or CDR.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "rich_text_xWNRLG": {
           "type": "rich-text",
           "settings": {
@@ -801,6 +819,8 @@
         "rich_text_W8HXbF",
         "question_RWBYCw",
         "question_4PcamU",
+        "question_AeJre9",
+        "question_AQXRwy",
         "rich_text_xWNRLG",
         "question_U3TgRD",
         "rich_text_kDzjCa",
