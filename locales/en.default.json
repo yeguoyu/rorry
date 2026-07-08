@@ -55,7 +55,7 @@
       "login_form_error": "Wrong password!",
       "login_form_submit": "Enter",
       "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"link\">Log in here</a>",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "powered_by_shopify_html": ""
     },
     "breadcrumbs": {
       "home": "Home",
@@ -617,9 +617,7 @@
       "send_on_label": "Send on (optional)"
     }
   },
-  "date_formats": {},
   "shopify": {
-    "links": {},
     "checkout": {
       "marketing": {
         "accept_marketing_checkbox_label": "Email me when the item begins shipping"
