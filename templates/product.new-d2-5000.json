@@ -329,6 +329,20 @@
     "selling_points_2_video_iNKajX": {
       "type": "selling-points-2-video",
       "blocks": {
+        "video_block_zUgyKR": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-5000mah-portable-charger-5.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_DNXxce": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-5000mah-portable-charger-6.mp4",
+            "video_url": ""
+          }
+        },
         "video_block_nm7Uqn": {
           "type": "video_block",
           "settings": {
@@ -342,27 +356,13 @@
             "video": "shopify://files/videos/d2-5000mah-portable-charger-2.mp4",
             "video_url": ""
           }
-        },
-        "video_block_zUgyKR": {
-          "type": "video_block",
-          "settings": {
-            "video": "shopify://files/videos/d2-5000mah-portable-charger-4.mp4",
-            "video_url": ""
-          }
-        },
-        "video_block_DNXxce": {
-          "type": "video_block",
-          "settings": {
-            "video": "shopify://files/videos/d2-5000mah-portable-charger.mp4",
-            "video_url": ""
-          }
         }
       },
       "block_order": [
-        "video_block_nm7Uqn",
-        "video_block_kj3C3K",
         "video_block_zUgyKR",
-        "video_block_DNXxce"
+        "video_block_DNXxce",
+        "video_block_nm7Uqn",
+        "video_block_kj3C3K"
       ],
       "name": "selling points 11 Video",
       "settings": {
