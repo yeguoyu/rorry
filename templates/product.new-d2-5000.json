@@ -107,6 +107,16 @@
             "card_3_discount_code": "RORRY-35"
           }
         },
+        "countdown_De4RBE": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
+          }
+        },
         "metafield_popup_9kgmVH": {
           "type": "metafield_popup",
           "settings": {
@@ -239,6 +249,7 @@
         "coupon_code_RdP3ME",
         "coupon_code_7q6exG",
         "coupon_cards_row_8kVJUq",
+        "countdown_De4RBE",
         "metafield_popup_9kgmVH",
         "liquid_FhJ6Yp",
         "variant_picker",
