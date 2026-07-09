@@ -43,7 +43,7 @@
           "type": "announcement",
           "settings": {
             "icon": "none",
-            "text": "<strong>⏰ Summer Sale Ends Sunday, July 12 2026</strong>",
+            "text": "<strong>⏰ Summer Sale Ends Sunday, July 12</strong>, <strong>2026</strong>",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
