@@ -344,7 +344,7 @@
         "color_text": "#9887b8",
         "color_background": "rgba(0,0,0,0)",
         "gradient_background": "",
-        "color_highlight": "#00000000",
+        "color_highlight": "rgba(0,0,0,0)",
         "gradient_highlight": "",
         "color_button_text": "rgba(0,0,0,0)",
         "color_button_background": "rgba(0,0,0,0)",
@@ -742,7 +742,7 @@
           "type": "question",
           "settings": {
             "title": "<strong>What is the Minimum Order Quantity (MOQ) for bulk purchases?</strong>",
-            "text": "<p>For standard RORRY products in stock, the MOQ is <strong>50 units</strong>. For customized orders with your brand logo, the MOQ starts at <strong>40 units</strong>.</p>",
+            "text": "<p>The minimum order quantity (MOQ) for bulk purchases is <strong>40 units</strong>. If you require a different quantity, please contact us first, and we will be happy to discuss your needs.<br/><br/></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
