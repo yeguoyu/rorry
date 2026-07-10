@@ -184,11 +184,6 @@
           "button_vertical_position": "highest"
         }
       },
-      "8605505498557855500": {
-        "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
-        "disabled": true,
-        "settings": {}
-      },
       "6744518860797519131": {
         "type": "shopify://apps/langwill-translate/blocks/floating-selector/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
         "disabled": false,
@@ -211,6 +206,29 @@
       },
       "7872257831342662540": {
         "type": "shopify://apps/worry-free-purchase/blocks/index/c61a403d-127f-4a83-aa2d-dd891cc35fd1",
+        "disabled": false,
+        "settings": {}
+      },
+      "13047258039897440615": {
+        "type": "shopify://apps/judge-me-reviews/blocks/cart_drawer_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": true,
+        "settings": {
+          "widget_type": "review-widget"
+        }
+      },
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": true,
+        "settings": {
+          "widget_position": "RIGHT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
+        }
+      },
+      "563819768016994035": {
+        "type": "shopify://apps/worry-free-purchase/blocks/ai-support-chat-widget/c61a403d-127f-4a83-aa2d-dd891cc35fd1",
         "disabled": false,
         "settings": {}
       }

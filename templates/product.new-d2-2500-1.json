@@ -90,7 +90,6 @@
         },
         "coupon_cards_row_CtjTjt": {
           "type": "coupon_cards_row",
-          "disabled": true,
           "settings": {
             "copy_text": "Copy Code",
             "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
