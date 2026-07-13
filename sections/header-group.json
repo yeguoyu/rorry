@@ -16,6 +16,7 @@
       "blocks": {
         "announcement-2": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "🔥<strong>Subscribe & Get 25% OFF Your First Order → Shop Now!</strong>",
@@ -28,11 +29,10 @@
         },
         "announcement_4pj3HQ": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "none",
-            "text": "<strong>🔥SUMMER SALE: Buy 3+ Get 35% OFF Site-wide!</strong>",
-            "link": "shopify://collections/power-banks",
+            "text": "🎁 EXCLUSIVE PERK: 50% OFF RORRY H3 & M3 Charger! Code: RORRY50",
+            "link": "shopify://products/rorry-h3-25000mah-65w-laptop-power-bank",
             "hide_icon_mobile": false,
             "text_mobile": "",
             "highlighted_text": "none",
