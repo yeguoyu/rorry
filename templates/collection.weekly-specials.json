@@ -391,7 +391,7 @@
         "heading_haMdaU": {
           "type": "heading",
           "settings": {
-            "heading": "Choosing the Best Portable Power: A Guide to RORRY’s Aesthetic Tech",
+            "heading": "This Week’s Spotlight: High-Performance Power, Half the Price",
             "heading_size": "title-sm",
             "heading_tag": "h2",
             "highlighted_text": "none",
@@ -401,7 +401,32 @@
         "text_KGJVDn": {
           "type": "text",
           "settings": {
-            "text": "<ol><li><strong>Ditch the Cable Clutter</strong><br/>Most <strong>portable chargers</strong> solve one problem but create another: a \"spaghetti mess\" of wires in your designer bag. At RORRY, we redefine the <strong>battery pack</strong> as a fashion accessory. Our <strong>3-in-1 power banks</strong> feature<strong> built-in cables</strong> for both iPhone and USB-C devices, plus an integrated Apple Watch wireless charger. It’s not just a tool; it’s a lifestyle upgrade that ensures your bag remains as organized as your day.</li><li><strong>Power That Matches Your Aesthetic</strong><br/>Why settle for a bulky black brick? Our slim fast charging solutions are available in a curated palette of Rose Quartz, Lavender, and Cream. Whether you need a handheld charger for iPhone that slips into a clutch or a magsafe power bank that snaps seamlessly to your phone, RORRY products are designed to complement your tech ensemble, not distract from it.</li><li><strong>Find Your RORRY Match</strong></li></ol><ul><li><strong>For the Daily Commuter:</strong> The <a href=\"/collections/d2-series-portable-chargers\" title=\"D2 Series Portable Chargers\"><strong>D2 Keychain Series</strong></a> is our best portable charger for those who value extreme portability. It’s lipstick-sized and always ready for an emergency \"juice-up\" for your Watch and iPhone.</li><li><strong>For the Jetsetter:</strong> If you’re looking for a portable power station that is airline-approved, our <a href=\"/products/rorry-d5-10000mah-portable-charger-usb-c-power-bank\" title=\"RORRY PalmGo D5-10000mAh Portable Charger USB-C Power Bank\"><strong>10000mAh PalmGo D5</strong></a> or <a href=\"/products/rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w\" title=\"RORRY CharmGo D4-10000mAh Portable Charger Keychain Power Bank 45W\"><strong>D4 series</strong></a> provides multiple full charges, making them essential travel accessories for long-haul flights.</li><li><strong>For the Tech-Savvy Professional:</strong> Our MagSafe duo chargers offer the ultimate convenience of magnetic attachment, perfect for a <strong>clutter-free desk setup</strong> or hands-free navigation.</li></ul>",
+            "text": "<p>We believe that high-quality, beautifully designed technology should be accessible. The Weekly Specials are not about dumping old inventory—they are our way of showing appreciation to our active community. Every Monday morning, we unlock an exclusive discount of up to 50% OFF on select RORRY favorites, giving you the perfect opportunity to upgrade your daily setup or find a premium gift for someone special.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_JKenXt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Limited Stock, Infinite Style",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_7jmWmK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Because our inventory for weekly specials is highly limited (especially for our hand-sized D2 Keychain Series), these deals operate on a strict first-come, first-served basis. Every product in this collection is backed by our standard 12-month worry-free warranty and qualifies for free shipping. Explore this week's edit, find your perfect match, and power your lifestyle in style.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -416,7 +441,9 @@
       },
       "block_order": [
         "heading_haMdaU",
-        "text_KGJVDn"
+        "text_KGJVDn",
+        "heading_JKenXt",
+        "text_7jmWmK"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {
