@@ -57,13 +57,12 @@
         },
         "coupon_code_QVtbex": {
           "type": "coupon_code",
-          "disabled": true,
           "settings": {
             "left_top_text": "Buy 1 -> Save",
-            "left_bottom_text": "25%",
-            "main_title": "RORRY-25",
+            "left_bottom_text": "50%",
+            "main_title": "RORRY50",
             "copy_text": "Copy Code",
-            "discount_code": "RORRY-25"
+            "discount_code": "RORRY50"
           }
         },
         "coupon_code_RdP3ME": {
