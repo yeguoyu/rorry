@@ -401,7 +401,7 @@
         "text_KGJVDn": {
           "type": "text",
           "settings": {
-            "text": "<p>We believe that high-quality, beautifully designed technology should be accessible. The Weekly Specials are not about dumping old inventory—they are our way of showing appreciation to our active community. Every Monday morning, we unlock an exclusive discount of up to 50% OFF on select RORRY favorites, giving you the perfect opportunity to upgrade your daily setup or find a premium gift for someone special.</p>",
+            "text": "<p>We believe that high-quality, beautifully designed technology should be accessible. The Weekly Specials are not about dumping old inventory—they are our way of showing appreciation to our active community. Every <strong>Monday morning</strong>, we unlock an exclusive discount of <strong>up to 50% OFF</strong> on select RORRY favorites, giving you the perfect opportunity to upgrade your daily setup or find a premium gift for someone special.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
@@ -426,7 +426,7 @@
         "text_7jmWmK": {
           "type": "text",
           "settings": {
-            "text": "<p>Because our inventory for weekly specials is highly limited (especially for our hand-sized D2 Keychain Series), these deals operate on a strict first-come, first-served basis. Every product in this collection is backed by our standard 12-month worry-free warranty and qualifies for free shipping. Explore this week's edit, find your perfect match, and power your lifestyle in style.</p>",
+            "text": "<p>Because our inventory for weekly specials is highly limited (especially for our hand-sized <a href=\"/collections/d2-series-portable-chargers\" title=\"CharmGo D2 Series\"><strong>D2 CharmGo Keychain Series</strong></a>), these deals operate on a strict first-come, first-served basis. Every product in this collection is backed by our standard 12-month worry-free warranty and qualifies for free shipping. Explore this week's edit, find your perfect match, and power your lifestyle in style.</p>",
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
