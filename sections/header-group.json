@@ -16,10 +16,9 @@
       "blocks": {
         "announcement-2": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "none",
-            "text": "🔥<strong>Enjoy 25% OFF Your First Purchase</strong> <strong>→ Shop Now!</strong>",
+            "text": "🔥<strong>Subscribe & Get 25% OFF Your First Order → Shop Now!</strong>",
             "link": "shopify://collections/d2-series-portable-chargers",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -29,6 +28,7 @@
         },
         "announcement_4pj3HQ": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "<strong>🔥SUMMER SALE: Buy 3+ Get 35% OFF Site-wide!</strong>",
@@ -41,6 +41,7 @@
         },
         "announcement_HbpVYP": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "<strong>⏰ Summer Sale Ends Sunday, July 12</strong>, <strong>2026</strong>",
