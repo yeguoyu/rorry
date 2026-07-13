@@ -31,6 +31,16 @@
             "show_taxes_notice": false
           }
         },
+        "countdown_9XbJQn": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#9887B8",
+            "color_background": "#E8E4F2",
+            "gradient_background": ""
+          }
+        },
         "liquid_YFU8P3": {
           "type": "liquid",
           "settings": {
@@ -231,6 +241,7 @@
         "title",
         "judge_me_reviews_preview_badge_9EFiPW",
         "price_dhxX3T",
+        "countdown_9XbJQn",
         "liquid_YFU8P3",
         "liquid_AnQ4hF",
         "liquid_7LW8an",
