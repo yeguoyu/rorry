@@ -329,6 +329,45 @@
         "rounded": false
       }
     },
+    "featured_collection_UeCreG": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "weekly-specials",
+        "products": [
+          "rorry-h3-25000mah-65w-laptop-power-bank",
+          "rorry-m3-10000mah-foldable-charger-magsafe-power-bank",
+          "rorry-cb06-10000mah-portable-charger-fast-charging-power-bank",
+          "rorry-d13-magnetic-portable-charger-5000mah"
+        ],
+        "product_limit": 4,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Weekly Specials",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "rgba(0,0,0,0)",
+        "gradient_highlight": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#9887b8",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "collection_list_fLHcjP": {
       "type": "collection-list",
       "blocks": {
@@ -1840,6 +1879,7 @@
     "slideshow_UBfjb7",
     "zl_brand_features_BdQm6U",
     "featured_collection_cGwE4X",
+    "featured_collection_UeCreG",
     "collection_list_fLHcjP",
     "image_with_text_overlay_GMVMbi",
     "collage_grid_CyD43h",
