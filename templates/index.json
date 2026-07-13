@@ -14,6 +14,7 @@
       "blocks": {
         "slide-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/rorry-powerbanks-summer-sale-3840x1600.jpg",
             "image_mobile": "shopify://shop_images/rorry-powerbanks-summer-sale-800x1200.png",
