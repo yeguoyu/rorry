@@ -31,16 +31,6 @@
             "show_taxes_notice": false
           }
         },
-        "countdown_9XbJQn": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Sale end in:",
-            "color_text": "#9887B8",
-            "color_background": "#E8E4F2",
-            "gradient_background": ""
-          }
-        },
         "liquid_YFU8P3": {
           "type": "liquid",
           "settings": {
@@ -98,8 +88,19 @@
             "discount_code": "RORRY-35"
           }
         },
+        "countdown_9XbJQn": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#9887b8",
+            "color_background": "#e8e4f2",
+            "gradient_background": ""
+          }
+        },
         "coupon_cards_row_Dzya7B": {
           "type": "coupon_cards_row",
+          "disabled": true,
           "settings": {
             "copy_text": "Copy Code",
             "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
@@ -241,7 +242,6 @@
         "title",
         "judge_me_reviews_preview_badge_9EFiPW",
         "price_dhxX3T",
-        "countdown_9XbJQn",
         "liquid_YFU8P3",
         "liquid_AnQ4hF",
         "liquid_7LW8an",
@@ -249,6 +249,7 @@
         "coupon_code_QVtbex",
         "coupon_code_RdP3ME",
         "coupon_code_7q6exG",
+        "countdown_9XbJQn",
         "coupon_cards_row_Dzya7B",
         "metafield_popup_9kgmVH",
         "liquid_FhJ6Yp",
