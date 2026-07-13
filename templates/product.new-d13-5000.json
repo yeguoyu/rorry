@@ -90,6 +90,7 @@
         },
         "coupon_cards_row_tBEKBi": {
           "type": "coupon_cards_row",
+          "disabled": true,
           "settings": {
             "copy_text": "Copy Code",
             "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
@@ -105,6 +106,16 @@
             "card_3_amount": "25%",
             "card_3_code_label": "RORRY25",
             "card_3_discount_code": "RORRY25"
+          }
+        },
+        "countdown_aWhrLy": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#9887B8",
+            "color_background": "#E8E4F2",
+            "gradient_background": ""
           }
         },
         "metafield_popup_9kgmVH": {
@@ -226,6 +237,7 @@
         "coupon_code_RdP3ME",
         "coupon_code_7q6exG",
         "coupon_cards_row_tBEKBi",
+        "countdown_aWhrLy",
         "metafield_popup_9kgmVH",
         "liquid_FhJ6Yp",
         "variant_picker",
