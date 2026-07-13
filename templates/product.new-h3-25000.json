@@ -58,7 +58,7 @@
         "coupon_code_QVtbex": {
           "type": "coupon_code",
           "settings": {
-            "left_top_text": "Buy 1 -> Save",
+            "left_top_text": "Save",
             "left_bottom_text": "50%",
             "main_title": "RORRY50",
             "copy_text": "Copy Code",
