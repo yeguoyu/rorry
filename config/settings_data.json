@@ -232,9 +232,9 @@
         "disabled": false,
         "settings": {}
       },
-      "5918707185744429496": {
-        "type": "shopify://apps/optis-product-options/blocks/bss-po-script/2c446099-c349-4e73-80cd-49c9770b7807",
-        "disabled": true,
+      "15132424025755801183": {
+        "type": "shopify://apps/upload-lift/blocks/app-embed/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
+        "disabled": false,
         "settings": {}
       }
     }
