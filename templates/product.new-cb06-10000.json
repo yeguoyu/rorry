@@ -90,6 +90,7 @@
         },
         "countdown_9XbJQn": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "heading": "Hurry up!",
             "subheading": "Sale end in:",
@@ -100,7 +101,6 @@
         },
         "coupon_cards_row_Dzya7B": {
           "type": "coupon_cards_row",
-          "disabled": true,
           "settings": {
             "copy_text": "Copy Code",
             "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
