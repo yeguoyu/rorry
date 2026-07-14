@@ -90,7 +90,6 @@
         },
         "coupon_cards_row_tBEKBi": {
           "type": "coupon_cards_row",
-          "disabled": true,
           "settings": {
             "copy_text": "Copy Code",
             "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
@@ -110,11 +109,12 @@
         },
         "countdown_aWhrLy": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "heading": "Hurry up!",
             "subheading": "Sale end in:",
-            "color_text": "#9887B8",
-            "color_background": "#E8E4F2",
+            "color_text": "#9887b8",
+            "color_background": "#e8e4f2",
             "gradient_background": ""
           }
         },
