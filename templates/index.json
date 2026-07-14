@@ -333,12 +333,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "weekly-specials",
-        "products": [
-          "rorry-h3-25000mah-65w-laptop-power-bank",
-          "rorry-m3-10000mah-foldable-charger-magsafe-power-bank",
-          "rorry-d13-magnetic-portable-charger-5000mah",
-          "rorry-d2-2500mah-portable-charger-keychain-power-bank-wholesale"
-        ],
+        "products": [],
         "product_limit": 4,
         "columns": 4,
         "carousel_on_desktop": true,
