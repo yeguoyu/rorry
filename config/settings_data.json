@@ -232,9 +232,9 @@
         "disabled": false,
         "settings": {}
       },
-      "15132424025755801183": {
-        "type": "shopify://apps/upload-lift/blocks/app-embed/3c98bdcb-7587-4ade-bfe4-7d8af00d05ca",
-        "disabled": true,
+      "2187360915322861293": {
+        "type": "shopify://apps/uploadly-file-upload/blocks/app-embed/d91e9a53-de3d-49df-b7a1-ac8a15b213e5",
+        "disabled": false,
         "settings": {}
       }
     }
