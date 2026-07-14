@@ -231,6 +231,11 @@
         "type": "shopify://apps/worry-free-purchase/blocks/ai-support-chat-widget/c61a403d-127f-4a83-aa2d-dd891cc35fd1",
         "disabled": false,
         "settings": {}
+      },
+      "5918707185744429496": {
+        "type": "shopify://apps/optis-product-options/blocks/bss-po-script/2c446099-c349-4e73-80cd-49c9770b7807",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
