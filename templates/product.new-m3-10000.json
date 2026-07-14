@@ -57,6 +57,7 @@
         },
         "coupon_code_QVtbex": {
           "type": "coupon_code",
+          "disabled": true,
           "settings": {
             "left_top_text": "Save",
             "left_bottom_text": "50%",
@@ -89,7 +90,6 @@
         },
         "coupon_cards_row_FmmpLR": {
           "type": "coupon_cards_row",
-          "disabled": true,
           "settings": {
             "copy_text": "Copy Code",
             "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
