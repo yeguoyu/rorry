@@ -331,6 +331,7 @@
     },
     "featured_collection_UeCreG": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "weekly-specials",
         "products": [],
