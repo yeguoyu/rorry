@@ -225,7 +225,7 @@
       },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "greeting_message": "",
           "show_featured_products": true,
@@ -234,8 +234,8 @@
             "rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
             "rorry-cb06-10000mah-portable-charger-fast-charging-power-bank"
           ],
-          "background_color": "#FFFFFF",
-          "font_color": "#46356B",
+          "background_color": "#ffffff",
+          "font_color": "#171717",
           "button_color": "#9887b8",
           "secondary_color": "#ffffff",
           "ternary_color": "#46356b",
