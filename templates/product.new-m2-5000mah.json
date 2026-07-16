@@ -1066,8 +1066,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How long does charging take?</strong>",
-            "collapsible-content": "",
+            "collapsible-title": "<strong>What devices are compatible with the RORRY Aurodock?</strong>",
+            "collapsible-content": "<p>The RORRY Aurodock is designed for the Apple ecosystem. It supports MagSafe-compatible iPhones (iPhone 12 and later), Apple Watch, and AirPods with wireless charging cases. The detachable power bank also features a USB-C port, allowing you to charge many USB-C devices.</p>",
             "isactive": false
           }
         },
@@ -1075,8 +1075,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How long is the charging time?</strong>",
-            "collapsible-content": "<p>The RORRY AuraDock 4-in-1 Charging Station charges quickly:</p><p>•<strong>iPhone</strong>: Fully charged in 3 hours (reaches 40% in just 30 minutes with the 20W USB-C adapter)</p><p>•<strong>Power bank</strong>: Fully charged in 3 hours</p><p>•<strong>All devices together</strong>: iPhone, Apple Watch, and AirPods all charge simultaneously in 3 hours</p><p>Note: While your phone is on the dock, the detachable power bank won't charge—you'll need to remove your phone first to charge the power bank separately.<br/><br/></p>",
+            "collapsible-title": "<strong>Can I charge multiple devices at the same time?</strong>",
+            "collapsible-content": "<p>Yes. The charging station can power your iPhone, Apple Watch, and wireless earbuds simultaneously using a single power adapter, helping keep your desk or bedside table neat and organized.</p>",
             "isactive": false
           }
         },
@@ -1084,8 +1084,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is the charging station suitable for travel?</strong>",
-            "collapsible-content": "<p>Absolutely. Its foldable design saves space in your bag, and the detachable magnetic power bank lets you take portable power with you wherever you go. It's ideal for home, the office, and travel.<br/></p>",
+            "collapsible-title": "<strong>How does the detachable power bank work?</strong>",
+            "collapsible-content": "<p>The built-in 5,000mAh magnetic power bank can be detached from the charging station whenever you need portable power. Simply remove it and take it with you for convenient charging on the go, then snap it back onto the dock when you return home.</p>",
             "isactive": false
           }
         },
@@ -1093,8 +1093,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can it charge Android phones?</strong>",
-            "collapsible-content": "<p>The magnetic wireless charging function is designed for MagSafe-compatible iPhones. Other Qi-compatible devices may charge wirelessly if properly aligned, but magnetic attachment and optimal performance are not guaranteed.</p>",
+            "collapsible-title": "<strong>Does the magnetic charger work with phone cases?</strong>",
+            "collapsible-content": "<p>Yes, as long as you're using a MagSafe-compatible case. For the strongest magnetic connection and fastest wireless charging, we recommend using a MagSafe-certified case or charging without a case.</p>",
             "isactive": false
           }
         },
@@ -1102,8 +1102,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can I use the detachable power bank by itself?</strong>",
-            "collapsible-content": "<p>Yes! The 5,000mAh magnetic power bank is fully detachable and can be used independently for charging your compatible iPhone while you're away from your desk. It stays charged while docked, making it perfect for daily commuting or short trips.</p>",
+            "collapsible-title": "<strong>Is it safe to leave the charging station plugged in overnight?</strong>",
+            "collapsible-content": "<p>Absolutely. The Aurodock is equipped with intelligent temperature control, overcharge protection, and multiple safety features. It is certified by CE, FCC, and UL. You can also enable Night Mode to turn off the indicator lights for an undisturbed sleep.</p>",
             "isactive": false
           }
         },
@@ -1111,13 +1111,14 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can the power bank be charged while my iPhone is attached to the charging stand?</strong>",
-            "collapsible-content": "<p>No. When your iPhone is magnetically attached to the charging stand, the charging dock prioritizes charging your phone. To recharge the detachable 5,000mAh power bank itself, simply remove your iPhone from the stand.</p>",
+            "collapsible-title": "<strong>How fast does it charge?</strong>",
+            "collapsible-content": "<p>With the included 30W power adapter, the charging station delivers up to 15W magnetic wireless charging for iPhone and 5W for Apple Watch. The detachable power bank also supports 20W USB-C fast charging, making it easy to recharge both the power bank and your devices efficiently.</p>",
             "isactive": false
           }
         },
         "tab_content_pyUjBg": {
           "type": "tab-content",
+          "disabled": true,
           "settings": {
             "tab-name": "product",
             "collapsible-title": "<strong>Can I charge four devices at the same time?</strong>",
