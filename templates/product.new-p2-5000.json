@@ -182,6 +182,19 @@
           "type": "pickup_availability",
           "settings": {}
         },
+        "collapsible_tab_Ajne3t": {
+          "type": "collapsible_tab",
+          "settings": {
+            "opened": false,
+            "style": "with-border",
+            "icon": "none",
+            "heading": "🎁 Need Custom Logo Gifts?",
+            "content": "<p>Planning an event or corporate giveaway? Get bulk pricing starting from 40 units. [<a href=\"/products/custom-logo-rorry-p2-5000mah-magsafe-custom-portable-phone-charger\" title=\"Custom Logo RORRY P2-5000mAh MagSafe Power Bank\"><strong>Request a Free Mockup & Quote</strong></a>]</p>",
+            "page": "",
+            "liquid": "",
+            "text_size": "text-sm"
+          }
+        },
         "trust_features_CQtqc3": {
           "type": "trust_features",
           "settings": {
@@ -236,6 +249,7 @@
         "sticky_buy_button_cgt3tr",
         "sticky_buy_button_v2_qaTgPb",
         "pickup_availability",
+        "collapsible_tab_Ajne3t",
         "trust_features_CQtqc3",
         "share"
       ],
