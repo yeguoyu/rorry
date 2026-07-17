@@ -185,6 +185,7 @@
         },
         "collapsible_tab_ticJ6x": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "opened": false,
             "style": "with-border",
