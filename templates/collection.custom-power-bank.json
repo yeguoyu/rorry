@@ -914,6 +914,92 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "zl_wall_reviews_VBhfXF": {
+      "type": "zl-wall-reviews",
+      "blocks": {
+        "review_GBEfDY": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/20260707-160735.jpg",
+            "review_title": "Already placed a larger order",
+            "stars": 5,
+            "text": "We started with a test batch of 100 CB4 Portable Charger. Shipping took a couple of days longer than expected due to customs, but the wholesale team kept us updated the whole time. My biggest worry with overseas suppliers is always the retail boxes arriving crushed, but these were packed really well. Already placed a larger order for Q3.",
+            "author": "Mark Fletcher, (Australia)"
+          }
+        },
+        "review_cWNhz4": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/20260622-153128.jpg",
+            "review_title": "A flawless experience",
+            "stars": 5,
+            "text": "We ordered 400 custom MagSafe power banks with our company logo for our annual summit. The logo engraving was incredibly precise, and the premium retail packaging made them perfect corporate gifts. Our clients and employees loved them! RORRY’s B2B team was responsive and delivered 2 days ahead of schedule.",
+            "author": "Jessica M., Marketing Director (USA)"
+          }
+        },
+        "review_fNLWJf": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/20260701-175951.jpg",
+            "review_title": "Highly recommend for any tech retailer",
+            "stars": 5,
+            "text": "We added RORRY's magnetic charging to our boutique stores last quarter. Not only is the build quality exceptional, but the sleek, minimalist design attracts customers instantly. Our first batch sold out in less than 3 weeks. Very low defect rate (<0.1%) and excellent wholesale margins.",
+            "author": "Thomas K., Founder (Germany)"
+          }
+        },
+        "review_HktPyf": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/20260701-175945.jpg",
+            "review_title": "RORRY exceeded our expectations.",
+            "stars": 5,
+            "text": "Finding a reliable supplier for high-quality electronics with custom branding is tough. RORRY exceeded our expectations. The custom samples arrived quickly, and the bulk order of 1,000 units was perfect. The magnetic grip is extremely strong, and the safety certifications gave our compliance team peace of mind. Will definitely reorder.",
+            "author": "David L., Corporate Event Coordinator (UK)"
+          }
+        },
+        "review_4CyPL8": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/20260701-175959.jpg",
+            "review_title": "A true 5-star B2B partner!",
+            "stars": 5,
+            "text": "Our customers are highly selective about aesthetics. RORRY’s portable chargers fit our store's palette beautifully. The logo silk-printing is highly durable and doesn't scratch off. Excellent account management support from sample to final delivery.",
+            "author": "Sophia R., Creative Director (Canada)"
+          }
+        },
+        "review_Hr4FhJ": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/20260622-153025.jpg",
+            "review_title": "Appreciate the honest service.",
+            "stars": 5,
+            "text": "Honestly, we looked at cheaper options on Alibaba first, but their certification documents looked sketchy. RORRY provided proper CE and FCC certs right away, which our compliance officer insisted on. The custom logo printing on the matte finish is solid and doesn't look cheap at all. Yes, they cost a bit more, but we didn't want our company logo on a device that overheats or melts.",
+            "author": "Elena Rostova, Operations Lead (USA)"
+          }
+        }
+      },
+      "block_order": [
+        "review_GBEfDY",
+        "review_cWNhz4",
+        "review_fNLWJf",
+        "review_HktPyf",
+        "review_4CyPL8",
+        "review_Hr4FhJ"
+      ],
+      "name": "ZL - Marquee Reviews",
+      "settings": {
+        "heading": "Trusted by Brands Worldwide",
+        "subtext": "",
+        "speed": 60,
+        "bg_color": "#FFFFFF",
+        "card_bg": "#FFF5F5",
+        "heading_color": "#333333",
+        "text_color": "#555555",
+        "star_color": "#A05E5E",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
     }
   },
   "order": [
@@ -928,6 +1014,7 @@
     "number_counter_ir7iUU",
     "rich_text_XjaEM8",
     "timeline_dMQJwD",
-    "faq_t4cwnM"
+    "faq_t4cwnM",
+    "zl_wall_reviews_VBhfXF"
   ]
 }
