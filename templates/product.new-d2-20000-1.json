@@ -183,6 +183,19 @@
           "type": "pickup_availability",
           "settings": {}
         },
+        "collapsible_tab_ticJ6x": {
+          "type": "collapsible_tab",
+          "settings": {
+            "opened": false,
+            "style": "with-border",
+            "icon": "none",
+            "heading": "🎁 Need Custom Logo Gifts?",
+            "content": "<p>Planning an event or corporate giveaway? Get bulk pricing starting from 40 units. [<a href=\"/products/rorry-charmgo-d2-20000mah-power-bank-30w-customized\" title=\"Custom Logo RORRY CharmGo D2-20000mAh Portable Charger Keychain Power Bank 30W\"><strong>Request a Free Mockup & Quote</strong></a>]</p>",
+            "page": "",
+            "liquid": "",
+            "text_size": "text-sm"
+          }
+        },
         "trust_features_CQtqc3": {
           "type": "trust_features",
           "settings": {
@@ -237,6 +250,7 @@
         "sticky_buy_button_cgt3tr",
         "sticky_buy_button_v2_qaTgPb",
         "pickup_availability",
+        "collapsible_tab_ticJ6x",
         "trust_features_CQtqc3",
         "share"
       ],
