@@ -184,6 +184,7 @@
         },
         "collapsible_tab_Fw3Va7": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "opened": false,
             "style": "with-border",
