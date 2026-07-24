@@ -94,6 +94,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "blog": "",
         "post_limit": 3,
