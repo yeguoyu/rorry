@@ -369,8 +369,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_1.jpg",
+        "image": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-PC_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-mo_8.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -407,8 +407,8 @@
         "image_68JyBa": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_2.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_2.jpg",
+            "image": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-PC_2.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-mo_2.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -422,8 +422,8 @@
         "image_wj3qaY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_3.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_3.jpg",
+            "image": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-PC_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-mo_3.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -437,8 +437,8 @@
         "image_cey4mp": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_4.jpg",
+            "image": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-PC_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-mo_4.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -452,8 +452,8 @@
         "image_FwUqH3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_5.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_5.jpg",
+            "image": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-PC_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-mo_5.jpg",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -501,8 +501,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_6.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_6.jpg",
+        "image": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-PC_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-mo_6.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -537,8 +537,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Pc_7.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D14-5000mAh_Megsafe_Power_Bank_Details_Mobile_7.jpg",
+        "image": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-PC_7.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-mo_7.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -575,6 +575,42 @@
       "settings": {
         "image": "shopify://shop_images/custom-d14-banks_9a8ee48b-12c9-42f8-b3f9-86d23fead658.jpg",
         "image_mobile": "shopify://shop_images/custom-d14-bank_fe128b01-9b80-4611-98fe-f38a9d5af6aa.jpg",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "lookbook_U3qpQa": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-PC_8.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14_Magsafe_Power_Bank_5K_Slim_Custom_Logo_-mo_8.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -984,6 +1020,7 @@
     "lookbook_Ge7kbk",
     "lookbook_VGBUcf",
     "lookbook_q7wG8V",
+    "lookbook_U3qpQa",
     "selling_points_9_J3teY8",
     "lookbook_4HJrVR",
     "product_faq_yKMxrh",
