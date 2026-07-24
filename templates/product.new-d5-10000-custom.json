@@ -421,8 +421,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_3.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_3.jpg",
+        "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_Custom_Logo-pc_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_Custom_Logo-mo_1.jpg",
         "heading": "<strong>22.5W Super Fast Charging: iPhone & Apple Watch Simultaneously</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -457,8 +457,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_4.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_4.jpg",
+        "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_Custom_Logo-pc_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_Custom_Logo-mo_2.jpg",
         "heading": "<strong>Wide Compatibility: For All Apple & Android Devices</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -493,8 +493,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_5.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_5.jpg",
+        "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_Custom_Logo-pc_4.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_Custom_Logo-mo_3.jpg",
         "heading": "<strong>Efficient & Versatile: Charge Your Way, Effortlessly!</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -633,9 +633,9 @@
         "image_YcDULY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_pc_3.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_mo_3.jpg",
-            "heading": "<strong>Easy to Carry</strong>",
+            "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_Custom_Logo-pc_1.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_Custom_Logo-mo_4.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
