@@ -545,6 +545,42 @@
         "rounded": false
       }
     },
+    "lookbook_Rh9KX7": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/Custom_Logo_RORRY_CharmGo_D2_Keychain_Power_Bank-PC.jpg",
+        "image_mobile": "shopify://shop_images/Custom_Logo_RORRY_CharmGo_D2_Keychain_Power_Bank-MO.jpg",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "selling_points_9_J3teY8": {
       "type": "selling-points-9",
       "blocks": {
@@ -980,6 +1016,7 @@
     "lookbook_CcgbRU",
     "lookbook_NEFbFj",
     "lookbook_7i6E3m",
+    "lookbook_Rh9KX7",
     "selling_points_9_J3teY8",
     "lookbook_MxCFHN",
     "product_faq_iXcLnC",
