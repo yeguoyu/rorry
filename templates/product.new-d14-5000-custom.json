@@ -347,6 +347,7 @@
     },
     "video_HGQ69q": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "video": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
