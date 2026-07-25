@@ -347,6 +347,7 @@
     },
     "video_63RXbA": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "video": "shopify://files/videos/D14-10000.mp4",
@@ -369,9 +370,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc-1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo.jpg",
-        "heading": "<strong>RORRY D14-10000mAh</strong> <strong>Magsafe Power Bank</strong>",
+        "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_1.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -405,8 +406,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_2.jpg",
+        "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_2.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -443,8 +444,8 @@
         "image_eMtG7R": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_3.jpg",
-            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_4.jpg",
+            "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_4.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -458,8 +459,8 @@
         "image_cW4Bxg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_5.jpg",
+            "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_5.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -473,8 +474,8 @@
         "image_bkRkqz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_2.jpg",
-            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_3.jpg",
+            "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_3.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -521,8 +522,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_5.jpg",
-        "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_6.jpg",
+        "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_6.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -557,8 +558,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_6.jpg",
-        "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_7.jpg",
+        "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_7.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_7.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -595,9 +596,9 @@
         "image_xgatgc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_7.jpg",
-            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_8.jpg",
-            "heading": "<strong>Compact Power</strong>",
+            "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_8.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_8.jpg",
+            "heading": "",
             "heading_size": "title-md",
             "heading_tag": "h3",
             "button_label": "",
@@ -610,9 +611,9 @@
         "image_nic4ir": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_8.jpg",
-            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_9.jpg",
-            "heading": "<strong>Power Anywhere</strong>",
+            "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_9.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_9.jpg",
+            "heading": "",
             "heading_size": "title-md",
             "heading_tag": "h3",
             "button_label": "",
@@ -625,9 +626,9 @@
         "image_Er7ykA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-pc_9.jpg",
-            "image_mobile": "shopify://shop_images/RORRY-D14-10000mAh-Ultra_Slim-Magsafe_Power-Bank-mo_10.jpg",
-            "heading": "<strong>Pass-Through</strong>",
+            "image": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-PC_10.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_D14-10000mAh_Ultra_Slim_Magsafe_Power_Bank_Custom_Logo-mo_10.jpg",
+            "heading": "",
             "heading_size": "title-md",
             "heading_tag": "h3",
             "button_label": "",
