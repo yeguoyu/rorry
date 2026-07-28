@@ -918,6 +918,16 @@
     "zl_wall_reviews_VBhfXF": {
       "type": "zl-wall-reviews",
       "blocks": {
+        "review_jQxJTt": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/rorry-d2-10000mah-custom_1.jpg",
+            "review_title": "Perfect Corporate Gift Solution",
+            "stars": 5,
+            "text": "We customized the D2-10000 power banks with our company logo for a corporate event, and the results exceeded our expectations. The print quality was excellent, the colors matched our branding perfectly, and the products arrived on schedule. Our clients loved both the design and functionality.",
+            "author": "Michael Thompson (USA)"
+          }
+        },
         "review_GBEfDY": {
           "type": "review",
           "settings": {
@@ -946,6 +956,16 @@
             "stars": 5,
             "text": "We added RORRY's magnetic charging to our boutique stores last quarter. Not only is the build quality exceptional, but the sleek, minimalist design attracts customers instantly. Our first batch sold out in less than 3 weeks. Very low defect rate (<0.1%) and excellent wholesale margins.",
             "author": "Thomas K., Founder (Germany)"
+          }
+        },
+        "review_brpyQB": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/rorry-d2-10000mah-custom_2.jpg",
+            "review_title": "Outstanding Customization Service",
+            "stars": 5,
+            "text": "The RORRY team made the customization process incredibly easy. They provided fast mockups, communicated clearly throughout production, and delivered exactly what we approved. The finished products matched our brand perfectly, and we've already received great feedback from customers.",
+            "author": "Daniel Wilson, Account Manager（USA）"
           }
         },
         "review_HktPyf": {
@@ -980,9 +1000,11 @@
         }
       },
       "block_order": [
+        "review_jQxJTt",
         "review_GBEfDY",
         "review_cWNhz4",
         "review_fNLWJf",
+        "review_brpyQB",
         "review_HktPyf",
         "review_4CyPL8",
         "review_Hr4FhJ"
@@ -992,11 +1014,11 @@
         "heading": "Trusted by Brands Worldwide",
         "subtext": "",
         "speed": 60,
-        "bg_color": "#FFFFFF",
-        "card_bg": "#FFF5F5",
+        "bg_color": "#ffffff",
+        "card_bg": "#fff5f5",
         "heading_color": "#333333",
         "text_color": "#555555",
-        "star_color": "#A05E5E",
+        "star_color": "#a05e5e",
         "padding_top": 60,
         "padding_bottom": 60
       }
