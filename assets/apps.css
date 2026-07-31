@@ -309,14 +309,19 @@
   }
 }
 
-@media screen and (max-width: 639px) {
-  #shopify-pc__banner {
-    flex-direction: column;
+@media screen and (max-width: 749px) {
+  #shopify-pc__banner,
+  #shopify-pc__banner[style*="display: block"],
+  #shopify-pc__banner[style*="display:flex"],
+  #shopify-pc__banner[style*="display: flex"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
     align-items: stretch;
     text-align: center;
     border-radius: 0;
     gap: var(--sp-3) !important;
     row-gap: var(--sp-3) !important;
+    column-gap: var(--sp-3) !important;
     padding: var(--sp-4) var(--sp-4) var(--sp-5) !important;
     min-height: 0 !important;
     height: auto !important;
@@ -332,13 +337,11 @@
   }
 
   #shopify-pc__banner .shopify-pc__banner__dialog {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: var(--sp-3) !important;
-    row-gap: var(--sp-3) !important;
+    display: contents !important;
   }
 
   #shopify-pc__banner .shopify-pc__banner__body {
+    grid-column: 1 / -1 !important;
     margin-block-end: 0 !important;
     padding-block-end: 0 !important;
   }
@@ -351,41 +354,42 @@
     margin: 0 !important;
   }
 
-  #shopify-pc__banner .shopify-pc__banner__btns {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: stretch;
-    align-items: stretch;
-    gap: var(--sp-3) !important;
-    row-gap: var(--sp-3) !important;
-    column-gap: var(--sp-3) !important;
-    width: 100%;
-    margin: 0 !important;
-    margin-block-start: 0 !important;
-    padding: 0 !important;
+  /* 让按钮脱离包裹层，直接参与 dialog 的两列网格 */
+  #shopify-pc__banner .shopify-pc__banner__btns,
+  #shopify-pc__banner [class*="banner__btns"] {
+    display: contents !important;
   }
 
-  /* Manage preferences：单独一行 */
-  #shopify-pc__banner .shopify-pc__banner__btns .shopify-pc__banner__btn-manage-prefs,
-  #shopify-pc__banner .shopify-pc__banner__btns #shopify-pc__banner__btn-manage-prefs {
-    flex: 0 0 100% !important;
-    order: 1;
+  /* Manage preferences：通栏一行 */
+  #shopify-pc__banner #shopify-pc__banner__btn-manage-prefs,
+  #shopify-pc__banner .shopify-pc__banner__btn-manage-prefs,
+  #shopify-pc__banner button.shopify-pc__banner__btn-manage-prefs {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    max-width: none !important;
     margin: 0 !important;
+    justify-self: center;
     justify-content: center;
     text-align: center;
   }
 
-  /* Accept / Decline：并排两列 */
-  #shopify-pc__banner .shopify-pc__banner__btns #shopify-pc__banner__btn-accept,
-  #shopify-pc__banner .shopify-pc__banner__btns #shopify-pc__banner__btn-decline {
-    flex: 1 1 calc(50% - var(--sp-1d5)) !important;
-    order: 2;
-    min-width: 0;
+  /* Accept / Decline：并排各占一列 */
+  #shopify-pc__banner #shopify-pc__banner__btn-accept,
+  #shopify-pc__banner #shopify-pc__banner__btn-decline,
+  #shopify-pc__banner .shopify-pc__banner__btn-accept,
+  #shopify-pc__banner .shopify-pc__banner__btn-decline,
+  #shopify-pc__banner button.shopify-pc__banner__btn-accept,
+  #shopify-pc__banner button.shopify-pc__banner__btn-decline {
+    grid-column: auto !important;
+    width: 100% !important;
     max-width: none !important;
+    min-width: 0 !important;
     max-height: none !important;
-    width: auto !important;
+    flex: none !important;
+    flex-basis: auto !important;
     margin: 0 !important;
     padding: var(--sp-3d5) var(--sp-3) !important;
+    box-sizing: border-box !important;
   }
 
   #shopify-pc__prefs__dialog {
