@@ -315,10 +315,77 @@
     align-items: stretch;
     text-align: center;
     border-radius: 0;
+    gap: var(--sp-3) !important;
+    row-gap: var(--sp-3) !important;
+    padding: var(--sp-4) var(--sp-4) var(--sp-5) !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__body,
+  #shopify-pc__banner .shopify-pc__banner__dialog {
+    flex: none;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__dialog {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: var(--sp-3) !important;
+    row-gap: var(--sp-3) !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__body {
+    margin-block-end: 0 !important;
+    padding-block-end: 0 !important;
+  }
+
+  #shopify-pc__banner__body-title {
+    margin-block-end: var(--sp-1d5) !important;
+  }
+
+  #shopify-pc__banner .shopify-pc__banner__body p {
+    margin: 0 !important;
   }
 
   #shopify-pc__banner .shopify-pc__banner__btns {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: var(--sp-3) !important;
+    row-gap: var(--sp-3) !important;
+    column-gap: var(--sp-3) !important;
+    width: 100%;
+    margin: 0 !important;
+    margin-block-start: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Manage preferences：单独一行 */
+  #shopify-pc__banner .shopify-pc__banner__btns .shopify-pc__banner__btn-manage-prefs,
+  #shopify-pc__banner .shopify-pc__banner__btns #shopify-pc__banner__btn-manage-prefs {
+    flex: 0 0 100% !important;
+    order: 1;
+    margin: 0 !important;
     justify-content: center;
+    text-align: center;
+  }
+
+  /* Accept / Decline：并排两列 */
+  #shopify-pc__banner .shopify-pc__banner__btns #shopify-pc__banner__btn-accept,
+  #shopify-pc__banner .shopify-pc__banner__btns #shopify-pc__banner__btn-decline {
+    flex: 1 1 calc(50% - var(--sp-1d5)) !important;
+    order: 2;
+    min-width: 0;
+    max-width: none !important;
+    max-height: none !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: var(--sp-3d5) var(--sp-3) !important;
   }
 
   #shopify-pc__prefs__dialog {
