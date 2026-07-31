@@ -15676,11 +15676,7 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
   display: none;
 }
 
-/*! Shopify Cookie banner */
-
-#shopify-pc__banner {
-  display: none !important;
-}
+/*! Shopify Cookie banner — shown via Shopify Customer Privacy; styled in apps.css */
 
 /*! custom-section */
 
