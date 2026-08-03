@@ -741,7 +741,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "T1-10000",
+            "details": "T1-20000",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -780,7 +780,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.86\"L x 2.85\"W x 0.65\"Th",
+            "details": "6.46\"L x 1.27\"W x 2.71\"Th",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -793,7 +793,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "128g",
+            "details": "370g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -806,7 +806,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "10,000mAh",
+            "details": "20,000mAh",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -819,7 +819,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "3.85 Volts",
+            "details": "7.7 Volts",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -832,7 +832,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "1",
+            "details": "2",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -845,7 +845,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "5V=3A/9V=3A/12=2.5A/15V=2A/20=1.5A",
+            "details": "5V⎓3A, 9V⎓3A, 12V⎓3A, 15V⎓2A , 20V⎓1.5A(30W Max)",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -853,6 +853,7 @@
         },
         "item_block_TC93XP": {
           "type": "item_block",
+          "disabled": true,
           "settings": {
             "title": "Antenna Location",
             "title_color": "",
@@ -871,7 +872,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for AirPods 4/3/2/Pro/Pro 2, for Pixel Moto LG Android Table, for Samsung Galaxy S24/S23/S22/S21/S20/+/Ultra/FE, for Switch/for steam deck/for Laptop support 30W, for iPhone 17/16/15/14/13/12/11 Air/Pro/Pro Max",
+            "details": "for AirPods 4/3/2/Pro/Pro 2, for Pixel Moto LG Android Table, for Samsung Galaxy S26/S25/S24/S23+/Ultra, for Switch/for steam deck, for iPhone 17/16/15 Air/Plue/Pro/Pro Max",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -884,7 +885,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for AirPods 4/3/2/Pro/Pro 2, for Samsung Galaxy S24/S23/S22/S21/S20/+/Ultra/FE, for iPhone 16/15/14/13/12/11 Pro/Pro Max",
+            "details": "for AirPods 4/3/2/Pro/Pro 2, for Samsung Galaxy S26/S25/S24/S23+/Ultra, for iPhone 17/16/15 Air/Plue/Pro/Pro Max",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -937,8 +938,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>What devices are compatible with this portable charger for iPhone?</strong>",
-            "collapsible-content": "<p>This portable charger power bank is designed for iPhone 17/16/15/14/13/12/11 series, including Pro, Pro Max, and Air models, and also works with AirPods 2/3/4/Pro** and other USB-powered devices.</p>",
+            "collapsible-title": "<strong>Does it charge 4 devices simultaneously?</strong>",
+            "collapsible-content": "<p>Yes! It can charge up to <strong>4 devices simultaneously</strong>. It features:</p><ul><li><strong>Built-in USB-C cable</strong></li><li><strong>Built-in Lightning (iOS) cable</strong></li><li><strong>USB-C output port</strong></li><li><strong>USB-A output port</strong></li></ul><p>This makes it compatible with a wide range of devices including iPhones, iPads, AirPods, Samsung Galaxy, and more — all at the same time.</p>",
             "isactive": false
           }
         },
@@ -946,8 +947,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>How fast can a 30W portable charger charge an iPhone?</strong>",
-            "collapsible-content": "<p>With PD 30W fast charging, this power bank can charge iPhone 16 Pro up to 56% in about 30 minutes and fully charge it in around 1.7 hours, delivering fast and efficient power on the go.</p>",
+            "collapsible-title": "<strong>How fast does it charge iPhones?</strong>",
+            "collapsible-content": "<p>It charges iPhones quite fast thanks to its <strong>30W Power Delivery (PD)</strong>:</p><ul><li><strong>iPhone 17 Pro Max hits 50% in just 27 minutes</strong></li><li>The built-in Lightning (iOS) cable supports up to <strong>20W</strong> output</li><li>The USB-C port and cable both support <strong>30W</strong> for even faster charging</li><li>With its 20,000mAh capacity, it can charge an iPhone multiple times on a single charge (reviewers mention up to <strong>3 full charges</strong> for an iPhone)</li></ul>",
             "isactive": false
           }
         },
@@ -955,8 +956,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can this portable charger charge multiple devices at the same time?</strong>",
-            "collapsible-content": "<p>Yes. This 3-in-1 keychain charger can charge up to three devices simultaneously, including iPhone, AirPods, Android devices, and even laptops that support 30W USB-C charging.</p>",
+            "collapsible-title": "<strong>How long does the battery last?</strong>",
+            "collapsible-content": "<p>It has a large 20,000mAh battery, giving it impressive longevity:</p><ul><li><strong>Up to a full week</strong> of worry-free iPhone charging (per the product description)</li><li><strong>~3 full charges</strong> for an iPhone 17 Pro Max, confirmed by multiple customer reviews</li><li>A built-in <strong>LCD display</strong> shows real-time battery level so you always know when it needs recharging</li><li>The power bank itself recharges quickly via its 30W USB-C port</li></ul>",
             "isactive": false
           }
         },
@@ -964,8 +965,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Is it safe to use a fast charging power bank every day?</strong>",
-            "collapsible-content": "<p>Yes. This fast charging portable charger is designed with built-in safety protections to prevent overheating, overcharging, overcurrent, and short circuits, ensuring safe and reliable charging for everyday use.</p>",
+            "collapsible-title": "<strong>Is it TSA-approved for flights?</strong>",
+            "collapsible-content": "<p>Yes! It is <strong>airline-approved</strong>, as explicitly stated in the product listing.</p><p>Here's why it clears TSA guidelines:</p><ul><li><strong>Battery capacity</strong>: 77Wh — well under the FAA's 100Wh limit for carry-on power banks (no airline approval needed under 100Wh)</li><li><strong>Lithium-ion</strong> battery type, which is the standard accepted format for flights</li><li>The product description specifically calls it out as an <strong>\"essential travel companion\"</strong> and confirms it's airline-approved</li></ul><p>You can carry it in your <strong>carry-on bag</strong> without any issues. Just note that power banks are generally <strong>not allowed in checked luggage</strong> per TSA rules.</p>",
             "isactive": false
           }
         },
@@ -973,8 +974,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "<strong>Can you bring a 10000mAh power bank on an airplane?</strong>",
-            "collapsible-content": "<p>Yes. A 10000mAh power bank is within airline safety limits and is generally allowed in carry-on luggage on flights, making it a great companion for air travel.</p>",
+            "collapsible-title": "<strong>Can I check the remaining battery level clearly?</strong>",
+            "collapsible-content": "<p>Yes, an embedded LCD screen displays real-time remaining power, so you can avoid low-battery anxiety and arrange charging plans conveniently.<br/></p>",
             "isactive": false
           }
         }
