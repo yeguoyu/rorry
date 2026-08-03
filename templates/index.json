@@ -295,12 +295,12 @@
           "settings": {
             "collection": "power-banks",
             "image": "shopify://shop_images/Power-Banks.jpg",
-            "title": "",
+            "title": "Power Banks",
             "description": "",
             "overlay_content": true,
-            "color_text": "#ffffff",
+            "color_text": "#9887B8",
             "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_NbA4GJ": {
@@ -311,9 +311,9 @@
             "title": "",
             "description": "",
             "overlay_content": false,
-            "color_text": "#ffffff",
+            "color_text": "#9887B8",
             "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_JPBfnb": {
@@ -324,9 +324,9 @@
             "title": "",
             "description": "",
             "overlay_content": false,
-            "color_text": "#ffffff",
+            "color_text": "#9887B8",
             "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_xEVyF8": {
@@ -337,9 +337,9 @@
             "title": "Apple Watch Chargers",
             "description": "",
             "overlay_content": false,
-            "color_text": "#ffffff",
+            "color_text": "#9887B8",
             "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_E76fUC": {
@@ -350,9 +350,9 @@
             "title": "",
             "description": "",
             "overlay_content": false,
-            "color_text": "#ffffff",
+            "color_text": "#9887B8",
             "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_U9ewPF": {
@@ -363,9 +363,9 @@
             "title": "Laptop Power Banks",
             "description": "",
             "overlay_content": false,
-            "color_text": "#ffffff",
+            "color_text": "#9887B8",
             "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_WmDJMU": {
@@ -376,9 +376,9 @@
             "title": "iPhone Power Banks",
             "description": "",
             "overlay_content": false,
-            "color_text": "#ffffff",
+            "color_text": "#9887B8",
             "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
