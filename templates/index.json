@@ -410,7 +410,7 @@
         "columns": 5,
         "carousel_on_desktop": true,
         "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "heading": "Charge Anywhere: Shop By Category",
         "heading_size": "title-sm",
         "heading_alignment": "text-left md:items-end md:flex-row",
