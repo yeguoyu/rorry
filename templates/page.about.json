@@ -67,7 +67,7 @@
       "settings": {
         "transparent_header": true,
         "image": "shopify://shop_images/about-rorry-1.jpg",
-        "image_height": "adapt",
+        "image_height": "750px",
         "content_width": "large",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
@@ -155,7 +155,7 @@
         "padding_top": 72,
         "padding_bottom": 100,
         "divider": false,
-        "narrow": true,
+        "narrow": false,
         "rounded": true
       }
     },
