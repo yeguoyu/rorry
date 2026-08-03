@@ -331,6 +331,7 @@
       "blocks": {
         "video_block_nm7Uqn": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/t1-10000mah-portable-charger-1.mp4",
             "video_url": ""
@@ -338,6 +339,7 @@
         },
         "video_block_kj3C3K": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/t1-10000mah-portable-charger.mp4",
             "video_url": ""
@@ -345,6 +347,7 @@
         },
         "video_block_zUgyKR": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/t1-10000mah-portable-charger-3.mp4",
             "video_url": ""
@@ -352,6 +355,7 @@
         },
         "video_block_DNXxce": {
           "type": "video_block",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/t1-10000mah-portable-charger-2.mp4",
             "video_url": ""
@@ -373,8 +377,8 @@
         "cols_mb": 2,
         "gap_pc": 20,
         "gap_mb": 10,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "mobile_padding_top": 24,
         "mobile_padding_bottom": 24
       }
@@ -383,9 +387,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_T1-10000mAh_Portable_Charger_Keychain_Power_Bank_30W_pc.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_1.jpg",
-        "heading": "<strong>RORRY 10000mAh 30W PD Keychain Charger: Built-in Cable & Colorful Options</strong>",
+        "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_1.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -408,7 +412,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 0,
-        "padding_top": 0,
+        "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
         "full_width": false,
@@ -419,9 +423,9 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_3.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_3.jpg",
-        "heading": "<strong>Step Out with Everything in One: 30W 10000mAh Keychain Charger</strong>",
+        "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_2.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -454,12 +458,27 @@
     "slideshow_P9zJxX": {
       "type": "slideshow",
       "blocks": {
+        "image_WJQDwz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_3.jpg",
+            "heading": "",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
         "image_JhcMD4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_4.jpg",
-            "heading": "<strong>Charging 3 Devices Simultaneously</strong>",
+            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_6.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_6.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -472,9 +491,9 @@
         "image_UbcADF": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_7.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_7.jpg",
-            "heading": "<strong>PD 30W: Fast Charging</strong>",
+            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_4.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -487,24 +506,9 @@
         "image_Q6bMcR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_6.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_6.jpg",
-            "heading": "<strong>Portable Charger with Keychain for Travel</strong>",
-            "heading_size": "title-sm",
-            "heading_tag": "h3",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_WJQDwz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_5.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_5.jpg",
-            "heading": "<strong>Portable 10000mAh Power Bank for Travel</strong>",
+            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_5.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_5.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -517,9 +521,9 @@
         "image_mWQMxd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_8.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_8.jpg",
-            "heading": "<strong>2 Ways Quick Recharge</strong>",
+            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_11.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_11.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -531,10 +535,10 @@
         }
       },
       "block_order": [
+        "image_WJQDwz",
         "image_JhcMD4",
         "image_UbcADF",
         "image_Q6bMcR",
-        "image_WJQDwz",
         "image_mWQMxd"
       ],
       "name": "Slideshow",
@@ -563,15 +567,99 @@
         "parallax_direction": "vertical"
       }
     },
+    "lookbook_i9fkKU": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_7.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_7.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "highlight_text_dTMKtt": {
+      "type": "highlight-text",
+      "blocks": {
+        "heading_tjWeDe": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>An Essential Travel Companion for Any Trip</strong>",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tjWeDe"
+      ],
+      "name": "t:sections.highlight-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "slideshow_ewtn77": {
       "type": "slideshow",
       "blocks": {
         "image_gphmrY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_10.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_10.jpg",
-            "heading": "<strong>Flight-Approved: Your Travel Companionfor Stress-Free Journeys</strong>",
+            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_9.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_9.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -584,9 +672,9 @@
         "image_jqCtPM": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_12.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_12.jpg",
-            "heading": "<strong>Travel Gadgets: Making it the perfect all-in-onetravel accessories</strong>",
+            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_10.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_10.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -599,9 +687,9 @@
         "image_Ez4XtD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_11.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_11.jpg",
-            "heading": "<strong>Business Work: Triple DeviceSimultaneous Charging</strong>",
+            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_8.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_8.jpg",
+            "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "button_label": "",
@@ -641,42 +729,6 @@
         "rounded": false,
         "enable_parallax": false,
         "parallax_direction": "vertical"
-      }
-    },
-    "lookbook_i9fkKU": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_9.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_mo_9.jpg",
-        "heading": "<strong>Universal Compatibility: 30W PD for All Your Devices</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "selling_points_9_J3teY8": {
@@ -1067,8 +1119,9 @@
     "lookbook_iGNqQ9",
     "lookbook_JG7gfn",
     "slideshow_P9zJxX",
-    "slideshow_ewtn77",
     "lookbook_i9fkKU",
+    "highlight_text_dTMKtt",
+    "slideshow_ewtn77",
     "selling_points_9_J3teY8",
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
