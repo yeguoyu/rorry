@@ -287,6 +287,116 @@
         "mobile_cols": "2"
       }
     },
+    "collection_list_mt48yD": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_dMBGFa": {
+          "type": "collection",
+          "settings": {
+            "collection": "power-banks",
+            "image": "shopify://shop_images/Power-Banks.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_NbA4GJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "wireless-chargers",
+            "image": "shopify://shop_images/Wireless-Chargers.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_JPBfnb": {
+          "type": "collection",
+          "settings": {
+            "collection": "ac-wall-plug-power-banks",
+            "image": "shopify://shop_images/AC-Power.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_xEVyF8": {
+          "type": "collection",
+          "settings": {
+            "collection": "for-iphone-apple-watch",
+            "image": "shopify://shop_images/Apple-Watch-Chargers.jpg",
+            "title": "Apple Watch Chargers",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_E76fUC": {
+          "type": "collection",
+          "settings": {
+            "collection": "for-android",
+            "image": "shopify://shop_images/Android-Chargers.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_dMBGFa",
+        "collection_NbA4GJ",
+        "collection_JPBfnb",
+        "collection_xEVyF8",
+        "collection_E76fUC"
+      ],
+      "name": "t:sections.collection-list.name",
+      "settings": {
+        "card_style": "overlap",
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": false,
+        "show_view_all": false,
+        "columns": 5,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Shop RORRY Essentials By Category",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "featured_collection_cGwE4X": {
       "type": "featured-collection",
       "settings": {
@@ -1874,6 +1984,7 @@
     "slideshow",
     "slideshow_UBfjb7",
     "zl_brand_features_BdQm6U",
+    "collection_list_mt48yD",
     "featured_collection_cGwE4X",
     "featured_collection_UeCreG",
     "collection_list_fLHcjP",
