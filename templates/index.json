@@ -260,6 +260,14 @@
             "title": "12-Months RORRY Care",
             "text": "Market's Reliable Warranty"
           }
+        },
+        "feature_item_49cbyW": {
+          "type": "feature_item",
+          "disabled": true,
+          "settings": {
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
         }
       },
       "block_order": [
@@ -268,7 +276,8 @@
         "feature_item_PjxPRH",
         "feature_item_i8mCJy",
         "feature_item_6UBBzN",
-        "feature_item_PrLjFk"
+        "feature_item_PrLjFk",
+        "feature_item_49cbyW"
       ],
       "custom_css": [],
       "name": "ZL Brand Features",
@@ -290,17 +299,17 @@
     "collection_list_mt48yD": {
       "type": "collection-list",
       "blocks": {
-        "collection_dMBGFa": {
+        "collection_PzJXtW": {
           "type": "collection",
           "settings": {
             "collection": "power-banks",
             "image": "shopify://shop_images/Power-Banks.jpg",
-            "title": "Power Banks",
+            "title": "",
             "description": "",
-            "overlay_content": true,
-            "color_text": "#9887B8",
+            "overlay_content": false,
+            "color_text": "#ffffff",
             "color_overlay": "#000000",
-            "overlay_opacity": 0
+            "overlay_opacity": 30
           }
         },
         "collection_NbA4GJ": {
@@ -321,10 +330,10 @@
           "settings": {
             "collection": "ac-wall-plug-power-banks",
             "image": "shopify://shop_images/AC-Power.jpg",
-            "title": "",
+            "title": "AC Power",
             "description": "",
             "overlay_content": false,
-            "color_text": "#9887B8",
+            "color_text": "#9887b8",
             "color_overlay": "#000000",
             "overlay_opacity": 0
           }
@@ -334,10 +343,10 @@
           "settings": {
             "collection": "for-iphone-apple-watch",
             "image": "shopify://shop_images/Apple-Watch-Chargers.jpg",
-            "title": "Apple Watch Chargers",
+            "title": "For Apple Watch",
             "description": "",
             "overlay_content": false,
-            "color_text": "#9887B8",
+            "color_text": "#9887b8",
             "color_overlay": "#000000",
             "overlay_opacity": 0
           }
@@ -347,10 +356,10 @@
           "settings": {
             "collection": "for-android",
             "image": "shopify://shop_images/Android-Chargers.jpg",
-            "title": "",
+            "title": "For Android",
             "description": "",
             "overlay_content": false,
-            "color_text": "#9887B8",
+            "color_text": "#9887b8",
             "color_overlay": "#000000",
             "overlay_opacity": 0
           }
@@ -360,10 +369,10 @@
           "settings": {
             "collection": "for-laptop",
             "image": "shopify://shop_images/Laptop-Power-Banks.jpg",
-            "title": "Laptop Power Banks",
+            "title": "For Laptop",
             "description": "",
             "overlay_content": false,
-            "color_text": "#9887B8",
+            "color_text": "#9887b8",
             "color_overlay": "#000000",
             "overlay_opacity": 0
           }
@@ -373,17 +382,17 @@
           "settings": {
             "collection": "iphone-power-banks",
             "image": "shopify://shop_images/iPhone-Power-Banks_710d097a-945d-4cda-b4f4-5096e4f80e80.jpg",
-            "title": "iPhone Power Banks",
+            "title": "For iPhone",
             "description": "",
             "overlay_content": false,
-            "color_text": "#9887B8",
+            "color_text": "#9887b8",
             "color_overlay": "#000000",
             "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "collection_dMBGFa",
+        "collection_PzJXtW",
         "collection_NbA4GJ",
         "collection_JPBfnb",
         "collection_xEVyF8",
@@ -393,16 +402,16 @@
       ],
       "name": "t:sections.collection-list.name",
       "settings": {
-        "card_style": "overlap",
+        "card_style": "standard",
         "image_type": "collection",
         "image_ratio": "square",
         "show_products_count": false,
         "show_view_all": false,
         "columns": 5,
         "carousel_on_desktop": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Shop RORRY Essentials By Category",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "heading": "Shop By Category",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -410,13 +419,13 @@
         "description": "",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
-        "color_button_background": "#9887B8",
+        "color_button_background": "#9887b8",
         "color_button_gradient": "",
         "padding_top": 40,
         "padding_bottom": 40,
