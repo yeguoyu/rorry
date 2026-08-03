@@ -66,8 +66,8 @@
       ],
       "settings": {
         "transparent_header": true,
-        "image": "shopify://shop_images/rorry-about-us-lifestyle-portable-charger_479b39bc-e21c-424d-a1df-ede943114243.jpg",
-        "image_height": "adapt",
+        "image": "shopify://shop_images/about-rorry.jpg",
+        "image_height": "800px",
         "content_width": "large",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
