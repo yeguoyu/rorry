@@ -436,6 +436,7 @@
     },
     "featured_collection_cGwE4X": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "collection": "best-sellers",
         "products": [
@@ -524,16 +525,16 @@
         "description": "",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
-        "color_button_background": "",
+        "color_button_background": "#9887B8",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 40,
+        "padding_bottom": 40,
         "divider": false,
         "full_width": false,
         "rounded": false
