@@ -387,44 +387,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_1.jpg",
-        "heading": "",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "lookbook_JG7gfn": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_2.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_2.jpg",
+        "image": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank_with_Built-in_USB-C_Cable-PC_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank-mo_1.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -461,8 +425,8 @@
         "image_WJQDwz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_3.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_3.jpg",
+            "image": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank_with_Built-in_USB-C_Cable-PC_2.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank-mo_2.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -476,8 +440,8 @@
         "image_JhcMD4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_6.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_6.jpg",
+            "image": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank_with_Built-in_USB-C_Cable-PC_3.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank-mo_3.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -491,38 +455,8 @@
         "image_UbcADF": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_4.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_4.jpg",
-            "heading": "",
-            "heading_size": "title-sm",
-            "heading_tag": "h3",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_Q6bMcR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_5.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_5.jpg",
-            "heading": "",
-            "heading_size": "title-sm",
-            "heading_tag": "h3",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_mWQMxd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_11.jpg",
-            "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_11.jpg",
+            "image": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank_with_Built-in_USB-C_Cable-PC_4.jpg",
+            "image_mobile": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank-mo_4.jpg",
             "heading": "",
             "heading_size": "title-sm",
             "heading_tag": "h3",
@@ -537,9 +471,7 @@
       "block_order": [
         "image_WJQDwz",
         "image_JhcMD4",
-        "image_UbcADF",
-        "image_Q6bMcR",
-        "image_mWQMxd"
+        "image_UbcADF"
       ],
       "name": "Slideshow",
       "settings": {
@@ -567,12 +499,48 @@
         "parallax_direction": "vertical"
       }
     },
+    "lookbook_JG7gfn": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank_with_Built-in_USB-C_Cable-PC_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank-mo_5.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h3",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "lookbook_i9fkKU": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank_30W-PC_7.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_CharmGo_T1-20000mAh_Portable_Charger_Keychain_Power_Bank-MO_7.jpg",
+        "image": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank_with_Built-in_USB-C_Cable-PC_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_T2-20000mAh_45W_Portable_Charger_Power_Bank-mo_6.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -636,7 +604,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -1118,8 +1086,8 @@
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
     "lookbook_iGNqQ9",
-    "lookbook_JG7gfn",
     "slideshow_P9zJxX",
+    "lookbook_JG7gfn",
     "lookbook_i9fkKU",
     "highlight_text_dTMKtt",
     "slideshow_ewtn77",
