@@ -354,6 +354,32 @@
             "color_overlay": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "collection_U9ewPF": {
+          "type": "collection",
+          "settings": {
+            "collection": "for-laptop",
+            "image": "shopify://shop_images/Laptop-Power-Banks.jpg",
+            "title": "Laptop Power Banks",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_WmDJMU": {
+          "type": "collection",
+          "settings": {
+            "collection": "iphone-power-banks",
+            "image": "shopify://shop_images/iPhone-Power-Banks_710d097a-945d-4cda-b4f4-5096e4f80e80.jpg",
+            "title": "iPhone Power Banks",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
@@ -361,7 +387,9 @@
         "collection_NbA4GJ",
         "collection_JPBfnb",
         "collection_xEVyF8",
-        "collection_E76fUC"
+        "collection_E76fUC",
+        "collection_U9ewPF",
+        "collection_WmDJMU"
       ],
       "name": "t:sections.collection-list.name",
       "settings": {
