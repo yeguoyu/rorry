@@ -309,7 +309,7 @@
             "overlay_content": false,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_NbA4GJ": {
