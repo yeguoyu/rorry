@@ -1637,6 +1637,128 @@
         "mob_card_desc_size": 12
       }
     },
+    "multicolumn_Ff9R7y": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_4LBmyn": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/New-Registration-Offers.jpg",
+            "image_ratio": "adapt",
+            "heading": "Welcome Gift",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Sign up now to get <strong>25% OFF</strong> your first order.</p>",
+            "button_label": "",
+            "button_link": "https://rorry.com/customer_authentication/redirect?locale=en&region_country=US",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_yPEyhT": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Wholesale.jpg",
+            "image_ratio": "adapt",
+            "heading": "Corporate & Custom Logo",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Save up to <strong>50%</strong> on bulk orders.</p>",
+            "button_label": "",
+            "button_link": "shopify://collections/custom-logo-power-banks-wholesale",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_QhxqKL": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Affiliate-Program.jpg",
+            "image_ratio": "adapt",
+            "heading": "Referral Program",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Earn <strong>10% Commission</strong>, Give Friends <strong>10% Off</strong></p>",
+            "button_label": "",
+            "button_link": "https://rorry.goaffpro.com/",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_7MtTJ7": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image_ratio": "adapt",
+            "heading": "Example title",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_4LBmyn",
+        "column_yPEyhT",
+        "column_QhxqKL",
+        "column_7MtTJ7"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Multicolumn",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#9887B8",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
     "blog_posts_GgU9iL": {
       "type": "blog-posts",
       "name": "Blog posts",
@@ -1699,6 +1821,7 @@
     "logo_list_APpgqX",
     "slideshow_8PA94c",
     "zl_pick_features_Na6Xba",
+    "multicolumn_Ff9R7y",
     "blog_posts_GgU9iL"
   ]
 }
