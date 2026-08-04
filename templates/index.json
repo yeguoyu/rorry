@@ -1699,17 +1699,38 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "column_CrrMmt": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "image": "shopify://shop_images/Weekly-Deal.jpg",
+            "image_ratio": "adapt",
+            "heading": "Weekly Deals",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Limited-time prices on top-rated essentials. Updated weekly!</p>",
+            "button_label": "",
+            "button_link": "shopify://collections/weekly-specials",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
         "column_4LBmyn",
         "column_yPEyhT",
-        "column_QhxqKL"
+        "column_QhxqKL",
+        "column_CrrMmt"
       ],
       "name": "t:sections.multicolumn.name",
       "settings": {
         "gap": "large",
-        "columns": 3,
+        "columns": 4,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "heading": "More Exclusive Offers",
@@ -1724,13 +1745,13 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
-        "color_button_background": "#9887B8",
+        "color_button_background": "#9887b8",
         "color_button_gradient": "",
         "padding_top": 40,
         "padding_bottom": 40,
