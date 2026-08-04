@@ -1699,32 +1699,12 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
-        },
-        "column_7MtTJ7": {
-          "type": "column",
-          "settings": {
-            "show_border": false,
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "image_ratio": "adapt",
-            "heading": "Example title",
-            "heading_size": "text-lg-2xl",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
         }
       },
       "block_order": [
         "column_4LBmyn",
         "column_yPEyhT",
-        "column_QhxqKL",
-        "column_7MtTJ7"
+        "column_QhxqKL"
       ],
       "name": "t:sections.multicolumn.name",
       "settings": {
@@ -1732,7 +1712,7 @@
         "columns": 3,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "heading": "Multicolumn",
+        "heading": "More Exclusive Offers",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -1744,7 +1724,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
