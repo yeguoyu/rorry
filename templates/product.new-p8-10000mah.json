@@ -371,6 +371,7 @@
     },
     "lookbook_WDC68U": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_3.jpg",
@@ -407,6 +408,7 @@
     },
     "lookbook_UpwtHB": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_4.jpg",
@@ -443,6 +445,7 @@
     },
     "lookbook_qWXcHK": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_5.jpg",
@@ -479,6 +482,7 @@
     },
     "lookbook_3xRAmb": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_6.jpg",
@@ -515,6 +519,7 @@
     },
     "lookbook_bFpFjj": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_7.jpg",
@@ -551,6 +556,7 @@
     },
     "lookbook_NtqVnQ": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_8.jpg",
@@ -587,6 +593,7 @@
     },
     "lookbook_byYLft": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_9.jpg",
@@ -623,6 +630,7 @@
     },
     "lookbook_BzXXPK": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_10.jpg",
@@ -659,6 +667,7 @@
     },
     "lookbook_BdFrij": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_11.jpg",
@@ -695,6 +704,7 @@
     },
     "lookbook_GKC8hn": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/P1-10000-DETAIL-PC_12.jpg",
@@ -739,7 +749,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "P1",
+            "details": "P2",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -778,7 +788,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "203g",
+            "details": "220g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -799,6 +809,7 @@
         },
         "item_block_F88Hib": {
           "type": "item_block",
+          "disabled": true,
           "settings": {
             "title": "Compatibility",
             "title_color": "",
@@ -921,6 +932,7 @@
         "tab_content_pBWhpp",
         "tab_content_yFJgQL"
       ],
+      "disabled": true,
       "name": "product faq",
       "settings": {
         "sectionname": "FAQ & Review",
