@@ -35,7 +35,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<h1>Our Story: Empowering Women with Power in Style</h1>",
+            "text": "<h1><strong>Our Story: Empowering Women with Power in Style</strong></h1>",
             "text_font": "body",
             "text_size": "subtext-sm",
             "text_max_size": 32,
