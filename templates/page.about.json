@@ -153,10 +153,28 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 100,
+        "padding_bottom": 40,
         "divider": false,
         "narrow": false,
         "rounded": true
+      }
+    },
+    "custom_liquid_NpktB6": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": {
+        "liquid": "<iframe allowfullscreen=\"\" allow=\"autoplay; fullscreen; clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 400px;\" src=\"https://heyzine.com/flip-book/7c1dc8446b.html\"></iframe>",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
       }
     },
     "images-with-text": {
@@ -982,6 +1000,7 @@
     "main",
     "image-with-text-overlay",
     "rich_text_Ym7dcr",
+    "custom_liquid_NpktB6",
     "images-with-text",
     "images_with_text_NLzAeJ",
     "multicolumn_QbHcA9",
