@@ -338,6 +338,19 @@
             "overlay_opacity": 0
           }
         },
+        "collection_WmDJMU": {
+          "type": "collection",
+          "settings": {
+            "collection": "iphone-power-banks",
+            "image": "shopify://shop_images/iPhone-Power-Banks_710d097a-945d-4cda-b4f4-5096e4f80e80.jpg",
+            "title": "For iPhone",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#9887b8",
+            "color_overlay": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "collection_xEVyF8": {
           "type": "collection",
           "settings": {
@@ -376,29 +389,16 @@
             "color_overlay": "#000000",
             "overlay_opacity": 0
           }
-        },
-        "collection_WmDJMU": {
-          "type": "collection",
-          "settings": {
-            "collection": "iphone-power-banks",
-            "image": "shopify://shop_images/iPhone-Power-Banks_710d097a-945d-4cda-b4f4-5096e4f80e80.jpg",
-            "title": "For iPhone",
-            "description": "",
-            "overlay_content": false,
-            "color_text": "#9887b8",
-            "color_overlay": "#000000",
-            "overlay_opacity": 0
-          }
         }
       },
       "block_order": [
         "collection_PzJXtW",
         "collection_NbA4GJ",
         "collection_JPBfnb",
+        "collection_WmDJMU",
         "collection_xEVyF8",
         "collection_E76fUC",
-        "collection_U9ewPF",
-        "collection_WmDJMU"
+        "collection_U9ewPF"
       ],
       "name": "t:sections.collection-list.name",
       "settings": {
