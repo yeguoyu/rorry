@@ -161,6 +161,7 @@
     },
     "custom_liquid_NpktB6": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.name",
       "settings": {
         "liquid": "<iframe allowfullscreen=\"\" allow=\"autoplay; fullscreen; clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 400px;\" src=\"https://heyzine.com/flip-book/7c1dc8446b.html\"></iframe>",
