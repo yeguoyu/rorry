@@ -1,0 +1,556 @@
+{%- comment -%}
+  Snippet: yh-article-product-card.liquid
+  Description: Embedded product recommendation card for blog articles
+  Usage: {% render 'yh-article-product-card', prod: product %}
+
+  Product metafields:
+  - custom.card_description (Rich text) — description paragraph(s) below price
+  - custom.selling_points (List of single line text) — tag-style bullet points
+{%- endcomment -%}
+{%- if prod != blank -%}
+  <style>
+    .blog-embedded-card {
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      flex-direction: column;
+      background: #f8f9fa;
+      border: 1px solid #eaeaea;
+      border-radius: 16px;
+      overflow: hidden;
+      margin: 40px auto;
+      width: 100%;
+      max-width: 840px;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      text-decoration: none !important;
+      color: inherit;
+    }
+
+    .blog-embedded-card:hover {
+      box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.08);
+      border-color: #dcdcdc;
+    }
+
+    .blog-embedded-card .card-media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 100%;
+      background: #ffffff;
+      background-color: #ffffff;
+      position: relative;
+      z-index: 2;
+    }
+
+    .rte .blog-embedded-card a.card-image-link,
+    .rte .blog-embedded-card a.card-image-link:hover,
+    .blog-embedded-card a.card-image-link,
+    .blog-embedded-card a.card-image-link:hover {
+      display: block !important;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      text-decoration: none !important;
+      text-decoration-line: none !important;
+      background: transparent !important;
+      background-color: transparent !important;
+      background-image: none !important;
+      background-size: auto !important;
+      box-shadow: none !important;
+      -webkit-text-fill-color: inherit !important;
+    }
+
+    .blog-embedded-card .card-image-wrapper {
+      background-color: #ffffff;
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      padding: 22px;
+      box-sizing: border-box;
+    }
+
+    .blog-embedded-card .card-image-link:hover .card-image-wrapper img {
+      transform: scale(1.03);
+    }
+
+    .rte .blog-embedded-card .card-image-wrapper img,
+    .blog-embedded-card .card-image-wrapper img,
+    .blog-embedded-card img.card-image {
+      position: absolute !important;
+      inset: 22px !important;
+      top: 22px !important;
+      left: 22px !important;
+      right: 22px !important;
+      bottom: 22px !important;
+      width: calc(100% - 44px) !important;
+      height: calc(100% - 44px) !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      max-width: none !important;
+      border-radius: 12px !important;
+      box-sizing: border-box !important;
+      transition: transform 0.5s ease;
+    }
+
+    .blog-embedded-card:hover .card-image-wrapper img {
+      transform: none;
+    }
+
+    .blog-embedded-card .card-content {
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+      text-align: left;
+      position: relative;
+      z-index: 2;
+    }
+
+    .blog-embedded-card .card-title {
+      font-size: 19px !important;
+      font-weight: 700 !important;
+      margin: 0 0 10px 0;
+      line-height: 1.3 !important;
+      letter-spacing: -0.2px !important;
+    }
+
+    .rte .blog-embedded-card a.card-title-link,
+    .rte .blog-embedded-card a.card-title-link:hover,
+    .blog-embedded-card a.card-title-link,
+    .blog-embedded-card a.card-title-link:hover {
+      color: #111111 !important;
+      -webkit-text-fill-color: #111111 !important;
+      text-decoration: none !important;
+      text-decoration-line: none !important;
+      background: transparent !important;
+      background-color: transparent !important;
+      background-image: none !important;
+      background-size: auto !important;
+      box-shadow: none !important;
+      -webkit-background-clip: border-box !important;
+      background-clip: border-box !important;
+      position: relative;
+      z-index: 2;
+      transition: color 0.2s ease;
+    }
+
+    .rte .blog-embedded-card a.card-title-link:hover,
+    .blog-embedded-card a.card-title-link:hover {
+      color: #333333 !important;
+      -webkit-text-fill-color: #333333 !important;
+    }
+
+    .rte .blog-embedded-card a.card-stretched-link,
+    .rte .blog-embedded-card a.card-stretched-link:hover,
+    .blog-embedded-card a.card-stretched-link {
+      background: transparent !important;
+      background-image: none !important;
+      background-size: auto !important;
+      text-decoration: none !important;
+      text-decoration-line: none !important;
+      box-shadow: none !important;
+    }
+
+    .blog-embedded-card .card-price-row {
+      margin-bottom: 14px;
+      font-size: 16px;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .blog-embedded-card .price-regular {
+      font-weight: 800;
+      color: #111111;
+      -webkit-text-fill-color: #111111;
+      font-size: 20px;
+    }
+
+    .blog-embedded-card .price-compare {
+      text-decoration: line-through;
+      color: #888888;
+      -webkit-text-fill-color: #888888;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .blog-embedded-card .card-description,
+    .blog-embedded-card .card-description.rte {
+      font-size: 14px;
+      color: #555555 !important;
+      -webkit-text-fill-color: #555555 !important;
+      margin: 0 0 16px;
+      line-height: 1.6;
+      font-weight: 500;
+      background: transparent !important;
+      background-image: none !important;
+      -webkit-background-clip: border-box !important;
+      background-clip: border-box !important;
+    }
+
+    .blog-embedded-card .card-description *,
+    .blog-embedded-card .card-description.rte * {
+      color: #555555 !important;
+      -webkit-text-fill-color: #555555 !important;
+      background: transparent !important;
+      background-image: none !important;
+    }
+
+    .blog-embedded-card .card-description p {
+      margin: 0 0 10px 0;
+    }
+
+    .blog-embedded-card .card-description p:last-child {
+      margin-bottom: 0;
+    }
+
+    .blog-embedded-card .card-selling-points-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .blog-embedded-card .selling-point-tag {
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      padding: 9px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: #333333;
+      -webkit-text-fill-color: #333333;
+      font-weight: 500;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.35;
+      overflow-wrap: break-word;
+      word-break: normal;
+      hyphens: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      flex: 1 1 calc(50% - 4px);
+      min-width: calc(50% - 4px);
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .blog-embedded-card .card-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: stretch;
+      gap: 10px;
+      width: 100%;
+      margin-top: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .blog-embedded-card .card-btn-form {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .rte .blog-embedded-card .card-btn,
+    .rte a.blog-embedded-card .card-btn,
+    .blog-embedded-card a.card-btn,
+    .blog-embedded-card button.card-btn {
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box;
+      padding: 13px 16px !important;
+      border-radius: 8px !important;
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      font-family: inherit;
+      letter-spacing: 0.3px;
+      text-align: center;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+      text-decoration: none !important;
+      position: relative;
+      z-index: 2;
+      -webkit-background-clip: border-box !important;
+      background-clip: border-box !important;
+      cursor: pointer;
+      line-height: 1.4;
+      background-image: none !important;
+    }
+
+    .rte .blog-embedded-card .card-btn--view,
+    .blog-embedded-card a.card-btn--view {
+      background: #111111 !important;
+      background-color: #111111 !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      border: 1px solid #111111 !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .rte .blog-embedded-card .card-btn--view:hover,
+    .blog-embedded-card a.card-btn--view:hover {
+      background: #333333 !important;
+      background-color: #333333 !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      border-color: #333333 !important;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      text-decoration: none !important;
+    }
+
+    .rte .blog-embedded-card .card-btn--cart,
+    .blog-embedded-card button.card-btn--cart {
+      background: #ffffff !important;
+      background-color: #ffffff !important;
+      color: #111111 !important;
+      -webkit-text-fill-color: #111111 !important;
+      border: 1px solid #111111 !important;
+      box-shadow: none;
+    }
+
+    .rte .blog-embedded-card .card-btn--cart:hover:not(:disabled),
+    .blog-embedded-card button.card-btn--cart:hover:not(:disabled) {
+      background: #111111 !important;
+      background-color: #111111 !important;
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+      border-color: #111111 !important;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      text-decoration: none !important;
+    }
+
+    .blog-embedded-card button.card-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    .blog-embedded-card .card-stretched-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    @media (min-width: 1024px) {
+      .blog-embedded-card {
+        flex-direction: row;
+        align-items: stretch;
+      }
+
+      .blog-embedded-card .card-media {
+        width: 260px;
+        flex: 0 0 260px;
+        align-self: stretch;
+        min-height: 100%;
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+      }
+
+      .blog-embedded-card .card-image-wrapper {
+        width: 260px;
+        height: 260px;
+        min-height: 0;
+        max-height: 260px;
+        aspect-ratio: 1 / 1;
+        flex-shrink: 0;
+        background-color: #ffffff;
+        padding: 16px;
+      }
+
+      .rte .blog-embedded-card .card-image-wrapper img,
+      .blog-embedded-card .card-image-wrapper img,
+      .blog-embedded-card img.card-image {
+        inset: 16px !important;
+        top: 16px !important;
+        left: 16px !important;
+        right: 16px !important;
+        bottom: 16px !important;
+        width: calc(100% - 32px) !important;
+        height: calc(100% - 32px) !important;
+      }
+
+      .blog-embedded-card .card-content {
+        flex: 1;
+        min-width: 0;
+        padding: 32px 36px;
+      }
+
+      .blog-embedded-card .card-actions {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .blog-embedded-card .selling-point-tag {
+        flex: 1 1 calc(25% - 6px);
+        min-width: calc(25% - 6px);
+        max-width: calc(50% - 4px);
+        font-size: 12px;
+        padding: 9px 12px;
+      }
+
+      .blog-embedded-card .card-selling-points-grid--cols-3 .selling-point-tag {
+        flex: 1 1 calc(33.333% - 6px);
+        min-width: calc(33.333% - 6px);
+        max-width: calc(33.333% - 6px);
+      }
+    }
+
+    .rte div[class*="ace-line"]:empty,
+    .rte p:empty,
+    .rte h1:empty,
+    .rte h2:empty,
+    .rte h3:empty,
+    .rte h4:empty,
+    .rte h5:empty,
+    .rte h6:empty {
+      display: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  </style>
+
+  <div class="blog-embedded-card">
+    <a href="{{ prod.url }}" class="card-stretched-link" aria-hidden="true" tabindex="-1"></a>
+
+    <div class="card-media">
+      <a href="{{ prod.url }}" class="card-image-link" aria-label="{{ prod.title | escape }}">
+        <div class="card-image-wrapper">
+          {%- if prod.featured_image != blank -%}
+            <img
+              class="card-image"
+              src="{{ prod.featured_image | image_url: width: 600, height: 600, crop: 'center' }}"
+              alt="{{ prod.featured_image.alt | default: prod.title | escape }}"
+              loading="lazy"
+              width="600"
+              height="600"
+            >
+          {%- else -%}
+            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+      </a>
+    </div>
+
+    <div class="card-content">
+      <h3 class="card-title">
+        <a href="{{ prod.url }}" class="card-title-link">{{ prod.title | escape }}</a>
+      </h3>
+
+      <div class="card-price-row">
+        {%- if prod.compare_at_price > prod.price -%}
+          <span class="price-regular" style="color: #e53e3e; -webkit-text-fill-color: #e53e3e;">{{ prod.price | money }}</span>
+          <span class="price-compare">{{ prod.compare_at_price | money }}</span>
+        {%- else -%}
+          <span class="price-regular">{{ prod.price | money }}</span>
+        {%- endif -%}
+      </div>
+
+      {%- assign card_description = prod.metafields.custom.card_description -%}
+      {%- if card_description != blank -%}
+        <div class="card-description rte">
+          {{ card_description | metafield_tag }}
+        </div>
+      {%- endif -%}
+
+      {%- assign selling_points = prod.metafields.custom.selling_points.value -%}
+      {%- if selling_points != blank -%}
+        <div class="card-selling-points-grid" data-yh-selling-points>
+          {%- for point in selling_points -%}
+            {%- assign clean_point = point | strip -%}
+            {%- if clean_point != blank -%}
+              <span class="selling-point-tag">{{ clean_point | escape }}</span>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        <script>
+          (function () {
+            if (window.__yhArticleSellingPointsInit) return;
+            window.__yhArticleSellingPointsInit = true;
+
+            function lineCount(tag) {
+              var style = window.getComputedStyle(tag);
+              var lineHeight = parseFloat(style.lineHeight);
+              if (!lineHeight || isNaN(lineHeight)) {
+                lineHeight = parseFloat(style.fontSize) * 1.35;
+              }
+              var paddingY = (parseFloat(style.paddingTop) || 0) + (parseFloat(style.paddingBottom) || 0);
+              var contentHeight = tag.clientHeight - paddingY;
+              return Math.round(contentHeight / lineHeight);
+            }
+
+            function adjustGrid(grid) {
+              if (!grid) return;
+              if (!window.matchMedia('(min-width: 1024px)').matches) {
+                grid.classList.remove('card-selling-points-grid--cols-3');
+                return;
+              }
+              grid.classList.remove('card-selling-points-grid--cols-3');
+              var tags = grid.querySelectorAll('.selling-point-tag');
+              var needsThree = false;
+              for (var i = 0; i < tags.length; i++) {
+                if (lineCount(tags[i]) >= 4) {
+                  needsThree = true;
+                  break;
+                }
+              }
+              if (needsThree) {
+                grid.classList.add('card-selling-points-grid--cols-3');
+              }
+            }
+
+            function runAll() {
+              document.querySelectorAll('[data-yh-selling-points]').forEach(adjustGrid);
+            }
+
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', runAll);
+            } else {
+              runAll();
+            }
+
+            var resizeTimer;
+            window.addEventListener('resize', function () {
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(runAll, 100);
+            });
+          })();
+        </script>
+      {%- endif -%}
+
+      {%- liquid
+        assign card_variant = prod.selected_or_first_available_variant
+        assign product_form_id = 'yh-article-product-form-' | append: prod.id
+      -%}
+      <div class="card-actions">
+        <a href="{{ prod.url }}" class="card-btn card-btn--view">View Product</a>
+        {%- if card_variant != blank and card_variant.available -%}
+          {%- form 'product', prod, is: 'product-form', id: product_form_id, class: 'card-btn-form' -%}
+            <input type="hidden" name="id" value="{{ card_variant.id }}">
+            <input type="hidden" name="quantity" value="1">
+            <button type="submit" name="add" class="card-btn card-btn--cart">
+              Add to Cart
+            </button>
+          {%- endform -%}
+        {%- else -%}
+          <button type="button" class="card-btn card-btn--cart" disabled>
+            Sold Out
+          </button>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}

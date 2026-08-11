@@ -21,7 +21,7 @@
   <article class="article page-width{% if section.settings.narrow %} page-width--narrow{% endif %} relative zl-blog-all">
     {%- render 'blog-mobile-toc' -%} <div class="zl-blog-cotainer">{%- render 'blog-toc' -%}{%- render 'article-recommended-products' -%}{%- render 'article-related-posts' -%} </div>
     <div class="rte text-base md:text-lg">
-      {{- article.content -}}
+      {%- render 'yh-article-content-with-products' -%}
     </div>
   </article>
 </div>
