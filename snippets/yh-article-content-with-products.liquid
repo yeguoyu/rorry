@@ -1,6 +1,6 @@
 {%- comment -%}
   Description: Replace [product_card1]/[product_card2] placeholders in article content
-  with embedded product recommendation cards.
+  with embedded product recommendation cards. If no product is selected, hide the placeholder.
   Usage: {% render 'yh-article-content-with-products' %}
 
   Article metafields:
@@ -16,24 +16,28 @@
 
 {%- if product1 != blank -%}
   {%- capture snippet1 -%}{% render 'yh-article-product-card', prod: product1 %}{%- endcapture -%}
-  {%- assign content_html = content_html
-    | replace: '<p><span data-type="text">[product_card1]</span></p>', snippet1
-    | replace: '<p><span>[product_card1]</span></p>', snippet1
-    | replace: '<p>[product_card1]</p>', snippet1
-    | replace: '<span>[product_card1]</span>', snippet1
-    | replace: '[product_card1]', snippet1
-  -%}
+{%- else -%}
+  {%- assign snippet1 = '' -%}
 {%- endif -%}
+{%- assign content_html = content_html
+  | replace: '<p><span data-type="text">[product_card1]</span></p>', snippet1
+  | replace: '<p><span>[product_card1]</span></p>', snippet1
+  | replace: '<p>[product_card1]</p>', snippet1
+  | replace: '<span>[product_card1]</span>', snippet1
+  | replace: '[product_card1]', snippet1
+-%}
 
 {%- if product2 != blank -%}
   {%- capture snippet2 -%}{% render 'yh-article-product-card', prod: product2 %}{%- endcapture -%}
-  {%- assign content_html = content_html
-    | replace: '<p><span data-type="text">[product_card2]</span></p>', snippet2
-    | replace: '<p><span>[product_card2]</span></p>', snippet2
-    | replace: '<p>[product_card2]</p>', snippet2
-    | replace: '<span>[product_card2]</span>', snippet2
-    | replace: '[product_card2]', snippet2
-  -%}
+{%- else -%}
+  {%- assign snippet2 = '' -%}
 {%- endif -%}
+{%- assign content_html = content_html
+  | replace: '<p><span data-type="text">[product_card2]</span></p>', snippet2
+  | replace: '<p><span>[product_card2]</span></p>', snippet2
+  | replace: '<p>[product_card2]</p>', snippet2
+  | replace: '<span>[product_card2]</span>', snippet2
+  | replace: '[product_card2]', snippet2
+-%}
 
 {{- content_html -}}
