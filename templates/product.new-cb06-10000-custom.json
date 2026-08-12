@@ -349,8 +349,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_1.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_1.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_1.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -383,6 +383,7 @@
     },
     "lookbook_KwLN4H": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/CB0610000mAhPortableCharger_ACWallPlug22.5W_CustomLogo.jpg",
@@ -421,8 +422,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_2.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_2.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_2.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_2.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -457,8 +458,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_3.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_3.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_3.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_3.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -493,8 +494,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_4.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_4.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_4.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_4.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -529,8 +530,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_5.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_5.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_5.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_5.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -565,8 +566,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_6.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_6.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_6.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_6.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -601,8 +602,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_7.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_7.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_7.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_7.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -637,8 +638,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_8.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_8.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_8.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_8.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -673,8 +674,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_9.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_9.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_9.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_9.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
@@ -709,8 +710,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/ORRY_CB06_10000mAh_Custom_Logo-mo_10.jpg",
-        "image_mobile": "shopify://shop_images/ORRY_CB06_10000mAh_Portable_Charger_Custom_Logo-PC_10.jpg",
+        "image": "shopify://shop_images/Custom_logo_RORRY_CB06_10000mAh_Portable_Charger-mo_10.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_CB06_10000mAh_Portable_Charger_custom_logo-mo_10.jpg",
         "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
