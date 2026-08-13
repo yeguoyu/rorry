@@ -251,10 +251,20 @@
         "disabled": false,
         "settings": {}
       },
-      "15106866019075792560": {
-        "type": "shopify://apps/massy-b2b-wholesale/blocks/massy-app-embed/755249cf-b2d3-401e-a5e9-91307113bce4",
+      "9006113050185959841": {
+        "type": "shopify://apps/wi2b-b2b-wholesale-pricing/blocks/wi-b2b/019edf04-b432-70e8-9961-43b0cc6733fe",
         "disabled": false,
-        "settings": {}
+        "settings": {
+          "enable_registration": true,
+          "enable_quick_order_form": true,
+          "enable_offer_pricing": true,
+          "enable_hide_product": false,
+          "enable_hide_price": false,
+          "product_card_selector": "",
+          "price_selector": "",
+          "exclude_price_selector": "",
+          "product_info_selector": ""
+        }
       }
     }
   },
