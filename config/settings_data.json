@@ -261,7 +261,7 @@
           "enable_hide_product": false,
           "enable_hide_price": false,
           "product_card_selector": "",
-          "price_selector": ".price",
+          "price_selector": ".price-item--sale",
           "exclude_price_selector": "",
           "product_info_selector": ""
         }
