@@ -140,10 +140,9 @@
         },
         "badges_8dEdrC": {
           "type": "badges",
-          "disabled": true,
           "settings": {
             "show_sold_out": false,
-            "show_save_amount": true,
+            "show_save_amount": false,
             "save_type": "percent"
           }
         },
