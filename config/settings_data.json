@@ -618,9 +618,10 @@
       "product-info.product__info > * {flex: 0 0 100%; min-width: 0;}",
       "product-info.product__info > .product__price {flex: 0 0 auto !important; width: auto !important; margin-right: 12px;}",
       "product-info.product__info > shopify-block:has(.jdgm-prev-badge) {flex: 0 0 auto !important; width: auto !important; align-self: center;}",
-      "/* 1. 让文件上传框独占整行，不再与加购按钮并排 */.product-form__input--file, [class*=\"upload-logo\"], div[class*=\"file-upload\"] {width: 100% !important; flex: 0 0 100% !important; margin-bottom: 16px !important; display: block !important;}",
-      "/* 2. 修复数量选择框形态，恢复精美微圆角矩形 */.product-form__quantity, [class*=\"quantity-selector\"] {min-width: 130px !important; max-width: 150px !important; border-radius: 8px !important; height: 48px !important; flex-shrink: 0 !important;}",
-      "/* 3. 规范加购按钮拉伸排版 */.product-form__buttons {flex-wrap: wrap !important; gap: 12px !important;}"
+      "/* 1. 将包含它们的容器设置为弹性盒列向布局 */.product-form__buttons,[class*=\"buy-buttons\"],[class*=\"product-form\"] {display: flex !important; flex-direction: column !important;}",
+      "/* 2. 把 Upload Logo 设为最先展示（排在第一位） */.product-form__input--file, [class*=\"upload-logo\"], [class*=\"file-upload\"] {order: 1 !important; width: 100% !important; margin-bottom: 16px !important;}",
+      "/* 3. 把 阶梯价格表 设为排在第二位 */[class*=\"tiered-price\"],[class*=\"quantity-break\"],[class*=\"volume-discount\"],table {order: 2 !important; margin-bottom: 16px !important;}",
+      "/* 4. 把 数量框 + 加购按钮 设为排在第三位 */.product-form__quantity,[class*=\"quantity-selector\"],.product-form__buttons > button,[class*=\"add-to-cart\"] {order: 3 !important;}"
     ]
   }
 }
