@@ -237,8 +237,6 @@
           "background_color": "#ffffff",
           "font_color": "#171717",
           "button_color": "#9887b8",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#46356b",
           "button_icon": "chat_bubble",
           "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
@@ -250,6 +248,11 @@
       },
       "2567389343055140935": {
         "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      },
+      "15106866019075792560": {
+        "type": "shopify://apps/massy-b2b-wholesale/blocks/massy-app-embed/755249cf-b2d3-401e-a5e9-91307113bce4",
         "disabled": false,
         "settings": {}
       }
