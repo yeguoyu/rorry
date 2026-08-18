@@ -46,23 +46,16 @@
     endif
 
     assign show_price = block.settings.show_price
-    assign product_form_class = 'product-form grid gap-8'
-    if product.template_suffix == 'new-t1-5000-1'
-      assign product_form_class = product_form_class | append: ' product-form--logo-layout'
-    endif
   -%}
   {%- form 'product',
     product,
     id: product_form_id,
     data-type: 'add-to-cart-form',
     data-hide-errors: gift_card_recipient_feature_active,
-    class: product_form_class,
+    class: 'product-form grid gap-8',
     is: 'product-form'
   -%}
     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled />
-    {%- if product.template_suffix == 'new-t1-5000-1' -%}
-      <div class="product-logo-upload" data-logo-upload-slot></div>
-    {%- endif -%}
 
     {%- liquid
       if gift_card_recipient_feature_active
@@ -343,148 +336,6 @@
     </div>
   {%- endform -%}
 
-  {%- if product.template_suffix == 'new-t1-5000-1' -%}
-  <script>
-    (function () {
-      var form = document.getElementById({{ product_form_id | json }});
-      if (!form) return;
-
-      var root =
-        form.closest('.shopify-section') ||
-        form.closest('product-info') ||
-        form.closest('.product__info') ||
-        form.parentElement ||
-        form;
-
-      function looksLikePriceTable(text) {
-        if (!text || text.length > 2500) return false;
-        return /unit\s*price/i.test(text) && /discount/i.test(text) && /quantity/i.test(text);
-      }
-
-      function isUnsafe(el) {
-        return !el || el === form || el === root || el.matches(
-          'form, product-form, product-info, .shopify-section, .product-form, .product-form__buttons, .buy-buttons, .product-form-wrapper, .product__info'
-        );
-      }
-
-      function collectUpload(input) {
-        var parent = input.parentElement;
-        if (parent && !isUnsafe(parent) && parent.children.length <= 6) {
-          if (!parent.classList.contains('product-logo-upload')) parent.classList.add('product-logo-upload');
-          return parent;
-        }
-
-        var wrap = document.createElement('div');
-        wrap.className = 'product-logo-upload';
-        var label = null;
-        if (input.id) {
-          try { label = root.querySelector('label[for="' + input.id.replace(/"/g, '') + '"]'); } catch (e) {}
-        }
-        if (!label && input.previousElementSibling && input.previousElementSibling.tagName === 'LABEL') {
-          label = input.previousElementSibling;
-        }
-        if (label && !isUnsafe(label)) wrap.appendChild(label);
-        wrap.appendChild(input);
-        return wrap;
-      }
-
-      function findPriceTable() {
-        var nodes = root.querySelectorAll('table, .shopify-app-block, .shopify-block, [role="table"]');
-        var i;
-        for (i = 0; i < nodes.length; i++) {
-          if (looksLikePriceTable(nodes[i].textContent || '')) return nodes[i];
-        }
-
-        var tables = root.getElementsByTagName('table');
-        for (i = 0; i < tables.length; i++) {
-          if (looksLikePriceTable(tables[i].textContent || '')) return tables[i];
-        }
-
-        var all = root.querySelectorAll('div, section, aside');
-        var best = null;
-        var bestLen = Infinity;
-        for (i = 0; i < all.length; i++) {
-          var node = all[i];
-          if (isUnsafe(node) || node.querySelector('.buy-buttons, .product-form__submit')) continue;
-          var t = node.textContent || '';
-          if (looksLikePriceTable(t) && t.length < bestLen) {
-            best = node;
-            bestLen = t.length;
-          }
-        }
-        return best;
-      }
-
-      function tableBlock(table) {
-        var app = table.closest('.shopify-app-block, .shopify-block');
-        if (app && root.contains(app) && app !== root && !isUnsafe(app)) return app;
-
-        var el = table;
-        while (
-          el.parentElement &&
-          el.parentElement !== root &&
-          !isUnsafe(el.parentElement) &&
-          el.parentElement.children.length === 1
-        ) {
-          el = el.parentElement;
-        }
-        return el;
-      }
-
-      function placeBlock(block, table, slot) {
-        if (table) {
-          var target = tableBlock(table);
-          if (block === target || target.contains(block) || block.contains(target)) return;
-          if (block.nextElementSibling === target) return;
-          target.parentNode.insertBefore(block, target);
-          return;
-        }
-
-        var buttons = form.querySelector('.product-form__buttons');
-        if (buttons && !buttons.contains(block)) {
-          buttons.insertBefore(block, buttons.firstChild);
-          return;
-        }
-
-        if (slot && !slot.contains(block)) slot.appendChild(block);
-      }
-
-      function moveUpload() {
-        var inputs = Array.prototype.slice.call(root.querySelectorAll('input[type="file"]'));
-        if (!inputs.length) return;
-
-        var table = findPriceTable();
-        var slot = form.querySelector('[data-logo-upload-slot]');
-
-        inputs.forEach(function (input) {
-          var block = collectUpload(input);
-          placeBlock(block, table, slot);
-          if (form.id && !form.contains(input)) input.setAttribute('form', form.id);
-        });
-      }
-
-      moveUpload();
-      setTimeout(moveUpload, 200);
-      setTimeout(moveUpload, 800);
-      setTimeout(moveUpload, 2000);
-      setTimeout(moveUpload, 4000);
-
-      if (window.MutationObserver) {
-        var running = false;
-        var observer = new MutationObserver(function () {
-          if (running) return;
-          running = true;
-          setTimeout(function () {
-            running = false;
-            moveUpload();
-          }, 120);
-        });
-        observer.observe(root, { childList: true, subtree: true });
-        setTimeout(function () { observer.disconnect(); }, 12000);
-      }
-    })();
-  </script>
-  {%- endif -%}
   {%- if enable_back_in_stock -%}
     <div id="BackInStock-{{ section_id }}-{{ product_id }}">
       {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
