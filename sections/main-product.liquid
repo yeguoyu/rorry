@@ -37,6 +37,87 @@
        .product-form__buttons .flex-wrap {
           flex-wrap: nowrap;
       }
+
+      {%- if product.template_suffix == 'new-t1-5000-1' -%}
+      #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 12px;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__buttons .flex-wrap {
+        flex-wrap: wrap !important;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons {
+        display: contents;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout :has(> input[type="file"]),
+      #shopify-section-{{ section.id }} .product-form--logo-layout label:has(input[type="file"]),
+      #shopify-section-{{ section.id }} .product-form--logo-layout label:has(+ input[type="file"]),
+      #shopify-section-{{ section.id }} .product-form--logo-layout input[type="file"] {
+        flex: 1 0 100%;
+        width: 100%;
+        max-width: 100%;
+        order: -2;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout input[type="file"]::file-selector-button {
+        appearance: none;
+        border: 0;
+        background: #e8e4f2;
+        color: #171717;
+        font: inherit;
+        font-weight: 500;
+        padding: 10px 18px;
+        margin-inline-end: 12px;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout table,
+      #shopify-section-{{ section.id }} .product-form--logo-layout :has(> table),
+      #shopify-section-{{ section.id }} .product-form--logo-layout volume-pricing,
+      #shopify-section-{{ section.id }} .product-form--logo-layout .volume-pricing {
+        flex: 1 0 100%;
+        width: 100%;
+        max-width: 100%;
+        order: -1;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout quantity-input.quantity {
+        flex: 0 0 36%;
+        width: 36%;
+        max-width: 11rem;
+        min-width: 7.25rem;
+        order: 1;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__submit {
+        flex: 1 1 0;
+        min-width: 0;
+        order: 1;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout .shopify-payment-button,
+      #shopify-section-{{ section.id }} .product-form--logo-layout shopify-accelerated-checkout {
+        flex: 1 0 100%;
+        width: 100%;
+        order: 2;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout .quantity__rules,
+      #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__error-message {
+        flex: 1 0 100%;
+        width: 100%;
+      }
+      @media screen and (max-width: 767px) {
+        #shopify-section-{{ section.id }} .product-form--logo-layout input[type="file"]::file-selector-button {
+          width: 100%;
+          margin-inline-end: 0;
+          margin-bottom: 8px;
+          padding: 12px 18px;
+        }
+        #shopify-section-{{ section.id }} .product-form--logo-layout quantity-input.quantity {
+          flex: 0 0 38%;
+          width: 38%;
+          max-width: none;
+        }
+      }
+      {%- endif -%}
         @media screen and (min-width: 1024px) {
           #shopify-section-{{ section.id }} {
             {%- assign media_ratio = section.settings.media_size | divided_by: 50.0 -%}
