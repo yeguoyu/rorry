@@ -11,8 +11,12 @@
     width: 100%;
   }
   #shopify-section-{{ section.id }} .product-card__wholesale-row .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex: 1 1 auto;
     min-width: 0;
+    gap: 2px;
   }
   #shopify-section-{{ section.id }} .product-card__wholesale-row .product__badges,
   #shopify-section-{{ section.id }} .product-card__wholesale-row .unit-price {
