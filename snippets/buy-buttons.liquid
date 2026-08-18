@@ -46,6 +46,10 @@
     endif
 
     assign show_price = block.settings.show_price
+    assign layout_fix_t1 = false
+    if product.template_suffix == 'new-t1-5000-1'
+      assign layout_fix_t1 = true
+    endif
   -%}
   {%- form 'product',
     product,
@@ -56,6 +60,9 @@
     is: 'product-form'
   -%}
     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled />
+    {%- if layout_fix_t1 -%}
+      <div class="product-logo-upload" data-logo-upload-slot hidden></div>
+    {%- endif -%}
 
     {%- liquid
       if gift_card_recipient_feature_active
@@ -71,10 +78,10 @@
       endif
     -%}
 
-    <div class="product-form__buttons grid gap-4"{% unless product.quantity_price_breaks_configured? and show_quantity_selector %} id="QuantityForm-{{ section_id }}-{{ product_id }}"{% endunless %}>
+    <div class="product-form__buttons grid gap-4"{% unless layout_fix_t1 == false and product.quantity_price_breaks_configured? and show_quantity_selector %} id="QuantityForm-{{ section_id }}-{{ product_id }}"{% endunless %}>
       <div class="product-form__error-message alert alert--error text-sm font-medium leading-tight" role="alert" hidden></div>
 
-      {%- if product.quantity_price_breaks_configured? and show_quantity_selector -%}
+      {%- if layout_fix_t1 == false and product.quantity_price_breaks_configured? and show_quantity_selector -%}
         <div id="QuantityForm-{{ section_id }}-{{ product_id }}" class="field">
           {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
           <label for="Quantity-{{ section_id }}-{{ product_id }}" class="quantity__label label" is="quantity-label">
@@ -111,82 +118,7 @@
                 {%- render 'icon', icon: 'chevron-right', size: 'sm', class: 'stroke-2 transform' -%}
               </button>
             </quantity-input>
-
-            {%- if product.quantity_price_breaks_configured? -%}
-              {%- liquid
-                assign volume_pricing_array = product.selected_or_first_available_variant.quantity_price_breaks | sort: 'quantity' | reverse
-                assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.min
-                if cart_qty > 0
-                  assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.increment
-                endif
-                assign variant_price_compare = product.selected_or_first_available_variant.compare_at_price
-              -%}
-              <price-per-item
-                id="PricePerItem-{{ section_id }}-{{ product_id }}"
-                class="price flex flex-wrap items-center gap-2 lg:gap-1d5"
-                data-section-id="{{ section_id }}"
-                data-product-id="{{ product_id }}"
-                data-variant-id="{{ product.selected_or_first_available_variant.id }}"
-              >
-                {%- if variant_price_compare -%}
-                  <span class="sr-only">{{ 'products.price.regular_price' | t }}</span>
-                  <span class="price__sale inline-flex items-center h-auto relative">
-                    {%- liquid
-                      if settings.currency_code_enabled
-                        echo variant_price_compare | money_with_currency
-                      else
-                        echo variant_price_compare | money
-                      endif
-                    -%}
-                  </span>
-                  <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
-                {%- endif -%}
-                
-                {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
-                  {%- if current_qty_for_volume_pricing < volume_pricing_array.last.minimum_quantity -%}
-                    {%- liquid
-                      if settings.currency_code_enabled
-                        assign variant_price = product.selected_or_first_available_variant.price | money_with_currency
-                      else
-                        assign variant_price = product.selected_or_first_available_variant.price | money
-                      endif
-                    -%}
-                    <span class="price-per-item--current price__regular whitespace-nowrap">
-                      {{- 'products.volume_pricing.price_at_each' | t: price: variant_price -}}
-                    </span>
-                  {%- else -%}
-                    {%- for price_break in volume_pricing_array -%}
-                      {%- if current_qty_for_volume_pricing >= price_break.minimum_quantity -%}
-                        {%- liquid
-                          if settings.currency_code_enabled
-                            assign price_break_price = price_break.price | money_with_currency
-                          else
-                            assign price_break_price = price_break.price | money
-                          endif
-                        -%}
-                        <span class="price-per-item--current price__regular whitespace-nowrap">
-                          {{- 'products.volume_pricing.price_at_each' | t: price: price_break_price -}}
-                        </span>
-                        {%- break -%}
-                      {%- endif -%}
-                    {%- endfor -%}
-                  {%- endif -%}
-                {%- else -%}
-                  <span class="price-per-item--current price__regular whitespace-nowrap">
-                    {%- liquid
-                      if settings.currency_code_enabled
-                        assign variant_price = product.selected_or_first_available_variant.price | money_with_currency
-                      else
-                        assign variant_price = product.selected_or_first_available_variant.price | money
-                      endif
-                    -%}
-                    {{- 'products.volume_pricing.price_at_each' | t: price: variant_price -}}
-                  </span>
-                {%- endif -%}
-              </price-per-item>
-            {%- endif -%}
           </div>
-
           {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 or product.selected_or_first_available_variant.quantity_rule.min > 1 or product.selected_or_first_available_variant.quantity_rule.max != null -%}
             <div class="quantity__rules text-sm font-medium leading-tight" id="QuantityRules-{{ section_id }}-{{ product_id }}">
               {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
@@ -208,10 +140,16 @@
           {%- endif -%}
         </div>
       {%- endif -%}
-      <div class="buy-buttons{% if enable_back_in_stock %} back-in-stock{% endif %}{% if product.quantity_price_breaks_configured? != true and show_quantity_selector or show_price %} flex flex-wrap{% else %} grid{% endif %} gap-4">
-        {%- if product.quantity_price_breaks_configured? != true and show_quantity_selector -%}
+
+      <div class="buy-buttons{% if enable_back_in_stock %} back-in-stock{% endif %}{% if layout_fix_t1 %}{% if show_quantity_selector or show_price %} flex flex-wrap{% else %} grid{% endif %}{% elsif product.quantity_price_breaks_configured? != true and show_quantity_selector or show_price %} flex flex-wrap{% else %} grid{% endif %} gap-4">
+        {%- if show_quantity_selector and layout_fix_t1 or show_quantity_selector and product.quantity_price_breaks_configured? != true -%}
           {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
-          <label for="Quantity-{{ section_id }}-{{ product_id }}" class="label sr-only">{{ 'products.quantity.label' | t }}</label>
+          <label for="Quantity-{{ section_id }}-{{ product_id }}" class="label sr-only" is="quantity-label">
+            {{ 'products.quantity.label' | t }}
+            <span id="QuantityRulesCart-{{ section_id }}-{{ product_id }}" class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %} relative">
+              <span class="quantity-cart font-medium">({{ 'products.quantity.in_cart_html' | t: quantity: cart_qty }})</span>
+            </span>
+          </label>
           <quantity-input class="quantity inline-flex shrink-0 relative" data-section-id="{{ section_id }}" data-product-id="{{ product_id }}">
             <button type="button" name="minus" class="quantity__button" aria-label="{{ 'products.quantity.decrease' | t: product: product.title | escape }}">
               {%- render 'icon', icon: 'chevron-left', size: 'sm', class: 'stroke-2 transform' -%}
@@ -295,46 +233,156 @@
           </button>
         {%- endif -%}
 
-        {%- liquid
-          unless product.quantity_price_breaks_configured? != true and show_quantity_selector or show_price
-            if show_dynamic_checkout
-              echo form | payment_button
-            endif
-          endunless
-        -%}
+        {%- unless layout_fix_t1 -%}
+          {%- liquid
+            unless product.quantity_price_breaks_configured? != true and show_quantity_selector or show_price
+              if show_dynamic_checkout
+                echo form | payment_button
+              endif
+            endunless
+          -%}
+        {%- endunless -%}
       </div>
 
-      {%- if product.quantity_price_breaks_configured? != true and show_quantity_selector -%}
-        {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 or product.selected_or_first_available_variant.quantity_rule.min > 1 or product.selected_or_first_available_variant.quantity_rule.max != null -%}
-          <div class="quantity__rules text-sm font-medium leading-tight" id="QuantityRules-{{ section_id }}-{{ product_id }}">
-            {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
-              <span class="divider">
-                {{- 'products.quantity.multiples_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.increment -}}
-              </span>
-            {%- endif -%}
-            {%- if product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
-              <span class="divider">
-                {{- 'products.quantity.minimum_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.min -}}
-              </span>
-            {%- endif -%}
-            {%- if product.selected_or_first_available_variant.quantity_rule.max != null -%}
-              <span class="divider">
-                {{- 'products.quantity.maximum_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.max -}}
-              </span>
-            {%- endif -%}
-          </div>
+      {%- if show_quantity_selector -%}
+        {%- if layout_fix_t1 or product.quantity_price_breaks_configured? != true -%}
+          {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 or product.selected_or_first_available_variant.quantity_rule.min > 1 or product.selected_or_first_available_variant.quantity_rule.max != null -%}
+            <div class="quantity__rules text-sm font-medium leading-tight" id="QuantityRules-{{ section_id }}-{{ product_id }}">
+              {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
+                <span class="divider">
+                  {{- 'products.quantity.multiples_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.increment -}}
+                </span>
+              {%- endif -%}
+              {%- if product.selected_or_first_available_variant.quantity_rule.min > 1 -%}
+                <span class="divider">
+                  {{- 'products.quantity.minimum_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.min -}}
+                </span>
+              {%- endif -%}
+              {%- if product.selected_or_first_available_variant.quantity_rule.max != null -%}
+                <span class="divider">
+                  {{- 'products.quantity.maximum_of' | t: quantity: product.selected_or_first_available_variant.quantity_rule.max -}}
+                </span>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
         {%- endif -%}
       {%- endif -%}
 
-      {%- liquid
-        if product.quantity_price_breaks_configured? != true and show_quantity_selector or show_price
-          if show_dynamic_checkout
-            echo form | payment_button
+      {%- if layout_fix_t1 -%}
+        {%- if show_dynamic_checkout -%}
+          {{ form | payment_button }}
+        {%- endif -%}
+      {%- else -%}
+        {%- liquid
+          if product.quantity_price_breaks_configured? != true and show_quantity_selector or show_price
+            if show_dynamic_checkout
+              echo form | payment_button
+            endif
           endif
-        endif
-      -%}
+        -%}
+      {%- endif -%}
     </div>
   {%- endform -%}
+
+  {%- if layout_fix_t1 -%}
+  <script>
+    (function () {
+      var form = document.getElementById({{ product_form_id | json }});
+      if (!form) return;
+
+      function isProtected(el) {
+        return !el || el === form || el.matches('form, .product-form, .product-form__buttons, .buy-buttons, .product-form-wrapper, product-form');
+      }
+
+      function fieldFromFile(input) {
+        var label = input.closest('label');
+        if (label && !isProtected(label)) return label;
+
+        var field = input.closest('p, .line-item-property__field, [class*="customiz"]');
+        if (field && !isProtected(field)) return field;
+
+        var parent = input.parentElement;
+        if (parent && !isProtected(parent) && parent.children.length <= 4) return parent;
+        return input;
+      }
+
+      function collectFileField(input) {
+        var field = fieldFromFile(input);
+        if (field === input) {
+          var wrap = document.createElement('div');
+          var id = input.id;
+          var label = null;
+          if (id) {
+            try {
+              label = form.querySelector('label[for="' + id.replace(/"/g, '') + '"]');
+            } catch (e) {}
+          }
+          if (!label && input.previousElementSibling && input.previousElementSibling.tagName === 'LABEL') {
+            label = input.previousElementSibling;
+          }
+          if (label && !isProtected(label)) wrap.appendChild(label);
+          wrap.appendChild(input);
+          return wrap;
+        }
+        return field;
+      }
+
+      function layoutProductForm() {
+        var slot = form.querySelector('[data-logo-upload-slot]');
+        if (!slot) return;
+
+        var fileInputs = Array.prototype.slice.call(form.querySelectorAll('input[type="file"]')).filter(function (input) {
+          return !slot.contains(input);
+        });
+
+        fileInputs.forEach(function (input) {
+          slot.appendChild(collectFileField(input));
+        });
+
+        if (slot.childElementCount) slot.hidden = false;
+
+        var buttonsWrap = form.querySelector('.product-form__buttons');
+        var buyButtons = form.querySelector('.buy-buttons');
+        var table = form.querySelector('table, volume-pricing, .volume-pricing');
+
+        if (buyButtons) {
+          Array.prototype.slice.call(buyButtons.children).forEach(function (child) {
+            if (child.matches('table, volume-pricing, .volume-pricing') || (child.querySelector && child.querySelector('table'))) {
+              if (buttonsWrap) buttonsWrap.insertBefore(child, buyButtons);
+            }
+          });
+          table = form.querySelector('table, volume-pricing, .volume-pricing');
+        }
+
+        if (table && slot.compareDocumentPosition(table) & Node.DOCUMENT_POSITION_PRECEDING) {
+          table.parentNode.insertBefore(slot, table);
+        } else if (buttonsWrap && slot.parentNode !== buttonsWrap.parentNode) {
+          buttonsWrap.parentNode.insertBefore(slot, buttonsWrap);
+        }
+      }
+
+      layoutProductForm();
+
+      if (window.MutationObserver) {
+        var scheduled = false;
+        var observer = new MutationObserver(function () {
+          if (scheduled) return;
+          scheduled = true;
+          setTimeout(function () {
+            scheduled = false;
+            var slot = form.querySelector('[data-logo-upload-slot]');
+            var strayFile = Array.prototype.slice.call(form.querySelectorAll('input[type="file"]')).some(function (input) {
+              return slot && !slot.contains(input);
+            });
+            if (strayFile) layoutProductForm();
+          }, 50);
+        });
+        observer.observe(form, { childList: true, subtree: true });
+        setTimeout(function () { observer.disconnect(); }, 5000);
+      }
+    })();
+  </script>
+  {%- endif -%}
 
   {%- if enable_back_in_stock -%}
     <div id="BackInStock-{{ section_id }}-{{ product_id }}">
