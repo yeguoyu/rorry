@@ -9,6 +9,7 @@
   @param {boolean} [placeholder] - Display placeholder $19.99 price
   @param {boolean} [hide_unit_price] - Hide unit price information
   @param {boolean} [skip_to_price] - Skip quantity break considerations
+  @param {boolean} [wholesale_align] - Stack prices with aligned amounts for wholesale cards
   @param {string} [class] - Additional CSS classes
 
   @example
@@ -35,18 +36,74 @@
   if compare_at_price > price
     assign on_sale = true
   endif
+
+  if wholesale_align
+    assign wholesale_show_from = false
+    assign wholesale_price_display = ''
+
+    if product.quantity_price_breaks_configured? != true or skip_to_price
+      if target == product and product.price_varies
+        assign wholesale_show_from = true
+        if settings.currency_code_enabled
+          assign wholesale_price_display = product.price_min | money_with_currency
+        else
+          assign wholesale_price_display = product.price_min | money
+        endif
+      else
+        if settings.currency_code_enabled
+          assign wholesale_price_display = price | money_with_currency
+        else
+          assign wholesale_price_display = price | money
+        endif
+      endif
+    else
+      assign wholesale_show_from = true
+      if settings.currency_code_enabled
+        assign wholesale_price_display = product.price_min | money_with_currency
+      else
+        assign wholesale_price_display = product.price_min | money
+      endif
+    endif
+  endif
 -%}
 
 <div class="price
   {%- if on_sale %} price--on-sale{% endif -%}
+  {%- if wholesale_align %} price--wholesale-align{% endif -%}
   {%- if class != blank %} {{ class }}{% endif -%}"
 >
-  
-  {%- if on_sale -%}
-    <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
-  {%- endif -%}
+  {%- if wholesale_align -%}
+    {%- if on_sale -%}
+      <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
+    {%- endif -%}
 
-  <span class="price__regular whitespace-nowrap">
+    {%- if wholesale_show_from -%}
+      {%- capture wholesale_from_label -%}{{ 'products.price.from_price_html' | t: price: '__AMT__' }}{%- endcapture -%}
+      <span class="price__from">{{ wholesale_from_label | split: '__AMT__' | first | strip }}</span>
+    {%- endif -%}
+
+    <span class="price__regular price__amount whitespace-nowrap{% unless wholesale_show_from %} price__amount--solo{% endunless %}">
+      {{- wholesale_price_display -}}
+    </span>
+
+    {%- if on_sale -%}
+      <span class="sr-only">{{ 'products.price.regular_price' | t }}</span>
+      <span class="price__sale price__amount inline-flex items-center h-auto relative">
+        {%- liquid
+          if settings.currency_code_enabled
+            echo compare_at_price | money_with_currency
+          else
+            echo compare_at_price | money
+          endif
+        -%}
+      </span>
+    {%- endif -%}
+  {%- else -%}
+    {%- if on_sale -%}
+      <span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
+    {%- endif -%}
+
+    <span class="price__regular whitespace-nowrap">
     {%- liquid
       if product.quantity_price_breaks_configured? != true or skip_to_price
         if target == product and product.price_varies
@@ -85,6 +142,7 @@
         endif
       -%}
     </span>
+  {%- endif -%}
   {%- endif -%}
 
   {%- unless hide_unit_price -%}
