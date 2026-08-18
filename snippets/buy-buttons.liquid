@@ -46,13 +46,17 @@
     endif
 
     assign show_price = block.settings.show_price
+    assign product_form_class = 'product-form grid gap-8'
+    if product.template_suffix == 'new-t1-5000-1'
+      assign product_form_class = product_form_class | append: ' product-form--logo-layout'
+    endif
   -%}
   {%- form 'product',
     product,
     id: product_form_id,
     data-type: 'add-to-cart-form',
     data-hide-errors: gift_card_recipient_feature_active,
-    class: 'product-form grid gap-8',
+    class: product_form_class,
     is: 'product-form'
   -%}
     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled />
@@ -336,6 +340,40 @@
     </div>
   {%- endform -%}
 
+  {%- if product.template_suffix == 'new-t1-5000-1' -%}
+  <script>
+    (function () {
+      var wrapper = document.querySelector('#shopify-section-{{ section.id }} .product-form-wrapper');
+      if (!wrapper) return;
+
+      function moveUpload() {
+        var upload = document.getElementById('photouploadapp');
+        if (!upload) return;
+        if (wrapper.firstElementChild === upload) return;
+        wrapper.insertBefore(upload, wrapper.firstChild);
+      }
+
+      moveUpload();
+      setTimeout(moveUpload, 300);
+      setTimeout(moveUpload, 1000);
+      setTimeout(moveUpload, 3000);
+
+      if (window.MutationObserver) {
+        var running = false;
+        var observer = new MutationObserver(function () {
+          if (running) return;
+          running = true;
+          setTimeout(function () {
+            running = false;
+            moveUpload();
+          }, 80);
+        });
+        observer.observe(wrapper.closest('.shopify-section') || wrapper, { childList: true, subtree: true });
+        setTimeout(function () { observer.disconnect(); }, 10000);
+      }
+    })();
+  </script>
+  {%- endif -%}
   {%- if enable_back_in_stock -%}
     <div id="BackInStock-{{ section_id }}-{{ product_id }}">
       {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
