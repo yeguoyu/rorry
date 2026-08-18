@@ -130,6 +130,10 @@
         "subcollections",
         "promotion"
       ],
+      "custom_css": [
+        "/* 批发应用 wi2b 注入的大号价格（24px）压小 */.product-card__details [class*=\"wi2b-offer-price\"],.product-card__details [class*=\"wi2b-offer-price\"] * {font-size: var(--fluid-sm-to-base, 14px) !important; line-height: 1.3; font-weight: 500;}",
+        ".product-card__moq {flex-shrink: 0; color: #9ca3af; font-size: 13px; white-space: nowrap;}"
+      ],
       "settings": {
         "products_per_page": 12,
         "columns": 4,
