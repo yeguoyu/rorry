@@ -39,77 +39,12 @@
       }
 
       {%- if product.template_suffix == 'new-t1-5000-1' -%}
-      #shopify-section-{{ section.id }} .product-logo-upload:empty {
-        display: none;
-      }
-      #shopify-section-{{ section.id }} .product-logo-upload {
-        width: 100%;
-        margin: 0 0 12px;
-      }
-      #shopify-section-{{ section.id }} .product-logo-upload label,
-      #shopify-section-{{ section.id }} label:has(+ input[type="file"]) {
-        display: block;
-        font-size: 14px;
-        font-weight: 500;
-        margin: 0 0 8px;
-      }
-      #shopify-section-{{ section.id }} input[type="file"] {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-      }
-      #shopify-section-{{ section.id }} input[type="file"]::file-selector-button {
-        appearance: none;
-        border: 0;
-        background: #e8e4f2;
-        color: #171717;
-        font: inherit;
-        font-weight: 500;
-        padding: 10px 18px;
-        margin-inline-end: 12px;
-        border-radius: 12px;
-        cursor: pointer;
-      }
-      #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__buttons .flex-wrap {
-        flex-wrap: wrap !important;
-      }
-      #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        align-items: stretch;
-        gap: 12px;
-      }
-      #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons > *:has(input[type="file"]),
-      #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons > input[type="file"] {
-        flex: 1 0 100%;
-        width: 100%;
-      }
-      #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons quantity-input.quantity {
+      #shopify-section-{{ section.id }} .buy-buttons quantity-input.quantity {
         display: inline-flex !important;
-        flex: 0 0 auto !important;
         width: max-content !important;
         max-width: max-content !important;
-        min-width: 0;
         overflow: hidden;
         box-sizing: border-box;
-        align-self: stretch;
-      }
-      #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons .product-form__submit {
-        flex: 1 1 0;
-        min-width: 0;
-      }
-      #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons .shopify-payment-button,
-      #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons shopify-accelerated-checkout {
-        flex: 1 0 100%;
-        width: 100%;
-      }
-      @media screen and (max-width: 767px) {
-        #shopify-section-{{ section.id }} input[type="file"]::file-selector-button {
-          width: 100%;
-          margin-inline-end: 0;
-          margin-bottom: 8px;
-          padding: 12px 18px;
-        }
       }
       {%- endif -%}
         @media screen and (min-width: 1024px) {
