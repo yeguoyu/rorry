@@ -53,6 +53,12 @@
       assign loading = 'eager'
       assign lazyimage = null
     endunless
+
+    assign wholesale_moq = product.selected_or_first_available_variant.quantity_rule.min | default: 1
+    assign show_wholesale_price_row = false
+    if wholesale_price_row and wholesale_moq > 1
+      assign show_wholesale_price_row = true
+    endif
   -%}
   <div class="card product-card product-card--{{ settings.card_style }}{% if settings.card_border_thickness > 0 %} product-card--thickness{% endif %}{% unless featured_media %} no-media{% endunless %}{% if product.available and show_quick_add and mobile_quick_add %} mobile:with-quick-add{% endif %} flex flex-col leading-none relative">
     {%- if featured_media -%}
@@ -326,18 +332,25 @@
         </div>
       {%- endif -%}
 
-      <div class="product-card__details flex flex-col lg:flex-row items-baseline gap-2 w-full">
+      <div class="product-card__details flex {% if show_wholesale_price_row %}flex-col{% else %}flex-col lg:flex-row items-baseline{% endif %} gap-2 w-full">
         <p class="grow">
           <a class="product-card__title reversed-link text-base-xl font-medium leading-tight" href="{{ product_url }}">
             {{- product.title | escape -}}
           </a>
         </p>
-        <div class="flex flex-col gap-2">
-          {%- render 'product-price', product: product, class: 'flex flex-wrap lg:flex-col lg:items-end gap-2 md:gap-1d5' -%}
-          {%- if product.quantity_price_breaks_configured? -%}
-            <div class="text-sm font-medium leading-tight">{{ 'products.volume_pricing.note' | t }}</div>
-          {%- endif -%}
-        </div>
+        {%- if show_wholesale_price_row -%}
+          <div class="product-card__wholesale-row">
+            {%- render 'product-price', product: product, class: 'flex flex-wrap items-baseline gap-2' -%}
+            <span class="product-card__moq">MOQ {{ wholesale_moq }} pcs</span>
+          </div>
+        {%- else -%}
+          <div class="flex flex-col gap-2">
+            {%- render 'product-price', product: product, class: 'flex flex-wrap lg:flex-col lg:items-end gap-2 md:gap-1d5' -%}
+            {%- if product.quantity_price_breaks_configured? -%}
+              <div class="text-sm font-medium leading-tight">{{ 'products.volume_pricing.note' | t }}</div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
       </div>
 
       {%- if show_color_swatches -%}
