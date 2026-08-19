@@ -3,7 +3,6 @@
     padding-top: {{ section.settings.padding_top }}px;
     padding-bottom: {{ section.settings.padding_bottom }}px;
     background-color: {{ section.settings.color_background }};
-    color: {{ section.settings.color_text }};
   }
 
   .member-steps-{{ section.id }} .member-steps__wrap {
@@ -25,6 +24,8 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
+    align-items: center;
+    justify-items: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -35,49 +36,33 @@
   }
 
   .member-steps-{{ section.id }} .member-step {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    max-width: {{ section.settings.icon_max_width }}px;
+    margin: 0 auto;
   }
 
-  .member-steps-{{ section.id }} .member-step__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 72px;
-    height: 72px;
-    margin-bottom: 18px;
-    border-radius: 16px;
-    font-size: 32px;
-    line-height: 1;
-  }
-
-  .member-steps-{{ section.id }} .member-step__icon img {
-    width: 36px;
-    height: 36px;
+  .member-steps-{{ section.id }} .member-step__image {
+    display: block;
+    width: 100%;
+    height: auto;
     object-fit: contain;
   }
 
-  .member-steps-{{ section.id }} .member-step__title {
-    margin: 0 0 10px;
-    font-size: 18px;
-    font-weight: 700;
-    color: {{ section.settings.color_text }};
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .member-steps-{{ section.id }} .member-step__text {
-    margin: 0;
-    max-width: 280px;
-    font-size: 14px;
-    line-height: 1.65;
-    color: rgba(92, 77, 120, 0.88);
-  }
-
-  .member-steps-{{ section.id }} .member-step__icon span {
-    color: {{ section.settings.color_text }};
+  .member-steps-{{ section.id }} .member-step__placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1;
+    max-width: {{ section.settings.icon_max_width }}px;
+    margin: 0 auto;
+    border: 1px dashed rgba(92, 77, 120, 0.25);
+    border-radius: 12px;
+    background: rgba(152, 135, 184, 0.06);
+    color: rgba(92, 77, 120, 0.45);
+    font-size: 13px;
+    text-align: center;
+    padding: 16px;
   }
 {%- endstyle -%}
 
@@ -90,39 +75,25 @@
       {%- if section.blocks.size > 0 -%}
         {%- for block in section.blocks -%}
           {%- if block.type == 'step' -%}
-            <article class="member-step" {{ block.shopify_attributes }}>
-              <div class="member-step__icon" style="background: {{ block.settings.icon_bg | default: '#f5e6a8' }};">
-                {%- if block.settings.icon_image != blank -%}
-                  {{- block.settings.icon_image | image_url: width: 72 | image_tag: loading: 'lazy', alt: block.settings.title -}}
-                {%- else -%}
-                  <span aria-hidden="true">{{ block.settings.icon_emoji | default: '🎁' }}</span>
-                {%- endif -%}
-              </div>
-              {%- if block.settings.title != blank -%}
-                <h3 class="member-step__title">{{ block.settings.title }}</h3>
+            <div class="member-step" {{ block.shopify_attributes }}>
+              {%- if block.settings.image != blank -%}
+                {{- block.settings.image
+                  | image_url: width: 800
+                  | image_tag:
+                    loading: 'lazy',
+                    class: 'member-step__image',
+                    alt: block.settings.image.alt | default: block.settings.alt | escape
+                -}}
+              {%- else -%}
+                <div class="member-step__placeholder">Upload step {{ forloop.index }} icon</div>
               {%- endif -%}
-              {%- if block.settings.text != blank -%}
-                <p class="member-step__text">{{ block.settings.text }}</p>
-              {%- endif -%}
-            </article>
+            </div>
           {%- endif -%}
         {%- endfor -%}
       {%- else -%}
-        <article class="member-step">
-          <div class="member-step__icon" style="background:#f5e6a8;"><span aria-hidden="true">🎁</span></div>
-          <h3 class="member-step__title">JOIN</h3>
-          <p class="member-step__text">Register for free and get 100 points immediately.</p>
-        </article>
-        <article class="member-step">
-          <div class="member-step__icon" style="background:#d4edda;"><span aria-hidden="true">⏱</span></div>
-          <h3 class="member-step__title">EARN</h3>
-          <p class="member-step__text">Earn points for every dollar spent on rorry.com.</p>
-        </article>
-        <article class="member-step">
-          <div class="member-step__icon" style="background:#f8d7e8;"><span aria-hidden="true">🎟</span></div>
-          <h3 class="member-step__title">REDEEM</h3>
-          <p class="member-step__text">Redeem points for member-exclusive rewards and coupons.</p>
-        </article>
+        <div class="member-step"><div class="member-step__placeholder">Upload step 1 icon</div></div>
+        <div class="member-step"><div class="member-step__placeholder">Upload step 2 icon</div></div>
+        <div class="member-step"><div class="member-step__placeholder">Upload step 3 icon</div></div>
       {%- endif -%}
     </div>
   </div>
@@ -149,7 +120,7 @@
     {
       "type": "color",
       "id": "color_text",
-      "label": "Text color",
+      "label": "Heading color",
       "default": "#5c4d78"
     },
     {
@@ -159,10 +130,14 @@
       "default": "#ffffff"
     },
     {
-      "type": "color",
-      "id": "color_accent",
-      "label": "Accent color",
-      "default": "#9887b8"
+      "type": "range",
+      "id": "icon_max_width",
+      "min": 80,
+      "max": 480,
+      "step": 10,
+      "unit": "px",
+      "label": "Icon max width",
+      "default": 120
     },
     {
       "type": "range",
@@ -188,36 +163,19 @@
   "blocks": [
     {
       "type": "step",
-      "name": "Step",
+      "name": "Step icon",
+      "limit": 3,
       "settings": [
         {
           "type": "image_picker",
-          "id": "icon_image",
+          "id": "image",
           "label": "Icon image"
         },
         {
           "type": "text",
-          "id": "icon_emoji",
-          "label": "Icon emoji (if no image)",
-          "default": "🎁"
-        },
-        {
-          "type": "color",
-          "id": "icon_bg",
-          "label": "Icon background",
-          "default": "#f5e6a8"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title",
-          "default": "JOIN"
-        },
-        {
-          "type": "textarea",
-          "id": "text",
-          "label": "Description",
-          "default": "Register for free and get 100 points immediately."
+          "id": "alt",
+          "label": "Alt text",
+          "info": "Optional. Used if the image has no alt text."
         }
       ]
     }
@@ -226,33 +184,9 @@
     {
       "name": "Member how it works",
       "blocks": [
-        {
-          "type": "step",
-          "settings": {
-            "icon_emoji": "🎁",
-            "icon_bg": "#f5e6a8",
-            "title": "JOIN",
-            "text": "Register for free and get 100 points immediately."
-          }
-        },
-        {
-          "type": "step",
-          "settings": {
-            "icon_emoji": "⏱",
-            "icon_bg": "#d4edda",
-            "title": "EARN",
-            "text": "Earn points for every dollar spent on rorry.com."
-          }
-        },
-        {
-          "type": "step",
-          "settings": {
-            "icon_emoji": "🎟",
-            "icon_bg": "#f8d7e8",
-            "title": "REDEEM",
-            "text": "Redeem points for member-exclusive rewards and coupons."
-          }
-        }
+        { "type": "step" },
+        { "type": "step" },
+        { "type": "step" }
       ]
     }
   ],
