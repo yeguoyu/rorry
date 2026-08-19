@@ -343,33 +343,36 @@
   {%- if product.template_suffix == 'new-t1-5000-1' -%}
   <script>
     (function () {
-      var wrapper = document.querySelector('#shopify-section-{{ section.id }} .product-form-wrapper');
-      if (!wrapper) return;
+      var form = document.getElementById({{ product_form_id | json }});
+      if (!form || !form.classList.contains('product-form--logo-layout')) return;
 
       function moveUpload() {
         var upload = document.getElementById('photouploadapp');
-        if (!upload) return;
-        if (wrapper.firstElementChild === upload) return;
-        wrapper.insertBefore(upload, wrapper.firstChild);
+        var buttons = form.querySelector('.product-form__buttons');
+        if (!upload || !buttons) return;
+        if (upload.parentElement === form && upload.nextElementSibling === buttons) return;
+        form.insertBefore(upload, buttons);
       }
 
       moveUpload();
       setTimeout(moveUpload, 300);
-      setTimeout(moveUpload, 1000);
-      setTimeout(moveUpload, 3000);
+      setTimeout(moveUpload, 1200);
 
       if (window.MutationObserver) {
         var running = false;
-        var observer = new MutationObserver(function () {
+        var observer = new MutationObserver(function (mutations) {
+          var upload = document.getElementById('photouploadapp');
+          if (!upload) return;
           if (running) return;
           running = true;
           setTimeout(function () {
             running = false;
             moveUpload();
-          }, 80);
+            window.dispatchEvent(new Event('resize'));
+          }, 120);
         });
-        observer.observe(wrapper.closest('.shopify-section') || wrapper, { childList: true, subtree: true });
-        setTimeout(function () { observer.disconnect(); }, 10000);
+        observer.observe(form.closest('.shopify-section') || form, { childList: true, subtree: true });
+        setTimeout(function () { observer.disconnect(); }, 8000);
       }
     })();
   </script>
