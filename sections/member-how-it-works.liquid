@@ -12,6 +12,12 @@
     --member-purple-text: {{ section.settings.color_text | default: '#5c4d78' }};
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- render 'section-variables', section: section -%}
+  }
+
+  #shopify-section-{{ section.id }} .section {
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
   }
 
   #shopify-section-{{ section.id }} .member-steps__heading {
@@ -19,7 +25,7 @@
     text-align: center;
     font-size: clamp(24px, 3vw, 32px);
     font-weight: 700;
-    color: var(--member-purple-text);
+    color: var(--member-purple-text, #5c4d78);
     letter-spacing: -0.02em;
   }
 
@@ -65,7 +71,7 @@
     margin: 0 0 10px;
     font-size: 18px;
     font-weight: 700;
-    color: var(--member-purple-text);
+    color: var(--member-purple-text, #5c4d78);
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
@@ -76,6 +82,10 @@
     font-size: 14px;
     line-height: 1.65;
     color: rgba(92, 77, 120, 0.88);
+  }
+
+  #shopify-section-{{ section.id }} .member-step__icon span {
+    color: #5c4d78;
   }
 </style>
 
@@ -148,6 +158,12 @@
       "id": "color_text",
       "label": "Text color",
       "default": "#5c4d78"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Background color",
+      "default": "#ffffff"
     },
     {
       "type": "color",
