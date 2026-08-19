@@ -1,55 +1,47 @@
-{%- liquid
-  assign step_blocks = section.blocks | where: 'type', 'step'
-  assign has_blocks = false
-  if step_blocks.size > 0
-    assign has_blocks = true
-  endif
--%}
-
-<style>
-  #shopify-section-{{ section.id }} {
-    --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
-    --member-purple-text: {{ section.settings.color_text | default: '#5c4d78' }};
-    --section-padding-top: {{ section.settings.padding_top }}px;
-    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-    {%- render 'section-variables', section: section -%}
+{%- style -%}
+  .member-steps-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.color_background }};
+    color: {{ section.settings.color_text }};
   }
 
-  #shopify-section-{{ section.id }} .section {
-    background-color: rgb(var(--color-background));
-    color: rgb(var(--color-foreground));
+  .member-steps-{{ section.id }} .member-steps__wrap {
+    max-width: var(--page-width, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--page-padding, 20px);
   }
 
-  #shopify-section-{{ section.id }} .member-steps__heading {
+  .member-steps-{{ section.id }} .member-steps__heading {
     margin: 0 0 40px;
     text-align: center;
     font-size: clamp(24px, 3vw, 32px);
     font-weight: 700;
-    color: var(--member-purple-text, #5c4d78);
+    color: {{ section.settings.color_text }};
     letter-spacing: -0.02em;
   }
 
-  #shopify-section-{{ section.id }} .member-steps__grid {
+  .member-steps-{{ section.id }} .member-steps__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
   @media screen and (min-width: 768px) {
-    #shopify-section-{{ section.id }} .member-steps__grid {
+    .member-steps-{{ section.id }} .member-steps__grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
     }
   }
 
-  #shopify-section-{{ section.id }} .member-step {
+  .member-steps-{{ section.id }} .member-step {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #shopify-section-{{ section.id }} .member-step__icon {
+  .member-steps-{{ section.id }} .member-step__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,22 +53,22 @@
     line-height: 1;
   }
 
-  #shopify-section-{{ section.id }} .member-step__icon img {
+  .member-steps-{{ section.id }} .member-step__icon img {
     width: 36px;
     height: 36px;
     object-fit: contain;
   }
 
-  #shopify-section-{{ section.id }} .member-step__title {
+  .member-steps-{{ section.id }} .member-step__title {
     margin: 0 0 10px;
     font-size: 18px;
     font-weight: 700;
-    color: var(--member-purple-text, #5c4d78);
+    color: {{ section.settings.color_text }};
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
 
-  #shopify-section-{{ section.id }} .member-step__text {
+  .member-steps-{{ section.id }} .member-step__text {
     margin: 0;
     max-width: 280px;
     font-size: 14px;
@@ -84,34 +76,36 @@
     color: rgba(92, 77, 120, 0.88);
   }
 
-  #shopify-section-{{ section.id }} .member-step__icon span {
-    color: #5c4d78;
+  .member-steps-{{ section.id }} .member-step__icon span {
+    color: {{ section.settings.color_text }};
   }
-</style>
+{%- endstyle -%}
 
-<div id="{{ section.settings.anchor_id | default: 'member-how-it-works' }}" class="section section--padding{% if section.settings.divider %} section--divider{% endif %}">
-  <div class="page-width">
+<div id="{{ section.settings.anchor_id | default: 'member-how-it-works' }}" class="member-steps-section member-steps-{{ section.id }}">
+  <div class="member-steps__wrap">
     {%- if section.settings.heading != blank -%}
       <h2 class="member-steps__heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
     <div class="member-steps__grid">
-      {%- if has_blocks -%}
-        {%- for block in step_blocks -%}
-          <article class="member-step" {{ block.shopify_attributes }}>
-            <div class="member-step__icon" style="background: {{ block.settings.icon_bg | default: '#f5e6a8' }};">
-              {%- if block.settings.icon_image != blank -%}
-                {{- block.settings.icon_image | image_url: width: 72 | image_tag: loading: 'lazy', alt: block.settings.title -}}
-              {%- elsif block.settings.icon_emoji != blank -%}
-                <span aria-hidden="true">{{ block.settings.icon_emoji }}</span>
+      {%- if section.blocks.size > 0 -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'step' -%}
+            <article class="member-step" {{ block.shopify_attributes }}>
+              <div class="member-step__icon" style="background: {{ block.settings.icon_bg | default: '#f5e6a8' }};">
+                {%- if block.settings.icon_image != blank -%}
+                  {{- block.settings.icon_image | image_url: width: 72 | image_tag: loading: 'lazy', alt: block.settings.title -}}
+                {%- else -%}
+                  <span aria-hidden="true">{{ block.settings.icon_emoji | default: '🎁' }}</span>
+                {%- endif -%}
+              </div>
+              {%- if block.settings.title != blank -%}
+                <h3 class="member-step__title">{{ block.settings.title }}</h3>
               {%- endif -%}
-            </div>
-            {%- if block.settings.title != blank -%}
-              <h3 class="member-step__title">{{ block.settings.title }}</h3>
-            {%- endif -%}
-            {%- if block.settings.text != blank -%}
-              <p class="member-step__text">{{ block.settings.text }}</p>
-            {%- endif -%}
-          </article>
+              {%- if block.settings.text != blank -%}
+                <p class="member-step__text">{{ block.settings.text }}</p>
+              {%- endif -%}
+            </article>
+          {%- endif -%}
         {%- endfor -%}
       {%- else -%}
         <article class="member-step">
@@ -137,7 +131,6 @@
 {% schema %}
 {
   "name": "Member how it works",
-  "tag": "section",
   "class": "member-section member-section--steps",
   "settings": [
     {
@@ -190,12 +183,6 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 56
-    },
-    {
-      "type": "checkbox",
-      "id": "divider",
-      "default": false,
-      "label": "Show divider"
     }
   ],
   "blocks": [
