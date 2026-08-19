@@ -39,11 +39,41 @@
       }
 
       {%- if product.template_suffix == 'new-t1-5000-1' -%}
-      #shopify-section-{{ section.id }} .product-form #photouploadapp {
+      /* Logo layout: CSS order only — never reparent #photouploadapp (breaks Discount column JS) */
+      #shopify-section-{{ section.id }} .product-form-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+      #shopify-section-{{ section.id }} .product-form-wrapper > #photouploadapp,
+      #shopify-section-{{ section.id }} .product-form--logo-layout > #photouploadapp {
+        order: -2;
         width: 100%;
         margin: 0 0 8px;
       }
-      #shopify-section-{{ section.id }} .product-form #photouploadapp table {
+      #shopify-section-{{ section.id }} .product-form-wrapper > [class*="wi2b"],
+      #shopify-section-{{ section.id }} .product-form--logo-layout > [class*="wi2b"] {
+        order: -1;
+        width: 100%;
+        margin: 0 0 8px;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout {
+        display: flex;
+        flex-direction: column;
+      }
+      #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__buttons {
+        order: 0;
+      }
+      #shopify-section-{{ section.id }} #photouploadapp {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      #shopify-section-{{ section.id }} #photouploadapp [data-ph-wrap] {
+        order: 1;
+      }
+      #shopify-section-{{ section.id }} #photouploadapp table,
+      #shopify-section-{{ section.id }} #photouploadapp [class*="wi2b"] {
+        order: 2;
         width: 100%;
       }
       #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__buttons .flex-wrap {
