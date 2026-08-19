@@ -122,10 +122,10 @@
         "column_wpwcgn": {
           "type": "column",
           "settings": {
-            "icon": "support",
+            "icon": "award",
             "custom_icon": "",
-            "heading": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "heading": "<strong>Official Exposure</strong>",
+            "text": "<p>Get featured on RORRY’s official social channels, reaching over 100K+ aesthetic lovers worldwide.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -133,10 +133,10 @@
         "column_DGEQBc": {
           "type": "column",
           "settings": {
-            "icon": "box",
+            "icon": "trophy",
             "custom_icon": "",
-            "heading": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "heading": "<strong>Earn Commission</strong>",
+            "text": "<p>Earn up to <strong>10% affiliate commission</strong> on every sale generated through your unique link</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -146,8 +146,8 @@
           "settings": {
             "icon": "shield",
             "custom_icon": "",
-            "heading": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "heading": "<strong>Creative Freedom</strong>",
+            "text": "<p>Receive clear creative briefs and assets while having the absolute freedom to express your unique style.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
