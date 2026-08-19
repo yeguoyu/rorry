@@ -15,7 +15,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    flex: 1 1 auto;
+    justify-content: flex-start;
+    flex: 0 1 auto;
     min-width: 0;
     gap: 6px;
   }
@@ -31,6 +32,10 @@
     line-height: 1.3;
   }
   {%- if collection.template_suffix == 'custom-power-bank' -%}
+  #shopify-section-{{ section.id }} .product-card__content.text-center .product-card__wholesale-row .price {
+    justify-content: flex-start;
+    align-items: baseline;
+  }
   #shopify-section-{{ section.id }} .product-card__content {
     --card-content-padding-inline: clamp(var(--sp-2), 1.05vw, var(--sp-5));
     padding-inline: var(--card-content-padding-inline);
