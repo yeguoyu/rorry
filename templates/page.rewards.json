@@ -34,6 +34,7 @@
         "title": "Unlock Your Rorry Club Benefits",
         "subtitle": "Free registration, extended warranty, and member-exclusive gifts.",
         "button_label": "JOIN NOW",
+        "button_link": "",
         "text_alignment": "center",
         "color_text": "#ffffff",
         "color_accent": "#9887b8",
@@ -80,10 +81,17 @@
           }
         }
       },
-      "block_order": ["nav_1", "nav_2", "nav_3", "nav_4", "nav_5"],
+      "block_order": [
+        "nav_1",
+        "nav_2",
+        "nav_3",
+        "nav_4",
+        "nav_5"
+      ],
       "settings": {
         "show_highlight": true,
         "cta_label": "JOIN NOW",
+        "cta_link": "",
         "color_background": "#ffffff",
         "color_text": "#5c4d78",
         "color_accent": "#9887b8",
@@ -95,24 +103,38 @@
       "blocks": {
         "step_1": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "graphic": "shopify://shop_images/unlock.svg",
+            "graphic_alt": "",
+            "text": "Create your free account and instantly unlock 100 RorryCredits welcoming rewards."
+          }
         },
         "step_2": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "graphic_alt": "",
+            "text": "Earn RorryCredits every time you shop, sign up, celebrate your birthday, or leave a review."
+          }
         },
         "step_3": {
           "type": "step",
-          "settings": {}
+          "settings": {
+            "graphic_alt": "",
+            "text": "Redeem your points for cash-off discounts, free shipping, or free high-end accessories."
+          }
         }
       },
-      "block_order": ["step_1", "step_2", "step_3"],
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
       "settings": {
         "anchor_id": "member-how-it-works",
         "heading": "How It Works",
         "color_text": "#5c4d78",
         "color_background": "#ffffff",
-        "icon_max_width": 120,
+        "graphic_max_width": 50,
         "padding_top": 56,
         "padding_bottom": 56
       }
@@ -125,7 +147,9 @@
           "settings": {
             "title": "Feature Products",
             "text": "Redeem your credits for free products, exclusive accessories, and member favorites.",
-            "button_label": "Redeem Now"
+            "button_label": "Redeem Now",
+            "button_link": "",
+            "button_disabled": false
           }
         },
         "card_2": {
@@ -133,7 +157,9 @@
           "settings": {
             "title": "Coupons & Discounts",
             "text": "Use your credits to unlock instant savings on every order.",
-            "button_label": "Redeem Now"
+            "button_label": "Redeem Now",
+            "button_link": "",
+            "button_disabled": false
           }
         },
         "card_3": {
@@ -142,14 +168,20 @@
             "title": "Member-Exclusive Merch",
             "text": "Redeem credits for exclusive RORRY member merch and limited-edition goodies.",
             "button_label": "Coming Soon",
+            "button_link": "",
             "button_disabled": true
           }
         }
       },
-      "block_order": ["card_1", "card_2", "card_3"],
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
       "settings": {
         "anchor_id": "member-benefits",
         "heading": "Unlock Exclusive Rewards",
+        "subheading": "",
         "color_text": "#5c4d78",
         "color_background": "#ffffff",
         "color_accent": "#9887b8",
