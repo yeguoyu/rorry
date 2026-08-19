@@ -1,0 +1,251 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
+    --member-purple-text: {{ section.settings.color_text | default: '#5c4d78' }};
+    --member-lavender: {{ section.settings.color_background | default: '#f5f2fa' }};
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  #shopify-section-{{ section.id }} .member-steps {
+    background: var(--member-lavender);
+  }
+
+  #shopify-section-{{ section.id }} .member-steps__heading {
+    margin: 0 0 40px;
+    text-align: center;
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--member-purple-text);
+    letter-spacing: -0.02em;
+  }
+
+  #shopify-section-{{ section.id }} .member-steps__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    #shopify-section-{{ section.id }} .member-steps__grid {
+      grid-template-columns: repeat({{ section.blocks.size | at_most: 3 }}, 1fr);
+      gap: 32px;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .member-step {
+    background: #fff;
+    border-radius: 20px;
+    padding: 32px 28px;
+    text-align: center;
+    box-shadow: 0 2px 16px rgba(92, 77, 120, 0.06);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .member-step__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    background: var(--member-purple);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  #shopify-section-{{ section.id }} .member-step__title {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--member-purple-text);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  #shopify-section-{{ section.id }} .member-step__text {
+    margin: 0 0 20px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(92, 77, 120, 0.85);
+    flex: 1;
+  }
+
+  #shopify-section-{{ section.id }} .member-step__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--member-purple);
+    text-decoration: none;
+  }
+
+  #shopify-section-{{ section.id }} .member-step__link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div id="{{ section.settings.anchor_id | default: 'member-how-it-works' }}" class="section section--padding member-steps{% if section.settings.divider %} section--divider{% endif %}">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="member-steps__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="member-steps__grid">
+      {%- for block in section.blocks -%}
+        <article class="member-step" {{ block.shopify_attributes }}>
+          <span class="member-step__num">{{ forloop.index }}</span>
+          {%- if block.settings.title != blank -%}
+            <h3 class="member-step__title">{{ block.settings.title }}</h3>
+          {%- endif -%}
+          {%- if block.settings.text != blank -%}
+            <p class="member-step__text">{{ block.settings.text }}</p>
+          {%- endif -%}
+          {%- if block.settings.link_label != blank -%}
+            <a href="{{ block.settings.link | default: routes.account_register_url }}" class="member-step__link">
+              {{ block.settings.link_label }} &gt;
+            </a>
+          {%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Member how it works",
+  "tag": "section",
+  "class": "member-section member-section--steps",
+  "settings": [
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "default": "member-how-it-works",
+      "info": "Used by sticky navigation."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "How It Works"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Background",
+      "default": "#f5f2fa"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text color",
+      "default": "#5c4d78"
+    },
+    {
+      "type": "color",
+      "id": "color_accent",
+      "label": "Accent color",
+      "default": "#9887b8"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 72
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "default": false,
+      "label": "Show divider"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "JOIN"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Create your free account and unlock exclusive member-only rewards instantly."
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link label",
+          "default": "Join Now"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Member how it works",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "title": "JOIN",
+            "text": "Create your free account and unlock exclusive member-only rewards instantly.",
+            "link_label": "Join Now"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "EARN",
+            "text": "Earn RORRYCredits when you shop, refer friends, or complete member activities.",
+            "link_label": "Start Earning"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "REDEEM",
+            "text": "Use your credits for special discounts, free products, and exclusive perks.",
+            "link_label": "Redeem Now"
+          }
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
