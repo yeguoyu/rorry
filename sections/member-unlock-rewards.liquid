@@ -1,0 +1,295 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
+    --member-purple-text: {{ section.settings.color_text | default: '#5c4d78' }};
+    --member-card-bg: {{ section.settings.color_card | default: '#efebf5' }};
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock__heading {
+    margin: 0 0 12px;
+    text-align: center;
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    color: var(--member-purple-text);
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock__subheading {
+    margin: 0 auto 40px;
+    max-width: 720px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(92, 77, 120, 0.8);
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    #shopify-section-{{ section.id }} .member-unlock__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card {
+    background: var(--member-card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card__media {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: rgba(152, 135, 184, 0.15);
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card__body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card__title {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--member-purple-text);
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card__text {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(92, 77, 120, 0.85);
+    flex: 1;
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: var(--member-purple);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card__btn:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+  }
+
+  #shopify-section-{{ section.id }} .member-unlock-card__btn.is-disabled {
+    opacity: 0.55;
+    pointer-events: none;
+  }
+</style>
+
+<div id="{{ section.settings.anchor_id | default: 'member-unlock' }}" class="section section--padding{% if section.settings.divider %} section--divider{% endif %}">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="member-unlock__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="member-unlock__subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+    <div class="member-unlock__grid">
+      {%- for block in section.blocks -%}
+        <article class="member-unlock-card" {{ block.shopify_attributes }}>
+          <div class="member-unlock-card__media">
+            {%- if block.settings.image != blank -%}
+              {{- block.settings.image | image_url: width: 800 | image_tag: loading: 'lazy', alt: block.settings.title | escape -}}
+            {%- else -%}
+              <div style="width:100%;height:100%;background:linear-gradient(135deg,#c4b8dc,#9887b8);"></div>
+            {%- endif -%}
+          </div>
+          <div class="member-unlock-card__body">
+            {%- if block.settings.title != blank -%}
+              <h3 class="member-unlock-card__title">{{ block.settings.title }}</h3>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <p class="member-unlock-card__text">{{ block.settings.text }}</p>
+            {%- endif -%}
+            {%- if block.settings.button_label != blank -%}
+              <a
+                href="{{ block.settings.button_link | default: routes.account_login_url }}"
+                class="member-unlock-card__btn{% if block.settings.button_disabled %} is-disabled{% endif %}"
+              >
+                {{ block.settings.button_label }}
+              </a>
+            {%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Member unlock rewards",
+  "tag": "section",
+  "class": "member-section member-section--unlock",
+  "settings": [
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor ID",
+      "default": "member-unlock"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Unlock Exclusive Rewards"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text color",
+      "default": "#5c4d78"
+    },
+    {
+      "type": "color",
+      "id": "color_accent",
+      "label": "Button color",
+      "default": "#9887b8"
+    },
+    {
+      "type": "color",
+      "id": "color_card",
+      "label": "Card background",
+      "default": "#efebf5"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 72
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "default": false,
+      "label": "Show divider"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Reward card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Products"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Redeem your credits for free products, exclusive accessories, and member favorites."
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Redeem Now"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_disabled",
+          "label": "Disable button style",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Member unlock rewards",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "title": "Feature Products",
+            "text": "Redeem your credits for free products, exclusive accessories, and member favorites.",
+            "button_label": "Redeem Now"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "Coupons & Discounts",
+            "text": "Use your credits to unlock instant savings on every order.",
+            "button_label": "Redeem Now"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "Member-Exclusive Merch",
+            "text": "Redeem credits for exclusive RORRY member merch and limited-edition goodies.",
+            "button_label": "Coming Soon",
+            "button_disabled": true
+          }
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
