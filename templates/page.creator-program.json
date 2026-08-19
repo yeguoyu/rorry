@@ -86,7 +86,7 @@
         "image_height_mobile": "400px",
         "content_position_mobile": "items-end justify-center",
         "text_alignment_mobile": "center",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "#e0a580",
@@ -108,6 +108,17 @@
     "multicolumn_with_icons_LcbRjD": {
       "type": "multicolumn-with-icons",
       "blocks": {
+        "column_qK8hDz": {
+          "type": "column",
+          "settings": {
+            "icon": "gift",
+            "custom_icon": "",
+            "heading": "<strong>Free Premium Gear</strong>",
+            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "column_wpwcgn": {
           "type": "column",
           "settings": {
@@ -143,6 +154,7 @@
         }
       },
       "block_order": [
+        "column_qK8hDz",
         "column_wpwcgn",
         "column_DGEQBc",
         "column_Dc6ep9"
@@ -150,7 +162,7 @@
       "name": "t:sections.multicolumn-with-icons.name",
       "settings": {
         "style": "with-background",
-        "columns": 3,
+        "columns": 4,
         "text_alignment": "center",
         "heading": "What You'll Get",
         "heading_size": "title-md",
@@ -164,7 +176,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -221,7 +233,7 @@
       "settings": {
         "bg_color": "#9e87c3",
         "text_color": "#ffffff",
-        "divider_color": "rgba(255,255,255,0.3)",
+        "divider_color": "#ffffff4d",
         "padding_top": 40,
         "padding_bottom": 40,
         "title_size": 18,
