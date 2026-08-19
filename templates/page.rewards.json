@@ -27,17 +27,17 @@
     "member_hero": {
       "type": "member-rewards-hero",
       "settings": {
-        "min_height": 480,
-        "min_height_mobile": 380,
-        "overlay_opacity": 55,
-        "title": "Join the RORRY Rewards Program",
-        "subtitle": "Register now to earn RORRYCredits with every purchase and unlock exclusive member rewards.",
-        "signup_label": "Sign Up",
-        "login_label": "Log In",
+        "min_height": 520,
+        "min_height_mobile": 420,
+        "content_padding_top": 88,
+        "content_padding_top_mobile": 72,
+        "title": "Unlock Your Rorry Club Benefits",
+        "subtitle": "Free registration, extended warranty, and member-exclusive gifts.",
+        "button_label": "JOIN NOW",
         "text_alignment": "center",
         "color_text": "#ffffff",
         "color_accent": "#9887b8",
-        "color_accent_dark": "#7a6a9e",
+        "color_accent_dark": "#6b5b8e",
         "transparent_header": true,
         "rounded": false
       }
@@ -48,53 +48,47 @@
         "nav_1": {
           "type": "nav_item",
           "settings": {
-            "title": "How It Works",
+            "title": "How it works",
             "target_id": "member-how-it-works"
           }
         },
         "nav_2": {
           "type": "nav_item",
           "settings": {
-            "title": "Benefits",
-            "target_id": "member-benefits"
+            "title": "Events",
+            "target_id": "member-events"
           }
         },
         "nav_3": {
           "type": "nav_item",
           "settings": {
-            "title": "Earn",
-            "target_id": "member-earn"
+            "title": "Benefits",
+            "target_id": "member-benefits"
           }
         },
         "nav_4": {
           "type": "nav_item",
           "settings": {
-            "title": "Redeem",
+            "title": "Gift card",
             "target_id": "member-redeem"
           }
         },
         "nav_5": {
           "type": "nav_item",
           "settings": {
-            "title": "Refer",
-            "target_id": "member-refer"
-          }
-        },
-        "nav_6": {
-          "type": "nav_item",
-          "settings": {
-            "title": "FAQ",
+            "title": "FAQs",
             "target_id": "member-faq"
           }
         }
       },
-      "block_order": ["nav_1", "nav_2", "nav_3", "nav_4", "nav_5", "nav_6"],
+      "block_order": ["nav_1", "nav_2", "nav_3", "nav_4", "nav_5"],
       "settings": {
         "show_highlight": true,
-        "alignment": "center",
+        "cta_label": "JOIN NOW",
         "color_background": "#ffffff",
         "color_text": "#5c4d78",
-        "color_accent": "#9887b8"
+        "color_accent": "#9887b8",
+        "color_accent_dark": "#6b5b8e"
       }
     },
     "member_steps": {
@@ -103,25 +97,28 @@
         "step_1": {
           "type": "step",
           "settings": {
+            "icon_emoji": "🎁",
+            "icon_bg": "#f5e6a8",
             "title": "JOIN",
-            "text": "Create your free account and unlock exclusive member-only rewards instantly.",
-            "link_label": "Join Now"
+            "text": "Register for free and get 100 points immediately."
           }
         },
         "step_2": {
           "type": "step",
           "settings": {
+            "icon_emoji": "⏱",
+            "icon_bg": "#d4edda",
             "title": "EARN",
-            "text": "Earn RORRYCredits when you shop, refer friends, or complete member activities.",
-            "link_label": "Start Earning"
+            "text": "Earn points for every dollar spent on rorry.com."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
+            "icon_emoji": "🎟",
+            "icon_bg": "#f8d7e8",
             "title": "REDEEM",
-            "text": "Use your credits for special discounts, free products, and exclusive perks.",
-            "link_label": "Redeem Now"
+            "text": "Redeem points for member-exclusive rewards and coupons."
           }
         }
       },
@@ -129,11 +126,10 @@
       "settings": {
         "anchor_id": "member-how-it-works",
         "heading": "How It Works",
-        "color_background": "#f5f2fa",
         "color_text": "#5c4d78",
         "color_accent": "#9887b8",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 56,
+        "padding_bottom": 56,
         "divider": false
       }
     },
@@ -168,7 +164,7 @@
       },
       "block_order": ["card_1", "card_2", "card_3"],
       "settings": {
-        "anchor_id": "member-unlock",
+        "anchor_id": "member-benefits",
         "heading": "Unlock Exclusive Rewards",
         "color_text": "#5c4d78",
         "color_accent": "#9887b8",
