@@ -1,0 +1,282 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
+    --member-purple-dark: {{ section.settings.color_accent_dark | default: '#7a6a9e' }};
+    --section-padding-top: 0px;
+    --section-padding-bottom: 0px;
+  }
+
+  #shopify-section-{{ section.id }} .member-hero {
+    position: relative;
+    min-height: {{ section.settings.min_height_mobile }}px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 768px) {
+    #shopify-section-{{ section.id }} .member-hero {
+      min-height: {{ section.settings.min_height }}px;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      135deg,
+      rgba(152, 135, 184, {{ section.settings.overlay_opacity | divided_by: 100.0 }}) 0%,
+      rgba(122, 106, 158, {{ section.settings.overlay_opacity | plus: 10 | at_most: 95 | divided_by: 100.0 }}) 100%
+    );
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 48px 0;
+    text-align: {{ section.settings.text_alignment }};
+    color: {{ section.settings.color_text }};
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__title {
+    margin: 0 0 16px;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__subtitle {
+    margin: 0 auto 28px;
+    max-width: 640px;
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 1.6;
+    opacity: 0.95;
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: {% if section.settings.text_alignment == 'center' %}center{% else %}flex-start{% endif %};
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    padding: 14px 32px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__btn--primary {
+    background: #fff;
+    color: var(--member-purple-dark);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__btn--primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__btn--secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+  }
+
+  #shopify-section-{{ section.id }} .member-hero__btn--secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+</style>
+
+<div class="section section--padding{% if section.settings.rounded %} section--rounded relative{% endif %}"{% if section.settings.transparent_header %} allow-transparent-header{% endif %}>
+  <div class="member-hero">
+    <div class="member-hero__media">
+      {%- assign hero_mobile = section.settings.image_mobile | default: section.settings.image -%}
+      <picture>
+        {%- if section.settings.image_mobile != blank -%}
+          <source media="(max-width: 767px)" srcset="{{ section.settings.image_mobile | image_url: width: 800 }}">
+        {%- endif -%}
+        {%- if section.settings.image != blank -%}
+          {{- section.settings.image | image_url: width: 2400 | image_tag: loading: 'eager', fetchpriority: 'high', alt: section.settings.title | escape -}}
+        {%- else -%}
+          <div style="width:100%;height:100%;background:linear-gradient(135deg,#9887b8,#7a6a9e);"></div>
+        {%- endif -%}
+      </picture>
+    </div>
+    <div class="member-hero__overlay"></div>
+    <div class="page-width member-hero__content">
+      {%- if section.settings.title != blank -%}
+        <h1 class="member-hero__title">{{ section.settings.title }}</h1>
+      {%- endif -%}
+      {%- if section.settings.subtitle != blank -%}
+        <p class="member-hero__subtitle">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+      <div class="member-hero__actions">
+        {%- if section.settings.signup_label != blank -%}
+          <a href="{{ section.settings.signup_link | default: routes.account_register_url }}" class="member-hero__btn member-hero__btn--primary">
+            {{ section.settings.signup_label }}
+          </a>
+        {%- endif -%}
+        {%- if section.settings.login_label != blank -%}
+          <a href="{{ section.settings.login_link | default: routes.account_login_url }}" class="member-hero__btn member-hero__btn--secondary">
+            {{ section.settings.login_label }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Member rewards hero",
+  "tag": "section",
+  "class": "member-section member-section--hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile image"
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "min": 320,
+      "max": 720,
+      "step": 10,
+      "unit": "px",
+      "label": "Minimum height desktop",
+      "default": 480
+    },
+    {
+      "type": "range",
+      "id": "min_height_mobile",
+      "min": 280,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "label": "Minimum height mobile",
+      "default": 380
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 55
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Join the RORRY Rewards Program"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Register now to earn RORRYCredits with every purchase and unlock exclusive member rewards."
+    },
+    {
+      "type": "text",
+      "id": "signup_label",
+      "label": "Sign up button",
+      "default": "Sign Up"
+    },
+    {
+      "type": "url",
+      "id": "signup_link",
+      "label": "Sign up link"
+    },
+    {
+      "type": "text",
+      "id": "login_label",
+      "label": "Log in button",
+      "default": "Log In"
+    },
+    {
+      "type": "url",
+      "id": "login_link",
+      "label": "Log in link"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_accent",
+      "label": "Accent purple",
+      "default": "#9887b8"
+    },
+    {
+      "type": "color",
+      "id": "color_accent_dark",
+      "label": "Accent purple dark",
+      "default": "#7a6a9e"
+    },
+    {
+      "type": "checkbox",
+      "id": "transparent_header",
+      "label": "Transparent header",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "Rounded section"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Member rewards hero"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
