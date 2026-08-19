@@ -127,6 +127,7 @@
         "anchor_id": "member-how-it-works",
         "heading": "How It Works",
         "color_text": "#5c4d78",
+        "color_background": "#ffffff",
         "color_accent": "#9887b8",
         "padding_top": 56,
         "padding_bottom": 56,
