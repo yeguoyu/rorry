@@ -46,17 +46,13 @@
     endif
 
     assign show_price = block.settings.show_price
-    assign product_form_class = 'product-form grid gap-8'
-    if product.template_suffix == 'new-t1-5000-1'
-      assign product_form_class = product_form_class | append: ' product-form--logo-layout'
-    endif
   -%}
   {%- form 'product',
     product,
     id: product_form_id,
     data-type: 'add-to-cart-form',
     data-hide-errors: gift_card_recipient_feature_active,
-    class: product_form_class,
+    class: 'product-form grid gap-8',
     is: 'product-form'
   -%}
     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled />
