@@ -115,7 +115,7 @@
             "custom_icon": "",
             "heading": "<strong>Free Premium Gear</strong>",
             "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
-            "highlighted_text": "none",
+            "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
         },
