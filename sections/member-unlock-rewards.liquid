@@ -1,21 +1,26 @@
-<style>
-  #shopify-section-{{ section.id }} {
-    --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
-    --member-purple-text: {{ section.settings.color_text | default: '#5c4d78' }};
-    --member-card-bg: {{ section.settings.color_card | default: '#efebf5' }};
-    --section-padding-top: {{ section.settings.padding_top }}px;
-    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+{%- style -%}
+  .member-unlock-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.color_background }};
+    color: {{ section.settings.color_text }};
   }
 
-  #shopify-section-{{ section.id }} .member-unlock__heading {
+  .member-unlock-{{ section.id }} .member-unlock__wrap {
+    max-width: var(--page-width, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--page-padding, 20px);
+  }
+
+  .member-unlock-{{ section.id }} .member-unlock__heading {
     margin: 0 0 12px;
     text-align: center;
     font-size: clamp(24px, 3vw, 32px);
     font-weight: 700;
-    color: var(--member-purple-text);
+    color: {{ section.settings.color_text }};
   }
 
-  #shopify-section-{{ section.id }} .member-unlock__subheading {
+  .member-unlock-{{ section.id }} .member-unlock__subheading {
     margin: 0 auto 40px;
     max-width: 720px;
     text-align: center;
@@ -24,21 +29,21 @@
     color: rgba(92, 77, 120, 0.8);
   }
 
-  #shopify-section-{{ section.id }} .member-unlock__grid {
+  .member-unlock-{{ section.id }} .member-unlock__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
   @media screen and (min-width: 768px) {
-    #shopify-section-{{ section.id }} .member-unlock__grid {
+    .member-unlock-{{ section.id }} .member-unlock__grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card {
-    background: var(--member-card-bg);
+  .member-unlock-{{ section.id }} .member-unlock-card {
+    background: {{ section.settings.color_card }};
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -46,33 +51,33 @@
     min-height: 100%;
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card__media {
+  .member-unlock-{{ section.id }} .member-unlock-card__media {
     aspect-ratio: 4 / 3;
     overflow: hidden;
     background: rgba(152, 135, 184, 0.15);
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card__media img {
+  .member-unlock-{{ section.id }} .member-unlock-card__media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card__body {
+  .member-unlock-{{ section.id }} .member-unlock-card__body {
     padding: 24px;
     display: flex;
     flex-direction: column;
     flex: 1;
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card__title {
+  .member-unlock-{{ section.id }} .member-unlock-card__title {
     margin: 0 0 8px;
     font-size: 18px;
     font-weight: 700;
-    color: var(--member-purple-text);
+    color: {{ section.settings.color_text }};
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card__text {
+  .member-unlock-{{ section.id }} .member-unlock-card__text {
     margin: 0 0 20px;
     font-size: 14px;
     line-height: 1.6;
@@ -80,14 +85,14 @@
     flex: 1;
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card__btn {
+  .member-unlock-{{ section.id }} .member-unlock-card__btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     align-self: flex-start;
     padding: 12px 24px;
     border-radius: 999px;
-    background: var(--member-purple);
+    background: {{ section.settings.color_accent }};
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -95,19 +100,19 @@
     transition: opacity 0.2s ease, transform 0.2s ease;
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card__btn:hover {
+  .member-unlock-{{ section.id }} .member-unlock-card__btn:hover {
     opacity: 0.92;
     transform: translateY(-1px);
   }
 
-  #shopify-section-{{ section.id }} .member-unlock-card__btn.is-disabled {
+  .member-unlock-{{ section.id }} .member-unlock-card__btn.is-disabled {
     opacity: 0.55;
     pointer-events: none;
   }
-</style>
+{%- endstyle -%}
 
-<div id="{{ section.settings.anchor_id | default: 'member-unlock' }}" class="section section--padding{% if section.settings.divider %} section--divider{% endif %}">
-  <div class="page-width">
+<div id="{{ section.settings.anchor_id | default: 'member-unlock' }}" class="member-unlock-section member-unlock-{{ section.id }}">
+  <div class="member-unlock__wrap">
     {%- if section.settings.heading != blank -%}
       <h2 class="member-unlock__heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
@@ -116,31 +121,33 @@
     {%- endif -%}
     <div class="member-unlock__grid">
       {%- for block in section.blocks -%}
-        <article class="member-unlock-card" {{ block.shopify_attributes }}>
-          <div class="member-unlock-card__media">
-            {%- if block.settings.image != blank -%}
-              {{- block.settings.image | image_url: width: 800 | image_tag: loading: 'lazy', alt: block.settings.title | escape -}}
-            {%- else -%}
-              <div style="width:100%;height:100%;background:linear-gradient(135deg,#c4b8dc,#9887b8);"></div>
-            {%- endif -%}
-          </div>
-          <div class="member-unlock-card__body">
-            {%- if block.settings.title != blank -%}
-              <h3 class="member-unlock-card__title">{{ block.settings.title }}</h3>
-            {%- endif -%}
-            {%- if block.settings.text != blank -%}
-              <p class="member-unlock-card__text">{{ block.settings.text }}</p>
-            {%- endif -%}
-            {%- if block.settings.button_label != blank -%}
-              <a
-                href="{{ block.settings.button_link | default: routes.account_login_url }}"
-                class="member-unlock-card__btn{% if block.settings.button_disabled %} is-disabled{% endif %}"
-              >
-                {{ block.settings.button_label }}
-              </a>
-            {%- endif -%}
-          </div>
-        </article>
+        {%- if block.type == 'card' -%}
+          <article class="member-unlock-card" {{ block.shopify_attributes }}>
+            <div class="member-unlock-card__media">
+              {%- if block.settings.image != blank -%}
+                {{- block.settings.image | image_url: width: 800 | image_tag: loading: 'lazy', alt: block.settings.title | escape -}}
+              {%- else -%}
+                <div style="width:100%;height:100%;background:linear-gradient(135deg,#c4b8dc,#9887b8);"></div>
+              {%- endif -%}
+            </div>
+            <div class="member-unlock-card__body">
+              {%- if block.settings.title != blank -%}
+                <h3 class="member-unlock-card__title">{{ block.settings.title }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <p class="member-unlock-card__text">{{ block.settings.text }}</p>
+              {%- endif -%}
+              {%- if block.settings.button_label != blank -%}
+                <a
+                  href="{{ block.settings.button_link | default: routes.account_login_url }}"
+                  class="member-unlock-card__btn{% if block.settings.button_disabled %} is-disabled{% endif %}"
+                >
+                  {{ block.settings.button_label }}
+                </a>
+              {%- endif -%}
+            </div>
+          </article>
+        {%- endif -%}
       {%- endfor -%}
     </div>
   </div>
@@ -149,7 +156,6 @@
 {% schema %}
 {
   "name": "Member unlock rewards",
-  "tag": "section",
   "class": "member-section member-section--unlock",
   "settings": [
     {
@@ -174,6 +180,12 @@
       "id": "color_text",
       "label": "Text color",
       "default": "#5c4d78"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Background color",
+      "default": "#ffffff"
     },
     {
       "type": "color",
@@ -206,12 +218,6 @@
       "unit": "px",
       "label": "Padding bottom",
       "default": 72
-    },
-    {
-      "type": "checkbox",
-      "id": "divider",
-      "default": false,
-      "label": "Show divider"
     }
   ],
   "blocks": [
