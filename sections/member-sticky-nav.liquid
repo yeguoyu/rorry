@@ -1,0 +1,204 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
+    --member-purple-text: {{ section.settings.color_text | default: '#5c4d78' }};
+    --member-nav-bg: {{ section.settings.color_background | default: '#ffffff' }};
+    position: sticky;
+    top: 0;
+    z-index: 25;
+    background: var(--member-nav-bg);
+    box-shadow: 0 1px 0 rgba(92, 77, 120, 0.08);
+    transition: box-shadow 0.25s ease;
+  }
+
+  #shopify-section-{{ section.id }}.is-stuck {
+    box-shadow: 0 4px 20px rgba(92, 77, 120, 0.12);
+  }
+
+  #shopify-section-{{ section.id }} .member-nav {
+    padding: 12px 0;
+  }
+
+  #shopify-section-{{ section.id }} .member-nav__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #shopify-section-{{ section.id }} .member-nav__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  #shopify-section-{{ section.id }} .member-nav__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--member-purple-text);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  #shopify-section-{{ section.id }} .member-nav__link:hover {
+    background: rgba(152, 135, 184, 0.12);
+    color: var(--member-purple);
+  }
+
+  #shopify-section-{{ section.id }} .member-nav__link.active {
+    background: var(--member-purple);
+    color: #fff;
+  }
+
+  @media screen and (min-width: 990px) {
+    #shopify-section-{{ section.id }} .member-nav__list {
+      justify-content: {{ section.settings.alignment }};
+      flex-wrap: wrap;
+      overflow: visible;
+    }
+  }
+</style>
+
+<div class="member-nav">
+  <div class="page-width">
+    <scroll-shadow class="scroll-shadow block overflow-hidden">
+      <nav class="member-nav__bar" is="scroll-spy"{% if section.settings.show_highlight %} data-highlight{% endif %} aria-label="Member page navigation">
+        <ul class="member-nav__list scroll-area" role="menu">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.title != blank and block.settings.target_id != blank -%}
+              {%- assign anchor_id = block.settings.target_id | strip -%}
+              <li role="menuitem" {{ block.shopify_attributes }}>
+                <a
+                  href="#{{ anchor_id }}"
+                  class="member-nav__link scrollspy-link"
+                  data-target="{{ anchor_id }}"
+                >
+                  {{ block.settings.title }}
+                </a>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </nav>
+      <template>
+        <slot></slot>
+        <s dir="{% render 'direction' %}" style="--t: 0;--b: 0;--l: 0;--r: 0;">
+          <span class="l"></span>
+          <span class="r"></span>
+        </s>
+        <style>
+          :host{display:inline-block;position:relative;width:100%}
+          s{position:absolute;inset:0;pointer-events:none}
+          s span{position:absolute;inset-block:0;width:var(--sp-12);opacity:0;transition:opacity var(--animation-short);z-index:2}
+          s .l{inset-inline-start:0;opacity:var(--l);background:linear-gradient(90deg,var(--member-nav-bg) 0%,transparent 100%)}
+          s .r{inset-inline-end:0;opacity:var(--r);background:linear-gradient(270deg,var(--member-nav-bg) 0%,transparent 100%)}
+        </style>
+      </template>
+    </scroll-shadow>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section) return;
+    window.addEventListener('scroll', function () {
+      section.classList.toggle('is-stuck', window.scrollY > section.offsetTop);
+    }, { passive: true });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Member sticky nav",
+  "tag": "section",
+  "class": "member-section member-section--nav scrollspy-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Sticky anchor navigation. Set each block target ID to match section anchor IDs below (without #)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_highlight",
+      "label": "Highlight active section on scroll",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Desktop alignment",
+      "options": [
+        { "value": "flex-start", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text color",
+      "default": "#5c4d78"
+    },
+    {
+      "type": "color",
+      "id": "color_accent",
+      "label": "Active pill color",
+      "default": "#9887b8"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "nav_item",
+      "name": "Nav item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Label",
+          "default": "How It Works"
+        },
+        {
+          "type": "text",
+          "id": "target_id",
+          "label": "Section anchor ID",
+          "default": "member-how-it-works",
+          "info": "Must match the anchor ID on the target section."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Member sticky nav",
+      "blocks": [
+        { "type": "nav_item", "settings": { "title": "How It Works", "target_id": "member-how-it-works" } },
+        { "type": "nav_item", "settings": { "title": "Benefits", "target_id": "member-benefits" } },
+        { "type": "nav_item", "settings": { "title": "Earn", "target_id": "member-earn" } },
+        { "type": "nav_item", "settings": { "title": "Redeem", "target_id": "member-redeem" } },
+        { "type": "nav_item", "settings": { "title": "Refer", "target_id": "member-refer" } },
+        { "type": "nav_item", "settings": { "title": "FAQ", "target_id": "member-faq" } }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  }
+}
+{% endschema %}
