@@ -39,9 +39,12 @@
       }
 
       {%- if product.template_suffix == 'new-t1-5000-1' -%}
-      #shopify-section-{{ section.id }} .product-form-wrapper > #photouploadapp {
+      #shopify-section-{{ section.id }} .product-form #photouploadapp {
         width: 100%;
         margin: 0 0 8px;
+      }
+      #shopify-section-{{ section.id }} .product-form #photouploadapp table {
+        width: 100%;
       }
       #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__buttons .flex-wrap {
         flex-wrap: wrap !important;
