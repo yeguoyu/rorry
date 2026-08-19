@@ -12,16 +12,32 @@
   }
   #shopify-section-{{ section.id }} .product-card__wholesale-row .price {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
     flex: 1 1 auto;
     min-width: 0;
-    gap: 2px;
+    gap: 6px;
+  }
+  #shopify-section-{{ section.id }} .product-card__wholesale-row .price__regular small {
+    display: none;
   }
   #shopify-section-{{ section.id }} .product-card__wholesale-row .product__badges,
   #shopify-section-{{ section.id }} .product-card__wholesale-row .unit-price {
     display: none;
   }
+  #shopify-section-{{ section.id }} .product-card__wholesale-row :is(.price, .price__regular, .price__sale) {
+    font-size: var(--fluid-sm-to-base);
+    line-height: 1.3;
+  }
+  {%- if collection.template_suffix == 'custom-power-bank' -%}
+  #shopify-section-{{ section.id }} .product-card__details [class*="wi2b-offer-price"],
+  #shopify-section-{{ section.id }} .product-card__details [class*="wi2b-offer-price"] * {
+    font-size: var(--fluid-sm-to-base) !important;
+    line-height: 1.3;
+    font-weight: var(--font-medium);
+  }
+  {%- endif -%}
 </style>
 
 {{ 'collection.css' | asset_url | stylesheet_tag }}
