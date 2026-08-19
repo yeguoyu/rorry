@@ -24,8 +24,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
-    align-items: center;
-    justify-items: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -36,26 +34,31 @@
   }
 
   .member-steps-{{ section.id }} .member-step {
-    width: 100%;
-    max-width: {{ section.settings.icon_max_width }}px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .member-steps-{{ section.id }} .member-step__image {
+  .member-steps-{{ section.id }} .member-step__graphic {
+    width: 100%;
+    max-width: {{ section.settings.graphic_max_width }}px;
+    margin: 0 auto 16px;
+  }
+
+  .member-steps-{{ section.id }} .member-step__graphic img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: contain;
   }
 
-  .member-steps-{{ section.id }} .member-step__placeholder {
+  .member-steps-{{ section.id }} .member-step__graphic-placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    aspect-ratio: 1;
-    max-width: {{ section.settings.icon_max_width }}px;
-    margin: 0 auto;
+    min-height: 120px;
     border: 1px dashed rgba(92, 77, 120, 0.25);
     border-radius: 12px;
     background: rgba(152, 135, 184, 0.06);
@@ -63,6 +66,14 @@
     font-size: 13px;
     text-align: center;
     padding: 16px;
+  }
+
+  .member-steps-{{ section.id }} .member-step__text {
+    margin: 0;
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 1.65;
+    color: rgba(92, 77, 120, 0.88);
   }
 {%- endstyle -%}
 
@@ -75,25 +86,38 @@
       {%- if section.blocks.size > 0 -%}
         {%- for block in section.blocks -%}
           {%- if block.type == 'step' -%}
-            <div class="member-step" {{ block.shopify_attributes }}>
-              {%- if block.settings.image != blank -%}
-                {{- block.settings.image
-                  | image_url: width: 800
-                  | image_tag:
-                    loading: 'lazy',
-                    class: 'member-step__image',
-                    alt: block.settings.image.alt | default: block.settings.alt | escape
-                -}}
-              {%- else -%}
-                <div class="member-step__placeholder">Upload step {{ forloop.index }} icon</div>
+            <article class="member-step" {{ block.shopify_attributes }}>
+              <div class="member-step__graphic">
+                {%- if block.settings.graphic != blank -%}
+                  {{- block.settings.graphic
+                    | image_url: width: 600
+                    | image_tag:
+                      loading: 'lazy',
+                      alt: block.settings.graphic.alt | default: block.settings.graphic_alt | escape
+                  -}}
+                {%- else -%}
+                  <div class="member-step__graphic-placeholder">Upload icon + label image</div>
+                {%- endif -%}
+              </div>
+              {%- if block.settings.text != blank -%}
+                <p class="member-step__text">{{ block.settings.text }}</p>
               {%- endif -%}
-            </div>
+            </article>
           {%- endif -%}
         {%- endfor -%}
       {%- else -%}
-        <div class="member-step"><div class="member-step__placeholder">Upload step 1 icon</div></div>
-        <div class="member-step"><div class="member-step__placeholder">Upload step 2 icon</div></div>
-        <div class="member-step"><div class="member-step__placeholder">Upload step 3 icon</div></div>
+        <article class="member-step">
+          <div class="member-step__graphic"><div class="member-step__graphic-placeholder">Upload icon + label image</div></div>
+          <p class="member-step__text">Create your free account and instantly unlock 100 RorryCredits welcoming rewards.</p>
+        </article>
+        <article class="member-step">
+          <div class="member-step__graphic"><div class="member-step__graphic-placeholder">Upload icon + label image</div></div>
+          <p class="member-step__text">Earn RorryCredits every time you shop, sign up, celebrate your birthday, or leave a review.</p>
+        </article>
+        <article class="member-step">
+          <div class="member-step__graphic"><div class="member-step__graphic-placeholder">Upload icon + label image</div></div>
+          <p class="member-step__text">Redeem your points for cash-off discounts, free shipping, or free high-end accessories.</p>
+        </article>
       {%- endif -%}
     </div>
   </div>
@@ -131,13 +155,13 @@
     },
     {
       "type": "range",
-      "id": "icon_max_width",
+      "id": "graphic_max_width",
       "min": 80,
-      "max": 480,
+      "max": 320,
       "step": 10,
       "unit": "px",
-      "label": "Icon max width",
-      "default": 120
+      "label": "Icon + label max width",
+      "default": 160
     },
     {
       "type": "range",
@@ -163,19 +187,26 @@
   "blocks": [
     {
       "type": "step",
-      "name": "Step icon",
+      "name": "Step",
       "limit": 3,
       "settings": [
         {
           "type": "image_picker",
-          "id": "image",
-          "label": "Icon image"
+          "id": "graphic",
+          "label": "Icon + label image",
+          "info": "Upload one image that includes the icon and step name (e.g. JOIN)."
         },
         {
           "type": "text",
-          "id": "alt",
-          "label": "Alt text",
+          "id": "graphic_alt",
+          "label": "Image alt text",
           "info": "Optional. Used if the image has no alt text."
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Create your free account and instantly unlock 100 RorryCredits welcoming rewards."
         }
       ]
     }
@@ -184,9 +215,24 @@
     {
       "name": "Member how it works",
       "blocks": [
-        { "type": "step" },
-        { "type": "step" },
-        { "type": "step" }
+        {
+          "type": "step",
+          "settings": {
+            "text": "Create your free account and instantly unlock 100 RorryCredits welcoming rewards."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "text": "Earn RorryCredits every time you shop, sign up, celebrate your birthday, or leave a review."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "text": "Redeem your points for cash-off discounts, free shipping, or free high-end accessories."
+          }
+        }
       ]
     }
   ],
