@@ -1,6 +1,7 @@
 <style>
   #shopify-section-{{ section.id }} {
     --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
+    --member-purple-dark: {{ section.settings.color_accent_dark | default: '#6b5b8e' }};
     --member-purple-text: {{ section.settings.color_text | default: '#5c4d78' }};
     --member-nav-bg: {{ section.settings.color_background | default: '#ffffff' }};
     position: sticky;
@@ -16,13 +17,25 @@
   }
 
   #shopify-section-{{ section.id }} .member-nav {
-    padding: 12px 0;
+    padding: 14px 0;
+  }
+
+  #shopify-section-{{ section.id }} .member-nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  #shopify-section-{{ section.id }} .member-nav__scroll {
+    flex: 1;
+    min-width: 0;
   }
 
   #shopify-section-{{ section.id }} .member-nav__list {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -39,7 +52,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 18px;
+    padding: 8px 14px;
     border-radius: 999px;
     font-size: 14px;
     font-weight: 500;
@@ -51,60 +64,88 @@
   }
 
   #shopify-section-{{ section.id }} .member-nav__link:hover {
-    background: rgba(152, 135, 184, 0.12);
     color: var(--member-purple);
   }
 
   #shopify-section-{{ section.id }} .member-nav__link.active {
-    background: var(--member-purple);
-    color: #fff;
+    background: rgba(152, 135, 184, 0.14);
+    color: var(--member-purple-dark);
+    font-weight: 600;
   }
 
-  @media screen and (min-width: 990px) {
-    #shopify-section-{{ section.id }} .member-nav__list {
-      justify-content: {{ section.settings.alignment }};
-      flex-wrap: wrap;
-      overflow: visible;
+  #shopify-section-{{ section.id }} .member-nav__cta {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: var(--member-purple-dark);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+  }
+
+  #shopify-section-{{ section.id }} .member-nav__cta:hover {
+    opacity: 0.9;
+  }
+
+  @media screen and (max-width: 989px) {
+    #shopify-section-{{ section.id }} .member-nav__cta {
+      padding: 9px 16px;
+      font-size: 12px;
     }
   }
 </style>
 
 <div class="member-nav">
-  <div class="page-width">
-    <scroll-shadow class="scroll-shadow block overflow-hidden">
-      <nav class="member-nav__bar" is="scroll-spy"{% if section.settings.show_highlight %} data-highlight{% endif %} aria-label="Member page navigation">
-        <ul class="member-nav__list scroll-area" role="menu">
-          {%- for block in section.blocks -%}
-            {%- if block.settings.title != blank and block.settings.target_id != blank -%}
-              {%- assign anchor_id = block.settings.target_id | strip -%}
-              <li role="menuitem" {{ block.shopify_attributes }}>
-                <a
-                  href="#{{ anchor_id }}"
-                  class="member-nav__link scrollspy-link"
-                  data-target="{{ anchor_id }}"
-                >
-                  {{ block.settings.title }}
-                </a>
-              </li>
-            {%- endif -%}
-          {%- endfor -%}
-        </ul>
-      </nav>
-      <template>
-        <slot></slot>
-        <s dir="{% render 'direction' %}" style="--t: 0;--b: 0;--l: 0;--r: 0;">
-          <span class="l"></span>
-          <span class="r"></span>
-        </s>
-        <style>
-          :host{display:inline-block;position:relative;width:100%}
-          s{position:absolute;inset:0;pointer-events:none}
-          s span{position:absolute;inset-block:0;width:var(--sp-12);opacity:0;transition:opacity var(--animation-short);z-index:2}
-          s .l{inset-inline-start:0;opacity:var(--l);background:linear-gradient(90deg,var(--member-nav-bg) 0%,transparent 100%)}
-          s .r{inset-inline-end:0;opacity:var(--r);background:linear-gradient(270deg,var(--member-nav-bg) 0%,transparent 100%)}
-        </style>
-      </template>
-    </scroll-shadow>
+  <div class="page-width member-nav__inner">
+    <div class="member-nav__scroll">
+      <scroll-shadow class="scroll-shadow block overflow-hidden">
+        <nav class="member-nav__bar" is="scroll-spy"{% if section.settings.show_highlight %} data-highlight{% endif %} aria-label="Member page navigation">
+          <ul class="member-nav__list scroll-area" role="menu">
+            {%- for block in section.blocks -%}
+              {%- if block.settings.title != blank and block.settings.target_id != blank -%}
+                {%- assign anchor_id = block.settings.target_id | strip -%}
+                <li role="menuitem" {{ block.shopify_attributes }}>
+                  <a
+                    href="#{{ anchor_id }}"
+                    class="member-nav__link scrollspy-link"
+                    data-target="{{ anchor_id }}"
+                  >
+                    {{ block.settings.title }}
+                  </a>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </nav>
+        <template>
+          <slot></slot>
+          <s dir="{% render 'direction' %}" style="--t: 0;--b: 0;--l: 0;--r: 0;">
+            <span class="l"></span>
+            <span class="r"></span>
+          </s>
+          <style>
+            :host{display:inline-block;position:relative;width:100%}
+            s{position:absolute;inset:0;pointer-events:none}
+            s span{position:absolute;inset-block:0;width:var(--sp-12);opacity:0;transition:opacity var(--animation-short);z-index:2}
+            s .l{inset-inline-start:0;opacity:var(--l);background:linear-gradient(90deg,var(--member-nav-bg) 0%,transparent 100%)}
+            s .r{inset-inline-end:0;opacity:var(--r);background:linear-gradient(270deg,var(--member-nav-bg) 0%,transparent 100%)}
+          </style>
+        </template>
+      </scroll-shadow>
+    </div>
+    {%- if section.settings.cta_label != blank -%}
+      <a href="{{ section.settings.cta_link | default: routes.account_register_url }}" class="member-nav__cta">
+        {{ section.settings.cta_label }}
+      </a>
+    {%- endif -%}
   </div>
 </div>
 
@@ -126,7 +167,7 @@
   "settings": [
     {
       "type": "paragraph",
-      "content": "Sticky anchor navigation. Set each block target ID to match section anchor IDs below (without #)."
+      "content": "Sticky anchor navigation with JOIN NOW button on the right."
     },
     {
       "type": "checkbox",
@@ -135,14 +176,15 @@
       "default": true
     },
     {
-      "type": "select",
-      "id": "alignment",
-      "label": "Desktop alignment",
-      "options": [
-        { "value": "flex-start", "label": "Left" },
-        { "value": "center", "label": "Center" }
-      ],
-      "default": "center"
+      "type": "text",
+      "id": "cta_label",
+      "label": "Right button label",
+      "default": "JOIN NOW"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Right button link"
     },
     {
       "type": "color",
@@ -159,8 +201,14 @@
     {
       "type": "color",
       "id": "color_accent",
-      "label": "Active pill color",
+      "label": "Active link color",
       "default": "#9887b8"
+    },
+    {
+      "type": "color",
+      "id": "color_accent_dark",
+      "label": "Button color",
+      "default": "#6b5b8e"
     }
   ],
   "blocks": [
@@ -172,7 +220,7 @@
           "type": "text",
           "id": "title",
           "label": "Label",
-          "default": "How It Works"
+          "default": "How it works"
         },
         {
           "type": "text",
@@ -188,12 +236,11 @@
     {
       "name": "Member sticky nav",
       "blocks": [
-        { "type": "nav_item", "settings": { "title": "How It Works", "target_id": "member-how-it-works" } },
+        { "type": "nav_item", "settings": { "title": "How it works", "target_id": "member-how-it-works" } },
+        { "type": "nav_item", "settings": { "title": "Events", "target_id": "member-events" } },
         { "type": "nav_item", "settings": { "title": "Benefits", "target_id": "member-benefits" } },
-        { "type": "nav_item", "settings": { "title": "Earn", "target_id": "member-earn" } },
-        { "type": "nav_item", "settings": { "title": "Redeem", "target_id": "member-redeem" } },
-        { "type": "nav_item", "settings": { "title": "Refer", "target_id": "member-refer" } },
-        { "type": "nav_item", "settings": { "title": "FAQ", "target_id": "member-faq" } }
+        { "type": "nav_item", "settings": { "title": "Gift card", "target_id": "member-redeem" } },
+        { "type": "nav_item", "settings": { "title": "FAQs", "target_id": "member-faq" } }
       ]
     }
   ],

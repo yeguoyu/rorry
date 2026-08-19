@@ -1,14 +1,17 @@
+{%- liquid
+  assign step_blocks = section.blocks | where: 'type', 'step'
+  assign has_blocks = false
+  if step_blocks.size > 0
+    assign has_blocks = true
+  endif
+-%}
+
 <style>
   #shopify-section-{{ section.id }} {
     --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
     --member-purple-text: {{ section.settings.color_text | default: '#5c4d78' }};
-    --member-lavender: {{ section.settings.color_background | default: '#f5f2fa' }};
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-  }
-
-  #shopify-section-{{ section.id }} .member-steps {
-    background: var(--member-lavender);
   }
 
   #shopify-section-{{ section.id }} .member-steps__heading {
@@ -23,97 +26,100 @@
   #shopify-section-{{ section.id }} .member-steps__grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 32px;
   }
 
   @media screen and (min-width: 768px) {
     #shopify-section-{{ section.id }} .member-steps__grid {
-      grid-template-columns: repeat({{ section.blocks.size | at_most: 3 }}, 1fr);
-      gap: 32px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
     }
   }
 
   #shopify-section-{{ section.id }} .member-step {
-    background: #fff;
-    border-radius: 20px;
-    padding: 32px 28px;
     text-align: center;
-    box-shadow: 0 2px 16px rgba(92, 77, 120, 0.06);
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #shopify-section-{{ section.id }} .member-step__num {
-    display: inline-flex;
+  #shopify-section-{{ section.id }} .member-step__icon {
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    margin-bottom: 16px;
-    border-radius: 50%;
-    background: var(--member-purple);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 18px;
+    border-radius: 16px;
+    font-size: 32px;
     line-height: 1;
   }
 
+  #shopify-section-{{ section.id }} .member-step__icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+
   #shopify-section-{{ section.id }} .member-step__title {
-    margin: 0 0 12px;
-    font-size: 20px;
+    margin: 0 0 10px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--member-purple-text);
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
   }
 
   #shopify-section-{{ section.id }} .member-step__text {
-    margin: 0 0 20px;
-    font-size: 15px;
-    line-height: 1.65;
-    color: rgba(92, 77, 120, 0.85);
-    flex: 1;
-  }
-
-  #shopify-section-{{ section.id }} .member-step__link {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
+    margin: 0;
+    max-width: 280px;
     font-size: 14px;
-    font-weight: 600;
-    color: var(--member-purple);
-    text-decoration: none;
-  }
-
-  #shopify-section-{{ section.id }} .member-step__link:hover {
-    text-decoration: underline;
+    line-height: 1.65;
+    color: rgba(92, 77, 120, 0.88);
   }
 </style>
 
-<div id="{{ section.settings.anchor_id | default: 'member-how-it-works' }}" class="section section--padding member-steps{% if section.settings.divider %} section--divider{% endif %}">
+<div id="{{ section.settings.anchor_id | default: 'member-how-it-works' }}" class="section section--padding{% if section.settings.divider %} section--divider{% endif %}">
   <div class="page-width">
     {%- if section.settings.heading != blank -%}
       <h2 class="member-steps__heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
     <div class="member-steps__grid">
-      {%- for block in section.blocks -%}
-        <article class="member-step" {{ block.shopify_attributes }}>
-          <span class="member-step__num">{{ forloop.index }}</span>
-          {%- if block.settings.title != blank -%}
-            <h3 class="member-step__title">{{ block.settings.title }}</h3>
-          {%- endif -%}
-          {%- if block.settings.text != blank -%}
-            <p class="member-step__text">{{ block.settings.text }}</p>
-          {%- endif -%}
-          {%- if block.settings.link_label != blank -%}
-            <a href="{{ block.settings.link | default: routes.account_register_url }}" class="member-step__link">
-              {{ block.settings.link_label }} &gt;
-            </a>
-          {%- endif -%}
+      {%- if has_blocks -%}
+        {%- for block in step_blocks -%}
+          <article class="member-step" {{ block.shopify_attributes }}>
+            <div class="member-step__icon" style="background: {{ block.settings.icon_bg | default: '#f5e6a8' }};">
+              {%- if block.settings.icon_image != blank -%}
+                {{- block.settings.icon_image | image_url: width: 72 | image_tag: loading: 'lazy', alt: block.settings.title -}}
+              {%- elsif block.settings.icon_emoji != blank -%}
+                <span aria-hidden="true">{{ block.settings.icon_emoji }}</span>
+              {%- endif -%}
+            </div>
+            {%- if block.settings.title != blank -%}
+              <h3 class="member-step__title">{{ block.settings.title }}</h3>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <p class="member-step__text">{{ block.settings.text }}</p>
+            {%- endif -%}
+          </article>
+        {%- endfor -%}
+      {%- else -%}
+        <article class="member-step">
+          <div class="member-step__icon" style="background:#f5e6a8;"><span aria-hidden="true">🎁</span></div>
+          <h3 class="member-step__title">JOIN</h3>
+          <p class="member-step__text">Register for free and get 100 points immediately.</p>
         </article>
-      {%- endfor -%}
+        <article class="member-step">
+          <div class="member-step__icon" style="background:#d4edda;"><span aria-hidden="true">⏱</span></div>
+          <h3 class="member-step__title">EARN</h3>
+          <p class="member-step__text">Earn points for every dollar spent on rorry.com.</p>
+        </article>
+        <article class="member-step">
+          <div class="member-step__icon" style="background:#f8d7e8;"><span aria-hidden="true">🎟</span></div>
+          <h3 class="member-step__title">REDEEM</h3>
+          <p class="member-step__text">Redeem points for member-exclusive rewards and coupons.</p>
+        </article>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -139,12 +145,6 @@
     },
     {
       "type": "color",
-      "id": "color_background",
-      "label": "Background",
-      "default": "#f5f2fa"
-    },
-    {
-      "type": "color",
       "id": "color_text",
       "label": "Text color",
       "default": "#5c4d78"
@@ -163,7 +163,7 @@
       "step": 4,
       "unit": "px",
       "label": "Padding top",
-      "default": 72
+      "default": 56
     },
     {
       "type": "range",
@@ -173,7 +173,7 @@
       "step": 4,
       "unit": "px",
       "label": "Padding bottom",
-      "default": 72
+      "default": 56
     },
     {
       "type": "checkbox",
@@ -188,6 +188,23 @@
       "name": "Step",
       "settings": [
         {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon image"
+        },
+        {
+          "type": "text",
+          "id": "icon_emoji",
+          "label": "Icon emoji (if no image)",
+          "default": "🎁"
+        },
+        {
+          "type": "color",
+          "id": "icon_bg",
+          "label": "Icon background",
+          "default": "#f5e6a8"
+        },
+        {
           "type": "text",
           "id": "title",
           "label": "Title",
@@ -197,18 +214,7 @@
           "type": "textarea",
           "id": "text",
           "label": "Description",
-          "default": "Create your free account and unlock exclusive member-only rewards instantly."
-        },
-        {
-          "type": "text",
-          "id": "link_label",
-          "label": "Link label",
-          "default": "Join Now"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
+          "default": "Register for free and get 100 points immediately."
         }
       ]
     }
@@ -220,25 +226,28 @@
         {
           "type": "step",
           "settings": {
+            "icon_emoji": "🎁",
+            "icon_bg": "#f5e6a8",
             "title": "JOIN",
-            "text": "Create your free account and unlock exclusive member-only rewards instantly.",
-            "link_label": "Join Now"
+            "text": "Register for free and get 100 points immediately."
           }
         },
         {
           "type": "step",
           "settings": {
+            "icon_emoji": "⏱",
+            "icon_bg": "#d4edda",
             "title": "EARN",
-            "text": "Earn RORRYCredits when you shop, refer friends, or complete member activities.",
-            "link_label": "Start Earning"
+            "text": "Earn points for every dollar spent on rorry.com."
           }
         },
         {
           "type": "step",
           "settings": {
+            "icon_emoji": "🎟",
+            "icon_bg": "#f8d7e8",
             "title": "REDEEM",
-            "text": "Use your credits for special discounts, free products, and exclusive perks.",
-            "link_label": "Redeem Now"
+            "text": "Redeem points for member-exclusive rewards and coupons."
           }
         }
       ]
