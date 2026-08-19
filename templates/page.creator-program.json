@@ -191,6 +191,106 @@
         "rounded": false
       }
     },
+    "zl_nano_3_cW4TLy": {
+      "type": "zl-nano-3",
+      "blocks": {
+        "card_gpM34A": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "shopify://products/rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
+            "image_pc": "shopify://shop_images/charngo-collection_7.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_KVqnUB": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "shopify://products/rorry-t1-10000mah-portable-charger-keychain-power-bank",
+            "image_pc": "shopify://shop_images/charngo-collection_6.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_FHiCYU": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "shopify://products/rorry-d2-10000mah-pd-20w-portable-charger-keychain-power-bank",
+            "image_pc": "shopify://shop_images/charngo-collection_8.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_ybDqMb": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "shopify://products/rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
+            "image_pc": "shopify://shop_images/charngo-collection_11.jpg",
+            "tag": "",
+            "title": "",
+            "price": "",
+            "compare_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_gpM34A",
+        "card_KVqnUB",
+        "card_FHiCYU",
+        "card_ybDqMb"
+      ],
+      "name": "ZL Nano Accordion",
+      "settings": {
+        "bg_color": "#ffffff",
+        "container_width": 1300,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mb": 32,
+        "padding_bottom_mb": 16,
+        "title": "Who We're Looking For",
+        "title_color": "#9887b8",
+        "title_weight": "600",
+        "tab_wrap_bg": "#9887b8",
+        "tab_border_color": "#9887b8",
+        "tab_active_bg": "#ffffff",
+        "tab_active_color": "#9887b8",
+        "tab_inactive_color": "#ffffff",
+        "tab_size_pc": 20,
+        "tab_size_mb": 16,
+        "card_height_pc": 830,
+        "card_height_mb": 400,
+        "tag_bg": "#9887b8",
+        "tag_color": "#ffffff",
+        "tag_size_pc": 13,
+        "tag_size_mb": 12,
+        "card_title_color": "#ffffff",
+        "card_title_weight": "600",
+        "price_color": "#ffffff",
+        "price_size_pc": 20,
+        "price_size_mb": 18,
+        "price_weight": "600",
+        "compare_color": "#9887b8",
+        "compare_size_pc": 18,
+        "compare_size_mb": 16,
+        "plus_bg": "#ffffffb3",
+        "plus_color": "#111111",
+        "main_product_section": "main-product-modal"
+      }
+    },
     "zl_brand_features_rJMRbH": {
       "type": "zl-brand-features",
       "blocks": {
@@ -1297,6 +1397,7 @@
     "main-page",
     "image_with_text_overlay_rmJqTC",
     "multicolumn_with_icons_LcbRjD",
+    "zl_nano_3_cW4TLy",
     "zl_brand_features_rJMRbH",
     "rich_text_xPzhXh",
     "zl_nano_1_qmVeJr",
