@@ -1,7 +1,7 @@
 <style>
   #shopify-section-{{ section.id }} {
     --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
-    --member-purple-dark: {{ section.settings.color_accent_dark | default: '#7a6a9e' }};
+    --member-purple-dark: {{ section.settings.color_accent_dark | default: '#6b5b8e' }};
     --section-padding-top: 0px;
     --section-padding-bottom: 0px;
   }
@@ -10,7 +10,7 @@
     position: relative;
     min-height: {{ section.settings.min_height_mobile }}px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
   }
 
@@ -30,6 +30,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center bottom;
   }
 
   #shopify-section-{{ section.id }} .member-hero__overlay {
@@ -37,9 +38,11 @@
     inset: 0;
     z-index: 1;
     background: linear-gradient(
-      135deg,
-      rgba(152, 135, 184, {{ section.settings.overlay_opacity | divided_by: 100.0 }}) 0%,
-      rgba(122, 106, 158, {{ section.settings.overlay_opacity | plus: 10 | at_most: 95 | divided_by: 100.0 }}) 100%
+      180deg,
+      rgba(152, 135, 184, 0.92) 0%,
+      rgba(152, 135, 184, 0.55) 38%,
+      rgba(152, 135, 184, 0.15) 72%,
+      rgba(152, 135, 184, 0) 100%
     );
   }
 
@@ -47,25 +50,31 @@
     position: relative;
     z-index: 2;
     width: 100%;
-    padding: 48px 0;
+    padding: {{ section.settings.content_padding_top_mobile }}px 0 48px;
     text-align: {{ section.settings.text_alignment }};
     color: {{ section.settings.color_text }};
   }
 
+  @media screen and (min-width: 768px) {
+    #shopify-section-{{ section.id }} .member-hero__content {
+      padding-top: {{ section.settings.content_padding_top }}px;
+    }
+  }
+
   #shopify-section-{{ section.id }} .member-hero__title {
-    margin: 0 0 16px;
-    font-size: clamp(28px, 4vw, 44px);
+    margin: 0 0 14px;
+    font-size: clamp(30px, 4.2vw, 48px);
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.12;
     letter-spacing: -0.02em;
   }
 
   #shopify-section-{{ section.id }} .member-hero__subtitle {
-    margin: 0 auto 28px;
-    max-width: 640px;
-    font-size: clamp(15px, 2vw, 18px);
-    line-height: 1.6;
-    opacity: 0.95;
+    margin: 0 {% if section.settings.text_alignment == 'center' %}auto{% else %}0{% endif %} 24px;
+    max-width: 560px;
+    font-size: clamp(14px, 1.8vw, 17px);
+    line-height: 1.65;
+    opacity: 0.96;
   }
 
   #shopify-section-{{ section.id }} .member-hero__actions {
@@ -79,34 +88,26 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 140px;
-    padding: 14px 32px;
+    min-width: 148px;
+    padding: 13px 36px;
     border-radius: 999px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
   }
 
   #shopify-section-{{ section.id }} .member-hero__btn--primary {
-    background: #fff;
-    color: var(--member-purple-dark);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    background: var(--member-purple-dark);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   }
 
   #shopify-section-{{ section.id }} .member-hero__btn--primary:hover {
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
-  }
-
-  #shopify-section-{{ section.id }} .member-hero__btn--secondary {
-    background: transparent;
-    color: #fff;
-    border: 2px solid rgba(255, 255, 255, 0.85);
-  }
-
-  #shopify-section-{{ section.id }} .member-hero__btn--secondary:hover {
-    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   }
 </style>
 
@@ -121,7 +122,7 @@
         {%- if section.settings.image != blank -%}
           {{- section.settings.image | image_url: width: 2400 | image_tag: loading: 'eager', fetchpriority: 'high', alt: section.settings.title | escape -}}
         {%- else -%}
-          <div style="width:100%;height:100%;background:linear-gradient(135deg,#9887b8,#7a6a9e);"></div>
+          <div style="width:100%;height:100%;background:linear-gradient(180deg,#b8a8d4 0%,#9887b8 40%,#e8e4f2 100%);"></div>
         {%- endif -%}
       </picture>
     </div>
@@ -133,18 +134,13 @@
       {%- if section.settings.subtitle != blank -%}
         <p class="member-hero__subtitle">{{ section.settings.subtitle }}</p>
       {%- endif -%}
-      <div class="member-hero__actions">
-        {%- if section.settings.signup_label != blank -%}
-          <a href="{{ section.settings.signup_link | default: routes.account_register_url }}" class="member-hero__btn member-hero__btn--primary">
-            {{ section.settings.signup_label }}
+      {%- if section.settings.button_label != blank -%}
+        <div class="member-hero__actions">
+          <a href="{{ section.settings.button_link | default: routes.account_register_url }}" class="member-hero__btn member-hero__btn--primary">
+            {{ section.settings.button_label }}
           </a>
-        {%- endif -%}
-        {%- if section.settings.login_label != blank -%}
-          <a href="{{ section.settings.login_link | default: routes.account_login_url }}" class="member-hero__btn member-hero__btn--secondary">
-            {{ section.settings.login_label }}
-          </a>
-        {%- endif -%}
-      </div>
+        </div>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -173,7 +169,7 @@
       "step": 10,
       "unit": "px",
       "label": "Minimum height desktop",
-      "default": 480
+      "default": 520
     },
     {
       "type": "range",
@@ -183,51 +179,50 @@
       "step": 10,
       "unit": "px",
       "label": "Minimum height mobile",
-      "default": 380
+      "default": 420
     },
     {
       "type": "range",
-      "id": "overlay_opacity",
-      "min": 0,
-      "max": 90,
-      "step": 5,
-      "unit": "%",
-      "label": "Overlay opacity",
-      "default": 55
+      "id": "content_padding_top",
+      "min": 48,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Content offset from top (desktop)",
+      "default": 88
+    },
+    {
+      "type": "range",
+      "id": "content_padding_top_mobile",
+      "min": 40,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "label": "Content offset from top (mobile)",
+      "default": 72
     },
     {
       "type": "text",
       "id": "title",
       "label": "Heading",
-      "default": "Join the RORRY Rewards Program"
+      "default": "Unlock Your Rorry Club Benefits"
     },
     {
       "type": "textarea",
       "id": "subtitle",
       "label": "Subheading",
-      "default": "Register now to earn RORRYCredits with every purchase and unlock exclusive member rewards."
+      "default": "Free registration, extended warranty, and member-exclusive gifts."
     },
     {
       "type": "text",
-      "id": "signup_label",
-      "label": "Sign up button",
-      "default": "Sign Up"
+      "id": "button_label",
+      "label": "Button label",
+      "default": "JOIN NOW"
     },
     {
       "type": "url",
-      "id": "signup_link",
-      "label": "Sign up link"
-    },
-    {
-      "type": "text",
-      "id": "login_label",
-      "label": "Log in button",
-      "default": "Log In"
-    },
-    {
-      "type": "url",
-      "id": "login_link",
-      "label": "Log in link"
+      "id": "button_link",
+      "label": "Button link"
     },
     {
       "type": "select",
@@ -254,8 +249,8 @@
     {
       "type": "color",
       "id": "color_accent_dark",
-      "label": "Accent purple dark",
-      "default": "#7a6a9e"
+      "label": "Button purple",
+      "default": "#6b5b8e"
     },
     {
       "type": "checkbox",
