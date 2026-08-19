@@ -135,7 +135,7 @@
           "settings": {
             "icon": "trophy",
             "custom_icon": "",
-            "heading": "<strong>Earn Commission</strong>",
+            "heading": "<a href=\"https://rorry.goaffpro.com/\" title=\"https://rorry.goaffpro.com/\"><strong>Earn Commission</strong></a>",
             "text": "<p>Earn up to <strong>10% affiliate commission</strong> on every sale generated through your unique link</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
