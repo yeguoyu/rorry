@@ -1,12 +1,5 @@
-<style>
-  #shopify-section-{{ section.id }} {
-    --member-purple: {{ section.settings.color_accent | default: '#9887b8' }};
-    --member-purple-dark: {{ section.settings.color_accent_dark | default: '#6b5b8e' }};
-    --section-padding-top: 0px;
-    --section-padding-bottom: 0px;
-  }
-
-  #shopify-section-{{ section.id }} .member-hero {
+{%- style -%}
+  #member-hero-{{ section.id }} {
     position: relative;
     min-height: {{ section.settings.min_height_mobile }}px;
     display: flex;
@@ -15,25 +8,25 @@
   }
 
   @media screen and (min-width: 768px) {
-    #shopify-section-{{ section.id }} .member-hero {
+    #member-hero-{{ section.id }} {
       min-height: {{ section.settings.min_height }}px;
     }
   }
 
-  #shopify-section-{{ section.id }} .member-hero__media {
+  #member-hero-{{ section.id }} .member-hero__media {
     position: absolute;
     inset: 0;
     z-index: 0;
   }
 
-  #shopify-section-{{ section.id }} .member-hero__media img {
+  #member-hero-{{ section.id }} .member-hero__media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center bottom;
   }
 
-  #shopify-section-{{ section.id }} .member-hero__overlay {
+  #member-hero-{{ section.id }} .member-hero__overlay {
     position: absolute;
     inset: 0;
     z-index: 1;
@@ -46,22 +39,24 @@
     );
   }
 
-  #shopify-section-{{ section.id }} .member-hero__content {
+  #member-hero-{{ section.id }} .member-hero__content {
     position: relative;
     z-index: 2;
     width: 100%;
-    padding: {{ section.settings.content_padding_top_mobile }}px 0 48px;
+    max-width: var(--page-width, 1200px);
+    margin: 0 auto;
+    padding: {{ section.settings.content_padding_top_mobile }}px var(--page-padding, 20px) 48px;
     text-align: {{ section.settings.text_alignment }};
     color: {{ section.settings.color_text }};
   }
 
   @media screen and (min-width: 768px) {
-    #shopify-section-{{ section.id }} .member-hero__content {
+    #member-hero-{{ section.id }} .member-hero__content {
       padding-top: {{ section.settings.content_padding_top }}px;
     }
   }
 
-  #shopify-section-{{ section.id }} .member-hero__title {
+  #member-hero-{{ section.id }} .member-hero__title {
     margin: 0 0 14px;
     font-size: clamp(30px, 4.2vw, 48px);
     font-weight: 700;
@@ -69,7 +64,7 @@
     letter-spacing: -0.02em;
   }
 
-  #shopify-section-{{ section.id }} .member-hero__subtitle {
+  #member-hero-{{ section.id }} .member-hero__subtitle {
     margin: 0 {% if section.settings.text_alignment == 'center' %}auto{% else %}0{% endif %} 24px;
     max-width: 560px;
     font-size: clamp(14px, 1.8vw, 17px);
@@ -77,14 +72,14 @@
     opacity: 0.96;
   }
 
-  #shopify-section-{{ section.id }} .member-hero__actions {
+  #member-hero-{{ section.id }} .member-hero__actions {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     justify-content: {% if section.settings.text_alignment == 'center' %}center{% else %}flex-start{% endif %};
   }
 
-  #shopify-section-{{ section.id }} .member-hero__btn {
+  #member-hero-{{ section.id }} .member-hero__btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -99,22 +94,21 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
   }
 
-  #shopify-section-{{ section.id }} .member-hero__btn--primary {
-    background: var(--member-purple-dark);
+  #member-hero-{{ section.id }} .member-hero__btn--primary {
+    background: {{ section.settings.color_accent_dark }};
     color: #fff;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   }
 
-  #shopify-section-{{ section.id }} .member-hero__btn--primary:hover {
+  #member-hero-{{ section.id }} .member-hero__btn--primary:hover {
     transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   }
-</style>
+{%- endstyle -%}
 
-<div class="section section--padding{% if section.settings.rounded %} section--rounded relative{% endif %}"{% if section.settings.transparent_header %} allow-transparent-header{% endif %}>
-  <div class="member-hero">
+<div class="member-hero-section"{% if section.settings.transparent_header %} allow-transparent-header{% endif %}>
+  <div id="member-hero-{{ section.id }}" class="member-hero">
     <div class="member-hero__media">
-      {%- assign hero_mobile = section.settings.image_mobile | default: section.settings.image -%}
       <picture>
         {%- if section.settings.image_mobile != blank -%}
           <source media="(max-width: 767px)" srcset="{{ section.settings.image_mobile | image_url: width: 800 }}">
@@ -127,7 +121,7 @@
       </picture>
     </div>
     <div class="member-hero__overlay"></div>
-    <div class="page-width member-hero__content">
+    <div class="member-hero__content">
       {%- if section.settings.title != blank -%}
         <h1 class="member-hero__title">{{ section.settings.title }}</h1>
       {%- endif -%}
@@ -148,7 +142,6 @@
 {% schema %}
 {
   "name": "Member rewards hero",
-  "tag": "section",
   "class": "member-section member-section--hero",
   "settings": [
     {
@@ -257,12 +250,6 @@
       "id": "transparent_header",
       "label": "Transparent header",
       "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "rounded",
-      "default": false,
-      "label": "Rounded section"
     }
   ],
   "presets": [

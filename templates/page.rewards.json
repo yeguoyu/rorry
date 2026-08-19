@@ -38,8 +38,7 @@
         "color_text": "#ffffff",
         "color_accent": "#9887b8",
         "color_accent_dark": "#6b5b8e",
-        "transparent_header": true,
-        "rounded": false
+        "transparent_header": true
       }
     },
     "member_nav": {
@@ -130,8 +129,7 @@
         "color_background": "#ffffff",
         "color_accent": "#9887b8",
         "padding_top": 56,
-        "padding_bottom": 56,
-        "divider": false
+        "padding_bottom": 56
       }
     },
     "member_unlock": {
@@ -168,11 +166,11 @@
         "anchor_id": "member-benefits",
         "heading": "Unlock Exclusive Rewards",
         "color_text": "#5c4d78",
+        "color_background": "#ffffff",
         "color_accent": "#9887b8",
         "color_card": "#efebf5",
         "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false
+        "padding_bottom": 72
       }
     }
   },
