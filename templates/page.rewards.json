@@ -95,30 +95,15 @@
       "blocks": {
         "step_1": {
           "type": "step",
-          "settings": {
-            "icon_emoji": "🎁",
-            "icon_bg": "#f5e6a8",
-            "title": "JOIN",
-            "text": "Register for free and get 100 points immediately."
-          }
+          "settings": {}
         },
         "step_2": {
           "type": "step",
-          "settings": {
-            "icon_emoji": "⏱",
-            "icon_bg": "#d4edda",
-            "title": "EARN",
-            "text": "Earn points for every dollar spent on rorry.com."
-          }
+          "settings": {}
         },
         "step_3": {
           "type": "step",
-          "settings": {
-            "icon_emoji": "🎟",
-            "icon_bg": "#f8d7e8",
-            "title": "REDEEM",
-            "text": "Redeem points for member-exclusive rewards and coupons."
-          }
+          "settings": {}
         }
       },
       "block_order": ["step_1", "step_2", "step_3"],
@@ -127,7 +112,7 @@
         "heading": "How It Works",
         "color_text": "#5c4d78",
         "color_background": "#ffffff",
-        "color_accent": "#9887b8",
+        "icon_max_width": 120,
         "padding_top": 56,
         "padding_bottom": 56
       }
