@@ -30,17 +30,10 @@
         "appstle_loyalty_appstle_loyalty_dedicated_page_block_teQM8H": {
           "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-dedicated-page-block/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
           "settings": {}
-        },
-        "powerful_form_builder_app_block_FcaWgt": {
-          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-          "settings": {
-            "shortcode": ""
-          }
         }
       },
       "block_order": [
-        "appstle_loyalty_appstle_loyalty_dedicated_page_block_teQM8H",
-        "powerful_form_builder_app_block_FcaWgt"
+        "appstle_loyalty_appstle_loyalty_dedicated_page_block_teQM8H"
       ],
       "settings": {
         "color_text": "",
