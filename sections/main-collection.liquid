@@ -31,6 +31,18 @@
     line-height: 1.3;
   }
   {%- if collection.template_suffix == 'custom-power-bank' -%}
+  #shopify-section-{{ section.id }} .product-card__content {
+    --card-content-padding-inline: clamp(var(--sp-2), 1.05vw, var(--sp-5));
+    padding-inline: var(--card-content-padding-inline);
+  }
+  #shopify-section-{{ section.id }} .product-card__wholesale-row {
+    gap: 6px;
+  }
+  @media screen and (min-width: 768px) {
+    #shopify-section-{{ section.id }} .product-card__wholesale-row .price {
+      flex-wrap: nowrap;
+    }
+  }
   #shopify-section-{{ section.id }} .product-card__details [class*="wi2b-offer-price"],
   #shopify-section-{{ section.id }} .product-card__details [class*="wi2b-offer-price"] * {
     font-size: var(--fluid-sm-to-base) !important;
