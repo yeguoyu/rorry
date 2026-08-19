@@ -11,6 +11,7 @@
   "sections": {
     "main-page": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left",
@@ -26,6 +27,10 @@
     "17345766436cfde53f": {
       "type": "apps",
       "blocks": {
+        "appstle_loyalty_appstle_loyalty_dedicated_page_block_teQM8H": {
+          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-dedicated-page-block/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+          "settings": {}
+        },
         "powerful_form_builder_app_block_FcaWgt": {
           "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
           "settings": {
@@ -34,6 +39,7 @@
         }
       },
       "block_order": [
+        "appstle_loyalty_appstle_loyalty_dedicated_page_block_teQM8H",
         "powerful_form_builder_app_block_FcaWgt"
       ],
       "settings": {

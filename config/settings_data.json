@@ -255,16 +255,16 @@
         "type": "shopify://apps/wi2b-b2b-wholesale-pricing/blocks/wi-b2b/019edf04-b432-70e8-9961-43b0cc6733fe",
         "disabled": false,
         "settings": {
-          "enable_registration": true,
-          "enable_quick_order_form": true,
-          "enable_offer_pricing": true,
-          "enable_hide_product": false,
-          "enable_hide_price": false,
           "product_card_selector": "",
           "price_selector": "",
           "exclude_price_selector": "",
           "product_info_selector": ""
         }
+      },
+      "16237003337219470499": {
+        "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
@@ -618,8 +618,8 @@
       "product-info.product__info > * {flex: 0 0 100%; min-width: 0;}",
       "product-info.product__info > .product__price {flex: 0 0 auto !important; width: auto !important; margin-right: 12px;}",
       "product-info.product__info > shopify-block:has(.jdgm-prev-badge) {flex: 0 0 auto !important; width: auto !important; align-self: center;}",
-      "/* 1. 让 Upload Logo 独立成行，不再跟按钮抢位置 */.product-form__buttons p, .product-form__buttons div:has(input[type=\"file\"]) {width: 100% !important; flex: 0 0 100% !important; margin-bottom: 12px !important;}",
-      "/* 2. 恢复数量框的正常宽度，不再缩成圆形 */.product-form__quantity, [class*=\"quantity-selector\"] {width: 120px !important; min-width: 120px !important; border-radius: 8px !important;}"
+      " /* 1. 让 Upload Logo 独立成行，不再跟按钮抢位置 */.product-form__buttons p,.product-form__buttons div:has(input[type=\"file\"]) {width: 100% !important; flex: 0 0 100% !important; margin-bottom: 12px !important;}",
+      " /* 2. 恢复数量框的正常宽度，不再缩成圆形 */.product-form__quantity,[class*=\"quantity-selector\"] {width: 120px !important; min-width: 120px !important; border-radius: 8px !important;}"
     ]
   }
 }
