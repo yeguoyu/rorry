@@ -13,47 +13,177 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "heading_size": "title-lg tracking-heading",
+        "heading_size": "title-xl",
         "heading_alignment": "text-left",
         "heading_tag": "h1",
         "text_size": "text-base",
-        "padding_top": 116,
-        "padding_bottom": 120,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
-        "narrow": true,
+        "narrow": false,
         "rounded": false
       }
     },
-    "17345766436cfde53f": {
-      "type": "apps",
+    "member_hero": {
+      "type": "member-rewards-hero",
+      "settings": {
+        "min_height": 480,
+        "min_height_mobile": 380,
+        "overlay_opacity": 55,
+        "title": "Join the RORRY Rewards Program",
+        "subtitle": "Register now to earn RORRYCredits with every purchase and unlock exclusive member rewards.",
+        "signup_label": "Sign Up",
+        "login_label": "Log In",
+        "text_alignment": "center",
+        "color_text": "#ffffff",
+        "color_accent": "#9887b8",
+        "color_accent_dark": "#7a6a9e",
+        "transparent_header": true,
+        "rounded": false
+      }
+    },
+    "member_nav": {
+      "type": "member-sticky-nav",
       "blocks": {
-        "appstle_loyalty_appstle_loyalty_dedicated_page_block_teQM8H": {
-          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-dedicated-page-block/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
-          "settings": {}
+        "nav_1": {
+          "type": "nav_item",
+          "settings": {
+            "title": "How It Works",
+            "target_id": "member-how-it-works"
+          }
+        },
+        "nav_2": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Benefits",
+            "target_id": "member-benefits"
+          }
+        },
+        "nav_3": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Earn",
+            "target_id": "member-earn"
+          }
+        },
+        "nav_4": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Redeem",
+            "target_id": "member-redeem"
+          }
+        },
+        "nav_5": {
+          "type": "nav_item",
+          "settings": {
+            "title": "Refer",
+            "target_id": "member-refer"
+          }
+        },
+        "nav_6": {
+          "type": "nav_item",
+          "settings": {
+            "title": "FAQ",
+            "target_id": "member-faq"
+          }
         }
       },
-      "block_order": [
-        "appstle_loyalty_appstle_loyalty_dedicated_page_block_teQM8H"
-      ],
+      "block_order": ["nav_1", "nav_2", "nav_3", "nav_4", "nav_5", "nav_6"],
       "settings": {
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
+        "show_highlight": true,
+        "alignment": "center",
+        "color_background": "#ffffff",
+        "color_text": "#5c4d78",
+        "color_accent": "#9887b8"
+      }
+    },
+    "member_steps": {
+      "type": "member-how-it-works",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "JOIN",
+            "text": "Create your free account and unlock exclusive member-only rewards instantly.",
+            "link_label": "Join Now"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "EARN",
+            "text": "Earn RORRYCredits when you shop, refer friends, or complete member activities.",
+            "link_label": "Start Earning"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "REDEEM",
+            "text": "Use your credits for special discounts, free products, and exclusive perks.",
+            "link_label": "Redeem Now"
+          }
+        }
+      },
+      "block_order": ["step_1", "step_2", "step_3"],
+      "settings": {
+        "anchor_id": "member-how-it-works",
+        "heading": "How It Works",
+        "color_background": "#f5f2fa",
+        "color_text": "#5c4d78",
+        "color_accent": "#9887b8",
         "padding_top": 72,
         "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
+        "divider": false
+      }
+    },
+    "member_unlock": {
+      "type": "member-unlock-rewards",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "title": "Feature Products",
+            "text": "Redeem your credits for free products, exclusive accessories, and member favorites.",
+            "button_label": "Redeem Now"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "title": "Coupons & Discounts",
+            "text": "Use your credits to unlock instant savings on every order.",
+            "button_label": "Redeem Now"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "title": "Member-Exclusive Merch",
+            "text": "Redeem credits for exclusive RORRY member merch and limited-edition goodies.",
+            "button_label": "Coming Soon",
+            "button_disabled": true
+          }
+        }
+      },
+      "block_order": ["card_1", "card_2", "card_3"],
+      "settings": {
+        "anchor_id": "member-unlock",
+        "heading": "Unlock Exclusive Rewards",
+        "color_text": "#5c4d78",
+        "color_accent": "#9887b8",
+        "color_card": "#efebf5",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false
       }
     }
   },
   "order": [
     "main-page",
-    "17345766436cfde53f"
+    "member_hero",
+    "member_nav",
+    "member_steps",
+    "member_unlock"
   ]
 }
