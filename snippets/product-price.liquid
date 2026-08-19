@@ -9,6 +9,7 @@
   @param {boolean} [placeholder] - Display placeholder $19.99 price
   @param {boolean} [hide_unit_price] - Hide unit price information
   @param {boolean} [skip_to_price] - Skip quantity break considerations
+  @param {boolean} [hide_from_price] - Show min price without "From" prefix
   @param {string} [class] - Additional CSS classes
 
   @example
@@ -55,7 +56,11 @@
           else
             assign price_min = product.price_min | money
           endif
-          echo 'products.price.from_price_html' | t: price: price_min
+          if hide_from_price
+            echo price_min
+          else
+            echo 'products.price.from_price_html' | t: price: price_min
+          endif
         else
           if settings.currency_code_enabled
             echo price | money_with_currency
@@ -69,7 +74,11 @@
         else
           assign price_min = product.price_min | money
         endif
-        echo 'products.price.from_price_html' | t: price: price_min
+        if hide_from_price
+          echo price_min
+        else
+          echo 'products.price.from_price_html' | t: price: price_min
+        endif
       endif
     -%}
   </span>
