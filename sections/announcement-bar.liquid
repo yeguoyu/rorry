@@ -120,21 +120,42 @@
                   {%- render 'corner', dir: 'top', prefix: 'dropdown' -%}
                   <ul class="dropdown__nav flex flex-col gap-1d5 xl:gap-2" role="list">
                     {%- for country in localization.available_countries -%}
-                      <li class="opacity-0">
-                        <p>
-                          <a class="reversed-link{% if country.iso_code == localization.country.iso_code %} active pointer-events-none{% endif %}"
-                            href="#"
-                            {% if country.iso_code == localization.country.iso_code %}
-                              aria-current="true"
-                            {% endif %}
-                            data-value="{{ country.iso_code }}"
-                            title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
-                            data-no-instant
-                          >
-                            {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
-                          </a>
-                        </p>
-                      </li>
+                      {%- if country.iso_code == 'US' -%}
+                        <li class="opacity-0">
+                          <p>
+                            <a class="reversed-link{% if country.iso_code == localization.country.iso_code %} active pointer-events-none{% endif %}"
+                              href="#"
+                              {% if country.iso_code == localization.country.iso_code %}
+                                aria-current="true"
+                              {% endif %}
+                              data-value="{{ country.iso_code }}"
+                              title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+                              data-no-instant
+                            >
+                              {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                            </a>
+                          </p>
+                        </li>
+                      {%- endif -%}
+                    {%- endfor -%}
+                    {%- for country in localization.available_countries -%}
+                      {%- unless country.iso_code == 'US' -%}
+                        <li class="opacity-0">
+                          <p>
+                            <a class="reversed-link{% if country.iso_code == localization.country.iso_code %} active pointer-events-none{% endif %}"
+                              href="#"
+                              {% if country.iso_code == localization.country.iso_code %}
+                                aria-current="true"
+                              {% endif %}
+                              data-value="{{ country.iso_code }}"
+                              title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+                              data-no-instant
+                            >
+                              {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                            </a>
+                          </p>
+                        </li>
+                      {%- endunless -%}
                     {%- endfor -%}
                   </ul>
                   <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}" />
