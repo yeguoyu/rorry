@@ -1,0 +1,89 @@
+{%- doc -%}
+  Renders country localization options with United States listed first.
+
+  @param {string} [variant] - 'dropdown' (default), 'drawer', or 'option'
+{%- enddoc -%}
+
+{%- liquid
+  assign list_variant = variant | default: 'dropdown'
+-%}
+
+{%- for country in localization.available_countries -%}
+  {%- if country.iso_code == 'US' -%}
+    {%- if list_variant == 'option' -%}
+      <option value="{{ country.iso_code }}"{% if country.iso_code == localization.country.iso_code %} selected{% endif %}>
+        {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+      </option>
+    {%- elsif list_variant == 'drawer' -%}
+      <li class="opacity-0">
+        <a class="text-sm reversed-link{% if country.iso_code == localization.country.iso_code %} active{% endif %}"
+          href="#"
+          {% if country.iso_code == localization.country.iso_code %}
+            aria-current="true"
+          {% endif %}
+          data-value="{{ country.iso_code }}"
+          title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+          data-no-instant
+        >
+          {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+        </a>
+      </li>
+    {%- else -%}
+      <li class="opacity-0">
+        <p>
+          <a class="reversed-link{% if country.iso_code == localization.country.iso_code %} active pointer-events-none{% endif %}"
+            href="#"
+            {% if country.iso_code == localization.country.iso_code %}
+              aria-current="true"
+            {% endif %}
+            data-value="{{ country.iso_code }}"
+            title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+            data-no-instant
+          >
+            {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+          </a>
+        </p>
+      </li>
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- for country in localization.available_countries -%}
+  {%- unless country.iso_code == 'US' -%}
+    {%- if list_variant == 'option' -%}
+      <option value="{{ country.iso_code }}"{% if country.iso_code == localization.country.iso_code %} selected{% endif %}>
+        {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+      </option>
+    {%- elsif list_variant == 'drawer' -%}
+      <li class="opacity-0">
+        <a class="text-sm reversed-link{% if country.iso_code == localization.country.iso_code %} active{% endif %}"
+          href="#"
+          {% if country.iso_code == localization.country.iso_code %}
+            aria-current="true"
+          {% endif %}
+          data-value="{{ country.iso_code }}"
+          title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+          data-no-instant
+        >
+          {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+        </a>
+      </li>
+    {%- else -%}
+      <li class="opacity-0">
+        <p>
+          <a class="reversed-link{% if country.iso_code == localization.country.iso_code %} active pointer-events-none{% endif %}"
+            href="#"
+            {% if country.iso_code == localization.country.iso_code %}
+              aria-current="true"
+            {% endif %}
+            data-value="{{ country.iso_code }}"
+            title="{{ country.name | escape }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})"
+            data-no-instant
+          >
+            {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+          </a>
+        </p>
+      </li>
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
