@@ -106,11 +106,7 @@
                 </select>
               {%- else -%}
                 <select class="localization__item cursor-pointer absolute top-0 left-0 w-full h-full opacity-0" name="country_code" id="FooterLocalizationCountryList">
-                  {%- for country in localization.available_countries -%}
-                    <option value="{{ country.iso_code }}"{% if country.iso_code == localization.country.iso_code %} selected{% endif %}>
-                      {{- country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
-                    </option>
-                  {%- endfor -%}
+                  {%- render 'localization-country-list', variant: 'option' -%}
                 </select>
               {%- endunless -%}
               {%- render 'icon', icon: 'chevron-down', size: 'xs', class: 'absolute pointer-events-none' -%}
