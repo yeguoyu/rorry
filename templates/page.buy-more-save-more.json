@@ -223,7 +223,7 @@
           "type": "heading",
           "settings": {
             "heading": "Dorm Essentials Bundle",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -296,7 +296,7 @@
           "type": "heading",
           "settings": {
             "heading": "Power-Packed Lectures Bundle",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -368,7 +368,7 @@
           "type": "heading",
           "settings": {
             "heading": "Dorm Essentials Bundle",
-            "heading_size": "title-md",
+            "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
