@@ -476,8 +476,8 @@
         "question_zxNBBt": {
           "type": "question",
           "settings": {
-            "title": "5. What capacity should I choose for my daily use?",
-            "text": "<ul><li><strong>5000mAh models (D2/T1): </strong>Ultra-light, perfect for light daily use and emergency top-ups.</li><li><strong>10000mAh models (all series): </strong>Covers full-day charging needs for most smartphones and small devices.</li><li><strong>20000mAh model (</strong><a href=\"/products/rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank\" title=\"RORRY D2-20000mAh Portable Charger Keychain Power Bank 30W\"><strong>D2-20000</strong></a><strong>):</strong> Ideal for multi-device users or those needing extended power on trips.</li></ul>",
+            "title": "5. Which RORRY power bank can charge a laptop?",
+            "text": "<p>RORRY H3 is the laptop-focused option in these setups. It has a 25000mAh battery, supports up to 65W USB-C output, and includes a retractable USB-C cable. Confirm your laptop's charging requirements before use.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
