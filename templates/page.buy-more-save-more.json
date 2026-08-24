@@ -182,6 +182,40 @@
         "rounded": false
       }
     },
+    "multicolumn_with_icons_Gt9dbB": {
+      "type": "multicolumn-with-icons",
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-border",
+        "columns": 3,
+        "text_alignment": "center",
+        "heading": "Power Every Part of Your Day",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>From a clutter-free dorm desk to long library sessions and weekend escapes, build a charging setup around the moments that matter most.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "compact_product_bundle_eHXURw": {
       "type": "compact-product-bundle",
       "blocks": {
@@ -246,7 +280,7 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 40,
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 40,
         "divider": false,
         "full_width": false,
@@ -1597,6 +1631,7 @@
     "main-page",
     "image_with_text_overlay_rmJqTC",
     "multicolumn_with_icons_LcbRjD",
+    "multicolumn_with_icons_Gt9dbB",
     "compact_product_bundle_eHXURw",
     "zl_nano_3_cW4TLy",
     "reveal_image_with_text_overlay_4TKDh7",
