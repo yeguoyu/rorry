@@ -431,7 +431,7 @@
         "full_width": false,
         "rounded": false,
         "enable_parallax": true,
-        "parallax_direction": "vertical"
+        "parallax_direction": "zoom"
       }
     },
     "faq_XjyrqX": {
