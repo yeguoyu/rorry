@@ -234,7 +234,7 @@
           "settings": {
             "text": "<p>Clean Desk, Zero Clutter</p>",
             "text_font": "body",
-            "text_size": "subtext-lg",
+            "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -307,7 +307,7 @@
           "settings": {
             "text": "<p>Ultra-Slim, All-Day Stamina</p>",
             "text_font": "body",
-            "text_size": "subtext-lg",
+            "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -367,7 +367,7 @@
         "heading_Pjg38f": {
           "type": "heading",
           "settings": {
-            "heading": "Dorm Essentials Bundle",
+            "heading": "Weekend Escape Bundle",
             "heading_size": "title-sm",
             "heading_tag": "h3",
             "highlighted_text": "none",
@@ -377,9 +377,9 @@
         "text_kLzzLC": {
           "type": "text",
           "settings": {
-            "text": "<p>Clean Desk, Zero Clutter<br/><br/></p>",
+            "text": "<p>Unplug & Explore</p>",
             "text_font": "body",
-            "text_size": "subtext-md",
+            "text_size": "subtext-xl",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
