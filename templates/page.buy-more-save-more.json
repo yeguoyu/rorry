@@ -232,6 +232,153 @@
         "text_EkDnXm": {
           "type": "text",
           "settings": {
+            "text": "<p>Clean Desk, Zero Clutter</p>",
+            "text_font": "body",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4WF8aH",
+        "text_EkDnXm"
+      ],
+      "name": "t:sections.compact-product-bundle.name",
+      "settings": {
+        "collection": "",
+        "products": [
+          "rorry-auradock-m2-5000mah-3-in-1-charging-station-magsafe-power-bank",
+          "rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w",
+          "rorry-h1-10000mah-portable-charger-30w-fast-charging-power-bank-with-built-in-retractable-cables"
+        ],
+        "product_limit": 3,
+        "image": "shopify://shop_images/rorry-dorm-essentials-charging-bundle-1000_x_1500.webp",
+        "layout": "image_first",
+        "content_position": "md:items-center",
+        "text_alignment": "center",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-center",
+        "text_alignment_mobile": "center",
+        "swipe_on_mobile": true,
+        "show_variant_labels": true,
+        "picker_type": "button",
+        "enable_color_swatches": true,
+        "color_swatch_type": "color",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "compact_product_bundle_XUh3zc": {
+      "type": "compact-product-bundle",
+      "blocks": {
+        "heading_f9njK3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Power-Packed Lectures Bundle",
+            "heading_size": "title-md",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_fGz8y6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ultra-Slim, All-Day Stamina</p>",
+            "text_font": "body",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_f9njK3",
+        "text_fGz8y6"
+      ],
+      "name": "t:sections.compact-product-bundle.name",
+      "settings": {
+        "collection": "",
+        "products": [
+          "rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w",
+          "rorry-h1-10000mah-portable-charger-30w-fast-charging-power-bank-with-built-in-retractable-cables",
+          "rorry-d14-5000mah-megsafe-power-bank",
+          "rorry-d3-12000mah-portable-charger-keychain-power-bank-30w-retractable-cable"
+        ],
+        "product_limit": 3,
+        "image": "shopify://shop_images/rorry-college-library-portable-charger-bundle1000x1500.webp",
+        "layout": "image_first",
+        "content_position": "md:items-center",
+        "text_alignment": "center",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-center",
+        "text_alignment_mobile": "center",
+        "swipe_on_mobile": true,
+        "show_variant_labels": true,
+        "picker_type": "button",
+        "enable_color_swatches": true,
+        "color_swatch_type": "color",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "compact_product_bundle_4Ei4q7": {
+      "type": "compact-product-bundle",
+      "blocks": {
+        "heading_Pjg38f": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dorm Essentials Bundle",
+            "heading_size": "title-md",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_kLzzLC": {
+          "type": "text",
+          "settings": {
             "text": "<p>Clean Desk, Zero Clutter<br/><br/></p>",
             "text_font": "body",
             "text_size": "subtext-md",
@@ -246,8 +393,8 @@
         }
       },
       "block_order": [
-        "heading_4WF8aH",
-        "text_EkDnXm"
+        "heading_Pjg38f",
+        "text_kLzzLC"
       ],
       "name": "t:sections.compact-product-bundle.name",
       "settings": {
@@ -1633,6 +1780,8 @@
     "multicolumn_with_icons_LcbRjD",
     "multicolumn_with_icons_Gt9dbB",
     "compact_product_bundle_eHXURw",
+    "compact_product_bundle_XUh3zc",
+    "compact_product_bundle_4Ei4q7",
     "zl_nano_3_cW4TLy",
     "reveal_image_with_text_overlay_4TKDh7",
     "multicolumn_with_icons_QxCb6P",
