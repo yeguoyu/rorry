@@ -114,10 +114,10 @@
         "column_qK8hDz": {
           "type": "column",
           "settings": {
-            "icon": "gift",
-            "custom_icon": "",
-            "heading": "<strong>Free Premium Gear</strong>",
-            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "icon": "star",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M14 1.5V22H12V3.704L7.5 4.91V2.839L12.5 1.5H14Z\"></path></svg>",
+            "heading": "<strong>Choose Your Chargers</strong>",
+            "text": "<p>Pick 2 or more items</p>",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
@@ -126,7 +126,7 @@
           "type": "column",
           "settings": {
             "icon": "award",
-            "custom_icon": "",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M14 1.5V22H12V3.704L7.5 4.91V2.839L12.5 1.5H14Z\"></path></svg>",
             "heading": "<strong>Official Exposure</strong>",
             "text": "<p>Get featured on RORRY’s official social channels, reaching over 100K+ aesthetic lovers worldwide.</p>",
             "highlighted_text": "none",
@@ -164,10 +164,10 @@
       ],
       "name": "t:sections.multicolumn-with-icons.name",
       "settings": {
-        "style": "with-background",
+        "style": "with-border",
         "columns": 4,
         "text_alignment": "center",
-        "heading": "What You'll Get",
+        "heading": "More Power, More Savings",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
