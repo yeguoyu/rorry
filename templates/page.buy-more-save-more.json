@@ -59,7 +59,7 @@
           "settings": {
             "button_label": "",
             "button_link": "shopify://products/rorry-auradock-m2-10000mah-4-in-1-charging-station-with-magnetic-power-bank-30w",
-            "button_style": "link",
+            "button_style": "primary",
             "button_size": "sm",
             "button_external": false,
             "button_icon": false
