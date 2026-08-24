@@ -440,8 +440,8 @@
         "question_tHQEij": {
           "type": "question",
           "settings": {
-            "title": "1. What is the RORRY CharmGo Collection?",
-            "text": "<p>The CharmGo Collection is a family of stylish portable power banks designed for everyday use. Inspired by a charm keychain concept, each model combines compact design, fashion colors, and practical fast charging features, making it easy to power your devices anytime, anywhere.</p>",
+            "title": "1. How does RORRY Buy More, Save More work?",
+            "text": "<p>Choose eligible products from this collection. Buy one item and use code <strong>RORRY15</strong> to save <strong>15%</strong>, buy two and use code <strong>RORRY20</strong> to save <strong>20%</strong>, or buy three or more and use code <strong>RORRY25</strong> to save <strong>25%</strong> at checkout.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -496,7 +496,7 @@
       "name": "t:sections.faq.name",
       "settings": {
         "style": "with-background",
-        "heading": "FAQs",
+        "heading": "Buy More, Save More FAQs",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
