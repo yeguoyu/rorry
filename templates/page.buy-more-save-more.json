@@ -477,7 +477,16 @@
           "type": "question",
           "settings": {
             "title": "5. Which RORRY power bank can charge a laptop?",
-            "text": "<p>RORRY H3 is the laptop-focused option in these setups. It has a 25000mAh battery, supports up to 65W USB-C output, and includes a retractable USB-C cable. Confirm your laptop's charging requirements before use.</p>",
+            "text": "<p><strong>RORRY H3</strong> is the laptop-focused option in these setups. It has a 25000mAh battery, supports up to 65W USB-C output, and includes a retractable USB-C cable. Confirm your laptop's charging requirements before use.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_afGiHB": {
+          "type": "question",
+          "settings": {
+            "title": "6. Where do I enter the discount code?",
+            "text": "<p>Enter RORRY15, RORRY20, or RORRY25 in the discount-code field at checkout. Use the code that matches the number of eligible items in your cart.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -488,7 +497,8 @@
         "question_UJRxzq",
         "question_w8dAMF",
         "question_Gqnktg",
-        "question_zxNBBt"
+        "question_zxNBBt",
+        "question_afGiHB"
       ],
       "custom_css": [
         ".faqs.with-background > :is(div, form) {padding: 0;}"
