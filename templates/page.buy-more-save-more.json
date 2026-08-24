@@ -24,36 +24,6 @@
         "rounded": false
       }
     },
-    "blocks_mxwqgG": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_a91d212_JKyYU3": {
-          "type": "ai_gen_block_a91d212",
-          "settings": {
-            "show_home": true,
-            "home_text": "Home",
-            "separator": "/",
-            "font_size": 14,
-            "spacing": 8,
-            "padding_vertical": 20,
-            "padding_horizontal": 0,
-            "desktop_width_percent": 100,
-            "text_color": "#171717",
-            "link_color": "#666666",
-            "link_hover_color": "#171717",
-            "link_hover_underline": "underline",
-            "separator_color": "#999999",
-            "current_color": "#171717"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_a91d212_JKyYU3"
-      ],
-      "name": "Breadcrumb navigation",
-      "settings": {}
-    },
     "image_with_text_overlay_rmJqTC": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -190,7 +160,7 @@
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "",
+        "description": "<p>&gt; BUY 1 · SAVE <strong>15%</strong> · CODE <strong>RORRY15</strong>  <br/>&gt; BUY 2 · SAVE <strong>20%</strong> · CODE <strong>RORRY20</strong>  <br/>&gt; BUY 3+ · SAVE <strong>25%</strong> · CODE <strong>RORRY25</strong><br/><br/></p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
@@ -564,6 +534,36 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "blocks_mxwqgG": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a91d212_JKyYU3": {
+          "type": "ai_gen_block_a91d212",
+          "settings": {
+            "show_home": true,
+            "home_text": "Home",
+            "separator": "/",
+            "font_size": 14,
+            "spacing": 8,
+            "padding_vertical": 20,
+            "padding_horizontal": 0,
+            "desktop_width_percent": 100,
+            "text_color": "#171717",
+            "link_color": "#666666",
+            "link_hover_color": "#171717",
+            "link_hover_underline": "underline",
+            "separator_color": "#999999",
+            "current_color": "#171717"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a91d212_JKyYU3"
+      ],
+      "name": "Breadcrumb navigation",
+      "settings": {}
     }
   },
   "order": [
