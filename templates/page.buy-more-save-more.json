@@ -24,6 +24,36 @@
         "rounded": false
       }
     },
+    "blocks_mxwqgG": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a91d212_JKyYU3": {
+          "type": "ai_gen_block_a91d212",
+          "settings": {
+            "show_home": true,
+            "home_text": "Home",
+            "separator": "/",
+            "font_size": 14,
+            "spacing": 8,
+            "padding_vertical": 20,
+            "padding_horizontal": 0,
+            "desktop_width_percent": 100,
+            "text_color": "#171717",
+            "link_color": "#666666",
+            "link_hover_color": "#171717",
+            "link_hover_underline": "underline",
+            "separator_color": "#999999",
+            "current_color": "#171717"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a91d212_JKyYU3"
+      ],
+      "name": "Breadcrumb navigation",
+      "settings": {}
+    },
     "image_with_text_overlay_rmJqTC": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -544,6 +574,7 @@
     "compact_product_bundle_eHXURw",
     "compact_product_bundle_XUh3zc",
     "compact_product_bundle_4Ei4q7",
-    "faq_XjyrqX"
+    "faq_XjyrqX",
+    "blocks_mxwqgG"
   ]
 }
