@@ -218,8 +218,13 @@
       "name": "t:sections.compact-product-bundle.name",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "rorry-auradock-m2-5000mah-3-in-1-charging-station-magsafe-power-bank",
+          "rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w",
+          "rorry-h1-10000mah-portable-charger-30w-fast-charging-power-bank-with-built-in-retractable-cables"
+        ],
         "product_limit": 3,
+        "image": "shopify://shop_images/rorry-dorm-essentials-charging-bundle-1000_x_1500.webp",
         "layout": "image_first",
         "content_position": "md:items-center",
         "text_alignment": "center",
@@ -241,8 +246,8 @@
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 40,
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "padding_top": 40,
+        "padding_bottom": 40,
         "divider": false,
         "full_width": false,
         "rounded": false,
