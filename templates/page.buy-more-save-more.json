@@ -458,8 +458,8 @@
         "question_w8dAMF": {
           "type": "question",
           "settings": {
-            "title": "3. Can all CharmGo power banks charge Apple Watch?",
-            "text": "<p>Not all models support Apple Watch charging.<br/>Only selected D-series models with magnetic charging function support Apple Watch wireless charging.<br/>T1 series models do not support watch charging.</p>",
+            "title": "3. Which charging setup is best for college students?",
+            "text": "<p>For a dorm desk, choose a multi-device station such as <a href=\"/products/rorry-auradock-m2-10000mah-4-in-1-charging-station-with-magnetic-power-bank-30w\" title=\"RORRY AuraDock M2-10000mAh 4 in 1 Charging Station with Magnetic Power Bank 30W\"><strong>AuraDock M2</strong></a> and add a portable charger for class. For a lighter campus setup, pair the slim <a href=\"/products/rorry-d14-5000mah-megsafe-power-bank\" title=\"RORRY D14 Magsafe Power Bank(5K,Slim)\"><strong>D14</strong></a> magnetic power bank with CharmGo <a href=\"/products/rorry-d3-12000mah-portable-charger-keychain-power-bank-30w-retractable-cable\" title=\"RORRY CharmGo D3-12000mAh Portable Charger Keychain Power Bank 30W\"><strong>D3</strong></a>. For weekends or laptop charging, <a href=\"/products/rorry-h3-25000mah-65w-laptop-power-bank\" title=\"RORRY H3 25000mAh Laptop Power Bank 65W\"><strong>H3</strong></a> provides 25000mAh capacity and up to 65W USB-C output.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
