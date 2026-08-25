@@ -365,6 +365,81 @@
         "rounded": false
       }
     },
+    "image_with_text_overlay_cTf4j4": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_3cafqm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Before You Apply",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_wGnDYb": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>You are 18+ years old.</li><li>You have at least one active public social account.</li><li>You enjoy creating original photo or video content.</li><li>You are comfortable sharing real product experiences.</li><li>You can follow a simple creative brief and timeline if selectted.</li></ul>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_E3EDVr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Create & Share",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_3cafqm",
+        "text_wGnDYb",
+        "button_E3EDVr"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/rorry-creators-program-operational-Process.jpg",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
     "zl_brand_features_rJMRbH": {
       "type": "zl-brand-features",
       "blocks": {
@@ -1473,6 +1548,7 @@
     "multicolumn_with_icons_LcbRjD",
     "zl_nano_3_cW4TLy",
     "multicolumn_with_icons_QxCb6P",
+    "image_with_text_overlay_cTf4j4",
     "zl_brand_features_rJMRbH",
     "rich_text_xPzhXh",
     "zl_nano_1_qmVeJr",
