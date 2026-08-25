@@ -291,84 +291,10 @@
         "main_product_section": "main-product-modal"
       }
     },
-    "multicolumn_with_icons_QxCb6P": {
-      "type": "multicolumn-with-icons",
-      "blocks": {
-        "column_F93HxN": {
-          "type": "column",
-          "settings": {
-            "icon": "gift",
-            "custom_icon": "",
-            "heading": "<strong>Grab Your Apply</strong>",
-            "text": "<p>Tell us about your channels, audience, content style, location, and the RORRY products or everyday scenarios you would like to feature.</p>",
-            "highlighted_text": "full_text",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_ycQx8w": {
-          "type": "column",
-          "settings": {
-            "icon": "award",
-            "custom_icon": "",
-            "heading": "<strong>Get Selected</strong>",
-            "text": "<p>Our team reviews applications based on campaign fit, content quality, audience relevance, location, availability, and previous collaboration performance.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_rpx3BF": {
-          "type": "column",
-          "settings": {
-            "icon": "trophy",
-            "custom_icon": "",
-            "heading": "<strong>Create & Share</strong>",
-            "text": "<p>Experience the product in real life, post or submit your content, and get considered for future.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "column_F93HxN",
-        "column_ycQx8w",
-        "column_rpx3BF"
-      ],
-      "name": "t:sections.multicolumn-with-icons.name",
-      "settings": {
-        "style": "with-background",
-        "columns": 3,
-        "text_alignment": "center",
-        "heading": "How It Works",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "image_with_text_overlay_cTf4j4": {
+    "image_with_text_overlay_M3aq9K": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "heading_3cafqm": {
+        "heading_wkjfXJ": {
           "type": "heading",
           "settings": {
             "heading": "Before You Apply",
@@ -378,7 +304,7 @@
             "highlighted_scribble": "circle"
           }
         },
-        "text_wGnDYb": {
+        "text_Wm78WR": {
           "type": "text",
           "settings": {
             "text": "<ul><li>You are 18+ years old.</li><li>You have at least one active public social account.</li><li>You enjoy creating original photo or video content.</li><li>You are comfortable sharing real product experiences.</li><li>You can follow a simple creative brief and timeline if selectted.</li></ul>",
@@ -393,12 +319,12 @@
             "highlighted_scribble": "circle"
           }
         },
-        "button_E3EDVr": {
+        "button_fTmpca": {
           "type": "button",
           "settings": {
             "button_label": "Create & Share",
             "button_link": "",
-            "button_style": "primary",
+            "button_style": "secondary",
             "button_size": "md",
             "button_external": false,
             "button_icon": true
@@ -406,9 +332,9 @@
         }
       },
       "block_order": [
-        "heading_3cafqm",
-        "text_wGnDYb",
-        "button_E3EDVr"
+        "heading_wkjfXJ",
+        "text_Wm78WR",
+        "button_fTmpca"
       ],
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
@@ -421,7 +347,7 @@
         "image_height_mobile": "auto",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
+        "color_text": "#FBFBFB",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "#e0a580",
@@ -438,6 +364,89 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "vertical"
+      }
+    },
+    "multicolumn_with_icons_mJypHX": {
+      "type": "multicolumn-with-icons",
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-border",
+        "columns": 3,
+        "text_alignment": "left",
+        "heading": "Created in Life",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "selling_points_2_video_KJeBm4": {
+      "type": "selling-points-2-video",
+      "blocks": {
+        "video_block_CEKBf8": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-5000mah-portable-charger-6.mp4"
+          }
+        },
+        "video_block_PjjFDQ": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-5000mah-portable-charger-5.mp4"
+          }
+        },
+        "video_block_z4Hc8T": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-2500mah-mini-portable-charger.mp4"
+          }
+        },
+        "video_block_Q6GFXc": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-10000mah-pd-20w-portable-charger-2.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_CEKBf8",
+        "video_block_PjjFDQ",
+        "video_block_z4Hc8T",
+        "video_block_Q6GFXc"
+      ],
+      "name": "selling points 11 Video",
+      "settings": {
+        "sectionname": "Created in Life",
+        "background": "#ffffff",
+        "border_radius": 8,
+        "cols_pc": 4,
+        "cols_mb": 2,
+        "gap_pc": 20,
+        "gap_mb": 10,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 24
       }
     },
     "zl_brand_features_rJMRbH": {
@@ -1547,8 +1556,9 @@
     "image_with_text_overlay_rmJqTC",
     "multicolumn_with_icons_LcbRjD",
     "zl_nano_3_cW4TLy",
-    "multicolumn_with_icons_QxCb6P",
-    "image_with_text_overlay_cTf4j4",
+    "image_with_text_overlay_M3aq9K",
+    "multicolumn_with_icons_mJypHX",
+    "selling_points_2_video_KJeBm4",
     "zl_brand_features_rJMRbH",
     "rich_text_xPzhXh",
     "zl_nano_1_qmVeJr",
