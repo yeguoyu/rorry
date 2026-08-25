@@ -139,6 +139,57 @@
         "parallax_direction": "vertical"
       }
     },
+    "slideshow_dhtxYJ": {
+      "type": "slideshow",
+      "blocks": {
+        "image_ebhGRh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/rorry-buy-more-save-more-portable-chargers-desktop.webp",
+            "image_mobile": "shopify://shop_images/rorry-buy-more-save-more-portable-chargers-mobile.webp",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://products/rorry-auradock-m2-5000mah-3-in-1-charging-station-magsafe-power-bank",
+            "button_style": "primary",
+            "button_external": true,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "image_ebhGRh"
+      ],
+      "custom_css": [
+        ".banner {max-width: 100%; border-radius: 0px;}",
+        ".banner__image {width: 100%; height: auto; object-fit: cover;}"
+      ],
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#fbfbfb",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_button_text": "rgba(0,0,0,0)",
+        "color_button_background": "rgba(0,0,0,0)",
+        "color_button_gradient": "",
+        "color_overlay": "rgba(0,0,0,0)",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "multicolumn_with_icons_LcbRjD": {
       "type": "multicolumn-with-icons",
       "blocks": {
@@ -186,11 +237,11 @@
         "style": "with-border",
         "columns": 3,
         "text_alignment": "center",
-        "heading": "More Power, More Savings",
+        "heading": "Buy More, Save More on Portable Chargers",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h1",
-        "subheading": "",
+        "subheading": "More Power, More Savings",
         "description": "<p>&gt; BUY 1 · SAVE <strong>15%</strong> · CODE <strong>RORRY15</strong>  <br/>&gt; BUY 2 · SAVE <strong>20%</strong> · CODE <strong>RORRY20</strong>  <br/>&gt; BUY 3+ · SAVE <strong>25%</strong> · CODE <strong>RORRY25</strong></p>",
         "button_label": "",
         "button_link": "",
@@ -571,6 +622,7 @@
     "main-page",
     "blocks_mxwqgG",
     "image_with_text_overlay_rmJqTC",
+    "slideshow_dhtxYJ",
     "multicolumn_with_icons_LcbRjD",
     "multicolumn_with_icons_Gt9dbB",
     "compact_product_bundle_eHXURw",
