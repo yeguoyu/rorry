@@ -299,8 +299,8 @@
           "settings": {
             "icon": "gift",
             "custom_icon": "",
-            "heading": "<strong>Free Premium Gear</strong>",
-            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "heading": "<strong>Grab Your Apply</strong>",
+            "text": "<p>Tell us about your channels, audience, content style, location, and the RORRY products or everyday scenarios you would like to feature.</p>",
             "highlighted_text": "full_text",
             "highlighted_scribble": "circle"
           }
@@ -310,8 +310,8 @@
           "settings": {
             "icon": "award",
             "custom_icon": "",
-            "heading": "<strong>Official Exposure</strong>",
-            "text": "<p>Get featured on RORRY’s official social channels, reaching over 100K+ aesthetic lovers worldwide.</p>",
+            "heading": "<strong>Get Selected</strong>",
+            "text": "<p>Our team reviews applications based on campaign fit, content quality, audience relevance, location, availability, and previous collaboration performance.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -321,8 +321,8 @@
           "settings": {
             "icon": "trophy",
             "custom_icon": "",
-            "heading": "<a href=\"https://rorry.goaffpro.com/\" title=\"https://rorry.goaffpro.com/\"><strong>Earn Commission</strong></a>",
-            "text": "<p>Earn up to <strong>10% affiliate commission</strong> on every sale generated through your unique link</p>",
+            "heading": "<strong>Create & Share</strong>",
+            "text": "<p>Experience the product in real life, post or submit your content, and get considered for future.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -338,7 +338,7 @@
         "style": "with-background",
         "columns": 3,
         "text_alignment": "center",
-        "heading": "What You'll Get",
+        "heading": "How It Works",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
