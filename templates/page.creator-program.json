@@ -449,6 +449,96 @@
         "mobile_padding_bottom": 24
       }
     },
+    "multicolumn_with_icons_tYM4nw": {
+      "type": "multicolumn-with-icons",
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-border",
+        "columns": 3,
+        "text_alignment": "left",
+        "heading": "A Growing Global Community",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>RORRY works with creators and customers across everyday lifestyle, travel, technology, and personal-style communities. We are building long-term relationships around useful products, original content, and honest experiences.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "number_counter_hnF9Ni": {
+      "type": "number-counter",
+      "blocks": {
+        "counter_WnKQkf": {
+          "type": "counter",
+          "settings": {
+            "title": "Community Members",
+            "number": "3000",
+            "unit": "+",
+            "duration": 2
+          }
+        },
+        "counter_dzheQ6": {
+          "type": "counter",
+          "settings": {
+            "title": "Aesthetic Posts",
+            "number": "1000",
+            "unit": "+",
+            "duration": 2
+          }
+        },
+        "counter_BUJq7w": {
+          "type": "counter",
+          "settings": {
+            "title": "Views Generated",
+            "number": "1.5M",
+            "unit": "+",
+            "duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "counter_WnKQkf",
+        "counter_dzheQ6",
+        "counter_BUJq7w"
+      ],
+      "name": "t:sections.number-counter.name",
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "text_alignment": "center",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "text_alignment_mobile": "center",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#9887b8",
+        "gradient_highlight": "",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "zl_brand_features_rJMRbH": {
       "type": "zl-brand-features",
       "blocks": {
@@ -1559,6 +1649,8 @@
     "image_with_text_overlay_M3aq9K",
     "multicolumn_with_icons_mJypHX",
     "selling_points_2_video_KJeBm4",
+    "multicolumn_with_icons_tYM4nw",
+    "number_counter_hnF9Ni",
     "zl_brand_features_rJMRbH",
     "rich_text_xPzhXh",
     "zl_nano_1_qmVeJr",
