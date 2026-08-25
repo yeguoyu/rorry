@@ -199,11 +199,11 @@
           "settings": {
             "target_tab": "On the Go",
             "product": "",
-            "card_link": "shopify://products/rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w",
+            "card_link": "",
             "image_pc": "shopify://shop_images/charngo-collection_7.jpg",
-            "tag": "",
-            "title": "Aesthetic Enthusiasts",
-            "price": "",
+            "tag": "Aesthetic Enthusiasts",
+            "title": "",
+            "price": "You share personal style, everyday carry, bag organization, outfits, or visually thoughtful routines.",
             "compare_price": ""
           }
         },
@@ -212,10 +212,10 @@
           "settings": {
             "target_tab": "On the Go",
             "product": "",
-            "card_link": "shopify://products/rorry-t1-10000mah-portable-charger-keychain-power-bank",
+            "card_link": "",
             "image_pc": "shopify://shop_images/charngo-collection_6.jpg",
-            "tag": "",
-            "title": "Tech-Lifestyle Lovers",
+            "tag": "Tech-Lifestyle Lovers",
+            "title": "You create desk setups, charging tips, unboxings, productivity content, or practical tech recommendations.",
             "price": "",
             "compare_price": ""
           }
