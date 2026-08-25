@@ -335,6 +335,7 @@
       ],
       "name": "t:sections.reveal-image-with-text-overlay.name",
       "settings": {
+        "image": "shopify://shop_images/rorry-creators-program-operational-Process.jpg",
         "content_width": "small",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
@@ -349,7 +350,7 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "color_overlay": "#171717",
-        "overlay_opacity": 70,
+        "overlay_opacity": 0,
         "enable_parallax": false
       }
     },
@@ -530,6 +531,87 @@
         "divider": false,
         "narrow": true,
         "rounded": false
+      }
+    },
+    "floating_product_bundle_KddMtB": {
+      "type": "floating-product-bundle",
+      "blocks": {
+        "heading_TkiLdV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product bundle",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_eWnxwH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_jGBFKH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_TkiLdV",
+        "text_eWnxwH",
+        "button_jGBFKH"
+      ],
+      "name": "t:sections.floating-product-bundle.name",
+      "settings": {
+        "collection": "",
+        "products": [],
+        "product_limit": 3,
+        "image_height": "900px",
+        "layout": "image_first",
+        "content_position": "md:items-end",
+        "text_alignment": "left",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-center",
+        "text_alignment_mobile": "center",
+        "swipe_on_mobile": true,
+        "show_variant_labels": true,
+        "picker_type": "button",
+        "enable_color_swatches": true,
+        "color_swatch_type": "color",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
       }
     },
     "zl_nano_1_qmVeJr": {
@@ -1538,6 +1620,7 @@
     "multicolumn_with_icons_QxCb6P",
     "zl_brand_features_rJMRbH",
     "rich_text_xPzhXh",
+    "floating_product_bundle_KddMtB",
     "zl_nano_1_qmVeJr",
     "zl_pro_dis_CLHkeR",
     "zl_nano_2_QBx8fX",
