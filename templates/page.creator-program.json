@@ -294,6 +294,25 @@
     "reveal_image_with_text_overlay_4TKDh7": {
       "type": "reveal-image-with-text-overlay",
       "blocks": {
+        "icon_ykAYgP": {
+          "type": "icon",
+          "settings": {
+            "icon": "tag",
+            "iwidth": "custom",
+            "icon_width": 48,
+            "link": "",
+            "accessibility_info": "",
+            "external": false
+          }
+        },
+        "subheading_Tx676i": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add a tagline",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
         "subheading_jhj9fQ": {
           "type": "subheading",
           "settings": {
@@ -329,6 +348,8 @@
         }
       },
       "block_order": [
+        "icon_ykAYgP",
+        "subheading_Tx676i",
         "subheading_jhj9fQ",
         "heading_Gzm9rq",
         "text_t74CyY"
