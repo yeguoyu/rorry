@@ -24,44 +24,14 @@
         "rounded": false
       }
     },
-    "blocks_mxwqgG": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_a91d212_JKyYU3": {
-          "type": "ai_gen_block_a91d212",
-          "settings": {
-            "show_home": true,
-            "home_text": "Home",
-            "separator": "/",
-            "font_size": 14,
-            "spacing": 8,
-            "padding_vertical": 20,
-            "padding_horizontal": 50,
-            "desktop_width_percent": 100,
-            "text_color": "#171717",
-            "link_color": "#666666",
-            "link_hover_color": "#171717",
-            "link_hover_underline": "underline",
-            "separator_color": "#999999",
-            "current_color": "#171717"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_a91d212_JKyYU3"
-      ],
-      "name": "Breadcrumb navigation",
-      "settings": {}
-    },
     "slideshow_dhtxYJ": {
       "type": "slideshow",
       "blocks": {
         "image_ebhGRh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/rorry-buy-more-save-more-portable-chargers-desktop.webp",
-            "image_mobile": "shopify://shop_images/rorry-buy-more-save-more-portable-chargers-mobile.webp",
+            "image": "shopify://shop_images/rorry-buy-more-save-more-portable-chargers-desktop_39a114f5-6867-4e61-b6d3-536f7e73098a.webp",
+            "image_mobile": "shopify://shop_images/rorry-buy-more-save-more-portable-chargers-mobile_f8a01baf-f043-4f54-b4b5-8bbbc5f03cfd.webp",
             "heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
@@ -531,6 +501,36 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "blocks_mxwqgG": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a91d212_JKyYU3": {
+          "type": "ai_gen_block_a91d212",
+          "settings": {
+            "show_home": true,
+            "home_text": "Home",
+            "separator": "/",
+            "font_size": 14,
+            "spacing": 8,
+            "padding_vertical": 20,
+            "padding_horizontal": 50,
+            "desktop_width_percent": 100,
+            "text_color": "#171717",
+            "link_color": "#666666",
+            "link_hover_color": "#171717",
+            "link_hover_underline": "underline",
+            "separator_color": "#999999",
+            "current_color": "#171717"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a91d212_JKyYU3"
+      ],
+      "name": "Breadcrumb navigation",
+      "settings": {}
     }
   },
   "order": [
