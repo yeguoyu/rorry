@@ -54,91 +54,6 @@
       "name": "Breadcrumb navigation",
       "settings": {}
     },
-    "image_with_text_overlay_rmJqTC": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_AcHXnU": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Buy More, Save More on Portable Chargers",
-            "heading_size": "title-sm",
-            "heading_tag": "h1",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_cwzDUL": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p><strong>More Power, More Savings</strong></p>",
-            "text_font": "body",
-            "text_size": "subtext-xl",
-            "text_max_size": 24,
-            "text_line_height": 1.2,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_hjCw6e": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style": "link",
-            "button_size": "sm",
-            "button_external": false,
-            "button_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_AcHXnU",
-        "text_cwzDUL",
-        "button_hjCw6e"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".rte {margin-top: 20px;}",
-        ".button {margin-top: 24px;}",
-        "@media screen and (min-width: 1280px) {.banner__box--small {max-width: 95rem; }}"
-      ],
-      "name": "t:sections.image-with-text-overlay.name",
-      "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/rorry-buy-more-save-more-portable-chargers-desktop.webp",
-        "image_height": "adapt",
-        "content_width": "small",
-        "content_position": "md:items-center md:justify-start",
-        "text_alignment": "center",
-        "image_mobile": "shopify://shop_images/rorry-buy-more-save-more-portable-chargers-mobile.webp",
-        "image_height_mobile": "adapt",
-        "content_position_mobile": "items-end justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_button_text": "#ffffff",
-        "color_button_background": "#9887b8",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
     "slideshow_dhtxYJ": {
       "type": "slideshow",
       "blocks": {
@@ -620,14 +535,13 @@
   },
   "order": [
     "main-page",
-    "blocks_mxwqgG",
-    "image_with_text_overlay_rmJqTC",
     "slideshow_dhtxYJ",
     "multicolumn_with_icons_LcbRjD",
     "multicolumn_with_icons_Gt9dbB",
     "compact_product_bundle_eHXURw",
     "compact_product_bundle_XUh3zc",
     "compact_product_bundle_4Ei4q7",
-    "faq_XjyrqX"
+    "faq_XjyrqX",
+    "blocks_mxwqgG"
   ]
 }
