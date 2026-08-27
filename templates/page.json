@@ -9,6 +9,36 @@
  */
 {
   "sections": {
+    "blocks_PbiB9y": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a91d212_mHd4HP": {
+          "type": "ai_gen_block_a91d212",
+          "settings": {
+            "show_home": true,
+            "home_text": "Home",
+            "separator": "/",
+            "font_size": 14,
+            "spacing": 8,
+            "padding_vertical": 20,
+            "padding_horizontal": 50,
+            "desktop_width_percent": 100,
+            "text_color": "#171717",
+            "link_color": "#666666",
+            "link_hover_color": "#171717",
+            "link_hover_underline": "underline",
+            "separator_color": "#999999",
+            "current_color": "#171717"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a91d212_mHd4HP"
+      ],
+      "name": "Breadcrumb navigation",
+      "settings": {}
+    },
     "main-page": {
       "type": "main-page",
       "settings": {
@@ -55,6 +85,7 @@
     }
   },
   "order": [
+    "blocks_PbiB9y",
     "main-page",
     "17345766436cfde53f"
   ]
