@@ -366,6 +366,7 @@
         },
         "button_fTmpca": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Create & Share",
             "button_link": "",
@@ -402,7 +403,7 @@
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
         "color_overlay": "#171717",
-        "overlay_opacity": 40,
+        "overlay_opacity": 51,
         "padding_top": 0,
         "padding_bottom": 40,
         "divider": false,
