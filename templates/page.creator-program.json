@@ -577,7 +577,7 @@
         "swipe_on_mobile": false,
         "text_alignment_mobile": "center",
         "color_text": "#9887b8",
-        "color_background": "",
+        "color_background": "#FFFFFF",
         "gradient_background": "",
         "color_highlight": "#9887b8",
         "gradient_highlight": "",
