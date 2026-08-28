@@ -638,8 +638,8 @@
         "question_zARPtV": {
           "type": "question",
           "settings": {
-            "title": "6. Who owns the content I create?",
-            "text": "<p>Ownership and usage rights depend on the collaboration agreement. RORRY will provide the proposed channels, duration, editing rights, paid-media rights, and credit terms before content is reused.</p>",
+            "title": "7. How will I know if I am selected?",
+            "text": "<p>If your profile matches an available opportunity, the RORRY team will contact you using the email address submitted with your application. Response timing may vary with campaign volume.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
