@@ -570,7 +570,7 @@
       ],
       "name": "t:sections.number-counter.name",
       "settings": {
-        "gap": "large",
+        "gap": "small",
         "columns": 3,
         "text_alignment": "center",
         "columns_mobile": "1",
