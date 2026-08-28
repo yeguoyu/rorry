@@ -79,7 +79,7 @@
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/rorry-creators-program-banner.jpg",
-        "image_height": "500px",
+        "image_height": "650px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-center",
         "text_alignment": "center",
