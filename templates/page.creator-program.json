@@ -386,7 +386,7 @@
         "image": "shopify://shop_images/creators-program-operational-Process.jpg",
         "image_height": "adapt",
         "content_width": "small",
-        "content_position": "md:items-center md:justify-center",
+        "content_position": "md:items-center md:justify-start",
         "text_alignment": "left",
         "image_mobile": "shopify://shop_images/creators-program-operational-Process.jpg",
         "image_height_mobile": "500px",
