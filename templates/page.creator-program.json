@@ -54,6 +54,7 @@
         },
         "button_hjCw6e": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "APPLY NOW",
             "button_link": "",
@@ -78,7 +79,7 @@
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/rorry-creators-program-banner.jpg",
-        "image_height": "700px",
+        "image_height": "600px",
         "content_width": "small",
         "content_position": "md:items-end md:justify-center",
         "text_alignment": "center",
