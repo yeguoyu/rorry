@@ -669,7 +669,7 @@
           "type": "question",
           "settings": {
             "title": "9. How can I update or remove my application data?",
-            "text": "<p>Contact support@rorry.com and include the email address used in your application. Requests are handled under the RORRY Privacy Policy and applicable law.</p>",
+            "text": "<p>Contact <a href=\"mailto:marketingrorry@gmail.com\" target=\"_blank\">marketingrorry@gmail.com</a> and include the email address used in your application. Requests are handled under the RORRY Privacy Policy and applicable law.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -816,7 +816,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
