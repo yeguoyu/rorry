@@ -900,44 +900,66 @@ console.log(theme.settings.themeName + ' theme (' + theme.settings.themeVersion 
     return Carousel;
   })();
 
-  // Delay JavaScript until user interaction
+  // Run non-critical initializers during browser idle time.
+  // Keeping this work out of the first tap/click avoids making that interaction
+  // responsible for initializing every deferred component on the page.
   theme.initWhenVisible = (function() {
     class ScriptLoader {
+      static queue = [];
+      static idleId = null;
+
       constructor(callback, delay = 5000) {
         this.callback = callback;
         this.triggered = false;
-        this.timeoutId = null;
-        
-        this.interactionEvents = ['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel'];
-        this.handleInteraction = this.handleInteraction.bind(this);
-        
-        this.interactionEvents.forEach(eventType => {
-          window.addEventListener(eventType, this.handleInteraction, { passive: true });
-        });
-        
-        this.timeoutId = setTimeout(() => {
-          if (!this.triggered) {
-            this.handleInteraction({ type: 'timeout' });
+        this.delay = delay;
+
+        ScriptLoader.queue.push(this);
+        ScriptLoader.schedule();
+      }
+
+      static schedule() {
+        if (ScriptLoader.idleId !== null || ScriptLoader.queue.length === 0) return;
+
+        const runNext = (deadline) => {
+          ScriptLoader.idleId = null;
+          const startedAt = performance.now();
+
+          while (ScriptLoader.queue.length > 0) {
+            const loader = ScriptLoader.queue.shift();
+            loader.run();
+
+            // Keep each idle batch short so the main thread can return to input.
+            if (performance.now() - startedAt >= 12 || (!deadline.didTimeout && deadline.timeRemaining() < 4)) {
+              break;
+            }
           }
-        }, delay);
+
+          ScriptLoader.schedule();
+        };
+
+        if ('requestIdleCallback' in window) {
+          const timeout = Math.min(...ScriptLoader.queue.map((loader) => loader.delay));
+          ScriptLoader.idleId = window.requestIdleCallback(runNext, { timeout });
+        }
+        else {
+          ScriptLoader.idleId = window.setTimeout(() => {
+            runNext({ didTimeout: true, timeRemaining: () => 0 });
+          }, 0);
+        }
       }
 
-      handleInteraction(event) {
+      run() {
         if (this.triggered) return;
-    
-        this.triggered = true;
-        this.callback(event);
-        this.cleanup();
-      }
 
-      cleanup() {
-        this.interactionEvents.forEach(eventType => {
-          window.removeEventListener(eventType, this.handleInteraction, { passive: true });
-        });
-        
-        clearTimeout(this.timeoutId);
-        this.timeoutId = null;
+        this.triggered = true;
+        const callback = this.callback;
         this.callback = null;
+        try {
+          callback?.();
+        }
+        catch (error) {
+          console.error(error);
+        }
       }
     }
 
@@ -5186,6 +5208,108 @@ class ProductInfo extends HTMLElement {
   }
 }
 customElements.define('product-info', ProductInfo);
+
+// Keep Klarna On-site Messaging mounted after its SDK and theme app block
+// finish loading, and refresh price-based placements after variant changes.
+theme.refreshKlarnaPlacements = (purchaseAmount) => {
+  const placements = document.querySelectorAll('klarna-placement');
+  if (placements.length === 0) return false;
+
+  if (purchaseAmount) {
+    placements.forEach((placement) => {
+      if (placement.dataset.key?.startsWith('credit-promotion')) {
+        placement.dataset.purchaseAmount = String(purchaseAmount);
+      }
+    });
+
+    if (typeof window.KOSMApp?.updatePurchaseAmount === 'function') {
+      try {
+        window.KOSMApp.updatePurchaseAmount(purchaseAmount);
+      }
+      catch (error) {
+        console.warn('Unable to update Klarna purchase amount.', error);
+      }
+    }
+  }
+
+  if (typeof window.Klarna?.OnsiteMessaging?.refresh === 'function') {
+    try {
+      window.Klarna.OnsiteMessaging.refresh();
+      return true;
+    }
+    catch (error) {
+      console.warn('Unable to refresh Klarna placements.', error);
+    }
+  }
+
+  return false;
+};
+
+theme.scheduleKlarnaRefresh = (purchaseAmount) => {
+  [0, 250, 1000, 3000, 5000].forEach((delay) => {
+    window.setTimeout(() => theme.refreshKlarnaPlacements(purchaseAmount), delay);
+  });
+};
+
+if (document.body.classList.contains('template-product')) {
+  theme.scheduleKlarnaRefresh();
+}
+
+theme.pubsub.subscribe(theme.pubsub.PUB_SUB_EVENTS.variantChange, ({ data }) => {
+  theme.scheduleKlarnaRefresh(data?.variant?.price);
+});
+
+document.addEventListener('shopify:section:load', () => theme.scheduleKlarnaRefresh());
+
+// Wholesale pricing apps can rewrite collection-card prices after Liquid has
+// rendered. Remove a re-injected English "From" prefix only inside the
+// wholesale collection price rows.
+theme.cleanWholesalePricePrefixes = (root = document) => {
+  const lists = root.matches?.('[data-wholesale-price-list]')
+    ? [root]
+    : root.querySelectorAll?.('[data-wholesale-price-list]') ?? [];
+
+  const clean = (node) => {
+    const closestRow = node.closest?.('.product-card__wholesale-row');
+    const rows = closestRow
+      ? [closestRow]
+      : node.querySelectorAll?.('.product-card__wholesale-row') ?? [];
+
+    rows.forEach((row) => {
+      const walker = document.createTreeWalker(row, NodeFilter.SHOW_TEXT);
+      let textNode;
+      while ((textNode = walker.nextNode())) {
+        const cleaned = textNode.nodeValue.replace(/^(\s*)from(?=\s|\u00a0|$)/i, '$1');
+        if (cleaned !== textNode.nodeValue) textNode.nodeValue = cleaned;
+      }
+    });
+  };
+
+  lists.forEach((list) => {
+    clean(list);
+    if (list.dataset.wholesalePriceCleanupReady === 'true') return;
+
+    list.dataset.wholesalePriceCleanupReady = 'true';
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'characterData') {
+          clean(mutation.target.parentElement);
+        }
+        else {
+          mutation.addedNodes.forEach((node) => {
+            clean(node.nodeType === Node.ELEMENT_NODE ? node : mutation.target);
+          });
+        }
+      });
+    });
+    observer.observe(list, { childList: true, subtree: true, characterData: true });
+  });
+};
+
+theme.cleanWholesalePricePrefixes();
+theme.pubsub.subscribe(theme.pubsub.PUB_SUB_EVENTS.facetUpdate, () => {
+  window.requestAnimationFrame(() => theme.cleanWholesalePricePrefixes());
+});
 
 class ProductForm extends HTMLFormElement {
   constructor() {
