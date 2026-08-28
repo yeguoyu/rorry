@@ -787,7 +787,7 @@
           "type": "heading",
           "settings": {
             "heading": "Ready to Share Your RORRY Moment?",
-            "heading_size": "title-lg tracking-heading",
+            "heading_size": "title-md",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -802,7 +802,7 @@
         "text_alignment": "center",
         "text_alignment_mobile": "center",
         "heading": "",
-        "heading_size": "title-md",
+        "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_width": "small",
         "heading_tag": "h2",
