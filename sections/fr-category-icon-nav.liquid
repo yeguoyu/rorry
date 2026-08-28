@@ -1,0 +1,457 @@
+{% comment %}
+  Section: FR Category Icon Nav
+  Collection pages only — icon + label quick links
+{% endcomment %}
+
+{%- liquid
+  assign item_count = section.blocks.size
+  if item_count == 0
+    assign item_count = 1
+  endif
+-%}
+
+<section id="fr-cat-icon-nav-{{ section.id }}" class="fr-cat-icon-nav">
+  <div class="fr-cat-icon-nav__inner{% unless section.settings.full_width %} page-width{% endunless %}">
+    <div class="fr-cat-icon-nav__list">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign item_link = block.settings.link
+          assign item_label = block.settings.title
+          assign is_active = false
+
+          if block.settings.collection != blank
+            assign item_link = block.settings.collection.url
+            assign item_label = item_label | default: block.settings.collection.title
+            if collection.handle == block.settings.collection.handle
+              assign is_active = true
+            endif
+          elsif item_link != blank and collection.url == item_link
+            assign is_active = true
+          endif
+        -%}
+
+        {%- if item_label != blank -%}
+          <a
+            href="{{ item_link | default: '#' }}"
+            class="fr-cat-icon-nav__item{% if is_active %} is-active{% endif %}"
+            {{ block.shopify_attributes }}
+          >
+            <span class="fr-cat-icon-nav__icon" aria-hidden="true">
+              {%- if block.settings.icon_image != blank -%}
+                {{
+                  block.settings.icon_image
+                  | image_url: width: 160
+                  | image_tag: loading: 'lazy', widths: '48,96,160', class: 'fr-cat-icon-nav__icon-img', alt: ''
+                }}
+              {%- elsif block.settings.svg_code != blank -%}
+                <span class="fr-cat-icon-nav__icon-svg">{{ block.settings.svg_code }}</span>
+              {%- else -%}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="2"/>
+                  <path d="M8 12h8"/>
+                </svg>
+              {%- endif -%}
+            </span>
+            <span class="fr-cat-icon-nav__label">{{ item_label | escape }}</span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<style>
+  #fr-cat-icon-nav-{{ section.id }} {
+    background: {{ section.settings.bg_color }};
+    border-bottom: 1px solid {{ section.settings.border_color }};
+    padding: {{ section.settings.padding_y }}px 0;
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} * {
+    box-sizing: border-box;
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__inner {
+    max-width: {{ section.settings.max_width }}px;
+    margin: 0 auto;
+    padding: 0 {{ section.settings.padding_x }}px;
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__list {
+    display: grid;
+    grid-template-columns: repeat({{ item_count }}, minmax(0, 1fr));
+    gap: {{ section.settings.item_gap }}px;
+    align-items: start;
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: {{ section.settings.icon_label_gap }}px;
+    padding: {{ section.settings.item_padding_y }}px {{ section.settings.item_padding_x }}px;
+    text-decoration: none;
+    color: {{ section.settings.text_color }};
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__item:hover {
+    color: {{ section.settings.text_hover_color }};
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__item.is-active {
+    color: {{ section.settings.text_active_color }};
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__item.is-active .fr-cat-icon-nav__label {
+    font-weight: {{ section.settings.active_font_weight }};
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+    color: {{ section.settings.icon_color }};
+    flex-shrink: 0;
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__icon svg,
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__icon-img {
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+    display: block;
+    object-fit: contain;
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__icon-svg svg {
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+    display: block;
+  }
+
+  #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__label {
+    font-size: {{ section.settings.label_size }}px;
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-weight: {{ section.settings.label_font_weight }};
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 989px) {
+    #fr-cat-icon-nav-{{ section.id }} {
+      padding: {{ section.settings.padding_y_mobile }}px 0;
+    }
+
+    #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__inner {
+      padding: 0;
+      max-width: 100%;
+    }
+
+    #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__list {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 0;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 0 {{ section.settings.padding_x_mobile }}px;
+    }
+
+    #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__list::-webkit-scrollbar {
+      display: none;
+    }
+
+    #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__item {
+      flex: 0 0 auto;
+      min-width: {{ section.settings.mobile_item_min_width }}px;
+      padding: {{ section.settings.item_padding_y }}px {{ section.settings.item_padding_x_mobile }}px;
+    }
+
+    #fr-cat-icon-nav-{{ section.id }} .fr-cat-icon-nav__label {
+      font-size: {{ section.settings.label_size_mobile }}px;
+      white-space: normal;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "FR Category Icon Nav",
+  "class": "shopify-section-fr-category-icon-nav",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width background",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Content max width",
+      "min": 960,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "default": 1280
+    },
+    {
+      "type": "range",
+      "id": "item_gap",
+      "label": "Item gap (desktop)",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "item_padding_x",
+      "label": "Item padding horizontal",
+      "min": 4,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "item_padding_x_mobile",
+      "label": "Item padding horizontal (mobile)",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "item_padding_y",
+      "label": "Item padding vertical",
+      "min": 4,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "mobile_item_min_width",
+      "label": "Mobile item min width",
+      "min": 72,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 88
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Bottom border",
+      "default": "#e8e8e8"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color (SVG fallback)",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "text_hover_color",
+      "label": "Text hover color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "text_active_color",
+      "label": "Text active color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Typography & icons"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 28,
+      "max": 56,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "icon_label_gap",
+      "label": "Gap between icon and label",
+      "min": 4,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Label font size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "label_size_mobile",
+      "label": "Label font size (mobile)",
+      "min": 10,
+      "max": 14,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "label_font_weight",
+      "label": "Label font weight",
+      "min": 400,
+      "max": 700,
+      "step": 100,
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "active_font_weight",
+      "label": "Active label font weight",
+      "min": 500,
+      "max": 700,
+      "step": 100,
+      "default": 700
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_y",
+      "label": "Padding top/bottom",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_y_mobile",
+      "label": "Padding top/bottom (mobile)",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_x",
+      "label": "Padding left/right",
+      "min": 0,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_x_mobile",
+      "label": "Padding left/right (mobile scroll)",
+      "min": 0,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "default": 12
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Category item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon image"
+        },
+        {
+          "type": "html",
+          "id": "svg_code",
+          "label": "Icon SVG code",
+          "info": "Optional. Used when no icon image is uploaded."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Label",
+          "default": "Category"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection",
+          "info": "Recommended. Used for link and active state."
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Custom link",
+          "info": "Optional. Used when no collection is selected."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FR Category Icon Nav",
+      "blocks": [
+        { "type": "item", "settings": { "title": "充電器" } },
+        { "type": "item", "settings": { "title": "モバイルバッテリー" } },
+        { "type": "item", "settings": { "title": "ケーブル" } },
+        { "type": "item", "settings": { "title": "USB-C ハブ" } },
+        { "type": "item", "settings": { "title": "ポータブル電源" } },
+        { "type": "item", "settings": { "title": "ワイヤレス充電器" } }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["collection"]
+  }
+}
+{% endschema %}
