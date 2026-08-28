@@ -634,6 +634,42 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "question_zARPtV": {
+          "type": "question",
+          "settings": {
+            "title": "6. Who owns the content I create?",
+            "text": "<p>Ownership and usage rights depend on the collaboration agreement. RORRY will provide the proposed channels, duration, editing rights, paid-media rights, and credit terms before content is reused.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_DhYJif": {
+          "type": "question",
+          "settings": {
+            "title": "5. What kind of content does RORRY need?",
+            "text": "<p>Common formats include unboxings, product demonstrations, desk setups, everyday carry, what’s-in-my-bag videos, travel routines, charging tips, comparisons, and short-form lifestyle content.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_wHLVDU": {
+          "type": "question",
+          "settings": {
+            "title": "5. What kind of content does RORRY need?",
+            "text": "<p>Common formats include unboxings, product demonstrations, desk setups, everyday carry, what’s-in-my-bag videos, travel routines, charging tips, comparisons, and short-form lifestyle content.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_JN897q": {
+          "type": "question",
+          "settings": {
+            "title": "5. What kind of content does RORRY need?",
+            "text": "<p>Common formats include unboxings, product demonstrations, desk setups, everyday carry, what’s-in-my-bag videos, travel routines, charging tips, comparisons, and short-form lifestyle content.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
@@ -641,7 +677,11 @@
         "question_UJRxzq",
         "question_w8dAMF",
         "question_Gqnktg",
-        "question_zxNBBt"
+        "question_zxNBBt",
+        "question_zARPtV",
+        "question_DhYJif",
+        "question_wHLVDU",
+        "question_JN897q"
       ],
       "custom_css": [
         ".faqs.with-background > :is(div, form) {padding: 0;}"
@@ -661,7 +701,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
