@@ -74,12 +74,6 @@
             "show_back_in_stock_phone": false
           }
         },
-        "liquid_8DgppY": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->"
-          }
-        },
         "klarna_on_site_messaging_app_block_DKD38B": {
           "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
           "settings": {
@@ -143,7 +137,6 @@
         "variant_picker",
         "inventory",
         "buy_buttons",
-        "liquid_8DgppY",
         "klarna_on_site_messaging_app_block_DKD38B",
         "text_CbQbFM",
         "description",
@@ -1031,15 +1024,6 @@
     },
     "1741083344160ffdd0": {
       "type": "apps",
-      "blocks": {
-        "socialwidget_instafeed_product_widget_3DiYrH": {
-          "type": "shopify://apps/socialwidget-instafeed/blocks/product-widget/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "socialwidget_instafeed_product_widget_3DiYrH"
-      ],
       "disabled": true,
       "settings": {
         "color_text": "",
