@@ -678,103 +678,75 @@
         "rounded": false
       }
     },
-    "zl_faq_info_4HAa6C": {
-      "type": "zl-faq-info",
+    "image_with_text_overlay_CgyTPU": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "faq_item_FNbAUc": {
-          "type": "faq_item",
+        "subheading_pM6DnM": {
+          "type": "subheading",
           "settings": {
-            "question": "Question 1",
-            "answer": "<p>Answer to question 1 goes here.</p>"
+            "subheading": "Add a tagline",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
           }
         },
-        "faq_item_4gxnMJ": {
-          "type": "faq_item",
+        "heading_jajdtp": {
+          "type": "heading",
           "settings": {
-            "question": "Question 2",
-            "answer": "<p>Answer to question 2 goes here.</p>"
+            "heading": "Ready to Share Your RORRY Moment?",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "faq_item_xMMXMq": {
-          "type": "faq_item",
+        "text_ieqBTL": {
+          "type": "text",
           "settings": {
-            "question": "Question 3",
-            "answer": "<p>Answer to question 3 goes here.</p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "faq_item_FNbAUc",
-        "faq_item_4gxnMJ",
-        "faq_item_xMMXMq"
+        "subheading_pM6DnM",
+        "heading_jajdtp",
+        "text_ieqBTL"
       ],
-      "disabled": true,
-      "name": "ZL FAQ",
+      "name": "t:sections.image-with-text-overlay.name",
       "settings": {
-        "bg_color": "#ffffff",
-        "container_width": 900,
-        "padding_top_pc": 0,
-        "padding_bottom_pc": 60,
-        "padding_top_mb": 20,
-        "padding_bottom_mb": 0,
-        "title": "FAQs",
-        "title_color": "#171717",
-        "title_size_pc": 48,
-        "title_size_mb": 28,
-        "title_weight": "500",
-        "item_bg_color": "#ffffff",
-        "q_color": "#000000",
-        "q_size_pc": 20,
-        "q_size_mb": 16,
-        "q_weight": "400",
-        "a_color": "#333333",
-        "a_size_pc": 18,
-        "a_size_mb": 16,
-        "a_weight": "300",
-        "read_more_text": "Read More",
-        "read_less_text": "Read Less",
-        "btn_bg_color": "#000b46",
-        "btn_text_color": "#ffffff"
-      }
-    },
-    "contact_with_map_WQjxtN": {
-      "type": "contact-with-map",
-      "disabled": true,
-      "name": "t:sections.contact-with-map.name",
-      "settings": {
-        "heading": "Contact Us",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-left md:items-start",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "map_address": "",
-        "map_api_key": "",
-        "map_zoom": 16,
-        "map_style": "dark",
-        "image": "shopify://shop_images/RORRY-D4-10000mAh_13.jpg",
+        "transparent_header": false,
+        "image": "shopify://shop_images/Ready-to.jpg",
         "image_height": "adapt",
-        "image_height_mobile": "400px",
-        "color_text": "",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
         "color_background": "",
         "gradient_background": "",
-        "color_highlight": "",
+        "color_highlight": "#e0a580",
         "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
         "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "divider": false,
-        "narrow": true,
+        "full_width": true,
         "rounded": false,
-        "enable_parallax": false,
+        "enable_parallax": true,
         "parallax_direction": "vertical"
       }
     }
@@ -791,7 +763,6 @@
     "multicolumn_with_icons_tYM4nw",
     "number_counter_hnF9Ni",
     "faq_XjyrqX",
-    "zl_faq_info_4HAa6C",
-    "contact_with_map_WQjxtN"
+    "image_with_text_overlay_CgyTPU"
   ]
 }
