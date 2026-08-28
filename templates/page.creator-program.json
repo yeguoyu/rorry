@@ -712,7 +712,7 @@
         "color_overlay": "#ffffff",
         "overlay_opacity": 4,
         "padding_top": 40,
-        "padding_bottom": 80,
+        "padding_bottom": 40,
         "divider": false,
         "narrow": true,
         "rounded": false
@@ -770,7 +770,7 @@
         "color_overlay": "#171717",
         "overlay_opacity": 8,
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 20,
         "divider": false,
         "full_width": true,
         "rounded": false,
