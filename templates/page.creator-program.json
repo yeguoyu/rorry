@@ -635,6 +635,15 @@
             "highlighted_scribble": "circle"
           }
         },
+        "question_DhYJif": {
+          "type": "question",
+          "settings": {
+            "title": "6. Who owns the content I create?",
+            "text": "<p>Ownership and usage rights depend on the collaboration agreement. RORRY will provide the proposed channels, duration, editing rights, paid-media rights, and credit terms before content is reused.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
         "question_zARPtV": {
           "type": "question",
           "settings": {
@@ -644,11 +653,11 @@
             "highlighted_scribble": "circle"
           }
         },
-        "question_DhYJif": {
+        "question_JN897q": {
           "type": "question",
           "settings": {
-            "title": "5. What kind of content does RORRY need?",
-            "text": "<p>Common formats include unboxings, product demonstrations, desk setups, everyday carry, what’s-in-my-bag videos, travel routines, charging tips, comparisons, and short-form lifestyle content.</p>",
+            "title": "8.Can creators outside the United States apply?",
+            "text": "<p>You may apply from another country, but product availability, shipping, affiliate access, and campaign eligibility vary by market.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -656,17 +665,8 @@
         "question_wHLVDU": {
           "type": "question",
           "settings": {
-            "title": "5. What kind of content does RORRY need?",
-            "text": "<p>Common formats include unboxings, product demonstrations, desk setups, everyday carry, what’s-in-my-bag videos, travel routines, charging tips, comparisons, and short-form lifestyle content.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question_JN897q": {
-          "type": "question",
-          "settings": {
-            "title": "5. What kind of content does RORRY need?",
-            "text": "<p>Common formats include unboxings, product demonstrations, desk setups, everyday carry, what’s-in-my-bag videos, travel routines, charging tips, comparisons, and short-form lifestyle content.</p>",
+            "title": "9. How can I update or remove my application data?",
+            "text": "<p>Contact support@rorry.com and include the email address used in your application. Requests are handled under the RORRY Privacy Policy and applicable law.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -678,10 +678,10 @@
         "question_w8dAMF",
         "question_Gqnktg",
         "question_zxNBBt",
-        "question_zARPtV",
         "question_DhYJif",
-        "question_wHLVDU",
-        "question_JN897q"
+        "question_zARPtV",
+        "question_JN897q",
+        "question_wHLVDU"
       ],
       "custom_css": [
         ".faqs.with-background > :is(div, form) {padding: 0;}"
