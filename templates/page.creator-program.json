@@ -328,8 +328,8 @@
       "settings": {
         "anchor_id": "member-how-it-works",
         "heading": "How the RORRY Creator Program Works",
-        "color_text": "#9887B8",
-        "color_background": "#FFFFFF",
+        "color_text": "#9887b8",
+        "color_background": "#ffffff",
         "graphic_max_width": 70,
         "padding_top": 40,
         "padding_bottom": 40
@@ -577,7 +577,7 @@
         "swipe_on_mobile": false,
         "text_alignment_mobile": "center",
         "color_text": "#9887b8",
-        "color_background": "#FFFFFF",
+        "color_background": "#ffffff",
         "gradient_background": "",
         "color_highlight": "#9887b8",
         "gradient_highlight": "",
@@ -702,7 +702,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -748,6 +748,7 @@
         "heading_jajdtp",
         "button_mkeCzx"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
         "transparent_header": false,
@@ -760,7 +761,7 @@
         "image_height_mobile": "250px",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "center",
-        "color_text": "#9887B8",
+        "color_text": "#9887b8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "#e0a580",
@@ -778,6 +779,84 @@
         "enable_parallax": true,
         "parallax_direction": "vertical"
       }
+    },
+    "rich_text_hyYhFh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_T33zRL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ready to Share Your RORRY Moment?",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_T33zRL"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "1787906703ac300424": {
+      "type": "apps",
+      "blocks": {
+        "powerful_form_builder_app_block_khmM8a": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"MTYxNzIz\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_khmM8a"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -792,6 +871,8 @@
     "multicolumn_with_icons_tYM4nw",
     "number_counter_hnF9Ni",
     "faq_XjyrqX",
-    "image_with_text_overlay_CgyTPU"
+    "image_with_text_overlay_CgyTPU",
+    "rich_text_hyYhFh",
+    "1787906703ac300424"
   ]
 }
