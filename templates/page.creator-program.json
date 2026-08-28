@@ -681,57 +681,33 @@
     "image_with_text_overlay_CgyTPU": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_pM6DnM": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Add a tagline",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
         "heading_jajdtp": {
           "type": "heading",
           "settings": {
             "heading": "Ready to Share Your RORRY Moment?",
-            "heading_size": "title-lg tracking-heading",
+            "heading_size": "title-sm",
             "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_ieqBTL": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "subheading_pM6DnM",
-        "heading_jajdtp",
-        "text_ieqBTL"
+        "heading_jajdtp"
       ],
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
         "transparent_header": false,
-        "image": "shopify://shop_images/Ready-to.jpg",
+        "image": "shopify://shop_images/Ready-to-1.jpg",
         "image_height": "adapt",
         "content_width": "small",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_mobile": "shopify://shop_images/Ready-to-1.jpg",
         "image_height_mobile": "auto",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "#e0a580",
@@ -740,7 +716,7 @@
         "color_button_background": "#ffffff",
         "color_button_gradient": "",
         "color_overlay": "#171717",
-        "overlay_opacity": 70,
+        "overlay_opacity": 8,
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
