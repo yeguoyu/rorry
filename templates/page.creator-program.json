@@ -291,6 +291,50 @@
         "main_product_section": "main-product-modal"
       }
     },
+    "member_how_it_works_VWcMAX": {
+      "type": "member-how-it-works",
+      "blocks": {
+        "step_8UCFQR": {
+          "type": "step",
+          "settings": {
+            "graphic": "shopify://shop_images/65x65_01.png",
+            "graphic_alt": "Apply",
+            "text": "<p style=\"text-align: center;\"><strong>1. Apply</strong><strong></strong></p>\n<p style=\"text-align: center;\"> </p>\n<p>Tell us about your channels, audience, content style, location, and the RORRY products or everyday scenarios you would like to feature.</p>"
+          }
+        },
+        "step_jPRXWk": {
+          "type": "step",
+          "settings": {
+            "graphic": "shopify://shop_images/65x65_02.png",
+            "graphic_alt": "Get Reviewed",
+            "text": "<p style=\"text-align: center;\"><strong>2. Get Reviewed</strong></p>\n<p style=\"text-align: center;\"><br>Our team reviews applications based on campaign fit, content quality, audience relevance, location, availability, and previous collaboration performance.</p>"
+          }
+        },
+        "step_jmGLMw": {
+          "type": "step",
+          "settings": {
+            "graphic": "shopify://shop_images/65x65_03.png",
+            "graphic_alt": "Create and Share",
+            "text": "<p style=\"text-align: center;\"><strong>3. Create and Share</strong></p>\n<p style=\"text-align: center;\"><br>If selected, you will receive the campaign brief, deliverables, timeline, disclosure requirements, usage terms, and any product or affiliate details before you agree to participate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_8UCFQR",
+        "step_jPRXWk",
+        "step_jmGLMw"
+      ],
+      "name": "Member how it works",
+      "settings": {
+        "anchor_id": "member-how-it-works",
+        "heading": "How the RORRY Creator Program Works",
+        "color_text": "#9887B8",
+        "color_background": "#ffffff",
+        "graphic_max_width": 70,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
     "image_with_text_overlay_M3aq9K": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -740,6 +784,7 @@
     "image_with_text_overlay_rmJqTC",
     "multicolumn_with_icons_LcbRjD",
     "zl_nano_3_cW4TLy",
+    "member_how_it_works_VWcMAX",
     "image_with_text_overlay_M3aq9K",
     "multicolumn_with_icons_mJypHX",
     "selling_points_2_video_KJeBm4",
