@@ -690,10 +690,22 @@
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
+        },
+        "button_mkeCzx": {
+          "type": "button",
+          "settings": {
+            "button_label": "APPLY TO JOIN",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
         }
       },
       "block_order": [
-        "heading_jajdtp"
+        "heading_jajdtp",
+        "button_mkeCzx"
       ],
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
