@@ -5379,109 +5379,9 @@ theme.pubsub.subscribe(theme.pubsub.PUB_SUB_EVENTS.variantChange, ({ data }) => 
 
 document.addEventListener('shopify:section:load', () => theme.scheduleKlarnaRefresh());
 
-// WI2B resolves wholesale tiers after Liquid has rendered. Reuse those
-// resolved tiers for the sticky product price and wholesale collection cards
-// so neither surface falls back to the single-item Shopify price.
-theme.getWholesalePricingForVariant = (variantId) => {
-  if (!variantId || !window.wiB2bLastResolved) return null;
-
-  const normalizedId = String(variantId);
-  return Object.values(window.wiB2bLastResolved).find((pricing) => {
-    const resolvedId = String(pricing?.variantId ?? '').split('/').pop();
-    return resolvedId === normalizedId && pricing?.displayTiers?.length;
-  }) ?? null;
-};
-
-theme.getWholesaleTierForQuantity = (pricing, quantity) => {
-  if (!pricing?.displayTiers?.length || !Number.isFinite(quantity)) return null;
-
-  return pricing.displayTiers.find((tier) => {
-    const minimum = Number(tier.minQuantity ?? 1);
-    const maximum = tier.maxQuantity == null ? Infinity : Number(tier.maxQuantity);
-    return quantity >= minimum && quantity <= maximum;
-  }) ?? null;
-};
-
-theme.formatWholesaleTierPrice = (tier, pricing) => {
-  if (!tier) return '';
-
-  const currentCurrency = pricing?.currencyCode
-    || window.wiB2bOfferBootstrap?.currencyCode
-    || window.Shopify?.currency?.active;
-  const configuredPrice = tier.configuredShopPrice;
-  const useConfiguredPrice = configuredPrice?.currencyCode === currentCurrency;
-  const amount = useConfiguredPrice ? configuredPrice.amount : tier.unitPrice;
-  const currency = useConfiguredPrice ? configuredPrice.currencyCode : currentCurrency;
-
-  if (amount == null || !currency) return '';
-
-  try {
-    return new Intl.NumberFormat(window.wiB2bOfferBootstrap?.locale || document.documentElement.lang || 'en', {
-      style: 'currency',
-      currency
-    }).format(Number(amount));
-  }
-  catch (error) {
-    return String(amount);
-  }
-};
-
-theme.syncWholesaleStickyPrice = () => {
-  const stickyPrices = document.querySelectorAll('[id^="StickyPriceV2-"]');
-  if (!stickyPrices.length) return;
-
-  const quantityInput = document.querySelector('product-info input[name="quantity"]')
-    || Array.from(document.querySelectorAll('input[name="quantity"]'))
-      .find((input) => !input.closest('product-sticky-form'));
-  if (!quantityInput) return;
-
-  const quantity = Number.parseInt(quantityInput.value, 10);
-  const variantId = quantityInput.dataset.quantityVariantId
-    || quantityInput.form?.querySelector('input[name="id"]')?.value;
-  const pricing = theme.getWholesalePricingForVariant(variantId);
-  const tier = theme.getWholesaleTierForQuantity(pricing, quantity);
-  if (!tier) return;
-
-  const tierIndex = pricing.displayTiers.indexOf(tier);
-  const tierRows = document.querySelectorAll('.wi2b-volume-tiers__row');
-  const tablePrice = tierRows[tierIndex]?.querySelector('td:last-child')?.textContent.trim();
-  const unitPrice = tablePrice || theme.formatWholesaleTierPrice(tier, pricing);
-  if (!unitPrice) return;
-
-  stickyPrices.forEach((stickyPrice) => {
-    const priceText = stickyPrice.querySelector('.price__regular')
-      || stickyPrice.querySelector('.price-item--regular')
-      || stickyPrice.querySelector('.price');
-    if (priceText && priceText.textContent.trim() !== unitPrice) {
-      priceText.textContent = unitPrice;
-    }
-  });
-};
-
-theme.syncWholesaleCollectionCardPrice = (row) => {
-  const card = row?.closest?.('.product-card');
-  const processed = card?.dataset.wi2bProcessed;
-  const currentPrice = row?.querySelector?.('.wi2b-offer-price__current');
-  if (!processed || !currentPrice) return;
-
-  const variantId = processed.split(':').pop();
-  const pricing = theme.getWholesalePricingForVariant(variantId);
-  const moqText = row.querySelector('.product-card__moq')?.textContent ?? '';
-  const moq = Number.parseInt(moqText.match(/\d+/)?.[0], 10) || Number(pricing?.displayQuantity);
-  const tier = theme.getWholesaleTierForQuantity(pricing, moq);
-  const unitPrice = theme.formatWholesaleTierPrice(tier, pricing);
-  if (!unitPrice || !Number.isFinite(moq)) return;
-
-  const wholesaleText = `${moq} at ${unitPrice}`;
-  if (currentPrice.textContent.trim() !== wholesaleText) {
-    currentPrice.textContent = wholesaleText;
-  }
-};
-
 // Wholesale pricing apps can rewrite collection-card prices after Liquid has
 // rendered. Remove a re-injected English "From" prefix only inside the
-// wholesale collection price rows, then replace the single-item price with the
-// first eligible wholesale tier.
+// wholesale collection price rows.
 theme.cleanWholesalePricePrefixes = (root = document) => {
   const lists = root.matches?.('[data-wholesale-price-list]')
     ? [root]
@@ -5500,7 +5400,6 @@ theme.cleanWholesalePricePrefixes = (root = document) => {
         const cleaned = textNode.nodeValue.replace(/^(\s*)from(?=\s|\u00a0|$)/i, '$1');
         if (cleaned !== textNode.nodeValue) textNode.nodeValue = cleaned;
       }
-      theme.syncWholesaleCollectionCardPrice(row);
     });
   };
 
@@ -5528,35 +5427,6 @@ theme.cleanWholesalePricePrefixes = (root = document) => {
 theme.cleanWholesalePricePrefixes();
 theme.pubsub.subscribe(theme.pubsub.PUB_SUB_EVENTS.facetUpdate, () => {
   window.requestAnimationFrame(() => theme.cleanWholesalePricePrefixes());
-});
-
-let wholesalePriceSyncFrame;
-theme.scheduleWholesalePriceSync = () => {
-  if (wholesalePriceSyncFrame) window.cancelAnimationFrame(wholesalePriceSyncFrame);
-  wholesalePriceSyncFrame = window.requestAnimationFrame(() => {
-    wholesalePriceSyncFrame = undefined;
-    theme.syncWholesaleStickyPrice();
-    theme.cleanWholesalePricePrefixes();
-  });
-};
-
-document.addEventListener('input', (event) => {
-  if (event.target.matches?.('input[name="quantity"]')) theme.scheduleWholesalePriceSync();
-});
-document.addEventListener('change', (event) => {
-  if (event.target.matches?.('input[name="quantity"]')) theme.scheduleWholesalePriceSync();
-});
-document.addEventListener('quantity-selector:update', () => theme.scheduleWholesalePriceSync());
-theme.pubsub.subscribe(theme.pubsub.PUB_SUB_EVENTS.variantChange, () => {
-  [80, 400, 1000].forEach((delay) => {
-    window.setTimeout(theme.scheduleWholesalePriceSync, delay);
-  });
-});
-
-// The app block loads asynchronously, so cover its initial response without a
-// document-wide observer or work during the user's first interaction.
-[250, 750, 1500, 3000].forEach((delay) => {
-  window.setTimeout(theme.scheduleWholesalePriceSync, delay);
 });
 
 class ProductForm extends HTMLFormElement {
