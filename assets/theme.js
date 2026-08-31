@@ -2375,9 +2375,6 @@ class QuantityInput extends HTMLElement {
   quantityUpdateUnsubscriber = undefined;
   quantityBoundriesUnsubscriber = undefined;
   quantityRulesUnsubscriber = undefined;
-  inputChangeTimer = undefined;
-  preservedValue = undefined;
-  preserveOnNextBoundaryUpdate = false;
   
   constructor() {
     super();
@@ -2405,12 +2402,10 @@ class QuantityInput extends HTMLElement {
     this.buttons = Array.from(this.querySelectorAll('button'));
     this.changeEvent = new Event('change', { bubbles: true });
     this.input.addEventListener('change', this.onInputChange.bind(this));
-    this.input.addEventListener('input', this.onInputInput.bind(this));
     this.input.addEventListener('focus', () => setTimeout(() => this.input.select()));
 
     this.buttons.forEach((button) => button.addEventListener('click', this.onButtonClick.bind(this)), { signal: this.abortController.signal });
 
-    this.preserveValue();
     this.validateQtyRules();
     this.quantityUpdateUnsubscriber = theme.pubsub.subscribe(theme.pubsub.PUB_SUB_EVENTS.quantityUpdate, this.validateQtyRules.bind(this));
     this.quantityBoundriesUnsubscriber = theme.pubsub.subscribe(theme.pubsub.PUB_SUB_EVENTS.quantityBoundries, this.setQuantityBoundries.bind(this));
@@ -2419,7 +2414,6 @@ class QuantityInput extends HTMLElement {
 
   disconnectedCallback() {
     this.abortController.abort();
-    clearTimeout(this.inputChangeTimer);
 
     if (this.quantityUpdateUnsubscriber) {
       this.quantityUpdateUnsubscriber();
@@ -2448,71 +2442,18 @@ class QuantityInput extends HTMLElement {
       this.input.stepDown();
     }
 
-    if (previousValue !== this.input.value) {
-      this.preserveValue();
-      this.input.dispatchEvent(this.changeEvent);
-    }
+    if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
 
     if (this.input.getAttribute('data-min') === previousValue && event.currentTarget.name === 'minus') {
       this.input.value = parseInt(this.input.min);
     }
   }
 
-  onInputInput(event) {
-    clearTimeout(this.inputChangeTimer);
-    this.validateQtyRules();
-    if (!event.isTrusted) return;
-
-    const value = parseInt(this.input.value);
-    const min = this.input.min ? parseInt(this.input.min) : 1;
-    const max = this.input.max ? parseInt(this.input.max) : null;
-    if (!Number.isFinite(value) || value < min || (max !== null && value > max)) return;
-
-    this.preserveValue(value);
-    this.inputChangeTimer = setTimeout(() => {
-      if (parseInt(this.input.value) !== value) return;
-      this.input.dispatchEvent(new Event('change', { bubbles: true }));
-    }, 250);
-  }
-
-  onInputChange(event) {
-    clearTimeout(this.inputChangeTimer);
+  onInputChange() {
     if (this.input.value === '') {
       this.input.value = parseInt(this.input.min);
     }
-    if (event.isTrusted) this.preserveValue();
     this.validateQtyRules();
-  }
-
-  preserveValue(value = parseInt(this.input.value)) {
-    if (Number.isFinite(value) && value > 0) this.preservedValue = value;
-  }
-
-  prepareForVariantChange() {
-    this.preserveValue();
-    this.preserveOnNextBoundaryUpdate = true;
-  }
-
-  restorePreservedValue({ notify = false } = {}) {
-    const min = this.input.min ? parseInt(this.input.min) : 1;
-    const max = this.input.max ? parseInt(this.input.max) : null;
-    const step = this.input.step ? parseInt(this.input.step) : 1;
-    let value = Number.isFinite(this.preservedValue) ? this.preservedValue : min;
-
-    value = Math.max(value, min);
-    if (step > 1 && value > min) value = min + Math.ceil((value - min) / step) * step;
-    if (max !== null) value = Math.min(value, max);
-
-    const changed = parseInt(this.input.value) !== value;
-    this.input.value = value;
-    this.preservedValue = value;
-
-    if (notify || changed) {
-      this.input.dispatchEvent(new Event('input', { bubbles: true }));
-      this.input.dispatchEvent(new Event('change', { bubbles: true }));
-    }
-
-    return changed;
   }
 
   validateQtyRules() {
@@ -2539,7 +2480,7 @@ class QuantityInput extends HTMLElement {
       if (!current || !updated) continue;
 
       if (selector === '.quantity__input') {
-        const attributes = ['data-quantity-variant-id', 'data-cart-quantity', 'data-min', 'data-max', 'step'];
+        const attributes = ['data-cart-quantity', 'data-min', 'data-max', 'step'];
         for (let attribute of attributes) {
           const valueUpdated = updated.getAttribute(attribute);
           if (valueUpdated !== null) {
@@ -2579,21 +2520,13 @@ class QuantityInput extends HTMLElement {
     else {
       this.input.removeAttribute('max');
     }
-    if (this.preserveOnNextBoundaryUpdate) {
-      this.preserveOnNextBoundaryUpdate = false;
-      this.restorePreservedValue();
-    }
-    else {
-      this.input.value = min;
-      this.preserveValue(min);
-    }
+    this.input.value = min;
 
     theme.pubsub.publish(theme.pubsub.PUB_SUB_EVENTS.quantityUpdate, undefined);
   }
 
   reset() {
     this.input.value = this.input.defaultValue;
-    this.preserveValue();
   }
 }
 customElements.define('quantity-input', QuantityInput);
@@ -5031,7 +4964,6 @@ class ProductInfo extends HTMLElement {
   disconnectedCallback() {
     this.onVariantChangeUnsubscriber();
     this.cartUpdateUnsubscriber?.();
-    this.clearQuantityRestoreTimers();
   }
 
   initProductAnimation() {
@@ -5048,9 +4980,6 @@ class ProductInfo extends HTMLElement {
 
   handleOptionValueChange({ data: { event, target, selectedOptionValues } }) {
     if (!this.contains(event.target)) return;
-
-    this.clearQuantityRestoreTimers();
-    this.querySelector('quantity-input')?.prepareForVariantChange();
 
     this.resetProductFormState();
 
@@ -5174,29 +5103,7 @@ class ProductInfo extends HTMLElement {
           variant: variant
         }
       }));
-
-      this.restoreQuantityAfterVariantChange();
     };
-  }
-
-  clearQuantityRestoreTimers() {
-    this.quantityRestoreTimers?.forEach((timer) => clearTimeout(timer));
-    this.quantityRestoreTimers = [];
-  }
-
-  restoreQuantityAfterVariantChange() {
-    const quantityInput = this.querySelector('quantity-input');
-    if (!quantityInput) return;
-
-    this.clearQuantityRestoreTimers();
-    quantityInput.restorePreservedValue({ notify: true });
-
-    // WI2B initializes its quantity rules asynchronously after a variant change.
-    // Restore again only if the app resets the quantity while it is rebinding.
-    [150, 500, 1000].forEach((delay) => {
-      const timer = setTimeout(() => quantityInput.restorePreservedValue(), delay);
-      this.quantityRestoreTimers.push(timer);
-    });
   }
 
   getSelectedVariant(productInfoNode) {
