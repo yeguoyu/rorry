@@ -114,7 +114,7 @@
           "settings": {
             "icon": "gift",
             "custom_icon": "",
-            "heading": "<strong>Free Premium Gear</strong>",
+            "heading": "<strong>Selected RORRY Products</strong>",
             "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
@@ -420,7 +420,7 @@
         "style": "with-border",
         "columns": 3,
         "text_alignment": "left",
-        "heading": "Created in Life",
+        "heading": "<strong>Created in Everyday Life</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
@@ -659,7 +659,7 @@
         "question_JN897q": {
           "type": "question",
           "settings": {
-            "title": "8.Can creators outside the United States apply?",
+            "title": "8. Can creators outside the United States apply?",
             "text": "<p>You may apply from another country, but product availability, shipping, affiliate access, and campaign eligibility vary by market.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
