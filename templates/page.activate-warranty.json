@@ -212,7 +212,7 @@
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<ul><li>Buy 1 -&gt; <strong>15% OFF</strong></li><li>Buy 2 -&gt; <strong>20% OFF</strong></li><li>Buy 3 or More -&gt; <strong>25% OFF</strong></li></ul>",
+        "description": "<ul><li>Buy 1 -&gt; <strong>10% OFF</strong></li><li>Buy 2 -&gt; <strong>15% OFF</strong></li><li>Buy 3 or More -&gt; <strong>20% OFF</strong></li></ul>",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
