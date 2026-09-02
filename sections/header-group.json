@@ -16,6 +16,7 @@
       "blocks": {
         "announcement-2": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "🔥<strong>Subscribe & Get 15% OFF Your First Order → Shop Now!</strong>",
@@ -28,10 +29,9 @@
         },
         "announcement_4pj3HQ": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "none",
-            "text": "🎁 Power Your Labor Day in Style - Up to 25% off",
+            "text": "🎁 Power Your <strong>Labor Day</strong> in Style - Up to <strong>25% off</strong>",
             "link": "shopify://products/rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w",
             "hide_icon_mobile": false,
             "text_mobile": "",
