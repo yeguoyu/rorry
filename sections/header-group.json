@@ -296,7 +296,8 @@
         "mega_menu_DcUUc4"
       ],
       "custom_css": [
-        ".mega-menu__nav.grid {grid-template-rows: 1fr !important;}"
+        ".mega-menu__nav.grid {grid-template-rows: 1fr !important;}",
+        "@media screen and (min-width: 1024px) and (max-width: 1599px) {.header--left-center {--header-items-gap: 20px; --header-nav-gap: 16px; --header-grid-template: \"logo navigation icons\" / 220px minmax(0, 1fr) auto; } .header--left-center .header__logo, .header--left-center .header__logo-link, .header--left-center .header__logo img {width: 220px !important; max-width: 220px !important; } .header--left-center .header__logo {justify-content: flex-start; }}"
       ],
       "settings": {
         "logo_h1": true,
