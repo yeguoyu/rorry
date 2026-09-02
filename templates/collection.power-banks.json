@@ -543,6 +543,102 @@
         "rounded": false
       }
     },
+    "fr_product_comparison_kjP8k6": {
+      "type": "fr-product-comparison",
+      "blocks": {
+        "column_FcU8Nk": {
+          "type": "column",
+          "settings": {
+            "model_label": "Ultra-Portable",
+            "image": "shopify://shop_images/CharmGo_D2_5000mAh_6774e574-8fbf-4161-85e7-cb75e6f0e00f.png",
+            "title": "CharmGo D2 5000",
+            "price_text": "From $31.99",
+            "learn_more_label": "Shop now",
+            "learn_more_url": "",
+            "product": "",
+            "specs": "Folding Design | Vertical Fold\nSpeed Range | 1 - 7.5 mph\nControl Method | App | Knob"
+          }
+        },
+        "column_XLTjWE": {
+          "type": "column",
+          "settings": {
+            "model_label": "Model B",
+            "title": "Product B",
+            "price_text": "Starting at ¥0",
+            "learn_more_label": "Learn more",
+            "learn_more_url": "",
+            "product": "",
+            "specs": "Folding Design | Vertical Fold\nSpeed Range | 1 - 8 mph\nControl Method | App | Remote"
+          }
+        },
+        "column_rxCPTU": {
+          "type": "column",
+          "settings": {
+            "model_label": "Model C",
+            "title": "Product C",
+            "price_text": "Starting at ¥0",
+            "learn_more_label": "Learn more",
+            "learn_more_url": "",
+            "product": "",
+            "specs": "Folding Design | Vertical Fold\nSpeed Range | 1 - 9 mph\nControl Method | App | Knob"
+          }
+        },
+        "column_RJma8G": {
+          "type": "column",
+          "settings": {
+            "model_label": "Model A",
+            "title": "Product name",
+            "price_text": "Starting at ¥0",
+            "learn_more_label": "Learn more",
+            "learn_more_url": "",
+            "product": "",
+            "specs": "Folding Design | Vertical Fold\nSpeed Range | 1 - 7.5 mph\nControl Method | App | Knob"
+          }
+        }
+      },
+      "block_order": [
+        "column_FcU8Nk",
+        "column_XLTjWE",
+        "column_rxCPTU",
+        "column_RJma8G"
+      ],
+      "name": "FR Product Comparison",
+      "settings": {
+        "heading": "WHICH MODEL IS RIGHT FOR YOU?",
+        "show_note": false,
+        "note_text": "Compare current collection products only",
+        "note_checked": false,
+        "full_width": false,
+        "max_width": 1200,
+        "image_max_width": 220,
+        "col_padding_x": 16,
+        "col_padding_x_mobile": 12,
+        "head_padding_bottom": 20,
+        "row_padding_y": 20,
+        "bg_color": "#ffffff",
+        "heading_color": "#111111",
+        "text_color": "#111111",
+        "muted_color": "#888888",
+        "link_color": "#111111",
+        "border_color": "#e5e5e5",
+        "accent_color": "#111111",
+        "note_color": "#666666",
+        "heading_size": 28,
+        "heading_size_mobile": 22,
+        "title_size": 15,
+        "price_size": 13,
+        "link_size": 13,
+        "value_size": 15,
+        "label_size": 12,
+        "note_size": 13,
+        "heading_spacing": 24,
+        "note_spacing": 24,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 32
+      }
+    },
     "custom_liquid_zxmeRq": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.name",
@@ -601,6 +697,7 @@
     "main-collection",
     "images-with-text-overlay",
     "rich_text_cy3zD6",
+    "fr_product_comparison_kjP8k6",
     "custom_liquid_zxmeRq",
     "recently-viewed"
   ]
