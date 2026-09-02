@@ -549,50 +549,53 @@
         "column_FcU8Nk": {
           "type": "column",
           "settings": {
-            "model_label": "Ultra-Portable",
-            "image": "shopify://shop_images/CharmGo_D2_5000mAh_6774e574-8fbf-4161-85e7-cb75e6f0e00f.png",
+            "model_label": "Keychain Mini",
+            "image": "shopify://shop_images/CharmGo_D2_10000mAh_e7f063e5-496a-4cc5-8769-4bae3c25023a.png",
             "title": "CharmGo D2 5000",
             "price_text": "From $31.99",
             "learn_more_label": "Shop now",
-            "learn_more_url": "",
+            "learn_more_url": "shopify://products/rorry-d2-5000mah-portable-charger-keychain-power-bank",
             "product": "",
-            "specs": "Folding Design | Vertical Fold\nSpeed Range | 1 - 7.5 mph\nControl Method | App | Knob"
+            "specs": "Capacity | 5,000mAh\nCharging Speed | Standard 2A\nBuilt-In Charging | USB-C + Lightning\nApple Watch Charger | Yes"
           }
         },
         "column_XLTjWE": {
           "type": "column",
           "settings": {
-            "model_label": "Model B",
-            "title": "Product B",
-            "price_text": "Starting at ¥0",
-            "learn_more_label": "Learn more",
-            "learn_more_url": "",
+            "model_label": "Plug-In Mini",
+            "image": "shopify://shop_images/PalmGo_D5_10000mAh_27384cc1-a901-4671-af10-15823cd7d144.png",
+            "title": "PalmGo D5 10000",
+            "price_text": "From $33.99",
+            "learn_more_label": "Shop now",
+            "learn_more_url": "shopify://products/rorry-d5-5000mah-portable-charger-usb-c",
             "product": "",
-            "specs": "Folding Design | Vertical Fold\nSpeed Range | 1 - 8 mph\nControl Method | App | Remote"
+            "specs": "Capacity | 10,000mAh\nCharging Speed | 22.5W\nCharging Style | Built-In USB-C Connector\nSimultaneous Charging | Phone + Apple Watch"
           }
         },
         "column_rxCPTU": {
           "type": "column",
           "settings": {
-            "model_label": "Model C",
-            "title": "Product C",
-            "price_text": "Starting at ¥0",
-            "learn_more_label": "Learn more",
+            "model_label": "Wall Plug",
+            "image": "shopify://shop_images/Flow_CB06_10000mAh_cbf4280a-18c4-4780-ab9e-51f1c9ffc2d4.png",
+            "title": "RORRY CB06 10000",
+            "price_text": "From $29.99",
+            "learn_more_label": "Shop now",
             "learn_more_url": "",
-            "product": "",
-            "specs": "Folding Design | Vertical Fold\nSpeed Range | 1 - 9 mph\nControl Method | App | Knob"
+            "product": "rorry-cb06-10000mah-portable-charger-fast-charging-power-bank",
+            "specs": "Capacity | 10,000mAh\nCharging Speed | 22.5W\nCharging Style | AC Plug + USB-C + Lightning\nSimultaneous Charging | Up to 4 Devices"
           }
         },
         "column_RJma8G": {
           "type": "column",
           "settings": {
-            "model_label": "Model A",
-            "title": "Product name",
-            "price_text": "Starting at ¥0",
-            "learn_more_label": "Learn more",
+            "model_label": "MagSafe Slim",
+            "image": "shopify://shop_images/MagAir_D14_5000mAh_822b4201-f8ff-4006-911f-8697ed5b8386.png",
+            "title": "RORRY D14 MagSafe 5000",
+            "price_text": "From $28.99",
+            "learn_more_label": "Shop now",
             "learn_more_url": "",
-            "product": "",
-            "specs": "Folding Design | Vertical Fold\nSpeed Range | 1 - 7.5 mph\nControl Method | App | Knob"
+            "product": "rorry-d14-5000mah-megsafe-power-bank",
+            "specs": "Capacity | 5,000mAh\nCharging Speed | 10W Wireless / 18W USB-C\nCharging Style | MagSafe Wireless\nSimultaneous Charging | Up to 2 Devices"
           }
         }
       },
