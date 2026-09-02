@@ -214,6 +214,99 @@
         "parallax_direction": "vertical"
       }
     },
+    "fr_category_icon_nav_9RUDx7": {
+      "type": "fr-category-icon-nav",
+      "blocks": {
+        "item_6je7TH": {
+          "type": "item",
+          "settings": {
+            "svg_code": "",
+            "title": "Power Banks",
+            "collection": "power-banks",
+            "link": ""
+          }
+        },
+        "item_da6qbL": {
+          "type": "item",
+          "settings": {
+            "svg_code": "",
+            "title": "Mini Power Bank",
+            "collection": "mini-keychain",
+            "link": ""
+          }
+        },
+        "item_tTVKg9": {
+          "type": "item",
+          "settings": {
+            "svg_code": "",
+            "title": "Wireless Charger",
+            "collection": "wireless-chargers",
+            "link": ""
+          }
+        },
+        "item_rRpWKh": {
+          "type": "item",
+          "settings": {
+            "svg_code": "",
+            "title": "Plug In Power Bank",
+            "collection": "ac-wall-plug-power-banks",
+            "link": ""
+          }
+        },
+        "item_RGwgDH": {
+          "type": "item",
+          "settings": {
+            "svg_code": "",
+            "title": "Keychain Power Bank",
+            "collection": "keychain-portable-chargers",
+            "link": ""
+          }
+        },
+        "item_yhDq9R": {
+          "type": "item",
+          "settings": {
+            "svg_code": "",
+            "title": "Wholesale & Custom",
+            "collection": "custom-logo-power-banks-wholesale",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_6je7TH",
+        "item_da6qbL",
+        "item_tTVKg9",
+        "item_rRpWKh",
+        "item_RGwgDH",
+        "item_yhDq9R"
+      ],
+      "name": "FR Category Icon Nav",
+      "settings": {
+        "full_width": true,
+        "max_width": 1280,
+        "item_gap": 8,
+        "item_padding_x": 12,
+        "item_padding_x_mobile": 16,
+        "item_padding_y": 8,
+        "mobile_item_min_width": 88,
+        "bg_color": "#FFFFFF",
+        "border_color": "#e8e8e8",
+        "icon_color": "#1a1a1a",
+        "text_color": "#333333",
+        "text_hover_color": "#1a1a1a",
+        "text_active_color": "#1a1a1a",
+        "icon_size": 40,
+        "icon_label_gap": 10,
+        "label_size": 12,
+        "label_size_mobile": 11,
+        "label_font_weight": 400,
+        "active_font_weight": 700,
+        "padding_y": 16,
+        "padding_y_mobile": 12,
+        "padding_x": 20,
+        "padding_x_mobile": 12
+      }
+    },
     "main-collection": {
       "type": "main-collection",
       "blocks": {
@@ -504,6 +597,7 @@
     "image_with_text_overlay_MMcCGf",
     "lookbook_BMpNyx",
     "main-collection-banner",
+    "fr_category_icon_nav_9RUDx7",
     "main-collection",
     "images-with-text-overlay",
     "rich_text_cy3zD6",
