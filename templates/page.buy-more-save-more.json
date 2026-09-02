@@ -127,7 +127,7 @@
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h1",
         "subheading": "More Power, More Savings",
-        "description": "<p>&gt; BUY 1 · SAVE <strong>15%</strong> · CODE <strong>RORRY15</strong>  <br/>&gt; BUY 2 · SAVE <strong>20%</strong> · CODE <strong>RORRY20</strong>  <br/>&gt; BUY 3+ · SAVE <strong>25%</strong> · CODE <strong>RORRY25</strong></p>",
+        "description": "<p>&gt; BUY 1 · SAVE <strong>10%</strong> · CODE <strong>RORRY-10</strong>  <br/>&gt; BUY 2 · SAVE <strong>15%</strong> · CODE <strong>RORRY-15</strong><br/>&gt; BUY 3+ · SAVE <strong>20%</strong> · CODE <strong>RORRY-20</strong></p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
