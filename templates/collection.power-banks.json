@@ -611,7 +611,7 @@
         "show_note": false,
         "note_text": "Compare current collection products only",
         "note_checked": false,
-        "full_width": false,
+        "full_width": true,
         "max_width": 1200,
         "image_max_width": 220,
         "col_padding_x": 16,
