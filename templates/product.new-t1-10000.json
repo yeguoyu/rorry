@@ -94,17 +94,17 @@
             "copy_text": "Copy Code",
             "tag_icon": "shopify://shop_images/coupon-tag-icon.png",
             "card_1_badge": "BUY 1 SAVE",
-            "card_1_amount": "15%",
-            "card_1_code_label": "RORRY15",
-            "card_1_discount_code": "RORRY15",
+            "card_1_amount": "10%",
+            "card_1_code_label": "RORRY-10",
+            "card_1_discount_code": "RORRY-10",
             "card_2_badge": "BUY 2 SAVE",
-            "card_2_amount": "20%",
-            "card_2_code_label": "RORRY20",
-            "card_2_discount_code": "RORRY20",
+            "card_2_amount": "15%",
+            "card_2_code_label": "RORRY-15",
+            "card_2_discount_code": "RORRY-15",
             "card_3_badge": "BUY 3+ SAVE",
-            "card_3_amount": "25%",
-            "card_3_code_label": "RORRY25",
-            "card_3_discount_code": "RORRY25"
+            "card_3_amount": "20%",
+            "card_3_code_label": "RORRY-20",
+            "card_3_discount_code": "RORRY-20"
           }
         },
         "metafield_popup_9kgmVH": {
