@@ -88,6 +88,16 @@
             "discount_code": "RORRY-35"
           }
         },
+        "countdown_akVPn7": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Labor Day!",
+            "subheading": "Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
+          }
+        },
         "coupon_cards_row_BUV8V3": {
           "type": "coupon_cards_row",
           "settings": {
@@ -238,6 +248,7 @@
         "coupon_code_QVtbex",
         "coupon_code_RdP3ME",
         "coupon_code_7q6exG",
+        "countdown_akVPn7",
         "coupon_cards_row_BUV8V3",
         "metafield_popup_9kgmVH",
         "liquid_FhJ6Yp",
