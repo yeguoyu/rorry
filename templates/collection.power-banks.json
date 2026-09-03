@@ -289,7 +289,7 @@
         "item_padding_x_mobile": 16,
         "item_padding_y": 8,
         "mobile_item_min_width": 88,
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "border_color": "#e8e8e8",
         "icon_color": "#1a1a1a",
         "text_color": "#333333",
@@ -550,7 +550,7 @@
           "type": "column",
           "settings": {
             "model_label": "Keychain Mini",
-            "image": "shopify://shop_images/CharmGo_D2_10000mAh_e7f063e5-496a-4cc5-8769-4bae3c25023a.png",
+            "image": "shopify://shop_images/D2-5000mah.png",
             "title": "CharmGo D2 5000",
             "price_text": "From $31.99",
             "learn_more_label": "Shop now",
@@ -563,7 +563,7 @@
           "type": "column",
           "settings": {
             "model_label": "Plug-In Mini",
-            "image": "shopify://shop_images/PalmGo_D5_10000mAh_27384cc1-a901-4671-af10-15823cd7d144.png",
+            "image": "shopify://shop_images/D5-10000mah.jpg",
             "title": "PalmGo D5 10000",
             "price_text": "From $33.99",
             "learn_more_label": "Shop now",
@@ -576,8 +576,8 @@
           "type": "column",
           "settings": {
             "model_label": "Wall Plug",
-            "image": "shopify://shop_images/Flow_CB06_10000mAh_cbf4280a-18c4-4780-ab9e-51f1c9ffc2d4.png",
-            "title": "RORRY CB06 10000",
+            "image": "shopify://shop_images/CB06-10000mah.jpg",
+            "title": "Flow CB06 10000",
             "price_text": "From $29.99",
             "learn_more_label": "Shop now",
             "learn_more_url": "",
@@ -589,8 +589,8 @@
           "type": "column",
           "settings": {
             "model_label": "MagSafe Slim",
-            "image": "shopify://shop_images/MagAir_D14_5000mAh_822b4201-f8ff-4006-911f-8697ed5b8386.png",
-            "title": "RORRY D14 MagSafe 5000",
+            "image": "shopify://shop_images/D14-5000mah.jpg",
+            "title": "MagAir D14 5000",
             "price_text": "From $28.99",
             "learn_more_label": "Shop now",
             "learn_more_url": "",
