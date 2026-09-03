@@ -1763,7 +1763,7 @@
       "type": "blog-posts",
       "name": "Blog posts",
       "settings": {
-        "blog": "editors-picks",
+        "blog": "lifestyle-setup",
         "post_limit": 4,
         "columns": 4,
         "carousel_on_desktop": true,
