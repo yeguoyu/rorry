@@ -2,6 +2,7 @@
   const existing = window.RorryWholesaleCardDisplay;
   if (existing) {
     existing.refresh();
+    existing.syncProduct?.();
     return;
   }
 
@@ -9,6 +10,8 @@
   let observedList;
   let observer;
   let refreshTimer;
+  let productSyncTimer;
+  let lastProductSync = '';
   let configRetryCount = 0;
 
   const getConfig = () => window.wiB2bOffer || window.wiB2bOfferBootstrap;
@@ -37,9 +40,25 @@
 
     const display = row.querySelector('[data-wholesale-card-display]');
     const moq = Number.parseInt(row.dataset.wholesaleMoq, 10);
+    const configuredPrice = pricing.configuredShopPrice;
+    let amount = configuredPrice?.amount ?? pricing.resolvedPrice;
+    let currencyCode = configuredPrice?.currencyCode || pricing.currencyCode || config.currencyCode;
+
+    if (
+      configuredPrice?.currencyCode
+      && config.currencyCode
+      && configuredPrice.currencyCode !== config.currencyCode
+    ) {
+      const currencyRate = Number(config.currencyRate);
+      if (Number.isFinite(currencyRate) && currencyRate > 0) {
+        amount = Number(amount) * currencyRate;
+        currencyCode = config.currencyCode;
+      }
+    }
+
     const money = formatMoney(
-      pricing.resolvedPrice,
-      pricing.currencyCode || config.currencyCode,
+      amount,
+      currencyCode,
       config.locale
     );
     if (!display || !Number.isFinite(moq) || !money) return;
@@ -52,6 +71,36 @@
   const scheduleRefresh = (delay = 50) => {
     window.clearTimeout(refreshTimer);
     refreshTimer = window.setTimeout(refresh, delay);
+  };
+
+  const syncProduct = () => {
+    if (!document.body.classList.contains('template-product')) return;
+
+    const quantityInput = document.querySelector('product-info input[name="quantity"]');
+    const variantInput = document.querySelector('product-info form[action*="/cart/add"] input[name="id"]');
+    const quantity = Number.parseInt(quantityInput?.value, 10);
+    const variantId = normalizeVariantId(variantInput?.value);
+    if (!quantityInput || !Number.isFinite(quantity) || quantity < 1 || !variantId) return;
+
+    const resolvedForQuantity = Object.values(window.wiB2bLastResolved || {}).some((pricing) => (
+      normalizeVariantId(pricing?.variantId) === variantId
+      && Number(pricing?.quantity) === quantity
+    ));
+    if (resolvedForQuantity) return;
+
+    const signature = `${variantId}:${quantity}`;
+    if (lastProductSync === signature) return;
+    lastProductSync = signature;
+
+    quantityInput.dispatchEvent(new CustomEvent('quantity-selector:update', {
+      bubbles: true,
+      detail: { quantity }
+    }));
+  };
+
+  const scheduleProductSync = (delay = 80) => {
+    window.clearTimeout(productSyncTimer);
+    productSyncTimer = window.setTimeout(syncProduct, delay);
   };
 
   const ensureObserver = () => {
@@ -144,13 +193,25 @@
     }
   };
 
-  window.RorryWholesaleCardDisplay = { refresh };
-  document.addEventListener('shopify:section:load', () => scheduleRefresh());
+  window.RorryWholesaleCardDisplay = { refresh, syncProduct };
+  window.addEventListener('wi-b2b:pricing-resolved', () => scheduleProductSync());
+  document.addEventListener('variant:change', () => {
+    lastProductSync = '';
+    scheduleProductSync(600);
+  });
+  document.addEventListener('shopify:section:load', () => {
+    scheduleRefresh();
+    scheduleProductSync(600);
+  });
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => scheduleRefresh(0), { once: true });
+    document.addEventListener('DOMContentLoaded', () => {
+      scheduleRefresh(0);
+      scheduleProductSync(1200);
+    }, { once: true });
   }
   else {
     scheduleRefresh(0);
+    scheduleProductSync(1200);
   }
 })();
