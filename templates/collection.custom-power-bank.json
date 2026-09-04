@@ -73,48 +73,51 @@
     "zl_brand_features_mFzRzt": {
       "type": "zl-brand-features",
       "blocks": {
-        "feature_item_3xdE9G": {
-          "type": "feature_item",
-          "settings": {
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
-          }
-        },
         "feature_item_z73Ber": {
           "type": "feature_item",
           "settings": {
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
-          }
-        },
-        "feature_item_R9AhPL": {
-          "type": "feature_item",
-          "settings": {
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
+            "icon_image": "shopify://shop_images/65x65_01_a016386d-6ccf-4a1b-bb43-fb5602ca0efb.png",
+            "title": "Corporate Gifts & Events",
+            "text": "MOQ from 40 units"
           }
         },
         "feature_item_Gajqby": {
           "type": "feature_item",
           "settings": {
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
+            "icon_image": "shopify://shop_images/68x68_04.png",
+            "title": "Free digital logo proof",
+            "text": "Quote response within 12–24 hours"
+          }
+        },
+        "feature_item_3xdE9G": {
+          "type": "feature_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/68x68_03.png",
+            "title": "Trusted by Global Brands",
+            "text": "Serving businesses worldwide"
+          }
+        },
+        "feature_item_R9AhPL": {
+          "type": "feature_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/68x68_01.png",
+            "title": "On-time Delivery",
+            "text": "Global logistics support"
           }
         }
       },
       "block_order": [
-        "feature_item_3xdE9G",
         "feature_item_z73Ber",
-        "feature_item_R9AhPL",
-        "feature_item_Gajqby"
+        "feature_item_Gajqby",
+        "feature_item_3xdE9G",
+        "feature_item_R9AhPL"
       ],
-      "disabled": true,
       "name": "ZL Brand Features",
       "settings": {
-        "bg_color": "#9e87c3",
-        "text_color": "#ffffff",
-        "divider_color": "rgba(255,255,255,0.3)",
-        "padding_top": 0,
+        "bg_color": "#9887B8",
+        "text_color": "#FFFFFF",
+        "divider_color": "#ffffff4d",
+        "padding_top": 12,
         "padding_bottom": 12,
         "title_size": 18,
         "title_weight": "700",
