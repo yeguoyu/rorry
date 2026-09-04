@@ -346,14 +346,7 @@
           </a>
         </p>
         {%- if show_wholesale_price_row -%}
-          <div
-            class="product-card__wholesale-row flex items-baseline justify-between gap-2 w-full"
-            data-wholesale-card-row
-            data-product-id="{{ product.id }}"
-            data-variant-id="{{ product.selected_or_first_available_variant.id }}"
-            data-wholesale-moq="{{ wholesale_moq }}"
-          >
-            <span class="product-card__wholesale-resolved" data-wholesale-card-display hidden></span>
+          <div class="product-card__wholesale-row flex items-baseline justify-between gap-2 w-full">
             {%- render 'product-price', product: product, hide_from_price: true, class: 'flex flex-wrap items-baseline gap-x-2 gap-y-0' -%}
             <span class="product-card__moq shrink-0 text-sm" style="color:#9ca3af;white-space:nowrap;">MOQ {{ wholesale_moq }} pcs</span>
           </div>
