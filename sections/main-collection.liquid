@@ -57,6 +57,15 @@
   #shopify-section-{{ section.id }} .product-card__wholesale-row .wi2b-offer-price__from {
     display: none !important;
   }
+  #shopify-section-{{ section.id }} .product-card__wholesale-row.is-wholesale-resolved > .price {
+    display: none !important;
+  }
+  #shopify-section-{{ section.id }} .product-card__wholesale-resolved {
+    font-size: var(--fluid-sm-to-base);
+    line-height: 1.3;
+    font-weight: var(--font-medium);
+    white-space: nowrap;
+  }
   {%- endif -%}
 </style>
 
@@ -333,6 +342,10 @@
     {%- endpaginate -%}
   </div>
 </div>
+
+{%- if wholesale_price_row -%}
+  <script src="{{ 'wholesale-card-price.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {% comment %}
 <script type="application/ld+json">
