@@ -372,10 +372,10 @@
         "column_jdYw6q": {
           "type": "column",
           "settings": {
-            "icon": "box",
-            "custom_icon": "",
-            "heading": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "icon": "none",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 24 24\" id=\"Business-Scale-4--Streamline-Cyber\" height=\"24\" width=\"24\">\n  <desc>\n    Business Scale 4 Streamline Icon: https://streamlinehq.com\n  </desc>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M2.06935 10.9547 21.9307 2.59198\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M12 3.63733V21.408\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M8.86395 21.408H15.136\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M4.68265 9.80481V15.136\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M19.3174 3.74188v6.1674\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M4.68264 19.3173 0.501343 15.136H8.86394l-4.1813 4.1813Z\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"m19.3173 14.0907 -4.1814 -4.1814h8.3627l-4.1813 4.1814Z\" stroke-width=\"1\"></path>\n</svg>",
+            "heading": "<strong>Power Bank Comparison Guide</strong>",
+            "text": "<p>Compare capacity, output, charging features, compatibility and product size.</p><p><strong>View Guide →</strong></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -383,10 +383,10 @@
         "column_ARpd6F": {
           "type": "column",
           "settings": {
-            "icon": "shield",
-            "custom_icon": "",
-            "heading": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "icon": "none",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 24 24\" id=\"Programming-Script--Streamline-Cyber\" height=\"24\" width=\"24\">\n  <desc>\n    Programming Script Streamline Icon: https://streamlinehq.com\n  </desc>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M5.5 17.5V3L8 0.5h13\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M8.5 5.5h6\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M8.5 8.5h6\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M8.5 11.5h6\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M8.5 14.5h4\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M15.5 23.5h-12l-3 -3 3 -3h12l-3 3 3 3Zm0 0 3 -3V3L21 0.5l2.5 3v2h-5\" stroke-width=\"1\"></path>\n</svg>",
+            "heading": "<strong>Request Specification & Packing List</strong>",
+            "text": "<p>Got detailed opecs and<br/>packing information.</p><p><strong>Request Now →</strong></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
