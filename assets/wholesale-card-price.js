@@ -37,9 +37,25 @@
 
     const display = row.querySelector('[data-wholesale-card-display]');
     const moq = Number.parseInt(row.dataset.wholesaleMoq, 10);
+    const configuredPrice = pricing.configuredShopPrice;
+    let amount = configuredPrice?.amount ?? pricing.resolvedPrice;
+    let currencyCode = configuredPrice?.currencyCode || pricing.currencyCode || config.currencyCode;
+
+    if (
+      configuredPrice?.currencyCode
+      && config.currencyCode
+      && configuredPrice.currencyCode !== config.currencyCode
+    ) {
+      const currencyRate = Number(config.currencyRate);
+      if (Number.isFinite(currencyRate) && currencyRate > 0) {
+        amount = Number(amount) * currencyRate;
+        currencyCode = config.currencyCode;
+      }
+    }
+
     const money = formatMoney(
-      pricing.resolvedPrice,
-      pricing.currencyCode || config.currencyCode,
+      amount,
+      currencyCode,
       config.locale
     );
     if (!display || !Number.isFinite(moq) || !money) return;
