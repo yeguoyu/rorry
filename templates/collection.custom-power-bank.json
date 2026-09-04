@@ -355,6 +355,80 @@
         "parallax_direction": "zoom"
       }
     },
+    "multicolumn_with_icons_fWP7tC": {
+      "type": "multicolumn-with-icons",
+      "blocks": {
+        "column_ikP8br": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewbox=\"0 0 24 24\" id=\"Book-Open-3--Streamline-Cyber\" height=\"24\" width=\"24\">\n  <desc>\n    Book Open 3 Streamline Icon: https://streamlinehq.com\n  </desc>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"m11.5 23.5 -9 -5v-17l9 5 9 -5v17l-9 5Z\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M2.5 4.227 0.5 3.5v17l11 3 11 -3v-17l-2 0.727\" stroke-width=\"1\"></path>\n  <path stroke=\"#092f63\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-miterlimit=\"10\" d=\"M11.5 6.5v17\" stroke-width=\"1\"></path>\n</svg>",
+            "heading": "<strong>2026 Product Catalogue</strong>",
+            "text": "<p>Explore all models and<br/>custom options</p><p><strong>View Catologue →</strong></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_jdYw6q": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "custom_icon": "",
+            "heading": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_ARpd6F": {
+          "type": "column",
+          "settings": {
+            "icon": "shield",
+            "custom_icon": "",
+            "heading": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_ikP8br",
+        "column_jdYw6q",
+        "column_ARpd6F"
+      ],
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-border",
+        "columns": 3,
+        "text_alignment": "left",
+        "heading": "Buyer Resource Center",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 44,
+        "padding_bottom": 20,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "image_comparison_7grt6K": {
       "type": "image-comparison",
       "blocks": {
@@ -1092,6 +1166,7 @@
     "recently-viewed",
     "highlight_text_dktwA4",
     "slideshow_3xLGnP",
+    "multicolumn_with_icons_fWP7tC",
     "image_comparison_7grt6K",
     "rich_text_EfVjhC",
     "rich_text_cAPDNp",
