@@ -62,6 +62,8 @@
       assign wholesale_moq = 40
     endif
 
+    assign wholesale_start_amount = product.metafields.custom.wholesale_start_price.value
+
     assign show_wholesale_price_row = false
     if template.suffix == 'custom-power-bank' or collection.template_suffix == 'custom-power-bank' or wholesale_price_row
       assign show_wholesale_price_row = true
@@ -347,7 +349,13 @@
         </p>
         {%- if show_wholesale_price_row -%}
           <div class="product-card__wholesale-row flex items-baseline justify-between gap-2 w-full">
-            {%- render 'product-price', product: product, hide_from_price: true, class: 'flex flex-wrap items-baseline gap-x-2 gap-y-0' -%}
+            {%- if wholesale_start_amount != blank -%}
+              <span class="product-card__wholesale-value text-base font-medium leading-tight">
+                {{- wholesale_moq }} at {{ wholesale_start_amount | money -}}
+              </span>
+            {%- else -%}
+              {%- render 'product-price', product: product, hide_from_price: true, class: 'flex flex-wrap items-baseline gap-x-2 gap-y-0' -%}
+            {%- endif -%}
             <span class="product-card__moq shrink-0 text-sm" style="color:#9ca3af;white-space:nowrap;">MOQ {{ wholesale_moq }} pcs</span>
           </div>
         {%- else -%}
