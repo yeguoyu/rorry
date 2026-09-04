@@ -70,6 +70,60 @@
         "parallax_direction": "vertical"
       }
     },
+    "zl_brand_features_mFzRzt": {
+      "type": "zl-brand-features",
+      "blocks": {
+        "feature_item_3xdE9G": {
+          "type": "feature_item",
+          "settings": {
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        },
+        "feature_item_z73Ber": {
+          "type": "feature_item",
+          "settings": {
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        },
+        "feature_item_R9AhPL": {
+          "type": "feature_item",
+          "settings": {
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        },
+        "feature_item_Gajqby": {
+          "type": "feature_item",
+          "settings": {
+            "title": "No.1 Brand",
+            "text": "On Tiktok Power Bank Category"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_3xdE9G",
+        "feature_item_z73Ber",
+        "feature_item_R9AhPL",
+        "feature_item_Gajqby"
+      ],
+      "disabled": true,
+      "name": "ZL Brand Features",
+      "settings": {
+        "bg_color": "#9e87c3",
+        "text_color": "#ffffff",
+        "divider_color": "rgba(255,255,255,0.3)",
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "title_size": 18,
+        "title_weight": "700",
+        "text_size": 13,
+        "mobile_title_size": 16,
+        "mobile_text_size": 12,
+        "mobile_cols": "2"
+      }
+    },
     "main-collection": {
       "type": "main-collection",
       "blocks": {
@@ -1030,6 +1084,7 @@
   },
   "order": [
     "main-collection-banner",
+    "zl_brand_features_mFzRzt",
     "main-collection",
     "recently-viewed",
     "highlight_text_dktwA4",
