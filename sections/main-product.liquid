@@ -1963,10 +1963,6 @@
   <script type="application/ld+json">
     {{- product | structured_data -}}
   </script>
-
-  {%- if product.template_suffix contains 'custom' or product.template_suffix contains 'costom' -%}
-    <script src="{{ 'wholesale-card-price.js' | asset_url }}" defer="defer"></script>
-  {%- endif -%}
 </div>
 
 {% schema %}
