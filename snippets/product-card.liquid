@@ -352,6 +352,11 @@
             {%- if wholesale_start_amount != blank -%}
               <span class="product-card__wholesale-value text-base font-medium leading-tight">
                 {{- wholesale_moq }} at {{ wholesale_start_amount | money -}}
+              <span class="product-card__wholesale-value flex flex-wrap items-baseline gap-x-2 gap-y-0 text-base font-medium leading-tight">
+                <span>{{- wholesale_start_amount | money -}}</span>
+                <s class="product-card__wholesale-original text-sm font-normal" style="color:#9ca3af;">
+                  {{- product.selected_or_first_available_variant.price | money -}}
+                </s>
               </span>
             {%- else -%}
               {%- render 'product-price', product: product, hide_from_price: true, class: 'flex flex-wrap items-baseline gap-x-2 gap-y-0' -%}
