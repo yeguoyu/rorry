@@ -350,8 +350,11 @@
         {%- if show_wholesale_price_row -%}
           <div class="product-card__wholesale-row flex items-baseline justify-between gap-2 w-full">
             {%- if wholesale_start_amount != blank -%}
-              <span class="product-card__wholesale-value text-base font-medium leading-tight">
-                {{- wholesale_moq }} at {{ wholesale_start_amount | money -}}
+              <span class="product-card__wholesale-value flex flex-wrap items-baseline gap-x-2 gap-y-0 text-base font-medium leading-tight">
+                <span>{{- wholesale_start_amount | money -}}</span>
+                <span class="product-card__wholesale-original text-sm font-normal">
+                  {{- product.selected_or_first_available_variant.price | money -}}
+                </span>
               </span>
             {%- else -%}
               {%- render 'product-price', product: product, hide_from_price: true, class: 'flex flex-wrap items-baseline gap-x-2 gap-y-0' -%}
