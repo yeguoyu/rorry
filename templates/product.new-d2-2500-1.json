@@ -147,6 +147,7 @@
         },
         "inventory": {
           "type": "inventory",
+          "disabled": true,
           "settings": {
             "inventory_threshold": 15,
             "show_inventory_transfer": true,
@@ -565,42 +566,6 @@
         "rounded": false
       }
     },
-    "lookbook_LKJQnG": {
-      "type": "lookbook",
-      "name": "t:sections.lookbook.name",
-      "settings": {
-        "image": "shopify://shop_images/Custom_Logo_RORRY_D2-2500mAh_Portable_Charger_Keychain_Power_Bank-pc_7.jpg",
-        "image_mobile": "shopify://shop_images/Custom_Logo_RORRY_D2-2500mAh_Portable_Charger_Keychain_Power_Bank-MO_8.jpg",
-        "heading": "",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "heading_position": "none",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": false,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "image_with_text_XrGBKn": {
       "type": "image-with-text",
       "blocks": {
@@ -722,6 +687,42 @@
         "rounded": false,
         "enable_parallax": true,
         "parallax_direction": "vertical"
+      }
+    },
+    "lookbook_LKJQnG": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/Custom_Logo_RORRY_D2-2500mAh_Portable_Charger_Keychain_Power_Bank-pc_7.jpg",
+        "image_mobile": "shopify://shop_images/Custom_Logo_RORRY_D2-2500mAh_Portable_Charger_Keychain_Power_Bank-MO_8.jpg",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "selling_points_9_J3teY8": {
