@@ -442,7 +442,7 @@
         "padding_bottom": 20,
         "divider": false,
         "full_width": false,
-        "rounded": true
+        "rounded": false
       }
     },
     "image_with_text_overlay_M3aq9K": {
@@ -495,12 +495,12 @@
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/creators-program-operational-Process.jpg",
-        "image_height": "450px",
+        "image_height": "adapt",
         "content_width": "small",
         "content_position": "md:items-center md:justify-start",
         "text_alignment": "left",
         "image_mobile": "shopify://shop_images/creators-program-operational-Process.jpg",
-        "image_height_mobile": "400px",
+        "image_height_mobile": "adapt",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
         "color_text": "#fbfbfb",
@@ -518,7 +518,7 @@
         "divider": false,
         "full_width": false,
         "rounded": true,
-        "enable_parallax": true,
+        "enable_parallax": false,
         "parallax_direction": "vertical"
       }
     },
