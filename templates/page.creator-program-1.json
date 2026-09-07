@@ -78,7 +78,7 @@
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/RORRY-Brand-Ambassador_1.jpg",
-        "image_height": "adapt",
+        "image_height": "750px",
         "content_width": "small",
         "content_position": "md:items-center md:justify-end",
         "text_alignment": "center",
@@ -86,7 +86,7 @@
         "image_height_mobile": "adapt",
         "content_position_mobile": "items-start justify-center",
         "text_alignment_mobile": "center",
-        "color_text": "#FFFFFF",
+        "color_text": "#ffffff",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "#e0a580",
