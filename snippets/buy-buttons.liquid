@@ -340,65 +340,23 @@
     </div>
   {%- endform -%}
 
-  <style>
-    #shopify-section-{{ section.id }} .product-form-wrapper > #photouploadapp {
-      width: 100%;
-      margin: 0 0 8px;
-    }
-    #shopify-section-{{ section.id }} .product-form--logo-layout .product-form__buttons .flex-wrap {
-      flex-wrap: wrap !important;
-    }
-    #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      align-items: stretch;
-      gap: 12px;
-    }
-    #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons quantity-input.quantity {
-      display: inline-flex !important;
-      flex: 0 0 auto !important;
-      width: max-content !important;
-      max-width: max-content !important;
-      overflow: hidden;
-      box-sizing: border-box;
-    }
-    #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons .product-form__submit {
-      flex: 1 1 0;
-      min-width: 0;
-    }
-    #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons .shopify-payment-button,
-    #shopify-section-{{ section.id }} .product-form--logo-layout .buy-buttons shopify-accelerated-checkout {
-      flex: 1 0 100%;
-      width: 100%;
-    }
-  </style>
+  {%- if product.template_suffix == 'new-t1-5000-1' -%}
   <script>
     (function () {
       var wrapper = document.querySelector('#shopify-section-{{ section.id }} .product-form-wrapper');
       if (!wrapper) return;
 
-      var sectionRoot = wrapper.closest('.shopify-section') || wrapper;
-      var productForm = wrapper.querySelector('form.product-form');
-
-      function applyWholesaleLayout() {
-        var tiers = wrapper.querySelector('.wi2b-volume-tiers-frame, .wi2b-volume-tiers');
-        if (!tiers) return;
-
-        if (productForm) {
-          productForm.classList.add('product-form--logo-layout');
-        }
-
-        var upload = sectionRoot.querySelector('#photouploadapp');
-        if (upload && wrapper.firstElementChild !== upload) {
-          wrapper.insertBefore(upload, wrapper.firstChild);
-        }
+      function moveUpload() {
+        var upload = document.getElementById('photouploadapp');
+        if (!upload) return;
+        if (wrapper.firstElementChild === upload) return;
+        wrapper.insertBefore(upload, wrapper.firstChild);
       }
 
-      applyWholesaleLayout();
-      setTimeout(applyWholesaleLayout, 300);
-      setTimeout(applyWholesaleLayout, 1000);
-      setTimeout(applyWholesaleLayout, 3000);
-      setTimeout(applyWholesaleLayout, 6000);
+      moveUpload();
+      setTimeout(moveUpload, 300);
+      setTimeout(moveUpload, 1000);
+      setTimeout(moveUpload, 3000);
 
       if (window.MutationObserver) {
         var running = false;
@@ -407,14 +365,15 @@
           running = true;
           setTimeout(function () {
             running = false;
-            applyWholesaleLayout();
+            moveUpload();
           }, 80);
         });
-        observer.observe(sectionRoot, { childList: true, subtree: true });
-        setTimeout(function () { observer.disconnect(); }, 15000);
+        observer.observe(wrapper.closest('.shopify-section') || wrapper, { childList: true, subtree: true });
+        setTimeout(function () { observer.disconnect(); }, 10000);
       }
     })();
   </script>
+  {%- endif -%}
   {%- if enable_back_in_stock -%}
     <div id="BackInStock-{{ section_id }}-{{ product_id }}">
       {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
