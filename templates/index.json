@@ -259,14 +259,6 @@
             "title": "12-Months RORRY Care",
             "text": "Market's Reliable Warranty"
           }
-        },
-        "feature_item_49cbyW": {
-          "type": "feature_item",
-          "disabled": true,
-          "settings": {
-            "title": "No.1 Brand",
-            "text": "On Tiktok Power Bank Category"
-          }
         }
       },
       "block_order": [
@@ -275,8 +267,7 @@
         "feature_item_PjxPRH",
         "feature_item_i8mCJy",
         "feature_item_6UBBzN",
-        "feature_item_PrLjFk",
-        "feature_item_49cbyW"
+        "feature_item_PrLjFk"
       ],
       "custom_css": [],
       "name": "ZL Brand Features",
@@ -433,49 +424,6 @@
         "rounded": false
       }
     },
-    "featured_collection_cGwE4X": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "best-sellers",
-        "products": [
-          "rorry-d2-5000mah-portable-charger-keychain-power-bank",
-          "rorry-d2-10000mah-pd-20w-portable-charger-keychain-power-bank",
-          "rorry-d5-10000mah-portable-charger-usb-c-power-bank",
-          "rorry-flow-cb4-10000mah-portable-charger-charging-with-cable-wall-plug-40w",
-          "rorry-cb06-10000mah-portable-charger-fast-charging-power-bank",
-          "rorry-d2-20000mah-pd-30w-portable-charger-keychain-power-bank",
-          "rorry-charmgo-d4-10000mah-portable-charger-keychainpower-bank-45w"
-        ],
-        "product_limit": 7,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Best Sellers",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "rgba(0,0,0,0)",
-        "gradient_highlight": "",
-        "color_button_text": "#ffffff",
-        "color_button_background": "#9887b8",
-        "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "featured_collections_xjWTxV": {
       "type": "featured-collections",
       "blocks": {
@@ -538,166 +486,6 @@
         "divider": false,
         "full_width": false,
         "rounded": false
-      }
-    },
-    "featured_collection_UeCreG": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "weekly-specials",
-        "products": [],
-        "product_limit": 4,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Weekly Specials",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "rgba(0,0,0,0)",
-        "gradient_highlight": "",
-        "color_button_text": "#ffffff",
-        "color_button_background": "#9887b8",
-        "color_button_gradient": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "collage_grid_CyD43h": {
-      "type": "collage-grid",
-      "blocks": {
-        "image_xnBEim": {
-          "type": "image",
-          "settings": {
-            "column_size": 5,
-            "row_size": 2,
-            "subheading": "Carry all chagers in your pocket!",
-            "heading": "Power Banks",
-            "link": "shopify://collections/power-banks",
-            "invert_subheading_heading": true,
-            "image": "shopify://shop_images/4_c6c5dbc4-66d6-460f-bf9a-c82880d7e74a.jpg",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#171717",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 0,
-            "color_text_hover": "#171717",
-            "color_highlight_hover": "",
-            "gradient_highlight_hover": "",
-            "color_overlay_hover": "",
-            "overlay_opacity_hover": 0
-          }
-        },
-        "image_GeC3Dj": {
-          "type": "image",
-          "settings": {
-            "column_size": 5,
-            "row_size": 1,
-            "subheading": "Power Up. Stay Connected. Effortlessly.",
-            "heading": "Charging Station",
-            "link": "shopify://collections/charging-station",
-            "invert_subheading_heading": true,
-            "image": "shopify://shop_images/m3-2_5b606d05-ef15-41f1-b9b7-f44b71d972e2.svg",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#171717",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 0,
-            "color_text_hover": "",
-            "color_highlight_hover": "",
-            "gradient_highlight_hover": "",
-            "color_overlay_hover": "",
-            "overlay_opacity_hover": 10
-          }
-        },
-        "image_eF3idA": {
-          "type": "image",
-          "settings": {
-            "column_size": 5,
-            "row_size": 1,
-            "subheading": "Charge Anywhere, No Cables Needed",
-            "heading": "Wall Plug Power Banks",
-            "link": "shopify://collections/ac-wall-plug-power-banks",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/RORRY_AC_Wall_Plug_Power_banks_portable_charger_banner_m.jpg",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#171717",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 0,
-            "color_text_hover": "",
-            "color_highlight_hover": "",
-            "gradient_highlight_hover": "",
-            "color_overlay_hover": "",
-            "overlay_opacity_hover": 10
-          }
-        }
-      },
-      "block_order": [
-        "image_xnBEim",
-        "image_GeC3Dj",
-        "image_eF3idA"
-      ],
-      "disabled": true,
-      "settings": {
-        "row_height": 300,
-        "row_height_mobile": 150,
-        "heading": "Shop by Category",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "<p><strong>Power in style with RORRY!</strong> </p>",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 12,
-        "padding_bottom": 24,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": false
       }
     },
     "highlight_text_CaUmN4": {
@@ -786,159 +574,6 @@
         "padding_bottom": 40,
         "divider": false,
         "full_width": false,
-        "rounded": false
-      }
-    },
-    "reveal_video_with_text_overlay_ggdaRP": {
-      "type": "reveal-video-with-text-overlay",
-      "blocks": {
-        "subheading_FgRpCa": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "About Us",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
-        "heading_QhVUJp": {
-          "type": "heading",
-          "settings": {
-            "heading": "ABOUT",
-            "heading_size": "title-sm",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "image_CDhTQe": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Logo-color_ad1fe156-3bd0-4a7f-8c09-be7f1373de39.svg",
-            "image_width": "full_width",
-            "image_max_width": 50,
-            "image_max_width_mobile": 50
-          }
-        },
-        "text_eYQPdj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>RORRY is committed to creating innovative, high-quality charging solutions that empower users to stay connected anytime, anywhere. With a focus on cutting-edge design, exceptional performance, and user experience, RORRY continues to push the boundaries of portable charging technology.</p>",
-            "text_font": "body",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_PeUnGy": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn More",
-            "button_link": "shopify://pages/about-us",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "subheading_FgRpCa",
-        "heading_QhVUJp",
-        "image_CDhTQe",
-        "text_eYQPdj",
-        "button_PeUnGy"
-      ],
-      "disabled": true,
-      "settings": {
-        "video_url": "https://www.youtube.com/watch?v=FpnF0pi8Lv8",
-        "cover_image": "shopify://shop_images/39698006488f04c88e5e4390720fe3cb_22689940-cf65-48db-877c-6796ee30f6ad.png",
-        "description": "",
-        "content_width": "small",
-        "content_position": "md:items-center md:justify-center",
-        "text_alignment": "center",
-        "video_url_mobile": "https://www.youtube.com/watch?v=FqVACvJlXCc",
-        "content_position_mobile": "items-center justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 70,
-        "enable_parallax": false
-      }
-    },
-    "testimonials_knfAYg": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_bkQR8V": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>The combination of compactness<br/>and versatility is so practical and<br/>an absolute travele ssential!<br/>RORRY is a company that is really<br/>serious about design and products.</p>",
-            "author": "",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/CNN_1ca2245d-79ab-41a7-877e-a2966eaccf71.png",
-            "image_ratio": "adapt",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_hktWMX": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>The one-for-all capability makes<br/>it one of the best power banks for<br/>Apple Watch out there.</p>",
-            "author": "",
-            "author_info": "",
-            "author_url": "",
-            "image": "shopify://shop_images/Buzzfeed_52c3ebca-49a6-4052-947d-7ae6ecd9aa7f.png",
-            "image_ratio": "adapt",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_bkQR8V",
-        "testimonial_hktWMX"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "As Featured in",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "#f6f7fa",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
         "rounded": false
       }
     },
@@ -1806,14 +1441,9 @@
     "slideshow_UBfjb7",
     "zl_brand_features_BdQm6U",
     "collection_list_mt48yD",
-    "featured_collection_cGwE4X",
     "featured_collections_xjWTxV",
-    "featured_collection_UeCreG",
-    "collage_grid_CyD43h",
     "highlight_text_CaUmN4",
     "17335405975bc5cc52",
-    "reveal_video_with_text_overlay_ggdaRP",
-    "testimonials_knfAYg",
     "rf_floating_video_7ghL8f",
     "zl_tiktok_slider_LaYkUz",
     "zl_insta_gallery_XTQNFA",
