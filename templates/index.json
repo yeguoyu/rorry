@@ -1399,7 +1399,7 @@
       "type": "blog-posts",
       "name": "Blog posts",
       "settings": {
-        "blog": "lifestyle-setup",
+        "blog": "editors-picks",
         "post_limit": 4,
         "columns": 4,
         "carousel_on_desktop": true,
