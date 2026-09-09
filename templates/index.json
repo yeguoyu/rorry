@@ -302,7 +302,7 @@
           "type": "collection",
           "settings": {
             "collection": "power-banks",
-            "image": "shopify://shop_images/Power-Banks.jpg",
+            "image": "shopify://shop_images/Power-Banks_91b2f02b-43b4-4b67-92d5-b1ea2c5386b9.jpg",
             "title": "",
             "description": "",
             "overlay_content": false,
@@ -315,7 +315,7 @@
           "type": "collection",
           "settings": {
             "collection": "wireless-chargers",
-            "image": "shopify://shop_images/Wireless-Chargers.jpg",
+            "image": "shopify://shop_images/Wireless-Chargers_c41fcad8-97c6-460e-8928-69fca81a3bd2.jpg",
             "title": "Wireless Chargers",
             "description": "",
             "overlay_content": false,
@@ -328,7 +328,7 @@
           "type": "collection",
           "settings": {
             "collection": "ac-wall-plug-power-banks",
-            "image": "shopify://shop_images/AC-Power.jpg",
+            "image": "shopify://shop_images/AC-Power_56b3a6a8-ecc0-4b79-ba6a-166d082b3658.jpg",
             "title": "AC Power",
             "description": "",
             "overlay_content": false,
@@ -341,7 +341,7 @@
           "type": "collection",
           "settings": {
             "collection": "iphone-power-banks",
-            "image": "shopify://shop_images/iPhone-Power-Banks_710d097a-945d-4cda-b4f4-5096e4f80e80.jpg",
+            "image": "shopify://shop_images/iPhone-Power-Banks_c2529351-6d36-4386-b213-af0997de4c30.jpg",
             "title": "For iPhone",
             "description": "",
             "overlay_content": false,
@@ -354,7 +354,7 @@
           "type": "collection",
           "settings": {
             "collection": "for-iphone-apple-watch",
-            "image": "shopify://shop_images/Apple-Watch-Chargers.jpg",
+            "image": "shopify://shop_images/Apple-Watch-Chargers_32c024f4-68c0-4afc-a14a-8532d27c1a7e.jpg",
             "title": "For Apple Watch",
             "description": "",
             "overlay_content": false,
@@ -367,7 +367,7 @@
           "type": "collection",
           "settings": {
             "collection": "for-android",
-            "image": "shopify://shop_images/Android-Chargers.jpg",
+            "image": "shopify://shop_images/Android-Chargers_110993e1-bc3f-4c32-a534-4fa9e1f8ee5f.jpg",
             "title": "For Android",
             "description": "",
             "overlay_content": false,
@@ -380,7 +380,7 @@
           "type": "collection",
           "settings": {
             "collection": "for-laptop",
-            "image": "shopify://shop_images/Laptop-Power-Banks.jpg",
+            "image": "shopify://shop_images/Laptop-Power-Banks_1d328330-dfc3-472e-9593-13af3c5cbdd1.jpg",
             "title": "For Laptop",
             "description": "",
             "overlay_content": false,
