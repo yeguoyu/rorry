@@ -14,22 +14,6 @@
     "newsletter-popup": {
       "type": "newsletter-popup",
       "blocks": {
-        "text-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>FIRST COMING?</p>",
-            "text_font": "body",
-            "text_size": "subtext-custom",
-            "text_max_size": 12,
-            "text_line_height": 1.6,
-            "text_letter_spacing": 0,
-            "text_capitalize": false,
-            "secondary_color": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -69,29 +53,14 @@
         "media": {
           "type": "media",
           "settings": {}
-        },
-        "floating": {
-          "type": "floating",
-          "disabled": true,
-          "settings": {
-            "heading": "Get 10% Off",
-            "content_position": "left-0",
-            "show_social": true,
-            "mobile_disabled": true,
-            "mobile_hide_social": false,
-            "color_text": "#171717",
-            "color_background": "#ffffff"
-          }
         }
       },
       "block_order": [
-        "text-1",
         "heading",
         "spacing",
         "form",
         "text-2",
-        "media",
-        "floating"
+        "media"
       ],
       "settings": {
         "mode": "enabled",
