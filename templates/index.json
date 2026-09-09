@@ -285,7 +285,7 @@
         "bg_color": "#9887b8",
         "text_color": "#ffffff",
         "divider_color": "#ffffff4d",
-        "padding_top": 40,
+        "padding_top": 24,
         "padding_bottom": 40,
         "title_size": 20,
         "title_weight": "700",
