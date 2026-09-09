@@ -150,6 +150,7 @@
         },
         "countdown_XxTJHk": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "heading": "Hurry up!",
             "subheading": "Fall Sale end in:",
