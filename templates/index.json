@@ -403,7 +403,7 @@
       "settings": {
         "card_style": "standard",
         "image_type": "collection",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "show_products_count": false,
         "show_view_all": false,
         "columns": 5,
