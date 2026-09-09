@@ -202,17 +202,6 @@
           "widget_type": "review-widget"
         }
       },
-      "6159598353363395418": {
-        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
-        "disabled": true,
-        "settings": {
-          "widget_position": "RIGHT_BOTTOM",
-          "side_margin": 36,
-          "bottom_margin": 36,
-          "mobile_side_margin": 16,
-          "mobile_bottom_margin": 46
-        }
-      },
       "563819768016994035": {
         "type": "shopify://apps/worry-free-purchase/blocks/ai-support-chat-widget/c61a403d-127f-4a83-aa2d-dd891cc35fd1",
         "disabled": false,
@@ -279,6 +268,17 @@
           "variants_container_selector": "",
           "product_form_selector": "",
           "custom_css": ""
+        }
+      },
+      "6159598353363395418": {
+        "type": "shopify://apps/google-youtube/blocks/store_widget/14ec7bd0-ac77-49a9-9417-90752398bdff",
+        "disabled": true,
+        "settings": {
+          "widget_position": "RIGHT_BOTTOM",
+          "side_margin": 36,
+          "bottom_margin": 36,
+          "mobile_side_margin": 16,
+          "mobile_bottom_margin": 46
         }
       }
     }
