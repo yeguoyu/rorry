@@ -43,16 +43,6 @@
             "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n id=\"product-klarna-badge\"\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->\n<style>\n    .product__info klarna-placement::part(osm-container),\n  .product__info klarna-placement .container {\n    border-color: transparent !important;\n    padding-left: 0px !important;\n  }\n #product-klarna-badge::part(osm-badge) {\n  width: 48px !important;\n  height: auto !important;\n}\n@media screen and (min-width: 750px) {\n  #product-klarna-badge::part(osm-container) {\n    padding-top: 0 !important;\n  }\n}\n</style>"
           }
         },
-        "countdown_XxTJHk": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Fall Sale end in:",
-            "color_text": "#e11d48",
-            "color_background": "#fff1f2",
-            "gradient_background": ""
-          }
-        },
         "liquid_7LW8an": {
           "type": "liquid",
           "settings": {
@@ -131,6 +121,15 @@
             "liquid": "{% if product.metafields.custom.featuresshow != blank %}\n  <style>\n    .features-show {\n      margin: 16px 0;\n      font-size: 14px;\n      line-height: 1.6;\n    }\n  </style>\n  <div class=\"features-show\">\n    {{ product.metafields.custom.featuresshow | metafield_tag }}\n  </div>\n{% endif %}"
           }
         },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -141,13 +140,6 @@
             "size_chart": ""
           }
         },
-        "description_yLmb9U": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "text_size": "text-base"
-          }
-        },
         "badges_8dEdrC": {
           "type": "badges",
           "settings": {
@@ -156,13 +148,14 @@
             "save_type": "percent"
           }
         },
-        "inventory": {
-          "type": "inventory",
+        "countdown_XxTJHk": {
+          "type": "countdown",
           "settings": {
-            "inventory_threshold": 15,
-            "show_inventory_transfer": true,
-            "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
+            "heading": "Hurry up!",
+            "subheading": "Fall Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
           }
         },
         "buy_buttons": {
@@ -176,11 +169,6 @@
             "show_back_in_stock_name": false,
             "show_back_in_stock_phone": false
           }
-        },
-        "sticky_buy_button_cgt3tr": {
-          "type": "sticky_buy_button",
-          "disabled": true,
-          "settings": {}
         },
         "sticky_buy_button_v2_qaTgPb": {
           "type": "sticky_buy_button_v2",
@@ -224,18 +212,6 @@
             "icon_4": "chat_bubble",
             "show_payment": true
           }
-        },
-        "share": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share",
-            "show_help_desk": false,
-            "help_label": "Need help?",
-            "help_type": "drawer",
-            "help_page": "",
-            "help_page_external": false
-          }
         }
       },
       "block_order": [
@@ -244,7 +220,6 @@
         "price_dhxX3T",
         "liquid_rfHzqH",
         "liquid_Bw3tTA",
-        "countdown_XxTJHk",
         "liquid_7LW8an",
         "liquid_zUX79j",
         "coupon_code_QVtbex",
@@ -253,17 +228,15 @@
         "coupon_cards_row_8kVJUq",
         "metafield_popup_9kgmVH",
         "liquid_FhJ6Yp",
-        "variant_picker",
-        "description_yLmb9U",
-        "badges_8dEdrC",
         "inventory",
+        "variant_picker",
+        "badges_8dEdrC",
+        "countdown_XxTJHk",
         "buy_buttons",
-        "sticky_buy_button_cgt3tr",
         "sticky_buy_button_v2_qaTgPb",
         "pickup_availability",
         "collapsible_tab_eDtqHf",
-        "trust_features_CQtqc3",
-        "share"
+        "trust_features_CQtqc3"
       ],
       "custom_css": [
         ".product__title h1 {line-height: 1.3 !important;}",
