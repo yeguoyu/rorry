@@ -97,7 +97,7 @@
         "mode": "enabled",
         "only_homepage": true,
         "only_visitor": true,
-        "delay": 3,
+        "delay": 30,
         "expiry": 1,
         "text_alignment": "center",
         "content_position": "center-0",
