@@ -108,6 +108,16 @@
             "card_3_discount_code": "RORRY-20"
           }
         },
+        "countdown_XxTJHk": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Fall Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
+          }
+        },
         "metafield_popup_9kgmVH": {
           "type": "metafield_popup",
           "settings": {
@@ -146,17 +156,6 @@
             "show_sold_out": false,
             "show_save_amount": true,
             "save_type": "percent"
-          }
-        },
-        "countdown_XxTJHk": {
-          "type": "countdown",
-          "disabled": true,
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Fall Sale end in:",
-            "color_text": "#e11d48",
-            "color_background": "#fff1f2",
-            "gradient_background": ""
           }
         },
         "buy_buttons": {
@@ -227,12 +226,12 @@
         "coupon_code_RdP3ME",
         "coupon_code_7q6exG",
         "coupon_cards_row_8kVJUq",
+        "countdown_XxTJHk",
         "metafield_popup_9kgmVH",
         "liquid_FhJ6Yp",
         "inventory",
         "variant_picker",
         "badges_8dEdrC",
-        "countdown_XxTJHk",
         "buy_buttons",
         "sticky_buy_button_v2_qaTgPb",
         "pickup_availability",
