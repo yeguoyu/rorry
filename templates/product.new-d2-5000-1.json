@@ -45,7 +45,6 @@
         },
         "countdown_gtbJMh": {
           "type": "countdown",
-          "disabled": true,
           "settings": {
             "heading": "Hurry up!",
             "subheading": "Fall Sale end in:",
