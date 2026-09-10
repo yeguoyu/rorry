@@ -131,6 +131,15 @@
             "liquid": "{% if product.metafields.custom.featuresshow != blank %}\n  <style>\n    .features-show {\n      margin: 16px 0;\n      font-size: 14px;\n      line-height: 1.6;\n    }\n  </style>\n  <div class=\"features-show\">\n    {{ product.metafields.custom.featuresshow | metafield_tag }}\n  </div>\n{% endif %}"
           }
         },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -154,15 +163,6 @@
             "show_sold_out": false,
             "show_save_amount": true,
             "save_type": "percent"
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "settings": {
-            "inventory_threshold": 15,
-            "show_inventory_transfer": true,
-            "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
           }
         },
         "buy_buttons": {
@@ -253,10 +253,10 @@
         "coupon_cards_row_jmXtzR",
         "metafield_popup_9kgmVH",
         "liquid_FhJ6Yp",
+        "inventory",
         "variant_picker",
         "description_yLmb9U",
         "badges_8dEdrC",
-        "inventory",
         "buy_buttons",
         "sticky_buy_button_cgt3tr",
         "sticky_buy_button_v2_qaTgPb",
