@@ -363,20 +363,19 @@
         "cols_mb": 2,
         "gap_pc": 20,
         "gap_mb": 10,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "mobile_padding_top": 24,
-        "mobile_padding_bottom": 24
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 0
       }
     },
     "lookbook_WDC68U": {
       "type": "lookbook",
-      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_3.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_1.jpg",
-        "heading": "<strong>RORRY 3IN1 Portable Charger with Rotatable Ring Grip</strong>",
+        "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_1.jpg",
+        "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_1.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -406,18 +405,261 @@
         "rounded": false
       }
     },
-    "lookbook_UpwtHB": {
-      "type": "lookbook",
-      "disabled": true,
-      "name": "t:sections.lookbook.name",
+    "slideshow_7WKFqq": {
+      "type": "slideshow",
+      "blocks": {
+        "image_Wd4J6c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_2.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_2.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_3nggJw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_4.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_4.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_QzkNbE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_5.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_5.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_xrnjTm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_6.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_15.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_gyhPYy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_8.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_7.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_Wd4J6c",
+        "image_3nggJw",
+        "image_QzkNbE",
+        "image_xrnjTm",
+        "image_gyhPYy"
+      ],
+      "name": "t:sections.slideshow.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_4.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_2.jpg",
-        "heading": "<strong>Wireless Power + Rotatable Ring Stand</strong>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h3",
-        "heading_position": "none",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": false,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "slideshow_dbRhyA": {
+      "type": "slideshow",
+      "blocks": {
+        "image_d7U86m": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_3.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_3.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_nCTdxa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_12.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_11.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_G7yty7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_14.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_13.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_6afgJb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_15.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_14.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_AyWtrP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_13.jpg",
+            "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_12.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_d7U86m",
+        "image_nCTdxa",
+        "image_G7yty7",
+        "image_6afgJb",
+        "image_AyWtrP"
+      ],
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": false,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "accessibility_info": "Slideshow about our brand",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_crWdkV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7fjiN6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Snap this key chain phone charger iPhone securely onto the back of for MagSafe compatible iPhone for effortless wireless charging up to 15W. The built-in ring stand doubles as a sturdy kickstand, allowing comfortable hands-free viewing for video calls, movies, gaming, or browsing while charging.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_7fjiN6"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
         "subheading": "",
         "description": "",
         "button_label": "",
@@ -426,7 +668,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
-        "color_text": "#9887b8",
+        "color_text": "#9887B8",
         "color_background": "",
         "gradient_background": "",
         "color_highlight": "",
@@ -434,23 +676,20 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
         "padding_top": 12,
         "padding_bottom": 0,
         "divider": false,
-        "full_width": false,
+        "narrow": false,
         "rounded": false
       }
     },
     "lookbook_qWXcHK": {
       "type": "lookbook",
-      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_5.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_3.jpg",
-        "heading": "<strong>10000mAh Universal Compatibility: Power All Apple Devices</strong>",
+        "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_9.jpg",
+        "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_8.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -482,12 +721,11 @@
     },
     "lookbook_3xRAmb": {
       "type": "lookbook",
-      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_6.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_4.jpg",
-        "heading": "<strong>Snap-On Stability: N52 Magnets for MagSafe</strong>",
+        "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_7.jpg",
+        "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_6.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -519,12 +757,11 @@
     },
     "lookbook_bFpFjj": {
       "type": "lookbook",
-      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_7.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_5.jpg",
-        "heading": "<strong>All-in-One Charger for Apple Watch Series</strong>",
+        "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_10.jpg",
+        "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_9.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -556,12 +793,11 @@
     },
     "lookbook_NtqVnQ": {
       "type": "lookbook",
-      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/P1-10000-DETAIL-PC_8.jpg",
-        "image_mobile": "shopify://shop_images/P1-10000-DETAIL-M_6.jpg",
-        "heading": "<strong>360°+180° Adjustable Ring Holder: Versatile Stand & Grip</strong>",
+        "image": "shopify://shop_images/RORRY_MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W-PC_11.jpg",
+        "image_mobile": "shopify://shop_images/MagAir_P8-10000mAh_MagSafe_Power_Bank_22.5W_10.jpg",
+        "heading": "",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h3",
@@ -749,7 +985,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "P2",
+            "details": "P8",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -788,7 +1024,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "220g",
+            "details": "263g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -807,15 +1043,27 @@
             "mobile_details_size": 16
           }
         },
+        "item_block_6kDiYy": {
+          "type": "item_block",
+          "settings": {
+            "title": "<strong>Output</strong>",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 24,
+            "details": "PD 22.5W",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
         "item_block_F88Hib": {
           "type": "item_block",
-          "disabled": true,
           "settings": {
             "title": "Compatibility",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "for MagSafe cases and iPhone 16/15/14/13/12 series, Apple Watch Ultra 2/Ultra 1/10/9/8/7/6/5/4/3/SE, and AirPods.",
+            "details": "for AirPods/AirPods Pro, for Apple Watch Series 11/10/9/8/7/SE, for iPhone 17/16/15/Air/Plus/Pro/Pro Max.",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -828,6 +1076,7 @@
         "item_block_qcHcQg",
         "item_block_z6ym3P",
         "item_block_3Ti8LJ",
+        "item_block_6kDiYy",
         "item_block_F88Hib"
       ],
       "custom_css": [
@@ -1063,7 +1312,9 @@
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
     "lookbook_WDC68U",
-    "lookbook_UpwtHB",
+    "slideshow_7WKFqq",
+    "slideshow_dbRhyA",
+    "rich_text_crWdkV",
     "lookbook_qWXcHK",
     "lookbook_3xRAmb",
     "lookbook_bFpFjj",
