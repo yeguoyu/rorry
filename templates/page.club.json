@@ -111,21 +111,24 @@
         "step_bEpxJm": {
           "type": "step",
           "settings": {
-            "graphic_alt": "",
+            "graphic": "shopify://shop_images/69x69_01.png",
+            "graphic_alt": "JOIN rorry club",
             "text": "<strong>1. JOIN</strong><br>Create your free account and instantly unlock <strong>100 RorryCredits</strong> welcoming rewards."
           }
         },
         "step_8zcXjP": {
           "type": "step",
           "settings": {
-            "graphic_alt": "",
+            "graphic": "shopify://shop_images/69x69_02.png",
+            "graphic_alt": "Earn RorryCredits",
             "text": "<strong>2. EARN</strong><br>Earn <strong>RorryCredits</strong> every time you shop, sign up, celebrate your birthday, or leave a review."
           }
         },
         "step_kV3a4G": {
           "type": "step",
           "settings": {
-            "graphic_alt": "",
+            "graphic": "shopify://shop_images/69x69_03.png",
+            "graphic_alt": "Redeem your points",
             "text": "<strong>3. REDEEM</strong><br>Redeem your points for cash-off discounts, free shipping, or free high-end accessories."
           }
         }
@@ -141,7 +144,7 @@
         "heading": "How It Works",
         "color_text": "#5c4d78",
         "color_background": "#ffffff",
-        "graphic_max_width": 160,
+        "graphic_max_width": 70,
         "padding_top": 56,
         "padding_bottom": 56
       }
