@@ -149,6 +149,38 @@
         "padding_bottom": 56
       }
     },
+    "image_with_text_overlay_c8AyMy": {
+      "type": "image-with-text-overlay",
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Why-Join.jpg",
+        "image_height": "450px",
+        "content_width": "small",
+        "content_position": "md:items-start md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": true,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
     "multicolumn_with_icons_LcbRjD": {
       "type": "multicolumn-with-icons",
       "blocks": {
@@ -908,6 +940,7 @@
     "main-page",
     "image_with_text_overlay_rmJqTC",
     "member_how_it_works_cFFffp",
+    "image_with_text_overlay_c8AyMy",
     "multicolumn_with_icons_LcbRjD",
     "zl_nano_3_cW4TLy",
     "member_how_it_works_VWcMAX",
