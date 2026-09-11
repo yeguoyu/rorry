@@ -1,0 +1,880 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-lg tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 116,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_rmJqTC": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_AcHXnU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join the RORRY Everyday Creators Program",
+            "heading_size": "title-sm",
+            "heading_tag": "h1",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_cwzDUL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share how RORRY fits into your aesthetic moments,</p><p>and get the chance to experience new releases and grow with us.</p>",
+            "text_font": "body",
+            "text_size": "subtext-lg",
+            "text_max_size": 24,
+            "text_line_height": 1.2,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_hjCw6e": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "APPLY NOW",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "sm",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AcHXnU",
+        "text_cwzDUL",
+        "button_hjCw6e"
+      ],
+      "custom_css": [
+        ".rte {margin-top: 20px;}",
+        ".button {margin-top: 24px;}",
+        "@media screen and (min-width: 1280px) {.banner__box--small {max-width: 95rem; }}"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/rorry-creators-program-banner.jpg",
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-center",
+        "text_alignment": "center",
+        "image_mobile": "shopify://shop_images/rorry-creators-program-banner-m.jpg",
+        "image_height_mobile": "600px",
+        "content_position_mobile": "items-end justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#9887b8",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "multicolumn_with_icons_LcbRjD": {
+      "type": "multicolumn-with-icons",
+      "blocks": {
+        "column_qK8hDz": {
+          "type": "column",
+          "settings": {
+            "icon": "gift",
+            "custom_icon": "",
+            "heading": "<strong>Selected RORRY Products</strong>",
+            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_wpwcgn": {
+          "type": "column",
+          "settings": {
+            "icon": "award",
+            "custom_icon": "",
+            "heading": "<strong>Official Exposure</strong>",
+            "text": "<p>Get featured on RORRY’s official social channels, reaching over 100K+ aesthetic lovers worldwide.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_DGEQBc": {
+          "type": "column",
+          "settings": {
+            "icon": "trophy",
+            "custom_icon": "",
+            "heading": "<a href=\"https://rorry.goaffpro.com/\" title=\"https://rorry.goaffpro.com/\"><strong>Earn Commission</strong></a>",
+            "text": "<p>Earn up to <strong>10% affiliate commission</strong> on every sale generated through your unique link</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_Dc6ep9": {
+          "type": "column",
+          "settings": {
+            "icon": "heart",
+            "custom_icon": "",
+            "heading": "<strong>Creative Freedom</strong>",
+            "text": "<p>Receive clear creative briefs and assets while having the absolute freedom to express your unique style.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_qK8hDz",
+        "column_wpwcgn",
+        "column_DGEQBc",
+        "column_Dc6ep9"
+      ],
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-background",
+        "columns": 4,
+        "text_alignment": "center",
+        "heading": "What You'll Get",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "zl_nano_3_cW4TLy": {
+      "type": "zl-nano-3",
+      "blocks": {
+        "card_gpM34A": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/Aesthetic-Enthusiasts.jpg",
+            "tag": "Aesthetic Enthusiasts",
+            "title": "",
+            "price": "You share personal style, everyday carry, bag organization, outfits, or visually thoughtful routines.",
+            "compare_price": ""
+          }
+        },
+        "card_KVqnUB": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/Tech-Lifestyle-Lovers.jpg",
+            "tag": "Tech-Lifestyle Lovers",
+            "title": "You create desk setups, charging tips, unboxings, productivity content, or practical tech recommendations.",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_FHiCYU": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/On-The-Go-Storytellers.jpg",
+            "tag": "On-The-Go Storytellers",
+            "title": "You document travel, commuting, cafés, events, outdoor days, or other moments when portable power matters.",
+            "price": "",
+            "compare_price": ""
+          }
+        },
+        "card_ybDqMb": {
+          "type": "card",
+          "settings": {
+            "target_tab": "On the Go",
+            "product": "",
+            "card_link": "",
+            "image_pc": "shopify://shop_images/Creative-Videographers.jpg",
+            "tag": "Creative Videographers",
+            "title": "You make engaging TikTok, Instagram Reels, Pinterest, YouTube Shorts, ASMR, demonstration, or product-detail videos.",
+            "price": "",
+            "compare_price": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_gpM34A",
+        "card_KVqnUB",
+        "card_FHiCYU",
+        "card_ybDqMb"
+      ],
+      "name": "ZL Nano Accordion",
+      "settings": {
+        "bg_color": "#ffffff",
+        "container_width": 1300,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mb": 32,
+        "padding_bottom_mb": 16,
+        "title": "Who We're Looking For",
+        "title_color": "#9887b8",
+        "title_weight": "600",
+        "tab_wrap_bg": "#9887b8",
+        "tab_border_color": "#9887b8",
+        "tab_active_bg": "#ffffff",
+        "tab_active_color": "#9887b8",
+        "tab_inactive_color": "#ffffff",
+        "tab_size_pc": 20,
+        "tab_size_mb": 16,
+        "card_height_pc": 450,
+        "card_height_mb": 400,
+        "tag_bg": "#9887b8",
+        "tag_color": "#ffffff",
+        "tag_size_pc": 13,
+        "tag_size_mb": 12,
+        "card_title_color": "#ffffff",
+        "card_title_weight": "600",
+        "price_color": "#ffffff",
+        "price_size_pc": 20,
+        "price_size_mb": 18,
+        "price_weight": "600",
+        "compare_color": "#9887b8",
+        "compare_size_pc": 18,
+        "compare_size_mb": 16,
+        "plus_bg": "#ffffffb3",
+        "plus_color": "#111111",
+        "main_product_section": "main-product-modal"
+      }
+    },
+    "member_how_it_works_VWcMAX": {
+      "type": "member-how-it-works",
+      "blocks": {
+        "step_8UCFQR": {
+          "type": "step",
+          "settings": {
+            "graphic": "shopify://shop_images/65x65_01.png",
+            "graphic_alt": "Apply",
+            "text": "<p style=\"text-align: center;\"><strong>1. Apply</strong><strong></strong></p>\n<p style=\"text-align: center;\"> </p>\n<p>Tell us about your channels, audience, content style, location, and the RORRY products or everyday scenarios you would like to feature.</p>"
+          }
+        },
+        "step_jPRXWk": {
+          "type": "step",
+          "settings": {
+            "graphic": "shopify://shop_images/65x65_02.png",
+            "graphic_alt": "Get Reviewed",
+            "text": "<p style=\"text-align: center;\"><strong>2. Get Reviewed</strong></p>\n<p style=\"text-align: center;\"><br>Our team reviews applications based on campaign fit, content quality, audience relevance, location, availability, and previous collaboration performance.</p>"
+          }
+        },
+        "step_jmGLMw": {
+          "type": "step",
+          "settings": {
+            "graphic": "shopify://shop_images/65x65_03.png",
+            "graphic_alt": "Create and Share",
+            "text": "<p style=\"text-align: center;\"><strong>3. Create and Share</strong></p>\n<p style=\"text-align: center;\"><br>If selected, you will receive the campaign brief, deliverables, timeline, disclosure requirements, usage terms, and any product or affiliate details before you agree to participate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_8UCFQR",
+        "step_jPRXWk",
+        "step_jmGLMw"
+      ],
+      "name": "Member how it works",
+      "settings": {
+        "anchor_id": "member-how-it-works",
+        "heading": "How the RORRY Creator Program Works",
+        "color_text": "#9887b8",
+        "color_background": "#ffffff",
+        "graphic_max_width": 70,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_overlay_M3aq9K": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_wkjfXJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Before You Apply",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Wm78WR": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>You are 18+ years old.</li><li>You have at least one active public social account.</li><li>You enjoy creating original photo or video content.</li><li>You are comfortable sharing real product experiences.</li><li>You can follow a simple creative brief and timeline if selectted.</li></ul>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_fTmpca": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Create & Share",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_wkjfXJ",
+        "text_Wm78WR",
+        "button_fTmpca"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/creators-program-operational-Process.jpg",
+        "image_height": "450px",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/creators-program-operational-Process.jpg",
+        "image_height_mobile": "400px",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#fbfbfb",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 51,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "multicolumn_with_icons_mJypHX": {
+      "type": "multicolumn-with-icons",
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-border",
+        "columns": 3,
+        "text_alignment": "left",
+        "heading": "<strong>Created in Everyday Life</strong>",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "selling_points_2_video_KJeBm4": {
+      "type": "selling-points-2-video",
+      "blocks": {
+        "video_block_CEKBf8": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-5000mah-portable-charger-6.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_PjjFDQ": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-5000mah-portable-charger-5.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_z4Hc8T": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-2500mah-mini-portable-charger.mp4",
+            "video_url": ""
+          }
+        },
+        "video_block_Q6GFXc": {
+          "type": "video_block",
+          "settings": {
+            "video": "shopify://files/videos/d2-10000mah-pd-20w-portable-charger-2.mp4",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_block_CEKBf8",
+        "video_block_PjjFDQ",
+        "video_block_z4Hc8T",
+        "video_block_Q6GFXc"
+      ],
+      "name": "selling points 11 Video",
+      "settings": {
+        "sectionname": "Created in Life",
+        "background": "#ffffff",
+        "border_radius": 8,
+        "cols_pc": 4,
+        "cols_mb": 2,
+        "gap_pc": 20,
+        "gap_mb": 10,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 24
+      }
+    },
+    "multicolumn_with_icons_tYM4nw": {
+      "type": "multicolumn-with-icons",
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-border",
+        "columns": 3,
+        "text_alignment": "left",
+        "heading": "A Growing Global Community",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>RORRY works with creators and customers across everyday lifestyle, travel, technology, and personal-style communities. We are building long-term relationships around useful products, original content, and honest experiences.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "number_counter_hnF9Ni": {
+      "type": "number-counter",
+      "blocks": {
+        "counter_WnKQkf": {
+          "type": "counter",
+          "settings": {
+            "title": "Community Members",
+            "number": "3000",
+            "unit": "+",
+            "duration": 2
+          }
+        },
+        "counter_dzheQ6": {
+          "type": "counter",
+          "settings": {
+            "title": "Aesthetic Posts",
+            "number": "1000",
+            "unit": "+",
+            "duration": 2
+          }
+        },
+        "counter_BUJq7w": {
+          "type": "counter",
+          "settings": {
+            "title": "Views Generated",
+            "number": "1.5M",
+            "unit": "+",
+            "duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "counter_WnKQkf",
+        "counter_dzheQ6",
+        "counter_BUJq7w"
+      ],
+      "name": "t:sections.number-counter.name",
+      "settings": {
+        "gap": "small",
+        "columns": 3,
+        "text_alignment": "center",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "text_alignment_mobile": "center",
+        "color_text": "#9887b8",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_highlight": "#9887b8",
+        "gradient_highlight": "",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "faq_XjyrqX": {
+      "type": "faq",
+      "blocks": {
+        "question_tHQEij": {
+          "type": "question",
+          "settings": {
+            "title": "1. Do I need a large following to apply?",
+            "text": "<p>No. Audience size is only one consideration. We also review content quality, originality, audience fit, engagement, reliability, and how naturally RORRY products fit your everyday content.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_UJRxzq": {
+          "type": "question",
+          "settings": {
+            "title": "2. Will I receive a free product?",
+            "text": "<p>Not every applicant receives a product. Product seeding depends on selection, campaign fit, location, inventory, and the agreed deliverables. We will explain the offer before you accept a collaboration.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_w8dAMF": {
+          "type": "question",
+          "settings": {
+            "title": "3. Which platforms are eligible?",
+            "text": "<p>We welcome public content on TikTok, Instagram, YouTube, Pinterest, blogs, and other relevant platforms. The platforms included in each opportunity may vary.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_Gqnktg": {
+          "type": "question",
+          "settings": {
+            "title": "4. Can I earn commission?",
+            "text": "<p>Some campaigns include affiliate opportunities for eligible creators. Commission rates, qualifying purchases, attribution periods, payment thresholds, and exclusions are provided in the applicable affiliate terms.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_zxNBBt": {
+          "type": "question",
+          "settings": {
+            "title": "5. What kind of content does RORRY need?",
+            "text": "<p>Common formats include unboxings, product demonstrations, desk setups, everyday carry, what’s-in-my-bag videos, travel routines, charging tips, comparisons, and short-form lifestyle content.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_DhYJif": {
+          "type": "question",
+          "settings": {
+            "title": "6. Who owns the content I create?",
+            "text": "<p>Ownership and usage rights depend on the collaboration agreement. RORRY will provide the proposed channels, duration, editing rights, paid-media rights, and credit terms before content is reused.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_zARPtV": {
+          "type": "question",
+          "settings": {
+            "title": "7. How will I know if I am selected?",
+            "text": "<p>If your profile matches an available opportunity, the RORRY team will contact you using the email address submitted with your application. Response timing may vary with campaign volume.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_JN897q": {
+          "type": "question",
+          "settings": {
+            "title": "8. Can creators outside the United States apply?",
+            "text": "<p>You may apply from another country, but product availability, shipping, affiliate access, and campaign eligibility vary by market.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_wHLVDU": {
+          "type": "question",
+          "settings": {
+            "title": "9. How can I update or remove my application data?",
+            "text": "<p>Contact <a href=\"mailto:marketing@rorry.com\" target=\"_blank\">marketing@rorry.com</a> and include the email address used in your application. Requests are handled under the RORRY Privacy Policy and applicable law.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_tHQEij",
+        "question_UJRxzq",
+        "question_w8dAMF",
+        "question_Gqnktg",
+        "question_zxNBBt",
+        "question_DhYJif",
+        "question_zARPtV",
+        "question_JN897q",
+        "question_wHLVDU"
+      ],
+      "custom_css": [
+        ".faqs.with-background > :is(div, form) {padding: 0;}"
+      ],
+      "name": "t:sections.faq.name",
+      "settings": {
+        "style": "with-background",
+        "heading": "FAQs",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_CgyTPU": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_jajdtp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ready to Share Your RORRY Moment?",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_mkeCzx": {
+          "type": "button",
+          "settings": {
+            "button_label": "APPLY TO JOIN",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_jajdtp",
+        "button_mkeCzx"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/Ready-to-1.jpg",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_mobile": "shopify://shop_images/Ready-to-1.jpg",
+        "image_height_mobile": "250px",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "center",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 8,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_hyYhFh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_T33zRL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ready to Share Your RORRY Moment?",
+            "heading_size": "title-sm",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_T33zRL"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "1787906703ac300424": {
+      "type": "apps",
+      "blocks": {
+        "powerful_form_builder_app_block_khmM8a": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"MTYxNzIz\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_khmM8a"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "image_with_text_overlay_rmJqTC",
+    "multicolumn_with_icons_LcbRjD",
+    "zl_nano_3_cW4TLy",
+    "member_how_it_works_VWcMAX",
+    "image_with_text_overlay_M3aq9K",
+    "multicolumn_with_icons_mJypHX",
+    "selling_points_2_video_KJeBm4",
+    "multicolumn_with_icons_tYM4nw",
+    "number_counter_hnF9Ni",
+    "faq_XjyrqX",
+    "image_with_text_overlay_CgyTPU",
+    "rich_text_hyYhFh",
+    "1787906703ac300424"
+  ]
+}
