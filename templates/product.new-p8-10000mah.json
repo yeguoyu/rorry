@@ -1024,7 +1024,7 @@
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
-            "details": "263g",
+            "details": "230g",
             "details_color": "",
             "details_size": 22,
             "mobile_details_size": 16
@@ -1107,15 +1107,6 @@
             "tab-name": "Product"
           }
         },
-        "tab_content_683zbz": {
-          "type": "tab-content",
-          "settings": {
-            "tab-name": "Product",
-            "collapsible-title": "<strong>What devices are compatible with this magnetic power bank?</strong>",
-            "collapsible-content": "<p>This magnetic power bank is compatible with iPhone 16/15/14/13/12 series, Apple Watch Ultra 2 / Ultra / 10 / 9 / 8 / 7 / 6 / 5 / 4 / 3 / SE, and AirPods with wireless charging case. It works with MagSafe-compatible cases, allowing you to snap your iPhone on instantly for wireless charging.</p>",
-            "isactive": false
-          }
-        },
         "tab_content_fjWWzA": {
           "type": "tab-content",
           "settings": {
@@ -1173,7 +1164,6 @@
       },
       "block_order": [
         "tab_Fq7LBp",
-        "tab_content_683zbz",
         "tab_content_fjWWzA",
         "tab_content_Wrb3qd",
         "tab_content_KQRxtY",
