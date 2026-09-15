@@ -383,8 +383,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_1.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_1.jpg",
+        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo.jpg",
         "heading": "<strong>RORRY 10000mAh Mini Portable Charger: 22.5W Fast Charging + iWatch Charger</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
