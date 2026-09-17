@@ -531,8 +531,8 @@
         "button_P6kKAj": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "EXPLORE BEST SELLERS",
+            "button_link": "shopify://collections/best-sellers",
             "button_style": "primary",
             "button_size": "md",
             "button_external": false,
