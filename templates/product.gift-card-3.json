@@ -161,7 +161,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_quantity_selector": true,
+            "show_quantity_selector": false,
             "show_price": false,
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true,
@@ -198,18 +198,18 @@
           "type": "trust_features",
           "settings": {
             "modal_title": "Key Features",
-            "title_1": "Free & Fast Shipping",
-            "desc_1": "<p>Enjoy <strong>free shipping</strong> straight to your doorstep with no minimum purchase required. Your RORRY order is processed quickly from our local warehouses and typically delivered within <strong>2-7 business days</strong> throughout the contiguous US. Please see our <a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">shipping policy</a> for more details.</p>",
-            "icon_1": "truck",
-            "title_2": "30-Day Free Returns & Exchanges",
-            "desc_2": "<p>Not completely in love with your new tech accessory? We’ve got you covered. We offer a hassle-free, 30-day <strong>free return and exchange</strong> policy for any reason. Simply keep the product in its original condition and contact our team to start a smooth refund or exchange process. Please see our <a href=\"/policies/refund-policy\" title=\"Refund Policy\">return policy</a> for more details.</p>",
-            "icon_2": "tag",
-            "title_3": "12-Month Worry-Free Warranty",
-            "desc_3": "<p>We stand behind the quality and craftsmanship of our products. Every RORRY charger is protected by a <strong>12-month worry-free warranty</strong> against manufacturing defects. Want longer protection? Register your product on our <a href=\"/pages/activate-warranty\" title=\"Activate Warranty\">warranty activation page</a> to extend your coverage to <strong>18 months</strong> for ultimate peace of mind.</p>",
-            "icon_3": "shield",
-            "title_4": "Lifetime Customer Support",
-            "desc_4": "<p>We’re always here for you. Whether you have questions about device compatibility, fast-charging protocols, or order tracking, our dedicated support team is ready to assist. Reach out to us anytime at <a href=\"mailto:hello@domain.com\">support@rorry.com</a> and expect a friendly response within <strong>12-24 hours</strong> on business days.</p>",
-            "icon_4": "chat_bubble",
+            "title_1": "Digital Delivery",
+            "desc_1": "<p>Sent stroight to their inbox</p>",
+            "icon_1": "return",
+            "title_2": "Secure Checkout",
+            "desc_2": "<p>Your informotion is protected</p>",
+            "icon_2": "shield",
+            "title_3": "No Shipping Needed",
+            "desc_3": "<p>A more sustoinable way to gift</p>",
+            "icon_3": "truck",
+            "title_4": "",
+            "desc_4": "",
+            "icon_4": "none",
             "show_payment": true
           }
         }
