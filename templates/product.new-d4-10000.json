@@ -203,6 +203,7 @@
         },
         "qstomizer_product_customizer_qstomizer_product_block_Uq8Fye": {
           "type": "shopify://apps/qstomizer-product-customizer/blocks/qstomizer-product-block/91ddef34-1f34-4141-843a-d613c0433aef",
+          "disabled": true,
           "settings": {
             "textonbtn": "Customize",
             "btnclass": "btn",
