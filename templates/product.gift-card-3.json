@@ -414,6 +414,92 @@
         "enable_parallax": true
       }
     },
+    "multicolumn_with_icons_AgfiKY": {
+      "type": "multicolumn-with-icons",
+      "blocks": {
+        "column_yMbp77": {
+          "type": "column",
+          "settings": {
+            "icon": "gift",
+            "custom_icon": "",
+            "heading": "<strong>Selected RORRY Products</strong>",
+            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_fDK9gi": {
+          "type": "column",
+          "settings": {
+            "icon": "award",
+            "custom_icon": "",
+            "heading": "<strong>Official Exposure</strong>",
+            "text": "<p>Get featured on RORRY’s official social channels, reaching over 100K+ aesthetic lovers worldwide.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_LQDzXr": {
+          "type": "column",
+          "settings": {
+            "icon": "trophy",
+            "custom_icon": "",
+            "heading": "<a href=\"https://rorry.goaffpro.com/\" title=\"https://rorry.goaffpro.com/\"><strong>Earn Commission</strong></a>",
+            "text": "<p>Earn up to <strong>10% affiliate commission</strong> on every sale generated through your unique link</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_agDed7": {
+          "type": "column",
+          "settings": {
+            "icon": "heart",
+            "custom_icon": "",
+            "heading": "<strong>Creative Freedom</strong>",
+            "text": "<p>Receive clear creative briefs and assets while having the absolute freedom to express your unique style.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_yMbp77",
+        "column_fDK9gi",
+        "column_LQDzXr",
+        "column_agDed7"
+      ],
+      "name": "t:sections.multicolumn-with-icons.name",
+      "settings": {
+        "style": "with-background",
+        "columns": 4,
+        "text_alignment": "center",
+        "heading": "What You'll Get",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887b8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "member_how_it_works_6P8RFm": {
       "type": "member-how-it-works",
       "blocks": {
@@ -1364,6 +1450,7 @@
   "order": [
     "main-product",
     "collage_grid_GRzA3V",
+    "multicolumn_with_icons_AgfiKY",
     "member_how_it_works_6P8RFm",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
