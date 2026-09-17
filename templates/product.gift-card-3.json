@@ -183,6 +183,7 @@
         },
         "collapsible_tab_eDtqHf": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "opened": false,
             "style": "with-border",
@@ -261,6 +262,197 @@
         "divider": false,
         "full_width": false,
         "rounded": false
+      }
+    },
+    "collage_grid_GRzA3V": {
+      "type": "collage-grid",
+      "blocks": {
+        "image_qGJgJV": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "For her next trip",
+            "link": "",
+            "invert_subheading_heading": false,
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_MKxTA3": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "For his daily commute",
+            "link": "",
+            "invert_subheading_heading": false,
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_9Jx39m": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "For their next adventure",
+            "link": "",
+            "invert_subheading_heading": false,
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        },
+        "image_Fn4QnK": {
+          "type": "image",
+          "settings": {
+            "column_size": 5,
+            "row_size": 2,
+            "subheading": "",
+            "heading": "For anyone who already has everything",
+            "link": "",
+            "invert_subheading_heading": false,
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10,
+            "color_text_hover": "",
+            "color_highlight_hover": "",
+            "gradient_highlight_hover": "",
+            "color_overlay_hover": "",
+            "overlay_opacity_hover": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_qGJgJV",
+        "image_MKxTA3",
+        "image_9Jx39m",
+        "image_Fn4QnK"
+      ],
+      "name": "t:sections.collage-grid.name",
+      "settings": {
+        "row_height": 300,
+        "row_height_mobile": 150,
+        "heading": "A little power goes a long way",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#9887B8",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "member_how_it_works_6P8RFm": {
+      "type": "member-how-it-works",
+      "blocks": {
+        "step_DTmQRF": {
+          "type": "step",
+          "settings": {
+            "graphic_alt": "",
+            "text": "Create your free account and instantly unlock 100 RorryCredits welcoming rewards."
+          }
+        },
+        "step_dkUzAf": {
+          "type": "step",
+          "settings": {
+            "graphic_alt": "",
+            "text": "Earn RorryCredits every time you shop, sign up, celebrate your birthday, or leave a review."
+          }
+        },
+        "step_8b6Vmj": {
+          "type": "step",
+          "settings": {
+            "graphic_alt": "",
+            "text": "Redeem your points for cash-off discounts, free shipping, or free high-end accessories."
+          }
+        }
+      },
+      "block_order": [
+        "step_DTmQRF",
+        "step_dkUzAf",
+        "step_8b6Vmj"
+      ],
+      "name": "Member how it works",
+      "settings": {
+        "anchor_id": "member-how-it-works",
+        "heading": "How It Works",
+        "color_text": "#5c4d78",
+        "color_background": "#ffffff",
+        "graphic_max_width": 160,
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     },
     "section_position_NhnEdc": {
@@ -1171,6 +1363,8 @@
   },
   "order": [
     "main-product",
+    "collage_grid_GRzA3V",
+    "member_how_it_works_6P8RFm",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
     "video_irdGDk",
