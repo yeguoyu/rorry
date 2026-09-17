@@ -737,6 +737,7 @@
         "description_MjjXXF",
         "collapsible_tab-1"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-border",
         "open_first_row": true,
@@ -770,6 +771,7 @@
     },
     "lookbook_DX4hTV": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_1.jpg",
@@ -806,6 +808,7 @@
     },
     "lookbook_zkUUN7": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_2.jpg",
@@ -842,6 +845,7 @@
     },
     "lookbook_eYBa8U": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_3.jpg",
@@ -1061,6 +1065,7 @@
         "image_UeQMqx",
         "image_pT9PmY"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.name",
       "settings": {
         "autoplay": false,
@@ -1141,6 +1146,7 @@
         "image_UnJ7cc",
         "image_bXNceK"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.name",
       "settings": {
         "autoplay": false,
@@ -1169,6 +1175,7 @@
     },
     "lookbook_bRiqeG": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
         "image": "shopify://shop_images/RORRY_T1_10000mAh_Portable_Charger_Keychain_Power_Bank_pc_9.jpg",
@@ -1272,6 +1279,7 @@
         "question-5",
         "contact"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
@@ -1319,6 +1327,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_r8daHY"
       ],
+      "disabled": true,
       "settings": {
         "color_text": "",
         "color_background": "",
