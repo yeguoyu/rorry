@@ -491,8 +491,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_pc_4.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white_mo_4.jpg",
+        "image": "shopify://shop_images/RORRY_PalmGo_D5-10000mAh_Portable_Charger_USB-C_Power-Bank-pc.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_D5-10000mAh_Portable_Charger_USB-C_Power_Bank_white-mo.jpg",
         "heading": "<strong>Wide Compatibility: For All Apple & Android Devices</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
