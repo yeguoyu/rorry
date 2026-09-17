@@ -1,0 +1,45 @@
+{%- comment -%}
+  RORRY: manually load Uploadly on pages other than the home page.
+  Disable the original Uploadly app embed in this theme before enabling this snippet.
+  Based on the public app embed inspected on 2026-09-17.
+  The inspected homepage and customization product both emitted empty ph_meta_fields.
+  Recheck this integration when Uploadly changes its embed or metafield requirements.
+{%- endcomment -%}
+
+{%- unless request.page_type == 'index' -%}
+  {%- if product != blank -%}
+    {%- capture uploadly_collection_titles -%}
+      {%- for collection in product.collections -%}{{ collection.title }},{%- endfor -%}
+    {%- endcapture -%}
+    {%- capture uploadly_collection_ids -%}
+      {%- for collection in product.collections -%}{{ collection.id }},{%- endfor -%}
+    {%- endcapture -%}
+    <script>
+      window.ph_product_collections = {{ uploadly_collection_titles | json | replace: '<', '\u003c' }};
+      window.ph_product_collections_id = {{ uploadly_collection_ids | json }};
+    </script>
+  {%- endif -%}
+
+  <div data-uploadly-embed="true"></div>
+  <div data-ph-meta="{}"></div>
+
+  <script>
+    window.ph_meta_fields = window.ph_meta_fields || {};
+
+    (function () {
+      var primaryScript = document.createElement('script');
+      primaryScript.src = 'https://uploadly-cdn.com/uploadly.js';
+      primaryScript.defer = true;
+
+      primaryScript.onerror = function () {
+        var fallbackScript = document.createElement('script');
+        fallbackScript.src = 'https://cdn.shopify.com/s/files/1/0515/2384/6340/files/uploadly.js';
+        fallbackScript.defer = true;
+        document.head.appendChild(fallbackScript);
+      };
+
+      document.head.appendChild(primaryScript);
+    })();
+  </script>
+  <script async src="https://cdn.shopify.com/s/files/1/0515/2384/6340/files/uploadcarev2.js?v=25"></script>
+{%- endunless -%}
