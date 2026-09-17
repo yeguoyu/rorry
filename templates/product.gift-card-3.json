@@ -422,8 +422,8 @@
           "settings": {
             "icon": "gift",
             "custom_icon": "",
-            "heading": "<strong>Selected RORRY Products</strong>",
-            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "heading": "<strong>1. Choose a value</strong>",
+            "text": "<p>Pick the omount<br/>that feels right.</p>",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
@@ -433,8 +433,8 @@
           "settings": {
             "icon": "award",
             "custom_icon": "",
-            "heading": "<strong>Official Exposure</strong>",
-            "text": "<p>Get featured on RORRY’s official social channels, reaching over 100K+ aesthetic lovers worldwide.</p>",
+            "heading": "<strong>2. Add your message</strong>",
+            "text": "<p>Make it personal<br/>with a note.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -444,8 +444,8 @@
           "settings": {
             "icon": "trophy",
             "custom_icon": "",
-            "heading": "<a href=\"https://rorry.goaffpro.com/\" title=\"https://rorry.goaffpro.com/\"><strong>Earn Commission</strong></a>",
-            "text": "<p>Earn up to <strong>10% affiliate commission</strong> on every sale generated through your unique link</p>",
+            "heading": "<strong>3. Send now or later</strong>",
+            "text": "<p>Choose the perfect<br/>delivery date.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -455,8 +455,8 @@
           "settings": {
             "icon": "heart",
             "custom_icon": "",
-            "heading": "<strong>Creative Freedom</strong>",
-            "text": "<p>Receive clear creative briefs and assets while having the absolute freedom to express your unique style.</p>",
+            "heading": "<strong>4. Let them choose</strong>",
+            "text": "<p>They can shop their<br/>favorite RORRY products</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
