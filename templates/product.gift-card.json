@@ -31,6 +31,10 @@
             "show_rating": true
           }
         },
+        "judge_me_reviews_preview_badge_XQXG9z": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -83,6 +87,7 @@
       "block_order": [
         "vendor",
         "title",
+        "judge_me_reviews_preview_badge_XQXG9z",
         "description",
         "variant_picker",
         "inventory",
