@@ -473,7 +473,7 @@
         "style": "with-background",
         "columns": 4,
         "text_alignment": "center",
-        "heading": "What You'll Get",
+        "heading": "How it works",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
