@@ -677,8 +677,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "5. Where can a RORRY Gift Card be used?",
-            "collapsible-content": "<p>RORRY Gift Cards can be redeemed for eligible purchases made on rorry.com. Enter the gift card code in the designated field during checkout.<br/><br/>Gift cards issued for the US store are denominated in USD and may only be used on the corresponding RORRY online store.</p>",
+            "collapsible-title": "7. Do I have to use the entire gift card balance at once?",
+            "collapsible-content": "<p>No. If your order total is lower than the available gift card balance, the remaining balance will stay on the same gift card and can be used for future eligible purchases.<br/><br/>If the order total is higher than the gift card balance, you can pay the remaining amount using an accepted payment method.</p>",
             "isactive": false
           }
         },
@@ -686,8 +686,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "5. Where can a RORRY Gift Card be used?",
-            "collapsible-content": "<p>RORRY Gift Cards can be redeemed for eligible purchases made on rorry.com. Enter the gift card code in the designated field during checkout.<br/><br/>Gift cards issued for the US store are denominated in USD and may only be used on the corresponding RORRY online store.</p>",
+            "collapsible-title": "8. Does the RORRY Gift Card expire?",
+            "collapsible-content": "<p>RORRY Gift Cards do not expire, unless otherwise required by applicable law. We recommend keeping the original gift card email until the full balance has been used.</p>",
             "isactive": false
           }
         },
@@ -695,8 +695,8 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "5. Where can a RORRY Gift Card be used?",
-            "collapsible-content": "<p>RORRY Gift Cards can be redeemed for eligible purchases made on rorry.com. Enter the gift card code in the designated field during checkout.<br/><br/>Gift cards issued for the US store are denominated in USD and may only be used on the corresponding RORRY online store.</p>",
+            "collapsible-title": "9. Can I use a promotional code to purchase a gift card?",
+            "collapsible-content": "<p>Promotional codes, discounts and other special offers cannot normally be applied to the purchase of a RORRY Gift Card unless the promotion specifically states otherwise.<br/><br/>A gift card may be used together with an eligible promotional code when purchasing regular products, subject to the terms of that promotion.</p>",
             "isactive": false
           }
         },
@@ -704,8 +704,53 @@
           "type": "tab-content",
           "settings": {
             "tab-name": "Product",
-            "collapsible-title": "5. Where can a RORRY Gift Card be used?",
-            "collapsible-content": "<p>RORRY Gift Cards can be redeemed for eligible purchases made on rorry.com. Enter the gift card code in the designated field during checkout.<br/><br/>Gift cards issued for the US store are denominated in USD and may only be used on the corresponding RORRY online store.</p>",
+            "collapsible-title": "10. Can I use a gift card to purchase another gift card?",
+            "collapsible-content": "<p>No. RORRY Gift Cards cannot be used to purchase additional gift cards.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_xHqVQb": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "11. Can RORRY Gift Cards be returned, refunded or exchanged for cash?",
+            "collapsible-content": "<p>Gift card purchases are final and are not returnable, refundable or redeemable for cash, except where required by applicable law.<br/><br/>Products purchased using a gift card remain subject to RORRY’s applicable return and refund policies. Approved refunds will generally be returned to the original gift card or another method permitted by RORRY’s refund policy.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_Bx9BHQ": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "12. What happens if I enter the wrong recipient email address?",
+            "collapsible-content": "<p>Please verify the recipient’s email address before placing your order. RORRY is not responsible for gift cards delivered to an incorrect or inaccessible email address supplied by the purchaser.<br/><br/>If you notice an error, contact RORRY Customer Support immediately. We will try to help if the gift card has not yet been delivered or redeemed, but changes cannot be guaranteed.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_Ca9AYJ": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "13. What should I do if the gift card email has not arrived?",
+            "collapsible-content": "<p>First, ask the recipient to check their spam, junk and promotions folders. Gift card delivery can occasionally be delayed by email providers.<br/><br/>If the email still cannot be found, contact RORRY Customer Support with the order number and purchaser’s email address. Never publish or send the gift card code through an unsecured public channel.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_cbdYGb": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "14. Can a lost or stolen gift card be replaced?",
+            "collapsible-content": "<p>Treat your gift card code like cash. RORRY cannot guarantee replacement of a lost, stolen or improperly shared gift card.<br/><br/>If you believe your code has been accessed without permission, contact Customer Support immediately and provide the original order information.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_Qj4UWj": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "15. Are taxes or shipping fees covered by the gift card?",
+            "collapsible-content": "<p>A RORRY Gift Card can be applied to eligible charges shown at checkout, subject to local tax rules and RORRY’s gift card terms. Any amount exceeding the available gift card balance must be paid using another accepted payment method.</p>",
             "isactive": false
           }
         }
@@ -721,7 +766,12 @@
         "tab_content_nzJCM4",
         "tab_content_rdQp9b",
         "tab_content_49BeC3",
-        "tab_content_AU7hir"
+        "tab_content_AU7hir",
+        "tab_content_xHqVQb",
+        "tab_content_Bx9BHQ",
+        "tab_content_Ca9AYJ",
+        "tab_content_cbdYGb",
+        "tab_content_Qj4UWj"
       ],
       "name": "product faq",
       "settings": {
