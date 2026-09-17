@@ -1115,6 +1115,35 @@
         "full_width": false,
         "rounded": true
       }
+    },
+    "1789616542f5b8a261": {
+      "type": "apps",
+      "blocks": {
+        "qstomizer_product_customizer_qstomizer_discounts_block_YBQ9M7": {
+          "type": "shopify://apps/qstomizer-product-customizer/blocks/qstomizer-discounts-block/91ddef34-1f34-4141-843a-d613c0433aef",
+          "settings": {
+            "qsmzdismsg": "Discounts are calculated using the cheapest variation price. Customize the product to calculate exact prices."
+          }
+        }
+      },
+      "block_order": [
+        "qstomizer_product_customizer_qstomizer_discounts_block_YBQ9M7"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -1134,6 +1163,7 @@
     "product_faq_iXcLnC",
     "1733908196fc5c0365",
     "recently-viewed",
-    "product-recommendations"
+    "product-recommendations",
+    "1789616542f5b8a261"
   ]
 }

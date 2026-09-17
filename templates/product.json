@@ -1337,15 +1337,6 @@
     },
     "1741083344160ffdd0": {
       "type": "apps",
-      "blocks": {
-        "socialwidget_instafeed_product_widget_3DiYrH": {
-          "type": "shopify://apps/socialwidget-instafeed/blocks/product-widget/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "socialwidget_instafeed_product_widget_3DiYrH"
-      ],
       "disabled": true,
       "settings": {
         "color_text": "",
@@ -1457,10 +1448,55 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "1789616455bd58ef70": {
+      "type": "apps",
+      "blocks": {
+        "qstomizer_product_customizer_qstomizer_product_block_JJpUiQ": {
+          "type": "shopify://apps/qstomizer-product-customizer/blocks/qstomizer-product-block/91ddef34-1f34-4141-843a-d613c0433aef",
+          "settings": {
+            "textonbtn": "Customize",
+            "btnclass": "btn",
+            "apply_custom_styles": false,
+            "button_border_radius": 0,
+            "button_bg_color": "#FF8A00",
+            "text_color": "#000000",
+            "button_text_size": 12,
+            "text_alignment": "center",
+            "button_width": "full",
+            "button_padding_top": 10,
+            "button_padding_bottom": 10,
+            "button_margin_top": 10,
+            "button_margin_bottom": 10,
+            "btnclassremove": "",
+            "textoheader": "Your custom product:",
+            "elmstohide": ""
+          }
+        }
+      },
+      "block_order": [
+        "qstomizer_product_customizer_qstomizer_product_block_JJpUiQ"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
     "main-product",
+    "1789616455bd58ef70",
     "help-drawer",
     "video-hero",
     "collage",
