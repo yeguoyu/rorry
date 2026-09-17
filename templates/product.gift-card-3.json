@@ -744,15 +744,6 @@
             "collapsible-content": "<p>Treat your gift card code like cash. RORRY cannot guarantee replacement of a lost, stolen or improperly shared gift card.<br/><br/>If you believe your code has been accessed without permission, contact Customer Support immediately and provide the original order information.</p>",
             "isactive": false
           }
-        },
-        "tab_content_Qj4UWj": {
-          "type": "tab-content",
-          "settings": {
-            "tab-name": "Product",
-            "collapsible-title": "15. Are taxes or shipping fees covered by the gift card?",
-            "collapsible-content": "<p>A RORRY Gift Card can be applied to eligible charges shown at checkout, subject to local tax rules and RORRY’s gift card terms. Any amount exceeding the available gift card balance must be paid using another accepted payment method.</p>",
-            "isactive": false
-          }
         }
       },
       "block_order": [
@@ -770,8 +761,7 @@
         "tab_content_xHqVQb",
         "tab_content_Bx9BHQ",
         "tab_content_Ca9AYJ",
-        "tab_content_cbdYGb",
-        "tab_content_Qj4UWj"
+        "tab_content_cbdYGb"
       ],
       "name": "product faq",
       "settings": {
