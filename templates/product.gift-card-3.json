@@ -500,47 +500,6 @@
         "rounded": false
       }
     },
-    "member_how_it_works_6P8RFm": {
-      "type": "member-how-it-works",
-      "blocks": {
-        "step_DTmQRF": {
-          "type": "step",
-          "settings": {
-            "graphic_alt": "",
-            "text": "Create your free account and instantly unlock 100 RorryCredits welcoming rewards."
-          }
-        },
-        "step_dkUzAf": {
-          "type": "step",
-          "settings": {
-            "graphic_alt": "",
-            "text": "Earn RorryCredits every time you shop, sign up, celebrate your birthday, or leave a review."
-          }
-        },
-        "step_8b6Vmj": {
-          "type": "step",
-          "settings": {
-            "graphic_alt": "",
-            "text": "Redeem your points for cash-off discounts, free shipping, or free high-end accessories."
-          }
-        }
-      },
-      "block_order": [
-        "step_DTmQRF",
-        "step_dkUzAf",
-        "step_8b6Vmj"
-      ],
-      "name": "Member how it works",
-      "settings": {
-        "anchor_id": "member-how-it-works",
-        "heading": "How It Works",
-        "color_text": "#9887B8",
-        "color_background": "#ffffff",
-        "graphic_max_width": 160,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "section_position_NhnEdc": {
       "type": "section-position",
       "blocks": {
@@ -1451,7 +1410,6 @@
     "main-product",
     "collage_grid_GRzA3V",
     "multicolumn_with_icons_AgfiKY",
-    "member_how_it_works_6P8RFm",
     "section_position_NhnEdc",
     "selling_points_2_video_iNKajX",
     "video_irdGDk",
