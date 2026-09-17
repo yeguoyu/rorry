@@ -420,7 +420,7 @@
         "column_yMbp77": {
           "type": "column",
           "settings": {
-            "icon": "gift",
+            "icon": "creadit_card",
             "custom_icon": "",
             "heading": "<strong>1. Choose a value</strong>",
             "text": "<p>Pick the omount<br/>that feels right.</p>",
@@ -431,7 +431,7 @@
         "column_fDK9gi": {
           "type": "column",
           "settings": {
-            "icon": "award",
+            "icon": "chat_bubble",
             "custom_icon": "",
             "heading": "<strong>2. Add your message</strong>",
             "text": "<p>Make it personal<br/>with a note.</p>",
@@ -442,7 +442,7 @@
         "column_LQDzXr": {
           "type": "column",
           "settings": {
-            "icon": "trophy",
+            "icon": "plane",
             "custom_icon": "",
             "heading": "<strong>3. Send now or later</strong>",
             "text": "<p>Choose the perfect<br/>delivery date.</p>",
@@ -453,7 +453,7 @@
         "column_agDed7": {
           "type": "column",
           "settings": {
-            "icon": "heart",
+            "icon": "gift",
             "custom_icon": "",
             "heading": "<strong>4. Let them choose</strong>",
             "text": "<p>They can shop their<br/>favorite RORRY products</p>",
