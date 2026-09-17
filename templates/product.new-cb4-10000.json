@@ -618,8 +618,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_PC_10.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug_40W_MO_10.jpg",
+        "image": "shopify://shop_images/RORRY_Flow_Portable_Charger_10000mAh_40W_Fast_Charging_Power_Bank-pc.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_Flow_CB4-10000mAh_Portable_Charger_Charging_with_Cable_Wall_Plug-MO.jpg",
         "heading": "<strong>Wide Compatibility Portable Charger: Power All Your Devices</strong>",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
