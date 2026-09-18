@@ -220,10 +220,10 @@
         "column_wpwcgn": {
           "type": "column",
           "settings": {
-            "icon": "award",
+            "icon": "email",
             "custom_icon": "",
             "heading": "<strong>Subscribe to Newsletter</strong>",
-            "text": "<p>Get featured on RORRY’s official social channels, reaching over 100K+ aesthetic lovers worldwide.</p>",
+            "text": "<p><strong>+ 100 Credits</strong></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -233,8 +233,8 @@
           "settings": {
             "icon": "trophy",
             "custom_icon": "",
-            "heading": "<a href=\"https://rorry.goaffpro.com/\" title=\"https://rorry.goaffpro.com/\"><strong>Earn Commission</strong></a>",
-            "text": "<p>Earn up to <strong>10% affiliate commission</strong> on every sale generated through your unique link</p>",
+            "heading": "<strong>Daily Visit Site</strong>",
+            "text": "<p><strong>+ 10 Credits</strong></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -242,10 +242,10 @@
         "column_Dc6ep9": {
           "type": "column",
           "settings": {
-            "icon": "heart",
+            "icon": "star",
             "custom_icon": "",
-            "heading": "<strong>Creative Freedom</strong>",
-            "text": "<p>Receive clear creative briefs and assets while having the absolute freedom to express your unique style.</p>",
+            "heading": "<strong>Write a Product Review</strong>",
+            "text": "<p><strong>+ 50 Credits</strong></p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
