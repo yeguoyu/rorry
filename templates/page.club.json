@@ -211,7 +211,7 @@
           "settings": {
             "icon": "sale",
             "custom_icon": "",
-            "heading": "<strong>Every Purchase</strong>",
+            "heading": "<strong>Every Purchase on rorry.com</strong>",
             "text": "<p><strong>$1 = 1 RorryCredit</strong></p>",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
