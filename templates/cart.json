@@ -22,24 +22,24 @@
           "type": "subtotal",
           "settings": {}
         },
-        "cart_note": {
-          "type": "cart_note",
-          "settings": {
-            "heading": "Add a note to your order"
-          }
-        },
         "buttons": {
           "type": "buttons",
           "settings": {
             "show_accelerated_buttons": true
+          }
+        },
+        "cart_note": {
+          "type": "cart_note",
+          "settings": {
+            "heading": "Add a note to your order"
           }
         }
       },
       "block_order": [
         "free_shipping",
         "subtotal",
-        "cart_note",
-        "buttons"
+        "buttons",
+        "cart_note"
       ],
       "settings": {
         "heading_size": "title-xl tracking-heading",
