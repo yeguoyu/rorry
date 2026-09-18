@@ -187,9 +187,9 @@
         "column_qK8hDz": {
           "type": "column",
           "settings": {
-            "icon": "gift",
+            "icon": "users",
             "custom_icon": "",
-            "heading": "<strong>Create an Account</strong>",
+            "heading": "<strong>Create an Account + 100 Points</strong>",
             "text": "<p><a href=\"https://account.rorry.com/\" title=\"https://account.rorry.com/\">Join Now &gt;</a></p>",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
