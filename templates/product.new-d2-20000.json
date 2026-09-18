@@ -154,6 +154,10 @@
             "color_scheme": "accent-1"
           }
         },
+        "appstle_loyalty_appstle_loyalty_acquire_points_yWibNd": {
+          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-acquire-points/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -245,6 +249,7 @@
         "description_yLmb9U",
         "badges_8dEdrC",
         "inventory",
+        "appstle_loyalty_appstle_loyalty_acquire_points_yWibNd",
         "buy_buttons",
         "sticky_buy_button_cgt3tr",
         "sticky_buy_button_v2_qaTgPb",
