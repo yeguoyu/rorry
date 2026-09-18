@@ -189,7 +189,7 @@
           "settings": {
             "icon": "users",
             "custom_icon": "",
-            "heading": "<strong>Create an Account + 100 Points</strong>",
+            "heading": "<strong>Create an Account + 100 Credits</strong>",
             "text": "<p><a href=\"https://account.rorry.com/\" title=\"https://account.rorry.com/\">Join Now &gt;</a></p>",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
@@ -200,8 +200,8 @@
           "settings": {
             "icon": "gift",
             "custom_icon": "",
-            "heading": "<strong>Selected RORRY Products</strong>",
-            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "heading": "<strong>Birthday Celebration + 100 Credits</strong>",
+            "text": "",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
@@ -209,10 +209,10 @@
         "column_Ymj746": {
           "type": "column",
           "settings": {
-            "icon": "gift",
+            "icon": "sale",
             "custom_icon": "",
-            "heading": "<strong>Selected RORRY Products</strong>",
-            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "heading": "<strong>Every Purchase</strong>",
+            "text": "<p><strong>$1 = 1 RorryCredit</strong></p>",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
@@ -264,7 +264,7 @@
         "style": "with-background",
         "columns": 3,
         "text_alignment": "center",
-        "heading": "Ways to Earn Points",
+        "heading": "Ways to Earn RorryCredits",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
