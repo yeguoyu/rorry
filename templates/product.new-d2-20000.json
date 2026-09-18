@@ -156,6 +156,7 @@
         },
         "appstle_loyalty_appstle_loyalty_acquire_points_yWibNd": {
           "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-acquire-points/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+          "disabled": true,
           "settings": {}
         },
         "buy_buttons": {
