@@ -189,6 +189,28 @@
           "settings": {
             "icon": "gift",
             "custom_icon": "",
+            "heading": "<strong>Create an Account</strong>",
+            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_gTGMLV": {
+          "type": "column",
+          "settings": {
+            "icon": "gift",
+            "custom_icon": "",
+            "heading": "<strong>Selected RORRY Products</strong>",
+            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_Ymj746": {
+          "type": "column",
+          "settings": {
+            "icon": "gift",
+            "custom_icon": "",
             "heading": "<strong>Selected RORRY Products</strong>",
             "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
             "highlighted_text": "text",
@@ -231,6 +253,8 @@
       },
       "block_order": [
         "column_qK8hDz",
+        "column_gTGMLV",
+        "column_Ymj746",
         "column_wpwcgn",
         "column_DGEQBc",
         "column_Dc6ep9"
@@ -238,9 +262,9 @@
       "name": "t:sections.multicolumn-with-icons.name",
       "settings": {
         "style": "with-background",
-        "columns": 4,
+        "columns": 3,
         "text_alignment": "center",
-        "heading": "What You'll Get",
+        "heading": "Ways to Earn Points",
         "heading_size": "title-sm",
         "heading_alignment": "text-center md:items-center",
         "heading_tag": "h2",
