@@ -42,7 +42,7 @@
         "cart_note"
       ],
       "settings": {
-        "heading_size": "title-xl tracking-heading",
+        "heading_size": "title-md",
         "heading_alignment": "md:items-end",
         "heading_tag": "h1",
         "show_vendor": false,
