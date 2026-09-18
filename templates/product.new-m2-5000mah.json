@@ -848,19 +848,6 @@
     "selling_points_9_J3teY8": {
       "type": "selling-points-9",
       "blocks": {
-        "item_block_J8khdC": {
-          "type": "item_block",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "title_size": 64,
-            "mobile_title_size": 24,
-            "details": "",
-            "details_color": "",
-            "details_size": 24,
-            "mobile_details_size": 14
-          }
-        },
         "item_block_EcRAaC": {
           "type": "item_block",
           "settings": {
@@ -916,7 +903,7 @@
         "item_block_8E8aLa": {
           "type": "item_block",
           "settings": {
-            "title": "<strong>Battery Charge Time</strong>",
+            "title": "Battery Charge Time",
             "title_color": "",
             "title_size": 24,
             "mobile_title_size": 20,
@@ -1007,7 +994,6 @@
         }
       },
       "block_order": [
-        "item_block_J8khdC",
         "item_block_EcRAaC",
         "item_block_qcHcQg",
         "item_block_dBKhQd",
