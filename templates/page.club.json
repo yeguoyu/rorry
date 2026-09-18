@@ -385,64 +385,11 @@
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 12,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
-      }
-    },
-    "member_unlock_rewards_kja6ya": {
-      "type": "member-unlock-rewards",
-      "blocks": {
-        "card_p69M3k": {
-          "type": "card",
-          "settings": {
-            "image": "shopify://shop_images/12-off.jpg",
-            "title": "12% Off",
-            "text": "1,600 RorryCredits",
-            "button_label": "Redeem Now",
-            "button_link": "",
-            "button_disabled": false
-          }
-        },
-        "card_gQcHUp": {
-          "type": "card",
-          "settings": {
-            "title": "Coupons & Discounts",
-            "text": "Use your credits to unlock instant savings on every order.",
-            "button_label": "Redeem Now",
-            "button_link": "",
-            "button_disabled": false
-          }
-        },
-        "card_G8aWfR": {
-          "type": "card",
-          "settings": {
-            "title": "Member-Exclusive Merch",
-            "text": "Redeem credits for exclusive RORRY member merch and limited-edition goodies.",
-            "button_label": "Coming Soon",
-            "button_link": "",
-            "button_disabled": true
-          }
-        }
-      },
-      "block_order": [
-        "card_p69M3k",
-        "card_gQcHUp",
-        "card_G8aWfR"
-      ],
-      "name": "Member unlock rewards",
-      "settings": {
-        "anchor_id": "member-unlock",
-        "heading": "Redeem RorryCredits Rewards",
-        "subheading": "",
-        "color_text": "#5c4d78",
-        "color_background": "#ffffff",
-        "color_accent": "#9887b8",
-        "color_card": "#efebf5",
         "padding_top": 40,
-        "padding_bottom": 40
+        "padding_bottom": 40,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
       }
     },
     "faq_XjyrqX": {
@@ -584,7 +531,6 @@
     "image_with_text_overlay_c8AyMy",
     "multicolumn_with_icons_LcbRjD",
     "multicolumn_wFpPke",
-    "member_unlock_rewards_kja6ya",
     "faq_XjyrqX"
   ]
 }
