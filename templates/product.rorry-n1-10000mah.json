@@ -25,21 +25,21 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "product-title-sm",
+            "title_size": "product-title-md",
             "title_size_mobile": "product-title-sm",
             "show_price": true,
             "show_rating": false
           }
+        },
+        "judge_me_reviews_preview_badge_9yD9PV": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "price_pU9fPM": {
           "type": "price",
           "settings": {
             "show_taxes_notice": false
           }
-        },
-        "judge_me_reviews_preview_badge_9yD9PV": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
         },
         "countdown": {
           "type": "countdown",
@@ -68,10 +68,64 @@
             "size_chart": ""
           }
         },
+        "liquid_tDQb6p": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<script src=\"https://www.paypal.com/sdk/js?client-id=AXiIUKc9nE9huAzbMyZsFLdfYxCbjgazHN5X5MFzxB90UsfNGTvn7BtYz3fCXeabj0Gu3_mdTjGQzSUp&currency=USD&components=messages,buttons\" defer></script>\n<div\n    data-pp-message\n    data-pp-style-layout=\"text\"\n    data-pp-style-logo-type=\"primary\"\n    data-pp-style-text-color=\"black\"\n    data-pp-style-text-size=\"14\"\n    data-pp-amount=\"{{ product.selected_or_first_available_variant.price | divided_by: 100.0 }}\"\n    data-pp-placement=\"product\"\n    data-pp-buyercountry=\"US\"> \n</div>"
+          }
+        },
+        "liquid_Wah8M3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->"
+          }
+        },
+        "klarna_on_site_messaging_app_block_L8DHAC": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        },
+        "metafield_popup_zx6V43": {
+          "type": "metafield_popup",
+          "settings": {
+            "title": "Key Features",
+            "metafield_key": "custom.key_features"
+          }
+        },
+        "liquid_kY39Eq": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.custom.featuresshow != blank %}\n  <style>\n    .features-show {\n      margin: 16px 0;\n      font-size: 14px;\n      line-height: 1.6;\n    }\n  </style>\n  <div class=\"features-show\">\n    {{ product.metafields.custom.featuresshow | metafield_tag }}\n  </div>\n{% endif %}"
+          }
+        },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "text_size": "text-base"
+          }
+        },
+        "coupon_cards_row_BdbftM": {
+          "type": "coupon_cards_row",
+          "settings": {
+            "copy_text": "Copy Code",
+            "card_1_badge": "BUY 2 SAVE",
+            "card_1_amount": "5%",
+            "card_1_code_label": "RORRY5",
+            "card_1_discount_code": "RORRY5",
+            "card_2_badge": "BUY 3+ SAVE",
+            "card_2_amount": "10%",
+            "card_2_code_label": "RORRY10",
+            "card_2_discount_code": "RORRY10",
+            "card_3_badge": "BUY 5+ SAVE",
+            "card_3_amount": "15%",
+            "card_3_code_label": "RORRY15",
+            "card_3_discount_code": "RORRY15"
           }
         },
         "variant_picker": {
@@ -95,6 +149,7 @@
         },
         "liquid_FPFjae": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "{% render 'couponcode' %}"
           }
@@ -111,24 +166,28 @@
             "show_back_in_stock_phone": false
           }
         },
-        "klarna_on_site_messaging_app_block_L8DHAC": {
-          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+        "trust_features_tdANzj": {
+          "type": "trust_features",
           "settings": {
-            "data_key": "credit-promotion-badge",
-            "theme": "default",
-            "topPadding": "0",
-            "bottomPadding": "0",
-            "messagePrefix": ""
-          }
-        },
-        "liquid_Wah8M3": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<script\n      async\n      data-environment=\"production\"\n      src=\"https://js.klarna.com/web-sdk/v1/klarna.js\"\n      data-client-id=\"klarna_live_client_MEFWa0lYUypmMUNkPyFEKC9kd3dKSjZ3b2w2cnVVZVosZmExMTc2MGItNjZhNi00YzI1LWFlY2QtODE1ZTg2NmEyZTM4LDEsNTdKU0NrVnc3eUJjci9KVS9sZ1pXZWtvaTlocld3SlVLbzFKbEJicll5cz0\"\n    ></script>\n    <!-- Placement v2 -->\n<klarna-placement\n  data-key=\"credit-promotion-badge\"\n  data-locale=\"en-US\"\n  data-purchase-amount=\"{{ product.selected_or_first_available_variant.price }}\"\n></klarna-placement>\n<!-- end Placement -->"
+            "modal_title": "Key Features",
+            "title_1": "Fast, Free Shipping",
+            "desc_1": "",
+            "icon_1": "truck",
+            "title_2": "30-Day Money-Back Guarantee",
+            "desc_2": "",
+            "icon_2": "tag",
+            "title_3": "Hassle-Free Warranty",
+            "desc_3": "",
+            "icon_3": "shield",
+            "title_4": "Lifetime Customer Support",
+            "desc_4": "",
+            "icon_4": "chat_bubble",
+            "show_payment": true
           }
         },
         "text_xciqLC": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "iwidth": "custom",
@@ -170,17 +229,22 @@
       "block_order": [
         "vendor",
         "title",
-        "price_pU9fPM",
         "judge_me_reviews_preview_badge_9yD9PV",
+        "price_pU9fPM",
         "countdown",
         "product_variations_MzRwYY",
+        "liquid_tDQb6p",
+        "liquid_Wah8M3",
+        "klarna_on_site_messaging_app_block_L8DHAC",
+        "metafield_popup_zx6V43",
+        "liquid_kY39Eq",
         "description",
+        "coupon_cards_row_BdbftM",
         "variant_picker",
         "inventory",
         "liquid_FPFjae",
         "buy_buttons",
-        "klarna_on_site_messaging_app_block_L8DHAC",
-        "liquid_Wah8M3",
+        "trust_features_tdANzj",
         "text_xciqLC",
         "pickup_availability",
         "share",
@@ -201,7 +265,7 @@
         "image_ratio_mobile": "adapt_first",
         "mobile_thumbnail": true,
         "padding_top": 0,
-        "padding_bottom": 24,
+        "padding_bottom": 16,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -634,97 +698,6 @@
         "rounded": false
       }
     },
-    "product-details": {
-      "type": "product-details",
-      "blocks": {
-        "collapsible_tab-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "clipboard",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Specification",
-            "content": "<p><strong>Product Dimensions:</strong> <br/>4.33 x 2.83 x 0.83 inches</p><p><strong>Item Weight: <br/></strong>4.4 ounces</p><p><strong>ASIN:</strong> <br/>B0C1RX77RM</p><p><strong>Item model number:</strong> <br/>D2</p><p><strong>Color: <br/></strong>White</p>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "collapsible_tab_CJCd7y": {
-          "type": "collapsible_tab",
-          "settings": {
-            "icon": "devices",
-            "iwidth": "custom",
-            "icon_width": 24,
-            "heading": "Technology",
-            "content": "<p><strong>Batteries:</strong> <br/>1 Lithium Ion batteries required. (included)</p><p><strong>Best Sellers Rank: <br/></strong>#257 in Cell Phones & Accessories (<a href=\"https://www.amazon.com/gp/bestsellers/wireless/ref=pd_zg_ts_wireless\">See Top 100 in Cell Phones & Accessories</a>)#44 in<a href=\"https://www.amazon.com/gp/bestsellers/wireless/7073960011/ref=pd_zg_hrsr_wireless\">Cell Phone Portable Power Banks</a></p><p><strong>Connectivity technologies:</strong> <br/>USB</p><p><strong>Special features:</strong> <br/>①Compact ②Built In Cables ③for iPhone Watch ④keychain design</p><p><strong>Other display features:</strong> <br/>Wireless</p><p><strong>Manufacturer:</strong> <br/>ShenZhen XingYuanSheng Electronic Technology Co,Ltd</p><p><strong>Date First Available:</strong> <br/>April 7, 2023</p>",
-            "metafields": "",
-            "text_size": "text-base"
-          }
-        },
-        "specification_P7Dmzx": {
-          "type": "specification",
-          "settings": {
-            "icon": "shopify://shop_images/charging-treasure_1.svg",
-            "heading": "RORRY portable charger x 1",
-            "text_size": "text-sm"
-          }
-        },
-        "specification_Mj7KEt": {
-          "type": "specification",
-          "settings": {
-            "icon": "shopify://shop_images/plug-one_1.svg",
-            "heading": "1M USB-C to USB-C charging cable x 1",
-            "text_size": "text-sm"
-          }
-        },
-        "specification_w9fcg9": {
-          "type": "specification",
-          "settings": {
-            "icon": "shopify://shop_images/1_book-one_1.svg",
-            "heading": "User Manual x 1",
-            "text_size": "text-sm"
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_tab-1",
-        "collapsible_tab_CJCd7y",
-        "specification_P7Dmzx",
-        "specification_Mj7KEt",
-        "specification_w9fcg9"
-      ],
-      "disabled": true,
-      "settings": {
-        "style": "with-border",
-        "open_first_row": true,
-        "specifications_heading": "Included in the Box",
-        "heading": "Product details",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "#000000",
-        "color_background": "#f6f7fa",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "product_details_qtAwpA": {
       "type": "product-details",
       "blocks": {
@@ -757,6 +730,7 @@
         "collapsible_tab_AeLFxf",
         "description_NaNWx4"
       ],
+      "disabled": true,
       "name": "Product details",
       "settings": {
         "style": "with-border",
@@ -789,33 +763,105 @@
         "rounded": false
       }
     },
-    "video_mBkphM": {
-      "type": "video",
-      "disabled": true,
+    "section_position_xL6wEj": {
+      "type": "section-position",
+      "blocks": {
+        "map_FUzHBh": {
+          "type": "map",
+          "settings": {
+            "map": "Overview",
+            "maptext": "Overview",
+            "text_size": 36,
+            "mobile_text_size": 24,
+            "text_color": "#171717",
+            "activea_color": "#9887b8"
+          }
+        },
+        "map_XifrHb": {
+          "type": "map",
+          "settings": {
+            "map": "Tech Specs",
+            "maptext": "Tech Specs",
+            "text_size": 36,
+            "mobile_text_size": 24,
+            "text_color": "#171717",
+            "activea_color": "#9887b8"
+          }
+        },
+        "map_6G7WKe": {
+          "type": "map",
+          "settings": {
+            "map": "FAQ & Review",
+            "maptext": "FAQ & Review",
+            "text_size": 36,
+            "mobile_text_size": 24,
+            "text_color": "#171717",
+            "activea_color": "#9887b8"
+          }
+        }
+      },
+      "block_order": [
+        "map_FUzHBh",
+        "map_XifrHb",
+        "map_6G7WKe"
+      ],
+      "name": "Section Position",
       "settings": {
-        "transparent_header": false,
-        "video": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
-        "video_url": "",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "adapt",
-        "video_mobile": "shopify://files/videos/RORRY D14-5000mAh Megsafe Power Bank Video.mp4",
-        "video_url_mobile": "",
-        "image_height_mobile": "adapt",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
+        "sectionname": "",
+        "background": ""
+      }
+    },
+    "selling_points_2_video_tGCheX": {
+      "type": "selling-points-2-video",
+      "blocks": {
+        "video_block_nk6TTP": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {}
+        },
+        "video_block_4Kk4p7": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {}
+        },
+        "video_block_Q6mGCW": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {}
+        },
+        "video_block_X6ExqD": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "video_block_nk6TTP",
+        "video_block_4Kk4p7",
+        "video_block_Q6mGCW",
+        "video_block_X6ExqD"
+      ],
+      "name": "selling points 11 Video",
+      "settings": {
+        "sectionname": "Overview",
+        "background": "#ffffff",
+        "border_radius": 8,
+        "cols_pc": 4,
+        "cols_mb": 2,
+        "gap_pc": 20,
+        "gap_mb": 10,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "mobile_padding_top": 8,
+        "mobile_padding_bottom": 8
       }
     },
     "lookbook_4cft7Q": {
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_N1-10000mAh_Hand_Warmers_Rechargeable_2_Pack_01.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_N1-10000mAh_Hand_Warmers_Rechargeable_2_Pack_mo_01.jpg",
+        "image": "shopify://shop_images/RORRY_N1-10000mAh_Hand_Warmers_Rechargeable_2_Pack_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_N1-10000mAh_Hand_Warmers_Rechargeable_2_Pack_mo_1_c1723750-f7b2-4424-89b1-6f9f9274dfe1.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -848,10 +894,11 @@
     },
     "lookbook_WYHt7y": {
       "type": "lookbook",
+      "disabled": true,
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/RORRY_N1-10000mAh_Hand_Warmers_Rechargeable_2_Pack_02.jpg",
-        "image_mobile": "shopify://shop_images/RORRY_N1-10000mAh_Hand_Warmers_Rechargeable_2_Pack_mo_02.jpg",
+        "image": "shopify://shop_images/RORRY_N1-10000mAh_Hand_Warmers_Rechargeable_2_Pack_1.jpg",
+        "image_mobile": "shopify://shop_images/RORRY_N1-10000mAh_Hand_Warmers_Rechargeable_2_Pack_mo_1.jpg",
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -926,7 +973,7 @@
         "autoplay_speed": 3,
         "show_navigation": true,
         "image_height": "adapt",
-        "content_width": "small",
+        "content_width": "large",
         "image_height_mobile": "adapt",
         "accessibility_info": "Slideshow about our brand",
         "color_text": "#ffffff",
@@ -1217,6 +1264,209 @@
         "parallax_direction": "vertical"
       }
     },
+    "selling_points_9_jiQYrt": {
+      "type": "selling-points-9",
+      "blocks": {
+        "item_block_pEyDBR": {
+          "type": "item_block",
+          "settings": {
+            "title": "Product Model",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "N1",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_wTbCqD": {
+          "type": "item_block",
+          "settings": {
+            "title": "Category",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Electric Hand Warmer",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_hrmVzj": {
+          "type": "item_block",
+          "settings": {
+            "title": "Number of Items",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "2",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_nHmQAV": {
+          "type": "item_block",
+          "settings": {
+            "title": "Battery Capacity",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "10000mAh",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_yWJ7WB": {
+          "type": "item_block",
+          "settings": {
+            "title": "Item Weight",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "0.004 ounces",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_BTDFF6": {
+          "type": "item_block",
+          "settings": {
+            "title": "Material",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "Acrylonitrile Butadiene Styrene, Aluminum",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_yM66we": {
+          "type": "item_block",
+          "settings": {
+            "title": "Included Components",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "1* Charging Stand, 1* Rechargeable Hand Warmers, Charging Cable, User Manual",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        },
+        "item_block_Bnc8Ja": {
+          "type": "item_block",
+          "settings": {
+            "title": "Upper Temperature Rating",
+            "title_color": "",
+            "title_size": 24,
+            "mobile_title_size": 20,
+            "details": "140 °F",
+            "details_color": "",
+            "details_size": 24,
+            "mobile_details_size": 14
+          }
+        }
+      },
+      "block_order": [
+        "item_block_pEyDBR",
+        "item_block_wTbCqD",
+        "item_block_hrmVzj",
+        "item_block_nHmQAV",
+        "item_block_yWJ7WB",
+        "item_block_BTDFF6",
+        "item_block_yM66we",
+        "item_block_Bnc8Ja"
+      ],
+      "name": "selling points 9",
+      "settings": {
+        "sectionname": "",
+        "background": "",
+        "title": "",
+        "title_size": 64,
+        "mobile_title_size": 24,
+        "title_color": "",
+        "border_color": "#fff",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 36
+      }
+    },
+    "product_faq_MnJTkq": {
+      "type": "product-faq",
+      "blocks": {
+        "tab_ptHGAd": {
+          "type": "tab",
+          "settings": {
+            "tab-name": "Product"
+          }
+        },
+        "tab_content_iexCab": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "How hot does it get?",
+            "collapsible-content": "<p>The RORRY Hand Warmers deliver powerful yet adjustable warmth, reaching a maximum temperature of 140°F (60°C). For personalized comfort, they feature four precise temperature settings, allowing you to easily tailor the heat level to your preference and activity—whether you're outdoors in chilly weather or just need gentle warmth throughout the day.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_4mJFJG": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "Is it safe to use inside gloves?",
+            "collapsible-content": "<p>Yes, RORRY hand warmers are safe to use inside gloves.<br/>Their lipstick-sized, cylindrical design is slim and portable, allowing them to slide easily into gloves, pockets, or sleeves. They provide 360° even heating without creating hot spots, which helps protect glove materials.</p>",
+            "isactive": false
+          }
+        },
+        "tab_content_N8xmbm": {
+          "type": "tab-content",
+          "settings": {
+            "tab-name": "Product",
+            "collapsible-title": "How long does charging take?",
+            "collapsible-content": "<p>The RORRY hand warmers charging is quick and convenient. Using the included USB-C cable and charging stand, the hand warmers typically reach a full charge overnight. </p>",
+            "isactive": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_ptHGAd",
+        "tab_content_iexCab",
+        "tab_content_4mJFJG",
+        "tab_content_N8xmbm"
+      ],
+      "name": "product faq",
+      "settings": {
+        "sectionname": "FAQ & Review",
+        "color-2": "",
+        "title": "FAQ",
+        "title_color": "#9887B8",
+        "title_size": 40,
+        "mobile_title_size": 32,
+        "title_bottom": 24,
+        "mobile_title_bottom": 16,
+        "tab_size": 36,
+        "mobile_tab_size": 24,
+        "tab_color": "",
+        "tab_color_art": "",
+        "item_title_color": "",
+        "item_title_size": 36,
+        "mobile_item_title_size": 24,
+        "item_details_color": "",
+        "item_details_size": 16,
+        "mobile_item_details_size": 16,
+        "padding-top": 0,
+        "padding-bottom": 0,
+        "padding-top-mob": 0,
+        "padding-bottom-mob": 0,
+        "max-width": 1200
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -1288,6 +1538,7 @@
         "question-5",
         "contact"
       ],
+      "disabled": true,
       "settings": {
         "style": "with-background",
         "heading": "FAQs",
@@ -1421,9 +1672,9 @@
     "image-with-text-1",
     "image_with_text_BQ8bTd",
     "multicolumn_gw7rtD",
-    "product-details",
     "product_details_qtAwpA",
-    "video_mBkphM",
+    "section_position_xL6wEj",
+    "selling_points_2_video_tGCheX",
     "lookbook_4cft7Q",
     "lookbook_WYHt7y",
     "slideshow_XD8EDe",
@@ -1432,6 +1683,8 @@
     "lookbook_kkfwyP",
     "lookbook_WACcxf",
     "slideshow_TphwhG",
+    "selling_points_9_jiQYrt",
+    "product_faq_MnJTkq",
     "faq",
     "1733842313261375ee",
     "recently-viewed",
