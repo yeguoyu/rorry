@@ -33,18 +33,13 @@
           "settings": {
             "show_accelerated_buttons": true
           }
-        },
-        "appstle_loyalty_appstle_loyalty_redeem_widget_p3Mqik": {
-          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-redeem-widget/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
-          "settings": {}
         }
       },
       "block_order": [
         "free_shipping",
         "subtotal",
         "cart_note",
-        "buttons",
-        "appstle_loyalty_appstle_loyalty_redeem_widget_p3Mqik"
+        "buttons"
       ],
       "settings": {
         "heading_size": "title-xl tracking-heading",
