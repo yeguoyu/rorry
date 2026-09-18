@@ -203,6 +203,50 @@
         "rounded": false
       }
     },
+    "1789616455bd58ef70": {
+      "type": "apps",
+      "blocks": {
+        "qstomizer_product_customizer_qstomizer_product_block_JJpUiQ": {
+          "type": "shopify://apps/qstomizer-product-customizer/blocks/qstomizer-product-block/91ddef34-1f34-4141-843a-d613c0433aef",
+          "settings": {
+            "textonbtn": "Customize",
+            "btnclass": "btn",
+            "apply_custom_styles": false,
+            "button_border_radius": 0,
+            "button_bg_color": "#ff8a00",
+            "text_color": "#000000",
+            "button_text_size": 12,
+            "text_alignment": "center",
+            "button_width": "full",
+            "button_padding_top": 10,
+            "button_padding_bottom": 10,
+            "button_margin_top": 10,
+            "button_margin_bottom": 10,
+            "btnclassremove": "",
+            "textoheader": "Your custom product:",
+            "elmstohide": ""
+          }
+        }
+      },
+      "block_order": [
+        "qstomizer_product_customizer_qstomizer_product_block_JJpUiQ"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "help-drawer": {
       "type": "help-drawer",
       "blocks": {
@@ -1449,33 +1493,16 @@
         "rounded": false
       }
     },
-    "1789616455bd58ef70": {
+    "17897168732ab42d8c": {
       "type": "apps",
       "blocks": {
-        "qstomizer_product_customizer_qstomizer_product_block_JJpUiQ": {
-          "type": "shopify://apps/qstomizer-product-customizer/blocks/qstomizer-product-block/91ddef34-1f34-4141-843a-d613c0433aef",
-          "settings": {
-            "textonbtn": "Customize",
-            "btnclass": "btn",
-            "apply_custom_styles": false,
-            "button_border_radius": 0,
-            "button_bg_color": "#FF8A00",
-            "text_color": "#000000",
-            "button_text_size": 12,
-            "text_alignment": "center",
-            "button_width": "full",
-            "button_padding_top": 10,
-            "button_padding_bottom": 10,
-            "button_margin_top": 10,
-            "button_margin_bottom": 10,
-            "btnclassremove": "",
-            "textoheader": "Your custom product:",
-            "elmstohide": ""
-          }
+        "appstle_loyalty_appstle_loyalty_acquire_points_LfzKPM": {
+          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-acquire-points/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+          "settings": {}
         }
       },
       "block_order": [
-        "qstomizer_product_customizer_qstomizer_product_block_JJpUiQ"
+        "appstle_loyalty_appstle_loyalty_acquire_points_LfzKPM"
       ],
       "settings": {
         "color_text": "",
@@ -1496,6 +1523,7 @@
   },
   "order": [
     "main-product",
+    "17897168732ab42d8c",
     "1789616455bd58ef70",
     "help-drawer",
     "video-hero",
