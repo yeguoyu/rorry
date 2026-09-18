@@ -190,7 +190,7 @@
             "icon": "gift",
             "custom_icon": "",
             "heading": "<strong>Create an Account</strong>",
-            "text": "<p>Be among the first to experience our latest aesthetic power banks.</p>",
+            "text": "<p><a href=\"https://account.rorry.com/\" title=\"https://account.rorry.com/\">Join Now &gt;</a></p>",
             "highlighted_text": "text",
             "highlighted_scribble": "circle"
           }
